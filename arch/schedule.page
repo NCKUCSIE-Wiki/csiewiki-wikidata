@@ -80,7 +80,7 @@ Computer Architecture (Fall 2021)
 * Week 9 (Nov 23): Pipeline
     - Announcement:
         + Next quiz is scheduled to Dec 7
-    -  [Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
+    -  [Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4): Digital systems / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
     - MIT 6.004 [L15: Introduction to Pipelining](https://youtu.be/5NQkhqZe8_8), [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ)
     - [Lab3: Reindeer - RISCV RV32I[M] Soft CPU](https://hackmd.io/@sysprog/rJw2A5DqS)
@@ -93,10 +93,11 @@ Computer Architecture (Fall 2021)
     - [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY)
     - [RISC-V 5-Stage Pipeline / Hazards](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec14.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aq-xpoKcmd7X9w-l6KHiNMa)
     - [Complex Pipelines, Out-of-Order Issue, Register Renaming](https://inst.eecs.berkeley.edu/~cs152/sp19/lectures/L10-ComplexPipes.pdf)
-
-* Week 11 (Dec 7): Quiz + Homework Review
     - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4)
          * [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
+
+* Week 11 (Dec 7): Quiz + Homework Review
+    - [Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5): RISC-V programming + data path + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol)
     - [13-Year-Old, Nicholas Sharkey, Creates a RISC-V Core](https://riscv.org/blog/2020/11/13-year-old-nicholas-sharkey-creates-a-risc-v-core/)
     - [ARM1 vs. Apple M1](https://twitter.com/kenshirriff/status/1327021630636212224)
 
