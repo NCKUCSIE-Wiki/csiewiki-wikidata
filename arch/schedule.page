@@ -64,14 +64,14 @@ Computer Architecture (Fall 2021)
     - [RISC-V Instruction Formats](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec08.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apqzuxnUN2fkwt1IGbu3km3)
 
 * Week 7 (Nov 9): Digital Systems
-    * Announcement: New quiz on Nov 16 / No breaks today (till 11:30)
+    * Announcement: New quiz on Nov 16
     * Next generation of rv32emu: [sysprog21/rv32emu-next](https://github.com/sysprog21/rv32emu-next)
     - [Combinational Digital Logic](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec10.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ap04XFOxcFT2_Bflnz_RHWU)
     - [Sequential Digital Logic](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec11.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arH8SCGZilk8Wn_2B45SOpW)
     - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3)
          * [solution](https://hackmd.io/@sysprog/arch2020-quiz3-sol)
 
-* Week 8 (Nov 16): Datapath and Control / This class is online: [https://youtu.be/dJ3CSDKRfLo](https://youtu.be/dJ3CSDKRfLo)
+* Week 8 (Nov 16): Datapath and Control
     - Announcement: Due to internal problems of HackMD (pictures were not shown), we would take new scoring method to eliminate the impact. Next week, we have an additional quiz dedicated to Combinational and Sequential Digital Logic.
     - [Quiz3](https://hackmd.io/@sysprog/arch2021-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2021-quiz3-sol)
     - [RISC-V CPU Datapath, Control Intro](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
