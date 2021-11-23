@@ -80,6 +80,7 @@ Computer Architecture (Fall 2021)
 * Week 9 (Nov 23): Pipeline
     - Announcement:
         + Next quiz is scheduled to Dec 7
+        + Because of the reconstruction of new RISC-V core, Homework3 will be finalized later. Please refresh this page on Nov 25 to check the details.
     -  [Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4): Digital systems / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
     - MIT 6.004 [L15: Introduction to Pipelining](https://youtu.be/5NQkhqZe8_8), [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
