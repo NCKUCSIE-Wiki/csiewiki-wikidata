@@ -87,14 +87,14 @@ Computer Architecture (Fall 2021)
 * Week 10 (Nov 30): Pipelined Processors / Class is online: [youtu.be/0Hqb4I1ffjU](https://youtu.be/0Hqb4I1ffjU)
     - Announcement:
         + Next quiz is scheduled to Dec 7
-        + Homework3: [SoftCPU](2021-arch-homework3) is out.
+        + Homework3: [SoftCPU](https://hackmd.io/@sysprog/2021-arch-homework3) is out.
         + Next week, we will review all the assignments.
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p)
     - [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [RISC-V 5-Stage Pipeline / Hazards](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec14.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aq-xpoKcmd7X9w-l6KHiNMa)
     - [Complex Pipelines, Out-of-Order Issue, Register Renaming](https://inst.eecs.berkeley.edu/~cs152/sp19/lectures/L10-ComplexPipes.pdf)
     - [srv32 - RISCV RV32IM Soft CPU](https://hackmd.io/@sysprog/S1Udn1Xtt)
-    - Assignment: [Homework3: SoftCPU](2021-arch-homework3)  (Due: Dec 13, 2021)
+    - Assignment: [Homework3: SoftCPU](https://hackmd.io/@sysprog/2021-arch-homework3)  (Due: Dec 13, 2021)
     - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4)
          * [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
 
