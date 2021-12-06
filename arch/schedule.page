@@ -84,7 +84,7 @@ Computer Architecture (Fall 2021)
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
     - MIT 6.004 [L15: Introduction to Pipelining](https://youtu.be/5NQkhqZe8_8), [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
 
-* Week 10 (Nov 30): Pipelined Processors / Class is online: [youtu.be/0Hqb4I1ffjU](https://youtu.be/0Hqb4I1ffjU)
+* Week 10 (Nov 30): Pipelined Processors
     - Announcement:
         + Next quiz is scheduled to Dec 7
         + Homework3: [SoftCPU](https://hackmd.io/@sysprog/2021-arch-homework3) is out.
