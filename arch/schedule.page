@@ -100,8 +100,6 @@ Computer Architecture (Fall 2021)
 
 * Week 11 (Dec 7): Quiz + Homework Review
     - [Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol)
-    - [13-Year-Old, Nicholas Sharkey, Creates a RISC-V Core](https://riscv.org/blog/2020/11/13-year-old-nicholas-sharkey-creates-a-risc-v-core/)
-    - [ARM1 vs. Apple M1](https://twitter.com/kenshirriff/status/1327021630636212224)
 
 * Week 12 (Dec 14): Cache + Virtual Memory
     - Announcement: Quiz on Dec 1 - pipeline, cache and virtual memory
