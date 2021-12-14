@@ -113,6 +113,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - [Caches: Direct-mapped, set-associative](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec16.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apRiQ2QPjzyq8APGEjnqW1w)
     - [Multi-level Caches, Cache Questions](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec17.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqHsuO6U2bIpwDGqO6UAetk)
     - [The golden age of ever-changing computer architecture](https://hackaday.com/2019/11/27/the-golden-age-of-ever-changing-computer-architecture/)
+        * [Cerebras](https://cerebras.net/) announced a system which connects multiple integrated circuits (commonly called "chips") into a neural network with many connections in Aug 2021. It enables a single system to support AI models with more than 120 trillion parameters.
     - [Virtual Memory](https://6004.mit.edu/web/_static/fall21/resources/sp21/L18.pdf) / [video](https://youtu.be/TsxZlXOrt8U)
  
 * Week13 (Dec 21): Quiz + Virtual Memory
