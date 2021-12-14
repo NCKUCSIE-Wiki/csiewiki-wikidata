@@ -82,7 +82,10 @@ Computer Architecture (Fall 2021)
         + Next quiz is scheduled to Dec 7
     -  [Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4): Digital systems / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
-    - MIT 6.004 [L15: Introduction to Pipelining](https://youtu.be/5NQkhqZe8_8), [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
+    - MIT 6.004 [L15: Introduction to Pipelining](https://youtu.be/5NQkhqZe8_8), [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ)
+        * slides: [Introduction to Pipelining](https://6004.mit.edu/web/_static/fall21/resources/sp21/L12.pdf)
+        * slides: [Pipelined Processors](https://6004.mit.edu/web/_static/fall21/resources/sp21/L19.pdf)
+        * [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
 
 * Week 10 (Nov 30): Pipelined Processors
     - Announcement:
@@ -91,6 +94,9 @@ Computer Architecture (Fall 2021)
         + Next week, we will review all the assignments.
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p)
     - [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
+        * slides: [Pipelined Processors](https://6004.mit.edu/web/_static/fall21/resources/sp21/L19.pdf)
+        * slides: [Pipelined Processors
+Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21/L20.pdf)
     - [RISC-V 5-Stage Pipeline / Hazards](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec14.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aq-xpoKcmd7X9w-l6KHiNMa)
     - [Complex Pipelines, Out-of-Order Issue, Register Renaming](https://inst.eecs.berkeley.edu/~cs152/sp19/lectures/L10-ComplexPipes.pdf)
     - [Lab3: srv32 - RISCV RV32IM Soft CPU](https://hackmd.io/@sysprog/S1Udn1Xtt)
