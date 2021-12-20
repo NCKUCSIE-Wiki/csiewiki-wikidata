@@ -108,7 +108,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - [Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol)
     - [Homework1](https://hackmd.io/@sysprog/2021-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2021-arch-homework2)
 
-* Week 12 (Dec 14): Cache + Virtual Memory / Online: [youtu.be/oPV-5m1uXII](https://youtu.be/oPV-5m1uXII)
+* Week 12 (Dec 14): Cache + Virtual Memory
     - Announcement: Quiz on Dec 21 - pipeline, cache and virtual memory
     - [Caches: Direct-mapped, set-associative](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec16.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apRiQ2QPjzyq8APGEjnqW1w)
     - [Multi-level Caches, Cache Questions](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec17.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqHsuO6U2bIpwDGqO6UAetk)
@@ -117,7 +117,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - [Virtual Memory](https://6004.mit.edu/web/_static/fall21/resources/sp21/L18.pdf) / [video](https://youtu.be/TsxZlXOrt8U)
     - [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
  
-* Week13 (Dec 21): Quiz + Virtual Memory
+* Week13 (Dec 21): Quiz + Virtual Memory / online via [youtu.be/0Z9pyiOaNs4](https://youtu.be/0Z9pyiOaNs4)
     - [Quiz5](https://hackmd.io/@sysprog/arch2021-quiz6): cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol)
     - [Virtual Memory](https://6004.mit.edu/web/_static/fall20/resources/lectures/L18.pdf) / [video](https://youtu.be/TsxZlXOrt8U)
     - [Term projects 2019](https://hackmd.io/@wsp50317/H1Qa8hVk8)
