@@ -120,21 +120,14 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
 * Week13 (Dec 21): Quiz + Virtual Memory / online via [youtu.be/0Z9pyiOaNs4](https://youtu.be/0Z9pyiOaNs4)
     - [Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol)
     - [Virtual Memory](https://6004.mit.edu/web/_static/fall20/resources/lectures/L18.pdf) / [video](https://youtu.be/TsxZlXOrt8U)
-    - [Term projects 2019](https://hackmd.io/@wsp50317/H1Qa8hVk8)
-        * Implement [RISC-V Compressed Instruction Set](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2015/EECS-2015-209.pdf) on [rv32emu](https://github.com/sysprog21/rv32emu)
-        * Implement [RISC-V Compressed Instruction Set](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2015/EECS-2015-209.pdf) for [Reindeer](https://github.com/PulseRain/Reindeer), based on pull request [RV32C support](https://github.com/PulseRain/Reindeer/pull/25). must be validated on Step CYC10 FPGA board.
-        * Contribute to [Ripes](https://github.com/mortbopet/Ripes/issues): pick up pending issues, work on them, and finally send pull request(s).
-        * Prepare practical tutorials for [VSRTL](https://github.com/mortbopet/VSRTL/tree/master/docs), thus people can follow the instructions for implementing minimal RISC-V core such as [minrv32](https://github.com/arghhhh/minrv32).
-        * Analyze [spu32](https://github.com/maikmerten/spu32) with Yosys open synthesis suite. Explain how it works and validate it.
-        * Analyze [VexRiscv](https://github.com/SpinalHDL/VexRiscv). Explain how it works and validate it.
-        * Modify [Reindeer](https://github.com/PulseRain/Reindeer) to allow non-trial interactive games on Step CYC10 FPGA board, based on [Reindeer_Step](https://github.com/PulseRain/Reindeer_Step) and Zephyr RTOS.
+    - [Term projects 2020](https://hackmd.io/@sysprog/arch2020-projects)
     - [Lab4: Cache](https://cs61c.org/fa20/labs/lab08/)
         + [Reference work](https://hackmd.io/@Lt35rTMeTi22rWqrBgSQzg/SkXXQ_LJ8)
+    - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
 
 * Week14 (Dec 28): Synchronization
     - Announcement: Quiz on Dec 22
     - Assignment: [Homework4: Cache](https://hackmd.io/@sysprog/2020-arch-homework4)  (Due: ?)
-    - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
     - [Synchronization](https://6004.mit.edu/web/_static/fall20/resources/lectures/L21.pdf) / [video](https://youtu.be/r8H_af_dCF0)
     - [Thread-Level Parallelism](https://drive.google.com/drive/folders/1YtT3FEpZAROeZT5gg-uKgxO5hp0N2ii-) / [video](https://youtu.be/QLdN6p7-43U)
 
