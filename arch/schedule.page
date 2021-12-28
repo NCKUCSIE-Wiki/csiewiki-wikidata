@@ -138,7 +138,6 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - [Thread-Level Parallelism](https://drive.google.com/drive/folders/1YtT3FEpZAROeZT5gg-uKgxO5hp0N2ii-) / [video](https://youtu.be/QLdN6p7-43U)
 
 * Week15 (Jan 4): Operating System and RISC-V
-    - [Term projects 2020](https://hackmd.io/@sysprog/arch2020-projects)
     - video: [The Future of Operating Systems on RISC-V](https://youtu.be/emnN9p4vhzk) / [transcript](https://www.infoq.com/presentations/risc-v-future/)
     - [Advanced topics on Synchronization - 1](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L19-MCM.pdf)
     - [Advanced topics on Synchronization - 2](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L22-Synch.pdf)
