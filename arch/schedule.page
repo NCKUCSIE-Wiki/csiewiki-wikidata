@@ -8,7 +8,7 @@ toc: no
 - Policy
     * Follow the classes: [CS 61C at UC Berkeley](https://cs61c.org/), [CS152/252: Computer Architecture](https://inst.eecs.berkeley.edu/~cs152/sp21/)
 - Course grading
-    * Quiz (20%), Homework (40%), Final Project (40%)
+    * Quiz (20%), Homework (40%), Final/Term Project (40%)
 - **Schedule is tentative and subject to change!**
 
 Computer Architecture (Fall 2021)
@@ -129,9 +129,12 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - [Term projects 2020](https://hackmd.io/@sysprog/arch2020-projects)
 
 * Week14 (Dec 28): Synchronization
-    - Announcement: Quiz on Jan 11
-    - Assignment: [Homework4: Cache](https://hackmd.io/@sysprog/2020-arch-homework4)  (Due: ?)
-    - [Synchronization](https://6004.mit.edu/web/_static/fall20/resources/lectures/L21.pdf) / [video](https://youtu.be/r8H_af_dCF0)
+    - Announcement:
+        * Quiz on Jan 11
+        * Your grades will be delivered Jan 21, 2022
+        * Check the listing of final/term projects
+    - [Term projects 2021](https://hackmd.io/@sysprog/arch2021-projects)
+    - [Synchronization](https://6004.mit.edu/web/_static/FA20fall20/resources/sp20/L20.pdf) / [video](https://youtu.be/r8H_af_dCF0)
     - [Thread-Level Parallelism](https://drive.google.com/drive/folders/1YtT3FEpZAROeZT5gg-uKgxO5hp0N2ii-) / [video](https://youtu.be/QLdN6p7-43U)
 
 * Week15 (Jan 4): Operating System and RISC-V
