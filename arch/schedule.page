@@ -140,6 +140,9 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
         + Let's skip OpenMP part
 
 * Week15 (Jan 4): Operating System and RISC-V
+    - Announcement:
+        * Quiz7 on Jan 11
+        * Check [the listing of final/term projects](https://hackmd.io/@sysprog/arch2021-projects)
     - video: [The Future of Operating Systems on RISC-V](https://youtu.be/emnN9p4vhzk) / [transcript](https://www.infoq.com/presentations/risc-v-future/)
     - [Multithreading Issues, Cache Coherency](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec23.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqgj_8Og51XoE7iyAu5yEWZ)
        + Let's skip OpenMP part
@@ -155,12 +158,11 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
 
 * Week16 (Jan 11): I/O, cache coherence
     - [Term projects 2020](https://hackmd.io/@sysprog/arch2020-projects)
-    -  [Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6)
+    -  [Quiz7](https://hackmd.io/@sysprog/arch2020-quiz6)
          * [solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
     - [I/O: Devices, Polling, Interrupts](https://drive.google.com/drive/folders/1NRoyYSbAyarMhmPD5LiY6YEqYpLoZx_s) / [video](https://youtu.be/0dyqcFC_q2Q?t=570)
         * Traps/Interrupts/Exceptions
         * Trap Handling in 5-Stage Pipeline
-    - [Multithreading Issues, Cache Coherency](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec23.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqgj_8Og51XoE7iyAu5yEWZ)
     - [Cache Coherence](https://6004.mit.edu/web/_static/fall20/resources/lectures/L22.pdf) / [video](https://youtu.be/vxrok3KKuGQ)
         * Modern microprocessors usually have 2 to 8 cores where each core has a private cache for performance
         * Modified/Shared/Invalid (MSI) Protocol, MESI: An Enhanced MSI protocol to increased performance for private read-write data
