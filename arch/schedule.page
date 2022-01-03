@@ -145,7 +145,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
         * Check [the listing of final/term projects](https://hackmd.io/@sysprog/arch2021-projects)
     - video: [The Future of Operating Systems on RISC-V](https://youtu.be/emnN9p4vhzk) / [transcript](https://www.infoq.com/presentations/risc-v-future/)
     - [Multithreading Issues, Cache Coherency](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec23.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqgj_8Og51XoE7iyAu5yEWZ)
-       + Let's skip OpenMP part
+        + Let's skip OpenMP part
     - [Freestanding RISC-V Programs](https://youtu.be/iml0DBo5yqo)
         + [bare metal](https://en.wikipedia.org/wiki/Bare_machine)
     - [Multithreaded Application Synchronization Part I](https://youtu.be/kk8q5rwm1ZI)
