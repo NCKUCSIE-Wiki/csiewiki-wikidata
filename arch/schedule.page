@@ -136,10 +136,11 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
         * Check the listing of final/term projects
     - [Term projects 2021](https://hackmd.io/@sysprog/arch2021-projects)
     - [Synchronization](https://6004.mit.edu/web/_static/FA20fall20/resources/sp20/L20.pdf) / [video](https://youtu.be/r8H_af_dCF0)
-    - [Thread-Level Parallelism](https://drive.google.com/drive/folders/1YtT3FEpZAROeZT5gg-uKgxO5hp0N2ii-) / [video](https://youtu.be/QLdN6p7-43U)
+    - [Thread-Level Parallelism](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec22.pdf) / [video](https://youtu.be/QLdN6p7-43U)
 
 * Week15 (Jan 4): Operating System and RISC-V
     - video: [The Future of Operating Systems on RISC-V](https://youtu.be/emnN9p4vhzk) / [transcript](https://www.infoq.com/presentations/risc-v-future/)
+    - [Multithreading Issues, Cache Coherency](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec23.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqgj_8Og51XoE7iyAu5yEWZ)
     - [Advanced topics on Synchronization - 1](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L19-MCM.pdf)
     - [Advanced topics on Synchronization - 2](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L22-Synch.pdf)
 
