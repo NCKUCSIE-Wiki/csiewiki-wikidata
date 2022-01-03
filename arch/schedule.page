@@ -143,6 +143,11 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - video: [The Future of Operating Systems on RISC-V](https://youtu.be/emnN9p4vhzk) / [transcript](https://www.infoq.com/presentations/risc-v-future/)
     - [Multithreading Issues, Cache Coherency](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec23.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqgj_8Og51XoE7iyAu5yEWZ)
        + Let's skip OpenMP part
+    - [Multithreaded Application Synchronization Part I](https://youtu.be/kk8q5rwm1ZI)
+        + Taken from [CSCI 463: Computer Architecture and Systems Organization](http://faculty.cs.niu.edu/~winans/CS463/2021-fa/)
+        + [RISC-V spec references the word 'hart' - what does 'hart' mean?](https://stackoverflow.com/questions/42676827/risc-v-spec-references-the-word-hart-what-does-hart-mean)
+    - [Multithreaded Application Synchronization Part II](https://youtu.be/dAVZTHxC16w)
+        + RISC-V AMOSWAP instruction
     - [Advanced topics on Synchronization - 1](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L19-MCM.pdf)
     - [Advanced topics on Synchronization - 2](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L22-Synch.pdf)
 
