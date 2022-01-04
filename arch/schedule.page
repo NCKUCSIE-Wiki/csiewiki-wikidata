@@ -155,6 +155,8 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
         + RISC-V AMOSWAP instruction
     - [Advanced topics on Synchronization - 1](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L19-MCM.pdf)
     - [Advanced topics on Synchronization - 2](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L22-Synch.pdf)
+    -  [2020 Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6)
+         * [solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
 
 * Week16 (Jan 11): I/O, cache coherence
     -  [Quiz7](https://hackmd.io/@sysprog/arch2020-quiz6)
