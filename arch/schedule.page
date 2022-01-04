@@ -139,7 +139,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - [Thread-Level Parallelism](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec22.pdf) / [video](https://youtu.be/QLdN6p7-43U)
         + Let's skip OpenMP part
 
-* Week15 (Jan 4): Operating System and RISC-V, cache coherence
+* Week15 (Jan 4): Operating System and RISC-V, cache coherence / online via [youtu.be/u328lqcrWrQ](https://youtu.be/u328lqcrWrQ)
     - Announcement:
         * Quiz7 on Jan 11
         * Check [the listing of final/term projects](https://hackmd.io/@sysprog/arch2021-projects)
