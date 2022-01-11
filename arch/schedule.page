@@ -158,7 +158,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     -  [2020 Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6)
          * [solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
 
-* Week16 (Jan 11): I/O, cache coherence / online via [youtu.be/sB3hQO_6Hrg](https://youtu.be/sB3hQO_6Hrg)
+* Week16 (Jan 11): I/O / online via [youtu.be/sB3hQO_6Hrg](https://youtu.be/sB3hQO_6Hrg)
     -  [Quiz7](https://hackmd.io/@sysprog/arch2021-quiz7) / [solution](https://hackmd.io/@sysprog/arch2021-quiz7-sol)
     - [I/O: Devices, Polling, Interrupts](https://drive.google.com/drive/folders/1NRoyYSbAyarMhmPD5LiY6YEqYpLoZx_s) / [video](https://youtu.be/0dyqcFC_q2Q?t=1247)
         * Traps/Interrupts/Exceptions
