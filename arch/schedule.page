@@ -166,4 +166,6 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
 
 * Week17 (Jan 18): Modern Processors / online via [youtu.be/lBQI2uBqaak](https://youtu.be/lBQI2uBqaak)
     - [Modern Processor Architecture](https://6004.mit.edu/web/_static/fall21/resources/sp21/L22.pdf) / [video](https://youtu.be/sbGtFtxqkkg)
-    - [Introduction to Dynamic Branch Prediction](https://youtu.be/PFmx2p6NA0A), [Advanced Branch Prediction](https://youtu.be/avp3bDqCXYM), [Tournament Predictors and Branch Prediction Accuracy](https://youtu.be/-T8yDJ8vTuI), [Hardware Based Speculation](https://youtu.be/mFtX28lH4O8)
+    - [Introduction to Dynamic Branch Prediction](https://youtu.be/PFmx2p6NA0A), [Advanced Branch Prediction](https://youtu.be/avp3bDqCXYM), [Tournament Predictors and Branch Prediction Accuracy](https://youtu.be/-T8yDJ8vTuI)
+    - Project: [Analyze and improve srv32](https://hackmd.io/@peishan/HkJrtKpoY)
+    - [Hardware Based Speculation](https://youtu.be/mFtX28lH4O8)
