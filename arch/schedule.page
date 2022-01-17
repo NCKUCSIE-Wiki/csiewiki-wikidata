@@ -114,7 +114,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - [Multi-level Caches, Cache Questions](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec17.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqHsuO6U2bIpwDGqO6UAetk)
     - [The golden age of ever-changing computer architecture](https://hackaday.com/2019/11/27/the-golden-age-of-ever-changing-computer-architecture/)
         * [Cerebras](https://cerebras.net/) announced a system which connects multiple integrated circuits (commonly called "chips") into a neural network with many connections in Aug 2021. It enables a single system to support AI models with more than 120 trillion parameters.
-    - [Virtual Memory](https://6004.mit.edu/web/_static/FA20fall20/resources/sp20/L17.pdf) / [video](https://youtu.be/TsxZlXOrt8U)
+    - [Virtual Memory](https://6004.mit.edu/web/_static/fall21/resources/sp21/L18.pdf) / [video](https://youtu.be/TsxZlXOrt8U)
         * UCB: [Virtual Memory](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec19.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ar2Wia7JngBFMmwRlr4s79j)
     - [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
  
@@ -123,7 +123,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
         + Be aware of term projects.
         + Next week, we will review all the assignments.
     - [Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol)
-    - [Virtual Memory](https://6004.mit.edu/web/_static/FA20fall20/resources/sp20/L17.pdf) / [video](https://youtu.be/TsxZlXOrt8U)
+    - [Virtual Memory](https://6004.mit.edu/web/_static/fall21/resources/sp21/L18.pdf) / [video](https://youtu.be/TsxZlXOrt8U)
     - [Lab4: Cache](https://cs61c.org/fa20/labs/lab08/)
         + [Reference work](https://hackmd.io/@Lt35rTMeTi22rWqrBgSQzg/SkXXQ_LJ8)
     - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
@@ -135,7 +135,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
         * Your grades will be delivered on Jan 21, 2022
         * Check the listing of final/term projects
     - [Term projects 2021](https://hackmd.io/@sysprog/arch2021-projects)
-    - [Synchronization](https://6004.mit.edu/web/_static/FA20fall20/resources/sp20/L20.pdf) / [video](https://youtu.be/r8H_af_dCF0)
+    - [Synchronization](https://6004.mit.edu/web/_static/fall21/resources/sp21/L21.pdf) / [video](https://youtu.be/r8H_af_dCF0)
     - [Thread-Level Parallelism](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec22.pdf) / [video](https://youtu.be/QLdN6p7-43U)
         + Let's skip OpenMP part
 
@@ -165,8 +165,5 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
         * Trap Handling in 5-Stage Pipeline
 
 * Week17 (Jan 18): Modern Processors / online via [youtu.be/lBQI2uBqaak](https://youtu.be/lBQI2uBqaak)
-    - [Cache Coherence](https://6004.mit.edu/web/_static/fall20/resources/lectures/L22.pdf) / [video](https://youtu.be/vxrok3KKuGQ)
-        * Modern microprocessors usually have 2 to 8 cores where each core has a private cache for performance
-        * Modified/Shared/Invalid (MSI) Protocol, MESI: An Enhanced MSI protocol to increased performance for private read-write data
-    - [Modern Processor Architecture](https://6004.mit.edu/web/_static/fall20/resources/lectures/L23.pdf) / [video](https://youtu.be/sbGtFtxqkkg)
+    - [Modern Processor Architecture](https://6004.mit.edu/web/_static/fall21/resources/sp21/L22.pdf) / [video](https://youtu.be/sbGtFtxqkkg)
     - [Introduction to Dynamic Branch Prediction](https://youtu.be/PFmx2p6NA0A), [Advanced Branch Prediction](https://youtu.be/avp3bDqCXYM), [Tournament Predictors and Branch Prediction Accuracy](https://youtu.be/-T8yDJ8vTuI), [Hardware Based Speculation](https://youtu.be/mFtX28lH4O8)
