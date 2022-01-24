@@ -84,7 +84,7 @@ categories: User
     - 您有沒有想過，為何「二補數」(2’s complement) 被電腦廣泛採用呢？背後的設計考量是什麼？本文嘗試從數學觀點去解讀編碼背後的原理
 * [圖解傅立葉分析](https://hackmd.io/@sysprog/fourier-transform)
     - 傅立葉 (Fourier) 分析不僅是個數學工具，更是種徹底顛覆一個人以前世界觀的思維模式
-    - 不幸的是，傅立葉分析的公式看起來太復雜，以至於很多人囫圇吞棗，並從此對它深惡痛絕
+    - 不幸的是，傅立葉分析的公式看起來太複雜，以至於很多人囫圇吞棗，並從此對它深惡痛絕
     - 本文在不需要特別熟悉數學工具的狀況下，讓讀者體會到藉由傅立葉分析看到世界的另一個樣貌
 * [從 Revolution OS 看作業系統生態變化](https://hackmd.io/@sysprog/revolution-os-note)
     - 2001 年，J. T. S. Moore 以自由軟體和開放原始碼軟體發展為主題，導演了相當可貴的紀錄片《[Revolution OS](https://en.wikipedia.org/wiki/Revolution_OS)》，訪談了若干先鋒者，是理解駭客 (hacker)、 GNU 計畫、自由軟體基金會 (FSF)、Linux 核心、開放原始碼 (open source) 和自由軟體 (free software) 基於不同理念各自發展、Netscape 宣佈 Mozilla 開放原始碼專案、基於 Apache 和一系列開放原始碼技術的公司、在 NASDAQ 上市等等歷程的第一手資訊
