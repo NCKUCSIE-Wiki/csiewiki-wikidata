@@ -164,7 +164,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
         * Traps/Interrupts/Exceptions
         * Trap Handling in 5-Stage Pipeline
 
-* Week17 (Jan 18): Modern Processors / online via [youtu.be/lBQI2uBqaak](https://youtu.be/lBQI2uBqaak)
+* Week17 (Jan 18): Modern Processors
     - [listing of final/term projects](https://hackmd.io/@sysprog/arch2021-projects)
     - [Modern Processor Architecture](https://6004.mit.edu/web/_static/fall21/resources/sp21/L22.pdf) / [video](https://youtu.be/sbGtFtxqkkg)
     - [Introduction to Dynamic Branch Prediction](https://youtu.be/PFmx2p6NA0A), [Advanced Branch Prediction](https://youtu.be/avp3bDqCXYM), [Tournament Predictors and Branch Prediction Accuracy](https://youtu.be/-T8yDJ8vTuI)
