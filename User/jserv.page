@@ -61,13 +61,14 @@ categories: User
 * [xv6-x86_64](https://github.com/jserv/xv6-x86_64): 將 MIT [Xv6](http://pdos.csail.mit.edu/6.828/2014/xv6.html) 移植到 x86_64 架構並重新整理程式碼，允許更多功能和效能提升
 * [Codezero microkernel](https://github.com/jserv/codezero): 依循 [L4 microkernel](https://en.wikipedia.org/wiki/L4_microkernel_family) 設計原則，實作短小精悍的作業系統核心，支援 ARMv5 架構 [2011 年商業應用]
 
-編譯器作品
+編譯器和虛擬機器作品
 ========
 * [AMaCC](https://github.com/jserv/amacc): 用 1500 行 C 程式打造出能夠[編譯自己](https://en.wikipedia.org/wiki/Self-hosting_(compilers))並支援 ARMv7-A 架構的 C 語言編譯器，可輸出 ELF 執行檔或者 JIT 編譯執行
 * [MazuCC](https://github.com/jserv/MazuCC): 支援部分 C99 規格的 C 語言編譯器，可輸出 x86_64 組合語言
 * [shecc](https://github.com/jserv/shecc): 針對 ARMv7-A 架構的 C 語言編譯器，可[編譯自己](https://en.wikipedia.org/wiki/Self-hosting_(compilers))並輸出 Linux ELF 執行檔
 * [rubi](https://github.com/sysprog21/rubi): 類似 Ruby 程式語言的精簡實作，可由 JIT 編譯執行，原始程式碼相當精簡
 * [jitboy](https://github.com/sysprog21/jitboy): 針對 [Game Boy](https://en.wikipedia.org/wiki/Game_Boy) 掌上遊戲機和內建 GBZ80 處理器發展的 JIT 編譯器，可動態將 GBZ80 指令轉換為 x86-64 指令
+* [rv32emu](https://github.com/sysprog21/rv32emu): 針對 32 位元 [RISC-V](https://riscv.org/) 處理器架構發展的指令集模擬器，支援多項延展指令
 
 編撰的電子書
 ==========
