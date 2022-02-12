@@ -39,7 +39,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
         * [題目 1 + 分析](https://hackmd.io/@sysprog/linked-list-quiz)`*`
         * [題目2](https://hackmd.io/@sysprog/linux2020-quiz1) / [參考題解1](https://hackmd.io/@Ryspon/HJVH8B0XU), [參考題解2](https://hackmd.io/@chses9440611/Sy5gwE37I)
         * [題目3](https://hackmd.io/@sysprog/sysprog2020-quiz1) / [參考題解](https://hackmd.io/@RinHizakura/BysgszHNw)
-    - [作業](https://hackmd.io/@sysprog/linux2021-homework1): 3 月 7 日截止繳交
+    - [作業](https://hackmd.io/@sysprog/linux2021-homework1): 截止繳交
         * [lab0](https://hackmd.io/@sysprog/linux2021-lab0)
         * [quiz1](https://hackmd.io/@sysprog/SJlXFVMzMu)
         * [culture](https://hackmd.io/@sysprog/linux2021-culture)
@@ -69,7 +69,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
         * 探討 heap (動態配置產生，系統會存放在另外一塊空間)、data alignment，和 malloc 實作機制等議題。這些都是理解 Linux 核心運作的關鍵概念。
     * [C 語言: bit-field](https://hackmd.io/s/SJ8y82ZYQ)
         - bit field 是 C 語言一個很被忽略的特徵，但在 Linux 和 gcc 這類系統軟體很常出現，不僅是精準規範每個 bit 的作用，甚至用來「擴充」C 語言
-    - [作業](https://hackmd.io/@sysprog/linux2021-homework2): 3 月 15 日截止繳交
+    - [作業](https://hackmd.io/@sysprog/linux2021-homework2): 截止繳交
         - [quiz2](https://hackmd.io/@sysprog/ByHRgtofu)
     - 第 2 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz2) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/rk9fG7zG_)
@@ -85,7 +85,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * [C 語言: goto 和流程控制](https://hackmd.io/s/B1e2AUZeM)`*`
         - goto 在 C 語言被某些人看做是妖魔般的存在，不過實在不用這樣看待，至少在 Linux 核心原始程式碼中，goto 是大量存在 (跟你想像中不同吧)。有時不用 goto 會寫出更可怕的程式碼
     * [C 語言程式設計技巧](https://hackmd.io/s/HyIdoLnjl)`*`
-    * [作業](https://hackmd.io/@sysprog/linux2021-homework3): 3 月 22 日截止繳交
+    * [作業](https://hackmd.io/@sysprog/linux2021-homework3): 截止繳交
         - [review](https://hackmd.io/@sysprog/linux2021-review), [fibdrv](https://hackmd.io/@sysprog/linux2021-fibdrv), [quiz3](https://hackmd.io/@sysprog/ryCRU-Hmu)
     * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz3) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/@sysprog/rk9fG7zG_)
@@ -112,7 +112,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * [C 語言: 動態連結器](https://hackmd.io/s/HkK7Uf4Ml)`*`
     * [C 語言: 連結器和執行檔資訊](https://hackmd.io/s/SysiUkgUV)`*`
     * [C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/s/Hkcr5cn97)`*`
-    * [作業](https://hackmd.io/@sysprog/linux2021-homework4): 4 月 5 日截止繳交
+    * [作業](https://hackmd.io/@sysprog/linux2021-homework4): 截止繳交
         * [quiz4](https://hackmd.io/@sysprog/H1DrIkC7O), [refinement](https://hackmd.io/@sysprog/By7ewkAX_)
     * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz4) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/rk9fG7zG_)
@@ -123,14 +123,14 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
         - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
     * [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/s/rJbcHS5LE)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
-    * [作業](https://hackmd.io/@sysprog/linux2021-homework5): 4 月 12 日截止繳交
+    * [作業](https://hackmd.io/@sysprog/linux2021-homework5): 截止繳交
         - [quiz5](https://hackmd.io/@sysprog/HJ9KsYYNO), [sort](https://hackmd.io/@sysprog/linux2021-sort)
     * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz5) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HJeFPfP4u)
 
 * 第 6 週 (Mar 21, 22, 24): Linux Process
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/s/rJbcHS5LE)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
-    * [作業](https://hackmd.io/@sysprog/linux2021-homework6): 4 月 20 日截止繳交
+    * [作業](https://hackmd.io/@sysprog/linux2021-homework6): 截止繳交
         - quiz6
     * Week6 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz6) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HJeFPfP4u)
@@ -231,7 +231,6 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
 * 第 15 週 (May 23, 24, 26): 多核處理器架構 + Linux 同步處理機制 + 程式碼最佳化概念
     * 公告:
         - 請學員及早進行 [課程期末專題](https://hackmd.io/@sysprog/linux2021-projects) 並預約一對一討論
-        - 預計 6 月 30 日 15:00，授課教師會繳交學期成績，在這之前都有補救空間
     * [Multi-Core in Linux](https://youtu.be/UNI6Mbqryv0)`*`
     * [Multicore Caches / Cache Coherence](https://computationstructures.org/lectures/parallel/parallel.html)`*` / [video](https://youtu.be/vxrok3KKuGQ)
     * [並行程式設計: Lock-Free Programming](https://hackmd.io/@sysprog/concurrency-lockfree)`*`
