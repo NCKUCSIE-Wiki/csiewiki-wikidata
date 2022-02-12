@@ -1,20 +1,21 @@
 ---
-title: Linux 核心設計 (Linux Kernel Internals)
+title: Linux 核心設計/實作 (Linux Kernel Internals)
 categories: linux, performance, security, compiler, kernel, rtos
 toc: no
 ---
 
 - Instructor: [Jim Huang](/User/jserv) (黃敬群) `<jserv.tw@gmail.com>`
     * [Facebook 粉絲專頁](https://www.facebook.com/JservFans) (不要擔心提了笨問題，這專門用來和學生互動，可預約一對一討論)
-- 討論區: [https://www.facebook.com/groups/system.software2021/](https://www.facebook.com/groups/system.software2021/)
+- 討論區: [https://www.facebook.com/groups/system.software2021/](https://www.facebook.com/groups/system.software2022/)
 - 課程信箱: `<embedded.master2015@gmail.com>`, [往年課程進度](/linux/schedule-old)
 - [Linux 核心設計 (線上講座)](https://hackmd.io/@sysprog/linux-kernel-internal)
 - 注意: 下方課程進度表標註有 `*` 的項目，表示內附錄影的教材
+- 注意: 新開的「Linux 核心實作」課程內容幾乎與「Linux 核心設計」一致，採「全線上」方式進行
 
-Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
+Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
 ------------------------------------------------------
-* 第 1 週 (Feb 23): 誠實面對自己
-    - [課程簡介和注意須知](https://docs.google.com/presentation/d/1bJFwpg20GCJmOcdOt6NRYGU3HKVX-Dt0fsuohqTY8x4/edit?usp=sharing) / [課程簡介解說錄影](https://youtu.be/VH6vNWqdvNI)`*`
+* 第 1 週 (Feb 14, 15, 17): 誠實面對自己
+    - [課程簡介和注意須知](https://docs.google.com/presentation/d/1B80k91_3_XuZ0zMzfdgS-D1I29VaHxZTg3XD3bok0io/edit?usp=sharing) / 課程簡介解說錄影`*`
         * 每週均安排隨堂測驗，採計其中最高分的 8 次
         * 學期評分方式: 隨堂測驗 (20%) + 個人作業+報告及專題 (30%) + 自我評分 (50%)
     - 歷屆修課學生心得: [張家榮](/User/JaredCJR), [陳品睿](/User/ggary9424), [蕭奕凱](/User/Veck), [方鈺學](/User/JulianATA)
@@ -45,7 +46,7 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
     - 第 1 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz1) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/rk9fG7zG_)
 
-* 第 2 週 (Mar 2): C 語言程式設計
+* 第 2 週 (Feb 21, 22, 24): C 語言程式設計
     * [課程基本資料表單](https://docs.google.com/forms/d/e/1FAIpQLScw3SLFy428GE6yCDfJZuP7qH8mFeXmoQH506pVpb9XWh-FQw/viewform): 務必填寫，以接收課程資訊
     * [Linux: 作業系統術語及概念](https://hackmd.io/@sysprog/linux-concepts)`*`
     * [系統軟體開發思維](https://hackmd.io/s/B1KnHcwBN)
@@ -73,7 +74,7 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
     - 第 2 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz2) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/rk9fG7zG_)
 
-* 第 3 週 (Mar 9): 並行和 C 語言程式設計
+* 第 3 週 (Feb 28, Mar 1, 3): 並行和 C 語言程式設計
     * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency/)`*`: 應涵蓋 Part 1 到 Part 4
     * [C 語言: 函式呼叫](https://hackmd.io/s/SJ6hRj-zg)`*`
         - 著重在計算機架構對應的支援和行為分析
@@ -89,7 +90,7 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
     * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz3) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/@sysprog/rk9fG7zG_)
 
-* 第 4 週 (Mar 16): 浮點數 + 編譯器和連結器
+* 第 4 週 (Mar 7, 8, 10): 浮點數 + 編譯器和連結器
     * [CS:APP 第 2 章重點提示和練習](https://hackmd.io/@sysprog/CSAPP-ch2)`*`
     * [浮點數運算](https://hackmd.io/@sysprog/c-floating-point)`*`: 工程領域往往是一系列的取捨結果，浮點數更是如此，在軟體發開發有太多失誤案例源自工程人員對浮點數運算的掌握不足，本議程希望藉由探討真實世界的血淋淋案例，帶著學員思考 IEEE 754 規格和相關軟硬體考量點，最後也會探討在深度學習領域為了改善資料處理效率，而引入的 [BFloat16](https://en.wikipedia.org/wiki/Bfloat16_floating-point_format) 這樣的新標準
     * 核心開發者當然要熟悉編譯器行為
@@ -116,7 +117,7 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
     * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz4) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/rk9fG7zG_)
 
-* 第 5 週 (Mar 23): Linux Process
+* 第 5 週 (Mar 14, 15, 17): Linux Process
     * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
     * [Linux: 不僅是個執行單元的 Process](https://hackmd.io/s/r1ojuBGgE)`*`: Linux 核心對於 UNIX Process 的實作相當複雜，不僅蘊含歷史意義 (幾乎每個欄位都值得講古)，更是反映出資訊科技產業的變遷，核心程式碼的 `task_struct` 結構體更是一絕，廣泛涵蓋 process 狀態、處理器、檔案系統、signal 處理、底層追蹤機制等等資訊，更甚者，還很曖昧地保存著 thread 的必要欄位，好似這兩者天生就脫不了干係
         - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
@@ -127,14 +128,14 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
     * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz5) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HJeFPfP4u)
 
-* 第 6 週 (Mar 30): Linux Process
+* 第 6 週 (Mar 21, 22, 24): Linux Process
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/s/rJbcHS5LE)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
     * [作業](https://hackmd.io/@sysprog/linux2021-homework6): 4 月 20 日截止繳交
         - quiz6
     * Week6 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz6) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HJeFPfP4u)
 
-* 第 7 週 (Apr 6): 並行和多執行緒
+* 第 7 週 (Mar 28, 29, 31): 並行和多執行緒
     * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency/)`*`: 應涵蓋 Part 5 到 Part 7
     * [Linux: 透過 eBPF 觀察作業系統行為](https://hackmd.io/s/SJTuuG9a7)`*`: 動態追蹤技術（dynamic tracing）是現代軟體的進階除錯和追蹤機制，讓工程師以非常低的成本，在非常短的時間內，克服一些不是顯而易見的問題。它興起和繁榮的一個大背景是，我們正處在一個快速增長的網路互連異質運算環境，工程人員面臨著兩大方面的挑戰：
         - 規模：無論是使用者規模還是機房的規模、機器的數量都處於快速增長的時代;
@@ -148,7 +149,7 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
     * [Linux: 淺談同步機制](https://hackmd.io/s/SJpp-bN0m)`*`
     * Week7 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz7) (內含作答表單)
 
-* 第 8 週 (Apr 13): 處理器架構和 Web 伺服器開發
+* 第 8 週 (Apr 4, 5, 7): 處理器架構和 Web 伺服器開發
     * [近期 Facebook 討論區回顧](https://m.facebook.com/groups/system.software2021)
     * [高效 Web 伺服器開發](https://hackmd.io/@sysprog/fast-web-server)
     * [in-kernel HTTP server](https://hackmd.io/@sysprog/kernel-web-server)`*`
@@ -164,11 +165,11 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
     * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz8) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HJeFPfP4u)
 
-* 第 9 週 (Apr 20): 作業和隨堂測驗回顧
+* 第 9 週 (Apr 11, 12, 14): 作業和隨堂測驗回顧
     * Week9 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz9) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HJeFPfP4u)
 
-* 第 10 週 (Apr 27): 記憶體管理
+* 第 10 週 (Apr 18, 19, 21): 記憶體管理
     * 公告: [Linux 核心設計課程期末專題](https://hackmd.io/@sysprog/linux2021-projects)
         - 選課的學生: 若沒有出現你的 GitHub 帳號，請[聯繫授課教師](https://www.facebook.com/JservFans)
         - 旁聽的學生: 只要你有決心投入 (至少到五月底)，也歡迎挑戰這些題目，進行前請[聯繫授課教師](https://www.facebook.com/JservFans)
@@ -179,7 +180,7 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
     * Week10 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz10) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HJeFPfP4u)
 
-* 第 11 週 (May 4): timerfd + 資料結構
+* 第 11 週 (Apr 25, 26, 28): timerfd + 資料結構
     * [透過 timerfd 處理週期性任務](https://hackmd.io/@sysprog/linux-timerfd)
     * [An Introduction to Cache-Oblivious Data Structures](https://rcoh.me/posts/cache-oblivious-datastructures/)
         - 「自動快取資料結構」，特性是無視硬體特定的快取大小，可能達到接近最優化快取的效能;
@@ -191,7 +192,7 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
     * Linux: linked list, Queues, Maps, Binary Trees: [錄影](https://www.youtube.com/watch?v=7ZQNb7Fu_A4)`*` / [共筆](https://docs.google.com/document/d/1n31QMPyvdAkS2uxM5AyKu_DD3uRu6-zoRukAitDwPvA/edit#)
     * Week11 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz11) (內含作答表單)
 
-* 第 12 週 (May 11): 共享記憶體 + 物件導向程式設計 + I/O
+* 第 12 週 (May 2, 3, 5): 共享記憶體 + 物件導向程式設計 + I/O
     * [POSIX Shared Memory](http://logan.tw/posts/2018/01/07/posix-shared-memory/): 在 Linux 中要實作出共享記憶體 (shared memory) 的機制很多，例如: 1) SysV shared memory; POSIX shared memory; 3) 以 mmap 對檔案進行記憶體映射; 4) 以 memfd_create() 實作跨越行程存取; 本文章探討 POSIX shared memory 的使用，並提供完整應用案例，最後探討相關的同步議題。
     * [解析 Linux 共享記憶體機制](https://hackmd.io/@sysprog/linux-shared-memory)
     * [Linux: 賦予應用程式生命的系統呼叫](https://hackmd.io/s/HyNbWoD1V)`*`
@@ -204,7 +205,7 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
     * [CS:APP 第 10 章重點提示](https://hackmd.io/s/H1TtmVTTz)`*`
     * Week12 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz12) (內含作答表單)
 
-* 第 13 週 (May 18): 同步機制 + 裝置驅動程式模型
+* 第 13 週 (May 9, 10, 12): 同步機制 + 裝置驅動程式模型
     * [Linux: RCU 同步機制](https://hackmd.io/s/H19V4eyfV)`*`
     * [C11 atomic variables and the kernel](https://lwn.net/Articles/586838/) / [Linux Documentation: Circular Buffers](https://www.kernel.org/doc/Documentation/circular-buffers.txt)
     * [Linux: 裝置驅動程式介面和模型](https://github.com/gregkh/presentation-driver-model) / [錄影](https://www.youtube.com/watch?v=AdPxeGHIZ74)`*` by [Greg Kroah-Hartman](https://github.com/gregkh)
@@ -212,7 +213,7 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
     * [Linux: Device Tree](https://events.static.linuxfound.org/sites/events/files/slides/petazzoni-device-tree-dummies.pdf) / [錄影](https://www.youtube.com/watch?v=m_NyYEBxfn8)`*`
     * Week13 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz13) (內含作答表單)
 
-* 第 14 週 (May 25): Linux 核心發展回顧 + 網路封包處理
+* 第 14 週 (May 16, 17, 19): Linux 核心發展回顧 + 網路封包處理
     * [討論區回顧](https://m.facebook.com/groups/system.software2021)
     * **[cserv](https://github.com/sysprog21/cserv)** is an event-driven and non-blocking web server.
         - 展現 [event-driven, non-blocking I/O Multiplexing](https://hackmd.io/@sysprog/fast-web-server) (主要是 [epoll](https://man7.org/linux/man-pages/man7/epoll.7.html)), shared memory, processor affinity, coroutine, context switch, UNIX signal, [dynamic linking](https://hackmd.io/@sysprog/c-dynamic-linkage), circular buffer, hash table, red-black tree, atomic operations 等議題的實際應用
@@ -227,7 +228,7 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
         - [圖解 Linux tcpdump](https://jgsun.github.io/2019/01/21/linux-tcpdump/)
     * Week14 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz14) (內含作答表單)
 
-* 第 15 週 (Jun 1): 多核處理器架構 + Linux 同步處理機制 + 程式碼最佳化概念
+* 第 15 週 (May 23, 24, 26): 多核處理器架構 + Linux 同步處理機制 + 程式碼最佳化概念
     * 公告:
         - 請學員及早進行 [課程期末專題](https://hackmd.io/@sysprog/linux2021-projects) 並預約一對一討論
         - 預計 6 月 30 日 15:00，授課教師會繳交學期成績，在這之前都有補救空間
@@ -243,7 +244,7 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
     * [CS:APP Assign 5.18](https://hackmd.io/s/rkdzvWJTX)`*`
     * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz15) (內含作答表單)
 
-* 第 16 週 (Jun 8): 多核處理器架構
+* 第 16 週 (May 30, 21, Jun 3): 多核處理器架構
     * [A tour of the ARM architecture and its Linux support](https://youtu.be/NNol7fRGo2E)`*`
     * [Multiprocessor OS](/11-smp_os.pdf)
     * [How Reliable Are Modern CPUs?](https://hardware.slashdot.org/story/21/06/05/1648225/how-reliable-are-modern-cpus)`*`
@@ -254,7 +255,7 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
         - [第 13 週測驗題](https://hackmd.io/@sysprog/linux2021-quiz13)
     * Week16 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz16) (內含作答表單)
  
-* 第 17 週 (Jun 15): 多處理器架構
+* 第 17 週 (Jun 6, 7, 9): 多處理器架構
     * [Multiprocessor OS](/11-smp_os.pdf)
     * [Linux-Kernel Memory Ordering: Help Arrives At Last!](http://www.rdrop.com/users/paulmck/scalability/paper/LinuxMM.2017.04.08b.Barcamp.pdf) / [video](https://www.youtube.com/watch?v=ULFytshTvIY)`*`
     * [atomic 和 memory order](https://medium.com/fcamels-notes/%E7%B0%A1%E4%BB%8B-c-11-memory-model-b3f4ed81fea6), [memory barrier 的實作和效果](https://medium.com/fcamels-notes/%E5%BE%9E%E7%A1%AC%E9%AB%94%E8%A7%80%E9%BB%9E%E4%BA%86%E8%A7%A3-memry-barrier-%E7%9A%84%E5%AF%A6%E4%BD%9C%E5%92%8C%E6%95%88%E6%9E%9C-416ff0a64fc1)
@@ -263,7 +264,7 @@ Linux 核心設計 (Spring 2021) 課程進度表暨線上資源
         - [第 14 週測驗題](https://hackmd.io/@sysprog/linux2021-quiz14)
     * Week17 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz17) (內含作答表單)
 
-* 第 18 週 (Jun 22): 多核處理器, 時鐘管理, Real-time
+* 第 18 週 (Jun 13, 14, 16): 多核處理器, 時鐘管理, Real-time
     * 隨堂測驗回顧:
         - [第 4 週測驗題](https://hackmd.io/@93i7xo2/sysprog2021q1-hw4-quiz4)
         - [第 15 週測驗題](https://hackmd.io/@sysprog/linux2021-quiz15)
