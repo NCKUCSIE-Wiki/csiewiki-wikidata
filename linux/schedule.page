@@ -50,7 +50,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
 * 第 2 週 (Feb 21, 22, 24): C 語言程式設計
     * 課程基本資料表單: 務必填寫，以接收課程資訊
     * [Linux: 作業系統術語及概念](https://hackmd.io/@sysprog/linux-concepts)`*`
-    * [系統軟體開發思維](https://hackmd.io/s/B1KnHcwBN)
+    * [系統軟體開發思維](https://hackmd.io/@sysprog/concepts)
     - [C 語言: 數值系統](https://hackmd.io/@sysprog/c-numerics)`*`
         - 儘管數值系統並非 C 語言所特有，但在 Linux 核心大量存在 u8/u16/u32/u64 這樣透過 typedef 所定義的型態，伴隨著各式 alignment 存取，若學員對數值系統的認知不夠充分，可能立即就被阻擋在探索 Linux 核心之外 —— 畢竟你完全搞不清楚，為何在 Linux 核心存取特定資料需要繞一大圈。
     - [C 語言: Bitwise 操作](https://hackmd.io/@sysprog/c-bitwise)`*`
