@@ -70,9 +70,10 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
         * 探討 heap (動態配置產生，系統會存放在另外一塊空間)、data alignment，和 malloc 實作機制等議題。這些都是理解 Linux 核心運作的關鍵概念。
     * [C 語言: bit-field](https://hackmd.io/s/SJ8y82ZYQ)
         - bit field 是 C 語言一個很被忽略的特徵，但在 Linux 和 gcc 這類系統軟體很常出現，不僅是精準規範每個 bit 的作用，甚至用來「擴充」C 語言
-    - [作業](https://hackmd.io/@sysprog/linux2021-homework2): 截止繳交
-        - [quiz2](https://hackmd.io/@sysprog/ByHRgtofu)
-    - 第 2 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz2) (內含作答表單)
+    - [題目](https://hackmd.io/@sysprog/linux2021-quiz2)`*` / 參考題解
+    - [作業](https://hackmd.io/@sysprog/linux2022-homework2): 截止繳交
+        - [quiz2](-)
+    - 第 2 週隨堂測驗: [題目]() (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/rk9fG7zG_)
 
 * 第 3 週 (Feb 28, Mar 1, 3): 並行和 C 語言程式設計
