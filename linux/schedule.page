@@ -77,6 +77,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/5zdyXn6uQMOeSoVBapuVNw?view)
 
 * 第 3 週 (Feb 28, Mar 1, 3): 並行和 C 語言程式設計
+    * [Linux: 發展動態回顧](https://hackmd.io/@sysprog/linux-dev-review)`*`
     * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency/)`*`: 應涵蓋 Part 1 到 Part 4
     * [C 語言: 函式呼叫](https://hackmd.io/s/SJ6hRj-zg)`*`
         - 著重在計算機架構對應的支援和行為分析
@@ -215,12 +216,11 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * [Linux: Device Tree](https://events.static.linuxfound.org/sites/events/files/slides/petazzoni-device-tree-dummies.pdf) / [錄影](https://www.youtube.com/watch?v=m_NyYEBxfn8)`*`
     * Week13 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz13) (內含作答表單)
 
-* 第 14 週 (May 16, 17, 19): Linux 核心發展回顧 + 網路封包處理
+* 第 14 週 (May 16, 17, 19): 網路封包處理
     * [討論區回顧](https://m.facebook.com/groups/system.software2021)
     * **[cserv](https://github.com/sysprog21/cserv)** is an event-driven and non-blocking web server.
         - 展現 [event-driven, non-blocking I/O Multiplexing](https://hackmd.io/@sysprog/fast-web-server) (主要是 [epoll](https://man7.org/linux/man-pages/man7/epoll.7.html)), shared memory, processor affinity, coroutine, context switch, UNIX signal, [dynamic linking](https://hackmd.io/@sysprog/c-dynamic-linkage), circular buffer, hash table, red-black tree, atomic operations 等議題的實際應用
         - 可視為 [seHTTPd](https://hackmd.io/@sysprog/linux2020-sehttpd) 的後繼改進實作
-    * [Linux: 發展動態回顧](https://hackmd.io/@sysprog/linux-dev-review)`*`
     * [Memory Externalization With userfaultfd](http://ftp.ntu.edu.tw/pub/linux/kernel/people/andrea/userfaultfd/userfaultfd-LSFMM-2015.pdf) / [錄影](https://youtu.be/pC8cWWRVSPw)`*` / [kernel documentation: userfaults](https://www.kernel.org/doc/html/latest/admin-guide/mm/userfaultfd.html)
     * [How Linux Processes Your Network Packet](https://www.slideshare.net/DevopsCon/how-linux-processes-your-network-packet-elazar-leibovich) / [錄影](https://youtu.be/3Ij0aZRsw9w)`*`
     * [Kernel packet capture technologies](https://www.slideshare.net/ennael/kernel-recipes-2015-kernel-packet-capture-technologies) / [錄影](https://youtu.be/5gEWyCW-qx8)`*`
