@@ -88,10 +88,9 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * [C 語言: goto 和流程控制](https://hackmd.io/s/B1e2AUZeM)`*`
         - goto 在 C 語言被某些人看做是妖魔般的存在，不過實在不用這樣看待，至少在 Linux 核心原始程式碼中，goto 是大量存在 (跟你想像中不同吧)。有時不用 goto 會寫出更可怕的程式碼
     * [C 語言程式設計技巧](https://hackmd.io/s/HyIdoLnjl)`*`
-    * [作業](https://hackmd.io/@sysprog/linux2021-homework3): 截止繳交
-        - [review](https://hackmd.io/@sysprog/linux2021-review), [fibdrv](https://hackmd.io/@sysprog/linux2021-fibdrv), [quiz3](https://hackmd.io/@sysprog/ryCRU-Hmu)
-    * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz3) (內含作答表單)
-    * [課堂問答簡記](https://hackmd.io/@sysprog/rk9fG7zG_)
+    * [作業](https://hackmd.io/@sysprog/linux2022-homework3): 截止繳交
+        - [review](https://hackmd.io/@sysprog/linux2022-review), [fibdrv](https://hackmd.io/@sysprog/linux2022-fibdrv), quiz3
+    * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz3) (內含作答表單)
 
 * 第 4 週 (Mar 7, 8, 10): 浮點數 + 編譯器和連結器
     * [CS:APP 第 2 章重點提示和練習](https://hackmd.io/@sysprog/CSAPP-ch2)`*`
