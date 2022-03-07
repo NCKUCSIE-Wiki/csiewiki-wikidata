@@ -114,10 +114,10 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * [C 語言: 動態連結器](https://hackmd.io/s/HkK7Uf4Ml)`*`
     * [C 語言: 連結器和執行檔資訊](https://hackmd.io/s/SysiUkgUV)`*`
     * [C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/s/Hkcr5cn97)`*`
-    * [作業](https://hackmd.io/@sysprog/linux2021-homework4): 截止繳交
-        * review](https://hackmd.io/@sysprog/linux2022-review), [quiz4](https://hackmd.io/@sysprog/H1DrIkC7O)
-    * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz4) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/@sysprog/rk9fG7zG_)
+    * [作業](https://hackmd.io/@sysprog/linux2022-homework4): 截止繳交
+        * review, quiz4
+    * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz4) (內含作答表單)
+    - 課堂問答簡記
 
 * 第 5 週 (Mar 14, 15, 17): Linux Process
     * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
