@@ -93,6 +93,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz3) (內含作答表單)
 
 * 第 4 週 (Mar 7, 8, 10): 浮點數 + 編譯器和連結器
+    * [追求神乎其技的程式設計之道](https://vgod.medium.com/7cccc3c68f1e)
     * [CS:APP 第 2 章重點提示和練習](https://hackmd.io/@sysprog/CSAPP-ch2)`*`
     * [浮點數運算](https://hackmd.io/@sysprog/c-floating-point)`*`: 工程領域往往是一系列的取捨結果，浮點數更是如此，在軟體發開發有太多失誤案例源自工程人員對浮點數運算的掌握不足，本議程希望藉由探討真實世界的血淋淋案例，帶著學員思考 IEEE 754 規格和相關軟硬體考量點，最後也會探討在深度學習領域為了改善資料處理效率，而引入的 [BFloat16](https://en.wikipedia.org/wiki/Bfloat16_floating-point_format) 這樣的新標準
     * 核心開發者當然要熟悉編譯器行為
