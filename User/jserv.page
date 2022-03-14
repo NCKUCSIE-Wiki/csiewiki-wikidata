@@ -36,10 +36,10 @@ categories: User
 課程和講座資訊
 ============
 - [演講行程和公告](https://github.com/jserv/talks)
+- 「[Linux 核心設計/實作](http://wiki.csie.ncku.edu.tw/linux/schedule)」 (成功大學; 2019-)
+- 「[Linux 核心設計](https://hackmd.io/@sysprog/linux-kernel-internal)」系列講座 (線上)
 - 「[進階電腦系統理論與實作](/sysprog/schedule)」課程 (成功大學; 2016-2021)
 - 「[計算機結構](/arch/schedule)」課程 (成功大學; 2019-)
-- 「[Linux 核心設計](http://wiki.csie.ncku.edu.tw/linux/schedule)」 (成功大學; 2019-)
-- 「[Linux 核心設計](https://beta.hackfoldr.org/linux)」系列講座 (線上)
 - 「[手機裡的 ARM 處理器](https://beta.hackfoldr.org/arm)」系列講座 (線上)
 - 「[現代處理器設計](https://beta.hackfoldr.org/cpu)」系列講座 (線上)
 - 「[你所不知道的 C 語言](https://hackmd.io/@sysprog/c-prog/)」系列講座 (線上)
