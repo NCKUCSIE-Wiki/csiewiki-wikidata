@@ -122,17 +122,18 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/@sysprog/ByxC6KNb5)
 
 * 第 5 週 (Mar 14, 15, 17): Linux Process
-    * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
+    * [Linux 核心模組運作原理](https://hackmd.io/@sysprog/linux-kernel-module)
     * [Linux: 不僅是個執行單元的 Process](https://hackmd.io/s/r1ojuBGgE)`*`: Linux 核心對於 UNIX Process 的實作相當複雜，不僅蘊含歷史意義 (幾乎每個欄位都值得講古)，更是反映出資訊科技產業的變遷，核心程式碼的 `task_struct` 結構體更是一絕，廣泛涵蓋 process 狀態、處理器、檔案系統、signal 處理、底層追蹤機制等等資訊，更甚者，還很曖昧地保存著 thread 的必要欄位，好似這兩者天生就脫不了干係
         - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
     * [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/s/rJbcHS5LE)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
-    * [作業](https://hackmd.io/@sysprog/linux2021-homework5): 截止繳交
-        - [quiz5](https://hackmd.io/@sysprog/HJ9KsYYNO), [sort](https://hackmd.io/@sysprog/linux2021-sort)
-    * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz5) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/@sysprog/HJeFPfP4u)
+    * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交
+        - quiz5, kmod
+    * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz5) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/@sysprog/ByxC6KNb5)
 
 * 第 6 週 (Mar 21, 22, 24): Linux Process
+    * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/s/rJbcHS5LE)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
     * [作業](https://hackmd.io/@sysprog/linux2021-homework6): 截止繳交
         - quiz6
