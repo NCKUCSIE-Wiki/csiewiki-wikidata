@@ -149,6 +149,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
         - 學員應及早跟授課教師預約一對一線上討論，請參照[課程行事曆](https://bit.ly/sysprog-calendar)裡頭標注 "Office hour" 的時段，發訊息到 [Facebook 粉絲專頁](https://www.facebook.com/JservFans/)，簡述你的學習狀況並選定偏好的時段 (建議是 30 分鐘)
         - 除了進行師生互動，一對一線上討論時段將重新調整學員的作業內容及規劃，請選課學員務必留意
         - 依據[成功大學行事曆](https://web.ncku.edu.tw/p/412-1000-6149.php?Lang=zh-tw)，4 月 4 日和 5 日放假，但本課程仍安排學員在家進行線上測驗，請留意信件通知
+    * [CPU Schedulers for Linux Kernel](https://docs.google.com/presentation/d/1qDSFOfhGF-AX3O8CNzoAkQr_5ohr0nMVDlNfPnM9hOI/edit?usp=sharing)
     * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency/)`*`: 應涵蓋 Part 5 到 Part 7
     * CS:APP 第 12 章
         - [Concurrency](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f19/www/lectures/24-concprog.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0be3c53f-5d35-40f0-a5ab-55897a2c91a5)`*`
