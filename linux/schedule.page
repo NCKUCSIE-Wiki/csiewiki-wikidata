@@ -160,7 +160,10 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * [Linux: 淺談同步機制](https://hackmd.io/s/SJpp-bN0m)`*`
     - [課堂問答簡記](https://hackmd.io/@sysprog/BJGn0nRMq)
 
-* 第 8 週 (Apr 4, 5, 7): 處理器架構和高效 Web 伺服器開發
+* 第 8 週 (Apr 4, 5, 7): 測驗 + 作業檢討
+    * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz8) (內含作答表單)
+
+* 第 9 週 (Apr 11, 12, 14): 伺服器開發 + 微處理器架構和 Linux 核心
     * [Linux: 透過 eBPF 觀察作業系統行為](https://hackmd.io/s/SJTuuG9a7)`*`: 動態追蹤技術（dynamic tracing）是現代軟體的進階除錯和追蹤機制，讓工程師以非常低的成本，在非常短的時間內，克服一些不是顯而易見的問題。它興起和繁榮的一個大背景是，我們正處在一個快速增長的網路互連異質運算環境，工程人員面臨著兩大方面的挑戰：
         - 規模：無論是使用者規模還是機房的規模、機器的數量都處於快速增長的時代;
         - 複雜度：業務邏輯越來越複雜，運作的軟體也變得越來越複雜，我們知道它會分成很多很多層次，包括作業系統核心和其上各種系統軟體，像資料庫和網頁伺服器，再往上有腳本語言或者其他高階語言的虛擬機器或執行環境，更上面是應用層面的各種業務邏輯的抽象層次和很多複雜的程式邏輯。
@@ -172,14 +175,10 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
         - [sehttpd](https://hackmd.io/@sysprog/linux2020-sehttpd)
         - [kecho](https://hackmd.io/@sysprog/linux2020-kecho)
         - [khttpd](https://hackmd.io/@sysprog/linux2020-khttpd)
-    * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz8) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/@sysprog/HJeFPfP4u)
-
-* 第 9 週 (Apr 11, 12, 14): 微處理器架構和 Linux 核心
     * [Linux: Scalability 議題](https://hackmd.io/@sysprog/linux-scalability)`*`
     * [Linux: 中斷處理和現代架構考量](https://hackmd.io/@sysprog/linux-interrupt)`*`
     * [Linux: 多核處理器和 spinlock](https://hackmd.io/s/rJbXgzz-4)`*`
-    * Week9 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz9) (內含作答表單)
+    * Week9 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz9) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HJeFPfP4u)
 
 * 第 10 週 (Apr 18, 19, 21): 記憶體管理
