@@ -159,8 +159,11 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/@sysprog/BJGn0nRMq)
 
 * 第 8 週 (Apr 4, 5, 7): 測驗 + 作業檢討
+    * 公告:
+        - 新的作業已指派: [Homework5](https://hackmd.io/@sysprog/linux2022-homework5)，作業要求是重作第 5, 6, 8 週測驗題及其延伸問題，截止繳交日為 4 月 25 日
     * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz8) (內含作答表單)
     * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交 Apr 25
+    - [課堂問答簡記](https://hackmd.io/@sysprog/BJGn0nRMq)
 
 * 第 9 週 (Apr 11, 12, 14): 伺服器開發 + 微處理器架構和 Linux 核心
     * [Linux: 透過 eBPF 觀察作業系統行為](https://hackmd.io/s/SJTuuG9a7)`*`: 動態追蹤技術（dynamic tracing）是現代軟體的進階除錯和追蹤機制，讓工程師以非常低的成本，在非常短的時間內，克服一些不是顯而易見的問題。它興起和繁榮的一個大背景是，我們正處在一個快速增長的網路互連異質運算環境，工程人員面臨著兩大方面的挑戰：
