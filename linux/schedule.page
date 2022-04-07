@@ -128,8 +128,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
         - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
     * [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/s/rJbcHS5LE)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
-    * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交
-        - quiz5
+    * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交 Apr 25
     * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz5) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/ByxC6KNb5)
 
@@ -139,8 +138,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
         - 選課修課程的學員在本學期至少要安排一次一對一討論，否則授課教師難以評估學習狀況，從而會影響評分，請重視自己的權益。
     * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/s/rJbcHS5LE)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
-    * [作業](https://hackmd.io/@sysprog/linux2022-homework6): 截止繳交
-        - quiz6
+    * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交 Apr 25
     * Week6 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz6) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/ByxC6KNb5)
 
@@ -162,6 +160,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
 
 * 第 8 週 (Apr 4, 5, 7): 測驗 + 作業檢討
     * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz8) (內含作答表單)
+    * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交 Apr 25
 
 * 第 9 週 (Apr 11, 12, 14): 伺服器開發 + 微處理器架構和 Linux 核心
     * [Linux: 透過 eBPF 觀察作業系統行為](https://hackmd.io/s/SJTuuG9a7)`*`: 動態追蹤技術（dynamic tracing）是現代軟體的進階除錯和追蹤機制，讓工程師以非常低的成本，在非常短的時間內，克服一些不是顯而易見的問題。它興起和繁榮的一個大背景是，我們正處在一個快速增長的網路互連異質運算環境，工程人員面臨著兩大方面的挑戰：
