@@ -174,20 +174,20 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * Week9 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz9) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HkuTGofVc)
 
-* 第 10 週 (Apr 18, 19, 21): 記憶體管理
-    * [現代處理器設計：原理和關鍵特徵](https://hackmd.io/s/Hk2CscGcl)`*`
-    * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/linux-timer)`*`
-    * [Linux: Scalability 議題](https://hackmd.io/@sysprog/linux-scalability)`*`
+* 第 10 週 (Apr 18, 19, 21): 現代微處理器
+    * [現代處理器設計：原理和關鍵特徵](https://hackmd.io/@sysprog/cpu-basics)`*`
     * [Linux: 中斷處理和現代架構考量](https://hackmd.io/@sysprog/linux-interrupt)`*`
-    * [Linux: 多核處理器和 spinlock](https://hackmd.io/s/rJbXgzz-4)`*`
-    * [CS:APP 第 6 章重點提示](https://hackmd.io/s/H1vQ3vu2z)`*`
+    * [Linux: 多核處理器和 spinlock](https://hackmd.io/@sysprog/multicore-locks)`*`
+    * [CS:APP 第 6 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch6)`*`
     * [CPU caches](https://lwn.net/Articles/252125/) by Ulrich Drepper
-    * [CS:APP 第 9 章重點提示](https://hackmd.io/s/SkCLi8YgN)`*`
-    * Week10 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz10) (內含作答表單)
+        - 進行中的繁體中文翻譯: 《[每位程式開發者都該知道的記憶體知識](https://sysprog21.github.io/cpumemory-zhtw/)》
+    * [CS:APP 第 9 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch9)`*`
+    * Week10 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz10) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HJeFPfP4u)
 
-* 第 11 週 (Apr 25, 26, 28): timerfd + 資料結構
-    * [透過 timerfd 處理週期性任務](https://hackmd.io/@sysprog/linux-timerfd)
+* 第 11 週 (Apr 25, 26, 28): 記憶體管理
+    * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/linux-timer)`*`
+    * [Linux: Scalability 議題](https://hackmd.io/@sysprog/linux-scalability)`*`
     * [An Introduction to Cache-Oblivious Data Structures](https://rcoh.me/posts/cache-oblivious-datastructures/)
         - 「自動快取資料結構」，特性是無視硬體特定的快取大小，可能達到接近最優化快取的效能;
         - 在現代 CPU 多層多種大小的快取架構下，它的理論宣稱其能自動優化在所有層的快取的存取效率。傳統上電腦科學做偏理論的人不重視實作的效能表現，而實作或硬體優化的從業人員往往不重視理論分析。這個學門卻是橫跨相當理論的演算法分析（需要相當多的進階數學工具），及相當低階的硬體效能理解;
@@ -204,7 +204,6 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * [Linux: 賦予應用程式生命的系統呼叫](https://hackmd.io/s/HyNbWoD1V)`*`
     * [Linux: 記憶體管理](https://hackmd.io/@sysprog/linux-memory)`*`: 記憶體管理是 Linux 核心裡頭最複雜的部分，涉及到對計算機結構、slob/slab/slub 記憶體配置器、行程和執行檔樣貌、虛擬記憶體對應的例外處理、記憶體映射, UMA vs. NUMA 等等議題。
     * [Linux 核心的 /dev/mem 裝置](https://hackmd.io/@sysprog/linux-mem-device)
-    * [以 sendfile 和 splice 系統呼叫達到 Zero-Copy](https://hackmd.io/@sysprog/linux2020-zerocopy)
     * [C 語言: 物件導向程式設計](https://hackmd.io/s/HJLyQaQMl)`*`
     * [Object-oriented design patterns in the kernel, part 1](https://lwn.net/Articles/444910/) / [Object-oriented design patterns in the kernel, part 2](https://lwn.net/Articles/446317/)
     * [C 語言: Stream I/O, EOF 和例外處理](https://hackmd.io/s/Sy8pJ0x9G)`*`
