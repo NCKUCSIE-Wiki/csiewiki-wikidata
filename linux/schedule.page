@@ -178,9 +178,10 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * [現代處理器設計：原理和關鍵特徵](https://hackmd.io/@sysprog/cpu-basics)`*`
     * [Linux: 中斷處理和現代架構考量](https://hackmd.io/@sysprog/linux-interrupt)`*`
     * [Linux: 多核處理器和 spinlock](https://hackmd.io/@sysprog/multicore-locks)`*`
-    * [CS:APP 第 6 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch6)`*`
     * [CPU caches](https://lwn.net/Articles/252125/) by Ulrich Drepper
         - 進行中的繁體中文翻譯: 《[每位程式開發者都該知道的記憶體知識](https://sysprog21.github.io/cpumemory-zhtw/)》
+        - 本文解釋用於現代電腦硬體的記憶體子系統的結構、闡述 CPU 快取發展的考量、它們如何運作，以及程式該如何針對記憶體操作調整，從而達到最佳的效能。
+    * [CS:APP 第 6 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch6)`*`
     * [CS:APP 第 9 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch9)`*`
     * Week10 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz10) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HJeFPfP4u)
