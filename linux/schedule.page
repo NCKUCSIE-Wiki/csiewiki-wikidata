@@ -175,6 +175,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/@sysprog/HkuTGofVc)
 
 * 第 10 週 (Apr 18, 19, 21): 現代微處理器
+    * Twitter 上面的笑話: index 的複數寫作 indices, complex 的複數寫作 complices, 那 mutex 的複數是什麼？答 "deadlock" -- [出處](https://twitter.com/jfbastien/status/1408440373408460803)
     * [現代處理器設計：原理和關鍵特徵](https://hackmd.io/@sysprog/cpu-basics)`*`
     * [Linux: 中斷處理和現代架構考量](https://hackmd.io/@sysprog/linux-interrupt)`*`
     * [Linux: 多核處理器和 spinlock](https://hackmd.io/@sysprog/multicore-locks)`*`
