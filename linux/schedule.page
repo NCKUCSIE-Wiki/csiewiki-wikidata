@@ -201,6 +201,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * [Linux: 記憶體管理](https://hackmd.io/@sysprog/linux-memory)`*`: 記憶體管理是 Linux 核心裡頭最複雜的部分，涉及到對計算機結構、slob/slab/slub 記憶體配置器、行程和執行檔樣貌、虛擬記憶體對應的例外處理、記憶體映射, UMA vs. NUMA 等等議題。
     * [Linux 核心的 /dev/mem 裝置](https://hackmd.io/@sysprog/linux-mem-device)
     * Week11 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz11) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/@sysprog/HkuTGofVc)
 
 * 第 12 週 (May 2, 3, 5): 共享記憶體 + 物件導向程式設計 + I/O
     * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/linux-timer)`*`
