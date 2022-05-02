@@ -94,6 +94,10 @@ categories: User
     - Daniel Stori 經營的網站 {turnoff.us} 提供一系列關於資訊技術的漫畫，其中 [inside the linux kernel](https://turnoff.us/geek/inside-the-linux-kernel/) 生動地展現 Linux 核心的部分機制和相關的套件
     - 漫畫以房屋的側面剖面視角，以房屋為載體，小企鵝、小狗、小丑等成員組為大家庭，各自分工，藉此展現 Linux。由於漫畫針對 Linux 核心的比重不算高，本文標題變更為通用的 Linux 系統，即核心加上關鍵應用程式的組合
 
+近期研究
+=======
+- [Effective System Call Aggregation (ESCA)](https://eecheng87.github.io/ESCA/)
+
 過往在成大
 =========
 - 成大夢之大地 BBS 站長
