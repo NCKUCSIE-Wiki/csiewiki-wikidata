@@ -221,6 +221,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
         + [2020 年技術報告](https://hackmd.io/@eecheng/B16rQ3GjU) / [2021 年技術報告](https://hackmd.io/@WayneLin1992/vcam)
     *  [vwifi](https://github.com/sysprog21/vwifi) 是個程式碼約 500 行，真的可運作的 WiFi 裝置驅動程式，採用 cfg80211 框架，在 Linux v5.4 和 Linux v5.14 都測試過，支援 scan, connect, disconnect 等 [cfg80211](https://www.linkedin.com/pulse/wlan-drivers-code-walk-linux-bhanu-prakash-singh/) 的介面操作，且允許封包轉向 Linux 核心網路堆疊
     * Week12 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz12) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/@sysprog/HkuTGofVc)
 
 * 第 13 週 (May 9, 10, 12): 同步機制 + 裝置驅動程式模型
     * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/linux-timer)`*`
