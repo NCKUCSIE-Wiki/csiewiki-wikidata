@@ -9,7 +9,7 @@ ARMv8架構有一個重要的特點是他與其之前的架構相容。
 
 ## Execution state
 * AArch64 : 64-bit Execution state
-    - 提供 31組 64-bit 的通用暫存器
+    - 提供 31組 64-bit 的通用暫存器，其中 X31 當 Procedure Link Register 使用
     - 提供 64-bit Program Counter(PC), Stack-Poiner (SP )與 Exception-Link-Register (ELR)
     - 定義最多四種 (EL0 - EL3) 特權模式
     - 支援 64-bit 虛擬地址
