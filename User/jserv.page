@@ -102,7 +102,7 @@ categories: User
 
 Android 相關
 ===========
-* [Understanding the Dalvik Virtual Machine](https://github.com/jserv/talks/raw/master/assets/dalvik.pdf), GTUG Taipei (2012)
+* [Understanding the Dalvik Virtual Machine](https://github.com/jserv/talks/raw/master/assets/dalvik.pdf), Google Technology User Groups Taipei (2012)
 * [Implement Checkpointing for Android](/android/checkpoint2012.pdf), Embedded Linux Conference Europe (2012)
 * [Hardware Accelerated 2D Rendering for Android](https://github.com/jserv/talks/raw/master/assets/accel-2d-render.pdf), Android Builders Summit (2013)
 
