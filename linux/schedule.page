@@ -223,20 +223,20 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * Week12 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz12) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HkuTGofVc)
 
-* 第 13 週 (May 9, 10, 12): 同步機制 + 裝置驅動程式模型
+* 第 13 週 (May 9, 10, 12): Scalability + 同步機制
     * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/linux-timer)`*`
     * [Linux: Scalability 議題](https://hackmd.io/@sysprog/linux-scalability)`*`
     * [An Introduction to Cache-Oblivious Data Structures](https://rcoh.me/posts/cache-oblivious-datastructures/)
         - 「自動快取資料結構」，特性是無視硬體特定的快取大小，可能達到接近最優化快取的效能;
         - 在現代 CPU 多層多種大小的快取架構下，它的理論宣稱其能自動優化在所有層的快取的存取效率。傳統上電腦科學做偏理論的人不重視實作的效能表現，而實作或硬體優化的從業人員往往不重視理論分析。這個學門卻是橫跨相當理論的演算法分析（需要相當多的進階數學工具），及相當低階的硬體效能理解;
-        - 影片: [Memory Hierarchy Models](https://www.youtube.com/watch?v=V3omVLzI0WE)
-        - Google Research 強者的心得: [關於變強這檔事（九）](https://medium.com/@fchern/%E9%97%9C%E6%96%BC%E8%AE%8A%E5%BC%B7%E9%80%99%E6%AA%94%E4%BA%8B-%E4%B9%9D-3fd36c986313)
-        - [Skip List](http://en.wikipedia.org/wiki/Skip_list): 置放大量數字並進行排序的資料結構。不用樹狀結構，而改用高度不同的 List 來連接資料。資料結構在概念上可以表示成 Left Child-Right Sibling Binary Tree 的模式。是 Cache-oblivious Algorithm 的經典範例，時間複雜度與空間複雜度與 Binary Search Tree 皆相同，但是實際運作效率比 Binary Search Tree 還要好。
+        - 影片: [Memory Hierarchy Models](https://youtu.be/V3omVLzI0WE)
+        - Google Research 強者的心得: [關於變強這檔事（九）](https://medium.com/@fchern/3fd36c986313)
+        - [Skip List](http://en.wikipedia.org/wiki/Skip_list): 置放大量數字並進行排序的資料結構。不用樹狀結構，而改用高度不同的 List 來連接資料。資料結構在概念上可以表示成 Left Child-Right Sibling Binary Tree 的模式。是 Cache-oblivious Algorithm 的經典範例，時間複雜度與空間複雜度與 Binary Search Tree 皆相同，但精心調整的實作可超越 Binary Search Tree。
         - Linux 核心: [A kernel skiplist implementation (Part 1)](https://lwn.net/Articles/551896/), [Skiplists II: API and benchmarks](https://lwn.net/Articles/553047/)
-    * Linux: linked list, Queues, Maps, Binary Trees: [錄影](https://www.youtube.com/watch?v=7ZQNb7Fu_A4)`*` / [共筆](https://docs.google.com/document/d/1n31QMPyvdAkS2uxM5AyKu_DD3uRu6-zoRukAitDwPvA/edit#)
+    * Linux: linked list, Queues, Maps, Binary Trees: [錄影](https://youtu.be/7ZQNb7Fu_A4)`*` / [共筆](https://docs.google.com/document/d/1n31QMPyvdAkS2uxM5AyKu_DD3uRu6-zoRukAitDwPvA/edit#)
     * [Linux: RCU 同步機制](https://hackmd.io/s/H19V4eyfV)`*`
     * [C11 atomic variables and the kernel](https://lwn.net/Articles/586838/) / [Linux Documentation: Circular Buffers](https://www.kernel.org/doc/Documentation/circular-buffers.txt)
-    * Week13 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz13) (內含作答表單)
+    * Week13 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz13) (內含作答表單)
 
 * 第 14 週 (May 16, 17, 19): 網路封包處理
     * [討論區回顧](https://m.facebook.com/groups/system.software2021)
