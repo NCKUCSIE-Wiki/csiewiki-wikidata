@@ -230,7 +230,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
         - 「自動快取資料結構」，特性是無視硬體特定的快取大小，可能達到接近最優化快取的效能;
         - 在現代 CPU 多層多種大小的快取架構下，它的理論宣稱其能自動優化在所有層的快取的存取效率。傳統上電腦科學做偏理論的人不重視實作的效能表現，而實作或硬體優化的從業人員往往不重視理論分析。這個學門卻是橫跨相當理論的演算法分析（需要相當多的進階數學工具），及相當低階的硬體效能理解;
         - 影片: [Memory Hierarchy Models](https://youtu.be/V3omVLzI0WE)
-        - Google Research 強者的心得: [關於變強這檔事（九）](https://medium.com/@fchern/3fd36c986313)
+        - Google Research 強者的心得: [關於變強這檔事（九）](https://medium.com/@fchern/3fd36c986313), [設計高效 Hash Table (一)](https://medium.com/@fchern/303d9713abab), [設計高效 Hash Table (二)](https://medium.com/@fchern/9b5dc744219f)
         - [Skip List](http://en.wikipedia.org/wiki/Skip_list): 置放大量數字並進行排序的資料結構。不用樹狀結構，而改用高度不同的 List 來連接資料。資料結構在概念上可以表示成 Left Child-Right Sibling Binary Tree 的模式。是 Cache-oblivious Algorithm 的經典範例，時間複雜度與空間複雜度與 Binary Search Tree 皆相同，但精心調整的實作可超越 Binary Search Tree。
         - Linux 核心: [A kernel skiplist implementation (Part 1)](https://lwn.net/Articles/551896/), [Skiplists II: API and benchmarks](https://lwn.net/Articles/553047/)
     * Linux: linked list, Queues, Maps, Binary Trees: [錄影](https://youtu.be/7ZQNb7Fu_A4)`*` / [共筆](https://docs.google.com/document/d/1n31QMPyvdAkS2uxM5AyKu_DD3uRu6-zoRukAitDwPvA/edit#)
