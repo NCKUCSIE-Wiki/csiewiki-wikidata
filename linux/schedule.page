@@ -237,6 +237,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * [Linux: RCU 同步機制](https://hackmd.io/s/H19V4eyfV)`*`
     * [C11 atomic variables and the kernel](https://lwn.net/Articles/586838/) / [Linux Documentation: Circular Buffers](https://www.kernel.org/doc/Documentation/circular-buffers.txt)
     * Week13 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz13) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/@sysprog/H1AlR9PU9)
 
 * 第 14 週 (May 16, 17, 19): 網路封包處理
     * [討論區回顧](https://m.facebook.com/groups/system.software2021)
