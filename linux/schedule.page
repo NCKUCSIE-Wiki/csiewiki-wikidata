@@ -224,6 +224,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/@sysprog/HkuTGofVc)
 
 * 第 13 週 (May 9, 10, 12): Scalability + 同步機制
+    * [以下教材的解說錄影](https://youtu.be/eplQPz1Qegc)`*`
     * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/linux-timer)`*`
     * [Linux: Scalability 議題](https://hackmd.io/@sysprog/linux-scalability)`*`
     * [An Introduction to Cache-Oblivious Data Structures](https://rcoh.me/posts/cache-oblivious-datastructures/)
