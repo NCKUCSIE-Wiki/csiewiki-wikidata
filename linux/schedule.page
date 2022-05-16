@@ -241,6 +241,8 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/@sysprog/H1AlR9PU9)
 
 * 第 14 週 (May 16, 17, 19): 網路封包處理
+    * 公告:
+        - [2021 年 Linux 核心設計/實作課程期末專題](https://hackmd.io/@sysprog/linux2022-projects)列表受理學員經由授課教師討論後，予以更新和進行
     * [討論區回顧](https://m.facebook.com/groups/system.software2022)
     * [Linux 核心網路](https://hackmd.io/@rickywu0421/BJxD_3989)
     * **[cserv](https://github.com/sysprog21/cserv)** is an event-driven and non-blocking web server.
