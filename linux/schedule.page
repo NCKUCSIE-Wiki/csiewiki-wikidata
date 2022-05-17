@@ -256,6 +256,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
         - 若沒有啟用 `PACKET_MMAP`，就只能使用低效率的 `AF_PACKET`，不但有緩衝區空間的限制，而且每次捕捉封包就要一次系統呼叫。反之，`PACKET_MMAP` 多數時候不需要呼叫系統呼叫，也能實作出 zero-copy
         - [圖解 Linux tcpdump](https://jgsun.github.io/2019/01/21/linux-tcpdump/)
     * Week14 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz14) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/@sysprog/H1AlR9PU9)
 
 * 第 15 週 (May 23, 24, 26): 多核處理器架構 + Linux 同步處理機制 + 程式碼最佳化概念
     * 公告:
