@@ -260,7 +260,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
 
 * 第 15 週 (May 23, 24, 26): 多核處理器架構 + Linux 同步處理機制 + 程式碼最佳化概念
     * 公告:
-        - 請學員及早進行 [課程期末專題](https://hackmd.io/@sysprog/linux2021-projects) 並預約一對一討論
+        - 請學員及早進行 [課程期末專題](https://hackmd.io/@sysprog/linux2022-projects) 並預約一對一討論
     * [Multi-Core in Linux](https://youtu.be/UNI6Mbqryv0)`*`
     * [Multicore Caches / Cache Coherence](https://computationstructures.org/lectures/parallel/parallel.html)`*` / [video](https://youtu.be/vxrok3KKuGQ)
     * [並行程式設計: Lock-Free Programming](https://hackmd.io/@sysprog/concurrency-lockfree)`*`
@@ -271,7 +271,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * [RCU 同步機制](https://hackmd.io/@sysprog/linux-rcu)`*`
     * [CS:APP 第 5 章重點提示和練習](https://hackmd.io/s/SyL8m4Lnm)`*`
     * [CS:APP Assign 5.18](https://hackmd.io/s/rkdzvWJTX)`*`
-    * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz15) (內含作答表單)
+    * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz15) (內含作答表單)
 
 * 第 16 週 (May 30, 21, Jun 3): 多核處理器架構
     * [A tour of the ARM architecture and its Linux support](https://youtu.be/NNol7fRGo2E)`*`
