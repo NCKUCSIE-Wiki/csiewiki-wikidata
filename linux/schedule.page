@@ -243,6 +243,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
 * 第 14 週 (May 16, 17, 19): 網路封包處理
     * 公告:
         - [2022 年 Linux 核心設計/實作課程期末專題](https://hackmd.io/@sysprog/linux2022-projects)列表受理學員經由授課教師討論後，予以更新和進行
+    * [以下教材的解說錄影](https://youtu.be/elJBnC3d_rg)`*`
     * [討論區回顧](https://m.facebook.com/groups/system.software2022)
     * [Linux 核心網路](https://hackmd.io/@rickywu0421/BJxD_3989)
     * **[cserv](https://github.com/sysprog21/cserv)** is an event-driven and non-blocking web server.
@@ -261,6 +262,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
 * 第 15 週 (May 23, 24, 26): 多核處理器架構 + Linux 同步處理機制 + 程式碼最佳化概念
     * 公告:
         - 請學員及早進行 [課程期末專題](https://hackmd.io/@sysprog/linux2022-projects) 並預約一對一討論
+    * [以下教材的解說錄影](https://youtu.be/wJzQ8q5yOkY)`*`
     * [Multi-Core in Linux](https://youtu.be/UNI6Mbqryv0)`*`
     * [Multicore Caches / Cache Coherence](https://computationstructures.org/lectures/parallel/parallel.html)`*` / [video](https://youtu.be/vxrok3KKuGQ)
     * [並行程式設計: Lock-Free Programming](https://hackmd.io/@sysprog/concurrency-lockfree)`*`
