@@ -274,7 +274,8 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * [CS:APP 第 5 章重點提示和練習](https://hackmd.io/s/SyL8m4Lnm)`*`
     * [CS:APP Assign 5.18](https://hackmd.io/s/rkdzvWJTX)`*`
     * 專案賞析
-        - [threaded-logger](https://github.com/sysprog21/threaded-logger)
+        - [threaded-logger](https://github.com/sysprog21/threaded-logger): 向 Linux 核心的 [lockless printk](https://lpc.events/event/4/contributions/290/attachments/276/463/lpc2019_jogness_printk.pdf) 致敬
+            + 在 glibc 的實作中，就算是 [puts](https://sourceware.org/git/?p=glibc.git;a=blob;f=libio/ioputs.c;hb=HEAD) 這樣貌似單純的實作，也要有 lock
         - [123elf](https://github.com/taviso/123elf) / [解釋](https://m.facebook.com/groups/system.software2022/posts/2051075428407190/)
     * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz15) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/H1AlR9PU9)
