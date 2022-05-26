@@ -273,6 +273,9 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * [RCU 同步機制](https://hackmd.io/@sysprog/linux-rcu)`*`
     * [CS:APP 第 5 章重點提示和練習](https://hackmd.io/s/SyL8m4Lnm)`*`
     * [CS:APP Assign 5.18](https://hackmd.io/s/rkdzvWJTX)`*`
+    * 專案賞析
+        - [threaded-logger](https://github.com/sysprog21/threaded-logger)
+        - [123elf](https://github.com/taviso/123elf) / [解釋](https://m.facebook.com/groups/system.software2022/posts/2051075428407190/)
     * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz15) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/H1AlR9PU9)
 
