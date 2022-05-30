@@ -283,19 +283,12 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
 * 第 16 週 (May 30, 21, Jun 3): 多核處理器架構
     * [A tour of the ARM architecture and its Linux support](https://youtu.be/NNol7fRGo2E)`*`
     * [Multiprocessor OS](/11-smp_os.pdf)
-    * [How Reliable Are Modern CPUs?](https://hardware.slashdot.org/story/21/06/05/1648225/how-reliable-are-modern-cpus)`*`
-        - 近年 Google 與 Facebook 注意到 CPU 會在不同的情況下不預期地計算出錯誤的結果，在一些資料中心上出錯的頻率明顯增加。研究人員認為這並非架構設計的步驟錯誤，這些問題也並沒有在生產時的測試中被偵測出來。
-    * 隨堂測驗回顧:
-        - [第 11 週測驗題](https://hackmd.io/@sysprog/linux2021-quiz11) / [討論](https://hackmd.io/@Julian-Chu/2021q1-quiz11)
-        - [第 12 週測驗題](https://hackmd.io/@sysprog/linux2021-quiz12)
-        - [第 13 週測驗題](https://hackmd.io/@sysprog/linux2021-quiz13)
-    * Week16 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz16) (內含作答表單)
- 
-* 第 17 週 (Jun 6, 7, 9): 多處理器架構
-    * [Multiprocessor OS](/11-smp_os.pdf)
     * [Linux-Kernel Memory Ordering: Help Arrives At Last!](http://www.rdrop.com/users/paulmck/scalability/paper/LinuxMM.2017.04.08b.Barcamp.pdf) / [video](https://www.youtube.com/watch?v=ULFytshTvIY)`*`
     * [atomic 和 memory order](https://medium.com/fcamels-notes/%E7%B0%A1%E4%BB%8B-c-11-memory-model-b3f4ed81fea6), [memory barrier 的實作和效果](https://medium.com/fcamels-notes/%E5%BE%9E%E7%A1%AC%E9%AB%94%E8%A7%80%E9%BB%9E%E4%BA%86%E8%A7%A3-memry-barrier-%E7%9A%84%E5%AF%A6%E4%BD%9C%E5%92%8C%E6%95%88%E6%9E%9C-416ff0a64fc1)
         - [Memory barriers in C](https://mariadb.org/wp-content/uploads/2017/11/2017-11-Memory-barriers.pdf)
+    * Week16 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz16) (內含作答表單)
+ 
+* 第 17 週 (Jun 6, 7, 9): 多處理器架構
     * 隨堂測驗回顧:
         - [第 14 週測驗題](https://hackmd.io/@sysprog/linux2021-quiz14)
     * Week17 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2021-quiz17) (內含作答表單)
