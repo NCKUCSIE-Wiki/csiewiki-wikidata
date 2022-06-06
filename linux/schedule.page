@@ -289,6 +289,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * Week16 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz16) (內含作答表單)
  
 * 第 17 週 (Jun 6, 7, 9): 即時 Linux 的基礎建設
+    * [Re: [問卦] 精通作業系統對Coding有什麼幫助？](https://disp.cc/b/163-cidY)
     * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/HJElbeHkr)
     * [PREEMPT_RT 作為邁向硬即時作業系統的機制](https://hackmd.io/@sysprog/preempt-rt)
     * [Linux 核心搶佔](https://hackmd.io/@sysprog/linux-preempt)
