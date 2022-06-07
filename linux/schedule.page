@@ -281,6 +281,7 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/@sysprog/H1AlR9PU9)
 
 * 第 16 週 (May 30, 21, Jun 3): 多核處理器架構
+    * [以下教材的解說錄影 1](https://youtu.be/gCaZJ_heloQ)`*`, [錄影 2](https://youtu.be/HWFLjMIjiB4)`*`
     * [A tour of the ARM architecture and its Linux support](https://youtu.be/NNol7fRGo2E)`*`
     * [Multiprocessor OS](/11-smp_os.pdf)
     * [Linux-Kernel Memory Ordering: Help Arrives At Last!](http://www.rdrop.com/users/paulmck/scalability/paper/LinuxMM.2017.04.08b.Barcamp.pdf) / [video](https://www.youtube.com/watch?v=ULFytshTvIY)`*`
@@ -289,6 +290,17 @@ Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
     * Week16 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz16) (內含作答表單)
  
 * 第 17 週 (Jun 6, 7, 9): 即時 Linux 的基礎建設
+    * 公告
+        - 佔學期總成績 50% 的自我評量，請在 6 月 30 日前完成。範例: [User/OscarShiang](http://wiki.csie.ncku.edu.tw/User/OscarShiang)
+        - 自我評量的網址**必須**符合 `/User/你的GitHub帳號名稱` 格式 (區分大小寫)，請不要打錯字
+        - 自我評分項目 (都要有對應的超連結和延伸資訊)
+            * 成果發表: 與 Linux 核心相關的公開演講
+            * Linux 核心和相關專案貢獻: 貢獻到 Linux 核心和相關專案
+            * 作業/隨堂測驗: 你的開發紀錄，人在做，Google 在看
+            * 期末專題: 開發紀錄，標注與授課教師「一對一討論」的時間，並列出你的啟發及成果
+            * 所見所聞所感
+            * 自我評量: 介於 1 到 10 之間的整數 (不要自作主張寫 `8.7` 這樣的數值)
+    * [以下教材的解說錄影](https://youtu.be/bJS-wjM-5kE)`*`
     * [Re: [問卦] 精通作業系統對Coding有什麼幫助？](https://disp.cc/b/163-cidY)
     * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/HJElbeHkr)
     * [PREEMPT_RT 作為邁向硬即時作業系統的機制](https://hackmd.io/@sysprog/preempt-rt)
