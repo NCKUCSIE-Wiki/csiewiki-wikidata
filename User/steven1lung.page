@@ -1,0 +1,48 @@
+---
+title: steven1lung (龍帆軒)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程學系 112 級 (2019 ~ 2023)
+
+* GitHub: [`steven1lung`](https://github.com/steven1lung)
+* HackMD: [`steven1lung`](https://hackmd.io/@steven1lung)
+
+## 成果發表
+
+
+## Linux 核心和相關專案貢獻
+* 《Demystifying the Linux CPU Scheduler》錯字修正和排版調整
+* 《Linux Kernel Module Programming Guide》錯字修正和排版調整
+* [Linux Patch](https://lkml.org/lkml/2022/6/8/923) 心得：[HackMD](https://hackmd.io/bZ0xpeo6TqOMoOHlTiApZg)
+
+
+# 2022 Linux 核心設計 春季班 自我評量
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/steven1lung/lab0-c) / [HackMD](https://hackmd.io/@steven1lung/lab0-c)
+* fibdrv: [GitHub](https://github.com/steven1lung/fibdrv)
+* khttpd: [GitHub](https://github.com/steven1lung/khttpd) 
+* ktcp: [HackMD](https://hackmd.io/@steven1lung/linux2022-ktcp)
+
+
+## 測驗共筆
+
+* quiz2: [HackMD](https://hackmd.io/@steven1lung/SJAMABy-9)
+* quiz4: [HackMD](https://hackmd.io/@steven1lung/linux2022-quiz4)
+* quiz5: [HackMD](https://hackmd.io/@steven1lung/linux2022-quiz5)
+* quiz15: [HackMD](https://hackmd.io/@steven1lung/linux2022-quiz15)
+
+
+## 期末專題
+
+* Linux 排程器研究: [HackMD](https://hackmd.io/@steven1lung/scheduler_notes)
+* Linux Kernel Completely Fair Scheduler 模擬器: [GitHub](https://github.com/steven1lung/cfs-visualizer-react)
+
+## 修課心得
+
+
+
+## 自我評量 (1 ~ 10)
+
