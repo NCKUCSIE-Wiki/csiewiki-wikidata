@@ -12,8 +12,13 @@ categories: User
 
 # 2022 Linux 核心設計/實作 (Linux Kernel Internals) 自我評量
 ## 作業共筆
-
+* lab0-c: [GitHub](https://github.com/Wallmountain/lab0-c) / [HackMD](https://hackmd.io/@Wallmountain/linux2022-lab0)
+* fibdrv: [GitHub](https://github.com/Wallmountain/fibdrv) / [HackMD](https://hackmd.io/@Wallmountain/linux2022-fibdrv)
 ## 測驗共筆
+* quiz1: [HackMD](https://hackmd.io/@Wallmountain/2022quiz1)
+* quiz2: [HackMD](https://hackmd.io/@Wallmountain/linux2022-quiz2)
+* quiz3: [HackMD](https://hackmd.io/@Wallmountain/linux2022-quiz3)
+* quiz4: [HackMD](https://hackmd.io/@Wallmountain/linux2022-quiz4)
 
 ## 期末專題
 
