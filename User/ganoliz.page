@@ -23,6 +23,10 @@ categories: User
 
 ## 期末專題
 * 持續改進 fibdrv 以符合效能要求 : [hackmd](https://hackmd.io/@ganoliz/Linux2022q1_HW2)
+一對一討論時間: 
+
+* 1.2022/4/9 關於 bignum 的實作
+* 2.2022/5/21 關於整數壓縮效能的改進
 
 ## 修課所聞
 
