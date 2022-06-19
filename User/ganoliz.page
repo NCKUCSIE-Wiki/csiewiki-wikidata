@@ -13,11 +13,15 @@ categories: User
 # 2022 Linux 核心實作 春季班
 
 ## 作業/隨堂測驗
-* lab0-c [github](https://github.com/ganoliz/lab0-c)/[hackmd](https://hackmd.io/@ganoliz/Linux2022q1_HW1)
-
+* lab0-c : [github](https://github.com/ganoliz/lab0-c) / [hackmd](https://hackmd.io/@ganoliz/Linux2022q1_HW1)
+* fibdrv : [hackmd](https://hackmd.io/@ganoliz/Linux2022q1_HW2)
+* quiz1 : [hackmd](https://hackmd.io/@ganoliz/Linux2022q1_quiz1)
+* quiz2 : [hackmd](https://hackmd.io/@ganoliz/Linux2022q1_quiz2)
+* quiz3 : 
+* quiz4 : [hackmd](https://hackmd.io/@ganoliz/Linux2022q1_quiz4)
 
 ## 期末專題
-
+* 持續改進 fibdrv 以符合效能要求 [hackmd](https://hackmd.io/@ganoliz/Linux2022q1_HW2)
 ## 修課所聞
 
 ## 自我評量
