@@ -1,0 +1,64 @@
+---
+title: Risheng1128 (陳日昇)
+categories: User
+...
+
+簡介
+===
+- 國立中央大學 機械工程學系 110 級 (2017 ~ 2021)
+- 國立成功大學 機械所 (2021 ~)
+
+Linux 核心和相關專案貢獻
+===
+* [khttpd](https://github.com/sysprog21/khttpd): commit [0cfbd](https://github.com/sysprog21/khttpd/commit/0cfbd71dcace7cbcd6ba17cf7f19f83e7505ad9e)
+* [Linux](https://github.com/torvalds/linux): patch [tools/power/x86/intel-speed-select: Remove duplicate macro](https://lkml.org/lkml/2022/6/10/933)
+* Github: [Risheng1128](https://github.com/Risheng1128)
+* Hackmd: [Risheng](https://hackmd.io/@Risheng)
+
+作業
+===
+* lab0-c: [Hackmd](https://hackmd.io/@Risheng/linux2022-lab0) / [Github](https://github.com/Risheng1128/lab0-c)
+* fibdrv: [Hackmd](https://hackmd.io/@Risheng/linux2022-fibdrv) / [Github](https://github.com/Risheng1128/fibdrv)
+* ktcp: [Hackmd](https://hackmd.io/@Risheng/linux2022-ktcp) / [Github: kecho](https://github.com/Risheng1128/kecho) [Github: khttpd](https://github.com/Risheng1128/khttpd)
+
+隨堂測驗
+===
+* quiz1: [Hackmd](https://hackmd.io/@Risheng/linux2022-quiz1) / [Github](https://github.com/Risheng1128/Linux2022-quiz/tree/main/quiz1)
+* quiz2: [Hackmd](https://hackmd.io/@Risheng/linux2022-quiz2) / [Github](https://github.com/Risheng1128/Linux2022-quiz/tree/main/quiz2)
+* quiz3: [Hackmd](https://hackmd.io/@Risheng/linux2022-quiz3) / [Github](https://github.com/Risheng1128/Linux2022-quiz/tree/main/quiz3)
+* quiz4: [Hackmd](https://hackmd.io/@Risheng/linux2022-quiz4) / [Github](https://github.com/Risheng1128/Linux2022-quiz/tree/main/quiz4)
+* quiz5: [Hackmd](https://hackmd.io/@Risheng/linux2022-quiz5) / [Github](https://github.com/Risheng1128/Linux2022-quiz/tree/main/quiz5)
+* quiz8: [Hackmd](https://hackmd.io/@Risheng/linux2022-quiz8) / [Github](https://github.com/Risheng1128/Linux2022-quiz/tree/main/quiz8)
+
+期末專題
+===
+* khttpd 改進: [Hackmd](https://hackmd.io/@Risheng/linux2022-khttpd) / [Github](https://github.com/Risheng1128/khttpd)
+
+* 1 對 1 討論時間
+    * 2022/4/14 星期四下午 8:00 ~ 8:30
+    * 2022/5/19 星期四下午 8:00 ~ 8:30
+
+* 目前完成成果
+    * 引入 [CMWQ](https://www.kernel.org/doc/html/v4.10/core-api/workqueue.html) 到 khttpd
+    * 實作 [directory listing](https://cwiki.apache.org/confluence/display/httpd/DirectoryListings) 功能
+    * 使用 [MIME](https://en.wikipedia.org/wiki/MIME) 處理不同類型的檔案
+    * 建立 timer 主動關閉連線
+
+* 心得
+
+這次的期末專題主題是改進 khttpd 的實作，希望可以讓 khttpd 有現代伺服器的基本功能，實作到目前的進度，我學到了相當多的內容，包含檔案系統、 I/O 模型、 Linux 的時間管理及 lock-free 的程式設計等等議題。
+  
+其中讓我最有感想的，就是這學期老師強調的 lock-free 程式設計，原本看小考的程式碼可以理解程式的運作原理，直到自己實作才知道我前面根本沒看懂，漏掉的細節實在是太多了，也了解自己的不足。雖然最後只弄出了一個「可以動」的版本，離正確的程式碼還有很大的差距，不過透過這次的練習，也讓自己重新「認識自己」。
+
+所見所聞所感
+===
+
+自我評量
+===
+我給自己 8 分
+
+這學期投入了大量時間在這門課上，看了無數的日出。但就算如此，看似做了很多的作業，實際上其實很多都只是理解程式原理，並沒有真正的好好改動程式碼，說不到皮毛都不為過，只能怪自己還不夠強。
+
+接著就是永遠無法忘記 lab0-c 作業那長到不行的作業說明，右邊的滾軸已經小到快看不到了，而最可怕的就是連結再連結XD，當初除了一句一字慢慢的自己看完，還很感謝有很多很強的同學們可以參考，讓我在卡關的時候有多道曙光指引我。
+
+修過這門課，真的是讓自己認識什麼叫「資訊科技的挑戰」，從每一次的作業、小考到期末專題，考慮的東西往往不是課本的內容就足夠，還有很多從來沒想過的因素。但最重要的，我覺得我學到如何分析並解決一個問題，將一個問題拆解並一一分析，最後透過實作驗證當初的分析是否有問題，這是這學期最大的收穫。
