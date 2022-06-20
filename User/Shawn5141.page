@@ -17,25 +17,32 @@ categories: User
 # 2020 Linux 核心設計 春季班 自我評量
 ## 作業共筆
 
-* lab0-c: [GitHub]() / [HackMD]()
-* fibdrv: [GitHub]() / [HackMD]()
-* kcalc: [GitHub]() / [HackMD]()
-* khttpd: [GitHub]() / [HackMD]()
-* kecho: [GitHub]() / [HackMD]()
-* sehttpd: [GitHub]() / [HackMD]()
+* lab0-c: [GitHub](https://github.com/Shawn5141/lab0-c) / [HackMD](https://hackmd.io/@Shawn5141/linux2022-lab0)
+* fibdrv: [GitHub](https://github.com/Shawn5141/fibdrv) / [HackMD](https://hackmd.io/@Shawn5141/linux2022q1-hw3)
+* kecho: [GitHub]() / [HackMD](https://hackmd.io/@Shawn5141/hw-7)
 
 
 ## 測驗共筆
 
-
+* quiz1 [HackMD](https://hackmd.io/@Shawn5141/2022q1-quiz1)
+* quiz2 [HackMD](https://hackmd.io/@Shawn5141/2022q1-quiz2)
+* quiz3 [HackMD](https://hackmd.io/@Shawn5141/2022q1-quiz3)
+* quiz4 [HackMD](https://hackmd.io/@Shawn5141/2022q1-quiz4)
+* quiz5 [HackMD](https://hackmd.io/@Shawn5141/2022q1-quiz5)
+* quiz6 [HackMD](https://hackmd.io/@Shawn5141/2022q1-quiz6-wip)
 
 ## 期末專題
 
+* (WIP)eBPF for accelerating Cloud Native applications [HackMD](https://hackmd.io/@Shawn5141/2022q1-final-project)
 
 ## 修課心得
 
+帶著很期待的心情開始修這門課。但在寫完了第一個quiz之後，就認清自己在以下幾個方面有嚴重的缺失
+1. 缺少閱讀第一手 source code 和 document 的習慣。
+2. 無法快速且大量閱讀並吸收整理資料。面對海量卻缺乏完整架構的資訊，沒辦法提綱挈領的整理出吸收的重點。見林不見樹，見樹不見林。
+3. 對於C語法與硬體的不熟悉，導致在設計實驗時無法深入的去探討背後的機制跟可能的原理。
+4. 工作之餘要花十幾個小時學習需要很大的熱情，也需要良好的跟家人溝通的能力。
 
 ## 自我評量 (1 ~ 10)
 
-我給自己 6 分
-
+我給自己 6 分，只要原因是因為後半段的課程(week 13)後有很嚴重的落後。期末專期也不一定能如期完成。
