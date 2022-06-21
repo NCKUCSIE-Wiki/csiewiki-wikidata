@@ -23,6 +23,7 @@ categories: User
 * quiz4: [HackMD](https://hackmd.io/@Wallmountain/linux2022-quiz4)
 
 ## 期末專題
+改進 quiz4 (D): [HackMD](https://hackmd.io/@Wallmountain/final_project)
 
 ## 修課心得
 在學期的一開始，就看到在課程網頁上的課程很多，每個星期都得花上幾十個小時才能將課程內容看完，也看到很多沒有看過的工具，例如繪圖用的 gnuplot，檢查並更改格式的  clang-format，也很快的在作業中用到這些工具，在課堂中，不只用程式碼完成作業必須花上不少時間，將作業呈現在 hackmd 上也讓我學習了不少，必須去解釋自己在作業中做了什麼並用言簡意賅的中文表達出來。
