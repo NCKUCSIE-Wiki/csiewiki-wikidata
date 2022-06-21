@@ -1,0 +1,41 @@
+---
+title: eric88525 (陳哲緯)
+categories: User
+---
+
+
+# 聯絡資訊
+- email: ``eric885251@gmail.com``
+- github: [``eric88525``](https://github.com/eric88525)
+
+
+# 2022 Linux 核心實作 春季班 自我評量
+## 作業
+* lab0-c: [Hackmd](https://hackmd.io/@eric88525/linux2022-lab0) / [Github](https://github.com/eric88525/lab0-c)
+* fibdrv: [Hackmd](https://hackmd.io/@eric88525/linux2022-fibdrv) / [Github](https://github.com/eric88525/fibdrv)
+* ktcp: [Hackmd](https://hackmd.io/@eric88525/linux2022-ktcp) /  [Github](https://github.com/eric88525/fibdrv)
+
+## 隨堂測驗
+* quiz1: [Hackmd](https://hackmd.io/@eric88525/linux2022-quiz1)
+* quiz2: [Hackmd](https://hackmd.io/@eric88525/linux2022-quiz2)
+* quiz3: [Hackmd](https://hackmd.io/@eric88525/linux2022-quiz3) 
+
+
+## 期末專題
+* kecho 改進: [Hackmd](https://hackmd.io/@eric88525/linux2022-ktcp)
+
+本次期末是 kecho 改進，過程中了解了高效能伺服器的設計巧思，例如 epoll 運用和原理，結合 CMWQ 設計 kernel 端的伺服器、bench 的原理、並分析了不同伺服器的效能差異。背景知識的部分把 CSAPP 關於網路和 process 的篇章看完，並整理了詳細的筆記。
+
+
+## 自我評量
+
+我給自己 8 分
+
+學期初花了許多時間在這堂課上，直到面對 fibdrv 作業時才了解到以前的學習方式是錯的。我總是先寫再說想趕快把作業完成，這也導致在寫程式時有滿滿的挫折，中間一度想放棄這堂課程。
+
+ 但在訪談時教授給了許多建議和鼓勵，要求我詳細了解原理後再去實做，改變學習方式重做了 fibdrv 作業，並完整的理解了虛擬檔案系統的概念和快速乘法的原理，教授甚至分享了我的作業，讓我得到了堅持下去的動力。
+
+ 不論是在每次的作業或考試，都讓我重新檢視自己的不足，我以前學的只是語法而已，根本不算懂 c 語言。
+
+ 雖然在學期中一度受挫，但後來有重新振作並花費更多心思在這堂課程上，因此給予自己這樣的分數。
+
