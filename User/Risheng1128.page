@@ -3,26 +3,24 @@ title: Risheng1128 (陳日昇)
 categories: User
 ...
 
-簡介
-===
+# 簡介
 - 國立中央大學 機械工程學系 110 級 (2017 ~ 2021)
 - 國立成功大學 機械所 (2021 ~)
 
-Linux 核心和相關專案貢獻
-===
+## Linux 核心和相關專案貢獻
 * [khttpd](https://github.com/sysprog21/khttpd): commit [0cfbd](https://github.com/sysprog21/khttpd/commit/0cfbd71dcace7cbcd6ba17cf7f19f83e7505ad9e)
 * [Linux](https://github.com/torvalds/linux): patch [tools/power/x86/intel-speed-select: Remove duplicate macro](https://lkml.org/lkml/2022/6/10/933)
 * Github: [Risheng1128](https://github.com/Risheng1128)
 * Hackmd: [Risheng](https://hackmd.io/@Risheng)
 
-作業
-===
+# 2022 Linux 核心實作 春季班 自我評量
+
+## 作業
 * lab0-c: [Hackmd](https://hackmd.io/@Risheng/linux2022-lab0) / [Github](https://github.com/Risheng1128/lab0-c)
 * fibdrv: [Hackmd](https://hackmd.io/@Risheng/linux2022-fibdrv) / [Github](https://github.com/Risheng1128/fibdrv)
 * ktcp: [Hackmd](https://hackmd.io/@Risheng/linux2022-ktcp) / [Github: kecho](https://github.com/Risheng1128/kecho) [Github: khttpd](https://github.com/Risheng1128/khttpd)
 
-隨堂測驗
-===
+## 隨堂測驗
 * quiz1: [Hackmd](https://hackmd.io/@Risheng/linux2022-quiz1) / [Github](https://github.com/Risheng1128/Linux2022-quiz/tree/main/quiz1)
 * quiz2: [Hackmd](https://hackmd.io/@Risheng/linux2022-quiz2) / [Github](https://github.com/Risheng1128/Linux2022-quiz/tree/main/quiz2)
 * quiz3: [Hackmd](https://hackmd.io/@Risheng/linux2022-quiz3) / [Github](https://github.com/Risheng1128/Linux2022-quiz/tree/main/quiz3)
@@ -30,8 +28,7 @@ Linux 核心和相關專案貢獻
 * quiz5: [Hackmd](https://hackmd.io/@Risheng/linux2022-quiz5) / [Github](https://github.com/Risheng1128/Linux2022-quiz/tree/main/quiz5)
 * quiz8: [Hackmd](https://hackmd.io/@Risheng/linux2022-quiz8) / [Github](https://github.com/Risheng1128/Linux2022-quiz/tree/main/quiz8)
 
-期末專題
-===
+## 期末專題
 * khttpd 改進: [Hackmd](https://hackmd.io/@Risheng/linux2022-khttpd) / [Github](https://github.com/Risheng1128/khttpd)
 
 * 1 對 1 討論時間
@@ -50,11 +47,9 @@ Linux 核心和相關專案貢獻
   
 其中讓我最有感想的，就是這學期老師強調的 lock-free 程式設計，原本看小考的程式碼可以理解程式的運作原理，直到自己實作才知道我前面根本沒看懂，漏掉的細節實在是太多了，也了解自己的不足。雖然最後只弄出了一個「可以動」的版本，離正確的程式碼還有很大的差距，不過透過這次的練習，也讓自己重新「認識自己」。
 
-所見所聞所感
-===
+## 所見所聞所感
 
-自我評量
-===
+## 自我評量
 我給自己 8 分
 
 這學期投入了大量時間在這門課上，看了無數的日出。但就算如此，看似做了很多的作業，實際上其實很多都只是理解程式原理，並沒有真正的好好改動程式碼，說不到皮毛都不為過，只能怪自己還不夠強。
