@@ -16,6 +16,8 @@ categories: User
 * 《Demystifying the Linux CPU Scheduler》錯字修正和排版調整
 * 《Linux Kernel Module Programming Guide》錯字修正和排版調整
 * [Linux Patch](https://lkml.org/lkml/2022/6/8/923) 心得：[HackMD](https://hackmd.io/bZ0xpeo6TqOMoOHlTiApZg)
+* 優化 [lab0-c](https://github.com/sysprog21/lab0-c): [commit 7eb9cad](https://github.com/sysprog21/lab0-c/commit/7eb9cad5376b1b4a701f975182fc7b7d08e5f127)、[commit e5c0c43](https://github.com/sysprog21/lab0-c/commit/e5c0c43595f04bb1c457151fe2c5403cf1bd4d4c)
+* khttp、bignum、kecho 錯字修正
 
 
 # 2022 Linux 核心設計 春季班 自我評量
@@ -36,13 +38,16 @@ categories: User
 
 
 ## 期末專題
-
+* Linux Kernel Completely Fair Scheduler 模擬器: [Website](https://steven1lung.github.io/cfs-visualizer-react/) / [GitHub](https://github.com/steven1lung/cfs-visualizer-react)
 * Linux 排程器研究: [HackMD](https://hackmd.io/@steven1lung/scheduler_notes)
-* Linux Kernel Completely Fair Scheduler 模擬器: [GitHub](https://github.com/steven1lung/cfs-visualizer-react)
+* Linux 紅黑樹研究: [HackMD](https://hackmd.io/@steven1lung/linux-rbt)
 
 ## 修課心得
+修這堂課之前一直聽到同學們說 Linux 這堂課一次的作業可以跟其他課一整個學期的 loading 相比，剛好自己對作業系統有興趣，而且想要體驗看看被虐的感覺，我就打算來修課。第一堂課上課就體驗到了震撼，我記得當初老師在課堂說好像一週要投入 20 個小時，好像怕嚇到同學之後又改成 18、17 個小時（完全沒有比較好xD）。看到第一次作業的敘述這麼長一大段，光是讀完就花了好幾天，作業的基本要求做完後（沒有包括進階）就已經達到每週花 18 個小時的門檻了。但是也對於 Linux 風格資料結構更熟悉且認識了 C 語言。
 
+每次的課程都需要花費許多課後的時間消化跟理解，一次的課程裡面還有許多對應的解說或是連結可以點進去看，我只能做到看完有印象的程度，但是這樣也遠遠不夠。有一次被老師點到回答問題，把程式碼邏輯解釋完的我又被延伸問題難倒，才明白理解並不只是要會解釋邏輯而已，而是要可以從中看出更多面向，要如何驗證正確性、這個實作跟其他相同功能的實作的優劣差異、有沒有優化空間、程式碼是否有缺陷。能舉一反三才是真正理解、吸收。
 
+老師在學期中發了一本排程器的電子書，將排程器的基礎用不同角度去進行解說。我也在閱讀的過程中記下筆記，我覺得記筆記的方式真的對學習很有幫助，看完一個段落後能用自己的話寫出來是會加深印象的。自己之後也發現有些地方可以修改，於是就跟老師討論可不可以也幫忙編撰，於是就參與了書籍的撰寫。剛好自己也有寫網頁的經驗，所以期末專題也就決定寫一個網頁來模擬排程器。我覺得這學期最花時間的地方就在這裡，因為要模擬排程器，所以至少要理解排程器運作的原理、方法。所以花費了大量時間在老師的書的第三章還有 Linux CFS 的官方 document。自己在看官方文件的途中發現有地方可以提交 patch，也就嘗試發了一個 patch（沒被 apply），是很有趣的經驗。
 
 ## 自我評量 (1 ~ 10)
-
+我會給自己 9 分，這 9 分我是以我付出的努力程度打的。雖然說我並沒有將所有作業完成，但是幾乎每天都是 Linux 文件或是原始碼陪我度過的，我已經和 v5.10 變成好朋友了。
