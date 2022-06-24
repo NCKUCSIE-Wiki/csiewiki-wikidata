@@ -29,6 +29,9 @@ categories: User
 
 * fibdrv: [GitHub]() / [HackMD](https://hackmd.io/M-qC8wPvSLax3UfxENeg4Q)
 
+- 已實作完成的部份
+    - 在 fibdrv 專案中引入 cmwq ，並確保不使用 mutex 保護，也可以讀取到正確的 fibonacci number
+
 ## 修課心得
 
 
