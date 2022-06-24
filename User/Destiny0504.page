@@ -13,8 +13,8 @@ categories: User
 
 ## 作業共筆
 
-* lab0-c: [GitHub]() / [HackMD](https://hackmd.io/OJp4epQqQGSc74kP05C5tA)
-* fibdrv: [GitHub]() / [HackMD](https://hackmd.io/M-qC8wPvSLax3UfxENeg4Q)
+* lab0-c: [GitHub](https://github.com/Destiny0504/lab0-c) / [HackMD](https://hackmd.io/OJp4epQqQGSc74kP05C5tA)
+* fibdrv: [GitHub](https://github.com/Destiny0504/fibdrv_final) / [HackMD](https://hackmd.io/M-qC8wPvSLax3UfxENeg4Q)
 
 ## 測驗共筆
 
@@ -27,7 +27,7 @@ categories: User
 
 改進 fibdrv ，避免使用 mutex 進而達成增加資料的吞吐量。
 
-* fibdrv: [GitHub]() / [HackMD](https://hackmd.io/M-qC8wPvSLax3UfxENeg4Q)
+* fibdrv: [GitHub](https://github.com/Destiny0504/fibdrv_final) / [HackMD](https://hackmd.io/M-qC8wPvSLax3UfxENeg4Q)
 
 - 已實作完成的部份
     - 在 fibdrv 專案中引入 cmwq ，並確保不使用 mutex 保護，也可以讀取到正確的 fibonacci number
