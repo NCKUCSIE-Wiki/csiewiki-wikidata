@@ -1,0 +1,60 @@
+---
+title: yaohwang99 (黃堯)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 機械工程學系 資訊工程學系 110 級 (2017 ~ 2022)
+
+* GitHub: [`yaohwang99`](https://github.com/yaohwang99)
+* HackMD: [`yaohwang99`](https://hackmd.io/@yaohwang99)
+
+## 成果發表
+
+
+## Linux 核心和相關專案貢獻
+
+# 2022 Linux 核心設計/實作 春季班 自我評量
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/yaohwang99/lab0-c) / [HackMD](https://hackmd.io/@yaohwang99/linux2022-lab0)
+* fibdrv: [GitHub](https://github.com/yaohwang99/fibdrv) / [HackMD](https://hackmd.io/@yaohwang99/linux2022-fibdrv)
+* ktcp: [GitHub](https://github.com/yaohwang99/khttpd) / [HackMD](https://hackmd.io/@yaohwang99/linux2022-ktcp)
+* khttpd: [GitHub](https://github.com/yaohwang99/khttpd) / [HackMD](https://hackmd.io/@yaohwang99/linux2022-ktcp)
+
+## 測驗共筆
+
+* quiz1: [HackMD](https://hackmd.io/@yaohwang99/linux2022-quiz1)
+* quiz2: [HackMD](https://hackmd.io/@yaohwang99/linux2022-quiz2)
+* quiz3: [HackMD](https://hackmd.io/@yaohwang99/linux2022-quiz3)
+* quiz4: [HackMD](https://hackmd.io/@yaohwang99/linux2022-quiz4)
+* quiz5: [HackMD](https://hackmd.io/@yaohwang99/linux2022-quiz5)
+* quiz6: [HackMD](https://hackmd.io/@yaohwang99/linux2022-quiz6)
+* quiz8: [HackMD](https://hackmd.io/@yaohwang99/linux2022-quiz8)
+
+
+## 期末專題
+
+* Effective System Call Aggregation (ESCA): [HackMD](https://hackmd.io/@yaohwang99/BJgMdmPD9)
+* 1 對 1 討論時間
+    * 2022/4/16 星期六下午 3:00 ~ 3:30
+    * 2022/5/20 星期五下午 1:30 ~ 2:00
+    * 2022/6/15 星期三下午 8:00 ~ 9:00 (與助教)
+
+* 目前完成成果
+    * 更新nginx 版本至 v1.22.0。[pull request](https://github.com/eecheng87/ESCA/pull/24)
+    * 擴充Effective System Call Aggregation (ESCA)，允許更多應用情境，選定 [lwan] (https://lwan.ws/) 這個高效的網頁伺服器實作。[pull request](https://github.com/eecheng87/ESCA/pull/25)
+
+## 修課心得
+
+計畫要修這一門課時就預期要投入大量的時間，因此特別排在了課比較少的最後一學期。學期初時就開始閱讀大量的教材，並且藉由 lab0 學習 c 語言，意識到必須要了解硬體、編譯器最佳化、排程器等等重要議題，才能寫出高效率的程式。
+
+在 lab0，我重新複習了指標的運用，以及避免各種 memory leak，並且了解 Linux kernel 如何將 linked list 巧妙地應用於各種結構。在 fibdrv，我藉由 perf 工具及不斷實驗嘗試，了解到程式中巨大記憶體開銷成本。也在各個 quiz 了解 bitwise 操作、多執行緒等等議題。
+
+在擴充 ESCA 的過程，我需要找出程式碼所使用的特定系統呼叫位置，龐大的專案導致程式碼追蹤困難，因此需要利用 gdb 等等工具不斷嘗試。我也藉由觀摩 nginx、lwan 等等優秀的專案了解到「物件導向是一種態度」，程式藉由 structure 一層一層的包裝並傳入函式，形成一個邏輯清晰的架構。
+
+## 自我評量 (1 ~ 10)
+
+我給自己 8 分
+
+在這學期初每週都投入了 20 小時以上在作業和閱讀教材，包括 lab0 以及 fibdrv，在學期中時，因為 ktcp、khttpd 專案較為龐大，造成進度有些停滯，只有完成基本的程式碼理解及回答 quiz 問題。在期末專題，我繼續投入了大量時間，完成擴充 ESCA 使其支援 lwan 的任務。
