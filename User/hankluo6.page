@@ -68,3 +68,38 @@ email: ```hankluo6@gmail.com```
 ### 自我評量 (1-10)
 
 10 分，雖然這學期有專題還有許多面試，但每周都有強迫抽出一部分時間完成作業
+
+# 2022 春季班 個人評量
+
+### 作業 Lab
+
+* Homework 1:
+[lab0](https://hackmd.io/@hankluo6/2022q1-lab0),
+[quiz1](https://hackmd.io/@hankluo6/2022quiz1)
+* Homework 2:
+[quiz2](https://hackmd.io/@hankluo6/linux2022-quiz2)
+* Homework 3:
+[quiz3](https://hackmd.io/@hankluo6/2022q1-quiz3)
+* Homework 4:
+[quiz4](https://hackmd.io/@hankluo6/2022q1-quiz4)
+* Homework 5:
+[quiz5](https://hackmd.io/@hankluo6/2022q1quiz5),
+[quiz5](https://hackmd.io/@hankluo6/2022q1quiz6),
+[quiz5](https://hackmd.io/@hankluo6/2022q1quiz8)
+* Homework 6:
+[ktcp](https://hackmd.io/@hankluo6/linux2022-ktcp)
+
+### 期末專題
+
+* mimalloc v.s tcmalloc: [報告](https://hackmd.io/@hankluo6/allocator)
+
+1. 第一次討論 (5/27) 討論 mimalloc 以及 rseq 的可能性
+2. 第二次討論 (6/20) 討論 rseq 在 tcmalloc 上效能提升的原因
+
+### 心得
+
+這學期已經是第三次修課，但在做作業時還是有很多 linux kernel 的行為不懂，很多需要額外補齊的知識。與之前不同的是，這學期接觸更多與網路相關 (ktcp, thttpd) 和 concurrency 在其的應用。另外把之前一直裝不起來的 tcmalloc 重新安裝，花了很多時間理解 bazel 的運作原理及 tcmalloc 的編譯方式，成功在我的電腦上安裝，並能改變各種組態。最後也測試 per-cpu 及 per-thread 的差異。算是把去年未完成的部分完成。
+
+### 自我評量 (1-10)
+
+9 分，這學期時間比較少，只能勉強把作業及專題做完，沒能更深入的探討一些細節比較可惜
