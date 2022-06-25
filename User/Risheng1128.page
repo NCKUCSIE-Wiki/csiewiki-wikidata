@@ -40,6 +40,7 @@ categories: User
     * 實作 [directory listing](https://cwiki.apache.org/confluence/display/httpd/DirectoryListings) 功能
     * 使用 [MIME](https://en.wikipedia.org/wiki/MIME) 處理不同類型的檔案
     * 建立 timer 主動關閉連線
+    * 使用 frace 追蹤 khttpd 函式
 
 * 心得
 
@@ -48,6 +49,13 @@ categories: User
 其中讓我最有感想的，就是這學期老師強調的 lock-free 程式設計，原本看小考的程式碼可以理解程式的運作原理，直到自己實作才知道我前面根本沒看懂，漏掉的細節實在是太多了，也了解自己的不足。雖然最後只弄出了一個「可以動」的版本，離正確的程式碼還有很大的差距，不過透過這次的練習，也讓自己重新「認識自己」。
 
 ## 所見所聞所感
+* 《Demystifying the Linux CPU Scheduler》
+
+目前只有看第一章和第五章，但是資訊量已經爆炸了。第一章主要帶領我初步認識 Linux 這個龐大的系統，搭配 Linux 的核心原始碼讓我初步了解 Linux 的設計原理，同時也了解作業系統課程學到的詞彙是怎麼被實作出來的。第五章則是講述 Linux 核心內建的除錯工具 — ftrace 的使用方法，看了發現 ftrace 的用法真的很多，功能也很強大，最後有拿來追蹤 khttpd 的函式，實際體驗這個除錯工具的力量。
+
+* The Linux Kernel Module Programming Guide
+
+這本書是我在寫 fibdrv 作業時的好朋友XD，從最基礎的核心模組範例開始，慢慢的帶領我走進核心模組這個大坑。還好有這本書，讓我減少迷失在課程作業裡的時間。
 
 ## 自我評量
 我給自己 8 分
