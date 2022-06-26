@@ -1,0 +1,44 @@
+---
+title: jim12312321 (白耀升)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 心理學系 111 級 (2018 ~ 2022)
+
+* GitHub: [`jim12312321`](https://github.com/jim12312321)
+* HackMD: [`jim12312321`](https://hackmd.io/@jim12312321)
+
+# 2022 Linux 核心設計/核心實作 春季班 自我評量
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/jim12312321/lab0-c) / [HackMD](https://hackmd.io/@jim12312321/linux2022-lab0)
+* fibdrv: [GitHub](https://github.com/jim12312321/fibdrv) / [HackMD](https://hackmd.io/@jim12312321/linux2022-fibdrv)
+* sehttpd: [GitHub](https://github.com/jim12312321/sehttpd) / [HackMD](https://hackmd.io/@jim12312321/linux2022-sehttpd)
+
+## 測驗共筆
+
+* quiz1: [HackMD](https://hackmd.io/@jim12312321/linux2022-quiz1)
+* quiz2: [HackMD](https://hackmd.io/@jim12312321/linux2022-quiz2)
+* quiz3: [HackMD](https://hackmd.io/@jim12312321/linux2022-quiz3)
+* quiz4: [HackMD](https://hackmd.io/@jim12312321/linux2022-quiz4)
+
+## 期末專題
+
+* High performance web server: 
+    - [GitHub](https://github.com/jim12312321/sehttpd)
+    - [HackMD](https://hackmd.io/@jim12312321/linux2022-sehttpd)
+
+## 修課心得
+
+這是我在成大的最後一個學期了，抱持著想要多了解資訊領域的念頭，選修了 Linux 核心實作與核心設計。加上這 6 學分後，總共 22 學分的我尚不知道我接下來要面對什麼......
+
+在成大前三年內，我對 C 語言的認知僅停留在最基礎語法，頂多就是能完成資料結構、演算法的作業的程度(甚至程設一都沒修過！)。在學期前六周，老師說每週至少投入 18 小時才算及格，而基礎不紮實的我前六週每周都投入至少 25 小時以上寫作業與看課程，儘管如此我仍要花整整一個禮拜才能看到 lab-0 的皮卡丘，雖然這只是課程中最微小不起眼的開始，卻也是支撐我完成整個學期課程的重要起點。在整學期結束後，我學了很多內容，更正，應該說是看了很多內容比較貼切，雖然很多東西還不能內化成我的知識，但這堂課確實拓展了我的視野，這是修其他課程很難得到的寶貴經驗。
+
+過了一個學期，我想我仍是那一個在實體課被老師點到後會被狠狠罵一頓的學生，我想我寫的程式一樣還是連玩具的等級都達不到，但我想經過一學期的課程後，唯一吸收完全的就是老師的一句話，這句話也是老師在課程中反覆強調的，⌈誠實面對自己⌋。
+    
+
+## 自我評量 (1 ~ 10)
+我給自己 7 分
+
+在學期初(前六周)，其他課程的壓力還沒有浮現前，每周都能投入 25 小時以上來學習，也確實讓我覺得自己又更強了一點，不過在學期中後，隨著 22 學分的債逐漸清晰後，就沒有充分投入在這堂課中了。
