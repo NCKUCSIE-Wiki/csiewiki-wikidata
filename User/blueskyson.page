@@ -4,9 +4,12 @@ categories: User
 ...
 
 ## 簡介
+
 - 成功大學 資訊工程系 111 級 (2018~2022)
+- github: [blueskyson](https://github.com/blueskyson)
 
 ## 2020 秋季班 自我評量
+
 (a) 知道 x - y < 0 敘述為何不能寫為 x < y 嗎？ (CS:APP 第 2 章)
 
 需要考慮 overflow 的狀況，例如在 int32 下 2147483647 - (-1) < 0 ，但是 2147483647 > -1 
@@ -39,3 +42,29 @@ categories: User
 以 exp-golomb code 說明 clz ，並改進 x-compressor
 
 - [hackmd](https://hackmd.io/@blueskyson/Skh0XRBhw), [exp-golomb code](https://github.com/blueskyson/Exponential-Golomb-coding)
+
+## 2022 春季班 自我評量
+
+### 作業/隨堂測驗
+
+- lab0: [hackmd](https://hackmd.io/@blueskyson/linux2022-lab0)
+- fibdrv: [hackmd](https://hackmd.io/@blueskyson/linux2022-fibdrv)
+- ktcp: [ktcp](https://hackmd.io/@blueskyson/linux2022-kecho)
+- quiz1: [hackmd](https://hackmd.io/@blueskyson/linux2022quiz1)
+- quiz2: [hackmd](https://hackmd.io/@blueskyson/linux2022quiz2)
+
+### 期末專題
+
+探討從無到有打造 Linux 平台的高效能網頁伺服器，涵蓋是否該將伺服器實作於 Linux 核心內部、並行處理、I/O 模型、epoll、Reactor pattern，和 Web 伺服器在事件驅動架構的考量。
+
+- [hackmd](https://hackmd.io/@blueskyson/linux2022-final-project), [github](https://github.com/blueskyson/sehttpd)
+
+### 自我評量 (1 ~ 10)
+
+我給自己 6 分。
+
+在學期初做 lab0 實作 linked list 的 merge sort 過程中，學習到了查閱原始材料的重要性，其可以避免繞許多彎路，也不會被其他人的穿鑿附會所誤導，再來 trace code 時也要避免舉燭，而要參照 commit message 理解目標程式碼的目的，並搭配實驗去執行。在設計演算法的同時最好也針對硬體特性來優化，例如 linux 的 list_sort 為了減少 cache thrashing，引進了 2:1 balanced merge。前述這些經驗都幫助我在未來設計軟體時考慮到更多議題。
+
+在學期中做 fibdrv 時，學習了 kernel module 的特性和相關議題，例如 kernel space 到 user space 資料複製的成本、讓記憶體配置能夠 deterministic、in-place，比較 Karatsuba 和 Schönhage–Strassen 乘法的差異。在 ktcp 的作業追蹤了 kernel module 載入的過程。
+
+很可惜學期末一個月，因為個人能力不足，將大部分時間分配給另外兩門課，所以期末專題進度缺乏。
