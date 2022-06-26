@@ -15,16 +15,21 @@ categories: User
 - [fibdrv](https://hackmd.io/@zoanana990/linux2022-fibdrv)
 
 # 期末專題
-- [khttpd](https://hackmd.io/@zoanana990/linux2022-ktcp)
+[khttpd](https://hackmd.io/@zoanana990/linux2022-ktcp)
 
 一對一討論紀錄：
-  - 2022 / 3 / 25 與老師討論 fibdrv 的改進方式
-  - 2022 / 5 / 23 與老師討論 khttpd 的目標
-  - 2022 / 5 / 31 與老師討論面試的準備方式
+  
+- 2022 / 3 / 25 與老師討論 fibdrv 的改進方式
+
+- 2022 / 5 / 23 與老師討論 khttpd 的目標
+
+- 2022 / 5 / 31 與老師討論面試的準備方式
 
 實作成果：
-  - 使用 CMWQ 改寫 khttpd
-  - 實作 directory list，並且可以打開不同的檔案
+
+- 使用 CMWQ 改寫 khttpd
+
+- 實作 directory list，並且可以打開不同的檔案
 
 # 心得
 原本我並沒有寫過 C 語言的專案，在這個課程中從頭開始學。以下是我主要學到的東西：
