@@ -9,10 +9,47 @@ categories: User
 * GitHub: [`qwe661234`](https://github.com/qwe661234)
 * HackMD: [`qwe661234`](https://hackmd.io/@qwe661234)
 
-## 成果發表
+# 2022 Linux 核心設計 春季班 自我評量
+## 作業
 
-無
+* lab0-c: [GitHub](https://github.com/qwe661234/lab0-c) / [HackMD](https://hackmd.io/gagu7CV0QICdAUwIehFXtA)
+* fibdrv: [GitHub](https://github.com/qwe661234/fibdrv) / [HackMD](https://hackmd.io/uagLte1JR9mv7InkfMMdHQ)
+* ktcp: [HackMD](https://hackmd.io/@qwe661234/linux2022q1-homework6)
 
-## Linux 核心和相關專案貢獻
 
-無
+## 隨堂測驗
+
+* quiz1: [HackMD](https://hackmd.io/@qwe661234/linux2022-quiz1)
+* quiz2: [HackMD](https://hackmd.io/@qwe661234/linux2022-quiz2)
+* quiz3: [HackMD](https://hackmd.io/@qwe661234/SkQauv-Qq)
+
+
+## 期末專題
+
+* 實作 Thread package: [GitHub](https://github.com/qwe661234/MuThreadPackage) / [HackMD](https://hackmd.io/aBqkoBz9QUq0tH5eHovZWA)
+* 一對一討論時間
+    * 4/30, 6/9, 6/21
+* 啟發
+
+    在與老師一對一中，了解到實作 thread package 的動機，由於過去的 thread package 無法解決特定問題或與作業系統不相容，因此要自己開發 thread package 來解決。 此外，再與老師討論後才發現原本的程式忽略很多在多執行緒同時執行時可能遇到的問題，例如有兩個執行序同時想改變某一執行緒的優先權，如果沒有加入 lock 或其他確保資料正確性的方法，將可能造成程式出現非預期的結果，讓我理解到在開發多執行序的程式時，如果資料在執行緒間是共享的，必須謹慎處理。
+
+    
+* 目前成果
+    * basic thread API
+    * mutex with multiple types
+    * priority inheritance mutex
+    * priority protection mutex
+    * simple and complex test cases
+
+## 所見所聞所感
+這學期比較多的收穫來自《並行和多執行緒程式設計》這份教材，一方面是期末專題與之息息相關，另一方面是過去在學作業系統時，沒有理解執行緒、mutex、semaphore 或是 condition variable 這些概念，加上過去寫的程式都不會碰到這些議題，因此利用本學期的課程來好好了解這些概念。
+
+在看教材中的多執行緒程式時，因為有詳細的解說，所以沒有特別複雜的感覺，但換成自己寫卻是另一回事。由於每一次的執行結果都不一定一樣，寫出來的程式碼可能存在問題，但問題卻不是每次都會發生，而是有機率的發生，造成 debug 上有很大的困難。這和過去寫程式有截然不同的體驗，為了確保短短幾行程式碼的正確性，需要有很多的背景知識，考慮很多的議題，以及模擬多個執行緒在不同執行順序下的各種可能。不過在自己動手寫後，對於教材中提到的議題有更好的掌握，就像老師在上課時提到的，給同學一份程式碼並自己動手改是最好的學習方式。
+
+從不知道如何使用執行序和 mutex 到自己寫出提供基本功能的 thread package，我想這是我在這堂課上最大的進步。雖然學期結束，但仍有很多教材以及作業可以持續學習，期末專題也還有很多不足需要改進，讓我能持續從這堂課中收穫更多。
+
+## 自我評量 (1 ~ 10)
+
+我給自己 7 分
+
+這學期投入的作業並不多，大部分的時間都投入在 `fibdrv` 和期末專題中，有很多作業以及上課教材都來不急在這學期完成，因此給自己 7 分。
