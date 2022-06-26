@@ -15,7 +15,8 @@ categories: User
 ## Linux 核心和相關專案貢獻
 * 《Demystifying the Linux CPU Scheduler》錯字修正和排版調整
 * 《Linux Kernel Module Programming Guide》錯字修正和排版調整
-* [Linux Patch](https://lkml.org/lkml/2022/6/8/923) 心得：[HackMD](https://hackmd.io/bZ0xpeo6TqOMoOHlTiApZg)
+* [Linux Patch for pelt](https://lkml.org/lkml/2022/6/8/923) 心得：[HackMD](https://hackmd.io/bZ0xpeo6TqOMoOHlTiApZg)
+* [Linux Patch for UML docs](https://lore.kernel.org/all/20220621072910.4704-1-1030steven@gmail.com/t/)
 * 優化 [lab0-c](https://github.com/sysprog21/lab0-c): [commit 7eb9cad](https://github.com/sysprog21/lab0-c/commit/7eb9cad5376b1b4a701f975182fc7b7d08e5f127)、[commit e5c0c43](https://github.com/sysprog21/lab0-c/commit/e5c0c43595f04bb1c457151fe2c5403cf1bd4d4c)
 * khttp、bignum、kecho 錯字修正
 
