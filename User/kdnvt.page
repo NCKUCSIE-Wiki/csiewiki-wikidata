@@ -1,0 +1,48 @@
+---
+title: kdnvt (吳昱)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程學系 111 級 (2018 ~ )
+
+* GitHub: [`kdnvt`](https://github.com/kdnvt)
+
+# 2022 Linux 核心設計 春季班 自我評量
+
+## 作業/隨堂測驗
+
+[lab0](https://hackmd.io/@kdnvt/linux2022_lab0)
+
+[fibdrv](https://hackmd.io/@kdnvt/fibdrv)
+
+[quiz3](https://hackmd.io/@kdnvt/linux2022-quiz3)
+
+[quiz5](https://hackmd.io/@kdnvt/linux2022-quiz5)
+
+[quiz6](https://hackmd.io/@kdnvt/linux2022q1-quiz6)
+ 
+## 期末專題
+
+[concurrent-ll](https://hackmd.io/@kdnvt/concurrent-ll-2022)
+
+## 修課心得
+
+
+我一直以來都對於自己的表現沒什麼自信。因此，這學期希望可以藉由挑戰這門課，來找出自己的未來方向以及自信。
+
+因為知道這門課的教材很多，所以寒假就有先花一些時間預習。如工具的安裝使用、你所不知道的C語言-指標篇以及 cs:app 的部分內容。也因此，寫第一個作業 lab0 時可以花比較多時間專注在程式的實作/分析以及共筆的內容。剛開學時真的讓我體會到了只要醒著就在寫作業的感覺。
+
+不過隨著週數增加，需要看的線上教材也變得越來越多，在寫 fibdrv 時就比較沒辦法花那麼多時間在程式的實作上。
+
+到了第五第六週，課程開始花大量的篇幅講解並行程式的內容，也讓我第一次看到 lock-free 的程式。當時的我沒想到看似簡短的測驗題背後所隱藏的重要議題，如 memory order 、 cache alignment 、 false sharing 等等。也沒想到這兩週的測驗題就是我期末專題的內容。
+
+期末專題可以自己寫一次 lock-free 的程式並執行讓我感到滿開心的，雖然第五週開始幾乎每個禮拜都有並行程式的內容，但實際寫一遍才能真正感覺到程式的困難，並實際考慮其中的重要議題。不過雖然目前執行沒有發生問題，但還缺乏正確性的驗證。
+
+## 自我評量 (1 ~ 10)
+
+期末自評的部分我給自己 7 分。這學期學會了很多有用的工具，幫助我最多的應該是 address sanitizer 。以前發生 segmentation fault 時我都是用 printf 去看程式停在哪裡，有了 address sanitizer 後就能直接看出來。尤其是期末專題在 debug lock-free 程式時，能直接看出發生問題的位置真的幫了我很大的忙。除此之外，也能幫忙找出可能的 memory leak 。
+
+除了 sanitizer 之外，我也很開心可以熟練 git 的使用。這也是我第一次 pull request 到這麼多人使用的專案(lab0)，並跟專案的維護者討論改進後被合併。
+
+不過除了自評及心得所提到的所學及付出，我最後一個月沒有什麼動力，對於在課程以及期末專題上所花的時間也很少。要如何調適自己的情緒並激發自己的動力是我認為我期中之後還缺乏的部分。
