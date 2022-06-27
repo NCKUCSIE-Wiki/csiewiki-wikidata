@@ -13,7 +13,7 @@ categories: User
 
 ## Linux 核心和相關專案貢獻
 
-# 2022 Linux 核心設計 春季班 自我評量
+# 2022 Linux 核心設計/實作 春季班 自我評量
 ## 作業共筆
 
 * lab0-c: [GitHub](https://github.com/ray90514/lab0-c) / [HackMD](https://hackmd.io/@ray90514/Byftj2n15)
@@ -30,8 +30,16 @@ categories: User
 ## 期末專題
 
 * kvm-host 的改進: [GitHub](https://github.com/ray90514/kvm-host) / [HackMD](https://hackmd.io/@ray90514/kvm-host)
+* Pull Request: [Implement PCI emulation](https://github.com/sysprog21/kvm-host/pull/9) / [Implement the basis of virtio-blk](https://github.com/sysprog21/kvm-host/pull/11)
 
 ## 修課心得
+選課前就知道這堂課很有名，然後對這堂課的印象就是事情很多又很難，也沒有想太多就選了，只是希望能學到東西。因為我不喜歡上學，所以我學期初表單裡的期許寫著「希望這堂課能成為我大學中印象最深的一堂課」。
 
+面對這堂課的作業我的感覺是符合預期又超出自身能力的難，有很多以前沒有接觸過的事，而且中間遇到不少次的瓶頸，一開始說的 18 小時是遠遠不夠。
+為了做好期末專題，過程中學了不少，像是 x86-64 arm64 的硬體虛擬化技術、 kvm和hypervisor 、 virtio半虛擬化技術、 PCI/PCIe 、 各種Interrupt 、 Linux Kernel 的驅動架構。除此之外也得到了與別人合作開源專案的寶貴經驗。這學期不足的地方是沒有跟上後面幾次關於並行/多執行緒的課程與作業以及沒有修改到 Linux Kernel ，比較可惜的是實體課太少和只有六學分。
+
+除了知識外，老師很常分享身為工程師要有怎樣的思維，雖然現在還沒有，總有一天會用我的方式將其實踐。不知道這堂課有沒有如一開始所說的成為印象最深刻的一堂課，但看到在這堂課所產出的成果，我一定會想起這過程。
 
 ## 自我評量 (1 ~ 10)
+10分，我覺得這分數對得起付出和收穫，以及這樣打成績單上或許能拿高分
+
