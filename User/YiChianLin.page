@@ -1,0 +1,37 @@
+# Linux 修課心得
+
+## 簡介
+- 國立中山大學 機械與機電工程學系 (2017~2021)
+- 國立成功大學 機械工程研究所 (2021~2023)
+- Github : [YiChianLin](https://github.com/YiChianLin)
+- HackMD : [YiChianLin](https://hackmd.io/@YiChianLin)
+
+## 相關專案貢獻
+- khttpd : commit [f1d43c4](https://github.com/sysprog21/khttpd/commit/f1d43c4af2b8f6d4ac9a6fb06dd52669c35d4fe4)
+
+## 2022 核心實作 春季班 自我評量
+
+### 作業共筆
+- lab0-c: [GitHub](https://github.com/YiChianLin/lab0-c) / [HackMD](https://hackmd.io/@YiChianLin/linux2022-lab0)
+- fibdrv: [GitHub](https://github.com/YiChianLin/fibdrv) / [HackMD](https://hackmd.io/@YiChianLin/linux2022-fibdrv)
+- khttpd: [GitHub](https://github.com/YiChianLin/khttpd) / [HackMD](https://hackmd.io/@YiChianLin/linux2022-ktcp)
+
+## 測驗共筆
+- quiz1: [HackMD](https://hackmd.io/@YiChianLin/linux2022-quiz1)
+- quiz2: [GitHub](https://github.com/YiChianLin/linux2022_quiz/tree/main/quiz_w2) / [HackMD](https://hackmd.io/@YiChianLin/linux2022-quiz2)
+- quiz3: [GitHub](https://github.com/YiChianLin/linux2022_quiz/tree/main/quiz_w3) / [HackMD](https://hackmd.io/@YiChianLin/linux2022-quiz3)
+- quiz4: [GitHub](https://github.com/YiChianLin/linux2022_quiz/tree/main/quiz_w4) / [HackMD](https://hackmd.io/@YiChianLin/linux2022-quiz4)
+- quiz8: [GitHub](https://github.com/YiChianLin/linux2022_quiz/tree/main/quiz_w8) / [HackMD](https://hackmd.io/@YiChianLin/linux2022-quiz8)
+
+## 期末專題
+* khttpd: [GitHub](https://github.com/YiChianLin/khttpd) / [HackMD](https://hackmd.io/@YiChianLin/linux2022-ktcp)
+
+## 修課心得
+課程結合了非常多資訊相關的課程，如:資料結構、演算法、計算機組織等等，之前也都沒有正式學過，所以在一開始參與課程的時候要補的知識非常多，包含到第一次作業接觸到 circular doubly-linkedlist 與資結接觸的單向 linked list 差別很多，在撰寫函式功能如刪除重複資料、增加頭尾資料、排序等等...，考慮到 prev 與 next 指標都要指到正確的資料，也開始接觸到 list.h 的 API，查看 kernel 的原始碼，雖然大部分覺得很艱深...，包含後續的作業很多從沒看過的函式，透過查閱相關的 man page 慢慢去理解相關的功能，就像在查 module_param() 函式的時候，查了一層又還會有下一層，就好像在閱讀材料的時候，點開一個連結後又會有更多的連結，不過這個過程學習"如何查資料"，查閱第一手資料是非常重要的提供我們最正確的資訊，雖然有時候還是會查閱第二手資料，要改掉這個壞習慣。
+
+一學期下來，對於作業與小考大部分是對程式碼做解讀，包含補充相關的背景知識，在與老師一對一討論的時候常常被問倒，也是要求我要多看相關材料，不過我認為既然不會那就是此時此刻開始學習，我自知自己的知識量不夠多，那就多看多學，老師也常常說跟自己比就好，自己也沒有學到東西才是最重要的。在 khttpd 的作業中我觀察陳日昇同學的 pull request #6，改善了 buffer 的問題，在觀察的過程也與同學討論也萌生了是否有更好的做法，於是在先前的 fibdrv 中有閱讀到相關 kzalloc 與 kmalloc 的一些差別，進而去測試效率，最後也基於這則 commit 也提出了 commit，我想雖然只是改善了幾行的程式碼，能改進整個專案一點，可能不像很多大神可以提交 Linux patch，不過對我來說可能是前進了一步吧。
+
+## 自我評量(1~10)
+我給我自己 6 分
+
+我覺得我自己沒有表現得很好，對於大部分的作業與考試也只能從程式碼看起，光從理解程式碼就花了蠻多的時間，也包含要閱讀許多材料補充知識，不過看了許多材料也不見得能懂，所以我覺得我還不夠努力在這堂課，不過老師也常說，就算花很多時間，也不能真正的理解很多相關資訊的材料，不過對我來說還是會花時間持續看下去。
