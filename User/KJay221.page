@@ -18,12 +18,16 @@ categories: User
 
 ## 作業共筆
 
-* [quiz2]()
+* quiz2:[GitHub](https://github.com/KJay221/linux_class2022/tree/main/quiz2)/[HackMD](https://hackmd.io/@KJay/linux2022-quiz2)
+* quiz3:[HackMD](https://hackmd.io/@KJay/linux2022-quiz3)
 
 ## 期末專題
 
-* [quiz2]()
+* quiz2:[GitHub](https://github.com/KJay221/linux_class2022/tree/main/quiz2)/[HackMD](https://hackmd.io/@KJay/linux2022-quiz2)
 
 ## 修課心得
+只能說這堂課的內容多到超乎我的想像，從一開始的 C 語言到後來的排程器與各項議題的探討，真的需要花很多時間去掌握，可惜的是我自身能力不足和學期中的怠惰，目前比較有吸收到的只有前幾週的內容，後面的教材幾乎都是看看而已，不過也是有許多收穫，像是學會用 perf 來分析效能，還有用 ag 來搜尋原始碼中的關鍵字及 C 語言的許多知識，另外還體認到有些問題與其用想的或 google 找，不如直接動手做或找原始碼會比較快獲得答案，另外有機會的話希望可以再修一次這門課，一方面是我學習方法的錯誤另一方面投入的時間也太少導致學到的東西有限。
 
 ## 自我評量
+我給自己 7 分<br />
+學期初因為還在考研究所所以第一週還有 lab0 、quiz1 都沒跟到，之後又一直趕之前的進度導致許多東西都走馬看花，許多題目和文章也都沒有深入了解和自己動手做，導致許多東西都沒有內化成自己的，之後與老師一對一面談後，老師就建議我將 quiz2 好好的做，後來花了許多時間將 quiz2 的所有問題都研究了一遍，也嘗試著讀 linux 原始碼，整個過程下來算是蠻有收穫的，不過在之前進度落後時我有點怠惰了所以最後給自己 7 分
