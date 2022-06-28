@@ -21,6 +21,10 @@ categories: User
 * [Linux](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/): commit [62a40d](https://github.com/torvalds/linux/commit/62a40dad573406cdcb489dd45cfd201717c2e765), [cf2adec](https://github.com/torvalds/linux/commit/cf2adec7479d875973fe10782f8bf20377628ef2)
 * 《Demystifying the Linux CPU Scheduler》錯字修正和排版調整
 
+## 其他專案貢獻
+* [FreeRTOS](https://github.com/FreeRTOS/FreeRTOS): commit [0744c287](https://github.com/FreeRTOS/FreeRTOS/commit/0744c28749efbc0a0f08424eff5f6433078a25a2)
+* [raspi3-tutorial](https://github.com/bztsrc/raspi3-tutorial): commit [c59ad439](https://github.com/bztsrc/raspi3-tutorial/commit/c59ad439f427b0bbac48eef97e689f25ad4fac6c)
+
 # 2020 Linux 核心設計 春季班 自我評量
 ## 作業共筆
 
