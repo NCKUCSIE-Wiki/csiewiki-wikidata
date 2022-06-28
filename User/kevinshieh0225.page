@@ -1,0 +1,56 @@
+---
+title: kevinshieh0225 (謝旻恩)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 電機工程學系碩士班 (2021 ~ ongoing)
+* 國立成功大學 電機工程學系學士班 109 級 (2016 ~ 2021)
+
+* GitHub: [`kevinshieh0225`](https://github.com/kevinshieh0225)
+* HackMD: [`Masamaloka`](https://hackmd.io/@Masamaloka)
+
+## Linux 核心和相關專案貢獻
+* [vcam](https://github.com/sysprog21/vcam) 專案貢獻：[HackMD](https://hackmd.io/@Masamaloka/linux2022-vcam)
+* kecho 修正 thread barrier 實作：[#11](https://github.com/sysprog21/kecho/pull/11)
+* concurrent-programs/hp_list 修正迭代錯誤：[#10](https://github.com/sysprog21/concurrent-programs/pull/10)
+
+
+# 2022 Linux 核心設計 春季班 自我評量
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/kevinshieh0225/lab0-c) / [HackMD](https://hackmd.io/@Masamaloka/2022q1-hw1)
+* fibdrv: [GitHub](https://github.com/kevinshieh0225/fibdrv) / [HackMD](https://hackmd.io/@Masamaloka/fibdrv)
+* ktcp: [HackMD](https://hackmd.io/@Masamaloka/linux2022-ktcp)
+* kecho: [GitHub](https://github.com/kevinshieh0225/kecho) / [HackMD](https://hackmd.io/@Masamaloka/linux2022-kecho)
+* khttpd: [GitHub](https://github.com/kevinshieh0225/khttpd) / [HackMD](https://hackmd.io/@Masamaloka/linux2022-khttpd)
+* Memory Access 筆記: [HackMD](https://hackmd.io/@Masamaloka/memory-access-issue)
+* Memory Barrier 筆記: [HackMD](https://hackmd.io/@Masamaloka/linux-kernel-memory-barrier)
+
+
+## 測驗共筆
+
+* quiz1: [HackMD](https://hackmd.io/@Masamaloka/linux2022-quiz1)
+* quiz2: [HackMD](https://hackmd.io/@Masamaloka/linux2022-quiz2)
+* quiz3: [HackMD](https://hackmd.io/@Masamaloka/linux2022-quiz3)
+* quiz4: [HackMD](https://hackmd.io/@Masamaloka/linux2022-quiz4)
+* quiz5: [HackMD](https://hackmd.io/@Masamaloka/linux2022-quiz5)
+* quiz8: [HackMD](https://hackmd.io/@Masamaloka/linux2022-quiz8)
+
+
+## 期末專題
+* vcam：打造 Linux 虛擬攝影機裝置驅動程式 [GitHub](https://github.com/kevinshieh0225/vcam) / [HackMD](https://hackmd.io/@Masamaloka/linux2022-vcam)
+
+## 修課心得
+自上學期修習資訊科技產業專案設計後，除了了解台灣產業需求、自己的目標、也深知自身不足，故這一學期決定全力投入在這門課裡，希望對作業系統有更深入的學習與實作，也基於影像處理的興趣給自己設定了最後能開發 vcam 的目標。
+
+課程剛開始就帶給我深深的挫敗感，課程內容與功課量深不見底，我就算一個禮拜投入超過 20 小時也只能勉強達成基本需求，再對比其他神人的修課筆記，深刻感受彼此差距。但這也讓我了解到這堂課是你願意投入多少，就能帶給你超乎預期的成長，怪不得有人願意一修再修，這也激起我的挑戰慾望。
+
+從剛開始的 lab0-c 讓我初探 linux 核心風格的程式開發，也開始思考這些常見的資料結構的實作考量。從課程與考試中扎實的學習指標、函式與巨集、數值系統、Bitwise 操作，這些可謂基礎中的基礎，卻也奠定了一個開發者寫出的程式碼是否有價值的關鍵，而 fibdrv 正體現了這件事，影響效能的因素不只有演算法，還包括你怎麼實現他，如何把所有一丁點的效能都把他拉滿，再再考驗開發者的功力。fibdrv 是我第一次開發核心模組，嘗盡電腦當機的辛酸，也實際透過 perf 來檢測效能，操作 gdb 來偵錯。
+
+學期中我專注於多執行緒的議題，理解到現今影響多核心系統效能的關鍵，反而是記憶體存取的議題。探討 cache coherence、硬體架構 store buffer 和 invalidate queue 如何提昇存取效能，卻也帶來副作用，最終需要靠軟體層級的 memory barrier 來維護多核心執行的正確性。而後在 ktcp 專案學習 TCP 伺服器、I/O multiplexing、kernel thread 和 workqueue 處理機制。最終如願和老師一起開發 vcam 虛擬攝影機裝置，讓我深入理解 v4l2 linux kernel 框架，了解 v4l2-compliance, vlc, ffmpeg 與 video driver 間的互動關係，以修正 vcam 功能以提昇其支援性、改善 vcam 運作流程提高專案的維護性、並改善 scaling, cropping 讓這些功能更符合使用者的使用需求。
+
+在這一門課我學到最寶貴的是獨立研究的能力。每次剛開始我對老師派給我的任務都很陌生，我並沒有相關的知識背景，我必須從頭開始建構對該領域的認知。在理解背後的脈落，才進一步能看懂專案程式為何這樣寫，並能做基礎的開發。然而在開發的更加深入時，會發現很多問題再也無法從網路尋找解答，我必須獨立的去尋找資源、閱讀規格，自行去尋找原因。最終，我建立一套自己的論述，能夠自己提出問題，知道哪裡可以再改進，我認為這時我才真正成為一個獨當一面的工程師。面對日漸複雜的系統開發，工程師的價值便是不斷的學習與挑戰。
+
+## 自我評量 (1 ~ 10)
+10 分，這學期我一半以上的時間都在做這堂課的內容，雖然還是沒有完成所有的作業需求，但真的是從對 C 語言有點陌生，到能夠和老師一起開發專案，真的成長很多！大感謝。
