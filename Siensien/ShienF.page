@@ -1,0 +1,45 @@
+---
+title: ShienF (范嘉軒)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程學系
+
+* GitHub: [`ShienF`](https://github.com/ShienF)
+
+
+
+## Linux 核心和相關專案貢獻
+* 
+
+
+# 2022 核心實作 春季班 自我評量
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/ShienF/lab0-c) / [HackMD](https://hackmd.io/@Siensien/linux2022_lab0)
+* fibdrv: [GitHub](https://github.com/ShienF/fibdrv) / [HackMD](https://hackmd.io/@Siensien/fibdrv)
+
+
+## 測驗共筆
+
+* quiz1: [HackMD](https://hackmd.io/@Siensien/linux2022_quiz1)
+* quiz2: [HackMD](https://hackmd.io/@Siensien/linux2022_quiz2)
+
+
+## 期末專題
+
+* RCU 移植至 quiz5 HP 程式基礎: [HackMD](https://hackmd.io/@Siensien/quiz5_modified/edit)
+
+
+## 修課心得
+
+剛開始前幾周對 linux 核心十分茫然（雖然現在只比過去多了解一點點點點），隨著作業的累積，才好像體會到核心程式碼的精妙，有時短短幾行卻包含了貢獻者咀嚼無數次後的思考。linux 核心的先備知識十分龐雜，但老師提供的資源相當豐富，有花了很多時間錄製的教學影片以及前人的共筆，讓我往後能夠繼續鑽研。
+我的進度十分緩慢，了解一兩百行的程式碼會花上好幾天，再加上許多的文件，讓我體會到 linux 核心的龐大以及自己的不足。寫作業的過程中我僅能觀摩他人的作法，理解，吸收並內化，並不能高度獨立完成作業。雖然學的不多，但也在不知不覺中也提升了我對 linux 核心外程式的理解，學到了非常重要的基礎及養分。期許自己能更持續精進，再小的觀念也要花時間理解，並且持之以恆。
+
+
+## 自我評量 (1 ~ 10)
+
+我給自己 7 分
+
+學期初到中作業雖然僅做了幾份作業，但我想只要有持續花時間理解，進度慢也無妨。學期後半有點鬆懈，斷斷續續的學習對自己有點慚愧，所以希望最後幾周能盡力完成期末專題，因此我給自己 7 分。
