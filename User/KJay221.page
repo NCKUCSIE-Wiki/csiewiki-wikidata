@@ -23,7 +23,10 @@ categories: User
 
 ## 期末專題
 
-* quiz2:[GitHub](https://github.com/KJay221/linux_class2022/tree/main/quiz2)/[HackMD](https://hackmd.io/@KJay/linux2022-quiz2)
+* quiz2:[GitHub](https://github.com/KJay221/linux_class2022/tree/main/quiz2)/[HackMD](https://hackmd.io/@KJay/linux2022-quiz2)<br />
+一對一討論時間：<br />
+4/29 上午10:30 - 11:00<br />
+5/16 上午10:30 - 11:00
 
 ## 修課心得
 只能說這堂課的內容多到超乎我的想像，從一開始的 C 語言到後來的排程器與各項議題的探討，真的需要花很多時間去掌握，可惜的是我自身能力不足和學期中的怠惰，目前比較有吸收到的只有前幾週的內容，後面的教材幾乎都是看看而已，不過也是有許多收穫，像是學會用 perf 來分析效能，還有用 ag 來搜尋原始碼中的關鍵字及 C 語言的許多知識，另外還體認到有些問題與其用想的或 google 找，不如直接動手做或找原始碼會比較快獲得答案，另外有機會的話希望可以再修一次這門課，一方面是我學習方法的錯誤另一方面投入的時間也太少導致學到的東西有限。
