@@ -100,3 +100,29 @@ categories: User
 但是在隨堂測驗的部分因為經過了一學期的磨練，感覺自己在閱讀題目與答題上有了不同的感受，這或許就是成長的感覺吧（？
 
 不過學期末受到各種考試跟 project 的轟炸，導致我在期末 project 的部分還是有許多的缺失與不足，這也表示我接下來還有很多地方可以繼續努力。
+
+# 2022 Linux 核心實作 春季班 自我評量
+
+## 相關共筆
+
+* [編譯 PREEMPT_RT 核心與安裝](https://hackmd.io/@oscarshiang/peempt_rt_raspi)
+* [oslat 實驗數據](https://hackmd.io/@oscarshiang/oslat_result)
+* [cyclictest 實驗數據](https://hackmd.io/@oscarshiang/ryeFLP9_F)
+
+## 期末專題
+
+* `PREEMPT_RT` 效能分析和改進: [Google Slides](https://docs.google.com/presentation/d/1Ll4VJ9Ncw9lVNI-bKWZNBIkCOL-xD-54LIOUlAHrUl8/edit?usp=sharing)
+
+## 修課心得
+
+這學期主要的關注的部分是 Linux 核心在即時系統層面的能力與限制。過程中，我嘗試使用不同的工具進行測量，包含 rt-tests suite 中的 `cyclictest`, `oslat` 以及 Linux kernel tracer 中的 `function`, `function graph` 與 `osnoise` tracer。除了測量整體系統延遲之外，我也嘗試去理解各個測量工具背後所考量的問題以及其觀點，像是 `oslat` 想要模擬的是高效能運算 (HPC) 的情境，在該情況下，所有會打斷運算的服務、行為，都被視為「干擾」；而在 `cyclictest` 的情境中，我們所在意的是一個行程從系統喚醒到實際開始執行的時間差，而中間導致該行程無法順利被執行的因素則被稱為「干擾」。
+
+在理解測量工具的途中，我也開始接觸 [Linux Kernel Mailing List](https://lore.kernel.org)，雖然在設定郵件帳號的步驟上遇到一些難關，不過多虧之前有多次在 GitHub 上提交 Pull Request 以及建立 Issue 的經驗，使我得以快速的適應全部以郵件形式交流的郵件論壇，也因此有了些許提交修補並獲接受的經驗。
+
+## 自我評量 (1 ~ 10)
+
+我給自己 7 分。
+
+在做實驗以及研究 Linux 程式碼的過程中，我發現自己對更動程式碼背後所帶來的考量還不夠周全。像是在提交 [cf2adec7](https://github.com/torvalds/linux/commit/cf2adec7479d875973fe10782f8bf20377628ef2) 時，原本以為只是一個格式上的小錯誤，但在維護者 Steven Rostedt 的提醒下，才發現原來這段對我來說「格式錯誤」的程式碼片段，竟然會被拿來辨認 tracer 所支援的功能，真是讓我大眼界。
+
+而在透過郵件論壇與來自世界各地的開發者交流之後，我也發現我對 Linux 的認知還有所不足，像是在何時應該使用 IRQ context，使用 per-CPU 變數的時機點或是更改 syscall 路徑的代價等等，Linux 還有好多「細節」值得我繼續摸索、探尋。
