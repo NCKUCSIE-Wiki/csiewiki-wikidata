@@ -21,6 +21,20 @@ categories: User
 
 ## 期末專題
 * [quiz5-B](https://hackmd.io/eIyvzngQRUeh2CiWJbrxXg)
+* 一對一討論[附件1](https://mail.google.com/mail/u/0/?hl=zh-TW#search/一對一/FMfcgzGpFWJxkgWgmLmqqdGTbShKcnvg), [附件2](https://docs.google.com/document/d/1dkScu9rfG-PdP6wLnBgKn484UuiDc0Dupu23t9yr2Pc/edit), [附件3](https://docs.google.com/document/d/1KEgYiQ6KIYmfip0AY7ilLMsW6zHgaxBc9xdJNj3QM4Q/edit)
+
+* 成果
+1. 根據現有程式碼及[論文](https://erdani.org/publications/cuj-2004-12.pdf)提示優化程式執行時間
+2. 修改程式碼使執行多個 writer 的情況下不會有 data race 發生
+3. 使用 Userspace RCU 函式庫改寫程式碼，並用條件編譯將兩種執行方式存在同一份實作中
+
+* 啟發 : 在做這份期末專題之前，我從未做過一份實作需要考慮到這麼細的時間刻度，也因此，在整個專題的過程中都不斷地在想如何在避免 data race 以及優化程式碼流程之間做取捨。例如一開始在想著要怎麼在多加入 active 參數的同時能做到程式執行不會出錯，試了許多方式總是會出問題，於是走回笨方法直接用 CAS 一整個 data struct，果不其然速度上就慢了許多，這時候突然就體會到原本隨堂測驗提供的程式碼之中所用的方式，用指標是否為 null 作為 active 來判斷，其實是一個相當好的方式。
+另一個感觸是，在多執行續的執行環境中，程式能否執行到結束已不是最終目標，更重要的是執行的過程中不明顯的錯誤必須被避免的同時，又不會拖累太多效能，說起來跟人之間的團隊合作也有幾分相似。
 
 ## 所見所聞所感
+
+
 ## 自我評量
+我給自己 7 分 
+
+這一整個學期下來，大部分能看懂能聽懂的教材我都盡量花時間在上頭去了解，隨堂測驗也從第一周的兩個零分之後漸漸上手，作業以及隨堂測驗的後續討論也在能力範圍內盡力的去做的，只不過到最後學期末的時候專題在實作上總是感覺自己好像已經了解了很多相關的知識，卻在撰寫程式碼的過程中一一被打槍，回頭想想那些教材我充其量也只是看過，並沒有真正的看懂。雖然如此，我還是學到很多東西，包括瞭解程式碼撰寫的技巧以及寫程式的思維， 7 分我認為對的上我這學期的努力。
