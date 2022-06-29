@@ -1,10 +1,30 @@
 # 2022 Linux 核心實作 春季班 自我評量
 
-## 作業共筆
+# 作業共筆
  * lab0-c : [GitHub](https://github.com/StevenChou499/lab0-c)/[HackMD](https://hackmd.io/Uv6AKwBLT1SPY9Vi_Qp9fg)
  * fibdrv : [GitHub](https://github.com/StevenChou499/fibdrv)/[HackMD](https://hackmd.io/H_Obloz2T_izWYaufpRc4A)
  * kecho : [GitHub](https://github.com/StevenChou499/kecho)/[HackMD](https://hackmd.io/jV0vUdGUSRi6IfqCuVtkLA)
 
- * 期末專題
----
- * 自我評量
+# 測驗共筆
+ * quiz1 : [HackMD](https://hackmd.io/1Q0qe8B-QA2RJGwh3OC4-A)
+ * quiz2 : [HackMD](https://hackmd.io/abArZIwrQD2ODItXKesJEQ)
+ * quiz3 : [HackMD](https://hackmd.io/8MO5XO6uTLqi0CGfd8IT4A)
+ * quiz4 : [HackMD](https://hackmd.io/yGCspp2RQ5ev0L30FrbSzg)
+
+# 期末專題
+ * ring buffer : 
+    * [Github](https://github.com/StevenChou499/ring_buffer)
+    * [HackMD](https://hackmd.io/wRuECbT0TfC5HO7vX6TCUQ)
+
+# 修課心得
+這學期是第一次修習老師所開設的課程，在修習前就有聽聞這門課相較於一般的課程有相當的難度，在學期初就會有相當多同學退選。但我認為一們內容紮實的課比起多門很涼但學不到東西的課程更值得學習與投入時間與金錢。在修習本課程前我只是一位稍微會寫簡單 C 語言程式的學生，對於系統層級的程式碼沒有任何接觸，卻總覺的自己很有實力。直到第一次作業實做 lab0-c 專案時才發現單單連 C 語言我都還掌握的不好，更遑論開發 Linux 所使用到的各式工具與相對應的專業知識。
+
+在修課的過程中，時常會遇到一些看不懂的工具，比如 Linux Commands, 在看到一些指令時就需要不斷的查詢資料，反反覆覆時常浪費了許多時間，為了避免後患，最後便一鼓作氣學習 Linux 的所有基本指令。這門課除了 Linux 之外，也學習到很多工具，如 Makefile, gcc, 檢查錯誤的 gdb, 檢查記憶體的 valgrind, 計算執行效能的 perf, 查詢 Linux 相關內容的 man page, 自動化腳本的 shell script 等，都讓我在學習的過程中從完全不懂到現在的了解如何正確使用與找出錯誤。
+
+這學期的期末專題為 ring buffer ，一開始我以為在實做上不會太困難，但是真正實做才發現有很多以前沒有注意到的部份會進入無窮迴圈甚至是 Segmentation fault ， 在 debug 時 gdb 真的是我的好幫手，比起一直 printf 真的是好用太多了。在實做過程中使用到 pthread 提供的 mutex lock, condition variable 與 barrier ，並且為了了解原理，我又複習了作業系統一次。以前看作業系統的書都只是紙上談兵，對於 synchronization 的部份也只是一知半解，直到真正實做過後才知道每個 API 需要如何搭配才能更快的完成任務，令我獲益良多。
+
+# 自我評量
+
+我給自己 8 分
+
+相比於開學時對系統層級與 Linux 的相關知識的完全不了解，到學期末時雖然與大神還是相差甚遠，但是在學習過程中每天的進步讓我更加認識了自己，學習了 Linux 會使用到的各式工具，以及對於系統層級的專業知識。在資訊領域相關的知識真的是太大太廣，短短的一學期真的很快，也讓我了解到自己現在所具備的知識還有很多需要進行補足的，雖然學期末考試與助教的工作讓我喘不過氣，但是還是盡量撥出時間撰寫期末專題，希望明年可以繼續修習老師所開設的核心實作。
