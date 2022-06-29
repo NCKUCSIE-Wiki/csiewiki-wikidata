@@ -1,0 +1,43 @@
+## 簡介
+
+國立成功大學 資訊工程系 111級 (2018~2022)
+
+GitHub: [freshLiver](https://github.com/freshLiver)
+
+## 2022 Linux 核心設計/實作 春季班 自我評量
+
+### 作業與測驗
+
+[共筆統整](https://hackmd.io/@freshLiver/linux2022q1/%2FS9kZ6QPYQ3iDf-6UZdi5Ig)
+
+作業：
+
+- [lab0](https://hackmd.io/S9kZ6QPYQ3iDf-6UZdi5Ig)
+- [fibdrv](https://hackmd.io/xXsPHnknT5eVLI8WBMaovw)
+- [ktcp](https://hackmd.io/@freshLiver/linux2022q1-hw6-ktcp/%2F%40freshLiver%2Flinux2022q1-hw6-insmod)
+
+測驗：
+
+- [quiz1](https://hackmd.io/DkeAf1ziR4Ggm4-2G5G0EA)
+- [quiz2](https://hackmd.io/cwc-y2YDT3yAzA8I5_d6-w)
+- [quiz3](https://hackmd.io/EYJVpB8fSK6ceyNdKbKFBw)
+- [quiz4](https://hackmd.io/FTs0zjQfRyGL4yKjXlOlnw)
+- [quiz6](https://hackmd.io/Nc02go1FQp2wW8QPrFZSWg)
+
+### 期末專題
+
+- [期末專題共筆](https://hackmd.io/@freshLiver/linux-vfs-main/) / [GitHub](https://github.com/freshLiver/simplefs)
+
+解說 simplefs 中程式碼的原理，使用 UML/QEMU 搭配 GDB 對 Kernel 進行除錯，嘗試理解相關的系統呼叫是如何透過 VFS 與 simplefs 進行互動，以及嘗試找出其中能夠改進的部份。
+
+### 修課心得與回顧
+
+在大四的最後一個學期，我同時修了設計與實作兩門課，為了應付幾乎每週都有的測驗跟作業，這應該是我大學四年中最認真的一門課，但仍花費不少時間在其他事情上、作業也大多半途而廢堅持不到最後，特別是後半學期的課程。
+
+而在進行期末專題時，則是第一次接觸到這麼複雜的系統，即使只是一個 `ls` 命令，也需要 VFS 與檔案系統模組間互相呼叫才能完成，而在這些上千行的程式裡，甚至還包含了 bitwise、記憶體管理、並行程式的議題，根本就是這學期課程內容的集大成。而面對這複雜的系統，我卻只能透過 UML/QEMU 搭配 GDB 來 trace code、觀察運作的情形，這才發現自己學得有多不紮實，不過也因此對未來需要特別加強的領域有點方向了。
+
+### 自我評量 (1 ~ 10)
+
+若根據投入的程度來評分的話，我認為只值 6 分。
+
+然而我畢業學分算得剛剛好，所以為了確保能順利畢業並拿來抵研究所學分、讓我未來能花更多時間學習 Linux 核心，我給自己的分數為 8 分。
