@@ -1,0 +1,36 @@
+---
+title: cwl0429 (賴濬維)
+categories: User
+...
+
+# 簡介
+* 國立成功大學　　　人工智慧科技碩士班　(2021 ~ 現今)
+* 國立臺灣海洋大學　資訊工程學士班 (2016 ~ 2021)
+
+* GitHub: [`cwl0429`](https://github.com/cwl0429)
+* HackMD: [`cwl0429`](https://hackmd.io/@cwl0429)
+
+# 2022 Linux 核心設計 春季班 自我評量
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/cwl0429/lab0-c) / [HackMD](https://hackmd.io/@cwl0429/lab0-c)
+* fibdrv: [GitHub](https://github.com/cwl0429/fibdrv) / [HackMD](https://hackmd.io/@cwl0429/fibdrv)
+
+## 測驗共筆
+
+* quiz1: [HackMD](https://hackmd.io/@cwl0429/linux2022-quiz1)
+* quiz2: [HackMD](https://hackmd.io/@cwl0429/linux2022-quiz2)
+* quiz8: [HackMD](https://hackmd.io/@cwl0429/linux2022-quiz8)
+
+## 期末專題
+
+* 改進 quiz8 `(C)` 進行 [第 8 週測驗題](https://hackmd.io/@sysprog/linux2022-quiz8)第三題的延伸問題: [HackMD](https://hackmd.io/@cwl0429/linux2022-quiz8-3)
+
+## 修課心得
+
+課程的內容及豐富程度遠超乎我的想像。在修課前，曾以為自己會寫 c 語言，直到作業 1 被指派的時候，才發現不是這麼一回事，很多東西都看不懂，像是最基礎的指標及 linked list 等操作，於是我將老師提供給學生的教材都讀了幾遍，只要遇到超連結就點下去看，分頁隨著時間過去變得密密麻麻，而我似乎也慢慢地成長。
+
+而在經過了一學期的課程後，確實感受到自己變強了，記得第一次主動點開 linux 原始碼的原因是 quiz1 的 list_sort.c，許多前置處理器及編譯器最佳化的程式碼完全看不懂，到了期末專案時，已能理解大部分 c 語言的用法及其背後原因。幸好老師有在學期初重新教導 c 語言並指派作業，否則我可能完全無法窺探 linux kernel 的神秘面紗。 
+
+## 自我評量 (1 ~ 10)
+8 分，經過這學期，我覺得在程式能力及研究方式上都有不少進步，算是滿開心的。
