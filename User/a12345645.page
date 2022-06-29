@@ -1,0 +1,31 @@
+---
+title: a12345645(許永貞)
+categories: User
+...
+
+## 簡介
+- 嘉義大學 資訊工程系
+- 成功大學 資訊工程研究所
+
+## 聯絡資訊
+- email : `a12345645@gmail.com`
+- github : `a12345645`
+
+## 作業/隨堂測驗
+- quiz1 : [hackmd](https://hackmd.io/@SRepqiofRCqX0QTL2aUCvA/linux2022-quiz1)
+- lab0 : [hackmd](https://hackmd.io/@SRepqiofRCqX0QTL2aUCvA/linux2022-lab0)
+- quiz2 : [hackmd](https://hackmd.io/@SRepqiofRCqX0QTL2aUCvA/SJp2e57b5)
+- quiz3 : [hackmd](https://hackmd.io/@SRepqiofRCqX0QTL2aUCvA/linux2022-quiz3)
+- fibdrv : [hackmd](https://hackmd.io/@SRepqiofRCqX0QTL2aUCvA/linux2022-fibdrv)
+
+## 期末專題
+- quiz14 : [hackmd](https://hackmd.io/@SRepqiofRCqX0QTL2aUCvA/linux2022-quiz2)/[github](https://github.com/a12345645/packet-sniffer)<br>
+
+從研讀 mmap 如何減少 mode switch 次數到網路封包的格式與協定，讓我又重新的學一遍計算機網路。
+
+
+## Linux核心實作(2022) 自我評量
+我在大學期間只有在大一的物件導向使用過 c/c++，而之後就鮮少使用，到了研究所因為需要用到 c 語言，而在修老師時是真的第一次讓我實作 bitwise 操作，那些神奇的巨集真的是讓我大開眼界，我也很喜歡聽老師講古，會讓我更考慮程式為甚麼這樣寫的歷史，不是單純的死讀程式碼。
+
+## 自我評量
+我給自己 8 分，雖然沒到非常認真並且花費大量時間，但是我覺得我學到了很多東西。
