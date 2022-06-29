@@ -10,3 +10,40 @@ categories: User
 * HackMD: [`Kevin-Shih`](https://hackmd.io/@Kevin-Shih)
 
 ## 成果發表
+
+## 其他貢獻
+
+# 2022 Linux 核心設計 春季班 自我評量
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/Kevin-Shih/lab0-c) / [HackMD](https://hackmd.io/@Kevin-Shih/linux2022q1-lab0)
+* fibdrv: [GitHub](https://github.com/Kevin-Shih/fibdrv) / [HackMD](https://hackmd.io/@Kevin-Shih/linux2022q1-fibdrv)
+
+## 測驗共筆
+
+* quiz1: [HackMD](https://hackmd.io/@Kevin-Shih/linux2022q1-quiz1)
+* quiz2: [HackMD](https://hackmd.io/@Kevin-Shih/linux2022q1-quiz2)
+* quiz3: [HackMD](https://hackmd.io/@Kevin-Shih/linux2022q1-quiz3)
+* quiz4: [HackMD](https://hackmd.io/@Kevin-Shih/linux2022q1-quiz4)
+* quiz5: [HackMD](https://hackmd.io/@Kevin-Shih/linux2022q1-quiz5)
+* quiz6: [HackMD](https://hackmd.io/@Kevin-Shih/linux2022q1-quiz6)
+* quiz8: [HackMD](https://hackmd.io/@Kevin-Shih/linux2022q1-quiz8)
+
+
+## 期末專題
+
+* 改進 quiz6 (A): [HackMD](https://hackmd.io/@Kevin-Shih/linux2022q1-quiz6)
+
+## 修課心得
+當初會選這堂課是因為系上同學推薦，雖然有了解到這堂課需要花較多時間參與，但這學期實際修課後發現還是超過當初預期。相應的在看了這麼多次日出後，也有許多不同的收穫，像是一些工具程式的使用，例如繪圖用的 gnuplot、debug 用的 gdb (不像其他課程的迷你程式很多時候還沒用上就解決了)、lab0-c 中檢查記憶體洩漏等情形的 valgrind、效能分析用的 perf 等等。
+
+還有對於多線程的共享資源、critical section 的管控，了解了 spinlock、mutex、futex、semaphore 之間的不同，像是 spinlock 大多用於快速、短暫的 critical section，取得 lock 者不應進入 sleep 等等。相較於 semaphore，mutex 則有「解鈴還須繫鈴人」的特性，只能由持有者解鎖，相較於 spinlock 通常用於較長的區塊。
+
+## 自我評量 (1 ~ 10)
+
+我給自己 8 分
+
+在作期末專題時，由於要先重現 uThreads 中的實驗以了解 M:N mapping, Cluster 等特性對於網頁伺服器應用的有效性，沒想到在重現實驗時卻遇到種種問題，才發現原來重現實驗也能這麼花時間，也很遺憾在重現實驗時消耗太多時間、其他課程期末專題及搬家等私事的轟炸下，期末專題還有許多不足，希望在暑假閒暇之餘能逐步完善對 M:N mapping, Cluster, Scheduler 等 uThreads 中特性的移植，擺脫現在學的四不像導致測試時效能極差的情形。
+
+
+
