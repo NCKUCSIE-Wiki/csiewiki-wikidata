@@ -1,0 +1,40 @@
+#簡介
+國立成功大學 資訊工程學系 111 級 (2018 ~ 2022)
+
+GitHub: [arthurchang09](https://github.com/arthurchang09)
+
+HackMD: [arthur-chang](https://hackmd.io/@arthur-chang)
+
+## 成果發表
+
+## Linux 核心和相關專案貢獻
+
+# 2022 Linux 核心設計 春季班 自我評量
+
+## 作業共筆
+
+lab0-c: [HackMD](https://hackmd.io/@arthur-chang/linux2022-lab0)/[GitHub](https://github.com/arthurchang09/lab0-c)
+
+fibdrv: [HackMD](https://hackmd.io/@arthur-chang/linux2022-fibdrv)/[Github](https://github.com/arthurchang09/fibdrv)
+
+## 測驗共筆
+quiz2:[HackMD](https://hackmd.io/@arthur-chang/linux2022-quiz2)
+
+quiz8:[HackMD](https://hackmd.io/@arthur-chang/linux2022-quiz8-ans)
+
+## 期末專題
+
+改進 Linux 核心字串處理函式: [HackMD](https://hackmd.io/@arthur-chang/linux2022-quiz8)
+
+## 修課心得
+
+一開始選這門課就有聽說其難度高，需要投入大量的時間，也因此我等到大四，沒有成績壓力才選修。這門課很除了教材內容與延伸議題外，也要求 trace code 、撰寫開發紀錄、快速閱讀程式碼以及效能分析的能力。教材內容橫跨處理器、並行與多執行緒、同步與非同步以及編譯器等等議題，因此每週需要投入 20 小時以上在閱讀教材以及完成作業。隨著課程進行，所面對的程式碼從數百行一路暴增，到了期末 project 必須要面對千萬行的 kernel 。隨堂測驗的規模也隨之增加，到了學期中後段，測驗題的程式碼要另外開啟 GitHub 分頁閱讀，考試時間並沒有增長，非常考驗對程式的敏銳度以極快速掌握的能力，才能理解運作模式。而隨之的延伸議題更考驗自身的功底，需要思考其中的設計思維、取捨，甚至要撰寫程式進行效能分析和指出實作的缺失和改進空間，這些是需要扎實的學習以及積累，我因為基礎不扎實，常常流於意淫程式碼，在 lab0-c 被老師指出 "你若只是將程式碼註解翻譯為中文，難道不會落得「舉燭」的下場嗎？" 。這門課讓我原形畢露，正視自己能力的不足。
+
+我的期末 project 來自 quiz8 ，目的是要修改 `memchr()` ，增進其運行效能。一開始的效能分析就花費很多時間，一一將老師提供的套用再修改的 `memchr()` ，分析其中的差異並努力排除干擾分析的因素，為了理解 Linux Kernel 中 `memchr()` 的運作模式，翻閱 gcc inline assembly 以及 intel x86 手冊。接著嘗試修改的 `memchr()` 放入 kernel 也碰到困難，花了時間理清楚不同 `string.c` 中函式之間的相互關係，以及相關的 `Makefile` ，才讓程式碼成功編譯入 Kernel 。而到最後和 Kernel 維護者交流時，感受到他們身後的功底以及不同的觀點，尤其是 David Laight ，他指出 alignment 的部分不會影響結果，並將程式碼重新整理精簡，使其更容易閱讀。也因此，再做專題時，我必須要多方思考，如何說服維護者我的改進是有其價值，同時也要更注意程式碼的品質。
+
+總而言之，修習這門課讓我重新審視自己大學的學習，正視自己不足並開始修補。這門課也介紹資訊科技的現狀與關注的議題，雖然我目前並沒有能力追上，但從現在開始學習並不晚，要有 guts 直視自己，挑戰困難的事。
+
+## 自我評量 (1 ~ 10)
+我給自己 8 分
+
+學期初我每週都投入 20 小時以上再作業以及課程中，但到了學期中，因為其他課而有所懈怠。直到完成 quiz8 延伸問題時，老師給予肯定並指導我坐進一步的效能分析以及修改，並準備貢獻 Linux kernel ，我恢復了鬥志，重新回到學期初的模式投入。到學期末，我仍有很多教材未閱讀，很多測驗以及延伸問題並未理解回答，這也是我未來需要補足的地方。
