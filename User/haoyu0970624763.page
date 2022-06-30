@@ -29,7 +29,7 @@ haoyu0970624763(彭皓瑜)
 
   quiz2 [Github](https://github.com/haoyu0970624763/sysprog21-quiz2),[HackMD](https://hackmd.io/36HYrI6aSRmQvH_qjQYlMA)
 
-(秋季班)所見所聞心得
+(春季班)所見所聞心得
 ------------------------
 在這裡看到了許多自己原本完全不會想到的程式寫法，比如: 絕對值的改寫，快速除法.... ，jserv也在上課中跟我們講解為什麼要這樣做，讓我理解為什麼要寫這種比較複雜的程式，而這也讓我自己認知到對於C語言的理解真的是太淺薄了，因為有很多code都是我要花一段時間才能讀懂的。
 而透過作業看到其他同學的報告以及程式讓我自己認知自己跟程度好的同學真的是差上 10萬8千里，才知道自己原來還有非常多要改進的地方。
@@ -55,10 +55,36 @@ haoyu0970624763(彭皓瑜)
 ---------------------------
 
 2020 Linux 核心設計 春季班 自我評量
----------------------------
+=======================
 
 測驗共筆
+------------------------
 - quiz1 [Github](https://github.com/haoyu0970624763/Linux2022q1-quiz/tree/master/quiz1),[HackMD](https://hackmd.io/bN7BKitBTUqzh3JGkJrMzg)
 - quiz2 [Github](https://github.com/haoyu0970624763/Linux2022q1-quiz/tree/master/quiz2),[HackMD](https://hackmd.io/evE1-LKqRJCY3LzudBQILA)
-- quiz3 [Github](https://github.com/haoyu0970624763/Linux2022q1-quiz/tree/master/quiz3)[HackMD](https://hackmd.io/gRP0aH4oSceZcJimo9Yhog)
+- quiz3 [Github](https://github.com/haoyu0970624763/Linux2022q1-quiz/tree/master/quiz3),[HackMD](https://hackmd.io/gRP0aH4oSceZcJimo9Yhog)
 - quiz8 [Github](https://github.com/haoyu0970624763/Linux2022q1-quiz/tree/master/quiz8),[HackMD](https://hackmd.io/wwmyOe4-SWaxKoXe3LYdjg)
+
+Project
+------------------------
+
+seHTTPd 改進
+
+- [Github](https://github.com/haoyu0970624763/sehttpd)
+- [HackMD](https://hackmd.io/UjSk9YcMT6yHlC2hcLL2rg)
+
+所見所聞心得
+------------------------
+這次是第二次修 jserv 的課程 , 但即使如此還是有許多環節完全看不懂甚至沒接觸過 , 例如:編譯器最佳化 , 也讓我再次明白自己真的有非常多不足的地方需要改進。
+
+在做 quiz 的共筆時 , 作業時常會要求解釋程式碼的運作原理 , 有時候有些題目不算很難 , 但是要如何說明並解釋的讓別人容易理解就確不簡單, 有些題目則是自己認為理解 , 但是在撰寫共筆的過程中為了仔細的解釋運作原理 , 反而會發現自己當初的理解只是一支半解 , 甚至是錯誤的理解 , 而這也讓我體認紀錄一個好的開發紀錄真的是一件非常重要的事情。
+
+自我評量分數 (1 到 10 級分)
+---------------------------
+8級分
+
+起初是想透過這堂課的 quiz 讓自己熟悉未來有可能會接觸到的科技業面試題 , 所以一開始的 quiz 有花時間下去撰寫共筆 , 而這也是我起初對自己的期許,
+在研究所考試放榜後 , 原本想根據自己研究所的領域再進行研讀 , 但後期由於自身的怠惰而不了了之。
+
+我認為自己的評分應該落在 5 分左右 , 但是害怕有一些延畢的風險 , 所以私心給自己高分期許能脫離研畢
+
+
