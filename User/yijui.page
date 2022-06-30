@@ -28,7 +28,7 @@ categories: User
 
 所見所聞心得
 ------------------------
-這學期我學到了不少東西，但大多數都是在補背景知識，光是看”你所不知道的C語言”系列講座就花了我大部分時間。上完這門課後，我對”並行和多執行緒設計”也有更深入的認知，已經能善用POSIX thread APIs 寫出 lock-based 的程式; 至於 lock-free programing，老實說真的很難，即使我已經對 ABA Problem 、false sharing、atomic operation、 memory order，以及相關硬體知識都有一定的了解程度，還是沒把握自己設計一個 lock-free 演算法。雖然即將踏入社會，我想未來我還會再次加入這門課，繼續增進自己的專業能力。
+這學期我學到了不少東西，但大多數都是在補背景知識，光是看”你所不知道的C語言”系列講座就花了我大部分時間。上完這門課後，我對”並行和多執行緒設計”也有更深入的認知，已經能善用 POSIX thread APIs 寫出 lock-based 的程式; 至於 lock-free programing，老實說真的很難，即使我已經對 ABA Problem 、false sharing、atomic operation、 memory order，以及相關硬體知識都有一定的了解程度，還是沒把握自己設計一個 lock-free 演算法。雖然即將踏入社會，我想未來我還會再次加入這門課，繼續增進自己的專業能力。
 
 最後，謝謝老師願意花時間看我寫的共筆，還有與我進行一對一討論，也謝謝老師的鼓勵及建議，讓我在這門課中，除了學習知識外，也領悟到了"學習知識的態度"。
 
