@@ -1,0 +1,45 @@
+---
+title: Korin777 (歐禮寬)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程學系 111 級 (2018 ~ 2022)
+
+* GitHub: [`Korin777`](https://github.com/Korin777)
+* HackMD: [`Korin777`](https://hackmd.io/@Korin777)
+
+## 成果發表
+
+## Linux 核心和相關專案貢獻
+
+# 2022 Linux 核心設計 春季班 自我評量
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/Korin777/lab0-c) / [HackMD](https://hackmd.io/@Korin777/linux2022_lab0)
+* fibdrv: [GitHub](https://github.com/Korin777/fibdrv) / [HackMD](https://hackmd.io/@Korin777/linux2022-fibdrv)
+
+## 測驗共筆
+* quiz1: [HackMD](https://hackmd.io/@Korin777/linux2022-quiz1)
+* quiz2: [HackMD](https://hackmd.io/@Korin777/linux2022-quiz2)
+* quiz3: [HackMD](https://hackmd.io/@Korin777/linux2022-quiz3)
+* quiz5: [HackMD](https://hackmd.io/@Korin777/linux2022-quiz5)
+* quiz18: [HackMD](https://hackmd.io/@Korin777/linux2022-quiz18)
+
+
+## 期末專題
+
+* Lock-Free Linked List with Lockless Memory Allocation: [GitHub](https://github.com/Korin777/Lock-Free-Linked-List-with-Lockless-Memory-Allocation) / [HackMD](https://hackmd.io/@Korin777/linux2022-final)
+
+## 修課心得
+這堂課讓我了解到自己的基礎有多麼地不扎實，明明修過了作業系統及平行程式設計，卻在這門課中才真正地透過 atomic 操作來實作多執行緒程式，明明修過了資料結構卻在課堂上被問到紅黑樹時不知如何回答。
+
+這堂課所學當中，最有心得的就是 lockfree linked list、hazard pointer 跟 address sanitizer，常在期末專題透過 address sanitizer 來找出 memory leak、use after free 等議題，並思考自己 linked list 對應的解決方案。
+
+最後，在這門課中同學的筆記都是公開的，當我在做作業或測驗題遇到困難時，常會去參考同學的筆記，學習它們是如思考或透過實驗來分析這些問題，我覺得這是其他課程都沒看過的，我自己非常喜歡這點!
+
+
+## 自我評量 (1 ~ 10)
+我給自己 7 分
+
+我覺得自己應該要花更多的時間在這門課上，不管是研讀 CS:APP、課程教材中的延伸教材;抑或是 quiz 中的延伸問題，期末專題尚未去研究 madvise 及 [mmap-benchmark](https://github.com/exabytes18/mmap-benchmark) 專案，接下來的暑假中會嘗試去研讀它!
