@@ -1,0 +1,42 @@
+---
+title: scottxxxabc (柯洺葦)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程學系 111 級 (2018 ~ 2022)
+* GitHub: [`scottxxxabc`](https://github.com/scottxxxabc)
+
+## 成果發表
+
+## Linux 核心和相關專案貢獻
+
+# 2022 Linux 核心設計/實作 自我評量
+## 作業共筆
+
+* lab0-c: [HackMD](https://hackmd.io/@scottxxxabc/linux2022_lab0) / [GitHub](https://github.com/scottxxxabc/lab0-c)
+* fibdrv: [HackMD](https://hackmd.io/@scottxxxabc/fibdrv) / [GitHub](https://github.com/scottxxxabc/fibdrv)
+
+## 測驗共筆
+
+
+* quiz2: [HackMD](https://hackmd.io/@scottxxxabc/ryZQh9lW9)
+* quiz5: [HackMD](https://hackmd.io/@scottxxxabc/linux2022_quiz5)
+* quiz8: [HackMD](https://hackmd.io/@scottxxxabc/linux2022-quiz8)
+
+## 期末專題
+* 重做 Fibonacci Device Driver
+fibdrv: [HackMD](https://hackmd.io/@scottxxxabc/fibdrv) / [GitHub](https://github.com/scottxxxabc/fibdrv)
+
+## 修課心得
+這一門課是我修過難度最高的課，老師不但要求每週花費 16 小時以上閱讀相關教材與延伸內容，也要撰寫開發紀錄共筆、每周隨堂測驗。雖然在修課之前就知道一點風聲，但是課程的豐富、扎實程度還是遠遠超過我的預期。我以為我已經會 C 語言了，但是卻沒有碰過任何系統層級的程式，在作業一被指派以前甚至沒有點開過 linux 的程式碼。我也發現到之前上資料結構、作業系統所學的根本不足以應付作業以及考試。於是我也努力閱讀老師所提供的教材，結果共筆一個連好幾個，根本就讀不完...。
+
+在修習這門課的過程中我重新認識了 C 語言，許多如 bitwise 操作，前置處理器以及編譯器最佳化等都是我以前不是很了解的。許多好用的工具像繪圖用的 gnuplot、在 lab0-c 中檢查記憶體的使用情況的 valgrind、以及用來分析效能的 perf、debug 用的 gdb 等，這些都是我以前從來沒有使用過的。雖然因為我自己的偷懶，作業完成度差的有點多，但我認為我還是有在課程中變強一點點，有所收穫。
+在這門課學習到的，更重要的是「誠實面對自己」，正視自己的實力不足並努力改進，不再逃避遇到的難題，不要一直浪費納稅人的錢。
+
+另外老師上課其實很有趣，有很多很創新的用詞，比如「意淫」程式碼、「舉燭」等等。
+
+## 自我評量 (1 ~ 10)
+我給自己 7 分
+
+學期一開始每天都有花時間閱讀該週的教材以及影片，也很努力更新作業進度。但了期中其他課程也開始有作業壓力以後就開始懈怠，跟不上進度了。我想是我不夠努力，希望以後不用為了分數煩惱的時候能再次挑戰。
