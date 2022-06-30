@@ -1,0 +1,36 @@
+---
+title: ibat10clw (曾裕亨)
+categories: User
+...
+
+# 簡介
+
+* 國立成功大學 電機工程研究所/資訊工程組
+
+# 2022 Linux 核心設計 春季班 自我評量
+## 作業共筆
+
+* lab0-c: [HackMD](https://hackmd.io/8xMSCctKQpWWSRGLiuPkfQ) / [GitHub](https://github.com/ibat10clw/lab0-c)
+* fibdrv: [HackMD](https://hackmd.io/YhDgoYYQSHCutH9-xerrzw) / [GitHub](https://github.com/ibat10clw/fibdrv)
+
+## 測驗共筆
+
+* quiz1: [HackMD](https://hackmd.io/4m7LYb3HRQuAzlzo3HnheA)
+* quiz2: [HackMD](https://hackmd.io/jouEoIMzSJmfVTZwPsCEmA)
+
+## 期末專題
+
+* memory ordering: [HackMD](https://hackmd.io/oyV5lxazTKuq_n1gCdkGrA?both)
+
+## 修課心得
+
+在選課之前就有去看過老師過去的上課內容，完全不懂的地方其實挺多的，但有看到老師在 dcard 上回覆同學問題時說只要充分投入都沒有問題，所以就來選修了。
+
+學期到約 1/3 的時候都還持續有投入與不斷改善手邊的作業或測驗，但是到連假過後的主題不懂的地方實在太多了，原本想說邊做測驗題與作業，然後邊閱讀不懂的資料，但是似乎是不懂的部份太多了，以至於整個學習的節奏變得跟不上，後面的東西都沒有太多的參與。如果能從來的話感覺要更誠實的面對自己的不足，完全從基礎的地方打底後再開始進行作業或測驗。
+
+但從有寫的作業還是獲益良多，從 lab0 中學到了在 linux 中實作的 list 與過去在資料結構中學的有什麼不同，包含去除特例的寫法等等。然後對於 quiz2 討論 branchless 的演算法也讓我在往後寫程式都會多想一下是否能夠用更優雅的方式來實做，而在 fibdrv 中學到了如何去撰寫一個核心模組以及虛擬檔案系統的操作，還有體會到要以二進位角度來思考大數的運算而非使用字串模擬十進位運算，這些過程都使我在往後思考問題時能更有自己的想法。
+
+## 自我評量 (1 ~ 10)
+
+我給自己7分，雖然實際產出的共筆不多，但在過程中學到了很多東西。
+除了上述提到的之外還有一點心得是老師從學期中就一直有開放一對一討論的預約，但沒有好好的利用時間與老師對談覺得有點可惜。
