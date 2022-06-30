@@ -24,12 +24,12 @@ categories: User
 期末專題
 ------------------------
 - 期末專題：[quiz9(A)](https://hackmd.io/eXuDCVcRSo60a2BL7eOESg)
-* 一對一討論[附件1](https://docs.google.com/document/d/1JEvxBt6vl247ZiE874mYRrLfYqLFks7Nes01CYv5Csw/edit), [附件2](https://docs.google.com/document/d/181-HwVb9rGYzI_A0Z9aPQU4G5ZC-OZLp3Go3ZvZG_Zw/edit), [附件3](https://docs.google.com/document/d/1xnOi4ElG1YZM_5ajPpy1qJ8v49ctl-FSipqduJWXHXY/edit)
+* 一對一討論：[附件1](https://docs.google.com/document/d/1JEvxBt6vl247ZiE874mYRrLfYqLFks7Nes01CYv5Csw/edit), [附件2](https://docs.google.com/document/d/181-HwVb9rGYzI_A0Z9aPQU4G5ZC-OZLp3Go3ZvZG_Zw/edit), [附件3](https://docs.google.com/document/d/1xnOi4ElG1YZM_5ajPpy1qJ8v49ctl-FSipqduJWXHXY/edit)
 
 所見所聞心得
 ------------------------
-
+這學期我學到了不少東西，但大多數都是在補背景知識，光是看”你所不知道的C語言”系列講座就花了我大部分時間。上完這門課後，我對”並行和多執行緒設計”有更深入的認知，已經能善用POSIX thread APIs 寫出 lock-based 的程式; 至於 lock-free programing，包含 ABA Problem 、false sharing、atomic operation、 memory order，以及相關硬體知識都有一定的了解程度。
 
 自我評量分數 (1 到 10 級分)
 ---------------------------
-自我評分：
+我給自己7分，這學期沒辦法全力投入這門課，同時還得準備碩論與口試，再加上大多數時間都在補背景知識，導致我作業投入時間被擠壓到，但我覺得自己還是學到不少東西，希望之後能為自己打上更高的分數。
