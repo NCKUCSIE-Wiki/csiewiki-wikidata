@@ -1,0 +1,28 @@
+---
+title: kaiweike
+categories: User
+...
+
+# 簡介
+* 國立成功大學 環境醫學研究所(2018 ~ )
+
+* GitHub: [`kaiweike`](https://github.com/kaiweike)
+* HackMD: [`kaiweike`](https://hackmd.io/@kaiweike)
+
+# 2022 Linux 核心實作 春季班 自我評量
+
+## 期末專題
+
+* Lab0: [HackMD](https://hackmd.io/@kaiweike/linux2022-lab0)
+
+## 修課心得
+
+學期初雖然投入很多時間在 Lab0，但方法不對，在急於完成作業的情況下，沒有好好閱讀教材的每一個連結，反而花了很多時間在舉燭、Google、參考其他同學的作業。後來經老師提醒改變學習方式，好好看教材才發現自己先前舉燭所理解的 `offsetof` 和 `container_of` 不止有誤，也沒有體會到其設計的精髓。如果一開始就好好研讀教材，正確的理解基本概念，也許可以少走很多彎路，而順利進入 Lab0 的後半段實作。
+閱讀 `container_of` 和 Linux 核心的 `linked-list` 實作，讓我學習到 Linux 核心為應付各種可能的需求而建構了一套通用 `linked-list` 的封裝的品味，期許自己接下來能夠讀懂有品味的程式碼進而實現它。
+
+
+## 自我評量 (1 ~ 10)
+
+我給自己 5 分。
+這次的課程，建立了查詢官方文件的開發習慣。
+可惜後期無法看完所有教材，也沒有進入 Lab0 後半段的實作。
