@@ -28,7 +28,7 @@ categories: User
 
 ## 期末專題
 
-* 改進 quiz6 (A): [HackMD](https://hackmd.io/@Kevin-Shih/linux2022q1-quiz6)
+* 改進 quiz6 (A): [HackMD](https://hackmd.io/@Kevin-Shih/linux2022q1-quiz6)/[GitHub](https://github.com/Kevin-Shih/Linux2022q1-final-project)
 
 ## 修課心得
 當初會選這堂課是因為系上同學推薦，雖然有了解到這堂課需要花較多時間參與，但這學期實際修課後發現還是超過當初預期。相應的在看了這麼多次日出後，也有許多不同的收穫，像是一些工具程式的使用，例如繪圖用的 gnuplot、debug 用的 gdb (不像其他課程的迷你程式很多時候還沒用上就解決了)、lab0-c 中檢查記憶體洩漏等情形的 valgrind、效能分析用的 perf 等等。
