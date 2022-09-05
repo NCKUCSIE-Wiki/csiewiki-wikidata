@@ -14,7 +14,7 @@ toc: no
 Computer Architecture (Fall 2022)
 ------------------------------------------------------
 * Week 1 (Sep 6): Introduction / Online via [YouTube](https://youtu.be/kchwRBGRIHk)
-    - **[Course Introduction](https://docs.google.com/presentation/d/1Ar6638recYqDDY_XuH6BRB-X9GHpw8G-KYnERXF6Jw8/edit?usp=sharing)**
+    - **[Course Introduction](https://docs.google.com/presentation/d/1RVjrp1bkVqVu-L9JF1QKfXw6tmdIyIEMxuWW5M-2Zpg/edit?usp=sharing)**
     - David Patterson: [A New Golden Age for Computer Architecture: History, Challenges and Opportunities](https://content.riscv.org/wp-content/uploads/2018/12/A-New-Golden-Age-for-Computer-Architecture-History-Challenges-and-Opportunities-David-Patterson-.pdf) / [video](https://youtu.be/uyc_pDBJotI)
         * [Article](https://cacm.acm.org/magazines/2019/2/234352-a-new-golden-age-for-computer-architecture/fulltext), [note](https://github.com/cristiean/notes/blob/4c4ceb291ba68c55659ab0d4571385c8cccacd21/a-new-golden-age-for-computer-architecture.md)
     - David Patterson: [From Mainframe CPUs to Neural-Network TPUs and Open RISC-V](https://riscv.org/wp-content/uploads/2017/05/Mon0915-RISC-V-50-Years-Computer-Arch.pdf) / [video](https://youtu.be/eH9_ygsio3I) 
