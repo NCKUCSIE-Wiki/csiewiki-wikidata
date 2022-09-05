@@ -4,7 +4,7 @@ toc: no
 ...
 
 - Instructor: [Jim Huang](/User/jserv) (黃敬群) `<jserv.tw@gmail.com>`
-- Facebook Group: [https://www.facebook.com/groups/system.software2021/](https://www.facebook.com/groups/system.software2022/)
+- Facebook Group: [https://www.facebook.com/groups/system.software2022/](https://www.facebook.com/groups/system.software2022/)
 - Policy
     * Follow the classes: [CS 61C at UC Berkeley](https://cs61c.org/), [CS152/252: Computer Architecture](https://inst.eecs.berkeley.edu/~cs152/)
 - Course grading
@@ -13,7 +13,7 @@ toc: no
 
 Computer Architecture (Fall 2022)
 ------------------------------------------------------
-* Week 1 (Sep 6): Introduction
+* Week 1 (Sep 6): Introduction / Online via [YouTube](https://youtu.be/kchwRBGRIHk)
     - **[Course Introduction](https://docs.google.com/presentation/d/1Ar6638recYqDDY_XuH6BRB-X9GHpw8G-KYnERXF6Jw8/edit?usp=sharing)**
     - David Patterson: [A New Golden Age for Computer Architecture: History, Challenges and Opportunities](https://content.riscv.org/wp-content/uploads/2018/12/A-New-Golden-Age-for-Computer-Architecture-History-Challenges-and-Opportunities-David-Patterson-.pdf) / [video](https://youtu.be/uyc_pDBJotI)
         * [Article](https://cacm.acm.org/magazines/2019/2/234352-a-new-golden-age-for-computer-architecture/fulltext), [note](https://github.com/cristiean/notes/blob/4c4ceb291ba68c55659ab0d4571385c8cccacd21/a-new-golden-age-for-computer-architecture.md)
