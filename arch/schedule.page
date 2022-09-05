@@ -65,7 +65,6 @@ Computer Architecture (Fall 2022)
 
 * Week 7 (Oct 18): Digital Systems
     * Announcement: New quiz on Nov 16
-    * Next generation of rv32emu: [sysprog21/rv32emu-next](https://github.com/sysprog21/rv32emu-next)
     - [Combinational Digital Logic](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec10.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ap04XFOxcFT2_Bflnz_RHWU)
     - [Sequential Digital Logic](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec11.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arH8SCGZilk8Wn_2B45SOpW)
     - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3)
