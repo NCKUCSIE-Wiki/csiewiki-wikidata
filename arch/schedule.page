@@ -4,16 +4,16 @@ toc: no
 ...
 
 - Instructor: [Jim Huang](/User/jserv) (黃敬群) `<jserv.tw@gmail.com>`
-- Facebook Group: [https://www.facebook.com/groups/system.software2021/](https://www.facebook.com/groups/system.software2021/)
+- Facebook Group: [https://www.facebook.com/groups/system.software2021/](https://www.facebook.com/groups/system.software2022/)
 - Policy
     * Follow the classes: [CS 61C at UC Berkeley](https://cs61c.org/), [CS152/252: Computer Architecture](https://inst.eecs.berkeley.edu/~cs152/)
 - Course grading
-    * Quiz (20%), Homework (40%), Final/Term Project (40%)
+    * Quiz (30%), Homework (30%), Final/Term Project (40%)
 - **Schedule is tentative and subject to change!**
 
-Computer Architecture (Fall 2021)
+Computer Architecture (Fall 2022)
 ------------------------------------------------------
-* Week 1 (Sep 28): Introduction
+* Week 1 (Sep 6): Introduction
     - **[Course Introduction](https://docs.google.com/presentation/d/1Ar6638recYqDDY_XuH6BRB-X9GHpw8G-KYnERXF6Jw8/edit?usp=sharing)**
     - David Patterson: [A New Golden Age for Computer Architecture: History, Challenges and Opportunities](https://content.riscv.org/wp-content/uploads/2018/12/A-New-Golden-Age-for-Computer-Architecture-History-Challenges-and-Opportunities-David-Patterson-.pdf) / [video](https://youtu.be/uyc_pDBJotI)
         * [Article](https://cacm.acm.org/magazines/2019/2/234352-a-new-golden-age-for-computer-architecture/fulltext), [note](https://github.com/cristiean/notes/blob/4c4ceb291ba68c55659ab0d4571385c8cccacd21/a-new-golden-age-for-computer-architecture.md)
@@ -23,14 +23,14 @@ Computer Architecture (Fall 2021)
     - [Floating Point](https://drive.google.com/drive/folders/147xm_DhklkevG6602mH4yoGuVMw-3GQZ?usp=sharing)
     - [C Memory Management](https://drive.google.com/drive/folders/1pHpHRvjEg5TdidIp_fkOrh6TvMlYl5Yj?usp=sharing) / [video](https://youtu.be/fhEE4J4QCps)
 
-* Week 2 (Oct 5): Quiz + RISC-V
+* Week 2 (Sep 13): Quiz + RISC-V
     - [Quiz1](https://hackmd.io/@sysprog/arch2021-quiz1): C programming, bit-wise operations, number representation, floating-point / [Solution](https://hackmd.io/@sysprog/arch2021-quiz1-sol)
     - [Lab0: Web-based Emulators](https://hackmd.io/@sysprog/SJ7ht_MuS)
     - [Introduction to RISC-V Assembly language : Arithmetic](https://docs.google.com/presentation/d/1TCuhElbEfMCLvkEJGgELNBR3uQYzzNhe/edit?usp=sharing&ouid=113685665535544054506&rtpof=true&sd=true)
         * [The RISC-V Instruction Set Manual: Volume I: Unprivileged ISA](https://content.riscv.org/wp-content/uploads/2019/06/riscv-spec.pdf)
     - [Intro to Assembly Language and RISC-V](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec06.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqsesqf46rxjtV2mkiwJOmr)
 
-* Week 3 (Oct 12): RISC-V
+* Week 3 (Sep 20): RISC-V
     - [Intro to Assembly Language and RISC-V](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec06.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqsesqf46rxjtV2mkiwJOmr)
         * [RISC-V Assembly Programmer's Manual](https://github.com/riscv/riscv-asm-manual/blob/master/riscv-asm.md)
     - [RISC-V lw, sw, Decisions I](https://docs.google.com/presentation/d/18UZBHGbQK9c6Rf7sYtntCp5u8NRNhGF_/edit?usp=sharing&ouid=113685665535544054506&rtpof=true&sd=true) / [video](https://youtu.be/5hwH9ofpNzI)
@@ -38,7 +38,7 @@ Computer Architecture (Fall 2021)
     - [Lab1: RV32I Simulator](https://hackmd.io/@sysprog/H1TpVYMdB)
     - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2021-arch-homework1) (Due: Oct 25, 2021)
 
-* Week 4 (Oct 19): RISC-V
+* Week 4 (Sep 27): RISC-V
     - Announcement:
         + Next quiz is scheduled to Oct 26
         + Code Review for [Homework 1](https://hackmd.io/@sysprog/2021-arch-homework1) on Oct 26
@@ -51,11 +51,11 @@ Computer Architecture (Fall 2021)
     - [2020-Quiz2](https://hackmd.io/@sysprog/arch2020-quiz2)
          * [solution](https://hackmd.io/@sysprog/arch2020-quiz2-sol)
 
-* Week 5 (Oct 26): Quiz + Code Review (Room 4201 (1F) at (old) CSIE Building)
+* Week 5 (Oct 4): Quiz + Code Review (Room 4201 (1F) at (old) CSIE Building)
     - [Quiz2](https://hackmd.io/@sysprog/arch2021-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2021-quiz2-sol)
     - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2021-arch-homework1)
 
-* Week 6 (Nov 2): RISC-V Instruction Format + GNU Toolchain + Code Review (Room 4201 (1F) at (old) CSIE Building)
+* Week 6 (Oct 11): RISC-V Instruction Format + GNU Toolchain + Code Review (Room 4201 (1F) at (old) CSIE Building)
     - Next week: [digital logic](https://www.ptt.cc/bbs/Soft_Job/M.1587694288.A.3B5.html)
     - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2021-arch-homework1)
     - [Lab2: RISC-V RV32I[MA] emulator with ELF support](https://hackmd.io/@sysprog/rJAufgHYS)
@@ -63,7 +63,7 @@ Computer Architecture (Fall 2021)
     - Further reading [FPGA design for Software Engineers](https://www.walknsqualk.com/post/014-tiny-fpga-bx/)
     - [RISC-V Instruction Formats](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec08.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apqzuxnUN2fkwt1IGbu3km3)
 
-* Week 7 (Nov 9): Digital Systems
+* Week 7 (Oct 18): Digital Systems
     * Announcement: New quiz on Nov 16
     * Next generation of rv32emu: [sysprog21/rv32emu-next](https://github.com/sysprog21/rv32emu-next)
     - [Combinational Digital Logic](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec10.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ap04XFOxcFT2_Bflnz_RHWU)
@@ -71,13 +71,13 @@ Computer Architecture (Fall 2021)
     - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3)
          * [solution](https://hackmd.io/@sysprog/arch2020-quiz3-sol)
 
-* Week 8 (Nov 16): Datapath and Control
+* Week 8 (Oct 25): Datapath and Control
     - Announcement: Due to internal problems of HackMD (pictures were not shown), we would take new scoring method to eliminate the impact. Next week, we have an additional quiz dedicated to Combinational and Sequential Digital Logic.
     - [Quiz3](https://hackmd.io/@sysprog/arch2021-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2021-quiz3-sol)
     - [RISC-V CPU Datapath, Control Intro](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
     - [Single-Cycle CPU Control](https://drive.google.com/drive/folders/1QAqqFyQUAu8GE_FvvqGHlF_Nk5VKzleC) / [video](https://youtu.be/0WnPU46zjbA)
 
-* Week 9 (Nov 23): Pipeline
+* Week 9 (Nov 1): Pipeline
     - Announcement:
         + Next quiz is scheduled to Dec 7
     -  [Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4): Digital systems / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
@@ -87,7 +87,7 @@ Computer Architecture (Fall 2021)
         * slides: [Pipelined Processors](https://6004.mit.edu/web/_static/fall21/resources/sp21/L19.pdf)
         * [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
 
-* Week 10 (Nov 30): Pipelined Processors
+* Week 10 (Nov 8): Pipelined Processors
     - Announcement:
         + Next quiz is scheduled to Dec 7
         + Homework3: [SoftCPU](https://hackmd.io/@sysprog/2021-arch-homework3) is out.
@@ -104,11 +104,11 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4)
          * [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
 
-* Week 11 (Dec 7): Quiz + Homework Review
+* Week 11 (Nov 8): Quiz + Homework Review
     - [Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol)
     - [Homework1](https://hackmd.io/@sysprog/2021-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2021-arch-homework2)
 
-* Week 12 (Dec 14): Cache + Virtual Memory
+* Week 12 (Nov 15): Cache + Virtual Memory
     - Announcement: Quiz on Dec 21 - pipeline, cache and virtual memory
     - [Caches: Direct-mapped, set-associative](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec16.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apRiQ2QPjzyq8APGEjnqW1w)
     - [Multi-level Caches, Cache Questions](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec17.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqHsuO6U2bIpwDGqO6UAetk)
@@ -118,7 +118,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
         * UCB: [Virtual Memory](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec19.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ar2Wia7JngBFMmwRlr4s79j)
     - [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
  
-* Week13 (Dec 21): Quiz + Virtual Memory + Operating System
+* Week13 (Nov 22): Quiz + Virtual Memory + Operating System
     - Announcement:
         + Be aware of term projects.
         + Next week, we will review all the assignments.
@@ -129,7 +129,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
     - [Term projects 2020](https://hackmd.io/@sysprog/arch2020-projects)
 
-* Week14 (Dec 28): Synchronization
+* Week14 (Nov 29): Synchronization
     - Announcement:
         * Quiz on Jan 11
         * Your grades will be delivered on Jan 21, 2022
@@ -139,7 +139,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - [Thread-Level Parallelism](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec22.pdf) / [video](https://youtu.be/QLdN6p7-43U)
         + Let's skip OpenMP part
 
-* Week15 (Jan 4): Operating System and RISC-V, cache coherence
+* Week15 (Dec 6): Operating System and RISC-V, cache coherence
     - Announcement:
         * Quiz7 on Jan 11
         * Check [the listing of final/term projects](https://hackmd.io/@sysprog/arch2021-projects)
@@ -158,15 +158,17 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     -  [2020 Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6)
          * [solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
 
-* Week16 (Jan 11): I/O
+* Week16 (Dec 13): I/O
     -  [Quiz7](https://hackmd.io/@sysprog/arch2021-quiz7) / [solution](https://hackmd.io/@sysprog/arch2021-quiz7-sol)
     - [I/O: Devices, Polling, Interrupts](https://drive.google.com/drive/folders/1NRoyYSbAyarMhmPD5LiY6YEqYpLoZx_s) / [video](https://youtu.be/0dyqcFC_q2Q?t=1247)
         * Traps/Interrupts/Exceptions
         * Trap Handling in 5-Stage Pipeline
 
-* Week17 (Jan 18): Modern Processors
+* Week17 (Dec 20): Modern Processors
     - [listing of final/term projects](https://hackmd.io/@sysprog/arch2021-projects)
     - [Modern Processor Architecture](https://6004.mit.edu/web/_static/fall21/resources/sp21/L22.pdf) / [video](https://youtu.be/sbGtFtxqkkg)
     - [Introduction to Dynamic Branch Prediction](https://youtu.be/PFmx2p6NA0A), [Advanced Branch Prediction](https://youtu.be/avp3bDqCXYM), [Tournament Predictors and Branch Prediction Accuracy](https://youtu.be/-T8yDJ8vTuI)
     - Project: [Analyze and improve srv32](https://hackmd.io/@peishan/HkJrtKpoY)
     - [Hardware Based Speculation](https://youtu.be/mFtX28lH4O8)
+
+* Week 18 (Dec 27): Modern Processors
