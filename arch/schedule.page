@@ -21,7 +21,7 @@ Computer Architecture (Fall 2022)
     - [Great Ideas in Computer Architecture, Intro](https://drive.google.com/open?id=1Y4yUaw9vryZcdc4Xu0RQxHfqjVbeHJLF) / [video](https://youtu.be/u_hXH5-tbM4?t=263)
     - [Number Representation](https://docs.google.com/presentation/d/16NxuCn9wjjV9_WYqkdLGhYaxbmIhkhj0/edit?usp=sharing) / [video](https://www.youtube.com/watch?v=DWmHvlFFfLI&list=PLDoI-XvXO0aqgoMQvogzmf7CKiSMSUS3M&index=4)
     - [Floating Point](https://drive.google.com/drive/folders/147xm_DhklkevG6602mH4yoGuVMw-3GQZ?usp=sharing)
-    - [C Memory Management](https://drive.google.com/drive/folders/1pHpHRvjEg5TdidIp_fkOrh6TvMlYl5Yj?usp=sharing) / [video](https://youtu.be/fhEE4J4QCps)
+    - [C Memory Management](https://docs.google.com/presentation/d/14N0cWG2SnBSqhc2cLF0_2VerB9FF8JN3/edit?usp=sharing&ouid=113685665535544054506&rtpof=true&sd=true) / [video](https://youtu.be/fhEE4J4QCps)
 
 * Week 2 (Sep 13): Quiz + RISC-V
     - [Quiz1](https://hackmd.io/@sysprog/arch2021-quiz1): C programming, bit-wise operations, number representation, floating-point / [Solution](https://hackmd.io/@sysprog/arch2021-quiz1-sol)
