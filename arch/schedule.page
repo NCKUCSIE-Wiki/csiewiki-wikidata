@@ -26,7 +26,7 @@ Computer Architecture (Fall 2022)
 * Week 2 (Sep 13): Quiz + RISC-V / Online via [YouTube](https://youtu.be/jsdPoMHs-4A)
     - [Quiz1](https://hackmd.io/@sysprog/arch2022-quiz1): C programming, bit-wise operations, number representation, floating-point / [Solution](https://hackmd.io/@sysprog/arch2022-quiz1-sol)
     - [Lab0: Web-based Emulators](https://hackmd.io/@sysprog/SJ7ht_MuS)
-    - [Introduction to RISC-V Assembly language : Arithmetic](https://docs.google.com/presentation/d/1TCuhElbEfMCLvkEJGgELNBR3uQYzzNhe/edit?usp=sharing&ouid=113685665535544054506&rtpof=true&sd=true)
+    - [RISC-V Instructions](https://docs.google.com/presentation/d/1qNVK8ULddo6luq0Rrjj_bmOShhcx9hlESN36AK91n6I/edit?usp=sharing)
         * [The RISC-V Instruction Set Manual: Volume I: Unprivileged ISA](https://content.riscv.org/wp-content/uploads/2019/06/riscv-spec.pdf)
     - [Intro to Assembly Language and RISC-V](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec06.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqsesqf46rxjtV2mkiwJOmr)
 
