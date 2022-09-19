@@ -34,7 +34,7 @@ Computer Architecture (Fall 2022)
     - [Intro to Assembly Language and RISC-V](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec06.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqsesqf46rxjtV2mkiwJOmr)
         * [RISC-V Assembly Programmer's Manual](https://github.com/riscv/riscv-asm-manual/blob/master/riscv-asm.md)
     - [RISC-V Data Transfer](https://docs.google.com/presentation/d/1JpRRi2eEbe-UqtvdZ_pK7CjcYJ6vk9e1/edit?usp=sharing) / [video](https://youtu.be/5hwH9ofpNzI)
-    - [RISC-V Decisions II](https://docs.google.com/presentation/d/1Pob0JPeMH8umHN4FYPc9ZuJ3ndsaDvuI/edit?usp=sharing)
+    - [RISC-V Decision Making](https://docs.google.com/presentation/d/1Pob0JPeMH8umHN4FYPc9ZuJ3ndsaDvuI/edit?usp=sharing)
     - [Lab1: RV32I Simulator](https://hackmd.io/@sysprog/H1TpVYMdB)
     - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2022-arch-homework1) (Due: Oct 10, 2022)
 
