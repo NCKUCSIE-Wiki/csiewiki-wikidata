@@ -47,10 +47,9 @@ Computer Architecture (Fall 2022)
     - [ST, CAES team on octacore RISC-V space chip with selectable cores](https://www.eenewseurope.com/en/st-to-make-european-octacore-risc-v-space-chip-with-selectable-cores/)
     - Apple M1 Pro/Max
         + [ARM1 (1985) vs. Apple M1 Max (2021)](https://twitter.com/kenshirriff/status/1450179024639049731)
-        + [Apple Announces M1 Pro & M1 Max: Giant New Arm SoCs with All-Out Performance](https://www.anandtech.com/show/17019/apple-announced-m1-pro-m1-max-giant-new-socs-with-allout-performance)
+        + [Apple Announces M1 Pro & M1 Max: Giant New Arm SoCs with All-Out Performance](https://www.anandtech.com/show/17019/apple-announced-m1-pro-m1-max-giant-new-socs-with-allout-performance) / [Apple M2](https://en.wikipedia.org/wiki/Apple_M2)
     - [Compiler, Assembler, Linker, Loader](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec09.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aoprCVNj3PG1kx7DTm3Qs6q)
-    - [2021-Quiz2](https://hackmd.io/@sysprog/arch2021-quiz2)
-         * [solution](https://hackmd.io/@sysprog/arch2021-quiz2-sol)
+    - [2021-Quiz2](https://hackmd.io/@sysprog/arch2021-quiz2) / [solution](https://hackmd.io/@sysprog/arch2021-quiz2-sol)
 
 * Week 5 (Oct 4): Quiz + Code Review (Room 4201 (1F) at (old) CSIE Building)
     - [Quiz2](https://hackmd.io/@sysprog/arch2021-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2021-quiz2-sol)
