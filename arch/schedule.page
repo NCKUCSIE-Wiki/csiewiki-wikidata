@@ -58,13 +58,13 @@ Computer Architecture (Fall 2022)
 
 * Week 6 (Oct 11): RISC-V Instruction Format + GNU Toolchain / Online via [YouTube](https://youtu.be/FVWqem0xMas)
     - Next week: [digital logic](https://www.ptt.cc/bbs/Soft_Job/M.1587694288.A.3B5.html)
-    - [Lab2: RISC-V RV32I[MA] emulator with ELF support](https://hackmd.io/@sysprog/rJAufgHYS)
-    - Assignment: [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2021-arch-homework2) (Due: Nov 15)
+    - [Lab2: RISC-V RV32I[MACF] emulator with ELF support](https://hackmd.io/@sysprog/SJAR5XMmi)
+    - Assignment: [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2022-arch-homework2) (Due: Oct 31)
     - Further reading [FPGA design for Software Engineers](https://www.walknsqualk.com/post/014-tiny-fpga-bx/)
     - [RISC-V Instruction Formats](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec08.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apqzuxnUN2fkwt1IGbu3km3)
 
 * Week 7 (Oct 18): Digital Systems
-    * Announcement: New quiz on Nov 16
+    * Announcement: New quiz on Oct 25
     - [Combinational Digital Logic](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec10.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ap04XFOxcFT2_Bflnz_RHWU)
     - [Sequential Digital Logic](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec11.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arH8SCGZilk8Wn_2B45SOpW)
     - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3)
