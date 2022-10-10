@@ -67,8 +67,8 @@ Computer Architecture (Fall 2022)
     * Announcement: New quiz on Oct 25
     - [Combinational Digital Logic](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec10.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ap04XFOxcFT2_Bflnz_RHWU)
     - [Sequential Digital Logic](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec11.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arH8SCGZilk8Wn_2B45SOpW)
-    - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3)
-         * [solution](https://hackmd.io/@sysprog/arch2020-quiz3-sol)
+    - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3) / [solution](https://hackmd.io/@sysprog/arch2020-quiz3-sol)
+    - [2021-Quiz3](https://hackmd.io/@sysprog/arch2021-quiz3) / [solution](https://hackmd.io/@sysprog/arch2021-quiz3-sol)
 
 * Week 8 (Oct 25): Datapath and Control
     - Announcement: Due to internal problems of HackMD (pictures were not shown), we would take new scoring method to eliminate the impact. Next week, we have an additional quiz dedicated to Combinational and Sequential Digital Logic.
