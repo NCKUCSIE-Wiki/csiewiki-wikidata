@@ -61,7 +61,7 @@ Computer Architecture (Fall 2022)
     - [Lab2: RISC-V RV32I[MACF] emulator with ELF support](https://hackmd.io/@sysprog/SJAR5XMmi)
     - Assignment: [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2022-arch-homework2) (Due: Oct 31)
     - Further reading [FPGA design for Software Engineers](https://www.walknsqualk.com/post/014-tiny-fpga-bx/)
-    - [RISC-V Instruction Formats](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec08.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apqzuxnUN2fkwt1IGbu3km3)
+    - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1k5qJyfuyk3ITzOfK0cIosyNl0nh1o9UC/edit?usp=sharing&ouid=113685665535544054506&rtpof=true&sd=true) / [Part II](https://docs.google.com/presentation/d/19Zt2UpvJDerRPn2P2XkgcxkhXKIuWJ1g/edit?usp=sharing&ouid=113685665535544054506&rtpof=true&sd=true) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apqzuxnUN2fkwt1IGbu3km3)
 
 * Week 7 (Oct 18): Digital Systems
     * Announcement: New quiz on Oct 25
