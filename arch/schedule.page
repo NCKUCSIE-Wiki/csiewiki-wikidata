@@ -64,7 +64,9 @@ Computer Architecture (Fall 2022)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1k5qJyfuyk3ITzOfK0cIosyNl0nh1o9UC/edit?usp=sharing) / [Part II](https://docs.google.com/presentation/d/19Zt2UpvJDerRPn2P2XkgcxkhXKIuWJ1g/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apqzuxnUN2fkwt1IGbu3km3)
 
 * Week 7 (Oct 18): Digital Systems / Online via [YouTube](https://youtu.be/zqF2bE6Dw1o)
-    * Announcement: New quiz on Oct 25
+    * Announcement: New quiz is scheduled on Oct 25
+    * [Binary marble adding machine](https://woodgears.ca/marbleadd/) / [video](https://youtu.be/GcDshWmhF4A)
+        - Yes, you can implement a few logic-like elements without electricity.
     - [Combinational Digital Logic](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec10.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ap04XFOxcFT2_Bflnz_RHWU)
     - [Sequential Digital Logic](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec11.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arH8SCGZilk8Wn_2B45SOpW)
     - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3) / [solution](https://hackmd.io/@sysprog/arch2020-quiz3-sol)
