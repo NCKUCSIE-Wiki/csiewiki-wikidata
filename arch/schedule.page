@@ -108,11 +108,11 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
          * [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
     - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol)
 
-* Week 11 (Nov 8): Quiz + Homework Review
+* Week 11 (Nov 15): Quiz + Homework Review
     - [Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol)
     - [Homework1](https://hackmd.io/@sysprog/2021-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2021-arch-homework2)
 
-* Week 12 (Nov 15): Cache + Virtual Memory
+* Week 12 (Nov 22): Cache + Virtual Memory
     - Announcement: Quiz on Dec 21 - pipeline, cache and virtual memory
     - [Caches: Direct-mapped, set-associative](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec16.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apRiQ2QPjzyq8APGEjnqW1w)
     - [Multi-level Caches, Cache Questions](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec17.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqHsuO6U2bIpwDGqO6UAetk)
@@ -122,7 +122,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
         * UCB: [Virtual Memory](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec19.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ar2Wia7JngBFMmwRlr4s79j)
     - [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
  
-* Week13 (Nov 22): Quiz + Virtual Memory + Operating System
+* Week13 (Nov 29): Quiz + Virtual Memory + Operating System
     - Announcement:
         + Be aware of term projects.
         + Next week, we will review all the assignments.
@@ -133,7 +133,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
     - [Term projects 2020](https://hackmd.io/@sysprog/arch2020-projects)
 
-* Week14 (Nov 29): Synchronization
+* Week14 (Dec 6): Synchronization
     - Announcement:
         * Quiz on Jan 11
         * Your grades will be delivered on Jan 21, 2022
@@ -143,7 +143,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - [Thread-Level Parallelism](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec22.pdf) / [video](https://youtu.be/QLdN6p7-43U)
         + Let's skip OpenMP part
 
-* Week15 (Dec 6): Operating System and RISC-V, cache coherence
+* Week15 (Dec 13): Operating System and RISC-V, cache coherence
     - Announcement:
         * Quiz7 on Jan 11
         * Check [the listing of final/term projects](https://hackmd.io/@sysprog/arch2021-projects)
@@ -162,17 +162,17 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     -  [2020 Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6)
          * [solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
 
-* Week16 (Dec 13): I/O
+* Week16 (Dec 20): I/O
     -  [Quiz7](https://hackmd.io/@sysprog/arch2021-quiz7) / [solution](https://hackmd.io/@sysprog/arch2021-quiz7-sol)
     - [I/O: Devices, Polling, Interrupts](https://drive.google.com/drive/folders/1NRoyYSbAyarMhmPD5LiY6YEqYpLoZx_s) / [video](https://youtu.be/0dyqcFC_q2Q?t=1247)
         * Traps/Interrupts/Exceptions
         * Trap Handling in 5-Stage Pipeline
 
-* Week17 (Dec 20): Modern Processors
+* Week17 (Dec 27): Modern Processors
     - [listing of final/term projects](https://hackmd.io/@sysprog/arch2021-projects)
     - [Modern Processor Architecture](https://6004.mit.edu/web/_static/fall21/resources/sp21/L22.pdf) / [video](https://youtu.be/sbGtFtxqkkg)
     - [Introduction to Dynamic Branch Prediction](https://youtu.be/PFmx2p6NA0A), [Advanced Branch Prediction](https://youtu.be/avp3bDqCXYM), [Tournament Predictors and Branch Prediction Accuracy](https://youtu.be/-T8yDJ8vTuI)
     - Project: [Analyze and improve srv32](https://hackmd.io/@peishan/HkJrtKpoY)
     - [Hardware Based Speculation](https://youtu.be/mFtX28lH4O8)
 
-* Week 18 (Dec 27): Modern Processors
+* Week 18 (Jan 2): Modern Processors
