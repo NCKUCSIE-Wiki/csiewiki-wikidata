@@ -106,9 +106,10 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - Assignment: [Homework3: SoftCPU](https://hackmd.io/@sysprog/2021-arch-homework3)  (Due: Dec 20, 2021)
     - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4)
          * [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
+    - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol)
 
 * Week 11 (Nov 8): Quiz + Homework Review
-    - [Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol)
+    - [Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol)
     - [Homework1](https://hackmd.io/@sysprog/2021-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2021-arch-homework2)
 
 * Week 12 (Nov 15): Cache + Virtual Memory
