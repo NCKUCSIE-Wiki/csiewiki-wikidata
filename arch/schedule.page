@@ -103,7 +103,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - [RISC-V 5-Stage Pipeline / Hazards](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec14.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aq-xpoKcmd7X9w-l6KHiNMa)
     - [Complex Pipelines, Out-of-Order Issue, Register Renaming](https://inst.eecs.berkeley.edu/~cs152/sp19/lectures/L10-ComplexPipes.pdf)
     - [Lab3: srv32 - RISCV RV32IM Soft CPU](https://hackmd.io/@sysprog/S1Udn1Xtt)
-    - Assignment: [Homework3: SoftCPU](https://hackmd.io/@sysprog/2021-arch-homework3)  (Due: Dec 20, 2021)
+    - Assignment: [Homework3: SoftCPU](https://hackmd.io/@sysprog/2021-arch-homework3)  (Due: Nov 30, 2022)
     - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4)
          * [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
     - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol)
@@ -113,7 +113,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
     - [Homework1](https://hackmd.io/@sysprog/2021-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2021-arch-homework2)
 
 * Week 12 (Nov 22): Cache + Virtual Memory
-    - Announcement: Quiz on Dec 21 - pipeline, cache and virtual memory
+    - Announcement: Quiz on Nov 29 - pipeline, cache and virtual memory
     - [Caches: Direct-mapped, set-associative](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec16.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apRiQ2QPjzyq8APGEjnqW1w)
     - [Multi-level Caches, Cache Questions](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec17.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqHsuO6U2bIpwDGqO6UAetk)
     - [The golden age of ever-changing computer architecture](https://hackaday.com/2019/11/27/the-golden-age-of-ever-changing-computer-architecture/)
@@ -135,8 +135,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
 
 * Week14 (Dec 6): Synchronization
     - Announcement:
-        * Quiz on Jan 11
-        * Your grades will be delivered on Jan 21, 2022
+        * Quiz on Dec 20
         * Check the listing of final/term projects
     - [Term projects 2021](https://hackmd.io/@sysprog/arch2021-projects)
     - [Synchronization](https://6004.mit.edu/web/_static/fall21/resources/sp21/L21.pdf) / [video](https://youtu.be/r8H_af_dCF0)
@@ -145,7 +144,7 @@ Data and Control Hazards](https://6004.mit.edu/web/_static/fall21/resources/sp21
 
 * Week15 (Dec 13): Operating System and RISC-V, cache coherence
     - Announcement:
-        * Quiz7 on Jan 11
+        * Quiz7 on Dec 20
         * Check [the listing of final/term projects](https://hackmd.io/@sysprog/arch2021-projects)
     - video: [The Future of Operating Systems on RISC-V](https://youtu.be/emnN9p4vhzk) / [transcript](https://www.infoq.com/presentations/risc-v-future/)
     - [Multithreading Issues, Cache Coherency](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec23.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqgj_8Og51XoE7iyAu5yEWZ)
