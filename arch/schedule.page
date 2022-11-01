@@ -91,7 +91,6 @@ Computer Architecture (Fall 2022)
         + [slides](https://docs.google.com/presentation/d/1UvXegiqDEGa5IOWMnnybxK4jftMY7MOF/edit?usp=sharing)
     - MIT 6.191 [L15: Introduction to Pipelining](https://youtu.be/5NQkhqZe8_8), [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA)
         * [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
-    - [RISC-V 5-Stage Pipeline / Hazards](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec14.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apjGBdVO4989kHARdZdfJz3)
 
 * Week 10 (Nov 8): Pipelined Processors
     - Announcement:
