@@ -78,12 +78,13 @@ Computer Architecture (Fall 2022)
 
 * Week 8 (Oct 25): Datapath and Control + Code Review (Room 4201 (1F) at (old) CSIE Building)
     - [Quiz3](https://hackmd.io/@sysprog/arch2022-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2022-quiz3-sol)
-    - [RISC-V CPU Datapath, Control Intro](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
+    - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
 
 * Week 9 (Nov 1): Pipeline / Online via [YouTube](https://youtu.be/JbOQSCBP4TE)
     - Announcement:
         + Next quiz is scheduled to Nov 15
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
+    - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
     - [Single-Cycle CPU Control](https://drive.google.com/drive/folders/1QAqqFyQUAu8GE_FvvqGHlF_Nk5VKzleC) / [video](https://youtu.be/0WnPU46zjbA)
     - MIT 6.004 [L15: Introduction to Pipelining](https://youtu.be/5NQkhqZe8_8), [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ)
         * slides: [Introduction to Pipelining](https://6004.mit.edu/web/_static/fall21/resources/sp21/L12.pdf)
