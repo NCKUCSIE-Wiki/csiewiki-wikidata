@@ -107,7 +107,7 @@ Computer Architecture (Fall 2022)
     - [RISC-V 5-Stage Pipeline / Hazards](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec14.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aq-xpoKcmd7X9w-l6KHiNMa)
     - [Complex Pipelines, Out-of-Order Issue, Register Renaming](https://inst.eecs.berkeley.edu/~cs152/sp19/lectures/L10-ComplexPipes.pdf)
     - [Lab3: srv32 - RISCV RV32IM Soft CPU](https://hackmd.io/@sysprog/S1Udn1Xtt)
-    - Assignment: [Homework3: SoftCPU](https://hackmd.io/@sysprog/2021-arch-homework3)  (Due: Nov 30, 2022)
+    - Assignment: [Homework3: SoftCPU](https://hackmd.io/@sysprog/2022-arch-homework3)  (Due: Nov 30, 2022)
     - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4) / [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
     - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5) / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol) / [annotated with Riples](https://hackmd.io/@wIVnCcUaTouAktrkMVLEMA/rkm8OkOjF)
 
