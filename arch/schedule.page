@@ -92,8 +92,8 @@ Computer Architecture (Fall 2022)
 
 * Week 10 (Nov 8): Pipelined Processors
     - Announcement:
-        + Next quiz is scheduled to Nov 15
-        + Homework3: [SoftCPU](https://hackmd.io/@sysprog/2022-arch-homework3) is out.
+        + The next quiz is planned on Nov 15.
+        + Homework3 [SoftCPU](https://hackmd.io/@sysprog/2022-arch-homework3) is out.
         + Next week, we will review all the assignments.
     - Recent [rv32emu](https://github.com/sysprog21/rv32emu) changes
         + More descriptions about system calls. See [docs/syscall.md](https://github.com/sysprog21/rv32emu/blob/master/docs/syscall.md)
