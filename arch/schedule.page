@@ -116,18 +116,18 @@ Computer Architecture (Fall 2022)
     - [Complex Pipelines, Out-of-Order Issue, Register Renaming](https://inst.eecs.berkeley.edu/~cs152/sp19/lectures/L10-ComplexPipes.pdf)
 
 * Week 12 (Nov 22): Cache + Virtual Memory / Online via [YouTube](https://youtu.be/K8B8eCpGBp0)
-* Announcement
-    * Quiz on Nov 29 - pipeline, cache and virtual memory (partial)
-    * Term projects will be listed on Nov 29
-* [Caches: Direct-mapped, set-associative](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec16.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apRiQ2QPjzyq8APGEjnqW1w)
-* [Multi-level Caches, Cache Questions](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec17.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqHsuO6U2bIpwDGqO6UAetk)
-* [The golden age of ever-changing computer architecture](https://hackaday.com/2019/11/27/the-golden-age-of-ever-changing-computer-architecture/)
-    * [Computing on Andromeda: Chip Company Releases 13.5M Core Supercomputer](https://www.allaboutcircuits.com/news/computing-on-andromeda-chip-company-releases-13.5m-core-supercomputer/)
-    * [Designing in 2023: 10 Problems to Solve w/ Jim Keller](https://youtu.be/o70yKYWgtVI) - [Tenstorrent](https://tenstorrent.com/)
+    * Announcement
+        * Quiz on Nov 29 - pipeline, cache and virtual memory (partial)
+        * Term projects will be listed on Nov 29
+    * [Caches: Direct-mapped, set-associative](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec16.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apRiQ2QPjzyq8APGEjnqW1w)
+    * [Multi-level Caches, Cache Questions](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec17.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqHsuO6U2bIpwDGqO6UAetk)
+    * [The golden age of ever-changing computer architecture](https://hackaday.com/2019/11/27/the-golden-age-of-ever-changing-computer-architecture/)
+        * [Computing on Andromeda: Chip Company Releases 13.5M Core Supercomputer](https://www.allaboutcircuits.com/news/computing-on-andromeda-chip-company-releases-13.5m-core-supercomputer/)
+        * [Designing in 2023: 10 Problems to Solve w/ Jim Keller](https://youtu.be/o70yKYWgtVI) - [Tenstorrent](https://tenstorrent.com/)
  8-wide Ascalon RISC-V core.
-* [Virtual Memory](https://youtu.be/TsxZlXOrt8U) / UCB: [Virtual Memory](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec19.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ar2Wia7JngBFMmwRlr4s79j)
-* [2021-Qui6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol) / [with Ripes simulation](https://hackmd.io/@arthur-chang/SyLa2qb3Y)
-* [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
+    * [Virtual Memory](https://youtu.be/TsxZlXOrt8U) / UCB: [Virtual Memory](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec19.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ar2Wia7JngBFMmwRlr4s79j)
+    * [2021-Qui6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol) / [with Ripes simulation](https://hackmd.io/@arthur-chang/SyLa2qb3Y)
+    * [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
  
 * Week13 (Nov 29): Quiz + Virtual Memory + Operating System
     - Announcement:
