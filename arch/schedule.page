@@ -129,16 +129,15 @@ Computer Architecture (Fall 2022)
     * [2021-Qui6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol) / [with Ripes simulation](https://hackmd.io/@arthur-chang/SyLa2qb3Y)
     * [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
  
-* Week13 (Nov 29): Quiz + Virtual Memory + Operating System
+* Week13 (Nov 29): Quiz + Virtual Memory + Operating System (Room 4201 (1F) at (old) CSIE Building)
     - Announcement:
         + Be aware of term projects.
-        + Next week, we will review all the assignments.
-    - [Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol)
+    - [Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol)
     - [Virtual Memory](https://6004.mit.edu/web/_static/fall21/resources/sp21/L18.pdf) / [video](https://youtu.be/TsxZlXOrt8U)
     - [Lab4: Cache](https://cs61c.org/fa20/labs/lab08/)
         + [Reference work](https://hackmd.io/@Lt35rTMeTi22rWqrBgSQzg/SkXXQ_LJ8)
     - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
-    - [Term projects 2020](https://hackmd.io/@sysprog/arch2020-projects)
+    - [Term projects 2021](https://hackmd.io/@sysprog/arch2021-projects)
 
 * Week14 (Dec 6): Synchronization
     - Announcement:
