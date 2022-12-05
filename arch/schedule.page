@@ -144,6 +144,7 @@ Computer Architecture (Fall 2022)
         * Check the listing of [final/term projects](https://hackmd.io/@sysprog/arch2022-projects) and fill in your names.
     - [Apple Silicon Guide](https://github.com/mikeroyal/Apple-Silicon-Guide)
     - [Debunking CISC vs RISC code density](https://www.bitsnbites.eu/cisc-vs-risc-code-density/)
+    - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
     - [Synchronization](https://6004.mit.edu/web/_static/fall21/resources/sp21/L21.pdf) / [video](https://youtu.be/r8H_af_dCF0)
     - [Thread-Level Parallelism](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec22.pdf) / [video](https://youtu.be/QLdN6p7-43U)
         + Let's skip OpenMP part
