@@ -131,24 +131,26 @@ Computer Architecture (Fall 2022)
  
 * Week13 (Nov 29): Quiz + Virtual Memory + Operating System (Room 4201 (1F) at (old) CSIE Building)
     - Announcement:
-        + Be aware of term projects.
+        + Be aware of [Term projects](https://hackmd.io/@sysprog/arch2022-projects)
     - [Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol)
     - [Virtual Memory](https://6004.mit.edu/web/_static/fall21/resources/sp21/L18.pdf) / [video](https://youtu.be/TsxZlXOrt8U)
     - [Lab4: Cache](https://cs61c.org/fa20/labs/lab08/)
         + [Reference work](https://hackmd.io/@Lt35rTMeTi22rWqrBgSQzg/SkXXQ_LJ8)
     - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
-    - [Term projects 2022](https://hackmd.io/@sysprog/arch2022-projects)
 
 * Week14 (Dec 6): Synchronization / Online via [YouTube](https://youtu.be/YNd5Dg2HfT8)
     - Announcement:
         * Quiz6 on Dec 13
-        * Check the listing of final/term projects
+        * Check the listing of [final/term projects](https://hackmd.io/@sysprog/arch2022-projects) and fill in your names.
     - [Apple Silicon Guide](https://github.com/mikeroyal/Apple-Silicon-Guide)
     - [Debunking CISC vs RISC code density](https://www.bitsnbites.eu/cisc-vs-risc-code-density/)
-    - [Term projects 2022](https://hackmd.io/@sysprog/arch2021-projects)
     - [Synchronization](https://6004.mit.edu/web/_static/fall21/resources/sp21/L21.pdf) / [video](https://youtu.be/r8H_af_dCF0)
     - [Thread-Level Parallelism](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec22.pdf) / [video](https://youtu.be/QLdN6p7-43U)
         + Let's skip OpenMP part
+    - [2021 Quiz7](https://hackmd.io/@sysprog/arch2021-quiz6) /[solution](https://hackmd.io/@sysprog/arch2021-quiz7-sol)
+
+    - [2021 Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) /[solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol)
+    - [2020 Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6) /[solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
 
 * Week15 (Dec 13): Operating System and RISC-V, cache coherence
     - Announcement:
@@ -167,8 +169,6 @@ Computer Architecture (Fall 2022)
         + RISC-V AMOSWAP instruction
     - [Advanced topics on Synchronization - 1](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L19-MCM.pdf)
     - [Advanced topics on Synchronization - 2](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L22-Synch.pdf)
-    -  [2020 Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6)
-         * [solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
 
 * Week16 (Dec 20): I/O
     - [I/O: Devices, Polling, Interrupts](https://drive.google.com/drive/folders/1NRoyYSbAyarMhmPD5LiY6YEqYpLoZx_s) / [video](https://youtu.be/0dyqcFC_q2Q?t=1247)
