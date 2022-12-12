@@ -154,11 +154,14 @@ Computer Architecture (Fall 2022)
     - [2021 Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) /[solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol)
     - [2020 Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6) /[solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
 
-* Week15 (Dec 13): Operating System and RISC-V, cache coherence (Room 4201 (1F) at (old) CSIE Building)
+* Week15 (Dec 13): suspended
     - Announcement:
+        * Quiz6 will be postponed to Dec 20
         * Quiz7 on Dec 27
         * Check [the listing of final/term projects](https://hackmd.io/@sysprog/arch2022-projects)
-    - [Quiz6](https://hackmd.io/@sysprog/arch2022-quiz6) / [solution](https://hackmd.io/@sysprog/arch2022-quiz6-sol)
+ 
+* Week16 (Dec 20): I/O
+   - [Quiz6](https://hackmd.io/@sysprog/arch2022-quiz6) / [solution](https://hackmd.io/@sysprog/arch2022-quiz6-sol)
     - video: [The Future of Operating Systems on RISC-V](https://youtu.be/emnN9p4vhzk) / [transcript](https://www.infoq.com/presentations/risc-v-future/)
     - [Freestanding RISC-V Programs](https://youtu.be/iml0DBo5yqo)
         + [bare metal](https://en.wikipedia.org/wiki/Bare_machine)
@@ -169,8 +172,6 @@ Computer Architecture (Fall 2022)
         + RISC-V AMOSWAP instruction
     - [Advanced topics on Synchronization - 1](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L19-MCM.pdf)
     - [Advanced topics on Synchronization - 2](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L22-Synch.pdf)
-
-* Week16 (Dec 20): I/O
     - [I/O: Devices, Polling, Interrupts](https://drive.google.com/drive/folders/1NRoyYSbAyarMhmPD5LiY6YEqYpLoZx_s) / [video](https://youtu.be/0dyqcFC_q2Q?t=1247)
         * Traps/Interrupts/Exceptions
         * Trap Handling in 5-Stage Pipeline
