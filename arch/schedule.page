@@ -160,8 +160,8 @@ Computer Architecture (Fall 2022)
         * Quiz7 on Dec 27
         * Check [the listing of final/term projects](https://hackmd.io/@sysprog/arch2022-projects)
  
-* Week16 (Dec 20): I/O
-   - [Quiz6](https://hackmd.io/@sysprog/arch2022-quiz6) / [solution](https://hackmd.io/@sysprog/arch2022-quiz6-sol)
+* Week16 (Dec 20): Multithreading, Synchronization, I/O
+    - [Quiz6](https://hackmd.io/@sysprog/arch2022-quiz6) / [solution](https://hackmd.io/@sysprog/arch2022-quiz6-sol)
     - video: [The Future of Operating Systems on RISC-V](https://youtu.be/emnN9p4vhzk) / [transcript](https://www.infoq.com/presentations/risc-v-future/)
     - [Freestanding RISC-V Programs](https://youtu.be/iml0DBo5yqo)
         + [bare metal](https://en.wikipedia.org/wiki/Bare_machine)
