@@ -71,7 +71,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [C 語言: bit-field](https://hackmd.io/s/SJ8y82ZYQ)
         - bit field 是 C 語言一個很被忽略的特徵，但在 Linux 和 gcc 這類系統軟體很常出現，不僅是精準規範每個 bit 的作用，甚至用來「擴充」C 語言
     - [參考題目](https://hackmd.io/@sysprog/linux2021-quiz2)`*` / [參考題解 1](https://hackmd.io/@93i7xo2/sysprog2021q1-hw2-quiz2), [參考題解 2](https://hackmd.io/@hankluo6/2021q1quiz2), [參考題解 3](https://hackmd.io/@MR-9Qa9wQLWglSAUyd6UhQ/SkS-Y_lX_)
-    - [作業](https://hackmd.io/@sysprog/linux2022-homework2): 截止繳交日 Mar 13, 2022
+    - [作業](https://hackmd.io/@sysprog/linux2022-homework2): 截止繳交日 Mar ?
         - [quiz2](https://hackmd.io/@sysprog/BybKYf5xc)
     - 第 2 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz2) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/5zdyXn6uQMOeSoVBapuVNw?view)
@@ -88,7 +88,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [C 語言: goto 和流程控制](https://hackmd.io/s/B1e2AUZeM)`*`
         - goto 在 C 語言被某些人看做是妖魔般的存在，不過實在不用這樣看待，至少在 Linux 核心原始程式碼中，goto 是大量存在 (跟你想像中不同吧)。有時不用 goto 會寫出更可怕的程式碼
     * [C 語言程式設計技巧](https://hackmd.io/s/HyIdoLnjl)`*`
-    * [作業](https://hackmd.io/@sysprog/linux2022-homework3): 截止繳交日: Mar 21, 2022
+    * [作業](https://hackmd.io/@sysprog/linux2022-homework3): 截止繳交日: Mar ?
         - [fibdrv](https://hackmd.io/@sysprog/linux2022-fibdrv), [quiz3](https://hackmd.io/@sysprog/BJJMuNRlq)
     * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz3) (內含作答表單)
 
@@ -116,7 +116,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [C 語言: 動態連結器](https://hackmd.io/s/HkK7Uf4Ml)`*`
     * [C 語言: 連結器和執行檔資訊](https://hackmd.io/s/SysiUkgUV)`*`
     * [C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/s/Hkcr5cn97)`*`
-    * [作業](https://hackmd.io/@sysprog/linux2022-homework4): 截止繳交日: Mar 28, 2022
+    * [作業](https://hackmd.io/@sysprog/linux2022-homework4): 截止繳交日: Mar ?
         * [review](https://hackmd.io/@sysprog/B13X2NXbc), [quiz4](https://hackmd.io/@sysprog/HkJ-dN_-q)
     * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz4) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/ByxC6KNb5)
@@ -128,7 +128,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
     * [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/s/rJbcHS5LE)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
-    * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交 Apr 25
+    * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交 Apr ?
     * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz5) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/ByxC6KNb5)
 
@@ -138,7 +138,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - 選課修課程的學員在本學期至少要安排一次一對一討論，否則授課教師難以評估學習狀況，從而會影響評分，請重視自己的權益。
     * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/s/rJbcHS5LE)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
-    * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交 Apr 25
+    * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交 Apr ?
     * Week6 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz6) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/ByxC6KNb5)
 
@@ -160,9 +160,9 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
 
 * 第 8 週 (Apr 3, 4, 6): 測驗 + 作業檢討
     * 公告:
-        - 新的作業已指派: [Homework5](https://hackmd.io/@sysprog/linux2022-homework5)，作業要求是重作第 5, 6, 8 週測驗題及其延伸問題，截止繳交日為 4 月 25 日
+        - 新的作業已指派: [Homework5](https://hackmd.io/@sysprog/linux2022-homework5)，作業要求是重作第 5, 6, 8 週測驗題及其延伸問題
     * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz8) (內含作答表單)
-    * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交 Apr 25
+    * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交 Apr ?
     - [課堂問答簡記](https://hackmd.io/@sysprog/BJGn0nRMq)
 
 * 第 9 週 (Apr 10, 11, 13): 伺服器開發與 Linux 核心對應的系統呼叫
@@ -185,7 +185,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [CS:APP 第 6 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch6)`*`
     * [CS:APP 第 9 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch9)`*`
     * Week10 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz10) (內含作答表單)
-    * [作業](https://hackmd.io/@sysprog/linux2022-homework6): 截止繳交 May 10
+    * [作業](https://hackmd.io/@sysprog/linux2022-homework6): 截止繳交 May ?
         - [ktcp](https://hackmd.io/@sysprog/linux2022-ktcp), [sehttpd](https://hackmd.io/@sysprog/linux2022-sehttpd)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HkuTGofVc)
 
