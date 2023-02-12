@@ -7,19 +7,19 @@ toc: no
 - Instructor: [Jim Huang](/User/jserv) (黃敬群) `<jserv.tw@gmail.com>`
     * [Facebook 粉絲專頁](https://www.facebook.com/JservFans) (不要擔心提了笨問題，這專門用來和學生互動，可預約一對一討論)
 - 訂閱 [Google Calendar](https://calendar.google.com/calendar/embed?src=embedded.master2015%40gmail.com&ctz=Asia%2FTaipei)
-- 討論區: [https://www.facebook.com/groups/system.software2022/](https://www.facebook.com/groups/system.software2022/)
+- 討論區: [https://www.facebook.com/groups/system.software2023/](https://www.facebook.com/groups/system.software2023/)
 - 課程信箱: `<embedded.master2015@gmail.com>` (授課教師和助教會以該信箱發公告), [往年課程進度](/linux/schedule-old)
 - [Linux 核心設計 (線上講座)](https://hackmd.io/@sysprog/linux-kernel-internal)
 - 注意: 下方課程進度表標註有 `*` 的項目，表示內附錄影的教材
-- 注意: 新開的「Linux 核心實作」課程內容幾乎與「Linux 核心設計」一致，採「全線上」方式進行
+- 注意: 新開的「Linux 核心實作」課程內容幾乎與「Linux 核心設計」一致，採線上為主的進行方式
 
-Linux 核心設計/實作 (Spring 2022) 課程進度表暨線上資源
+Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
 ------------------------------------------------------
-* 第 1 週 (Feb 14, 15, 17): 誠實面對自己
+* 第 1 週 (Feb 13, 14, 16): 誠實面對自己
     - [課程簡介和注意須知](https://docs.google.com/presentation/d/1B80k91_3_XuZ0zMzfdgS-D1I29VaHxZTg3XD3bok0io/edit?usp=sharing) / [課程簡介解說錄影](https://youtu.be/raQ5N_V1r1Y)`*`
         * 每週均安排隨堂測驗，採計其中最高分的 8 次
         * 學期評分方式: 隨堂測驗 (20%) + 個人作業+報告及專題 (30%) + 自我評分 (50%)
-    - 歷屆修課學生心得: [張家榮](/User/JaredCJR), [陳品睿](/User/ggary9424), [蕭奕凱](/User/Veck), [方鈺學](/User/JulianATA)
+    - 歷屆修課學生心得: [向景亘](/User/OscarShiang), [張家榮](/User/JaredCJR), [陳品睿](/User/ggary9424), [蕭奕凱](/User/Veck), [方鈺學](/User/JulianATA)
     - 分組報告示範: [ARM-Linux](/embedded/arm-linux), [Xvisor](/embedded/xvisor)
     - [GNU/Linux 開發工具共筆](https://hackmd.io/@sysprog/gnu-linux-dev/)`*`: 務必 *自主* 學習 Linux 操作, Git, HackMD, LaTeX 語法 (特別是數學式), GNU make, perf, gnuplot
         * 確認 Ubuntu Linux 20.04-LTS (或更新的版本) 已順利安裝到你的電腦中
