@@ -19,7 +19,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     - [課程簡介和注意須知](https://docs.google.com/presentation/d/1B80k91_3_XuZ0zMzfdgS-D1I29VaHxZTg3XD3bok0io/edit?usp=sharing) / [課程簡介解說錄影](https://youtu.be/raQ5N_V1r1Y)`*`
         * 每週均安排隨堂測驗，採計其中最高分的 8 次
         * 學期評分方式: 隨堂測驗 (20%) + 個人作業+報告及專題 (30%) + 自我評分 (50%)
-    - 歷屆修課學生心得: [向景亘](/User/OscarShiang), [張家榮](/User/JaredCJR), [陳品睿](/User/ggary9424), [蕭奕凱](/User/Veck), [方鈺學](/User/JulianATA)
+    - 歷屆修課學生心得: [向景亘](/User/OscarShiang), [張家榮](/User/JaredCJR), [蕭奕凱](/User/Veck), [方鈺學](/User/JulianATA)
     - 分組報告示範: [ARM-Linux](/embedded/arm-linux), [Xvisor](/embedded/xvisor)
     - [GNU/Linux 開發工具共筆](https://hackmd.io/@sysprog/gnu-linux-dev/)`*`: 務必 *自主* 學習 Linux 操作, Git, HackMD, LaTeX 語法 (特別是數學式), GNU make, perf, gnuplot
         * 確認 Ubuntu Linux 20.04-LTS (或更新的版本) 已順利安裝到你的電腦中
