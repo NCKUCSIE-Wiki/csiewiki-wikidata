@@ -53,6 +53,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/VIvUZemESvGUev4aCwOnWA?view)
 
 * 第 2 週 (Feb 20, 21, 23): C 語言程式設計
+    * [Linux v6.2 發布](https://kernelnewbies.org/Linux_6.2): 接下來會是讓學員眼花撩亂的主版號/次版號的飛快跳躍
     * [Linux: 作業系統術語及概念](https://hackmd.io/@sysprog/linux-concepts)`*`
     * [系統軟體開發思維](https://hackmd.io/@sysprog/concepts)
     - [C 語言: 數值系統](https://hackmd.io/@sysprog/c-numerics)`*`
