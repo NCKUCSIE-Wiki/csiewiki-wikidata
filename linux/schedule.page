@@ -53,7 +53,6 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/VIvUZemESvGUev4aCwOnWA?view)
 
 * 第 2 週 (Feb 20, 21, 23): C 語言程式設計
-    * 課程基本資料表單: 務必填寫，以接收課程資訊
     * [Linux: 作業系統術語及概念](https://hackmd.io/@sysprog/linux-concepts)`*`
     * [系統軟體開發思維](https://hackmd.io/@sysprog/concepts)
     - [C 語言: 數值系統](https://hackmd.io/@sysprog/c-numerics)`*`
@@ -76,7 +75,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [C 語言: bit-field](https://hackmd.io/s/SJ8y82ZYQ)
         - bit field 是 C 語言一個很被忽略的特徵，但在 Linux 和 gcc 這類系統軟體很常出現，不僅是精準規範每個 bit 的作用，甚至用來「擴充」C 語言
     - [參考題目](https://hackmd.io/@sysprog/linux2021-quiz2)`*` / [參考題解 1](https://hackmd.io/@93i7xo2/sysprog2021q1-hw2-quiz2), [參考題解 2](https://hackmd.io/@hankluo6/2021q1quiz2), [參考題解 3](https://hackmd.io/@MR-9Qa9wQLWglSAUyd6UhQ/SkS-Y_lX_)
-    - [作業](https://hackmd.io/@sysprog/linux2022-homework2): 截止繳交日 Mar ?
+    - [作業](https://hackmd.io/@sysprog/linux2023-homework2): 截止繳交日 Mar 6
         - [quiz2](https://hackmd.io/@sysprog/BybKYf5xc)
     - 第 2 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz2) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/5zdyXn6uQMOeSoVBapuVNw?view)
