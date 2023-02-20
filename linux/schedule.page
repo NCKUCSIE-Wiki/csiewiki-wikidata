@@ -64,15 +64,15 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [為什麼要深入學習 C 語言？](https://hackmd.io/@sysprog/c-standards)`*`
         - C 語言發明者 Dennis M. Ritchie 說：「C 很彆扭又缺陷重重，卻異常成功。固然有歷史的巧合推波助瀾，可也的確是因為它能滿足於系統軟體實作的程式語言期待：既有相當的效率來取代組合語言，又可充分達到抽象且流暢，能用於描述在多樣環境的演算法。」
         - Linux 核心作為世界上最成功的開放原始碼計畫，也是 C 語言在工程領域的瑰寶，裡頭充斥各式「藝術」，往往會嚇到初次接觸的人們，但總是能夠用 C 語言標準和開發工具提供的擴展 (主要來自 gcc 的 GNU extensions) 來解釋。
-    * [基於 C 語言標準研究與系統程式安全議題](https://hackmd.io/s/S15o_K3cQ)
+    * [基於 C 語言標準研究與系統程式安全議題](https://hackmd.io/@sysprog/c-std-security)
         - 藉由研讀漏洞程式碼及 C 語言標準，討論系統程式的安全議題
         - 透過除錯器追蹤程式碼實際運行的狀況，了解其運作原理;
         - 取材自 dangling pointer, CWE-416 Use After Free, CVE-2017-16943 以及 integer overflow 的議題;
-    * [C 語言：記憶體管理、對齊及硬體特性](https://hackmd.io/s/BkuMDQ9K7)`*`
+    * [C 語言：記憶體管理、對齊及硬體特性](https://hackmd.io/@sysprog/c-memory)`*`
         * 搭配閱讀: [The Lost Art of Structure Packing](http://www.catb.org/esr/structure-packing/)
         * 從虛擬記憶體談起，歸納出現代銀行和虛擬記憶體兩者高度相似: malloc 給出 valid pointer 不要太高興，等你要開始用的時候搞不好作業系統給個 OOM ——簡單來說就是一張支票，能不能拿來開等到兌現才知道。
         * 探討 heap (動態配置產生，系統會存放在另外一塊空間)、data alignment，和 malloc 實作機制等議題。這些都是理解 Linux 核心運作的關鍵概念。
-    * [C 語言: bit-field](https://hackmd.io/s/SJ8y82ZYQ)
+    * [C 語言: bit-field](https://hackmd.io/@sysprog/c-bitfield)
         - bit field 是 C 語言一個很被忽略的特徵，但在 Linux 和 gcc 這類系統軟體很常出現，不僅是精準規範每個 bit 的作用，甚至用來「擴充」C 語言
     - [參考題目](https://hackmd.io/@sysprog/linux2021-quiz2)`*` / [參考題解 1](https://hackmd.io/@93i7xo2/sysprog2021q1-hw2-quiz2), [參考題解 2](https://hackmd.io/@hankluo6/2021q1quiz2), [參考題解 3](https://hackmd.io/@MR-9Qa9wQLWglSAUyd6UhQ/SkS-Y_lX_)
     - [作業](https://hackmd.io/@sysprog/linux2023-homework2): 截止繳交日 Mar 6
