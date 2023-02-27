@@ -53,8 +53,6 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/VIvUZemESvGUev4aCwOnWA?view)
 
 * 第 2 週 (Feb 20, 21, 23): C 語言程式設計
-    * 公告
-        + 2 月 28 日沒有實體課程，但安排線上測驗，請依據 2 月 27 日晚間教材解說 (事後有錄影)，在 2 月 28 日 15:00-23:59 之間依據 [Google Calendar](https://calendar.google.com/calendar/embed?src=embedded.master2015%40gmail.com&ctz=Asia%2FTaipei) 進行作答
     * [教材解說](https://youtu.be/YawpeXUiN1k)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux v6.2 發布](https://kernelnewbies.org/Linux_6.2): 接下來會是讓學員眼花撩亂的主版號/次版號的飛快跳躍 / [kernel.org](https://kernel.org/)
     * [Linux: 作業系統術語及概念](https://hackmd.io/@sysprog/linux-concepts)`*`
@@ -86,20 +84,24 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/VIvUZemESvGUev4aCwOnWA?view)
 
 * 第 3 週 (Feb 27, 28, Mar 2): 並行和 C 語言程式設計
+    * 公告
+        + 2 月 28 日沒有實體課程，但安排線上測驗 (「Linux 核心設計」課程的學員務必參加)，請依據 2 月 27 日晚間教材解說 (事後有錄影)，在 2 月 28 日 15:00-23:59 之間依據 [Google Calendar](https://calendar.google.com/calendar/embed?src=embedded.master2015%40gmail.com&ctz=Asia%2FTaipei) 進行作答
+        + 第二次作業已指派，可在 2 月 28 日起開始繳交，截止繳交日 Mar 7
+        + 第三次作業尚在調整，請於 2 月 28 日晚間刷新本頁面以得之最終內容
     * [Linux: 發展動態回顧](https://hackmd.io/@sysprog/linux-dev-review)`*`
     * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency/)`*`: 應涵蓋 Part 1 到 Part 4
-    * [C 語言: 函式呼叫](https://hackmd.io/s/SJ6hRj-zg)`*`
+    * [C 語言: 函式呼叫](https://hackmd.io/@sysprog/c-function)`*`
         - 著重在計算機架構對應的支援和行為分析
-    * [C 語言: 遞迴呼叫](https://hackmd.io/s/rJ8BOjGGl)`*`
+    * [C 語言: 遞迴呼叫](https://hackmd.io/@sysprog/c-recursion)`*`
         - 或許跟你想像中不同，Linux 核心的原始程式碼裡頭也用到遞迴函式呼叫，特別在較複雜的實作，例如檔案系統，善用遞迴可大幅縮減程式碼，但這也導致追蹤程式運作的難度大增
-    * [C 語言: 前置處理器應用](https://hackmd.io/s/S1maxCXMl)`*`
+    * [C 語言: 前置處理器應用](https://hackmd.io/@sysprog/c-preprocessor)`*`
         - C 語言之所以不需要時常發佈新的語言特徵又可以保持活力，前置處理器 (preprocessor) 是很重要的因素，有心者可逕行「擴充」C 語言
-    * [C 語言: goto 和流程控制](https://hackmd.io/s/B1e2AUZeM)`*`
+    * [C 語言: goto 和流程控制](https://hackmd.io/@sysprog/c-control-flow)`*`
         - goto 在 C 語言被某些人看做是妖魔般的存在，不過實在不用這樣看待，至少在 Linux 核心原始程式碼中，goto 是大量存在 (跟你想像中不同吧)。有時不用 goto 會寫出更可怕的程式碼
-    * [C 語言程式設計技巧](https://hackmd.io/s/HyIdoLnjl)`*`
-    * [作業](https://hackmd.io/@sysprog/linux2022-homework3): 截止繳交日: Mar ?
+    * [C 語言程式設計技巧](https://hackmd.io/@sysprog/c-trick)`*`
+    * [作業](https://hackmd.io/@sysprog/linux2023-homework3): 截止繳交日: Mar 14
         - [fibdrv](https://hackmd.io/@sysprog/linux2022-fibdrv), [quiz3](https://hackmd.io/@sysprog/BJJMuNRlq)
-    * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz3) (內含作答表單)
+    * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz3) (內含作答表單)
 
 * 第 4 週 (Mar 6, 7, 9): 浮點數 + 編譯器和連結器
     * 公告: 請填寫 [Google 表單](https://docs.google.com/forms/d/e/1FAIpQLSe012KL-nDKrzoNrNxcwx04vMcHGqGXhhFOu--P9EWIFgUNew/viewform)，以利後續追蹤
