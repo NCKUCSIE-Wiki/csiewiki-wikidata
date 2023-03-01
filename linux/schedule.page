@@ -103,7 +103,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - goto 在 C 語言被某些人看做是妖魔般的存在，不過實在不用這樣看待，至少在 Linux 核心原始程式碼中，goto 是大量存在 (跟你想像中不同吧)。有時不用 goto 會寫出更可怕的程式碼
     * [C 語言程式設計技巧](https://hackmd.io/@sysprog/c-trick)`*`
     * [作業](https://hackmd.io/@sysprog/linux2023-homework3): 截止繳交日: Mar 21
-        - [fibdrv](https://hackmd.io/@sysprog/linux2023-fibdrv), [quiz3](https://hackmd.io/@sysprog/BJJMuNRlq)
+        - [fibdrv](https://hackmd.io/@sysprog/linux2023-fibdrv)`*`, [quiz3](https://hackmd.io/@sysprog/BJJMuNRlq), [review](https://hackmd.io/@sysprog/linux2023-review)`*`
     * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz3) (內含作答表單)
 
 * 第 4 週 (Mar 6, 7, 9): 浮點數 + 編譯器和連結器
