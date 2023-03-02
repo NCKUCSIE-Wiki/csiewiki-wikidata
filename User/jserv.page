@@ -95,6 +95,9 @@ categories: User
 * [看漫畫學 Linux](https://hackmd.io/@sysprog/linux-comic)
     - Daniel Stori 經營的網站 {turnoff.us} 提供一系列關於資訊技術的漫畫，其中 [inside the linux kernel](https://turnoff.us/geek/inside-the-linux-kernel/) 生動地展現 Linux 核心的部分機制和相關的套件
     - 漫畫以房屋的側面剖面視角，以房屋為載體，小企鵝、小狗、小丑等成員組為大家庭，各自分工，藉此展現 Linux。由於漫畫針對 Linux 核心的比重不算高，本文標題變更為通用的 Linux 系統，即核心加上關鍵應用程式的組合
+* [資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)
+    - 考慮到科技文化延續議題，我們尊重台灣資訊科技前輩的篳路藍縷、理解詞彙背後的考量因素，和使用精準詞彙，其實後者也是工程素養的一環，只是很多人忽略
+    - 了解詞源、語境，謹慎選擇用詞，是一種必要的態度
 
 近期研究
 =======
