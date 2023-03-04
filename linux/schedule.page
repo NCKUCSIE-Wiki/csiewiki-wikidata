@@ -123,12 +123,12 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     }
     ```
     這段程式碼在 gcc 開啟/關閉編譯器最佳化，會有截然不同的返回值 (`-O0` 編譯會得到 `1`; `-O1` 或更高等級編譯會得到 `0`)，為何？C 語言標準並未定義像 a, b 在記憶體中的配置，因此比較其記憶體位置屬於未定義行為，當最佳化未開啟時，GCC 不檢查程式行為是否符合 C 規範，才會去比較其內容，而在最佳化啟動後，推論這樣的未定義行為而略去記憶體操作。
-    * [C 編譯器原理和案例分析](https://hackmd.io/s/H1ZzeiCIQ)`*`
-    * [C 語言: 未定義行為](https://hackmd.io/s/Skr9vGiQm)`*`: C 語言最初為了開發 UNIX 和系統軟體而生，本質是低階的程式語言，在語言規範層級存在 undefined behavior，可允許編譯器引入更多最佳化
-    * [C 語言: 編譯器和最佳化原理](https://hackmd.io/s/Hy72937Me)`*`
-    * [C 語言: 動態連結器](https://hackmd.io/s/HkK7Uf4Ml)`*`
-    * [C 語言: 連結器和執行檔資訊](https://hackmd.io/s/SysiUkgUV)`*`
-    * [C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/s/Hkcr5cn97)`*`
+    * [C 編譯器原理和案例分析](https://hackmd.io/@sysprog/c-compiler-construction)`*`
+    * [C 語言: 未定義行為](https://hackmd.io/@sysprog/c-undefined-behavior)`*`: C 語言最初為了開發 UNIX 和系統軟體而生，本質是低階的程式語言，在語言規範層級存在 undefined behavior，可允許編譯器引入更多最佳化
+    * [C 語言: 編譯器和最佳化原理](https://hackmd.io/@sysprog/c-compiler-optimization)`*`
+    * [C 語言: 動態連結器](https://hackmd.io/@sysprog/c-dynamic-linkage)`*`
+    * [C 語言: 連結器和執行檔資訊](https://hackmd.io/@sysprog/c-linker-loader)`*`
+    * [C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/@sysprog/c-runtime)`*`
     * [作業](https://hackmd.io/@sysprog/linux2023-homework4): 截止繳交日: Mar ?
         * [quiz4](https://hackmd.io/@sysprog/HkJ-dN_-q)
     * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz4) (內含作答表單)
