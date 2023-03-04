@@ -106,10 +106,11 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz3) (內含作答表單)
 
 * 第 4 週 (Mar 6, 7, 9): 浮點數 + 編譯器和連結器
-    * 公告: 請填寫 [Google 表單](https://docs.google.com/forms/d/e/1FAIpQLSe012KL-nDKrzoNrNxcwx04vMcHGqGXhhFOu--P9EWIFgUNew/viewform)，以利後續追蹤
+    * 公告: 請填寫 [Google 表單](--https://docs.google.com/forms/d/e/1FAIpQLSe012KL-nDKrzoNrNxcwx04vMcHGqGXhhFOu--P9EWIFgUNew/viewform)，以利後續追蹤
     * [追求神乎其技的程式設計之道](https://vgod.medium.com/7cccc3c68f1e)
+        - 「可以看出抄襲風氣在台灣並不只是小時候在學校抄抄作業而已；媒體工作者在報導中任意抄襲及轉載是種不尊重自己專業的表現，不但隱含著一種應付了事的心態，更代表著這些人對於自己的工作沒有熱情，更沒有著一點堅持。如果要說我在美國看到這邊和台灣有什麼最大的不同，我想關鍵的差異就在對自己的工作有沒有熱情和堅持而已了。」
+        - 「程式藝術家也不過是在『簡潔』、『彈性』、『效率』這三大目標上進行一連串的取捨 (trade-off) 和最佳化。」
     * [CS:APP 第 2 章重點提示和練習](https://hackmd.io/@sysprog/CSAPP-ch2)`*`
-    * [浮點數運算](https://hackmd.io/@sysprog/c-floating-point)`*`: 工程領域往往是一系列的取捨結果，浮點數更是如此，在軟體發開發有太多失誤案例源自工程人員對浮點數運算的掌握不足，本議程希望藉由探討真實世界的血淋淋案例，帶著學員思考 IEEE 754 規格和相關軟硬體考量點，最後也會探討在深度學習領域為了改善資料處理效率，而引入的 [BFloat16](https://en.wikipedia.org/wiki/Bfloat16_floating-point_format) 這樣的新標準
     * 核心開發者當然要熟悉編譯器行為
         - [Linus Torvalds 教你分析 gcc 行為](https://lkml.org/lkml/2019/2/25/1092)
         - [Pointers are more abstract than you might expect in C](https://hownot2code.com/2018/09/07/pointers-are-more-abstract-than-you-might-expect-in-c/)
@@ -122,20 +123,19 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     }
     ```
     這段程式碼在 gcc 開啟/關閉編譯器最佳化，會有截然不同的返回值 (`-O0` 編譯會得到 `1`; `-O1` 或更高等級編譯會得到 `0`)，為何？C 語言標準並未定義像 a, b 在記憶體中的配置，因此比較其記憶體位置屬於未定義行為，當最佳化未開啟時，GCC 不檢查程式行為是否符合 C 規範，才會去比較其內容，而在最佳化啟動後，推論這樣的未定義行為而略去記憶體操作。
-        - [藝術與核心](http://blog.linux.org.tw/~jserv/archives/001888.html)
     * [C 編譯器原理和案例分析](https://hackmd.io/s/H1ZzeiCIQ)`*`
     * [C 語言: 未定義行為](https://hackmd.io/s/Skr9vGiQm)`*`: C 語言最初為了開發 UNIX 和系統軟體而生，本質是低階的程式語言，在語言規範層級存在 undefined behavior，可允許編譯器引入更多最佳化
     * [C 語言: 編譯器和最佳化原理](https://hackmd.io/s/Hy72937Me)`*`
     * [C 語言: 動態連結器](https://hackmd.io/s/HkK7Uf4Ml)`*`
     * [C 語言: 連結器和執行檔資訊](https://hackmd.io/s/SysiUkgUV)`*`
     * [C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/s/Hkcr5cn97)`*`
-    * [作業](https://hackmd.io/@sysprog/linux2022-homework4): 截止繳交日: Mar ?
-        * [review](https://hackmd.io/@sysprog/B13X2NXbc), [quiz4](https://hackmd.io/@sysprog/HkJ-dN_-q)
-    * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz4) (內含作答表單)
+    * [作業](https://hackmd.io/@sysprog/linux2023-homework4): 截止繳交日: Mar ?
+        * [quiz4](https://hackmd.io/@sysprog/HkJ-dN_-q)
+    * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz4) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/ByxC6KNb5)
 
 * 第 5 週 (Mar 13, 14, 16): Linux Process
-    * [從 √2 的運算談浮點數](https://hackmd.io/@sysprog/sqrt)
+    * [浮點數運算](https://hackmd.io/@sysprog/c-floating-point)`*`: 工程領域往往是一系列的取捨結果，浮點數更是如此，在軟體發開發有太多失誤案例源自工程人員對浮點數運算的掌握不足，本議程希望藉由探討真實世界的血淋淋案例，帶著學員思考 IEEE 754 規格和相關軟硬體考量點，最後也會探討在深度學習領域為了改善資料處理效率，而引入的 [BFloat16](https://en.wikipedia.org/wiki/Bfloat16_floating-point_format) 這樣的新標準
     * [Linux 核心模組運作原理](https://hackmd.io/@sysprog/linux-kernel-module)
     * [Linux: 不僅是個執行單元的 Process](https://hackmd.io/s/r1ojuBGgE)`*`: Linux 核心對於 UNIX Process 的實作相當複雜，不僅蘊含歷史意義 (幾乎每個欄位都值得講古)，更是反映出資訊科技產業的變遷，核心程式碼的 `task_struct` 結構體更是一絕，廣泛涵蓋 process 狀態、處理器、檔案系統、signal 處理、底層追蹤機制等等資訊，更甚者，還很曖昧地保存著 thread 的必要欄位，好似這兩者天生就脫不了干係
         - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
