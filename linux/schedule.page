@@ -105,7 +105,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - [fibdrv](https://hackmd.io/@sysprog/linux2023-fibdrv)`*`, [quiz3](https://hackmd.io/@sysprog/H1hV29nRj), [review](https://hackmd.io/@sysprog/linux2023-review)`*`
     * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz3) (內含作答表單)
 
-* 第 4 週 (Mar 6, 7, 9): 浮點數 + 編譯器和連結器
+* 第 4 週 (Mar 6, 7, 9): 數值系統 + 編譯器
     * 公告: 請填寫 [Google 表單](https://forms.gle/rANw1FmXxd2rB3dP8)，以利後續追蹤
     * [追求神乎其技的程式設計之道](https://vgod.medium.com/7cccc3c68f1e)
         - 「可以看出抄襲風氣在台灣並不只是小時候在學校抄抄作業而已；媒體工作者在報導中任意抄襲及轉載是種不尊重自己專業的表現，不但隱含著一種應付了事的心態，更代表著這些人對於自己的工作沒有熱情，更沒有著一點堅持。如果要說我在美國看到這邊和台灣有什麼最大的不同，我想關鍵的差異就在對自己的工作有沒有熱情和堅持而已了。」
@@ -117,9 +117,6 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [C 編譯器原理和案例分析](https://hackmd.io/@sysprog/c-compiler-construction)`*`
     * [C 語言: 未定義行為](https://hackmd.io/@sysprog/c-undefined-behavior)`*`: C 語言最初為了開發 UNIX 和系統軟體而生，本質是低階的程式語言，在語言規範層級存在 undefined behavior，可允許編譯器引入更多最佳化
     * [C 語言: 編譯器和最佳化原理](https://hackmd.io/@sysprog/c-compiler-optimization)`*`
-    * [C 語言: 動態連結器](https://hackmd.io/@sysprog/c-dynamic-linkage)`*`
-    * [C 語言: 連結器和執行檔資訊](https://hackmd.io/@sysprog/c-linker-loader)`*`
-    * [C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/@sysprog/c-runtime)`*`
     * [作業](https://hackmd.io/@sysprog/linux2023-homework4): 截止繳交日: Mar ?
         * [quiz4](https://hackmd.io/@sysprog/HkJ-dN_-q)
     * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz4) (內含作答表單)
@@ -133,6 +130,9 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
     * [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/s/rJbcHS5LE)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
+    * [C 語言: 動態連結器](https://hackmd.io/@sysprog/c-dynamic-linkage)`*`
+    * [C 語言: 連結器和執行檔資訊](https://hackmd.io/@sysprog/c-linker-loader)`*`
+    * [C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/@sysprog/c-runtime)`*`
     * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交 Apr ?
     * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz5) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/ByxC6KNb5)
