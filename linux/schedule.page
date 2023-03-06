@@ -118,7 +118,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [CS:APP 第 2 章重點提示和練習](https://hackmd.io/@sysprog/CSAPP-ch2)`*`
     * 核心開發者當然要熟悉編譯器行為
         - [Linus Torvalds 教你分析 gcc 行為](https://lkml.org/lkml/2019/2/25/1092)
-        - [Pointers are more abstract than you might expect in C](https://hownot2code.com/2018/09/07/pointers-are-more-abstract-than-you-might-expect-in-c/)
+        - [Pointers are more abstract than you might expect in C](https://pvs-studio.com/en/blog/posts/cpp/0576/) / [HackerNews 討論](https://news.ycombinator.com/item?id=17439467)
     * [C 編譯器原理和案例分析](https://hackmd.io/@sysprog/c-compiler-construction)`*`
     * [C 語言: 未定義行為](https://hackmd.io/@sysprog/c-undefined-behavior)`*`: C 語言最初為了開發 UNIX 和系統軟體而生，本質是低階的程式語言，在語言規範層級存在 undefined behavior，可允許編譯器引入更多最佳化
     * [C 語言: 編譯器和最佳化原理](https://hackmd.io/@sysprog/c-compiler-optimization)`*`
