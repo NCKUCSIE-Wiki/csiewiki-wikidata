@@ -126,7 +126,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [C 語言: 未定義行為](https://hackmd.io/@sysprog/c-undefined-behavior)`*`: C 語言最初為了開發 UNIX 和系統軟體而生，本質是低階的程式語言，在語言規範層級存在 undefined behavior，可允許編譯器引入更多最佳化
     * [C 語言: 編譯器和最佳化原理](https://hackmd.io/@sysprog/c-compiler-optimization)`*`
     * 《Demystifying the Linux CPU Scheduler》第 1 章
-    * [作業](https://hackmd.io/@sysprog/linux2023-homework4): 截止繳交日: Mar 27
+    * [作業](https://hackmd.io/@sysprog/linux2023-homework4): 截止繳交日: Mar 30
         * [quiz4](https://hackmd.io/@sysprog/HJaX8tuyh)
     * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz4) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/rJVas7NJn)
