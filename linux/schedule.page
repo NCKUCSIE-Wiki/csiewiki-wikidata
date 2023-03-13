@@ -131,27 +131,26 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz4) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/rJVas7NJn)
 
-* 第 5 週 (Mar 13, 14, 16): Linux Process
+* 第 5 週 (Mar 13, 14, 16): Linux CPU scheduler
     * [浮點數運算](https://hackmd.io/@sysprog/c-floating-point)`*`: 工程領域往往是一系列的取捨結果，浮點數更是如此，在軟體發開發有太多失誤案例源自工程人員對浮點數運算的掌握不足，本議程希望藉由探討真實世界的血淋淋案例，帶著學員思考 IEEE 754 規格和相關軟硬體考量點，最後也會探討在深度學習領域為了改善資料處理效率，而引入的 [BFloat16](https://en.wikipedia.org/wiki/Bfloat16_floating-point_format) 這樣的新標準
         - [float16 vs. bfloat16](https://twitter.com/rasbt/status/1631679894219284480)
     * [Linux 核心模組運作原理](https://hackmd.io/@sysprog/linux-kernel-module)
-    * [Linux: 不僅是個執行單元的 Process](https://hackmd.io/s/r1ojuBGgE)`*`: Linux 核心對於 UNIX Process 的實作相當複雜，不僅蘊含歷史意義 (幾乎每個欄位都值得講古)，更是反映出資訊科技產業的變遷，核心程式碼的 `task_struct` 結構體更是一絕，廣泛涵蓋 process 狀態、處理器、檔案系統、signal 處理、底層追蹤機制等等資訊，更甚者，還很曖昧地保存著 thread 的必要欄位，好似這兩者天生就脫不了干係
-        - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
-    * [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)
-    * [Linux: 不只挑選任務的排程器](https://hackmd.io/s/rJbcHS5LE)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
+    * [Linux: 不只挑選任務的排程器](https://hackmd.io/@sysprog/linux-scheduler)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
     * [C 語言: 動態連結器](https://hackmd.io/@sysprog/c-dynamic-linkage)`*`
     * [C 語言: 連結器和執行檔資訊](https://hackmd.io/@sysprog/c-linker-loader)`*`
     * [C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/@sysprog/c-runtime)`*`
     * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交 Apr ?
-    * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz5) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/@sysprog/ByxC6KNb5)
+    * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz5) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/@sysprog/rJVas7NJn)
 
 * 第 6 週 (Mar 20, 21, 23): Linux Process + Scheduler
     * 公告
         - 本週開放讓學員 (選課的學生 + 完成前二次作業過半要求的旁聽者) 跟授課教師預約一對一線上討論，請參照[課程行事曆](https://bit.ly/sysprog-calendar)裡頭標注 "Office hour" 的時段，發訊息到 [Facebook 粉絲專頁](https://www.facebook.com/JservFans/)，簡述你的學習狀況並選定偏好的時段 (建議是 30 分鐘)
         - 選課修課程的學員在本學期至少要安排一次一對一討論，否則授課教師難以評估學習狀況，從而會影響評分，請重視自己的權益。
     * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
-    * [Linux: 不只挑選任務的排程器](https://hackmd.io/s/rJbcHS5LE)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
+    * [Linux: 不僅是個執行單元的 Process](https://hackmd.io/@sysprog/linux-process)`*`: Linux 核心對於 UNIX Process 的實作相當複雜，不僅蘊含歷史意義 (幾乎每個欄位都值得講古)，更是反映出資訊科技產業的變遷，核心程式碼的 `task_struct` 結構體更是一絕，廣泛涵蓋 process 狀態、處理器、檔案系統、signal 處理、底層追蹤機制等等資訊，更甚者，還很曖昧地保存著 thread 的必要欄位，好似這兩者天生就脫不了干係
+        - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
+    * [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)
     * [作業](https://hackmd.io/@sysprog/linux2022-homework5): 截止繳交 Apr ?
     * Week6 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz6) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/ByxC6KNb5)
