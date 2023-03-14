@@ -135,7 +135,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     - [教材解說](https://youtu.be/cgTXGnQQjk4)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
         - 本週導入客製化作業，讓學員選擇改進前四週的作業或自訂題目 (例如貢獻程式碼到 Linux 核心)，隨後安排授課教師和學員的線上一對一討論
-        - 請在 3 月 14 日 15:00 刷新本頁以得知相關規範
+        - 請在 3 月 14 日 17:00 刷新本頁以得知相關規範
     * [浮點數運算](https://hackmd.io/@sysprog/c-floating-point)`*`: 工程領域往往是一系列的取捨結果，浮點數更是如此，在軟體發開發有太多失誤案例源自工程人員對浮點數運算的掌握不足，本議程希望藉由探討真實世界的血淋淋案例，帶著學員思考 IEEE 754 規格和相關軟硬體考量點，最後也會探討在深度學習領域為了改善資料處理效率，而引入的 [BFloat16](https://en.wikipedia.org/wiki/Bfloat16_floating-point_format) 這樣的新標準
         - [float16 vs. bfloat16](https://twitter.com/rasbt/status/1631679894219284480)
     * 記憶體配置器涉及 bitwise 操作及浮點數運算。傳統的即時系統和該領域的作業系統 (即 RTOS) 為了讓系統行為更可預測，往往捨棄動態記憶體配置的能力，但這顯然讓系統的擴充能力大幅受限。後來研究人員提出 TLSF (Two-Level Segregated Fit) 嘗試讓即時系統也能享用動態記憶體管理，其關鍵訴求是 "O(1) cost for malloc, free, realloc, aligned_alloc"
