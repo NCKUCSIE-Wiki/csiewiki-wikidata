@@ -13,9 +13,11 @@ categories: User
 
 作品
 ====
-- [多軸旋翼機設計](https://www.youtube.com/watch?v=hBBe1Kj82B4): 包含非線性控制、感測器融合、SLAM、路徑規劃
+
+- [UrsusPilot](https://www.youtube.com/watch?v=_DsNQWP7UXo): 2013-2015年期間參與之四軸飛行器專案(由成大航太研究生主導)，原為開放原始碼專案，目前已轉為非公開
+- [多軸旋翼機設計](https://www.youtube.com/watch?v=hBBe1Kj82B4): 碩班期間成果，設計包含非線性控制、感測器融合、SLAM、路徑規劃
 - [Puyuma](https://github.com/Puyuma/puyuma-core): 基於Linux的微型自駕車系統
-- [Tenok](https://github.com/shengwen-tw/tenok): 啟發自rtenv的即時作業系統) [[video]](https://www.youtube.com/watch?v=byWihWcMP00)
+- [Tenok](https://github.com/shengwen-tw/tenok): 啟發自rtenv的即時作業系統 [[video]](https://www.youtube.com/watch?v=byWihWcMP00)
 - [PU-01 (定翼機)](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 包含機構設計、參數設計、穩定性分析
 
 論文
@@ -29,7 +31,7 @@ Vehicles](https://drive.google.com/file/d/1Tsl13TjKVyGPcj0bG6tjt6iCVC8NbiQE/view
 ===============================
 其實我現在只是一個高二學生(16歲)。
 
-初次到成大資工上黃敬群老師的課是今年暑假(2013)的事, 除了開始摸索一些開發環境、工具的使用外也逐漸了解嵌入式系統的領域。
+初次到成大資工上黃敬群老師的課是今年暑假(2013年)的事, 除了開始摸索一些開發環境、工具的使用外也逐漸了解嵌入式系統的領域。
 
 由於我個人住在台中, 無法實際到成大與組員們討論, 因此貢獻相對較少(上台報告一類), 但仍希望能夠透過這難得的機會與大學生、研究生們合作及學習。
 
