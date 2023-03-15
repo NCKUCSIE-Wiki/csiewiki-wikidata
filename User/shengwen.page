@@ -7,7 +7,7 @@ categories: User
 ====
 - 陽明交通大學機器人碩士學程 (2021畢) ([網路控制機器人實驗室](https://ncrl.lab.nycu.edu.tw/))
 - 靜宜大學資訊工程系 (2019畢)
-- E-mail: ``shengwen1997.tw[at]gmail.com``
+- ``shengwen1997.tw[at]gmail.com``
 - [GitHub](https://github.com/shengwen-tw)
 - [履歷](http://hackmd.io/@shengwen/cv)
 
@@ -15,7 +15,7 @@ categories: User
 ====
 
 - [UrsusPilot](https://www.youtube.com/watch?v=_DsNQWP7UXo): 2013-2015年期間參與之四軸飛行器專案(由成大航太研究生主導)，原為開放原始碼專案，目前已轉為非公開
-- [多軸旋翼機設計](https://www.youtube.com/watch?v=hBBe1Kj82B4): 碩班期間成果，設計包含非線性控制、感測器融合、SLAM、路徑規劃
+- [多旋翼無人機系統設計](https://www.youtube.com/watch?v=hBBe1Kj82B4): 碩班期間成果，設計包含非線性控制、感測器融合、SLAM、路徑規劃
 - [Puyuma](https://github.com/Puyuma/puyuma-core): 基於Linux的微型自駕車系統
 - [Tenok](https://github.com/shengwen-tw/tenok): 啟發自rtenv的即時作業系統 [[video]](https://www.youtube.com/watch?v=byWihWcMP00)
 - [PU-01 (定翼機)](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 包含機構設計、參數設計、穩定性分析
@@ -26,6 +26,14 @@ categories: User
 - [Robust State-Feedback H-infinity Control of Quadrotor](https://drive.google.com/file/d/1pyCTHr3tJHJxISqiStX4P4KPzDvA_4z1/view?usp=share_link) (CACS 2022)
 - [Puyuma: Linux-based RTOS Experimental Platform for Constructing Self-Driving Miniature
 Vehicles](https://drive.google.com/file/d/1Tsl13TjKVyGPcj0bG6tjt6iCVC8NbiQE/view?usp=sharing) (CTHPC 2017)
+
+獎項
+====
+
+- 斐陶斐榮譽會員, 2019
+- 放視大賞 - 銀獎, 2018
+- 資工系畢業專題競賽 – 特優, 2017
+- 軟體創作達人暑期成長營 - 特優, 2014
 
 修課心得 (2013-2014，不成熟的自己)
 ===============================
