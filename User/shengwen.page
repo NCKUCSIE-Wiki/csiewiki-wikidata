@@ -7,9 +7,9 @@ categories: User
 ====
 - 陽明交通大學機器人碩士學程 (2021畢) ([網路控制機器人實驗室](https://ncrl.lab.nycu.edu.tw/))
 - 靜宜大學資訊工程系 (2019畢)
-- ``shengwen1997.tw[at]gmail.com``
-- [GitHub](https://github.com/shengwen-tw)
-- [履歷](http://hackmd.io/@shengwen/cv)
+- E-mail: ``shengwen1997.tw[at]gmail.com``
+- GitHub: [shengwen-tw](https://github.com/shengwen-tw)
+- 履歷: [HackMD (英文)](http://hackmd.io/@shengwen/cv)
 
 作品
 ====
@@ -19,6 +19,24 @@ categories: User
 - [Puyuma](https://github.com/Puyuma/puyuma-core): 基於Linux的微型自駕車系統
 - [Tenok](https://github.com/shengwen-tw/tenok): 啟發自rtenv的即時作業系統 [[video]](https://www.youtube.com/watch?v=byWihWcMP00)
 - [PU-01 (定翼機)](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 包含機構設計、參數設計、穩定性分析
+
+數值模擬專案
+===========
+
+四軸飛行器控制:
+
+- [基於非線性控制的四軸飛行器模擬](https://github.com/shengwen-tw/qaudrotor_geometry_ctrl_simulator)
+- [基於保結構雙重演算法的四軸飛行器LQR控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator)
+- [基於H∞強健控制的四軸飛行器模擬](https://github.com/shengwen-tw/quadrotor-h-infty-ctrl-simulator)
+
+馬達控制:
+
+- [Field-Oriented Control和方波控制的三相馬達速度控制](https://github.com/shengwen-tw/bldc-control-simulator)
+
+路徑規劃演算法:
+
+- [Minimum-snap trajectory generation](https://github.com/shengwen-tw/minimum-snap-traj-matlab)
+- [Rapidly-Exploring Random Tree (RRT)](https://github.com/shengwen-tw/rrt-matlab)
 
 論文
 ====
@@ -35,7 +53,7 @@ Vehicles](https://drive.google.com/file/d/1Tsl13TjKVyGPcj0bG6tjt6iCVC8NbiQE/view
 - 資工系畢業專題競賽 – 特優, 2017
 - 軟體創作達人暑期成長營 - 特優, 2014
 
-修課心得 (2013-2014，不成熟的自己)
+修課心得 (2013年，不成熟的自己)
 ===============================
 其實我現在只是一個高二學生(16歲)。
 
