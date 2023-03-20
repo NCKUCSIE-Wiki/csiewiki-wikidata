@@ -153,12 +153,21 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
 
 * 第 6 週 (Mar 20, 21, 23): System call + CPU Scheduler
     * 公告
-        - 本週開放讓學員 (選課的學生 + 完成前二次作業過半要求的旁聽者) 跟授課教師預約一對一線上討論，請參照[課程行事曆](https://bit.ly/sysprog-calendar)裡頭標注 "Office hour" 的時段，發訊息到 [Facebook 粉絲專頁](https://www.facebook.com/JservFans/)，簡述你的學習狀況並選定偏好的時段 (建議是 30 分鐘)
+        - 自 3 月 22 日起，開放讓學員 (選課的學生 + 完成前二次作業過半要求的旁聽者) 跟授課教師預約一對一線上討論，請參照[課程行事曆](https://bit.ly/sysprog-calendar)裡頭標注 "Office hour" 的時段，發訊息到 [Facebook 粉絲專頁](https://www.facebook.com/JservFans/)，簡述你的學習狀況並選定偏好的時段 (建議是 30 分鐘)
         - 選課修課程的學員在本學期至少要安排一次一對一討論，否則授課教師難以評估學習狀況，從而會影響評分，請重視自己的權益。
     * [coroutine](https://hackmd.io/@sysprog/coroutine)
     * [Linux: 賦予應用程式生命的系統呼叫](https://hackmd.io/@sysprog/linux-syscall)
     * [vDSO: 快速的 Linux 系統呼叫機制](https://hackmd.io/@sysprog/linux-vdso)
     * [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)
+    * 《Demystifying the Linux CPU Scheduler》
+        - 1.2.1 System calls
+        - 1.2.2 A different kind of software
+        - 1.2.3 User and kernel stacks
+        - 1.3 Process management
+        - 2.1 Introduction
+        - 2.2 Prior to CFS
+        - 2.3 Completely Fair Scheduler (CFS)
+        - 3.1 Structs and their role
     * [作業](https://hackmd.io/@sysprog/linux2023-homework5): 截止繳交 Apr ?
     * Week6 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz6) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/ByxC6KNb5)
