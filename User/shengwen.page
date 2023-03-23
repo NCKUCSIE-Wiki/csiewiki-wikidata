@@ -37,27 +37,27 @@ categories: User
 數值模擬專案
 ===========
 
-四軸飛行器控制:
+四軸飛行器:
 
-- [基於非線性控制的四軸飛行器模擬](https://github.com/shengwen-tw/qaudrotor_geometry_ctrl_simulator)
-- [基於保結構雙重演算法的四軸飛行器LQR控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator)
-- [基於H∞強健控制的四軸飛行器模擬](https://github.com/shengwen-tw/quadrotor-h-infty-ctrl-simulator)
+- [四軸飛行器幾何追蹤控制](https://github.com/shengwen-tw/qaudrotor_geometry_ctrl_simulator): 一個基於非線性動力學模型、可達到敏捷飛行的控制器模擬
+- [四軸飛行器LQR控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): 一個經典的最佳控制設計，此專案特色在使用收斂速度極快的`保結構雙重演算法`
+- [四軸飛行器 H∞ 強健控制](https://github.com/shengwen-tw/quadrotor-h-infty-ctrl-simulator): 一個將擾動輸入最小化的最佳控制設計 [[簡報]](https://drive.google.com/file/d/1573Td07_vohtVan2gHrCwDmQyY9ihr_w/view?usp=drivesdk)
 
-馬達控制:
+馬達控制 / 電子變速器:
 
-- [Field-Oriented Control和方波控制的三相馬達速度控制](https://github.com/shengwen-tw/bldc-control-simulator)
+- [三相馬達速度控制](https://github.com/shengwen-tw/bldc-control-simulator): 用於研究 Field-Oriented Control 和傳統方波控制差異
 
 路徑規劃演算法:
 
 - [Minimum-snap trajectory generation](https://github.com/shengwen-tw/minimum-snap-traj-matlab)
 - [Rapidly-Exploring Random Tree (RRT)](https://github.com/shengwen-tw/rrt-matlab)
 
-論文
-====
+發表紀錄
+======
 
-- [Robust State-Feedback H-infinity Control of Quadrotor](https://drive.google.com/file/d/1pyCTHr3tJHJxISqiStX4P4KPzDvA_4z1/view?usp=share_link) (CACS 2022)
+- [Robust State-Feedback H-infinity Control of Quadrotor](https://drive.google.com/file/d/1pyCTHr3tJHJxISqiStX4P4KPzDvA_4z1/view?usp=share_link)
 - [Puyuma: Linux-based RTOS Experimental Platform for Constructing Self-Driving Miniature
-Vehicles](https://drive.google.com/file/d/1Tsl13TjKVyGPcj0bG6tjt6iCVC8NbiQE/view?usp=sharing) (CTHPC 2017)
+Vehicles](https://drive.google.com/file/d/1Tsl13TjKVyGPcj0bG6tjt6iCVC8NbiQE/view?usp=sharing)
 
 獎項
 ====
