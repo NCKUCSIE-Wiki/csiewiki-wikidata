@@ -40,7 +40,7 @@ categories: User
 四軸飛行器:
 
 - [四軸飛行器幾何追蹤控制](https://github.com/shengwen-tw/qaudrotor_geometry_ctrl_simulator): 一個基於非線性動力學模型、可達到敏捷飛行的控制器模擬
-- [四軸飛行器 LQR 控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): 一個經典的最佳控制設計，此專案特色在於使用收斂速度極快的`保結構雙重演算法`
+- [四軸飛行器 LQR 控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): 一個經典的最佳控制設計，使用收斂速度極快的-保結構雙重演算法 [[報告]](https://drive.google.com/file/d/1ekVLVbLHIxYsAgRWRb9C2ptLHOTSt4jU/view?usp=sharing)
 - [四軸飛行器 H∞ 強健控制](https://github.com/shengwen-tw/quadrotor-h-infty-ctrl-simulator): 一個將擾動輸入最小化的最佳控制設計 [[簡報]](https://drive.google.com/file/d/1573Td07_vohtVan2gHrCwDmQyY9ihr_w/view?usp=drivesdk)
 
 馬達控制 / 電子變速器:
@@ -64,7 +64,7 @@ Vehicles](https://drive.google.com/file/d/1Tsl13TjKVyGPcj0bG6tjt6iCVC8NbiQE/view
 
 - 斐陶斐榮譽會員 (2019)
 - 放視大賞 - 銀獎 (2018)
-- 資工系畢業專題競賽 – 特優 (2017)
+- 資工系畢業專題競賽 - 特優 (2017)
 - 軟體創作達人暑期成長營 - 特優 (2014)
 
 上課心得 (2013年秋季班，不成熟的自己)
