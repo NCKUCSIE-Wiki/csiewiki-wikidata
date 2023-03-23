@@ -169,7 +169,8 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - 2.2 Prior to CFS
         - 2.3 Completely Fair Scheduler (CFS)
         - 3.1 Structs and their role
-    * [作業](https://hackmd.io/@sysprog/linux2023-homework5): 截止繳交 Apr ?
+    * [作業](https://hackmd.io/@sysprog/linux2023-homework5): 截止繳交 Apr 15
+        - quiz5, quiz6
     * Week6 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz6) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/rJVas7NJn)
 
