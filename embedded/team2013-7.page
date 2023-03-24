@@ -7,85 +7,54 @@ toc: no
 題目
 ---
 
-  * 四軸飛高高(Quadrotor)
+- 四軸飛高高(Quadrotor)
 
 預期目標
 -------
-  * 在四軸上面架設攝影機, 利用遙控器去命令空中的四軸拍照, 可將影像儲存到記憶卡
-  * 達成懸停(原作者在github頁面說無法懸停)，可利用optical flow去做速度控制(達成懸停)
-  * 利用FreeRTOS管理Task和Interrupt
-  * Auto-pilot的達成-必須有位置控制,地面站軟體設計
-組員
----------
 
-  * [fboris](/User/fboris) , e-mail: fantasyboris@gmail.com
-  * [zxc2694](/User/zxc2694), e-mail: zxc2694zxc2694@gmail.com
-  * [poemking](/User/poemking), e-mail: poemofking@gmail.com
-  * [shengwen](/User/shengwen), e-mail: l1996812@gmail.com
+- 在四軸上面架設攝影機, 利用遙控器去命令空中的四軸拍照, 可將影像儲存到記憶卡
+- 達成懸停 (原作者在 GitHub 頁面說無法懸停)，可利用 Optical flow 去做速度控制達成懸停
+- 利用 FreeRTOS 管理 Tasks 和 Interrupts
+- Autopilot的達成必須有 位置控制 和 地面站軟體設計
+
+組員
+----
+
+- [fboris](/User/fboris) - `fantasyboris@gmail.com`
+- [zxc2694](/User/zxc2694) - `zxc2694zxc2694@gmail.com`
+- [poemking](/User/poemking) - `poemofking@gmail.com`
+- [shengwen](/User/shengwen) - `shengwen1997.tw[at]gmail.com`
 
 預算
 ----
 
-450mm 機架: $250
-
-http://goods.ruten.com.tw/item/show?21208014903066
-
-2212 1000kv馬達: $200x4=800
-
-http://goods.ruten.com.tw/item/show?21311204264602
-
-ZTW 40A 電子變速器: $270x4=1080
-
-http://goods.ruten.com.tw/item/show?21111110743710
-
-9047二葉正反槳(共七組): $225 
-
-http://goods.ruten.com.tw/item/show?21206132193224
-
-ST-LINK: $250
-
-http://goods.ruten.com.tw/item/show?21311093669584
-
-RF模組: $55x2=110
-
-http://goods.ruten.com.tw/item/show?21312083646006
-
-影像模組：＄1300
-
-http://item.taobao.com/item.htm?id=19722144419
-
-LED光條(紅,藍)＋蜂鳴器 + 電晶體＋電阻：＄284
-
-SD卡（創見8G）：＄179
-
-電源分配板: $35
-
-螺絲包: $20
-
-電源開關:$16
+- 450mm 機架: $250
+- 2212 1000kv馬達: $200x4=800
+- ZTW 40A 電子變速器: $270x4=1080
+- 9047二葉正反槳 (共七組): $225 
+- ST-LINK: $250
+- RF模組: $55x2=110
+- 影像模組：＄1300
+- LED光條 (紅, 藍)＋蜂鳴器 + 電晶體＋電阻：＄284
+- SD卡 (創見8G)：＄179
+- 電源分配板: $35
+- 螺絲包: $20
+- 電源開關:$16
   
-
 討論和程式
 -------
 
 歡迎大家來交流討論！
 
-github: https://github.com/fboris/QuadrotorFlightControl
-
-hackpad: https://embeddedcool.hackpad.com
-
-每日實驗紀錄: https://embeddedcool.hackpad.com/Y38T9JXygI8
-
+- [GitHub連結](https://github.com/zxc2694/moonbear-firmware)
+- 每日實驗紀錄: (連結已失效)
 
 四軸影片
 -----------
 
-飛行影片連結: http://www.youtube.com/watch?v=_L0hhZS_mhM
-
+- [飛行紀錄影片](http://www.youtube.com/watch?v=_L0hhZS_mhM)
+- [期末展示影片](https://www.youtube.com/watch?v=7wXxCX56rRc&list=PLe8KWt_uj6-OgIUcjPACoYolsHKL6PX14&index=3&t=216s)
 
 參考資訊
 -------
-王宏文同學飛控板相關資訊：https://github.com/Hom19910422/QCopterFlightControl/wiki
-
-
---------------------
+[王宏文同學飛控板相關資訊](https://github.com/KitSprout/QCopterFlightControl)
