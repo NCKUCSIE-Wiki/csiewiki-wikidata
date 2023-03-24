@@ -28,9 +28,9 @@ categories: User
 主要作品
 =======
 
-- [UrsusPilot](https://www.youtube.com/watch?v=_DsNQWP7UXo): 2013-2015年期間參與之四軸飛行器專案(由成大航太研究生主導)，原為開放原始碼專案，目前已轉為非公開
+- [UrsusPilot](https://www.youtube.com/watch?v=_DsNQWP7UXo): 2013-2015年期間參與之四軸飛行器專案 (由成大航太研究生主導)，原為開放原始碼專案，目前已轉為非公開
 - [多旋翼機全系統設計](https://www.youtube.com/watch?v=hBBe1Kj82B4): 碩班期間成果，設計包含非線性控制、感測器融合、SLAM、路徑規劃
-- [Puyuma](https://github.com/Puyuma/puyuma-core): 基於 Linux 的微型自駕車系統 [[技術報告]](https://drive.google.com/file/d/1rKgdAhpr7M2tiiu-zpXKDYbxuNX_QqWz/view?usp=share_link)
+- [Puyuma](https://github.com/Puyuma/puyuma-core): 基於 Linux 的微型自駕車系統 [[技術報告]](https://drive.google.com/file/d/1rKgdAhpr7M2tiiu-zpXKDYbxuNX_QqWz/view?usp=share_link) [[簡報]](https://drive.google.com/file/d/1D9Cp7_kDHw4EDSdKVgKMuRb3Ri0mA4bN/view?usp=sharing)
 - [Tenok](https://github.com/shengwen-tw/tenok): 啟發自 rtenv+ 的即時作業系統 [[共筆]](https://hackmd.io/@shengwen/tenok) [[影片]](https://www.youtube.com/watch?v=byWihWcMP00)
 - [PU-01 (定翼機)](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 包含機構設計、參數設計、穩定性分析
 
@@ -40,7 +40,7 @@ categories: User
 四軸飛行器:
 
 - [四軸飛行器幾何追蹤控制](https://github.com/shengwen-tw/qaudrotor_geometry_ctrl_simulator): 一個基於非線性動力學模型、可達到敏捷飛行的控制器模擬
-- [四軸飛行器 LQR 控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): 一個經典的最佳控制設計，使用收斂速度極快的-保結構雙重演算法 [[報告]](https://drive.google.com/file/d/1ekVLVbLHIxYsAgRWRb9C2ptLHOTSt4jU/view?usp=sharing)
+- [四軸飛行器 LQR 控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): 一個經典的最佳控制設計，使用收斂速度極快的-保結構雙重演算法 [[技術報告]](https://drive.google.com/file/d/1ekVLVbLHIxYsAgRWRb9C2ptLHOTSt4jU/view?usp=sharing)
 - [四軸飛行器 H∞ 強健控制](https://github.com/shengwen-tw/quadrotor-h-infty-ctrl-simulator): 一個將擾動輸入最小化的最佳控制設計 [[簡報]](https://drive.google.com/file/d/1573Td07_vohtVan2gHrCwDmQyY9ihr_w/view?usp=drivesdk)
 
 馬達控制 / 電子變速器:
@@ -76,4 +76,6 @@ Vehicles](https://drive.google.com/file/d/1Tsl13TjKVyGPcj0bG6tjt6iCVC8NbiQE/view
 
 由於我個人住在台中, 無法實際到成大與組員們討論, 因此貢獻相對較少 (上台報告一類), 但仍希望能夠透過這難得的機會與大學生、研究生們合作及學習。
 
-2013秋季的課程結束後, 我想只要有機會我仍會繼續透過網路旁聽學習。若不嫌棄我, 歡迎任何人找我一起製作專題或合作, 盡些綿薄之力。
+2013年秋季課程結束後, 我想只要有機會我仍會繼續透過網路旁聽學習。若不嫌棄我, 歡迎任何人找我一起製作專題或合作, 盡些綿薄之力。
+
+[注] 當年期末專題成果可見 - [第7組 (四軸飛高高 (Quadrotor))](http://wiki.csie.ncku.edu.tw/embedded/team2013-7)
