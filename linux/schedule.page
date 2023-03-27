@@ -184,6 +184,10 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
     * [〈Concurrency Primer〉導讀](https://hackmd.io/@sysprog/concurrency-primer)
     * [The C11 and C++11 Concurrency Model](https://docs.google.com/presentation/d/1IndzU1LDyHcm1blE0FecDyY1QpCfysUm95q_D2Cj-_U/edit?usp=sharing)
+        - [Time to move to C11 atomics?](https://lwn.net/Articles/691128/)
+        - [C11 atomic variables and the kernel](https://lwn.net/Articles/586838/)
+        - [C11 atomics part 2: "consume" semantics](https://lwn.net/Articles/588300/)
+        - [An introduction to lockless algorithms](https://lwn.net/Articles/844224/)
     * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency/)`*`
     * CS:APP 第 12 章
         - [Concurrency](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f19/www/lectures/24-concprog.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0be3c53f-5d35-40f0-a5ab-55897a2c91a5)`*`
