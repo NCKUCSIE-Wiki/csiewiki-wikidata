@@ -197,7 +197,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - [Synchronization: Basic](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f19/www/lectures/25-sync-basic.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aae5ff94-1551-42b6-8981-7d19157afa0c)`*`
         - [Synchronization: Advanced](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f19/www/lectures/26-sync-advanced.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=06892ab8-1a16-46de-8910-537dab546828)`*`
         - [Thread-Level Parallelism](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f19/www/lectures/27-parallelism.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9ba08262-5318-45f2-a7e1-475e33a98e53)`*`
-    - [課堂問答簡記](https://hackmd.io/@sysprog/BJGn0nRMq)
+    - [課堂問答簡記](https://hackmd.io/@sysprog/SyOhklg-3)
 
 * 第 8 週 (Apr 3, 4, 6): 並行程式設計 + 作業檢討
     * [Linux: 淺談同步機制](https://hackmd.io/s/SJpp-bN0m)`*`
