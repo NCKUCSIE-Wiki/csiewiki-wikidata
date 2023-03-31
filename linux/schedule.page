@@ -175,7 +175,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/@sysprog/rJVas7NJn)
 
 * 第 7 週 (Mar 27, 28, 30): Process, 並行和多執行緒
-    - [教材解說-1](https://youtu.be/xVU7lbyiSpI)`*`, 教材解說-2 (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    - [教材解說-1](https://youtu.be/xVU7lbyiSpI)`*`, [教材解說-2](https://youtu.be/D55LzR0UpnQ)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
         * [第 5 次作業](https://hackmd.io/@sysprog/linux2023-homework5) 和 [第 6 次作業](https://hackmd.io/@sysprog/linux2023-homework6) 作業已指派
         * 第 8 週指派新作業 (一系列的 Linux 核心模組)
