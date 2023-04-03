@@ -199,7 +199,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - [Thread-Level Parallelism](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f19/www/lectures/27-parallelism.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9ba08262-5318-45f2-a7e1-475e33a98e53)`*`
     - [課堂問答簡記](https://hackmd.io/@sysprog/SyOhklg-3)
 
-* 第 8 週 (Apr 3, 4, 6): 並行程式設計 + 作業檢討
+* 第 8 週 (Apr 3, 4, 6): 並行程式設計, lock-free, Linux 同步機制
     * 公告:
         - 4 月 4 日下午到晚間安排在家測驗，請在當日 15:00 刷新課程進度表/行事曆，以得知測驗方式
         - 4 月 6 日晚間安排作業回顧與檢討
@@ -208,7 +208,10 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - POSIX Threads (請對照 CS:APP 第 12 章自行學習)
         - Lock-free 程式設計
         - 案例: Hazard pointer
+        - 案例: Ring buffer
+        - 案例: Thread Pool
     * [Linux: 淺談同步機制](https://hackmd.io/@sysprog/linux-sync)`*`
+    * [利用 lkm 來變更特定 Linux 行程的內部狀態](https://hackmd.io/@cwl0429/linux2022-quiz8-3)
 
 * 第 9 週 (Apr 10, 11, 13): 伺服器開發與 Linux 核心對應的系統呼叫
     * [Linux 核心設計: 針對事件驅動的 I/O 模型演化](https://hackmd.io/@sysprog/linux-io-model)`*`
