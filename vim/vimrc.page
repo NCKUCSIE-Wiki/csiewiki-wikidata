@@ -143,7 +143,7 @@ categories: vim, editor
 -
 ## 微 Sublime 風 ##
 - Screenshot
-![](/vimrc/highlight_ex1.PNG)
+![](/vim/highlight_ex1.PNG)
 - 額外設定
     - [Additional vim c++ syntax-highlighting](https://github.com/octol/vim-cpp-enhanced-highlight)
     - terminal 背景色設為 #002B36 ( solarized dark，很棒的配色，google 圖片可以找到很多漂亮的上色 )

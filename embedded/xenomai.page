@@ -285,7 +285,7 @@ Xenomai與PREEMPT_RT的差異
   ![](/raspberry_pi_3.jpg)
   
   * A 1.2GHz 64-bit quad-core ARMv8 CPU
-  * With embadded bluetooth chip and wifi chip
+  * With embedded bluetooth chip and wifi chip
   * 802.11n Wireless LAN
   * Bluetooth 4.1
   * Bluetooth Low Energy (BLE)

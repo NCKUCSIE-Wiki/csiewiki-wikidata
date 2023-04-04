@@ -9,7 +9,7 @@ toc: no
   - 4 到 5 人一組
   - 3 月 25 日上課結束前，向講師或助教登記
   - 參考硬體為 [STM32F429 Discovery](http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/PF259090) 或 [Raspberry Pi](http://www.raspberrypi.org/)
-  - 題目順序: [FreeRTOS](/embedded/freertos), [ChibiOS/RT](/embedded/chibios), [nuttx](/embedded/nuttx), [uClinux](/embedded/uclinux), [Xenomai](/embedded/xenomai), [rtenv-plus](/embdded/rtenv), [F9 microkernel](/embedded/f9-kernel)
+  - 題目順序: [FreeRTOS](/embedded/freertos), [ChibiOS/RT](/embedded/chibios), [nuttx](/embedded/nuttx), [uClinux](/embedded/uclinux), [Xenomai](/embedded/xenomai), [rtenv-plus](/embedded/rtenv), [F9 microkernel](/embedded/f9-kernel)
   - 預先將報告題材更新於 wiki，報告時不透過任何簡報軟體進行，可參考去年的 [期中報告](/embedded/2013-w7)
   - 期中報告探討的對象皆為 open source operating system (含成大學生土製核心!)，希望藉由期中報告建立一系列優質的中文文件 (繁體)
   - 每組需要涵蓋: 作業系統架構、硬體驅動原理 (特別在 [STM32F429 Discovery](http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/PF259090) 或 [Raspberry Pi](http://www.raspberrypi.org/))、效能表現 (context switch, interrupt latency, IPC throughput, realtime capability)
