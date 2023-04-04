@@ -178,7 +178,6 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     - [教材解說-1](https://youtu.be/xVU7lbyiSpI)`*`, [教材解說-2](https://youtu.be/D55LzR0UpnQ)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
         * [第 5 次作業](https://hackmd.io/@sysprog/linux2023-homework5) 和 [第 6 次作業](https://hackmd.io/@sysprog/linux2023-homework6) 作業已指派
-        * 第 8 週指派新作業 (一系列的 Linux 核心模組)
         * 本週測驗順延到 4 月 4 日和 4 月 6 日，3 月 30 日晚間安排課程講解
         * 4 月 3 日晚間依舊講課 (事後有錄影)、4 月 4 日下午到晚間安排在家測驗，4 月 6 日晚間安排作業回顧與檢討
     * [Linux: 不僅是個執行單元的 Process](https://hackmd.io/@sysprog/linux-process)`*`: Linux 核心對於 UNIX Process 的實作相當複雜，不僅蘊含歷史意義 (幾乎每個欄位都值得講古)，更是反映出資訊科技產業的變遷，核心程式碼的 `task_struct` 結構體更是一絕，廣泛涵蓋 process 狀態、處理器、檔案系統、signal 處理、底層追蹤機制等等資訊，更甚者，還很曖昧地保存著 thread 的必要欄位，好似這兩者天生就脫不了干係
@@ -213,6 +212,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - 案例: Thread Pool
     * [Linux: 淺談同步機制](https://hackmd.io/@sysprog/linux-sync)`*`
     * [利用 lkm 來變更特定 Linux 行程的內部狀態](https://hackmd.io/@cwl0429/linux2022-quiz8-3)
+    * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz8) (內含作答表單，作答期間 4 月 4 日 15:00-23:59)
 
 * 第 9 週 (Apr 10, 11, 13): 伺服器開發與 Linux 核心對應的系統呼叫
     * [Linux 核心設計: 針對事件驅動的 I/O 模型演化](https://hackmd.io/@sysprog/linux-io-model)`*`
