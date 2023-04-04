@@ -52,7 +52,7 @@ Context Switch
 
 kernel mode --- ``activate()`` ---> user mode --- ``syscall`` or interrupt ---> exception --- exception handler ---> kernel mode
 
-  ![](/embdded/rtenv-plus/kernel_mode_vs_user_mode.PNG)
+  ![](/embedded/rtenv-plus/kernel_mode_vs_user_mode.PNG)
 注：在下方 ``fork原理`` 以 fork 為例，可以知道轉換細節。
 
 **activate**
@@ -360,7 +360,7 @@ rtenv-plus 中的 task 以 ``task_control_block`` 來呈現其資訊。
         end
     end
 
-  ![](/embdded/rtenv-plus/gdb_macro.png)
+  ![](/embedded/rtenv-plus/gdb_macro.png)
 
 list
 =====
