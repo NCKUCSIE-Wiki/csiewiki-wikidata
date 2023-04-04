@@ -53,7 +53,7 @@ I²C data mode :
  - slave transmit — slave node is sending data to the master
  - slave receive — slave node is receiving data from the master
 
-![](/embbeded/i2c_data_transmit.png)
+![](/embedded/i2c_data_transmit.png)
 
 I²C data Transmit :
 
