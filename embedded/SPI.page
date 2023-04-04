@@ -180,7 +180,7 @@ Status flag
 SPI 通訊過程
 --------------
 
-![](/embeded/SPI/TXE_RXNE_BSY behavior in Master full_duplex mode.png)
+![](/embedded/SPI/TXE_RXNE_BSY behavior in Master full_duplex mode.png)
 
 TXE/RXNE/BSY behavior in Master / full-duplex mode (BIDIMODE=0 and RXONLY=0)
 in the case of continuous transfers
