@@ -3,9 +3,7 @@ title: USB (Universal Serial Bus)
 categories: USB, STM32, STM32F4, STM32F429
 ...
 
-![](http://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/USB_Icon.svg/200px-USB_Icon.svg.png)
-
-#USB歷史簡介
+## USB歷史簡介
 早在USB出來之前，資料的傳輸主要是使用並列埠(parallel port)傳輸，如圖
 
 ![](/embedded/parallel.png)
@@ -21,7 +19,7 @@ categories: USB, STM32, STM32F4, STM32F429
 - 連接的針腳容易彎曲變形。
 以上等等問題，催生了USB的誕生。
 
-##USB規格演變
+## USB規格演變
 * USB 1.0  (1996)
     - Low speed : transfer rate 1.5 Mbit/s
     - Full speed : transfer rate 12Mbit/s
@@ -48,16 +46,16 @@ categories: USB, STM32, STM32F4, STM32F429
     - 可以向下相容USB 2.0 , USB 3.0
 
 
-#標準 USB 2.0 介面
+## 標準 USB 2.0 介面
 USB是一種序列資料傳輸界面(serial interface)，設計目標為隨插即用（Plug and Play，簡稱PnP）。
 亦包含實體層，資料鏈結層，網路層，傳送層...應用層等等。
 
-##實體層
+### 實體層
 ![](/embedded/usb/pin.png)
 
 ![](/embedded/usb/800px-USB_InSide.JPG)
 
-##訊號傳輸
+### 訊號傳輸
 * 傳輸線理論
     - USB採用  lossless transmission line 的copper wire，此種線不會吸收傳輸訊號的能量
     - 訊號在傳輸線傳遞是會有延遲的，不能忽略
@@ -115,7 +113,7 @@ USB 對這個問題的解決辦法，就是強制插0，也就是bit-stuffing，
 
 ![](/USB_SCHEMA.gif)
 
-##傳輸速率
+### 傳輸速率
 * 上述簡介中的USB傳輸速度(low speed：1.5 Mb/s、full speed 12 Mb/s、high speed 480 Mb/s)的給定，主要是依據USB規格書上的定義，這些速度可以透過pull-up    resistor來調整
 - low speed
 
@@ -131,7 +129,7 @@ USB 對這個問題的解決辦法，就是強制插0，也就是bit-stuffing，
  
 ![](/embedded/high%20speed.png)
 
-##網路層
+### 網路層
 USB網路是由階梯型星型拓撲(Tiered Star Network)所實作的，有一個 Master(Host) 和多個 Slaves(Devices) 。
 
 USB Host 提供一個接口，如果要連接更多週邊，需要使用Hub。
@@ -150,7 +148,7 @@ USB Device 又可以分為：
 * Compound Device： 本身擁有功能(Function)，也帶有一個Hub，有其他裝置連接時可以作為Host。
 * Composite Device：提供超過一個功能的裝置。
 
-#USB 通訊模型
+## USB 通訊模型
 從下面的圖可以看到，USB Host 和 Device 是資料傳輸的重點，分別在不同的兩層。
 USB是一種Polled Bus，由Host啟動(Initiates)資料傳輸，Device做出回應。
 
@@ -164,7 +162,7 @@ USB由幾種Protocol Layers所組成，資料藉由Pipes傳輸。
 
 * Message Pipes : 為Host控制來進行資料傳輸設定，允許雙向通訊。只支援 Control Transfers。（have a defined USB format）
 
-##Endpoints
+## Endpoints
 Endpoints可以被視為資料的來源或目標(Source or Sink)。一個裝置可以擁有至多16個OUT和16個IN的Endpoints
 
 * OUT : 從Host指向Device的方向
@@ -177,7 +175,7 @@ Endpoints可以被視為資料的來源或目標(Source or Sink)。一個裝置�
 ![](/transfermodel.png)
 
 
-##傳輸型態
+## 傳輸型態
 
 USB 定義了四種傳輸型態：
 
@@ -186,7 +184,7 @@ USB 定義了四種傳輸型態：
  - 批次傳輸（Bulk Transfers）：用於大量資料傳輸且需要確保資料無誤（如傳給印表機或隨身碟），沒有速度限制，若傳輸失敗就會重傳以確保正確。
  - 同時傳輸（Isochronous Transfers) ： 同樣用於大量資料傳輸，但不確保資料是否到達。例如例如USB視訊裝置，使用者會期望傳輸聲音或影像的速率是穩定的，若有幾張frame遺失，沒有通過CRC資料也不會重傳。
 
-#USB 資料連結
+## USB 資料連結
 Transaction指USB資料的傳輸，大部分的傳輸包含了三種封包，封包是組成USB傳輸的最小單位。
 
 一個 Transaction 通常由三個封包組成，但依傳輸型態而定，一個 Transaction 可能包含一個、兩個、三個封包。
@@ -198,7 +196,7 @@ Transaction指USB資料的傳輸，大部分的傳輸包含了三種封包，封
 
 由上面的表可以看到，PID實際上只使用到前四個 bits，後面四個bits是前面四個bits的倒數，主要是因為USB傳輸編碼是透過NRZI，這樣的話，就可以避免出現bit-stuffing
 
-##Transaction 
+## Transaction 
 
 Transaction指USB資料的傳輸，大部分的傳輸包含了三種封包 （Token packet, Data packet, Handshake 或稱  Status packet ）。
 
@@ -208,7 +206,7 @@ Transaction指USB資料的傳輸，大部分的傳輸包含了三種封包 （To
 * 傳送方向是由Token packet中指定。  
 * 一般來說，目標端利用Handshake (Status packet) 來判斷本次傳輸是否成功。
 
-##Frame 
+## Frame 
 
 為了確保同步，USB把時間切割成固定長度的小區間。低速和全速的時候是以 1 ms 為單位，稱為一個Frame；高速時再把一個Frame切成八等分，一個 0.125 ms 為單位，稱為microframes。
 
@@ -219,7 +217,7 @@ SOF (Start-of-Frame packet) 是一種特殊的封包，他在每一個frame開�
 
 ![](/embedded/usb/startofframe.png)
 
-##Packet
+## Packet
 封包被視為每次傳輸的最小單位。
 
 ![](/embedded/usb/packetmodel.png)
@@ -230,7 +228,7 @@ SOF (Start-of-Frame packet) 是一種特殊的封包，他在每一個frame開�
 
 ![](/embedded/usb/dataNRZI.jpg)
 
-###Token 封包
+### Token 封包
 
 * 每個Transaction以Token封包做起始。
 * Token封包定義裝置、Endpoint數量，傳輸的方向。
@@ -255,13 +253,13 @@ CRC: Cyclic Redundancy Checks
 
 
 
-###Data 封包
+### Data 封包
 
 Data封包包含處理此動作的資料。在low-speed裝置中，Data封包最大的資料量為8 bytes；在full-speed裝置中，Data封包最大的資料量為1023 bytes；在high-speed裝置中，Data封包最大的資料量為1024 bytes以上。其中 Data0 及 Data1 是兩個基本的資料封包，使用這些資料封包以提供一個機制來確定將傳送端和接收端之間的資料切換同步(data toggle synchronization)。另外在 USB2.0 當中更增加了 Data2 及 MData 資料封包，用於執行高速的即時傳輸(Isochronous Transfers)。
 
 ![](/embedded/USB/Data%20Packets.jpg)
 
-###Handshake 封包
+### Handshake 封包
 除了即時型傳輸(Isochronous)外，所有的傳輸都保證資料的傳遞正確，如交握(Handshake)封包回應資料是否正確的被收到，若執行處理動作中發生錯誤，處理動作將重新執行。
 
 Handshake封包由一個PID所組成，用來表示資料傳輸的狀態，部分Handshake封包說明如下。
@@ -287,7 +285,7 @@ USB OTG讓原本只能為週邊的裝置也能成為主機(dual-role device),例
 ![](/embedded/DRD.png)
 
 
-##協定(Protocol)
+## 協定(Protocol)
 OTG設備使用插頭中的ID引腳來區分A/B Device。
 
 * ID接地被稱作為A-Device，為連接時候的USB Host，A-Device始終為總線(USB bus)提供電力
@@ -297,21 +295,21 @@ OTG設備使用插頭中的ID引腳來區分A/B Device。
 
 USB OTG與USB2.0相比，多三種新的傳輸協定。
 
-###Attach Detection Protocol (ADP)
+### Attach Detection Protocol (ADP)
 
 * 讓OTG device, embedded host, USB devices藉由USB bus上供電的損失來決定裝置有沒有接附，此機制會啟動兩種現象，裝置插入的基本原理表現及讓裝置能表達目前連接的狀態。
 * 如何達成上述的機制：藉由週期性的量測USB port上的電容(capacitance)變化，看有沒有裝置連上；當電容的變化大到足以表示有新裝置接上USB port，A-device會供電到USB bus，準備與裝置連線，而B-device會產生SRP(session request protocol)，並等待USB bus供電。
 
-###Session Request Protocol (SRP, 對話請求協議)
+### Session Request Protocol (SRP, 對話請求協議)
 * 當兩邊連線供電機制已經啟動後，兩個溝通的device都可取得主控權；在標準的USB機制中，只允許host端進行控制。
 * 此機制能夠有效控制供電的消耗，這對於靠電池供電的裝置非常重要(ex：相機，手機…)。當有週邊裝置B-device(which can be an OTG or standard USB device)對OTG, embedded hosts發送請求時，OTG and embedded hosts再對USB link供電，因為吃電池的裝置可能沒有足夠多的備用電力，沒有裝置要求連線就不供電的機制能延長電池的使用時間。
 
-###Host Negotiation Protocol (HNP, 主機通令協議)
+### Host Negotiation Protocol (HNP, 主機通令協議)
 * 允許兩個裝置(OTG-device)交換host/peripheral的角色，交換角色時需要透過HNP。
 * OTG-device可以取得資料傳輸排程的控制權，因此任何OTG-device都可透過OTG bus控制資料傳輸。
 * 最新補充版本的HNP有一個概念，HNP polling，內容是說OTG device做為host端時，在互連狀態下會週期性地問peripheral端要不要變成host。
 
-##Block Diagram
+## Block Diagram
 ![](/embedded/OTG_full_speed.png)
 
  * ID pin 用來辨識OTG(on-the-go)裝置是主機還是週邊
@@ -320,10 +318,10 @@ USB OTG與USB2.0相比，多三種新的傳輸協定。
  * AHB -- Advanced High-performance Bus  
  * UTMI -- USB 2.0 transceiver macrocell interface
 
-##USB host and device
+## USB host and device
 ![](/embedded/usb%20host:device%20.png)
 
-##Bus Timing/Electrical Characteristics
+## Bus Timing/Electrical Characteristics
 可以看參考資料USB 2.0 Specification的7.3.2章的內容
 
 ![](/embedded/USB/DCEC1.png)
@@ -340,7 +338,7 @@ USB OTG與USB2.0相比，多三種新的傳輸協定。
 
 以上Table可以參閱USB 2.0 Specification的7.3.2章
 
-#USB Descriptors
+## USB Descriptors
 
 * Device Descriptors : 提供裝置基本資訊，例如：USB 版本、最大的 packet 大小、廠商與型號資訊。每個 USB 裝置只能有一個 device descriptors 。
 
@@ -352,26 +350,26 @@ USB OTG與USB2.0相比，多三種新的傳輸協定。
 
 * String Descriptors : 提供人類可讀的資訊。
 
-#USB Device Class
+## USB Device Class
 USB 依照裝置的不同，定義許多不同的 class code ，用來聯絡 host 端與 device 端該做出什麼適當的反應，以下為幾個常見分類：
 
-##HID Class
+### HID Class
 Human Interface Device class，HID 設備屬於人性化介面的設備，用於操作電腦，如 USB 滑鼠，USB 鍵盤，USB 觸控版，USB 軌跡球等等設備。HID 設備不一定非要是這些人性化介面裝置，只要符合HID設備級定義規範要求的都可以認為是 HID 設備。
 
 使用 HID 設備的一個好處就是，作業系統擁有 HID 類的驅動程式，而用戶無需去開發很麻煩的驅動程式，只要直接使用 API 即可完成傳輸。所以很多簡單的 USB 設備，喜歡定義成 HID 設備，這樣就可以不用安裝驅動而直接使用。
 
-##CDC Class
+### CDC Class
 Communications Device Class，CDC 類是 USB 通信設備類的簡稱。CDC 類是 USB 組織定義的一類專門給各種通信設備（電信通信設備和中速網絡通信設備）使用的 USB 類別。大部分的作業系統都帶有支持 CDC 類的設備驅動軟體，可以自動識識 CDC 類的裝置，這樣不僅免去了寫專用驅動裝置的負擔，同時簡化了驅動裝置的安裝。
 
 ![](/embedded/USB2CDC.jpg)
 
-##MSC Class
+### MSC Class
 Mass Storage device Class，大容量存儲裝置類別。一種電腦和行動裝置之間的傳輸協議，它允許透過USB裝置來連接主機，使兩者之間進行檔案傳輸。
 
 MSC 支援目前大多數的作業系統，許多舊版本的作業系統經過版本升級或者系統補丁也能支援MSC。MSC的通用性和操作簡單使他成為行動裝置上最常見的檔案系統，USB MSC 並不需要任何特定的檔案系統, 它提供了一個簡單的介面來讀寫插入的硬碟裝置。
 
 
-#封包傳遞說明
+## 封包傳遞說明
 * 
 
 ![](/embedded/eumeration.png)
@@ -385,7 +383,7 @@ MSC 支援目前大多數的作業系統，許多舊版本的作業系統經過�
 ![](/embedded/eumeration_2.png)
 
 
-#Demo 程式 - USB MSC HOST
+## Demo 程式 - USB MSC HOST
 程式碼
 ```
 git clone https://github.com/iGaryGu/USB_MSC_HOST.git
@@ -396,22 +394,22 @@ make 編譯
 make
 ```
 
-##目的
-把STM32F429作為Host，當插入隨身碟後在裡面寫入一份文件。
+## 目的
+把STM32F429作為Host，當插入隨身碟後在裡面寫入一份檔案。
 
-##步驟與現象
+## 步驟與現象
 * 接上隨身碟，偵測到裝置
 * file system mount完成
 * 打開隨身碟中的目錄
 * 寫入簽名檔，並且關閉file
-* 當隨身碟拔出後，會在隨身碟中留下文件。
+* 當隨身碟拔出後，會在隨身碟中留下檔案。
 
 ![](/usb_hacking.png)
 
 * [ASCII Art ](http://en.wikipedia.org/wiki/ASCII_art)
 * [Matlab image generator ](http://www.mathworks.com/matlabcentral/fileexchange/4732-ascii-text-image-generator)
 
-##程式說明
+## 程式說明
 * STM32提供大量的函式庫來操作USB，包跨底層的driver到提供使用者應用的API。
 
 ![](/USB_Lib.png)
@@ -448,10 +446,10 @@ make 編譯
 make
 ```
 
-##目的
+## 目的
 將STM32F429當成device的角色，本實作是鍵盤的功能，只要我們連接到電腦後，按下USER BUTTON鍵，就可以送出我們定義的字母
 
-##步驟與現象
+## 步驟與現象
 * 首先STM32F429先接上USB OTG線，再連接至電腦
 * 此時，電腦開始跟版子做control transfer，完成配置
 * 當配置成功，LED燈就會亮起
@@ -460,16 +458,14 @@ make
 
 ![](/embedded/HID_image.png)
 
-##利用電腦軟體分析封包資料
+## 利用電腦軟體分析封包資料
 
 ![](/embedded/USB_analyzer.png)
 
 
 ![](/embedded/USB_analyzer2.png)
 
-#Q & A
-
-#參考資料
+## 參考資料
 [行動電化學蝕刻  ](http://blog.ntsec.edu.tw/index.php?tid=531&id=228)
 
 [Basic Concept of USB, Keil ](http://www.keil.com/support/man/docs/rlarm/rlarm_usb_concepts.htm)
