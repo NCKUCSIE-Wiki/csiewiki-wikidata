@@ -214,7 +214,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [利用 lkm 來變更特定 Linux 行程的內部狀態](https://hackmd.io/@cwl0429/linux2022-quiz8-3)
     * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz8) (內含作答表單)
 
-* 第 9 週 (Apr 10, 11, 13): 伺服器開發與 Linux 核心對應的系統呼叫
+* 第 9 週 (Apr 10, 11, 13): futex, RCU, 伺服器開發與 Linux 核心對應的系統呼叫
     * 公告:
         + 請於 4 月 12 日 10:00AM 刷新本頁面，以得知新指派的作業
         + 4 月 13 日晚間安排課程測驗和作業解說，優先回覆學員在[第 5 次作業](https://hackmd.io/@sysprog/linux2023-homework5)的提問
