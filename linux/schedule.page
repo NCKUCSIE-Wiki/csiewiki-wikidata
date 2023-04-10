@@ -215,16 +215,19 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz8) (內含作答表單)
 
 * 第 9 週 (Apr 10, 11, 13): 伺服器開發與 Linux 核心對應的系統呼叫
+    * Twitter 上面的笑話: index 的複數寫作 indices, complex 的複數寫作 complices, 那 mutex 的複數是什麼？答 "deadlock" -- [出處](https://twitter.com/jfbastien/status/1408440373408460803)
+    * [建立相容於 POSIX Thread 的實作](https://hackmd.io/@sysprog/concurrency-thread-package)
     * [Linux 核心設計: 針對事件驅動的 I/O 模型演化](https://hackmd.io/@sysprog/linux-io-model)`*`
     * [精通數位邏輯對 coding 有什麼幫助？](https://www.ptt.cc/bbs/Soft_Job/M.1587694288.A.3B5.html)
     * [Linux: 透過 eBPF 觀察作業系統行為](https://hackmd.io/s/SJTuuG9a7)`*`: 動態追蹤技術（dynamic tracing）是現代軟體的進階除錯和追蹤機制，讓工程師以非常低的成本，在非常短的時間內，克服一些不是顯而易見的問題。它興起和繁榮的一個大背景是，我們正處在一個快速增長的網路互連異質運算環境，工程人員面臨著兩大方面的挑戰：
         - 規模：無論是使用者規模還是機房的規模、機器的數量都處於快速增長的時代;
         - 複雜度：業務邏輯越來越複雜，運作的軟體也變得越來越複雜，我們知道它會分成很多很多層次，包括作業系統核心和其上各種系統軟體，像資料庫和網頁伺服器，再往上有腳本語言或者其他高階語言的虛擬機器或執行環境，更上面是應用層面的各種業務邏輯的抽象層次和很多複雜的程式邏輯。
-    * Week9 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz9) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/@sysprog/HkuTGofVc)
+    * Week9 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz9) (內含作答表單)
+    * [作業](https://hackmd.io/@sysprog/linux2022-homework6): 截止繳交 May 2
+        - [ktcp](https://hackmd.io/@sysprog/linux2022-ktcp), [sehttpd](https://hackmd.io/@sysprog/linux2022-sehttpd)
+    - [課堂問答簡記]()
 
 * 第 10 週 (Apr 17, 18, 20): 現代微處理器
-    * Twitter 上面的笑話: index 的複數寫作 indices, complex 的複數寫作 complices, 那 mutex 的複數是什麼？答 "deadlock" -- [出處](https://twitter.com/jfbastien/status/1408440373408460803)
     * [現代處理器設計：原理和關鍵特徵](https://hackmd.io/@sysprog/cpu-basics)`*`
     * [Linux: 中斷處理和現代架構考量](https://hackmd.io/@sysprog/linux-interrupt)`*`
     * [Linux: 多核處理器和 spinlock](https://hackmd.io/@sysprog/multicore-locks)`*`
@@ -234,8 +237,6 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [CS:APP 第 6 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch6)`*`
     * [CS:APP 第 9 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch9)`*`
     * Week10 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz10) (內含作答表單)
-    * [作業](https://hackmd.io/@sysprog/linux2022-homework6): 截止繳交 May ?
-        - [ktcp](https://hackmd.io/@sysprog/linux2022-ktcp), [sehttpd](https://hackmd.io/@sysprog/linux2022-sehttpd)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HkuTGofVc)
 
 * 第 11 週 (Apr 24, 25, 20): 現代微處理器 + 記憶體管理
