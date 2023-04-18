@@ -242,6 +242,12 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - 本週指派新作業，請於 4 月 18 日 18:00 刷新本頁面以得知相關要求
         - 選修「Linux 核心設計/實作」課程的研究生有額外的作業 (課程回顧和分享學習經驗給指導教授)，詳情請留意後續信件
     * [現代處理器設計：原理和關鍵特徵](https://hackmd.io/@sysprog/cpu-basics)`*`
+    * 《Demystifying the Linux CPU Scheduler》
+        + 2.4 Multiprocessing
+        + 3.2 Time keeping
+        + 3.4 Per-Entity Load Tracking
+        + 4.1 Group scheduling and cgroups: Introduction
+        + 4.2 Group scheduling and CPU bandwidth
     * [Linux: 中斷處理和現代架構考量](https://hackmd.io/@sysprog/linux-interrupt)`*`
     * [Linux: 多核處理器和 spinlock](https://hackmd.io/@sysprog/multicore-locks)`*`
     * [CPU caches](https://lwn.net/Articles/252125/) by Ulrich Drepper
