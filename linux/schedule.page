@@ -241,6 +241,14 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - 原訂 4 月 18 日下午的「Linux 核心設計」實體課程改為線上授課，請在 15:10-18:00 之間，以網頁瀏覽器開啟 [YouTube](https://www.youtube.com/c/GUTS4Tech/live) (事後提供錄影)
         - 本週指派新作業，請於 4 月 18 日 18:00 刷新本頁面以得知相關要求
         - 選修「Linux 核心設計/實作」課程的研究生有額外的作業 (課程回顧和分享學習經驗給指導教授)，詳情請留意後續信件
+    * [Cautionary Tales on Implementing the Software That People Want](https://multicore.world/speakers/paul-mckenney/)`*`
+        - [slides](https://2019multicoreworld.files.wordpress.com/2023/02/mckenney-paul-23.pdf)
+        - 1990: Queueing Problem: Stochastic Fair Queueing: Hash
+        - 2004: Real-Time Linux
+        - 2004: Dawn of Multicore Embedded
+        - Formal Verification is Heavily Used
+        - Natural Selection: Bugs are Software!
+        - People don’t know what they want. But for software developers, this is no excuse. 
     * [現代處理器設計：原理和關鍵特徵](https://hackmd.io/@sysprog/cpu-basics)`*`
     * 《Demystifying the Linux CPU Scheduler》
         + 2.4 Multiprocessing
