@@ -263,7 +263,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - 本文解釋用於現代電腦硬體的記憶體子系統的結構、闡述 CPU 快取發展的考量、它們如何運作，以及程式該如何針對記憶體操作調整，從而達到最佳的效能。
     * [CS:APP 第 6 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch6)`*`
     * [作業](https://hackmd.io/@sysprog/linux2022-homework6): 截止繳交 May 14
-        - [ktcp](https://hackmd.io/@sysprog/linux2022-ktcp), [sehttpd](https://hackmd.io/@sysprog/linux2022-sehttpd)
+        - [ktcp](https://hackmd.io/@sysprog/linux2023-ktcp)
     * Week10 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz10) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HkuTGofVc)
 
