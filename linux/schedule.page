@@ -259,9 +259,8 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [Linux: 中斷處理和現代架構考量](https://hackmd.io/@sysprog/linux-interrupt)`*`
     * [Linux: 多核處理器和 spinlock](https://hackmd.io/@sysprog/multicore-locks)`*`
     * [CPU caches](https://lwn.net/Articles/252125/) by Ulrich Drepper
-        - 進行中的繁體中文翻譯: 《[每位程式開發者都該知道的記憶體知識](https://sysprog21.github.io/cpumemory-zhtw/)》
+        - 進行中的繁體中文翻譯: 《[每位程式開發者都該有的記憶體知識](https://sysprog21.github.io/cpumemory-zhtw/)》
         - 本文解釋用於現代電腦硬體的記憶體子系統的結構、闡述 CPU 快取發展的考量、它們如何運作，以及程式該如何針對記憶體操作調整，從而達到最佳的效能。
-    * [CS:APP 第 6 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch6)`*`
     * [作業](https://hackmd.io/@sysprog/linux2022-homework6): 截止繳交 May 14
         - [ktcp](https://hackmd.io/@sysprog/linux2023-ktcp)
     - [課堂問答簡記](https://hackmd.io/@sysprog/H1NdQ5AGn)
@@ -269,8 +268,9 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
 * 第 11 週 (Apr 24, 25, 20): 現代微處理器 + 記憶體管理
     * 公告
         - 學員應及早跟授課教師預約一對一線上討論，請參照[課程行事曆](https://bit.ly/sysprog-calendar)裡頭標注 "Office hour" 的時段，發訊息到 [Facebook 粉絲專頁](https://www.facebook.com/JservFans/)，簡述你的學習狀況並選定偏好的時段 (建議是 30 分鐘)
+    * [CS:APP 第 6 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch6)`*`
     * [CPU caches](https://lwn.net/Articles/252125/) by Ulrich Drepper
-        - 進行中的繁體中文翻譯: 《[每位程式開發者都該知道的記憶體知識](https://sysprog21.github.io/cpumemory-zhtw/)》
+        - 進行中的繁體中文翻譯: 《[每位程式開發者都該有的記憶體知識](https://sysprog21.github.io/cpumemory-zhtw/)》
         - 本文解釋用於現代電腦硬體的記憶體子系統的結構、闡述 CPU 快取發展的考量、它們如何運作，以及程式該如何針對記憶體操作調整，從而達到最佳的效能。
     * [CS:APP 第 9 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch9)`*`
     * [解析 Linux 共享記憶體機制](https://hackmd.io/@sysprog/linux-shared-memory)
