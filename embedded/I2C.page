@@ -123,7 +123,7 @@ pin 96 , I2S2_MCK | pin 74 , I2S2_CK/SPI2_SC | pin 76 , I2S2_SD/ SPI2_MOS
 
   ![](/embedded/i2c_condition.png)
 
-- 由Master發送起始信號來開起通訊，所有的slave device接收到起始信號後會進入接收數據模式。接著Master需要發送通訊目標設備的address及R/W資訊。
+- 由Master發送起始信號來開啟通訊，所有的slave device接收到起始信號後會進入接收數據模式。接著Master需要發送通訊目標設備的address及R/W資訊。
    - STM32F429提供兩種 address mode - 7bit and 10bit
       - 7bit mode: 發送 7bit 的address (MSB) 及一位元的 R(1)/W(0)後，該 address 的slave端會發送一個bit的 Ack(acknowledge) bit，ACK=0表設定成功(Slave把SDA拉到LOW)，開始數據傳送。 
 
