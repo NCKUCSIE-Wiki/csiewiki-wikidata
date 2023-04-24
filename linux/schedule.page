@@ -289,6 +289,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [Linux: 裝置驅動程式介面和模型](https://github.com/gregkh/presentation-driver-model) / [錄影](https://youtu.be/AdPxeGHIZ74)`*` by [Greg Kroah-Hartman](https://github.com/gregkh)
         + 針對 Linux v5.x 的素材請見《[The Linux Kernel Module Programming Guide](https://sysprog21.github.io/lkmpg/)》
     * [How to avoid writing device drivers for embedded Linux](http://2net.co.uk/slides/ew2016-userspace-drivers-slides.pdf) / [錄影](https://youtu.be/QIO2pJqMxjE)`*`
+    * [Debugging Embedded Devices using GDB](https://elinux.org/images/0/01/Debugging-with-gdb-csimmonds-elce-2020.pdf) / [錄影](https://youtu.be/JGhAgd2a_Ck)`*`
     * [Linux: Device Tree](https://events.static.linuxfound.org/sites/events/files/slides/petazzoni-device-tree-dummies.pdf) / [錄影](https://youtu.be/m_NyYEBxfn8)`*`
     * [vcam](https://github.com/sysprog21/vcam) 是個針對 Linux 核心開發的虛擬攝影機裝置，全部程式碼僅 1 千 5 百行，從而可理解 V4L2 ([video fro Linux APIs](https://en.wikipedia.org/wiki/Video4Linux), version 2) 的使用和 Linux 多媒體架構。開發一個虛擬的攝影機裝置除了理解 Linux 核心設計外，也有資訊安全的幫助，例如你可以安插相關程式碼，紀錄有哪些應用程式偷偷啟動攝影機，但過程中又不會揭露真正的隱私。
         + [2020 年技術報告](https://hackmd.io/@eecheng/B16rQ3GjU) / [2021 年技術報告](https://hackmd.io/@WayneLin1992/vcam)
