@@ -275,12 +275,12 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [CS:APP 第 9 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch9)`*`
     * [解析 Linux 共享記憶體機制](https://hackmd.io/@sysprog/linux-shared-memory)
     * [Linux: 賦予應用程式生命的系統呼叫](https://hackmd.io/@sysprog/linux-syscall)`*`
-    * [Linux: 記憶體管理](https://hackmd.io/@sysprog/linux-memory)`*`: 記憶體管理是 Linux 核心裡頭最複雜的部分，涉及到對計算機結構、slob/slab/slub 記憶體配置器、行程和執行檔樣貌、虛擬記憶體對應的例外處理、記憶體映射, UMA vs. NUMA 等等議題。
     * [Linux 核心的 /dev/mem 裝置](https://hackmd.io/@sysprog/linux-mem-device)
-    * Week11 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz11) (內含作答表單)
+    * Week11 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz11) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/HkuTGofVc)
 
 * 第 12 週 (May 1, 2, 4): 共享記憶體 + 裝置驅動程式
+    * [Linux: 記憶體管理](https://hackmd.io/@sysprog/linux-memory)`*`: 記憶體管理是 Linux 核心裡頭最複雜的部分，涉及到對計算機結構、slob/slab/slub 記憶體配置器、行程和執行檔樣貌、虛擬記憶體對應的例外處理、記憶體映射, UMA vs. NUMA 等等議題。
     * [POSIX Shared Memory](http://logan.tw/posts/2018/01/07/posix-shared-memory/): 在 Linux 中要實作出共享記憶體 (shared memory) 的機制很多，例如: 1) SysV shared memory; POSIX shared memory; 3) 以 mmap 對檔案進行記憶體映射; 4) 以 memfd_create() 實作跨越行程存取; 本文章探討 POSIX shared memory 的使用，並提供完整應用案例，最後探討相關的同步議題。
     * [C 語言: 物件導向程式設計](https://hackmd.io/@sysprog/c-oop)`*`
     * [Object-oriented design patterns in the kernel, part 1](https://lwn.net/Articles/444910/) / [Object-oriented design patterns in the kernel, part 2](https://lwn.net/Articles/446317/)
@@ -309,7 +309,6 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - [Skip List](http://en.wikipedia.org/wiki/Skip_list): 置放大量數字並進行排序的資料結構。不用樹狀結構，而改用高度不同的 List 來連接資料。資料結構在概念上可以表示成 Left Child-Right Sibling Binary Tree 的模式。是 Cache-oblivious Algorithm 的經典範例，時間複雜度與空間複雜度與 Binary Search Tree 皆相同，但精心調整的實作可超越 Binary Search Tree。
         - Linux 核心: [A kernel skiplist implementation (Part 1)](https://lwn.net/Articles/551896/), [Skiplists II: API and benchmarks](https://lwn.net/Articles/553047/)
     * Linux: linked list, Queues, Maps, Binary Trees: [錄影](https://youtu.be/7ZQNb7Fu_A4)`*` / [共筆](https://docs.google.com/document/d/1n31QMPyvdAkS2uxM5AyKu_DD3uRu6-zoRukAitDwPvA/edit#)
-    * [Linux: RCU 同步機制](https://hackmd.io/s/H19V4eyfV)`*`
     * [C11 atomic variables and the kernel](https://lwn.net/Articles/586838/) / [Linux Documentation: Circular Buffers](https://www.kernel.org/doc/Documentation/circular-buffers.txt)
     * Week13 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz13) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/H1AlR9PU9)
