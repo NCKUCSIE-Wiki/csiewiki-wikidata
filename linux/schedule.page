@@ -278,7 +278,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [解析 Linux 共享記憶體機制](https://hackmd.io/@sysprog/linux-shared-memory)
     * [Linux 核心的 /dev/mem 裝置](https://hackmd.io/@sysprog/linux-mem-device)
     * Week11 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz11) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/@sysprog/HkuTGofVc)
+    - [課堂問答簡記](https://hackmd.io/@sysprog/H1NdQ5AGn)
 
 * 第 12 週 (May 1, 2, 4): 共享記憶體 + 裝置驅動程式
     * [Linux: 記憶體管理](https://hackmd.io/@sysprog/linux-memory)`*`: 記憶體管理是 Linux 核心裡頭最複雜的部分，涉及到對計算機結構、slob/slab/slub 記憶體配置器、行程和執行檔樣貌、虛擬記憶體對應的例外處理、記憶體映射, UMA vs. NUMA 等等議題。
