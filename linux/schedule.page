@@ -282,6 +282,10 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/@sysprog/H1NdQ5AGn)
 
 * 第 12 週 (May 1, 2, 4): 共享記憶體 + 裝置驅動程式
+    * Week12 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz12) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/@sysprog/HkuTGofVc)
+
+* 第 13 週 (May 8, 9, 11): Scalability + 同步機制
     * [Linux: 記憶體管理](https://hackmd.io/@sysprog/linux-memory)`*`: 記憶體管理是 Linux 核心裡頭最複雜的部分，涉及到對計算機結構、slob/slab/slub 記憶體配置器、行程和執行檔樣貌、虛擬記憶體對應的例外處理、記憶體映射, UMA vs. NUMA 等等議題。
     * [POSIX Shared Memory](http://logan.tw/posts/2018/01/07/posix-shared-memory/): 在 Linux 中要實作出共享記憶體 (shared memory) 的機制很多，例如: 1) SysV shared memory; POSIX shared memory; 3) 以 mmap 對檔案進行記憶體映射; 4) 以 memfd_create() 實作跨越行程存取; 本文章探討 POSIX shared memory 的使用，並提供完整應用案例，最後探討相關的同步議題。
     * [C 語言: 物件導向程式設計](https://hackmd.io/@sysprog/c-oop)`*`
@@ -296,10 +300,6 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [vcam](https://github.com/sysprog21/vcam) 是個針對 Linux 核心開發的虛擬攝影機裝置，全部程式碼僅 1 千 5 百行，從而可理解 V4L2 ([video fro Linux APIs](https://en.wikipedia.org/wiki/Video4Linux), version 2) 的使用和 Linux 多媒體架構。開發一個虛擬的攝影機裝置除了理解 Linux 核心設計外，也有資訊安全的幫助，例如你可以安插相關程式碼，紀錄有哪些應用程式偷偷啟動攝影機，但過程中又不會揭露真正的隱私。
         + [2020 年技術報告](https://hackmd.io/@eecheng/B16rQ3GjU) / [2021 年技術報告](https://hackmd.io/@WayneLin1992/vcam)
     *  [vwifi](https://github.com/sysprog21/vwifi) 是個程式碼約 500 行，真的可運作的 WiFi 裝置驅動程式，採用 cfg80211 框架，在 Linux v5.4 和 Linux v5.14 都測試過，支援 scan, connect, disconnect 等 [cfg80211](https://www.linkedin.com/pulse/wlan-drivers-code-walk-linux-bhanu-prakash-singh/) 的介面操作，且允許封包轉向 Linux 核心網路堆疊
-    * Week12 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz12) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/@sysprog/HkuTGofVc)
-
-* 第 13 週 (May 8, 9, 11): Scalability + 同步機制
     * [以下教材的解說錄影](https://youtu.be/eplQPz1Qegc)`*`
     * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/linux-timer)`*`
     * [Linux: Scalability 議題](https://hackmd.io/@sysprog/linux-scalability)`*`
