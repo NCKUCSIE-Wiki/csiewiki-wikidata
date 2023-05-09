@@ -292,6 +292,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [POSIX Shared Memory](http://logan.tw/posts/2018/01/07/posix-shared-memory/): 在 Linux 中要實作出共享記憶體 (shared memory) 的機制很多，例如: 1) SysV shared memory; POSIX shared memory; 3) 以 mmap 對檔案進行記憶體映射; 4) 以 memfd_create() 實作跨越行程存取; 本文章探討 POSIX shared memory 的使用，並提供完整應用案例，最後探討相關的同步議題。
     * [C 語言: 物件導向程式設計](https://hackmd.io/@sysprog/c-oop)`*`
     * [Object-oriented design patterns in the kernel, part 1](https://lwn.net/Articles/444910/) / [Object-oriented design patterns in the kernel, part 2](https://lwn.net/Articles/446317/)
+        + 對照《Demystifying the Linux CPU Scheduler》 `3.1 Structs and their role: sched class`
     * [C 語言: Stream I/O, EOF 和例外處理](https://hackmd.io/@sysprog/c-stream-io)`*`
     * [CS:APP 第 10 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch10)`*`
     * [Linux: 裝置驅動程式介面和模型](https://github.com/gregkh/presentation-driver-model) / [錄影](https://youtu.be/AdPxeGHIZ74)`*` by [Greg Kroah-Hartman](https://github.com/gregkh)
