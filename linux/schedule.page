@@ -287,7 +287,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/@sysprog/H1NdQ5AGn)
 
 * 第 13 週 (May 8, 9, 11): 記憶體管理 + 裝置驅動程式
-    * 教材解說-1, [教材解說-2](https://youtu.be/eplQPz1Qegc)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [教材解說-1](https://youtu.be/jOY159H0Iyo)`*`, [教材解說-2](https://youtu.be/eplQPz1Qegc)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [The Linux Virtual Memory System](https://people.redhat.com/pladd/NUMA_Linux_VM_NYRHUG.pdf)
     * [Linux: 記憶體管理](https://hackmd.io/@sysprog/linux-memory)`*`: 記憶體管理是 Linux 核心裡頭最複雜的部分，涉及到對計算機結構、slob/slab/slub 記憶體配置器、行程和執行檔樣貌、虛擬記憶體對應的例外處理、記憶體映射, UMA vs. NUMA 等等議題。
     * [POSIX Shared Memory](http://logan.tw/posts/2018/01/07/posix-shared-memory/): 在 Linux 中要實作出共享記憶體 (shared memory) 的機制很多，例如: 1) SysV shared memory; POSIX shared memory; 3) 以 mmap 對檔案進行記憶體映射; 4) 以 memfd_create() 實作跨越行程存取; 本文章探討 POSIX shared memory 的使用，並提供完整應用案例，最後探討相關的同步議題。
