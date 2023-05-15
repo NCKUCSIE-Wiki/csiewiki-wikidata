@@ -314,12 +314,13 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [C11 atomic variables and the kernel](https://lwn.net/Articles/586838/) / [Linux Documentation: Circular Buffers](https://www.kernel.org/doc/Documentation/circular-buffers.txt)
 
 * 第 14 週 (May 15, 16, 18): 網路封包處理
-    * [以下教材的解說錄影](https://youtu.be/elJBnC3d_rg)`*`
-    * [討論區回顧](https://m.facebook.com/groups/system.software2022)
     * [Linux 核心網路](https://hackmd.io/@rickywu0421/BJxD_3989)
+    * [semu: 精簡 RISC-V 系統模擬器](https://hackmd.io/@sysprog/Skuw3dJB3): 支援 TAP/TUN 以存取電腦網路
+    * [Build a virtual WiFi Driver for Linux](https://docs.google.com/presentation/d/1vlKkPRoURkqzCjZPDkvsGZVyfXtoRFF_/edit#slide=id.p1)`*` / [錄影](https://youtu.be/DZMIpBI4Rc0)
+        - [背景知識](https://hackmd.io/@rickywu0421/vwifi_background), [2022 年開發紀錄](https://hackmd.io/@rickywu0421/FinalProject)
     * **[cserv](https://github.com/sysprog21/cserv)** is an event-driven and non-blocking web server.
         - 展現 [event-driven, non-blocking I/O Multiplexing](https://hackmd.io/@sysprog/fast-web-server) (主要是 [epoll](https://man7.org/linux/man-pages/man7/epoll.7.html)), shared memory, processor affinity, coroutine, context switch, UNIX signal, [dynamic linking](https://hackmd.io/@sysprog/c-dynamic-linkage), circular buffer, hash table, red-black tree, atomic operations 等議題的實際應用
-        - 可視為 [seHTTPd](https://hackmd.io/@sysprog/linux2020-sehttpd) 的後繼改進實作
+        - 可視為 [seHTTPd](https://hackmd.io/@sysprog/linux2023-ktcp) 的後繼改進實作
     * [Memory Externalization With userfaultfd](http://ftp.ntu.edu.tw/pub/linux/kernel/people/andrea/userfaultfd/userfaultfd-LSFMM-2015.pdf) / [錄影](https://youtu.be/pC8cWWRVSPw)`*` / [kernel documentation: userfaults](https://www.kernel.org/doc/html/latest/admin-guide/mm/userfaultfd.html)
     * [How Linux Processes Your Network Packet](https://www.slideshare.net/DevopsCon/how-linux-processes-your-network-packet-elazar-leibovich) / [錄影](https://youtu.be/3Ij0aZRsw9w)`*`
     * [Kernel packet capture technologies](https://www.slideshare.net/ennael/kernel-recipes-2015-kernel-packet-capture-technologies) / [錄影](https://youtu.be/5gEWyCW-qx8)`*`
@@ -327,7 +328,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - `PACKET_MMAP` 在核心空間內配置一塊核心緩衝區，一旦使用者層級的應用程式呼叫 mmap 將前述緩衝區映射到使用者層級時，接收到的 skb 會直接在該核心緩衝區，從而讓應用程式得以直接捕捉封包
         - 若沒有啟用 `PACKET_MMAP`，就只能使用低效率的 `AF_PACKET`，不但有緩衝區空間的限制，而且每次捕捉封包就要一次系統呼叫。反之，`PACKET_MMAP` 多數時候不需要呼叫系統呼叫，也能實作出 zero-copy
         - [圖解 Linux tcpdump](https://jgsun.github.io/2019/01/21/linux-tcpdump/)
-    * Week14 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz14) (內含作答表單)
+    * Week14 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz14) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/H1AlR9PU9)
 
 * 第 15 週 (May 22, 23, 25): 多核處理器架構 + Linux 同步處理機制 + 程式碼最佳化概念
