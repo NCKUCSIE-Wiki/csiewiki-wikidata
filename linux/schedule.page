@@ -315,6 +315,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
 
 * 第 14 週 (May 15, 16, 18): 網路封包處理
     * [Linux 核心網路](https://hackmd.io/@rickywu0421/BJxD_3989)
+        - [socket 的譯法](https://hackmd.io/@sysprog/it-vocabulary)
     * [semu: 精簡 RISC-V 系統模擬器](https://hackmd.io/@sysprog/Skuw3dJB3): 支援 TAP/TUN 以存取電腦網路
     * [Build a virtual WiFi Driver for Linux](https://docs.google.com/presentation/d/1vlKkPRoURkqzCjZPDkvsGZVyfXtoRFF_/edit#slide=id.p1)`*` / [錄影](https://youtu.be/DZMIpBI4Rc0)
         - [背景知識](https://hackmd.io/@rickywu0421/vwifi_background), [2022 年開發紀錄](https://hackmd.io/@rickywu0421/FinalProject)
