@@ -314,6 +314,9 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [C11 atomic variables and the kernel](https://lwn.net/Articles/586838/) / [Linux Documentation: Circular Buffers](https://www.kernel.org/doc/Documentation/circular-buffers.txt)
 
 * 第 14 週 (May 15, 16, 18): 網路封包處理
+    * 公告:
+        - 5 月 16 日恢復實體課程，進行測驗和討論期末專題
+        - 本週「已進行一對一討論」的學員會收到期末專題的確認信件，尚未預約討論的學員請及早進行
     * [Linux 核心網路](https://hackmd.io/@rickywu0421/BJxD_3989)
         - [socket 的譯法](https://hackmd.io/@sysprog/it-vocabulary)
     * [semu: 精簡 RISC-V 系統模擬器](https://hackmd.io/@sysprog/Skuw3dJB3): 支援 TAP/TUN 以存取電腦網路
