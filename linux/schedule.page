@@ -314,9 +314,10 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [C11 atomic variables and the kernel](https://lwn.net/Articles/586838/) / [Linux Documentation: Circular Buffers](https://www.kernel.org/doc/Documentation/circular-buffers.txt)
 
 * 第 14 週 (May 15, 16, 18): 網路封包處理
-    * [教材解說](https://youtu.be/HfXYAQRLfko)`* (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [教材解說](https://youtu.be/HfXYAQRLfko)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
-        - 5 月 16 日恢復實體課程，進行測驗和討論期末專題
+        - 5 月 16 日恢復實體課程，討論期末專題
+        - 慶祝授課教師的[論文被 OSDI 採納](https://www.usenix.org/conference/osdi23/presentation/lo) (成功大學第一篇 OSDI 論文)，授課教師請學員喝飲料
         - 本週「已進行一對一討論」的學員會收到期末專題的確認信件，尚未預約討論的學員請及早進行
     * [Linux 核心網路](https://hackmd.io/@rickywu0421/BJxD_3989)
         - [socket 的譯法](https://hackmd.io/@sysprog/it-vocabulary)
