@@ -329,7 +329,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - 可視為 [seHTTPd](https://hackmd.io/@sysprog/linux2023-ktcp) 的後繼改進實作
     * [Memory Externalization With userfaultfd](http://ftp.ntu.edu.tw/pub/linux/kernel/people/andrea/userfaultfd/userfaultfd-LSFMM-2015.pdf) / [錄影](https://youtu.be/pC8cWWRVSPw)`*` / [kernel documentation: userfaults](https://www.kernel.org/doc/html/latest/admin-guide/mm/userfaultfd.html)
     * Week14 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz14) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/@sysprog/H1AlR9PU9)
+    - [課堂問答簡記](https://hackmd.io/@sysprog/BySO9ieSn)
 
 * 第 15 週 (May 22, 23, 25): 多核處理器架構 + Linux 同步處理機制 + 程式碼最佳化概念
     * 公告:
