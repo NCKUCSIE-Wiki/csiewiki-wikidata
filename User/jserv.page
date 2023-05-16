@@ -69,7 +69,7 @@ categories: User
 * [rubi](https://github.com/sysprog21/rubi): 類似 Ruby 程式語言的精簡實作，可由 JIT 編譯執行，原始程式碼相當精簡
 * [jitboy](https://github.com/sysprog21/jitboy): 針對 [Game Boy](https://en.wikipedia.org/wiki/Game_Boy) 掌上遊戲機和內建 GBZ80 處理器發展的 JIT 編譯器，可動態將 GBZ80 指令轉換為 x86-64 指令
 * [rv32emu](https://github.com/sysprog21/rv32emu): 針對 32 位元 [RISC-V](https://riscv.org/) 處理器架構發展的指令集模擬器，支援多項延展指令
-* [semu](https://github.com/jserv/semu): 極精簡的 RISC-V 64 位元指令集和硬體系統模擬器，可執行 [xv6](https://github.com/mit-pdos/xv6-riscv) 作業系統並通過大部分的 [riscv-tests](https://github.com/riscv-software-src/riscv-tests) 測試項目。整體程式碼僅一千行出頭
+* [semu](https://github.com/jserv/semu): 極精簡的 RISC-V 64 位元指令集和硬體系統模擬器，可執行 Linux 核心和相關的套件。原始程式碼不到二千行
 * [pitifulvm](https://github.com/sysprog21/pitifulvm): 高度簡化的 Java 虛擬機器實作
 
 編撰的電子書
