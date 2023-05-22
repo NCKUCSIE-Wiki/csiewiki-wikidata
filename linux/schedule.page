@@ -341,7 +341,6 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - [圖解 Linux tcpdump](https://jgsun.github.io/2019/01/21/linux-tcpdump/)
     * [Multi-Core in Linux](https://youtu.be/UNI6Mbqryv0)`*`
     * [Multiprocessor OS](/11-smp_os.pdf)
-    * [Multicore Caches / Cache Coherence](https://computationstructures.org/lectures/parallel/parallel.html)`*` / [video](https://youtu.be/vxrok3KKuGQ)
     * [從 CPU cache coherence 談 Linux spinlock 可擴展能力議題](https://hackmd.io/@sysprog/linux-spinlock-scalability)
     * [Linux: Scalability 議題](https://hackmd.io/@sysprog/linux-scalability)`*`
     * [CS:APP 第 5 章重點提示和練習](https://hackmd.io/s/SyL8m4Lnm)`*`
