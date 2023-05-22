@@ -328,10 +328,9 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - 展現 [event-driven, non-blocking I/O Multiplexing](https://hackmd.io/@sysprog/fast-web-server) (主要是 [epoll](https://man7.org/linux/man-pages/man7/epoll.7.html)), shared memory, processor affinity, coroutine, context switch, UNIX signal, [dynamic linking](https://hackmd.io/@sysprog/c-dynamic-linkage), circular buffer, hash table, red-black tree, atomic operations 等議題的實際應用
         - 可視為 [seHTTPd](https://hackmd.io/@sysprog/linux2023-ktcp) 的後繼改進實作
     * [Memory Externalization With userfaultfd](http://ftp.ntu.edu.tw/pub/linux/kernel/people/andrea/userfaultfd/userfaultfd-LSFMM-2015.pdf) / [錄影](https://youtu.be/pC8cWWRVSPw)`*` / [kernel documentation: userfaults](https://www.kernel.org/doc/html/latest/admin-guide/mm/userfaultfd.html)
-    * Week14 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz14) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/BySO9ieSn)
 
-* 第 15 週 (May 22, 23, 25): 多核處理器架構 + Linux 同步處理機制 + 程式碼最佳化概念
+* 第 15 週 (May 22, 23, 25): 網路封包處理 + 多核處理器架構 + 程式碼最佳化概念
     * 公告:
         - 請學員及早進行 [課程期末專題](https://hackmd.io/@sysprog/linux2023-projects) 並預約一對一討論
     * [How Linux Processes Your Network Packet](https://www.slideshare.net/DevopsCon/how-linux-processes-your-network-packet-elazar-leibovich) / [錄影](https://youtu.be/3Ij0aZRsw9w)`*`
@@ -340,23 +339,18 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - `PACKET_MMAP` 在核心空間內配置一塊核心緩衝區，一旦使用者層級的應用程式呼叫 mmap 將前述緩衝區映射到使用者層級時，接收到的 skb 會直接在該核心緩衝區，從而讓應用程式得以直接捕捉封包
         - 若沒有啟用 `PACKET_MMAP`，就只能使用低效率的 `AF_PACKET`，不但有緩衝區空間的限制，而且每次捕捉封包就要一次系統呼叫。反之，`PACKET_MMAP` 多數時候不需要呼叫系統呼叫，也能實作出 zero-copy
         - [圖解 Linux tcpdump](https://jgsun.github.io/2019/01/21/linux-tcpdump/)
-    * [以下教材的解說錄影](https://youtu.be/wJzQ8q5yOkY)`*`
     * [Multi-Core in Linux](https://youtu.be/UNI6Mbqryv0)`*`
+    * [Multiprocessor OS](/11-smp_os.pdf)
     * [Multicore Caches / Cache Coherence](https://computationstructures.org/lectures/parallel/parallel.html)`*` / [video](https://youtu.be/vxrok3KKuGQ)
-    * [並行程式設計: Lock-Free Programming](https://hackmd.io/@sysprog/concurrency-lockfree)`*`
+    * [從 CPU cache coherence 談 Linux spinlock 可擴展能力議題](https://hackmd.io/@sysprog/linux-spinlock-scalability)
+    * [Linux: Scalability 議題](https://hackmd.io/@sysprog/linux-scalability)`*`
     * [CS:APP 第 5 章重點提示和練習](https://hackmd.io/s/SyL8m4Lnm)`*`
     * [CS:APP Assign 5.18](https://hackmd.io/s/rkdzvWJTX)`*`
-    * 專案賞析
-        - [threaded-logger](https://github.com/sysprog21/threaded-logger): 向 Linux 核心的 [lockless printk](https://lpc.events/event/4/contributions/290/attachments/276/463/lpc2019_jogness_printk.pdf) 致敬
-            + 在 glibc 的實作中，就算是 [puts](https://sourceware.org/git/?p=glibc.git;a=blob;f=libio/ioputs.c;hb=HEAD) 這樣貌似單純的實作，也要有 lock
-        - [123elf](https://github.com/taviso/123elf) / [解釋](https://m.facebook.com/groups/system.software2022/posts/2051075428407190/)
-    * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz15) (內含作答表單)
+     * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz15) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/H1AlR9PU9)
 
 * 第 16 週 (May 29, 30, Jun 1): 多核處理器架構
-    * [以下教材的解說錄影 1](https://youtu.be/gCaZJ_heloQ)`*`, [錄影 2](https://youtu.be/HWFLjMIjiB4)`*`
     * [A tour of the ARM architecture and its Linux support](https://youtu.be/NNol7fRGo2E)`*`
-    * [Multiprocessor OS](/11-smp_os.pdf)
     * [Linux-Kernel Memory Ordering: Help Arrives At Last!](http://www.rdrop.com/users/paulmck/scalability/paper/LinuxMM.2017.04.08b.Barcamp.pdf) / [video](https://www.youtube.com/watch?v=ULFytshTvIY)`*`
     * [atomic 和 memory order](https://medium.com/fcamels-notes/%E7%B0%A1%E4%BB%8B-c-11-memory-model-b3f4ed81fea6), [memory barrier 的實作和效果](https://medium.com/fcamels-notes/%E5%BE%9E%E7%A1%AC%E9%AB%94%E8%A7%80%E9%BB%9E%E4%BA%86%E8%A7%A3-memry-barrier-%E7%9A%84%E5%AF%A6%E4%BD%9C%E5%92%8C%E6%95%88%E6%9E%9C-416ff0a64fc1)
         - [Memory barriers in C](https://mariadb.org/wp-content/uploads/2017/11/2017-11-Memory-barriers.pdf)
