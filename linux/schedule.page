@@ -342,6 +342,13 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [Multi-Core in Linux](https://youtu.be/UNI6Mbqryv0)`*`
     * [Multiprocessor OS](/11-smp_os.pdf)
         - [Arm 處理器筆記](http://wiki.csie.ncku.edu.tw/embedded/arm-smp-note.pdf)
+    * 《Demystifying the Linux CPU Scheduler》
+        - 2.4 Multiprocessing
+        - 2.5 Energy-Aware Scheduling (EAS)
+        - 3.4 Per-Entity Load Tracking
+        - 4.2 Group scheduling and CPU bandwidth
+        - 4.3 Control Groups
+        - 4.4 Core scheduling
     * [從 CPU cache coherence 談 Linux spinlock 可擴展能力議題](https://hackmd.io/@sysprog/linux-spinlock-scalability)
     * [Linux: Scalability 議題](https://hackmd.io/@sysprog/linux-scalability)`*`
     * [CS:APP 第 5 章重點提示和練習](https://hackmd.io/s/SyL8m4Lnm)`*`
