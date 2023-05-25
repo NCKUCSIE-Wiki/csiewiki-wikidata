@@ -331,6 +331,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/@sysprog/BySO9ieSn)
 
 * 第 15 週 (May 22, 23, 25): 網路封包處理 + 多核處理器架構 + 程式碼最佳化概念
+    * [教材解說-1](https://youtu.be/WwyifIQIYdY)`*`, [教材解說-2](https://youtu.be/CkgL2dVAaag)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
         - 請學員及早進行 [課程期末專題](https://hackmd.io/@sysprog/linux2023-projects) 並預約一對一討論
     * [How Linux Processes Your Network Packet](https://www.slideshare.net/DevopsCon/how-linux-processes-your-network-packet-elazar-leibovich) / [錄影](https://youtu.be/3Ij0aZRsw9w)`*`
