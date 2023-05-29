@@ -358,6 +358,10 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [課堂問答簡記](https://hackmd.io/@sysprog/BySO9ieSn)
 
 * 第 16 週 (May 29, 30, Jun 1): 多核處理器架構
+    * 公告
+       - 5 月 31 日下午，財團法人開放文化基金會 (OCF) 將在國立成功大學資訊工程系舉辦校園工作坊，主題是「[開放原始碼 ——
+打造護國神山的社會基礎建設](https://www.facebook.com/photo.php?fbid=630501992454129&set=a.626275629543432)」，談如何透過分享、討論和探索工程領域的秘技，利用科學與數學知識解決問題，發揮最強大的社會效益。
+       - 原訂 5 月 30 日下午的實體課程因應上述活動，暫停一次
     * [A tour of the ARM architecture and its Linux support](https://youtu.be/NNol7fRGo2E)`*`
     * [Linux-Kernel Memory Ordering: Help Arrives At Last!](http://www.rdrop.com/users/paulmck/scalability/paper/LinuxMM.2017.04.08b.Barcamp.pdf) / [video](https://www.youtube.com/watch?v=ULFytshTvIY)`*`
     * [atomic 和 memory order](https://medium.com/fcamels-notes/%E7%B0%A1%E4%BB%8B-c-11-memory-model-b3f4ed81fea6), [memory barrier 的實作和效果](https://medium.com/fcamels-notes/%E5%BE%9E%E7%A1%AC%E9%AB%94%E8%A7%80%E9%BB%9E%E4%BA%86%E8%A7%A3-memry-barrier-%E7%9A%84%E5%AF%A6%E4%BD%9C%E5%92%8C%E6%95%88%E6%9E%9C-416ff0a64fc1)
