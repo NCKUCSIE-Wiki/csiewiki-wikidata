@@ -362,6 +362,9 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
        - 及早更新 [課程期末專題](https://hackmd.io/@sysprog/linux2023-projects): 編輯「開發紀錄」頁面
        - 補課: 6 月 19 日晚間及 6 月 20 日晚間 (線上直播)
        - 期末成果發表: 6 月 24 日傍晚 (線上直播)
+    * [現代硬體架構上的演算法: 以 Binary Search 為例](https://hackmd.io/@RinHizakura/BJ-Zjjw43)
+        - [Beautiful Binary Search in D](https://muscar.eu/shar-binary-search-meta.html)
+        - [binary_search.c](https://gist.github.com/jserv/6023c2fc2d4477fca9038b05f293a543)
     * [CS:APP 第 5 章重點提示和練習](https://hackmd.io/s/SyL8m4Lnm)`*`
     * [CS:APP Assign 5.18](https://hackmd.io/s/rkdzvWJTX)`*`
     * [Linux: Scalability 議題](https://hackmd.io/@sysprog/linux-scalability)`*`
