@@ -395,7 +395,6 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Memory Barrier
         - [Memory Barriers in the Linux Kernel: Semantics and Practices](https://elinux.org/images/a/ab/Bueso.pdf)
         - [From Weak to Weedy: Effective Use of Memory Barriers in the ARM Linux Kernel](https://elinux.org/images/7/73/Deacon-weak-to-weedy.pdf) / [video](https://youtu.be/6ORn6_35kKo)`*`
-        - [Uh-oh, It's I/O Ordering!](https://elinux.org/images/a/a8/Uh-oh-Its-IO-Ordering-Will-Deacon-Arm.pdf) / [video](https://youtu.be/i6DayghhA8Q)`*` / [筆記](https://hackmd.io/@butastur/rkkQEGjUN)
 
 * 第 18 週 (Jun 12, 13, 14): Rust + 課程回顧
     * [課程討論區回顧](https://m.facebook.com/groups/system.software2022)
