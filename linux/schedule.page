@@ -354,7 +354,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz15) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/@sysprog/BySO9ieSn)
 
-* 第 16 週 (May 29, 30, Jun 1): 程式碼最佳化概念 + 多核處理器架構
+* 第 16 週 (May 29, Jun 1): 程式碼最佳化概念 + 多核處理器架構
     * [教材解說](https://youtu.be/ICRzw5Ye2sM)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告
        - 5 月 31 日下午，財團法人開放文化基金會 (OCF) 將在國立成功大學資訊工程系舉辦校園工作坊，主題是「[開放原始碼 ——
@@ -377,20 +377,18 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Week16 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz16) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/@sysprog/BySO9ieSn)
  
-* 第 17 週 (Jun 5, 6, 8): 即時 Linux 的基礎建設
+* 第 17 週 (Jun 10): 即時 Linux 的基礎建設
     * 公告
-        - 佔學期總成績 50% 的自我評量，請在 6 月 ? 日前完成。範例: [User/OscarShiang](http://wiki.csie.ncku.edu.tw/User/OscarShiang)
+        - 佔學期總成績 50% 的自我評量，請在 6 月 24 日前完成。範例: [User/OscarShiang](http://wiki.csie.ncku.edu.tw/User/OscarShiang)
         - 自我評量的網址**必須**符合 `/User/你的GitHub帳號名稱` 格式 (區分大小寫)，請不要打錯字
         - 自我評分項目 (都要有對應的超連結和延伸資訊)
-            * 成果發表: 與 Linux 核心相關的公開演講
-            * Linux 核心和相關專案貢獻: 貢獻到 Linux 核心和相關專案
+            * 成果發表: 與 Linux 核心相關的公開演講、貢獻到 Linux 核心和相關專案 (應標註對應的公開 commits/patches)
             * 作業/隨堂測驗: 你的開發紀錄，人在做，Google 在看
-            * 期末專題: 開發紀錄，標注與授課教師「一對一討論」的時間，並列出你的啟發及成果
+            * 期末專題: 開發紀錄，標注與授課教師「一對一討論」的時間，並列出你針對授課教師的問答、啟發及相關成果
             * 所見所聞所感，包含授課教師編撰/翻譯的書籍 (《Demystifying the Linux CPU Scheduler》, 《Concurrency Primer》, 《Linux Kernel Module Programming Guide》, 〈每位程式開發者都該有的記憶體知識〉) 的讀後
-            * 自我評量: 介於 1 到 10 之間的整數 (不要自作主張寫 `8.7` 這樣的數值)
-    * [以下教材的解說錄影](https://youtu.be/bJS-wjM-5kE)`*`
+            * 自我評量: 介於 1 到 10 之間的「整數」(不要自作主張寫 `8.7` 這樣的數值)
     * [Re: [問卦] 精通作業系統對Coding有什麼幫助？](https://disp.cc/b/163-cidY)
-    * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/HJElbeHkr)
+    * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/linux-timer)
     * [PREEMPT_RT 作為邁向硬即時作業系統的機制](https://hackmd.io/@sysprog/preempt-rt)
     * [Linux 核心搶佔](https://hackmd.io/@sysprog/linux-preempt)
 
