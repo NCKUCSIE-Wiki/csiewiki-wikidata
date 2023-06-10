@@ -377,7 +377,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Week16 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz16) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/@sysprog/BySO9ieSn)
  
-* 第 17 週 (Jun 10): 即時 Linux 的基礎建設
+* 第 17 週 (Jun 10): 即時 Linux 的基礎建設 + 多核處理器
     * 公告
         - 佔學期總成績 50% 的自我評量，請在 6 月 24 日前完成。範例: [User/OscarShiang](http://wiki.csie.ncku.edu.tw/User/OscarShiang)
         - 自我評量的網址**必須**符合 `/User/你的GitHub帳號名稱` 格式 (區分大小寫)，請不要打錯字
@@ -391,8 +391,13 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/linux-timer)
     * [PREEMPT_RT 作為邁向硬即時作業系統的機制](https://hackmd.io/@sysprog/preempt-rt)
     * [Linux 核心搶佔](https://hackmd.io/@sysprog/linux-preempt)
+    * [Towards PREEMPT_RT for the Full Task Isolation](https://ossna2022.sched.com/event/11NtQ)
+    * Memory Barrier
+        - [Memory Barriers in the Linux Kernel: Semantics and Practices](https://elinux.org/images/a/ab/Bueso.pdf)
+        - [From Weak to Weedy: Effective Use of Memory Barriers in the ARM Linux Kernel](https://elinux.org/images/7/73/Deacon-weak-to-weedy.pdf) / [video](https://youtu.be/6ORn6_35kKo)`*`
+        - [Uh-oh, It's I/O Ordering!](https://elinux.org/images/a/a8/Uh-oh-Its-IO-Ordering-Will-Deacon-Arm.pdf) / [video](https://youtu.be/i6DayghhA8Q)`*` / [筆記](https://hackmd.io/@butastur/rkkQEGjUN)
 
-* 第 18 週 (Jun 12, 13, 14): 多核處理器, Rust
+* 第 18 週 (Jun 12, 13, 14): Rust + 課程回顧
     * [課程討論區回顧](https://m.facebook.com/groups/system.software2022)
     * Rust 程式語言
         - 現況: [已被 Google Android 團隊選為開發系統軟體的另一個程式語言，與 C 和 C++ 並列](https://www.phoronix.com/scan.php?page=news_item&px=Rust-For-Android-OS-System-Work); [自 2017 年 Facebook 內部採納 Rust 程式語言的專案增加，像是加密貨幣 Diem (前身為 Libra) 就將 Rust 作為主要程式語言並對外發布](https://engineering.fb.com/2021/04/29/developer-tools/rust/), 
@@ -400,8 +405,4 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
         - [C vs. Rust](http://www-verimag.imag.fr/~mounier/Enseignement/Software_Security/19RustVsC.pdf)
         - [Linux 核心採納 Rust 的狀況](https://hackmd.io/@linD026/rust-in-linux-organize)
-    * Memory Barrier
-        - [Memory Barriers in the Linux Kernel: Semantics and Practices](https://elinux.org/images/a/ab/Bueso.pdf)
-        - [From Weak to Weedy: Effective Use of Memory Barriers in the ARM Linux Kernel](https://elinux.org/images/7/73/Deacon-weak-to-weedy.pdf) / [video](https://youtu.be/6ORn6_35kKo)`*`
-        - [Uh-oh, It's I/O Ordering!](https://elinux.org/images/a/a8/Uh-oh-Its-IO-Ordering-Will-Deacon-Arm.pdf) / [video](https://youtu.be/i6DayghhA8Q)`*` / [筆記](https://hackmd.io/@butastur/rkkQEGjUN)
     * Week18 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2022-quiz18) (內含作答表單)
