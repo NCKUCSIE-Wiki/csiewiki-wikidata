@@ -377,7 +377,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Week16 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz16) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/@sysprog/BySO9ieSn)
  
-* 第 17 週 (Jun 10): 即時 Linux 的基礎建設 + 多核處理器
+* 第 17 週 (Jun 10): 即時 Linux 的基礎建設
     * 公告
         - 佔學期總成績 50% 的自我評量，請在 6 月 24 日前完成。範例: [User/OscarShiang](http://wiki.csie.ncku.edu.tw/User/OscarShiang)
         - 自我評量的網址**必須**符合 `/User/你的GitHub帳號名稱` 格式 (區分大小寫)，請不要打錯字
@@ -392,9 +392,6 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [PREEMPT_RT 作為邁向硬即時作業系統的機制](https://hackmd.io/@sysprog/preempt-rt)
     * [Linux 核心搶佔](https://hackmd.io/@sysprog/linux-preempt)
     * [Towards PREEMPT_RT for the Full Task Isolation](https://ossna2022.sched.com/event/11NtQ)
-    * Memory Barrier
-        - [Memory Barriers in the Linux Kernel: Semantics and Practices](https://elinux.org/images/a/ab/Bueso.pdf)
-        - [From Weak to Weedy: Effective Use of Memory Barriers in the ARM Linux Kernel](https://elinux.org/images/7/73/Deacon-weak-to-weedy.pdf) / [video](https://youtu.be/6ORn6_35kKo)`*`
 
 * 第 18 週 (Jun 12, 13, 14): 即時 Linux 的基礎建設 + 多核處理器 + Rust
     * 公告
