@@ -397,6 +397,10 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - [From Weak to Weedy: Effective Use of Memory Barriers in the ARM Linux Kernel](https://elinux.org/images/7/73/Deacon-weak-to-weedy.pdf) / [video](https://youtu.be/6ORn6_35kKo)`*`
 
 * 第 18 週 (Jun 12, 13, 14): 即時 Linux 的基礎建設 + 多核處理器 + Rust
+    * 公告
+        - 6 月 13 日下午是本學期最後一次實體課程，以討論期末專題為主，歡迎大家出席，授課教師請喝飲料
+        - 及早進行[期末專題](https://hackmd.io/@sysprog/linux2023-projects)
+        - 準備自我評量 (佔學期總分的 50%)
     * [Linux 核心搶佔](https://hackmd.io/@sysprog/linux-preempt)
     * [Towards PREEMPT_RT for the Full Task Isolation](https://ossna2022.sched.com/event/11NtQ)
     * [Customize Real-Time Linux for Rocket Flight Control System](https://osseu19.sched.com/event/TLNR)
