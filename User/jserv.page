@@ -70,6 +70,7 @@ categories: User
 * [jitboy](https://github.com/sysprog21/jitboy): 針對 [Game Boy](https://en.wikipedia.org/wiki/Game_Boy) 掌上遊戲機和內建 GBZ80 處理器發展的 JIT 編譯器，可動態將 GBZ80 指令轉換為 x86-64 指令
 * [rv32emu](https://github.com/sysprog21/rv32emu): 針對 32 位元 [RISC-V](https://riscv.org/) 處理器架構發展的指令集模擬器，支援多項延展指令
 * [semu](https://github.com/jserv/semu): 極精簡的 RISC-V 64 位元指令集和硬體系統模擬器，可執行 Linux 核心和相關的套件。原始程式碼不到二千行
+* [kvm-host](https://github.com/sysprog21/kvm-host): 利用 Linux 核心的 KVM，建構精簡的系統模擬器，得以在運作另一個 Linux guest，支援 x86-64 和 Arm64 微處理器架構
 * [pitifulvm](https://github.com/sysprog21/pitifulvm): 高度簡化的 Java 虛擬機器實作
 
 編撰的電子書
