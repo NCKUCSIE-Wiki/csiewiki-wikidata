@@ -417,6 +417,8 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
         - Steve Klabnik 與 Carol Nichols，及 Rust 社群的協同撰寫的《The Rust Programming Language》線上書籍，由台灣的 Rust 社群提供[繁體中文翻譯](https://rust-lang.tw/book-tw/)
         - [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
         - [C vs. Rust](http://www-verimag.imag.fr/~mounier/Enseignement/Software_Security/19RustVsC.pdf)
+        - [Unsigned Integers Are Dangerous](https://jacobegner.blogspot.com/2019/11/unsigned-integers-are-dangerous.html)
+        - [constant vs. immutable](https://hackmd.io/@jserv/By5307tsV)
     * [KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm)
         - [Arm64 移植](https://hackmd.io/@sysprog/rkro_FeSh)
         - [RISC-V 系統模擬器，支援 VirtIO](https://hackmd.io/@sysprog/Skuw3dJB3)
