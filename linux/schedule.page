@@ -418,3 +418,5 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
         - [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
         - [C vs. Rust](http://www-verimag.imag.fr/~mounier/Enseignement/Software_Security/19RustVsC.pdf)
     * [KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm)
+        - [Arm64 移植](https://hackmd.io/@sysprog/rkro_FeSh)
+        - [RISC-V 系統模擬器，支援 VirtIO](https://hackmd.io/@sysprog/Skuw3dJB3)
