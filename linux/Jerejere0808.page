@@ -44,6 +44,7 @@ categories: User
 
 1. git commit 寫的很爛，沒有包含足夠資訊。應該要包含做了什麼改變，為何要改變，如何改變和隱憂等等。
 2. 問了 coroutine 問題，理解到 setjmp/longjump 是 non-local goto，以及程式執行時須考量到 stack 問題，而不是想要跳到哪行執行就跳過去。
+
 ### (5/6) 11:00 am
 1. git commit 沒有包含隱憂，什麼情況下系統會有錯誤，kmalloc 的限制 (heap) 取決於 virtual memory management (VMM): CS:APP 第 9 章。
 2. 聯發科實習可能會用到 IRQ 觀念
