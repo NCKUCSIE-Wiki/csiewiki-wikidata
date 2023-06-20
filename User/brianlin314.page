@@ -1,0 +1,38 @@
+---
+title: brianlin314
+categories: User
+...
+
+# 簡介
+* 國立嘉義大學 資訊工程系 107 級 (2018 ~ 2022)
+* 國立成功大學 資訊工程所 111 級 (2022 ~ present)
+
+* GitHub: [`brianlin314`](https://github.com/brianlin314)
+* HackMD: [`Brianlin314`](https://hackmd.io/@Brianlin314)
+
+# 2023 Linux 核心設計 秋季班 自我評量
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/brianlin314/lab0-c) / [HackMD](https://hackmd.io/@Brianlin314/lab0-2023)
+* fibdrv: [GitHub](https://github.com/brianlin314/fibdrv) / [HackMD](https://hackmd.io/@Brianlin314/fibdrv-2023)
+
+
+
+## 測驗共筆
+
+* quiz1: [HackMD](https://hackmd.io/@Brianlin314/quiz1-2023)
+* quiz2: [HackMD](https://hackmd.io/@Brianlin314/quiz2-2023)
+* quiz5: [HackMD](https://hackmd.io/@Brianlin314/quiz5-2023)
+
+## 期末專題
+
+* [`simrupt`](https://hackmd.io/@sysprog/HJXlHtlB2)
+
+## 修課心得
+第一堂課，老師就要求我們必須要"誠實面對自己"，不要慣性"說謊"或"不懂裝懂"，在一對一面談時，老師不會責備你這個不會那個也不會，而是請你缺甚麼補甚麼，簡單的問題，也會為你解惑，所以修這門課的難易度，完全取決於你自己給自己設定的高度。
+
+這門課涵蓋的範圍非常廣，從作業系統議題到 C 再到 linux kernel 等，所有講座的知識要全部吸收，需要投入非常多心力。印象深刻的是在指標篇中的 pointer to pointer，花了不少時間才領悟；每週的小考也讓我練習在短時間內看懂大部分的程式碼，並作答；期末專題我進行的是 simrupt，藉此機會我也理解在 linux kernel 中 interrupt 的運作方式，與 irq、tasklet、workqueue 等機制；在《Demystifying the Linux CPU Scheduler》這本書中，也可以清楚地了解到 linux kernel 中的各項機制，雖然我只看了前兩章，但是我會找時間把他讀完。總而言之，linux 核心實作是我進入成大以來，最有挑戰性也最有深度的一門課，我也不排除未來再修一次。
+
+
+## 自我評量 (1 ~ 10)
+我給自己 8 分。雖然不是每個講座都有全心全意地投入，但還是盡可能地花時間在 linux 核心，但我覺得自己的時間管理需要加強，常常會拖延，導致最後積了一堆課程或作業還沒學習，最後就只能匆匆忙忙閱讀完，但總體而言，我還是在這門課學到非常多寶貴的知識，扣的兩分分別是時間安排與作業完成度。
