@@ -1,0 +1,40 @@
+---
+title: a1091150（楊敦富）
+categories: User
+...
+
+撰寫日期：2023/06/20
+
+# 簡介
+* 元智大學 103 級資訊工程學系(2014 ~ 2019)
+* 中興大學 111 級資訊工程研究所(2022 ~ 2024)
+* GitHub [`a1091150`](https://github.com/a1091150)
+* HackMD [`DokiDokiPB`](https://hackmd.io/@DokiDokiPB)
+
+## 作業與測驗共筆
+- [lab0](https://hackmd.io/@DokiDokiPB/2023-lab0) / [Github](https://github.com/a1091150/lab0-c_2023)
+- [開發紀錄 (quiz1)](https://hackmd.io/@DokiDokiPB/linux_2023q1)
+- [開發紀錄 (quiz2)](https://hackmd.io/@DokiDokiPB/2023q1_week2)
+- [開發紀錄 (quiz4)](https://hackmd.io/@DokiDokiPB/linux2023q1-quiz4)
+- [開發紀錄 (quiz5)](https://hackmd.io/@DokiDokiPB/linux2023q1-quiz5) / [GitHub-1](https://github.com/a1091150/2023q1_Homework6_quiz5), [GitHub-2](https://github.com/a1091150/2023q1_Homework6_quiz5_problem2)
+
+## 期末專題
+- [Linux 核心專題: TLSF 實作](https://hackmd.io/@sysprog/Hy5kBl5Hh)
+
+## 修課心得
+
+原本在 2020 年有嘗試修 Linux 核心設計，當時諸多原因，在修課至第五週時候放棄。2023 年利用大學研究所的畢業規定承認成功大學電資學院學分，透過校際選修跨校選修 Linux 核心實作，跨校選課要付學分費，所以沒有放棄的選項。前期因為這個原因堅持到第六週以後。
+
+在一對一面談中，被教授指出在 `lab0` 上 git comment 上撰寫有瑕疵，並重新查看內容。當下順口說出自己有閱讀 How to write a good commit 實則認識不深，被教授看出。
+在說紅黑樹的內容缺乏完整的說明，口語表達上奇怪的停頓，是一種笨拙的表現，被教授要求導正。
+
+在第五週 quiz 5 作業，額外撰寫記憶體配置器，並移植 `lab-0` 中的 Linux 風格的 `list.h` 檔案，當時沒有人特別針對額外的作業要求移植，只是自己一時興趣移植，以方便了解程式碼作用。結果被其他同學用於對方的期末專題，在觀摩別人的期末專題內容的時候很意外很驚喜。
+
+Rust 在寒假前耳聞會大量使用於系統軟體開發上，在寒假前有花時間練習，目標以 Rust 改寫新酷音輸入法與 Ptt BBS。在期末專題 TLSF 記憶體配置器上，教授的額外參考教材中還能看見以 Rust 撰寫的 TLSF -- RLSF。最近剛好找 Rust 專案學習 Rust 有點迷航，有個專案可以了解。
+
+Linux 核心實作在一開始會有 207 人觀看直播，到了期末最後一週，剩下 22 人觀看直播。課程上設計都是針對自己依照自己學習路徑去學習，在第六週的時候，教授講解在課程學習上依據自己的學習狀況調整。我第一次不適應這樣方式學習就放棄，第二次直到第六週才想通，同時時間管理比之前好一點，才可以自訂學習時間去學習。就如教授說的就是花時間練習，沒有特殊的法門。
+
+## 自我評量
+10 分！
+
+因為有獎學金需求。
