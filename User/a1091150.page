@@ -11,6 +11,10 @@ categories: User
 * GitHub [`a1091150`](https://github.com/a1091150)
 * HackMD [`DokiDokiPB`](https://hackmd.io/@DokiDokiPB)
 
+## 成果發表
+- Demystifying the Linux CPU Scheduler：修正第 6.5.2 的超連結 `trace_event.h`
+- 修正追蹤表單
+
 ## 作業與測驗共筆
 - [lab0](https://hackmd.io/@DokiDokiPB/2023-lab0) / [Github](https://github.com/a1091150/lab0-c_2023)
 - [開發紀錄 (quiz1)](https://hackmd.io/@DokiDokiPB/linux_2023q1)
@@ -20,8 +24,9 @@ categories: User
 
 ## 期末專題
 - [Linux 核心專題: TLSF 實作](https://hackmd.io/@sysprog/Hy5kBl5Hh)
+- 一對一討論時間：2023/05/04 早上十點
 
-## 修課心得
+## 修課心得與所見所聞
 
 原本在 2020 年有嘗試修 Linux 核心設計，當時諸多原因，在修課至第五週時候放棄。2023 年利用大學研究所的畢業規定承認成功大學電資學院學分，透過校際選修跨校選修 Linux 核心實作，跨校選課要付學分費，所以沒有放棄的選項。前期因為這個原因堅持到第六週以後。
 
