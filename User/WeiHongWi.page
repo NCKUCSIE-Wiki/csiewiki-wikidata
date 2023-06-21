@@ -1,0 +1,46 @@
+---
+title: WeiHongWi (孫宏瑋)
+categories: User
+...
+
+簡介
+====
+- 成功大學 人工智慧所 112級
+
+聯絡資訊
+========
+
+- Email: ``arty963552@gmail.com``
+- Github: ``https://github.com/WeiHongWi``
+
+# 2023 Linux 核心設計 春季班 自我評量
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/WeiHongWi/lab0-c) / [HackMD](https://hackmd.io/@Hongweii/lab0c)
+* fibdrv: [GitHub](https://github.com/WeiHongWi/fibdrv) / [HackMD](https://hackmd.io/@Hongweii/2023q1-fibdrv)
+
+## 測驗共筆
+
+* quiz2: [HackMD](https://hackmd.io/@Hongweii/quiz2)
+* quiz3: [HackMD](https://hackmd.io/@Hongweii/2023q1-quiz3)
+
+
+
+## 期末專題
+
+* 並行程式設計 (quiz9 和 quiz12): [HackMD](https://hackmd.io/@sysprog/H1L_mbhrh)
+
+## 修課心得
+修這堂課的原因是想要打好自己的基礎,在閱讀教材,你所不知道的c語言,和教科書 <Computer System : A Programmer Perspective> 時都能看清自己知識上面的不足,再經由不期初不停的小考跟作業,讓自己對 c 語言有了更深程度的了解
+
+在閱讀<因為自動飲料機而延畢的那一年>時,作者一步步接近他們所要的目的,休學的掙扎,材料購買,需要克服的物理因素等等,都能夠讓我看到人士如何去解決問題的.
+
+在期末專題,因為家中有事,所以不能投入其中,這點反應在我的自我評量.
+
+## 自我評量 (1 ~ 10)
+
+我給自己 7 分
+
+因為我在期初盡量跟上課程,學會完全沒寫過的 c 語言基礎,在這基礎之上也有跟上教材的進度,且有完成小部分的 lab0c 和大部分的 fibdrv,並觀看別人的作業來知道自己的不足,學到如何去分析問題,也學會如何用 perf 等工具來量測效能 ,也漸漸能夠快速地閱讀程式碼
+
+
