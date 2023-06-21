@@ -1,0 +1,54 @@
+---
+title: Jerejere0808 (黃湙珵)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 電機工程所 113 級 (2022 ~ 2024)
+* GitHub: [`Jerejere0808`](https://github.com/Jerejere0808)
+
+
+
+# 2023 Linux 核心設計  自我評量
+
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/Jerejere0808/lab0-c) / [HackMD](https://hackmd.io/@Jerejere0808/2023-lab0)
+* fibdrv: [GitHub](https://github.com/Jerejere0808/fibdrv) / [HackMD](https://hackmd.io/@Jerejere0808/linux2023-fibdrv)
+* khttpd: [GitHub](https://github.com/Jerejere0808/khttpd) / [HackMD](https://hackmd.io/@Jerejere0808/linux2023q1-ktcp)
+
+## 測驗共筆
+
+* quiz1: [HackMD](https://hackmd.io/Fb_-zLB0S_K7JGpdiOBLMQ)
+* quiz2: [HackMD](https://hackmd.io/@Jerejere0808/linux2023_quiz2)
+* quiz3: [HackMD](https://hackmd.io/@Jerejere0808/linux2023-quiz3)
+* quiz5: [HackMD](https://hackmd.io/@Jerejere0808/linux2023-quiz3)
+* quiz6: [HackMD](https://hackmd.io/@Jerejere0808/2023q1_Homework5_quiz6)
+
+## 期末專題
+
+* 改進kHTTPd: [HackMD](https://hackmd.io/@sysprog/HkzcnhOHn)
+
+## 修課心得
+
+這門課包含的內容我覺得實在是非常的多，而且都相當有深度。光是一開始的 linked list 就跟我之前學的不一樣，多了許多涉及記憶體相關的操作，像是 container_of 等等以及透過 XOR 就能達成 doubly linked list 之 prev & next 效果的 XOR linked list。之後的排序和紅黑樹實在是我整個學期學的最頭痛的部分，在排序上為了達到更好的效能和快取友善，連之前自認為最熟悉的 merge sort 都可以讓我花飛成多的時間在思考和 debug，因為要使用到許多操作都有關於指標和指標的指標，其中還可能要考量到 Linux  Torvalds 說的 「有品味」的程式碼。紅黑樹的部分到現在我還是覺得難以理解，雖然看完說明文章會知道如何操作，但是關於為什麼這樣操作就可以維持平衡了一直想不透。所以好幾次小考都是想不出來的狀態，更別說要改進現有程式碼來減少記憶體用量了，所以這邊我還需再加強。之後進到 Linux 的部分，透過 fibdrv 第一次寫可以跑在 kernel 的程式，以及研究了一些效能的問題，學會基本的 perf 用法等等也了解到 linux 物件導向和萬物皆檔案的概念。也看了一小部分的 《Linux Kernel Module Programming Guide》 了解 driver 的基本原理像是 character driver 和 block driver 差異等等。之後就開始有關於 cpu 排班和網路相關的議題，也了解了 socket 和 I/O multiplexing 的觀念，這部分是我覺得最有趣的部分，了解這些觀念後在不改變硬體的條件下可以讓 server 吞吐量相差十萬八千里。最後一次作業和期末都是做 khttpd 的部分，利用 CMWQ 改進資源的利用並增加吞吐量，並實作 content cache 和 http 壓縮，這裡就用到之前學的 RCU 和 linked list，且壓縮的部分也是要有相對應的 driver 才行。
+
+另外這堂課也學了一些工作的使用，像是 GDB 和 ftrace 等等，還有 github 的一些檢查功能。這堂課雖然說是 Linux 核心設計，但老師也非常強調資訊的基礎素養，比如 git commit 有沒有好好寫和程式碼要想好再寫而不是塗塗改改等等，另外也學到一個重要觀念就是不要「舉燭」，也就是不要一行行猜測程式碼，較好的學習方式是動手做或用工具去測試，自己寫一個精簡又正確的小程式比把整包程式丟去給 Chat GPT 解釋還能學到東西。
+
+## 一對一討論
+
+### (3/30) 10:30 am
+
+1. git commit 寫的很爛，沒有包含足夠資訊。應該要包含做了什麼改變，為何要改變，如何改變和隱憂等等。
+2. 問了 coroutine 問題，理解到 setjmp/longjump 是 non-local goto，以及程式執行時須考量到 stack 問題，而不是想要跳到哪行執行就跳過去。
+
+### (5/6) 11:00 am
+1. git commit 沒有包含隱憂，什麼情況下系統會有錯誤，kmalloc 的限制 (heap) 取決於 virtual memory management (VMM): CS:APP 第 9 章。
+2. 聯發科實習可能會用到 IRQ 觀念
+3. 期末專題指派
+
+## 自我評量 (1 ~ 10)
+
+我給自己 9 分
+
+這學期投入在這門課的時間非常多，學到的東西相較其他課多蠻多的(在上面的修課心得)，只是跟這堂課的內容比起來就像冰山一角，甚至連一角都不到，不過自認為算認真，查資料加上寫程式時間真的很多，電腦都因為有BUG開關機了幾十次了，另外因為之後也會找軟韌體相關的工作機會，這門課不管是內容上還是修課成績都是至關重要，所以我希望能有個不錯的分數，所以我給自己 9 分。
