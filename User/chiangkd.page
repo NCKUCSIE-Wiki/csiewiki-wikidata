@@ -1,0 +1,39 @@
+---
+title: chiangkd (江坤諦)
+categories: User
+...
+
+# 簡介
+* 國立中央大學 機械工程學系 110 級 (2017-2021)
+* 國立成功大學 機械工程研究所 (2021 ~)
+* GitHub: [`chiangkd`](https://github.com/chiangkd)
+
+# 2023 Linux 核心實作 春季班 自我評量
+## 作業
+* lab0-c: [Hackmd](https://hackmd.io/@chiangkd/2023spring-lab0-c)/[Github](https://github.com/chiangkd/lab0-c)
+* fibdrv: [Hackmd](https://hackmd.io/@chiangkd/2023spring-fibdrv)/[Github](https://github.com/chiangkd/fibdrv)
+
+## 隨堂測驗
+
+* quiz1: [Hackmd](https://hackmd.io/@chiangkd/2023quiz1)/[Github](https://github.com/chiangkd/NCKU-Linux-Kernel-Quiz/tree/master/2023/quiz1)
+* quiz2: [Hackmd](https://hackmd.io/@chiangkd/2023quiz2)/[Github](https://github.com/chiangkd/NCKU-Linux-Kernel-Quiz/tree/master/2023/quiz2)
+* quiz3: [Hackmd](https://hackmd.io/@chiangkd/2023quiz3)/[Github](https://github.com/chiangkd/NCKU-Linux-Kernel-Quiz/tree/master/2023/quiz3)
+* quiz4: [Hackmd](https://hackmd.io/@chiangkd/2023quiz4)/[Github](https://github.com/chiangkd/NCKU-Linux-Kernel-Quiz/tree/master/2023/quiz4)
+
+## 1 對 1 討論時間
+### 2023年3月29日 (週三) 下午9點 - 下午9:30
+1. commit message 寫的很差，例如在實作 fast doubling 後應該 commit message 提及其效益
+2. `__copy_to_user` 執行時間並不是嚴格的線性關係 (cache miss, page fault)
+3. (fibdrv)嘗試使用 hash table 保存已計算過得 Fibonacci 數
+4. 問了關於為何不該在虛擬機器進行實驗的問題，`perf` 會去呼叫 PMU (共用硬體下的時間量測沒有參考價值)，在效能分析中的間接記憶體存取 (type-2 hypervisor) 會大幅影響效能只是其中一個問題
+
+### 2023年5月5日 (週五) 下午10點 - 下午10:30
+1. commit message 還是很差，善用 `git rebase` 進行修正並詳閱 [How to Write a Git Commit Message](https://cbea.ms/git-commit/)
+2. 期末專題指派 (rhashtable)
+
+## 期末專題
+* rhashtable 研究和應用: [Hackmd](https://hackmd.io/@sysprog/HkKKE5eB3)/[Github](https://github.com/chiangkd/rcuhashbash)
+
+### 所見所聞所感
+
+### 自我評量
