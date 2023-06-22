@@ -22,18 +22,24 @@ categories: User
 ## 作業共筆
 
 * lab0-c: [GitHub](https://github.com/SPFishcool/lab0-c) / [HackMD](https://hackmd.io/@SPFishcool/r1r4u_26j)
-
-
+* fibdrv: [GitHub](https://github.com/SPFishcool/fibdrv) / [HackMD](https://hackmd.io/@SPFishcool/SJkBIZIkh)
 
 ## 測驗共筆
 
-* quiz1: [GitHub]() / [HackMD]()
+* quiz1: [HackMD](https://hackmd.io/@SPFishcool/ByORWY8Rj)
+* quiz2: [GitHub](https://github.com/SPFishcool/quiz2) / [HackMD](https://hackmd.io/@SPFishcool/BJMMCU2Rj)
+* quiz6: [HackMD](https://hackmd.io/@SPFishcool/SJIJ2I-m3)
 
 
 ## 期末專題
 
-* #專題#: [HackMD](專題_url)
+* 改進高效網頁伺服器: [HackMD](https://hackmd.io/@sysprog/HJgX4_MH3)
 
 ## 修課心得
 
+在剛入學就有耳聞這堂課的精實與難度，但當時自己卻太有自信覺得可以挑戰看看，不過也因為這份自信讓我開了眼界，自己也只不過是這個領域的平凡人，有很多人在為這個領域默默的付出，而自己在面對這些知識如同螻蟻一般，這些由前人打造的基礎並不是我所能掌握的，即使如此我還是想吸收這些知識並作出貢獻，雖然到學期結束我也才掌握了 linux 作業系統的冰山一角，但我也在這一堂課對這個領域做出了微小的貢獻，這是我所沒有想到的，也非常感謝老師的鞭策與同學的指教，使我有些許的成長。
+
 ## 自我評量 (1 ~ 10)
+
+我給自己 8 分，
+在課程的前六週「你所不知道的 C 語言」講座，讓我對 C 語言的認知更上一層，並且在專題上除了認識高效網頁伺服器的運作原理，也認識到一些 C 語言程式技巧，也親手實做了 lwan 伺服器的「零件」，我覺得我的能力有一定的提升，但還是有很高的進步空間。
