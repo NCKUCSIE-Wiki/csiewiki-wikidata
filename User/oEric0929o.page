@@ -28,8 +28,11 @@ categories: User
 * 重做 lab0 並彙整學員成果: [HackMD](https://hackmd.io/@sysprog/SJ8ZkFxSh)
 
 一對一討論: 2023年5月12日 20:00 - 20:30
+
 1. 在原先的 lab0 中排序使用到遞迴導致效率不好，可以經由使用 Linux list_sort 來改進， Linux list_sort 使用 Bottom-up mergesort ，不需要用到遞迴
+
 2. quick sort 與 merge sort 的比較: 前者為 non-stable sorting ，後者為 stable sorting ，後者在 worst case 及多數情況都比前者有效率，但需要較多額外儲存空間
+
 3. stable sorting 與 non-stable sorting 的比較: stable sorting 在排序後相同鍵值資料的相對位置與排序前相同，而 non-stable sorting 則不保證
 
 ## 所見所聞所感
