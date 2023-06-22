@@ -8,14 +8,16 @@ categories: User
 
 - Email：siwon0619@gmail.com
 - Github: [`irenesu2000`](https://github.com/irenesu2000)
-- hackMD: [`siwon0619`](https://hackmd.io/@siwon0619)
+- HackMD: [`siwon0619`](https://hackmd.io/@siwon0619)
 
 # 2023 Linux 核心設計春季班 自我評量
 ## 作業共筆
-* lab0-c: [GitHub] / [HackMD]
-* fibdrv: [GitHub] / [HackMD]
-* khttpd: [[GitHub] / [HackMD]
+* lab0-c: [GitHub](https://github.com/irenesu2000/lab0-c) / [HackMD](https://hackmd.io/@siwon0619/Hk4rGxzCs)
+* fibdrv: [GitHub](https://github.com/irenesu2000/fibdrv) / [HackMD](https://hackmd.io/@siwon0619/SkMncPZe2)
+
 ## 測驗共筆
+* quiz2:[HackMD](https://hackmd.io/@siwon0619/S1wIeMNJn)
+
 ## 期末專題
 - final project: Linux 排程器研究 [hackmd](https://hackmd.io/@sysprog/rklkuZ2rh)
 
