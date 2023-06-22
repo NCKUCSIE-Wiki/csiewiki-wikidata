@@ -1,0 +1,118 @@
+# 期末自評
+
+---
+
+title: WangHanChi (王漢祺)
+
+categories: User
+
+## 簡介
+- 國立中央大學 機械工程學系 111 級 (2018 ~ 2022)
+- 國立成功大學 機械所 (2022 ~)
+
+- GitHub: [`WangHanChi`](https://github.com/WangHanChi)
+- HackMD: [`wanghanchi`](https://hackmd.io/@wanghanchi)
+
+
+---
+
+## 相關貢獻
+
+- isoalloc 
+    - [Add option for naming pages in Linux 5.17 #194](https://github.com/struct/isoalloc/pull/194)
+- mimalloc-bench
+    - [Fix the mismatch version of rocksdb in build.sh #187](https://github.com/daanx/mimalloc-bench/pull/187)
+
+
+
+---
+
+## 作業共筆
+
+- lab0-C : 
+    - [Github](https://github.com/WangHanChi/lab0-c)
+    - [HackMD](https://hackmd.io/@wanghanchi/linux2023-lab0)
+- fibdrv : 
+    - [Github](https://github.com/WangHanChi/fibdrv)
+    - [HackMD](https://hackmd.io/@wanghanchi/linux2023-fibdrv)
+- ktcp (只有寫 kecho) : 
+    - [Github](https://github.com/WangHanChi/kecho)
+    - [HackMD](https://hackmd.io/@wanghanchi/linux2023-ktcp)
+
+---
+
+## 測驗共筆
+
+- quiz 1 :
+    - [HackMd](https://hackmd.io/@wanghanchi/linux2023-quiz1)
+- quiz 2 :
+    - [HackMd](https://hackmd.io/@wanghanchi/linux2023-quiz2)
+- quiz 3 :
+    - [HackMd](https://hackmd.io/@wanghanchi/linux2023-quiz3)
+- quiz 4 :
+    - [HackMd](https://hackmd.io/@wanghanchi/linux2023-quiz4)
+- quiz 5 :
+    - [HackMd](https://hackmd.io/@wanghanchi/linux2023-quiz5)
+
+---
+
+## 期末專題
+
+- rbtmalloc :
+    - [開發紀錄](https://hackmd.io/@wanghanchi/linux2023-rbtmalloc)
+- Linux 核心專題: 實作高效記憶體配置器
+    - [HackMD](https://xn--hackmd-hb5e.io/22BcyuTTSJmkl3KqCtChFg)
+
+- 一對一討論
+    - 2023/03/31 (五) 20:00 ~ 21:00
+        1. git commit 要言之有物
+        2. 誠實面對自己，不要瞎忙
+        3. 實際動手去做，避免舉燭
+    - 2023/05/05 (五) 21:00 ~ 21:30
+        1. 針對 rbtmalloc 的改進
+        2. 學習 CSAPP 第九章
+        3. 學習別的記憶體配置器
+        4. 了解 linux 中的 虛擬記憶體
+    - 2023/05/21 (日) 20:00 ~ 20:30
+        1. mmap 與 overcommit 問題
+        2. run mimalloc-bench 並且解決遇到的問題
+        3. 閱讀老師的教材學習 NUMA 架構 與 SMP
+    - 2023/06/09 (六) 20:30 ~ 21:00
+        1. 使用 ARM64 主機做測試
+        2. 為自己所要改進的地方設計情境
+        3. 記憶體配置器並不是越快越好
+
+在做期末專題的時候，接觸到了平常最常用但卻沒有深入瞭解的記憶體配置器。在觀看了幾個有名的記憶體配置器後，發現每個都有不一樣的特點也有不同的取捨。 在進行實作的時候，會發現自己能力的不足，看了好久的程式碼卻遲遲找不到可以下手改進的地方，或是動了程式碼造成 segmentation fault 以及反向優化 : )。
+
+同時，也發現不同的架構真的造成很多影響，原本修改過後的程式碼，在 X86-64 的架構移植到 ARM64 後，改進的結果就變小; 程式碼也不是越多核心/執行緒就跑得越快，反而會因為相互競爭而讓性能下降。
+
+總而言之，這個專題讓我學到很多，包括了虛擬記憶體, mmap 以及 lock free 等等的相關知識。在移植到 ARM64 架構的時候，也複習了一下 docker 以及 ssh 。 
+
+
+
+---
+
+## 所聞所見所感
+
+
+在學期初的一開始看到 `你所不知道的Ｃ語言系列講座` 的時候，想說怎麼會有這麼多有內容又有系統的的文章，接著又看到了包括 `< LKMPG >` 以及 `< Demystifying the Linux CPU Scheduler >` 這兩本老師所寫的書，想說這個老師是不是一天有 48 個小時還是不用睡覺，怎麼可以一邊開課一邊產出。也正因為有老師寫的這兩本書，讓我這個  C 語言新手可以在短短的時間內了解並且動手認知這些核心模組及核心機制，這是我在大學時期根本就無法想像的。
+
+在修這堂課的時候，明顯感受到了這堂課比起上學期的計算機結構要硬了許多，並且發現了我原本有很多基礎根本就沒有打好，以及學習上的心態缺陷。也謝謝老師在一對一面談的時候有真實地指出我的問題，讓我可以誠實的面對自己。
+
+在閱讀 `< 因為自動飲料機而延畢的那一年 >` 這篇文章的時候其實很有感，因為我就是讀機械系結果很多機械相關的知識都沒有學好的人，文中有提到「機械系的學生不會設計機構，控制系統，而資工系的學生不會寫程式」
+我在大學時期其實很迷茫，覺得學的內容很無聊，也不知道學了這些可以在未來做什麼職業。直到大三下做了專題，內容有碰到 linux 以及軟體才開始覺得自己的興趣似乎在這邊，但是當時的我並沒有多想想自己的研究所與未來工作，而是隨波逐流，跟著身邊的同學在推甄的時候同樣的選擇了機械所，現在回過頭來想想發現自己是真的傻。
+
+回顧整學期，內容是相當的充實，從最一開始的 linux 風格的鏈結串列、`container_of` 到期末的 `SMT` 、 `KVM` 各各都是相當有份量且富含知識的。礙於我個人能力有限，這學期的課程到最後一兩個月就已經無法跟上了，但是就算如此，還是覺得自己學到了很多，真的覺得這堂課可以一修再修，每次修的心得一定都會更有感。希望明年的自己不會被指導教授搞，讓我可以再修一次 kernel 。
+
+最後謝謝老師這麼辛勞的開課！
+
+---
+
+## 自我評分
+
+我給自己 8 分
+
+在這學期中，我感受到我自己真的有成長，雖然可能對於其他同學我還是一個菜雞，但是相比於 2 月的我，甚至是一年前的我，都有著明顯的進步。並且我也覺得透過了老師的這堂課，讓我更了解我自己，知道自己在學習上問題，並且能夠及時的改進，比較不會舉燭或是囫圇吞棗。同時，也開拓了自己的視野，知道在這個行業是人外有人、天外有天的，讓我知道，如果我要加入這個行業混口飯吃的話，是需要加倍的努力！
+
+
+---
