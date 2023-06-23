@@ -6,10 +6,32 @@ categories: User
 # 簡介
 * 國立成功大學 資訊工程學系 113 級
 
-* Github:
-* Hackmd:
+* Github: [`GaberPlaysGame`](https://github.com/GaberPlaysGame)
+* Hackmd: [`GaberPlaysGame`](https://hackmd.io/@GaberPlaysGame)
 
-# 作業
-* lab0-c
-* fibdrv
-* 
+# 2023 Linux 核心設計 春季班 自我評量
+## 期末專題
+* hungry-birds | [`Hackmd`](https://hackmd.io/@sysprog/S1kFNL6L3) | [`Github`](https://github.com/GaberPlaysGame/hungry-birds)
+
+## 作業
+* lab0-c | [`Hackmd`](https://hackmd.io/@GaberPlaysGame/linux2023-lab0) | [`Github`](https://github.com/GaberPlaysGame/lab0-c)
+* fibdrv | [`Hackmd`](https://hackmd.io/@GaberPlaysGame/ByXuERt1h) | [`Github`](https://github.com/GaberPlaysGame/fibdrv)
+
+## 測驗與 Assessment
+* [`quiz2`](https://hackmd.io/@GaberPlaysGame/BkEiaOl1n)
+* [`quiz4`](https://hackmd.io/@GaberPlaysGame/linux2023-quiz4)
+* [`assessment`](https://hackmd.io/@GaberPlaysGame/assessment)
+
+## 修課心得
+自己原本是與同學一起來上課的，在上課前本身就有聽過這堂課是實屬硬核，但我很喜歡老師的上課方式與教學熱忱，使我這個沒有怎麼碰過 Linux 設計的人都對其充滿興趣。雖然如此，但因為課程中間被專題長期壓榨，我逐漸抽不出空來去理解上課的內容，雖然每次上課都有參加，但我當時還是有點快要撐不下去。在與老師討論過我很感謝老師對我的寬容，也想說就算中間過程不順，還是一定要走到最後，這樣才不會浪費這幾個月投入的時間與經驗。
+
+這堂課與其說是只有開一學期的 Linux 核心設計課程，但我認為它不僅是資工系課程的集大成以外，就算課程結束它也還是我們資工人所要學習的必修課之一。它可以說是鞏固了大學前兩年我們所修的課程以外，反而將我們帶得更深入，逐步去理解科技脈絡以及程式碼設計背後的考量，雖然它看來是需要相當付出的一堂課，但只要撐過了可以說是物超所值。
+
+## 自我評量 (1~10)
+我最後給自己7分。
+
+雖然中途被專題給拐走無法專注在 Linux 上，但作為一個 Linux 的初學者，我在這堂課認識到了許多我從沒有聽說過的概念或者工具，甚至未來可能對於以後深入研究的領域有所幫助，我認為對我收穫非常巨大，也很開心自己有認真去研究探索。
+
+自己稍微有點遺憾的是本身我對於 Linux 的設計與工具不太熟悉，編寫程式時常常會卡在不能理解或無法排錯的情況，導致我對於自己關於 Atomic Lock Free 程式的期末專題沒有到非常滿意。但我很感激我自己有堅持用功到最後。
+
+儘管開頭不順，但這就只是開頭而已。就像老師所說的，起步永遠不嫌晚。
