@@ -1,0 +1,31 @@
+---
+title: Tonr01 (鄭旻軒)
+categories: User
+...
+
+# 簡介
+* 私立逢甲大學 資訊工程學系 (2017 ~ 2021)
+* 國立成功大學資訊工程所 (2022~)
+* github: [Tonr01](https://github.com/Tonr01)
+* HackMD: [Tonr01](https://hackmd.io/@Tonr01)
+
+# 作業
+* [lab0](https://hackmd.io/@Tonr01/2023q1-Homework1-lab0)
+* [fibdrv](https://hackmd.io/@Tonr01/2023q1-Homework3-fibdrv)
+
+# 隨堂測驗
+* [quiz1](https://hackmd.io/@Tonr01/linux2023q1-quiz1)
+* [quiz2](https://hackmd.io/@Tonr01/linux2023q1-quiz2)
+* [quiz3](https://hackmd.io/@Tonr01/linux2023q1-quiz3)
+* [quiz4](https://hackmd.io/@Tonr01/linux2023q1-quiz4)
+* [quiz5](https://hackmd.io/@Tonr01/linux2023q1-quiz5)
+
+# 期末專題
+* [Skip List 及核心應用場景](https://hackmd.io/@sysprog/SJ6drDgB2)
+* [與老師一對一問答5/17(三)](https://hackmd.io/@Tonr01/linux2023q1-1on1QA)
+
+# 所見所聞所感
+休習這門課的初衷是為了增進自己的程式能力與認識 Linux，也深刻體會到自己的不足，謝謝老師提供這麼好的資源，可以去見識其他同學的實作，也學到很多之前沒有考慮的議題跟方法，一開始因為疫情開學落後了一週，加緊讀才勉強趕上進度，在當中也學到了很多技巧，不管是寫程式上，還是效能評比上，也學到很多好用的工具，像是用 perf 來觀察程式的效能，用 valgrind 來分析記憶體問題，用 gnuplot 將分析後的資料視覺化，還有如何操作 git 跟寫 git commit，雖然目前還不熟練，但相較修課前的自己進步了蠻多的，雖然期中、期末時因為其他課業繁重，有暫時停下來，期末專題有部份也尚未完成，但大部分都是盡力而為，再來暑假會將剩下沒看完的教材讀完，也會再研究多執行序的問題，期待自己變得更好。
+
+# 自我評量 (1 ~ 10)
+我給自己 8 分。
