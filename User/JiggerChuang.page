@@ -7,3 +7,24 @@ categories: User
 * 國立成功大學 資訊工程所 111 級
 
 * GitHub: [`JiggerChuang`](https://github.com/JiggerChuang)
+
+# 2023 Linux 核心設計 春季班 自我評量
+## 作業
+
+* lab0-c: [GitHub](https://github.com/JiggerChuang/lab0-c) / [HackMD](https://hackmd.io/@y8jRQNyoRe6WG-qekloIlA/H1FVg7ZCo)
+* fibdrv: [GitHub](https://github.com/JiggerChuang/fibdrv) / [HackMD](https://hackmd.io/@y8jRQNyoRe6WG-qekloIlA/BJL4ZGuyh)
+
+## 期末專題
+
+* semu: [Github](https://github.com/JiggerChuang/semu) / [HackMD](https://hackmd.io/@sysprog/Skuw3dJB3)
+* 一對一討論時間
+    * 4/26, 5/10
+* 啟發
+
+    在與老師一對一面談中學到很多參與大型專案要注意的事情，例如 commit message 的寫法，用字要簡潔，但該有的內容都不能少，像是為何要做這筆變更、變更後會有什麼影響、如何驗證這筆變更，還有統一的 coding style 等等，在進行期末專題的期間也順利的發了 Pull Request 到原本的專案中，雖然只是很小的貢獻，但也算是邁出了參與開源專案的第一步。
+
+* 目前成果
+    * 整理系統模擬器所需的背景知識
+    * 整理 semu 的運作原理
+    * 利用 Buildroot 建構自訂的系統
+    * 解決原本模擬器無法正確處理鍵盤輸入的問題
