@@ -9,120 +9,24 @@ categories: User
 * GitHub: [`bonianlee`](https://github.com/bonianlee/fibdrv)
 * HackMD: [`ccasdqwe`](https://hackmd.io/@ccasdqwe)
 
-## 成果發表
-
-* Open Source Summit North America 2022 講者。講題: [Towards PREEMPT\_RT for the Full Task Isolation](https://ossna2022.sched.com/event/11NtQ)
-* FOSSASIA Summit 2022 講者。講題: "[Empower Embedded Computing with VexRiscv and FreeRTOS](https://eventyay.com/e/6b901f56/session/7569)"
-* 開源人年會 COSCUP 2021 講者。講題:「[藉由實作多任務核心來體驗作業系統概念](https://coscup.org/2021/zh-TW/session/WLTVU7)」
-* 開源人年會 COSCUP 2020 講者。講題:「[KTLS — Linux 核心內部的 TLS 實作](https://coscup.org/2020/zh-TW/agenda/JGX8JN)」
-
-## Linux 核心和相關專案貢獻
-* [rt-tests](https://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git): commit [c96e77dc](https://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git/commit/?id=c96e77dc74643354c20e9efb51b631467754d327), [d83bc06](https://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git/commit/?id=d83bc06e1fca7250dbc3c5e7be0f55a4ea6e7ef0), [d2ded8b](https://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git/commit/?id=d2ded8b1e863d3c7fd47e3f9a875fb9e6968ff61), [6f5ac3d](https://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git/commit/?id=6f5ac3d20aa0a0a04136760c2875ca931eebbaa5)
-* [Linux](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/): commit [62a40d](https://github.com/torvalds/linux/commit/62a40dad573406cdcb489dd45cfd201717c2e765), [cf2adec](https://github.com/torvalds/linux/commit/cf2adec7479d875973fe10782f8bf20377628ef2)
-* 《Demystifying the Linux CPU Scheduler》錯字修正和排版調整
-
-## 其他專案貢獻
-* [FreeRTOS](https://github.com/FreeRTOS/FreeRTOS): commit [0744c287](https://github.com/FreeRTOS/FreeRTOS/commit/0744c28749efbc0a0f08424eff5f6433078a25a2)
-* [raspi3-tutorial](https://github.com/bztsrc/raspi3-tutorial): commit [c59ad439](https://github.com/bztsrc/raspi3-tutorial/commit/c59ad439f427b0bbac48eef97e689f25ad4fac6c)
-
-# 2020 Linux 核心設計 春季班 自我評量
+# 2023 Linux 核心設計 春季班 自我評量
 ## 作業共筆
 
-* lab0-c: [GitHub](https://github.com/OscarShiang/lab0-c) / [HackMD](https://hackmd.io/@oscarshiang/linux_lab0)
-* fibdrv: [GitHub](https://github.com/OscarShiang/fibdrv) / [HackMD](https://hackmd.io/@oscarshiang/linux_fibdrv)
-* kcalc: [GitHub](https://github.com/OscarShiang/kcalc) / [HackMD](https://hackmd.io/@oscarshiang/linux_kcalc)
-* khttpd: [GitHub](https://github.com/OscarShiang/khttpd) / [HackMD](https://hackmd.io/@oscarshiang/linux_khttpd)
-* kecho: [GitHub](https://github.com/OscarShiang/kecho) / [HackMD](https://hackmd.io/@oscarshiang/linux_kecho)
-* sehttpd: [GitHub](https://github.com/OscarShiang/sehttpd) / [HackMD](https://hackmd.io/@oscarshiang/linux_sehttpd)
-
+* lab0-c: [GitHub](https://hackmd.io/@ccasdqwe/Homework1_lab0)
+* fibdrv: [GitHub](https://hackmd.io/@ccasdqwe/Homework3_fibdrv)
 
 ## 測驗共筆
 
-* quiz2: [GitHub](https://github.com/OscarShiang/xstring) / [HackMD](https://hackmd.io/@oscarshiang/quiz2_xstring)
-* quiz3: [GitHub](https://github.com/OscarShiang/xorlist) / [HackMD](https://hackmd.io/@oscarshiang/linux_quiz3)
-* quiz4: [GitHub](https://github.com/OscarShiang/cvector) / [HackMD](https://hackmd.io/@oscarshiang/linux_quiz4)
-
+* quiz2: [HackMD](https://hackmd.io/@ccasdqwe/Homework2_quiz2)
 
 ## 期末專題
 
-* KTLS: [HackMD](https://hackmd.io/@oscarshiang/linux_ktls)
+* fibdrv: [HackMD](https://hackmd.io/@sysprog/H1DuThFHn)
 
 ## 修課心得
 
-一開始在計畫要上這堂課的時候就發現課程的材料真的很多，估計要花上好幾小時才能完成每個星期的進度，而實際上這學期走過這門課也真的學了不少東西，不管是作圖用的 gnuplot，檢查記憶體使用情況的 valgrind 或是檢查格式的 clang-format，也才發現自己在 HackMD 跟 GitHub 好像也沒有用過很多的功能，頂多就是偶爾打開寫寫投影片，或是把最近寫的作業等等程式碼上傳上去而已。
-
-就如同老師在學期初所講的，這堂課雖然說是 Linux 核心設計，但課程的範圍囊括了資訊系許多必修課與選修課的內容，而且內容不但豐富，也相當的深入。因為我在修這堂課的時候是大二下，在這之前並沒有學習過計算機組織的知識，還好老師已經準備好了許多相關的教材，讓我不至於不知道要怎麼處理這方面的議題，而且在上計算機組織的時候也對 cache, virtual memory 這樣的議題更有認知。
-
-上這堂課還有另外一項好處，可以知道目前電腦、科技領域的發展脈絡，讓我們在學習核心實作的知識時，也可以了解我們現在所學的這些技能，將來可以用在哪裡，真的是收穫滿滿。
 
 ## 自我評量 (1 ~ 10)
 
-我給自己 8 分
 
-學期初的時候真的是投入的大量的時間和精神在這堂課上，雖然仍有許多的教材還來不及看完，但至少在作業以及隨堂考的部分，我都有盡量做好。到了期末的時候，各科的期末考以及期末 Project 還是讓我有點忙不過來，導致有好幾週的教材到現在還只是看過而已，而沒有真正的看懂。這也表示我還有許多的地方可以繼續努力加油。謝謝老師這一學期以來的指導，老師您辛苦了。
 
-# 2020 進階電腦系統理論與實作 秋季班 自我評量
-## 作業共筆
-
-* lab0-c: [GitHub](https://github.com/OscarShiang/lab0-c) / [HackMD](https://hackmd.io/@oscarshiang/sysprog_lab0-c)
-* render: [GitHub](https://github.com/OscarShiang/raycaster) / [HackMD](https://hackmd.io/@oscarshiang/sysprog_raycaster)
-
-## 測驗共筆
-
-* quiz1: [HackMD](https://hackmd.io/@oscarshiang/sysprog_quiz1)
-* quiz2: [HackMD](https://hackmd.io/@oscarshiang/sysprog_quiz2)
-* quiz3: [HackMD](https://hackmd.io/@oscarshiang/sysprog_quiz3)
-* quiz4: [HackMD](https://hackmd.io/@oscarshiang/sysprog_quiz4)
-* quiz5: [HackMD](https://hackmd.io/@oscarshiang/sysprog_quiz5)
-
-## 期末專題
-
-* ARMMultiTasking: 
-    - [GitHub](https://github.com/DavidSpickett/ARMMultiTasking)
-    - [HackMD](https://hackmd.io/@sysprog/arm-multitasking)
-    - [AMT demos](https://hackmd.io/@oscarshiang/amt_demos)
-
-## 修課心得
-
-這是我第二次修習老師的課，不同於前一個學期圍繞在 Linux 核心周邊的各式議題，這學期的課用更廣泛的視角討論作業系統在實作上的考量以及取捨。在這學期中，我嘗試從硬體設定，註冊 interrupt，開啟載入作業系統後要執行程序，到系統呼叫實作的機制等等面相來學習。
-
-過程中我參與 ARMMultiTasking 專案的開發了，除了瞭解了許多 ARM 硬體架構下的概念與相關設定之外，也學習到了許多作業系統的實作上的細節，像是 message passing 可能會使用到 ring buffer 的結構，context switch 時應該要保存的資訊，或甚至是檢查 stack overflow/underflow 的做法。這些在恐龍書上看不到的細節，但對於開發作業系統來說卻都是相當重要的一環。
-
-除了觀察這些程式碼的運作之外，我也嘗試撰寫相關的技術文件，開始下筆之後才明白老師之前說的：「工程師除了寫程式、改程式之外，也需要具備描述問題現象與現象的能力」這句話。因為這牽涉我們是不是真的有把我們想要描述的議題想懂看懂，並不是胡亂的拼湊就可以。
-
-在這學期間雖然經常碰壁，也謝謝老師過程中的提點。回頭看這段軌跡，真是一段相當充實的時光啊！
-
-## 自我評量 (1 ~ 10)
-
-我給自己 8 分。
-
-雖然很多的材料在上學期已經多少有看過了，但是經過了這學期的洗禮之後依然發現有許多的部分是自己以前沒有注意過的議題，或甚至是之前誤會的部分。
-但是在隨堂測驗的部分因為經過了一學期的磨練，感覺自己在閱讀題目與答題上有了不同的感受，這或許就是成長的感覺吧（？
-
-不過學期末受到各種考試跟 project 的轟炸，導致我在期末 project 的部分還是有許多的缺失與不足，這也表示我接下來還有很多地方可以繼續努力。
-
-# 2022 Linux 核心實作 春季班 自我評量
-
-## 相關共筆
-
-* [編譯 PREEMPT_RT 核心與安裝](https://hackmd.io/@oscarshiang/peempt_rt_raspi)
-* [oslat 實驗數據](https://hackmd.io/@oscarshiang/oslat_result)
-* [cyclictest 實驗數據](https://hackmd.io/@oscarshiang/ryeFLP9_F)
-
-## 期末專題
-
-* `PREEMPT_RT` 效能分析和改進: [Google Slides](https://docs.google.com/presentation/d/1Ll4VJ9Ncw9lVNI-bKWZNBIkCOL-xD-54LIOUlAHrUl8/edit?usp=sharing)
-
-## 修課心得
-
-這學期主要的關注的部分是 Linux 核心在即時系統層面的能力與限制。過程中，我嘗試使用不同的工具進行測量，包含 rt-tests suite 中的 `cyclictest`, `oslat` 以及 Linux kernel tracer 中的 `function`, `function graph` 與 `osnoise` tracer。除了測量整體系統延遲之外，我也嘗試去理解各個測量工具背後所考量的問題以及其觀點，像是 `oslat` 想要模擬的是高效能運算 (HPC) 的情境，在該情況下，所有會打斷運算的服務、行為，都被視為「干擾」；而在 `cyclictest` 的情境中，我們所在意的是一個行程從系統喚醒到實際開始執行的時間差，而中間導致該行程無法順利被執行的因素則被稱為「干擾」。
-
-在理解測量工具的途中，我也開始接觸 [Linux Kernel Mailing List](https://lore.kernel.org)，雖然在設定郵件帳號的步驟上遇到一些難關，不過多虧之前有多次在 GitHub 上提交 Pull Request 以及建立 Issue 的經驗，使我得以快速的適應全部以郵件形式交流的郵件論壇，也因此有了些許提交修補並獲接受的經驗。
-
-## 自我評量 (1 ~ 10)
-
-我給自己 7 分。
-
-在做實驗以及研究 Linux 程式碼的過程中，我發現自己對更動程式碼背後所帶來的考量還不夠周全。像是在提交 [cf2adec7](https://github.com/torvalds/linux/commit/cf2adec7479d875973fe10782f8bf20377628ef2) 時，原本以為只是一個格式上的小錯誤，但在維護者 Steven Rostedt 的提醒下，才發現原來這段對我來說「格式錯誤」的程式碼片段，竟然會被拿來辨認 tracer 所支援的功能，真是讓我大眼界。
-
-而在透過郵件論壇與來自世界各地的開發者交流之後，我也發現我對 Linux 的認知還有所不足，像是在何時應該使用 IRQ context，使用 per-CPU 變數的時機點或是更改 syscall 路徑的代價等等，Linux 還有好多「細節」值得我繼續摸索、探尋。
