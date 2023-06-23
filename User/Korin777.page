@@ -5,6 +5,7 @@ categories: User
 
 # 簡介
 * 國立成功大學 資訊工程學系 111 級 (2018 ~ 2022)
+* 國立成功大學 資訊工程所 113 級 (2022 ~)
 
 * GitHub: [`Korin777`](https://github.com/Korin777)
 * HackMD: [`Korin777`](https://hackmd.io/@Korin777)
@@ -12,6 +13,7 @@ categories: User
 ## 成果發表
 
 ## Linux 核心和相關專案貢獻
+* [userspace-rcu](https://github.com/urcu/userspace-rcu/tree/master): commit [be152bd](https://github.com/urcu/userspace-rcu/commit/be152bdb1af23ed3781fbda231597bad750ee977)
 
 # 2022 Linux 核心設計 春季班 自我評量
 ## 作業共筆
@@ -43,3 +45,30 @@ categories: User
 我給自己 7 分
 
 我覺得自己應該要花更多的時間在這門課上，不管是研讀 CS:APP、課程教材中的延伸教材，抑或是 quiz 中的延伸問題，期末專題尚未去研究 madvise 及 [mmap-benchmark](https://github.com/exabytes18/mmap-benchmark) 專案，接下來的暑假中會嘗試去研讀它!
+
+
+# 2023 Linux 核心設計 春季班 自我評量
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/Korin777/lab0-c) / [HackMD](https://hackmd.io/@Korin777/2023-lab0)
+* khttpd: [GitHub](https://github.com/Korin777/khttpd) / [HackMD](https://hackmd.io/@Korin777/linux2023q1-ktcp)
+
+## 測驗共筆
+* quiz2: [HackMD](https://hackmd.io/@Korin777/linux2023-quiz2)
+* quiz3: [HackMD](https://hackmd.io/@Korin777/linux2023-quiz3)
+* quiz4: [HackMD](https://hackmd.io/@Korin777/linux2023-quiz4)
+* quiz5: [HackMD](https://hackmd.io/@Korin777/linux2023-quiz5)
+
+## 期末專題
+* RCU 研究: [HackMD](https://hackmd.io/@sysprog/ry_6RHgS3)
+
+## 修課心得
+這是我第二次在這門課學習，在課程的作業及隨堂測驗中還是獲得許多新的啟發，像是 lab0 的 mergesort 去年用 buttom up 的方法實作時會因為 linked list 無法像陣列那樣直接取得某個位置的值，導致效能較差，今年再回頭看時發現可以透過 prev 連到下一個要 merge 來解決上述問題，還有像是去年專題有研究如何實作記憶體配置器，最後是簡單用陣列去儲存不同大小的 memory block，而 quiz5 中則是透過紅黑數去儲存，並且還能 merge 相鄰的 block ，讓我了解到如和去實作一個更通用的記憶體配置器。
+
+[因為自動飲料機而延畢的那一年](http://opass.logdown.com/posts/1300438-the-story-of-auto-beverage-machine-23)讀後感想 : 讀完後非常佩服這些人的熱情及勇於挑戰的精神來一步一步的解決問題，就像老師常說的:「就是在學生階段，才更因該去挑戰困難的問題」，而文章中也有提到很多解決辦法都是權衡之下的取捨，如果一昧的去求最佳的解決辦法，到最後反而只會讓自己毫無進展。最後我非常欣賞筆者在面對不同的人(不同科系的同學、工廠老闆、飲料店老闆、彈簧工匠等等)都能夠互相交流學習的這種特質，得好好強迫自己去學習。
+
+
+## 自我評量 (1 ~ 10)
+我給我自己 8 分
+
+相較於上一次修課，我認為自己這次又學到了更多，因此幫自己多加 1 分，而這學期專題關注在 userspace RCU 實作，第一次看完 urcu 相關文件及他人的筆記後還是不清楚為何要設計不同的flavor，後來在深入的追縱程式碼及對照看 URCU 的論文、第一手材料、github commit 及 lttng-dev 上的相關討論後，總算對它的實作差異及考量有更深入的認知，只要肯花時間學習，一定會有所收穫的!
