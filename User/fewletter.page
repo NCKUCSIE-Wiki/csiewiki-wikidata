@@ -4,7 +4,42 @@ categories: User
 ...
 
 # 簡介
-* 國立成功大學 機械所
+* 國立成功大學 機械工程所 (2022~)
 
 * GitHub: [`fewletter`](https://github.com/fewletter)
 * HackMD: [`fewletter`](https://hackmd.io/@fewletter)
+
+## 其他專案貢獻
+* [simplefs](https://github.com/sysprog21/simplefs): commit [e82c413](https://github.com/sysprog21/simplefs/commit/e82c413b0c215f32a2b8a3497e1e62bf9585a1dc)
+* [simplefs](https://github.com/sysprog21/simplefs): commit [a2ba8bd](https://github.com/sysprog21/simplefs/commit/a2ba8bd6143dd743dd6f1707f46e7889f861849c)
+
+
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/fewletter/lab0-c) / [HackMD](https://hackmd.io/@fewletter/lab0-c)
+* fibdrv: [GitHub](https://github.com/fewletter/fibdrv) / [HackMD](https://hackmd.io/@fewletter/linux2023q1-fibdrv)
+* assessment: [HackMD](https://hackmd.io/@fewletter/linux2023q1-assessment)
+* khttpd: [GitHub](https://github.com/fewletter/khttpd) / [HackMD](https://hackmd.io/@fewletter/linux2023q1-ktcp)
+
+
+## 測驗共筆
+
+* quiz2: [quiz2](https://hackmd.io/@fewletter/HJF4nKaCi)
+* quiz4: [quiz4](https://hackmd.io/@fewletter/linux2023-quiz4)
+
+
+## 期末專題
+
+* simplefs: [simplefs](https://hackmd.io/ywq9yWYcSSa1D7MDh1yKmw)
+
+## 修課心得
+
+   在修這堂課之前，我原本以為我略懂寫程式，結果在看到第一次作業說明的時候整個人傻住了，腦中只有想到冰與火之歌那句台詞，"You know nothing"，從那時起我才知道我根本什麼都不知道，我會的東西在這堂課面前，就好像國小加減法一樣簡單，隨便一個人都可以輕鬆取代我，但也是從那個時候開始我決定我絕對不要退選這堂課，並且誠實面對自己，時間用力給他花下去，能學多少是多少。接著之後每個禮拜的教材真的是一直讓我大開眼界，我以前覺得很理所當然的東西在教材裡變得很不理所當然，每行程式碼都有他的理由，就像 union，竟然可以成為寫具有擴充性的程式的技巧之一 WTF，至於作業的部份，每次光看作業說明就會花掉我 3 天以上的時間，甚至在 fibdrv 這份作業，我一定有看了5 天以上，在實作時很常參考別人的想法，感覺到自己真的太弱了，所以只能拿時間去填補我不足的地方。
+
+   期末專題又是另外一個境界的東西，我第一次接觸如此複雜的程式碼系統，一開始只有一直看並且試著去理解，然後也一直去 google，但是一直都沒找到有用的資訊，幾乎都是簡單的東西一直重複，直到跟老師 meeting 的時候，老師才點出這個問題，之後才開始自己去建立實驗環境打算自己做實驗，但就在建好的時候，專題時間也到了，真的非常可惜沒能改進到 page cache 和一些從其他檔案系統中看到的有趣東西，而在建實驗環境時，也發現自己能透過各種工具越來越了解 Linux 核心，這大概是我專題中最大的收穫。
+
+## 自我評量 (1 ~ 10)
+
+我給自己 9 分
+
+   剩下的 1 分給我還能進步的部份，雖然說這部份滿多的，而 9 分則是給我花的時間，在 Linux 核心花費的時間一定是全部課程中花最多的，其中也包括大學修的課程，學到的東西同時也是非常的多，所以很感謝老師願意開課，並且把自己在業界中所見所聞分享給我們，這點真的在其他課堂上很難看到，我也希望在這堂課中的收穫，以後一輩子都會用到。
