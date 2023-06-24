@@ -75,7 +75,9 @@ categories: User
     * Baseline just-in-time(JIT) compiler 
 
 ## 所見所聞所感
-這學期比較多的收穫來自《Engineering a Compiler - 3rd Edition》，rv32emu 中運用了許多編譯器的實作技巧以及優化，例如 tail call optimization, basic block, 和 extended basic block 等等。這本書不僅能了解到編譯器前端和後端是如何實作，以及編譯器有哪些的優化手段，更重要的是能理解到你的程式該怎麼寫才能讓 compiler 更有效的優化。因此，即使你不是編譯器的開發者，理解編譯器還是能幫助你寫出更好的程式碼。
+這學期比較多的收穫來自《Engineering a Compiler - 3rd Edition》，因為期末專案 rv32emu 中運用了許多編譯器的實作技巧以及優化手段，例如 tail call optimization, basic block, 和 extended basic block 等等。這本書不僅能了解到編譯器前端和後端是如何實作的，以及編譯器有哪些的優化手段，更重要的是能理解到你的程式該怎麼樣寫才能讓更有效的讓編譯器進行優化。因此，即使你不是編譯器的開發者，理解編譯器還是能幫助你寫出更好的程式碼。
+
+此外，這門課程中的專案與業界需求高度相關，不僅能習得該領域的 domain knowledge，更能加到履歷中成為履歷的亮點。
 
 ## 自我評量 (1 ~ 10)
 
