@@ -1,0 +1,34 @@
+---
+title: chun61205 (黃霖均)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程學系 113 級 (2020 ~ 2024)
+
+* GitHub: [`OscarShiang`](https://github.com/chun61205)
+* HackMD: [`oscarshiang`](https://hackmd.io/@roger61205)
+
+## Linux 核心和相關專案貢獻
+* 《Demystifying the Linux CPU Scheduler》改進
+
+# 2023 Linux 核心設計 春季班 自我評量
+## 作業共筆
+### [2023q1 Homework1 (lab0)](https://hackmd.io/@roger61205/lab0-2023)
+### [2023q1 Homework3 (fibdrv)](https://hackmd.io/@roger61205/linux2023q1-fibdrv)
+### [2023q1 Homework7 (ktcp)](https://hackmd.io/@roger61205/linux2023q1-ktcp)
+### [2023q1 Homework1 (quiz1)](https://hackmd.io/@roger61205/quiz1-2023)
+### [2023q1 Homework2 (quiz2)](https://hackmd.io/@roger61205/quiz2-2023)
+### [2023q1 Homework3 (quiz3)](https://hackmd.io/@roger61205/linux2023q1-quiz3)
+### [2023q1 Homework4 (quiz4)](https://hackmd.io/@roger61205/linux2023-quiz4)
+### [第 4, 5, 6 週課堂問答簡記](https://hackmd.io/@sysprog/rJVas7NJn)
+### [第 7 週課堂問答簡記](https://hackmd.io/@sysprog/SyOhklg-3)
+### [第 10, 11, 12 週課堂問答簡記](https://hackmd.io/Y_xydtjlS6qOt1M0muvYrA)
+### [Linux 核心專題: CPU 排程器研究](https://hackmd.io/@sysprog/By-Q7reB3)
+
+## 自我評量 (1 ~ 10)
+我給我自己 9 分
+
+在剛進來上這門課的時候，我就有感受到不少的挫折，不管是 quiz 不會寫，教材看不懂，還是周圍同學的表現，都讓我自嘆不如。在剛開始的前幾個禮拜，我很認真地把所有課程錄影都看過，且教材的文章也都瀏覽過。不過，到了課程中段我也漸漸發現自己沒有辦法完全地跟上所有的內容，才慢慢開始轉成挑自己比較有興趣的主題學習。
+過程中，我嘗試寫了幾個作業，當中也不乏遇到能力不足的困境，這個時候，我會嘗試把遇到的問題抽絲剝繭，從我能夠處理的小問題著手，慢慢解決。其中，讓我最有印象的是第 7 週的課堂問答。當初的我完全對除法實作的方法一點概念都沒有，因此，我先在網路上搜尋了別人的做法，知道了能夠使用 bitwise operation 來實作，接著我想到能夠藉由找到在精確度內的商，來解決無法整除的問題，最後再過程中想到，需要證明為什麼可以以 19 這個數當作基準來找到除數，最後才解決問題，我認為這樣的研究方法，是我在這堂課得的最好的收穫。
+整體來說，我認為這堂課的內容十分豐富，不過以我現在的實力和時間，並沒有辦法把全部的內容吸收進去。即使如此，我還是在這學期盡了我最大的努力，把大部分的玩樂時間拿來學習，從一個對 Linux Kernel 完全不懂麻瓜，到漸漸從 linked list 這些原本就知道的東西著手，學到了 Linux Kernel 中使用的技術， kernel module 的撰寫方法，還有研究了 CPU 排程器，我認為自己已經做得很好了。接下來，我希望能夠先將老師準備的教材讀完，把需要學習的基本知識學起來，並在以後有機會的時候，挑戰更難的專題。
