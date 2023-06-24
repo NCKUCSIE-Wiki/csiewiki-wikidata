@@ -1,5 +1,7 @@
 ## 簡介
 
+王彥傑
+
 - 國立臺灣大學 資訊工程研究所 王彥傑
 - GitHub: `yanjiew1`
 - Hackmd: `@yanjiew`
@@ -56,3 +58,12 @@
 
 ### 自我評量
 
+我給自己 8 分。
+
+這門課，我學到了很多 Linux 核心的關鍵議題，像是 Lockfree 演算法、並行處理、 C11 Atomics 、 核心開發者關注的 Scalability 問題、排程器。像 Lockfree 的部份，在過去可能與到並行的程式，都是直接用 Lock 去解決，但考慮到 Scalability ，就需要去想有哪些方式能夠去減少 lock 、增加平行的程度。 此外也學習到核心的開發和 User space 不同，例如： stack 大小的限制、盡量不用 floating point 等。
+
+課程方面，每一次都盡力去參與老師的直播。若有錯過的部份，會回去看錄影。作業方面，這學期盡力想去完成每一次作業，但是最後還是沒有全部完成。但期末專題時，雖然期末很忙，但還是盡力有空就做一點，最後有完成老師把 kvm-host 移植到 arm64 的部份。
+
+這學期有貢獻 Linux 核心一個 [Patch](https://lore.kernel.org/lkml/20230502112502.14859-1-yanjiewtw@gmail.com/t/#u) ，也有對《Demystifying the Linux CPU Scheduler》這本書提出內容的小改進。
+
+《Demystifying the Linux CPU Scheduler》這本書目前還沒看完，之後有時間會繼續閱讀，想繼續努力讀完。
