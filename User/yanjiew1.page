@@ -12,19 +12,21 @@
 - Linux 核心貢獻: [LKML Patch](https://lore.kernel.org/lkml/20230502112502.14859-1-yanjiewtw@gmail.com/t/#u)
   - 似乎還沒整合到 Mainline 
 - Device Tree Compiler 貢獻: [Commit](https://git.kernel.org/pub/scm/utils/dtc/dtc.git/commit/?h=main&id=ccf1f62d59adc933fb348b866f351824cdd00c73)
-- 《Demystifying the Linux CPU Scheduler》 Tasks lifetime 章節改進
+- 《Demystifying the Linux CPU Scheduler》 Tasks Lifetime 章節內容小幅改進
 
 ### 作業/隨堂測驗
 
-- [lab0](https://hackmd.io/@yanjiew/linux2023q1-lab0)
-- [fibdrv](https://hackmd.io/@yanjiew/linux2023q1-fibdrv)
-- [assessment](https://hackmd.io/@yanjiew/linux2023q1-assessment)
-- [ktcp](https://hackmd.io/@yanjiew/linux2023q1-assessment)
-- [quiz1](https://hackmd.io/@yanjiew/linux2023q1-quiz1)
-- [quiz2](https://hackmd.io/@yanjiew/linux2023q1-quiz2)
-- [quiz3](https://hackmd.io/@yanjiew/linux2023q1-quiz3)
-- [quiz4](https://hackmd.io/@yanjiew/linux2023q1-quiz4)
-- [quiz5](https://hackmd.io/@yanjiew/linux2023q1-quiz5)
+
+- lab0: [HackMD](https://hackmd.io/@yanjiew/linux2023q1-lab0) / [GitHub](https://github.com/yanjiew1/lab0-c)
+- fibdrv: [HackMD](https://hackmd.io/@yanjiew/linux2023q1-fibdrv) / [GitHub](https://github.com/yanjiew1/fibdrv)
+- assessment: [HackMD](https://hackmd.io/@yanjiew/linux2023q1-assessment)
+- ktcp: [HackMD](https://hackmd.io/@yanjiew/linux2023q1-ktcp) / [GitHub](https://github.com/yanjiew1/khttpd)
+- quiz1: [HackMD](https://hackmd.io/@yanjiew/linux2023q1-quiz1) / [GitHub](https://github.com/yanjiew1/linux23q1-quiz1)
+- quiz2: [HackMD](https://hackmd.io/@yanjiew/linux2023q1-quiz2)
+- quiz3: [HackMD](https://hackmd.io/@yanjiew/linux2023q1-quiz3)
+- quiz4: [HackMD](https://hackmd.io/@yanjiew/linux2023q1-quiz4)
+- quiz5: [HackMD](https://hackmd.io/@yanjiew/linux2023q1-quiz5)
+- quiz6: [HackMD](https://hackmd.io/@yanjiew/linux2023q1-quiz6)
 
 以下是寫測驗或作業時的相關研究筆記，不是很完整
 
@@ -40,11 +42,17 @@
 
 主要討論期末專題的要做的項目：期末專題就是把 kvm-host 移植到 arm64 及實作 virtio-net 。目前移植的工作做完了，但希望在 COSCUP 會議前把 Virtio-net 做完。此外，也聊了些自己的過去、工作、學校課業和生涯規劃，自己要有入門門檻高、比較不會被取代的技能。
 
-### 所見所聞所感
+### 修課心得
 
+我第一次看到這麼用心的老師。在行事曆上，滿滿的都是老師與學員約的一對一討論。老師除了每週二要去成大上課外，週一和週四也都有課程。
 
+這門課是我這學期花最多時間的一門課了。因為不是成大的學生，只能以旁聽的身份來上這門課，但我還是盡力去完成作業。但礙於台大課業的緣故，之前有些作業沒有完成。在老師宣布有期末專題後，我很快就跟老師約一對一討論，討論我的期末專題的題目。也很快就決定要做虛擬機器相關的專題。雖然接近台大期末，有許多報告和一些考試，但我盡力的找時間，有時間就去做一點，最後有 Linux 核心課程的期末專題完成，這讓我很有成就感。
+
+我覺得這門課讓我對於資訊領域又更有熱情，也對 Linux 核心更有興趣；修這門課時，看到老師的熱情，也激發我在資訊領域也能有些成就，或能夠發揮一些影響力，也時常心裡有想要畢業後再繼續深造出國讀博士的想法。
+
+一直以來我都是開放原始碼的愛好者，喜歡使用開放原始碼的軟體，但過去卻很少做出貢獻。這門課鼓勵我們對 Linux 核心或重要的專案貢獻，老師常常說我們本該如此。我也認為自己若真的對資訊有熱忱，也就應該要對 Linux 核心或重要的開放原始碼專案貢獻，除了對履歷有幫助外，實質的貢獻才能發揮真實的影響力。
+
+我真心推薦對 Linux 核心有興趣，想讓自己變強的人，來修這門課。修這門課要誠實面對自己，看到自己哪裡不足，就去補足自己的不足。
 
 ### 自我評量
-
-
 
