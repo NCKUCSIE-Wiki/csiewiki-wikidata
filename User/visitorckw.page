@@ -1,0 +1,34 @@
+---
+title: visitorckw (邱冠維)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程學系 112 級 (2019 ~ 2023)
+
+* GitHub: [`visitorckw`](https://github.com/visitorckw)
+* HackMD: [`visitor CKW`](https://hackmd.io/@visitor-ckw)
+
+# 2023 Linux 核心設計 春季班 自我評量
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/visitorckw/lab0-c) / [HackMD](https://hackmd.io/@visitor-ckw/linux2023-lab0)
+* fibdrv: [GitHub](https://github.com/visitorckw/fibdrv) / [HackMD](https://hackmd.io/@visitor-ckw/linux2023-lab03)
+* quiz2: [HackMD](https://hackmd.io/@visitor-ckw/linux2023-lab2)
+* quiz3: [HackMD](https://hackmd.io/@visitor-ckw/linux2023-quiz3)
+
+
+## 期末專題
+
+* 改進 lib/list_sort.c: [GitHub](https://github.com/visitorckw/linux23q1-timsort) / [HackMD](https://hackmd.io/@sysprog/Hy5hmaKBh)
+
+## 修課心得
+
+由於大三就已經把畢業條件的學分都修完了，因此大四打算修一些比較有挑戰性的課。然而修了本課程之後，第一個作業就被震撼到。光是要看懂 indirect pointer 的技巧就花了我不少時間。過程中也感到相當的挫折。學期過了一半之後，由於先前所積欠的課程和作業越來越多，逐漸不知道該怎麼補才好。因為自動飲料機而延畢的那一年一文的作者選擇延畢去創業。儘管創業是一件相當困難的事情並且以世俗的眼光作者並不算成功，但過程中作者不放棄地實作、修正、再實作、再修正…的精神，我想這是我所欠缺並且應該學習的。
+另外由於過去我一直十分喜愛演算法相關的議題，因此我相當喜歡我所拿到的改進 list_sort 的期末專題，並且由於剛好這學期正在修統計學(二)，因此發現相當適合用來分析執行時間差異的顯著性。只可惜學期初時我高估了自己的能力，到了期末時同時要顧及其他科的期末考、實習的成果報告、研究與 paper 的撰寫，導致影響了課程與期末專題投入的時間。這門課的教材相當豐富，我覺得很可惜自己白白浪費掉這麼好的學習機會。若明年的時間與精力允許，並且老師有繼續開授這門課，我會再來旁聽一次。
+
+## 自我評量 (1 ~ 10)
+
+我給自己 7 分
+
+學期初花費了較多的時間在課程中，後續尤其是到期末逐漸被其他外務轟炸逐漸難以像先前一樣投入較多的時間。期末專提的部份雖然有寫出 in-place 的 Timsort，但也來不及有機會貢獻到 Linux Kernel 之中。希望未來有機會，即使沒有修課，我也可以慢慢把這門課的教材都吸收成自己的知識。
