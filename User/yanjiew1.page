@@ -1,0 +1,50 @@
+## 簡介
+
+- 國立臺灣大學 資訊工程研究所 王彥傑
+- GitHub: `yanjiew1`
+- Hackmd: `@yanjiew`
+
+## 2023 年 Linux 核心 春季班 自我評量
+
+### 成果發表
+
+- [2023 COSCUP - 打造以 KVM 為基礎的精簡虛擬機器管理程式](https://pretalx.coscup.org/coscup-2023/talk/review/J7VPFBXWSG7LVTEVYEENF938EYSEKLBH)
+- Linux 核心貢獻: [LKML Patch](https://lore.kernel.org/lkml/20230502112502.14859-1-yanjiewtw@gmail.com/t/#u)
+  - 似乎還沒整合到 Mainline 
+- Device Tree Compiler 貢獻: [Commit](https://git.kernel.org/pub/scm/utils/dtc/dtc.git/commit/?h=main&id=ccf1f62d59adc933fb348b866f351824cdd00c73)
+- 《Demystifying the Linux CPU Scheduler》 Tasks lifetime 章節改進
+
+### 作業/隨堂測驗
+
+- [lab0](https://hackmd.io/@yanjiew/linux2023q1-lab0)
+- [fibdrv](https://hackmd.io/@yanjiew/linux2023q1-fibdrv)
+- [assessment](https://hackmd.io/@yanjiew/linux2023q1-assessment)
+- [ktcp](https://hackmd.io/@yanjiew/linux2023q1-assessment)
+- [quiz1](https://hackmd.io/@yanjiew/linux2023q1-quiz1)
+- [quiz2](https://hackmd.io/@yanjiew/linux2023q1-quiz2)
+- [quiz3](https://hackmd.io/@yanjiew/linux2023q1-quiz3)
+- [quiz4](https://hackmd.io/@yanjiew/linux2023q1-quiz4)
+- [quiz5](https://hackmd.io/@yanjiew/linux2023q1-quiz5)
+
+以下是寫測驗或作業時的相關研究筆記，不是很完整
+
+- [Timsort 研究](https://hackmd.io/@yanjiew/linux2023q1-timsort)
+- [第一次嘗試貢獻 Linux 核心](https://hackmd.io/pj3LoW_XRJWN1IcgeldmtQ)
+- [關於紅黑樹](https://hackmd.io/@yanjiew/rbtree01)
+
+### 期末專題
+
+- [Linux 核心專題: 系統虛擬機器開發和改進](https://hackmd.io/@sysprog/rkro_FeSh)
+
+一對一討論日期時間 2023/5/6 3:00 – 4:00pm
+
+主要討論期末專題的要做的項目：期末專題就是把 kvm-host 移植到 arm64 及實作 virtio-net 。目前移植的工作做完了，但希望在 COSCUP 會議前把 Virtio-net 做完。此外，也聊了些自己的過去、工作、學校課業和生涯規劃，自己要有入門門檻高、比較不會被取代的技能。
+
+### 所見所聞所感
+
+
+
+### 自我評量
+
+
+
