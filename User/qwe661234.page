@@ -5,6 +5,7 @@ categories: User
 
 # 簡介
 * 國立成功大學 材料工程學系 110 級
+* 國立成功大學 資訊工程所 111 級
 
 * GitHub: [`qwe661234`](https://github.com/qwe661234)
 * HackMD: [`qwe661234`](https://hackmd.io/@qwe661234)
@@ -22,7 +23,6 @@ categories: User
 * quiz1: [HackMD](https://hackmd.io/@qwe661234/linux2022-quiz1)
 * quiz2: [HackMD](https://hackmd.io/@qwe661234/linux2022-quiz2)
 * quiz3: [HackMD](https://hackmd.io/@qwe661234/SkQauv-Qq)
-
 
 ## 期末專題
 
@@ -53,3 +53,30 @@ categories: User
 我給自己 7 分
 
 這學期投入的作業並不多，大部分的時間都投入在 `fibdrv` 和期末專題中，有很多作業以及上課教材都來不急在這學期完成，因此給自己 7 分。
+
+# 2023 Linux 核心設計 春季班 自我評量
+## 成果發表
+* CTHPC 2023: Construct a Compact and Efficient RISC-V Instruction Set Simulator
+* COSCUP: 建構精簡且高效的 RISC-V 指令集和系統模擬器 
+
+## 作業
+
+* lab0-c: [GitHub](https://github.com/qwe661234/lab0-c) / [HackMD](https://hackmd.io/@qwe661234/S1tuJOC6s)
+* fibdrv: [GitHub](https://github.com/qwe661234/fibdrv) / [HackMD](https://hackmd.io/@qwe661234/linux2022q1-homework3)
+* ktcp: [HackMD](https://hackmd.io/@qwe661234/linux2022q1-homework6) / [HackMD](https://hackmd.io/@qwe661234/linux2022q1-homework6)
+
+## 期末專題
+
+* rv32emu: [GitHub](https://github.com/sysprog21/rv32emu) / [HackMD](https://hackmd.io/@sysprog/Syh834lH3)
+* 目前成果
+    * Tail call optimization
+    * Extended basic block
+    * Less Frequently Used (LFU) Cache & Adaptive Replacement Cache (ARC) 
+    * Baseline just-in-time(JIT) compiler 
+
+## 所見所聞所感
+這學期比較多的收穫來自《Engineering a Compiler - 3rd Edition》，rv32emu 中運用了許多編譯器的實作技巧以及優化，例如 tail call optimization, basic block, 和 extended basic block 等等。這本書不僅能了解到編譯器前端和後端是如何實作，以及編譯器有哪些的優化手段，更重要的是能理解到你的程式該怎麼寫才能讓 compiler 更有效的優化。因此，即使你不是編譯器的開發者，理解編譯器還是能幫助你寫出更好的程式碼。
+
+## 自我評量 (1 ~ 10)
+
+我給自己 8 分
