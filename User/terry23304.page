@@ -1,0 +1,33 @@
+# 簡介
+* 國立成功大學 資訊工程所 (2022~)
+* GitHub: [terry23304](https://github.com/terry23304?tab=repositories)
+* Hackmd: [terry23304](https://hackmd.io/@terry23304)
+
+# 2023 Linux 核心設計 春季班 自我評量
+
+## 作業共筆
+
+- lab0-c: [Hackmd](https://hackmd.io/@terry23304/linux2023-lab0) / [GitHub](https://github.com/terry23304/lab0-c)
+- fibdrv: [Hackmd](https://hackmd.io/@terry23304/linux2023_fibdrv) / [GitHub](https://github.com/terry23304/fibdrv)
+
+## 測驗共筆
+- quiz1: [HackMD](https://hackmd.io/@terry23304/2023quiz1)
+- quiz2: [HackMD](https://hackmd.io/@terry23304/quiz2)
+- quiz3: [HackMD](https://hackmd.io/@terry23304/2023q1-quiz3)
+- quiz4: [HackMD](https://hackmd.io/@terry23304/linux2023-quiz4)
+- quiz5: [HackMD](https://hackmd.io/@terry23304/linux2023-quiz5)
+- quiz6: [HackMD](https://hackmd.io/@terry23304/linux2023-quiz6)
+
+## 期末專題
+- kHTTPd 改進: [Github](https://github.com/terry23304/khttpd) / [Hackmd](https://hackmd.io/NlbBqXlsSuW6TOF58U-lxg?view#Linux-%E6%A0%B8%E5%BF%83%E5%B0%88%E9%A1%8C-kHTTPd-%E6%94%B9%E9%80%B2)
+
+## 修課心得
+在修課的過程中，我開始意識到了一些問題，例如一開始為了追逐進度沒有詳細閱讀教材，也沒有深入了解使用的方法的優缺點。此外，由於我對C語言的熟悉度不足，我花了相當多的時間閱讀規格書，並且在每次測驗中要理解程式碼的想法也耗費大量的時間。
+
+在與老師討論時，老師特別強調了重視細節的重要性，例如 commit message 要清楚地寫出修改的原因以及目前方法的優缺點。這使我意識到在閱讀 How to Write a Git Commit Message這篇文章時忽略了很多內容。
+
+總之，在修課的過程中，我學到了很多東西。無論是技術方面還是記錄自己的開發過程，都有很大的收穫。
+
+## 自我評量 (1 ~ 10)
+
+我給自己 7 分，這是我投入最多時間的一堂課，花了大量時間在作業跟教材上，未來也會持續努力。
