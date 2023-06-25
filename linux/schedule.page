@@ -415,6 +415,7 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
 
 * 第 19 週 (Jun 18, 20): Rust, KVM
     * [教材解說-1](https://youtu.be/vS8U23bhidg)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [Rust for Linux 研究](https://hackmd.io/@hank20010209/SJmVNPMQ2)
     * [撰寫 LKMPG 的 Rust 核心模組](https://hackmd.io/@sysprog/Sk8IMQ9S2)
     * Rust 程式語言
         - Steve Klabnik 與 Carol Nichols，及 Rust 社群的協同撰寫的《The Rust Programming Language》線上書籍，由台灣的 Rust 社群提供[繁體中文翻譯](https://rust-lang.tw/book-tw/)
