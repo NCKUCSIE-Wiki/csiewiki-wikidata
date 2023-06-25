@@ -1,0 +1,46 @@
+---
+title: ShamrockLee (李岳瞬)
+categories: User
+...
+
+# 簡介
+
+*   國立中央大學 物理學系學士班 (2017 - 2022)
+*   國立中央大學 物理學系碩士班 (2022 - )
+
+*   GitHub: [ShamrockLee](https://github.com/ShamrockLee)
+*   HackMD: [ShamrockLee](https://hackmd.io/@ShamrockLee)
+
+## 成果發表
+
+## Linux 核心和相關專案貢獻
+
+*   Comment typo about "transmit"
+    *   Mailing list: [`[PATCH]`](https://lkml.org/lkml/2023/6/21/1661), [`[PATCH 0/8]`](https://lkml.org/lkml/2023/6/21/1685)
+    *   commits in netdev/net-next: [`b028813ac973`]( https://git.kernel.org/netdev/net-next/c/b028813ac973), [`304b1875ba02`](https://git.kernel.org/netdev/net-next/c/304b1875ba02), [`a0e128ef88e4`](https://git.kernel.org/netdev/net-next/c/a0e128ef88e4)
+
+## 其他專案貢獻
+
+*   [sysprogs/lab0-c](https://github.com/sysprog21/lab0-c): commit [`e2abe22d85be`](https://github.com/sysprog21/lab0-c/pull/131/commits/e2abe22d85beb32abd8abd3dc430d88a1e048100)
+
+*   [Nixpkgs](https://github.com/NixOS/nixpkgs): GitHub PR [`204565`](https://github.com/NixOS/nixpkgs/pull/204565), [`216864`](https://github.com/NixOS/nixpkgs/pull/216864), [`222252`](https://github.com/NixOS/nixpkgs/pull/222252), [`222518`](https://github.com/NixOS/nixpkgs/pull/222518), [`224683`](https://github.com/NixOS/nixpkgs/pull/224683), [`234032`](https://github.com/NixOS/nixpkgs/pull/234032), [`234072`](https://github.com/NixOS/nixpkgs/pull/234072), [`235616`](https://github.com/NixOS/nixpkgs/pull/235616), [`237919`](https://github.com/NixOS/nixpkgs/pull/237919)
+
+*   [Nix](https://github.com/NixOS/nix): GitHub PR [`4803`](https://github.com/NixOS/nix/pull/4803), [`7690`](https://github.com/NixOS/nix/pull/7690)
+
+*   [`dream2nix`](https://github.com/nix-community/dream2nix): GitHub PR [`523`](https://github.com/nix-community/dream2nix/pull/523)
+
+# 2023 Linux 核心實作 春季班 自我評量
+
+## 作業共筆
+
+## 期末專題
+
+*   亂數產生器研究
+    -   [共筆](https://hackmd.io/@sysprog/r18z86NHh)
+    -   [講解影片](https://youtu.be/dZ66QkoA5YI)
+    -   [簡報](https://docs.google.com/presentation/d/18_HDogktJwnkModepk0hZDRlmVGEcARfH4GRRdwAujo/edit?usp=sharing)
+
+*   一對一討論
+    -   時段： 2023 年 5 月 11 日 20:30 - 21:00
+
+## 修課心得
