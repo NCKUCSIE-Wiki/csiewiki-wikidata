@@ -9,10 +9,16 @@
 
 # 2023 Linux 核心設計 春季班 自我評量
 ## 作業共筆
-* Linux 核心設計/實作: [2023q1 Homework1 (quiz1)](https://hackmd.io/@chien1214/linux2023-homework1)
-* Linux 核心設計/實作: [2023q1 Homework1 (quiz1)](https://hackmd.io/@chien1214/linux2023-homework2)
+* Linux 核心設計/實作: [2023q1 Homework1 (lab0)](https://hackmd.io/@chien1214/linux2023-homework1)
+* Linux 核心設計/實作: [2023q1 Homework2 (quiz2)](https://hackmd.io/@chien1214/linux2023-homework2)
+
+## 期末專題
+* Linux 核心專題: [rusted Firmware-A 及 Linux 啟動流程分析](https://hackmd.io/@sysprog/rkxaDOWI3)
 
 ## 修課心得
 (待補上)
 
 ## 自我評量
+我給自己 7 分，評分依據是我沒有達到自己目標的作業量，我也沒有為了作業量而交差出自己都沒搞懂的共筆或紀錄。再來是我沒有完成期末專題至有實驗結果，但這份期末專題的強度給了我很大的突破(尤其是零碎的時間運用)，從原本是不是該放棄期末並專注於碩士論文，到進行專題至設計實驗之前，並且能夠在「第一手材料」的限制下進行這份有關 arm-linux 的期末專題。最後一點是我還沒有放上專題解說錄影。就像老師所說的，跟自己比之外，也要誠實面對自己，所以我給自己 7 分。(專題解說錄影會盡速補上)
+
+這堂課以及期末專題會影響我一生，還有很多教材是我需要回顧或補齊的。期末專題也讓我更加理解 ARM 的安全功能，以及與 Linux 之間的安全議題。非常感謝 Jserv 老師最後的線上專題討論，讓我有堅持住這堂課到進行期末!
