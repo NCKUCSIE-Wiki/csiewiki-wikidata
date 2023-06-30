@@ -37,7 +37,7 @@ categories: User
 - [多旋翼機全系統設計](https://www.youtube.com/watch?v=hBBe1Kj82B4): 碩班期間成果，設計包含非線性控制、感測器融合、SLAM、路徑規劃
 - [Puyuma](https://github.com/Puyuma/puyuma-core): 基於 Linux 的微型自駕車系統 [[技術報告]](https://drive.google.com/file/d/1rKgdAhpr7M2tiiu-zpXKDYbxuNX_QqWz/view?usp=share_link) [[簡報]](https://drive.google.com/file/d/1D9Cp7_kDHw4EDSdKVgKMuRb3Ri0mA4bN/view?usp=sharing)
 - [Tenok](https://github.com/shengwen-tw/tenok): 啟發自 rtenv+ 的即時作業系統 [[共筆]](https://hackmd.io/@shengwen/tenok) [[影片]](https://www.youtube.com/watch?v=byWihWcMP00)
-- [PU-01](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 包含機構設計、參數規劃、穩定性分析的定翼機設計 [[簡報]](https://drive.google.com/file/d/1hEJ8q8cbePwxY358UeMr3Z0nmIqtdnKo/view?usp=drive_link)
+- [PU-01](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 包含機構設計、參數規劃、穩定性分析的定翼機設計 [[簡報]](https://drive.google.com/file/d/1hEJ8q8cbePwxY358UeMr3Z0nmIqtdnKo/view)
 
 數值模擬專案
 ===========
