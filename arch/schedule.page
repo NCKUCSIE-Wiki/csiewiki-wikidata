@@ -41,7 +41,6 @@ Computer Architecture (Fall 2023)
 
 * Week 4 (Sep 26): RISC-V
     - Announcement:
-        + Next quiz is scheduled to Oct 4
         + Code Review for [Homework 1](https://hackmd.io/@sysprog/2022-arch-homework1) on Oct 4
     - [NASA, Microchip, SiFive Announces Partnership for RISC-V Spaceflight Computing Platform](https://www.hackster.io/news/nasa-microchip-sifive-announces-partnership-for-risc-v-spaceflight-computing-platform-f52c55cf14f6)
     - [ST, CAES team on octacore RISC-V space chip with selectable cores](https://www.eenewseurope.com/en/st-to-make-european-octacore-risc-v-space-chip-with-selectable-cores/)
@@ -64,7 +63,6 @@ Computer Architecture (Fall 2023)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1k5qJyfuyk3ITzOfK0cIosyNl0nh1o9UC/edit?usp=sharing) / [Part II](https://docs.google.com/presentation/d/19Zt2UpvJDerRPn2P2XkgcxkhXKIuWJ1g/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apqzuxnUN2fkwt1IGbu3km3)
 
 * Week 7 (Oct 17): Digital Systems
-    * Announcement: New quiz is scheduled on Oct 25
     * [Binary marble adding machine](https://woodgears.ca/marbleadd/) / [video](https://youtu.be/GcDshWmhF4A)
         - Yes, you can implement a few logic-like elements without electricity.
         - Logic gates are primarily implemented using diodes or transistors acting as electronic switches, but can also be constructed using vacuum tubes, electromagnetic relays (relay logic), fluidic logic, pneumatic logic, optics, molecules, or even mechanical elements. Now, most logic gates are made from MOSFETs (metal–oxide–semiconductor field-effect transistors).
@@ -92,7 +90,6 @@ Computer Architecture (Fall 2023)
 
 * Week 10 (Nov 7): Pipelined Processors
     - Announcement:
-        + The next quiz is planned on Nov 15.
         + Homework3 [SoftCPU](https://hackmd.io/@sysprog/2022-arch-homework3) is out.
         + Next week, we will review all the assignments.
     - Recent [rv32emu](https://github.com/sysprog21/rv32emu) changes
@@ -117,7 +114,6 @@ Computer Architecture (Fall 2023)
 
 * Week 12 (Nov 21): Cache + Virtual Memory
     * Announcement
-        * Quiz on Nov 29 - pipeline, cache and virtual memory (partial)
         * Term projects will be listed on Nov 29
     * [Caches: Direct-mapped, set-associative](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec16.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apRiQ2QPjzyq8APGEjnqW1w)
     * [Multi-level Caches, Cache Questions](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec17.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqHsuO6U2bIpwDGqO6UAetk)
@@ -140,7 +136,6 @@ Computer Architecture (Fall 2023)
 
 * Week14 (Dec 5): Synchronization
     - Announcement:
-        * Quiz6 on Dec 13
         * Check the listing of [final/term projects](https://hackmd.io/@sysprog/arch2022-projects) and fill in your names.
     - [Apple Silicon Guide](https://github.com/mikeroyal/Apple-Silicon-Guide)
     - [Debunking CISC vs RISC code density](https://www.bitsnbites.eu/cisc-vs-risc-code-density/)
@@ -155,10 +150,6 @@ Computer Architecture (Fall 2023)
     - [2020 Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6) /[solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
 
 * Week15 (Dec 12): suspended
-    - Announcement:
-        * Quiz6 will be postponed to Dec 20
-        * Quiz7 on Dec 27
-        * Check [the listing of final/term projects](https://hackmd.io/@sysprog/arch2022-projects)
  
 * Week16 (Dec 19): Multithreading, Synchronization, I/O
     - [Quiz6](https://hackmd.io/@sysprog/arch2022-quiz6) / [solution](https://hackmd.io/@sysprog/arch2022-quiz6-sol)
