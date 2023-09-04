@@ -11,9 +11,9 @@ toc: no
     * Quiz (30%), Homework (30%), Final/Term Project (40%)
 - **Schedule is tentative and subject to change!**
 
-Computer Architecture (Fall 2022)
+Computer Architecture (Fall 2023)
 ------------------------------------------------------
-* Week 1 (Sep 6): Introduction / Online via [YouTube](https://youtu.be/kchwRBGRIHk)
+* Week 1 (Sep 5): Introduction / Online via [YouTube](https://youtu.be/kchwRBGRIHk)
     - **[Course Introduction](https://docs.google.com/presentation/d/1RVjrp1bkVqVu-L9JF1QKfXw6tmdIyIEMxuWW5M-2Zpg/edit?usp=sharing)**
     - [David Patterson](https://en.wikipedia.org/wiki/David_Patterson_(computer_scientist)): [A New Golden Age for Computer Architecture: History, Challenges and Opportunities](https://content.riscv.org/wp-content/uploads/2018/12/A-New-Golden-Age-for-Computer-Architecture-History-Challenges-and-Opportunities-David-Patterson-.pdf) / [video](https://youtu.be/uyc_pDBJotI)
         * [Article](https://cacm.acm.org/magazines/2019/2/234352-a-new-golden-age-for-computer-architecture/fulltext), [note](https://github.com/cristiean/notes/blob/4c4ceb291ba68c55659ab0d4571385c8cccacd21/a-new-golden-age-for-computer-architecture.md)
@@ -23,14 +23,14 @@ Computer Architecture (Fall 2022)
     - [Floating Point](https://docs.google.com/presentation/d/166v96_iwGaq_RWB6Y_Wg7DBA8sZciP21R7Gf0ZDXbMQ/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apCExy6OTfkoaciJtfA8hir)
     - [C Memory Management](https://docs.google.com/presentation/d/14N0cWG2SnBSqhc2cLF0_2VerB9FF8JN3/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqxW0XGUcDl5r0m_eRU30C9)
 
-* Week 2 (Sep 13): Quiz + RISC-V / Online via [YouTube](https://youtu.be/jsdPoMHs-4A)
+* Week 2 (Sep 12): Quiz + RISC-V / Online via [YouTube](https://youtu.be/jsdPoMHs-4A)
     - [Quiz1](https://hackmd.io/@sysprog/arch2022-quiz1): C programming, bit-wise operations, number representation, floating-point / [Solution](https://hackmd.io/@sysprog/arch2022-quiz1-sol)
     - [Lab0: Web-based Emulators](https://hackmd.io/@sysprog/SJ7ht_MuS)
     - [RISC-V Instructions](https://docs.google.com/presentation/d/1qNVK8ULddo6luq0Rrjj_bmOShhcx9hlESN36AK91n6I/edit?usp=sharing)
         * [The RISC-V Instruction Set Manual: Volume I: Unprivileged ISA](https://content.riscv.org/wp-content/uploads/2019/06/riscv-spec.pdf)
     - [Intro to Assembly Language and RISC-V](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec06.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqsesqf46rxjtV2mkiwJOmr)
 
-* Week 3 (Sep 20): RISC-V / Online via [YouTube](https://youtu.be/cvhacDLd6QU)
+* Week 3 (Sep 19): RISC-V / Online via [YouTube](https://youtu.be/cvhacDLd6QU)
     - [Intro to Assembly Language and RISC-V](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec06.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqsesqf46rxjtV2mkiwJOmr)
         * [RISC-V Assembly Programmer's Manual](https://github.com/riscv/riscv-asm-manual/blob/master/riscv-asm.md)
     - [RISC-V Data Transfer](https://docs.google.com/presentation/d/1JpRRi2eEbe-UqtvdZ_pK7CjcYJ6vk9e1/edit?usp=sharing) / [video](https://youtu.be/5hwH9ofpNzI)
@@ -39,7 +39,7 @@ Computer Architecture (Fall 2022)
     - [Lab1: RV32I Simulator](https://hackmd.io/@sysprog/H1TpVYMdB)
     - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2022-arch-homework1) (Due: Oct 10, 2022)
 
-* Week 4 (Sep 27): RISC-V / Online via [YouTube](https://youtu.be/sDYkKuoqGbk)
+* Week 4 (Sep 26): RISC-V / Online via [YouTube](https://youtu.be/sDYkKuoqGbk)
     - Announcement:
         + Next quiz is scheduled to Oct 4
         + Code Review for [Homework 1](https://hackmd.io/@sysprog/2022-arch-homework1) on Oct 4
@@ -52,18 +52,18 @@ Computer Architecture (Fall 2022)
     - [CALL = Compiling, Assembling, Linking, and Loading](https://docs.google.com/presentation/d/1Kiu675d7Q0NimIvdtxkXE5kp8-jLDmIt/edit?usp=sharing&ouid=113685665535544054506&rtpof=true&sd=true) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aoprCVNj3PG1kx7DTm3Qs6q)
     - [2021-Quiz2](https://hackmd.io/@sysprog/arch2021-quiz2) / [solution](https://hackmd.io/@sysprog/arch2021-quiz2-sol)
 
-* Week 5 (Oct 4): Quiz + Code Review (Room 4201 (1F) at (old) CSIE Building)
+* Week 5 (Oct 3): Quiz + Code Review (Room 4201 (1F) at (old) CSIE Building)
     - [Quiz2](https://hackmd.io/@sysprog/arch2022-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2022-quiz2-sol)
     - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2022-arch-homework1)
 
-* Week 6 (Oct 11): RISC-V Instruction Format + GNU Toolchain / Online via [YouTube](https://youtu.be/FVWqem0xMas)
+* Week 6 (Oct 10): RISC-V Instruction Format + GNU Toolchain / Online via [YouTube](https://youtu.be/FVWqem0xMas)
     - Next week: [digital logic](https://www.ptt.cc/bbs/Soft_Job/M.1587694288.A.3B5.html)
     - Further reading [FPGA design for Software Engineers](https://www.walknsqualk.com/post/014-tiny-fpga-bx/)
     - [Lab2: RISC-V RV32I[MACF] emulator with ELF support](https://hackmd.io/@sysprog/SJAR5XMmi)
     - Assignment: [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2022-arch-homework2) (Due: Oct 31)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1k5qJyfuyk3ITzOfK0cIosyNl0nh1o9UC/edit?usp=sharing) / [Part II](https://docs.google.com/presentation/d/19Zt2UpvJDerRPn2P2XkgcxkhXKIuWJ1g/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apqzuxnUN2fkwt1IGbu3km3)
 
-* Week 7 (Oct 18): Digital Systems / Online via [YouTube](https://youtu.be/zqF2bE6Dw1o)
+* Week 7 (Oct 17): Digital Systems / Online via [YouTube](https://youtu.be/zqF2bE6Dw1o)
     * Announcement: New quiz is scheduled on Oct 25
     * [Binary marble adding machine](https://woodgears.ca/marbleadd/) / [video](https://youtu.be/GcDshWmhF4A)
         - Yes, you can implement a few logic-like elements without electricity.
@@ -76,11 +76,11 @@ Computer Architecture (Fall 2022)
     - [2021-Quiz3](https://hackmd.io/@sysprog/arch2021-quiz3) / [solution](https://hackmd.io/@sysprog/arch2021-quiz3-sol)
     - [2021-Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4) / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
 
-* Week 8 (Oct 25): Datapath and Control + Code Review (Room 4201 (1F) at (old) CSIE Building)
+* Week 8 (Oct 24): Datapath and Control + Code Review (Room 4201 (1F) at (old) CSIE Building)
     - [Quiz3](https://hackmd.io/@sysprog/arch2022-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2022-quiz3-sol)
     - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
 
-* Week 9 (Nov 1): Pipeline / Online via [YouTube](https://youtu.be/JbOQSCBP4TE)
+* Week 9 (Oct 31): Pipeline / Online via [YouTube](https://youtu.be/JbOQSCBP4TE)
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
     - video: [Circuits recap](https://youtu.be/N36wWh0DriA)
     - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
@@ -90,7 +90,7 @@ Computer Architecture (Fall 2022)
     - MIT 6.191 [L15: Introduction to Pipelining](https://youtu.be/5NQkhqZe8_8), [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA)
         * [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
 
-* Week 10 (Nov 8): Pipelined Processors / Online via [YouTube](https://youtu.be/vCWsFahh5kQ)
+* Week 10 (Nov 7): Pipelined Processors / Online via [YouTube](https://youtu.be/vCWsFahh5kQ)
     - Announcement:
         + The next quiz is planned on Nov 15.
         + Homework3 [SoftCPU](https://hackmd.io/@sysprog/2022-arch-homework3) is out.
@@ -110,12 +110,12 @@ Computer Architecture (Fall 2022)
     - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4) / [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
     - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5) / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol) / [annotated with Ripes](https://hackmd.io/@wIVnCcUaTouAktrkMVLEMA/rkm8OkOjF)
 
-* Week 11 (Nov 15): Quiz + Homework Review (Room 4201 (1F) at (old) CSIE Building)
+* Week 11 (Nov 14): Quiz + Homework Review (Room 4201 (1F) at (old) CSIE Building)
     - [Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol)
     - [Homework1](https://hackmd.io/@sysprog/2022-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2022-arch-homework2)
     - [Complex Pipelines, Out-of-Order Issue, Register Renaming](https://inst.eecs.berkeley.edu/~cs152/sp19/lectures/L10-ComplexPipes.pdf)
 
-* Week 12 (Nov 22): Cache + Virtual Memory / Online via [YouTube](https://youtu.be/K8B8eCpGBp0)
+* Week 12 (Nov 21): Cache + Virtual Memory / Online via [YouTube](https://youtu.be/K8B8eCpGBp0)
     * Announcement
         * Quiz on Nov 29 - pipeline, cache and virtual memory (partial)
         * Term projects will be listed on Nov 29
@@ -129,7 +129,7 @@ Computer Architecture (Fall 2022)
     * [2021-Qui6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol) / [with Ripes simulation](https://hackmd.io/@arthur-chang/SyLa2qb3Y)
     * [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
  
-* Week13 (Nov 29): Quiz + Virtual Memory + Operating System (Room 4201 (1F) at (old) CSIE Building)
+* Week13 (Nov 28): Quiz + Virtual Memory + Operating System (Room 4201 (1F) at (old) CSIE Building)
     - Announcement:
         + Be aware of [Term projects](https://hackmd.io/@sysprog/arch2022-projects)
     - [Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol)
@@ -138,7 +138,7 @@ Computer Architecture (Fall 2022)
         + [Reference work](https://hackmd.io/@Lt35rTMeTi22rWqrBgSQzg/SkXXQ_LJ8)
     - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
 
-* Week14 (Dec 6): Synchronization / Online via [YouTube](https://youtu.be/YNd5Dg2HfT8)
+* Week14 (Dec 5): Synchronization / Online via [YouTube](https://youtu.be/YNd5Dg2HfT8)
     - Announcement:
         * Quiz6 on Dec 13
         * Check the listing of [final/term projects](https://hackmd.io/@sysprog/arch2022-projects) and fill in your names.
@@ -154,13 +154,13 @@ Computer Architecture (Fall 2022)
     - [2021 Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) /[solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol)
     - [2020 Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6) /[solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
 
-* Week15 (Dec 13): suspended
+* Week15 (Dec 12): suspended
     - Announcement:
         * Quiz6 will be postponed to Dec 20
         * Quiz7 on Dec 27
         * Check [the listing of final/term projects](https://hackmd.io/@sysprog/arch2022-projects)
  
-* Week16 (Dec 20): Multithreading, Synchronization, I/O
+* Week16 (Dec 19): Multithreading, Synchronization, I/O
     - [Quiz6](https://hackmd.io/@sysprog/arch2022-quiz6) / [solution](https://hackmd.io/@sysprog/arch2022-quiz6-sol)
     - video: [The Future of Operating Systems on RISC-V](https://youtu.be/emnN9p4vhzk) / [transcript](https://www.infoq.com/presentations/risc-v-future/)
     - [Freestanding RISC-V Programs](https://youtu.be/iml0DBo5yqo)
@@ -176,7 +176,7 @@ Computer Architecture (Fall 2022)
         * Traps/Interrupts/Exceptions
         * Trap Handling in 5-Stage Pipeline
 
-* Week17 (Dec 27): Modern Processors
+* Week17 (Dec 26): Modern Processors
     - [Quiz7](https://hackmd.io/@sysprog/arch2022-quiz7) / [solution](https://hackmd.io/@sysprog/arch2022-quiz7-sol)
     - [listing of final/term projects](https://hackmd.io/@sysprog/arch2022-projects)
         * You must provide the materials and demonstrate to the lecturer before Jan 13, 2023.
