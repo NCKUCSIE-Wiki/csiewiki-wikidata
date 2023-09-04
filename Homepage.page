@@ -8,19 +8,19 @@ categories: 系統頁面
 注意：**Wiki 不等同於 Wikipedia (維基百科)**。
 Wiki 泛指提供多人協同編撰的平台，而 [Wikipedia](http://www.wikipedia.org/) 是藉由 wiki 系統建立的百科全書 (encyclopedia)。
 
-Linux 核心設計/實作 (2019-2023)
-================================
-![](/0-tux-small.jpg)
-
-- [課程進度表](/linux/schedule)
-
-Computer Architecture (2019-2022)
+Computer Architecture (2019-2023)
 ============================
 ![](/mips-arch-small.png)
 
 - [Schedule](/arch/schedule)
 
-* 「[資訊科技產業專案設計](https://hackmd.io/@sysprog/info2022)」課程
+* 「[資訊科技產業專案設計](https://hackmd.io/@sysprog/info2023)」課程
+
+Linux 核心設計/實作 (2019-2023)
+================================
+![](/0-tux-small.jpg)
+
+- [課程進度表](/linux/schedule)
 
 系統軟體系列課程 (2016-2020)
 ================================
