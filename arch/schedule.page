@@ -24,6 +24,9 @@ Computer Architecture (Fall 2023)
     - [C Memory Management](https://docs.google.com/presentation/d/14N0cWG2SnBSqhc2cLF0_2VerB9FF8JN3/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqxW0XGUcDl5r0m_eRU30C9)
 
 * Week 2 (Sep 12): Quiz + RISC-V / online via [YouTube](https://youtube.com/live/YAdl6owYnZU)
+    - Announcement
+        * There is an online quiz from 10:50 AM to 11:59 AM.
+        * The first assignment, consisting of RISC-V assembly programming, will be given next week.
     - [Quiz1](https://hackmd.io/@sysprog/arch2022-quiz1): C programming, bit-wise operations, number representation, floating-point / [Solution](https://hackmd.io/@sysprog/arch2022-quiz1-sol)
     - [Lab0: Web-based Emulators](https://hackmd.io/@sysprog/SJ7ht_MuS)
     - [RISC-V Instructions](https://docs.google.com/presentation/d/1qNVK8ULddo6luq0Rrjj_bmOShhcx9hlESN36AK91n6I/edit?usp=sharing)
@@ -37,7 +40,7 @@ Computer Architecture (Fall 2023)
     - [RISC-V Decision Making](https://docs.google.com/presentation/d/1Pob0JPeMH8umHN4FYPc9ZuJ3ndsaDvuI/edit?usp=sharing)
     - [Functions Calls with RISC-V](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec07.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apCzwwwJGKn2p57tnhtSIIz)
     - [Lab1: RV32I Simulator](https://hackmd.io/@sysprog/H1TpVYMdB)
-    - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2022-arch-homework1) (Due: Oct 10, 2022)
+    - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2022-arch-homework1) (Due: Oct 10, 2023)
 
 * Week 4 (Sep 26): RISC-V
     - Announcement:
