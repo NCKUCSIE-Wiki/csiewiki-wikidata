@@ -27,7 +27,7 @@ Computer Architecture (Fall 2023)
     - Announcement
         * There is an online quiz from 10:50 AM to 11:59 AM.
         * The first assignment, consisting of RISC-V assembly programming, will be given next week.
-    - [Quiz1](https://hackmd.io/@sysprog/arch2022-quiz1): C programming, bit-wise operations, number representation, floating-point / [Solution](https://hackmd.io/@sysprog/arch2022-quiz1-sol)
+    - [Quiz1](https://hackmd.io/@sysprog/arch2023-quiz1): C programming, bit-wise operations, number representation, floating-point
     - [Lab0: Web-based Emulators](https://hackmd.io/@sysprog/SJ7ht_MuS)
     - [RISC-V Instructions](https://docs.google.com/presentation/d/1qNVK8ULddo6luq0Rrjj_bmOShhcx9hlESN36AK91n6I/edit?usp=sharing)
         * [The RISC-V Instruction Set Manual: Volume I: Unprivileged ISA](https://content.riscv.org/wp-content/uploads/2019/06/riscv-spec.pdf)
