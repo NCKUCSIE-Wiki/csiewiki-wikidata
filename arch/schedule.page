@@ -59,16 +59,16 @@ Computer Architecture (Fall 2023)
     - [Calling Convention for RISC-V](https://docs.google.com/presentation/d/10-LTD_zwQO23yxRNGL1gOpYmab8rDFsv/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apCzwwwJGKn2p57tnhtSIIz)
     - [CALL = Compiling, Assembling, Linking, and Loading](https://docs.google.com/presentation/d/1Kiu675d7Q0NimIvdtxkXE5kp8-jLDmIt/edit?usp=sharing&ouid=113685665535544054506&rtpof=true&sd=true) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aoprCVNj3PG1kx7DTm3Qs6q)
 
-* Week 5 (Oct 3): Quiz + Code Review
+* Week 5 (Oct 3): Code Review + RISC-V Instruction Format + GNU Toolchain
     - [Quiz3](https://hackmd.io/@sysprog/arch2023-quiz3): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2023-quiz3-sol)
     - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2023-arch-homework1)
-
-* Week 6 (Oct 10): RISC-V Instruction Format + GNU Toolchain
     - Further reading [FPGA design for Software Engineers](https://www.walknsqualk.com/post/014-tiny-fpga-bx/)
     - [Lab2: RISC-V RV32I[MACF] emulator with ELF support](https://hackmd.io/@sysprog/SJAR5XMmi)
     - Assignment: [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2022-arch-homework2) (Due: Oct 31)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1k5qJyfuyk3ITzOfK0cIosyNl0nh1o9UC/edit?usp=sharing) / [Part II](https://docs.google.com/presentation/d/19Zt2UpvJDerRPn2P2XkgcxkhXKIuWJ1g/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apqzuxnUN2fkwt1IGbu3km3)
         * [online tool for RISC-V Instruction Encoder/Decoder](https://luplab.gitlab.io/rvcodecjs/) / [source code](https://gitlab.com/luplab/rvcodecjs)
+
+* Week 6 (Oct 10): National Day
 
 * Week 7 (Oct 17): Digital Systems
     * [Binary marble adding machine](https://woodgears.ca/marbleadd/) / [video](https://youtu.be/GcDshWmhF4A)
