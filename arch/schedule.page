@@ -31,9 +31,17 @@ Computer Architecture (Fall 2023)
     - [RISC-V Instructions](https://docs.google.com/presentation/d/1qNVK8ULddo6luq0Rrjj_bmOShhcx9hlESN36AK91n6I/edit?usp=sharing)
 
 * Week 3 (Sep 19): RISC-V
+    - Announcement:
+        + Quiz2 is scheduled on Sep 26
+            * [2022 Quiz2](https://hackmd.io/@sysprog/arch2022-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2022-quiz2-sol)
+            * [2021 Quiz2](https://hackmd.io/@sysprog/arch2022-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2021-quiz2-sol)
+        + [Homework 1](https://hackmd.io/@sysprog/2023-arch-homework1) is out.
+        + Code Review for [Homework 1](https://hackmd.io/@sysprog/2023-arch-homework1) on Oct 3
     - Apple [A17 Pro](https://twitter.com/VadimYuryev/status/1702351628236718206)
         * 19 billion transistors compared to 16 billion on the A16. [further reading](https://twitter.com/VadimYuryev/status/1702401409885544551)
         * [graphics benchmark](https://twitter.com/VadimYuryev/status/1702505691314024646)
+        * [ARM1 (1985) vs. Apple M1 Max (2021)](https://twitter.com/kenshirriff/status/1450179024639049731)
+        * [Apple Announces M1 Pro & M1 Max: Giant New Arm SoCs with All-Out Performance](https://www.anandtech.com/show/17019/apple-announced-m1-pro-m1-max-giant-new-socs-with-allout-performance)
     - [Intro to Assembly Language and RISC-V](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec06.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqsesqf46rxjtV2mkiwJOmr)
         * [RISC-V Assembly Programmer's Manual](https://github.com/riscv/riscv-asm-manual/blob/master/riscv-asm.md)
         * [The RISC-V Instruction Set Manual: Volume I: Unprivileged ISA](https://content.riscv.org/wp-content/uploads/2019/06/riscv-spec.pdf)
@@ -44,21 +52,16 @@ Computer Architecture (Fall 2023)
     - [Lab1: RV32I Assembly](https://hackmd.io/@sysprog/H1TpVYMdB)
     - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2023-arch-homework1) (Due: Oct 10, 2023)
 
-* Week 4 (Sep 26): RISC-V
-    - Announcement:
-        + Code Review for [Homework 1](https://hackmd.io/@sysprog/2022-arch-homework1) on Oct 3
+* Week 4 (Sep 26): Quiz + RISC-V
+    - [Quiz2](https://hackmd.io/@sysprog/arch2023-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2023-quiz2-sol)
     - [NASA, Microchip, SiFive Announces Partnership for RISC-V Spaceflight Computing Platform](https://www.hackster.io/news/nasa-microchip-sifive-announces-partnership-for-risc-v-spaceflight-computing-platform-f52c55cf14f6)
     - [ST, CAES team on octacore RISC-V space chip with selectable cores](https://www.eenewseurope.com/en/st-to-make-european-octacore-risc-v-space-chip-with-selectable-cores/)
-    - Apple M1 Pro/Max
-        + [ARM1 (1985) vs. Apple M1 Max (2021)](https://twitter.com/kenshirriff/status/1450179024639049731)
-        + [Apple Announces M1 Pro & M1 Max: Giant New Arm SoCs with All-Out Performance](https://www.anandtech.com/show/17019/apple-announced-m1-pro-m1-max-giant-new-socs-with-allout-performance) / [Apple M2](https://en.wikipedia.org/wiki/Apple_M2)
     - [Calling Convention for RISC-V](https://docs.google.com/presentation/d/10-LTD_zwQO23yxRNGL1gOpYmab8rDFsv/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apCzwwwJGKn2p57tnhtSIIz)
     - [CALL = Compiling, Assembling, Linking, and Loading](https://docs.google.com/presentation/d/1Kiu675d7Q0NimIvdtxkXE5kp8-jLDmIt/edit?usp=sharing&ouid=113685665535544054506&rtpof=true&sd=true) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aoprCVNj3PG1kx7DTm3Qs6q)
-    - [2021-Quiz2](https://hackmd.io/@sysprog/arch2021-quiz2) / [solution](https://hackmd.io/@sysprog/arch2021-quiz2-sol)
 
 * Week 5 (Oct 3): Quiz + Code Review
-    - [Quiz2](https://hackmd.io/@sysprog/arch2022-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2022-quiz2-sol)
-    - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2022-arch-homework1)
+    - [Quiz3](https://hackmd.io/@sysprog/arch2023-quiz3): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2023-quiz3-sol)
+    - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2023-arch-homework1)
 
 * Week 6 (Oct 10): RISC-V Instruction Format + GNU Toolchain
     - Further reading [FPGA design for Software Engineers](https://www.walknsqualk.com/post/014-tiny-fpga-bx/)
