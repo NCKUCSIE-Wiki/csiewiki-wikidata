@@ -41,8 +41,8 @@ Computer Architecture (Fall 2023)
     - [RISC-V Decision Making](https://docs.google.com/presentation/d/1Pob0JPeMH8umHN4FYPc9ZuJ3ndsaDvuI/edit?usp=sharing)
     - [Functions Calls with RISC-V](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec07.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apCzwwwJGKn2p57tnhtSIIz)
     - [Lab0: Web-based Emulators](https://hackmd.io/@sysprog/SJ7ht_MuS)
-    - [Lab1: RV32I Simulator](https://hackmd.io/@sysprog/H1TpVYMdB)
-    - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2022-arch-homework1) (Due: Oct 10, 2023)
+    - [Lab1: RV32I Assembly](https://hackmd.io/@sysprog/H1TpVYMdB)
+    - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2023-arch-homework1) (Due: Oct 10, 2023)
 
 * Week 4 (Sep 26): RISC-V
     - Announcement:
