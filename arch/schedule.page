@@ -60,7 +60,6 @@ Computer Architecture (Fall 2023)
     - [CALL = Compiling, Assembling, Linking, and Loading](https://docs.google.com/presentation/d/1Kiu675d7Q0NimIvdtxkXE5kp8-jLDmIt/edit?usp=sharing&ouid=113685665535544054506&rtpof=true&sd=true) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aoprCVNj3PG1kx7DTm3Qs6q)
 
 * Week 5 (Oct 3): Code Review + RISC-V Instruction Format + GNU Toolchain
-    - [Quiz3](https://hackmd.io/@sysprog/arch2023-quiz3): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2023-quiz3-sol)
     - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2023-arch-homework1)
     - Further reading [FPGA design for Software Engineers](https://www.walknsqualk.com/post/014-tiny-fpga-bx/)
     - [Lab2: RISC-V RV32I[MACF] emulator with ELF support](https://hackmd.io/@sysprog/SJAR5XMmi)
@@ -82,7 +81,7 @@ Computer Architecture (Fall 2023)
     - [2021-Quiz3](https://hackmd.io/@sysprog/arch2021-quiz3) / [solution](https://hackmd.io/@sysprog/arch2021-quiz3-sol)
     - [2021-Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4) / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
 
-* Week 8 (Oct 24): Datapath and Control + Code Review (Room 4201 (1F) at (old) CSIE Building)
+* Week 8 (Oct 24): Datapath and Control + Code Review
     - [Quiz3](https://hackmd.io/@sysprog/arch2022-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2022-quiz3-sol)
     - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
 
