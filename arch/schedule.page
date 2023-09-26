@@ -56,6 +56,8 @@ Computer Architecture (Fall 2023)
 * Week 4 (Sep 26): Quiz + RISC-V
     * Announcement
          - Due to an unexpected traffic jam, the instructor failed to catch the train from Taipei to Tainan on time. Today's class is accordingly divided into two intervals: a quiz from 09:10 to 10:00 and a lecture from 11:00 to 12:00.
+    * Errata
+        * [2023 Quiz1](https://hackmd.io/@sysprog/arch2023-quiz1-sol): Additional `x += (x >> 32)` statement in Problem A
     - [Quiz2](https://hackmd.io/@sysprog/arch2023-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2023-quiz2-sol)
     - [NASA, Microchip, SiFive Announces Partnership for RISC-V Spaceflight Computing Platform](https://www.hackster.io/news/nasa-microchip-sifive-announces-partnership-for-risc-v-spaceflight-computing-platform-f52c55cf14f6)
     - [ST, CAES team on octacore RISC-V space chip with selectable cores](https://www.eenewseurope.com/en/st-to-make-european-octacore-risc-v-space-chip-with-selectable-cores/)
