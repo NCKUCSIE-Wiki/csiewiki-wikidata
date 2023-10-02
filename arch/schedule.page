@@ -54,8 +54,6 @@ Computer Architecture (Fall 2023)
     - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2023-arch-homework1) (Due: Oct 10, 2023)
 
 * Week 4 (Sep 26): Quiz + RISC-V
-    * Announcement
-         - Due to an unexpected traffic jam, the instructor failed to catch the train from Taipei to Tainan on time. Today's class is accordingly divided into two intervals: a quiz from 09:10 to 10:00 and a lecture from 11:00 to 12:00.
     * Errata
         * [2023 Quiz1](https://hackmd.io/@sysprog/arch2023-quiz1-sol): Additional `x += (x >> 32)` statement in Problem A
     - [Quiz2](https://hackmd.io/@sysprog/arch2023-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2023-quiz2-sol)
@@ -67,7 +65,6 @@ Computer Architecture (Fall 2023)
 
 * Week 5 (Oct 3): Code Review + RISC-V Instruction Format + GNU Toolchain
     - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2023-arch-homework1)
-    - Further reading [FPGA design for Software Engineers](https://www.walknsqualk.com/post/014-tiny-fpga-bx/)
     - [Lab2: RISC-V RV32I[MACF] emulator with ELF support](https://hackmd.io/@sysprog/SJAR5XMmi)
     - Assignment: [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2022-arch-homework2) (Due: Oct 29)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1k5qJyfuyk3ITzOfK0cIosyNl0nh1o9UC/edit?usp=sharing) / [Part II](https://docs.google.com/presentation/d/19Zt2UpvJDerRPn2P2XkgcxkhXKIuWJ1g/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apqzuxnUN2fkwt1IGbu3km3)
@@ -76,6 +73,7 @@ Computer Architecture (Fall 2023)
 * Week 6 (Oct 10): National Day
 
 * Week 7 (Oct 17): Digital Systems
+    - Further reading [FPGA design for Software Engineers](https://www.walknsqualk.com/post/014-tiny-fpga-bx/)
     * [Binary marble adding machine](https://woodgears.ca/marbleadd/) / [video](https://youtu.be/GcDshWmhF4A)
         - Yes, you can implement a few logic-like elements without electricity.
         - Logic gates are primarily implemented using diodes or transistors acting as electronic switches, but can also be constructed using vacuum tubes, electromagnetic relays (relay logic), fluidic logic, pneumatic logic, optics, molecules, or even mechanical elements. Now, most logic gates are made from MOSFETs (metal–oxide–semiconductor field-effect transistors).
