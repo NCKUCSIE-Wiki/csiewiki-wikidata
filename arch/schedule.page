@@ -73,7 +73,9 @@ Computer Architecture (Fall 2023)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1k5qJyfuyk3ITzOfK0cIosyNl0nh1o9UC/edit?usp=sharing) / [Part II](https://docs.google.com/presentation/d/19Zt2UpvJDerRPn2P2XkgcxkhXKIuWJ1g/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apqzuxnUN2fkwt1IGbu3km3)
 
 * Week 6 (Oct 10): National Day | make up a lesson on Oct 12 night via [YouTube](https://youtube.com/live/l7sKCIMo9AY)
-    * Announcement: Given the consistent progress of the lecture, we will schedule a makeup lesson for 19:30 on October 12th via [YouTube](https://youtube.com/live/l7sKCIMo9AY).
+    * Announcement:
+        - Given the consistent progress of the lecture, we will schedule a makeup lesson for 19:30 on October 12th via [YouTube](https://youtube.com/live/l7sKCIMo9AY).
+        - [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2023-arch-homework2) is out. (Due: Oct 31)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1k5qJyfuyk3ITzOfK0cIosyNl0nh1o9UC/edit?usp=sharing) / [Part II](https://docs.google.com/presentation/d/19Zt2UpvJDerRPn2P2XkgcxkhXKIuWJ1g/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apqzuxnUN2fkwt1IGbu3km3)
         * [online tool for RISC-V Instruction Encoder/Decoder](https://luplab.gitlab.io/rvcodecjs/) / [source code](https://gitlab.com/luplab/rvcodecjs)
     - Further reading [FPGA design for Software Engineers](https://www.walknsqualk.com/post/014-tiny-fpga-bx/)
