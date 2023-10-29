@@ -96,7 +96,7 @@ Computer Architecture (Fall 2023)
     - [2021-Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4) / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
     - [2022-Quiz3](https://hackmd.io/@sysprog/arch2022-quiz3) / [solution](https://hackmd.io/@sysprog/arch2022-quiz3-sol)
 
-* Week 8 (Oct 24): Datapath and Control + Code Review
+* Week 8 (Oct 24): Quiz + Datapath and Control
     - [Quiz3](https://hackmd.io/@sysprog/arch2023-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2023-quiz3-sol)
     - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
 
@@ -114,13 +114,6 @@ Computer Architecture (Fall 2023)
     - Announcement:
         + Homework3 [SoftCPU](https://hackmd.io/@sysprog/2022-arch-homework3) is out.
         + Next week, we will review all the assignments.
-    - Recent [rv32emu](https://github.com/sysprog21/rv32emu) changes
-        + More descriptions about system calls. See [docs/syscall.md](https://github.com/sysprog21/rv32emu/blob/master/docs/syscall.md)
-        + Implement `clock_gettime` system call, so that you can call `gettimeofday`/`clock_gettime` in C programs.
-        + Implement [user-level counters](https://github.com/riscv/riscv-isa-manual) for getting CPU cycle counts in RISC-V programs. See [tests/perfcounter](https://github.com/sysprog21/rv32emu/tree/master/tests/perfcounter) for sample usage.
-        + Better experiences while [running Doom and Quake games](https://github.com/sysprog21/rv32emu/blob/master/docs/demo.md). You can resize the window and use mouse properly.
-        + More test programs: jit-bf (JIT assembler for RISC-V), coro (a simple coroutine implementation for RISC-V), mandelbrot (an ASCII-based renderer for Mandelbrot Set, colorized), richards (an operating system task scheduler simulation benchmark), and chacha20 (stream cipher)
-        + More comments in source files. 
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p)
     - [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [RISC-V 5-Stage Pipeline / Hazards](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec14.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aq-xpoKcmd7X9w-l6KHiNMa)
@@ -129,7 +122,7 @@ Computer Architecture (Fall 2023)
     - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4) / [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
     - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5) / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol) / [annotated with Ripes](https://hackmd.io/@wIVnCcUaTouAktrkMVLEMA/rkm8OkOjF)
 
-* Week 11 (Nov 14): Quiz + Homework Review (Room 4201 (1F) at (old) CSIE Building)
+* Week 11 (Nov 14): Quiz + Homework Review
     - [Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol)
     - [Homework1](https://hackmd.io/@sysprog/2022-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2022-arch-homework2)
     - [Complex Pipelines, Out-of-Order Issue, Register Renaming](https://inst.eecs.berkeley.edu/~cs152/sp19/lectures/L10-ComplexPipes.pdf)
