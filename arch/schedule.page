@@ -100,7 +100,7 @@ Computer Architecture (Fall 2023)
     - [Quiz3](https://hackmd.io/@sysprog/arch2023-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2023-quiz3-sol)
     - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
 
-* Week 9 (Oct 31): Pipeline
+* Week 9 (Oct 31): [online via YouTube](https://youtube.com/live/WUpGwSrsz8g); Pipeline
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
     - video: [Circuits recap](https://youtu.be/N36wWh0DriA)
     - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
