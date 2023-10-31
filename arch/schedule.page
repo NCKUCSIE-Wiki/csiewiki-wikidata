@@ -101,8 +101,15 @@ Computer Architecture (Fall 2023)
     - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
 
 * Week 9 (Oct 31): [online via YouTube](https://youtube.com/live/WUpGwSrsz8g); Pipeline
+    - Announcement:
+        + New quiz is scheduled on Nov 14.
+        + Code Review for [Homework 1](https://hackmd.io/@sysprog/2023-arch-homework2) and on Nov 14.
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
     - video: [Circuits recap](https://youtu.be/N36wWh0DriA)
+    - Constructing Hardware in a Scala Embedded Language ([Chisel](https://github.com/chipsalliance/chisel)) is an open-source hardware description language (HDL) used to describe digital electronics and circuits at the register-transfer level that facilitates advanced circuit generation and design reuse for both ASIC and FPGA digital logic designs.
+        * [slides](https://docs.google.com/presentation/d/1gMtABxBEDFbCFXN_-dPyvycNAyFROZKwk-HMcnxfTnU/edit#slide=id.p)
+        * [Finite impulse response](https://en.wikipedia.org/wiki/Finite_impulse_response) (FIR)
+        * [Learn Chisel online!](https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master)
     - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
         + [slides](https://docs.google.com/presentation/d/1SbeyDTycsb97201QvzxGa4CmE9bmRDyd/edit?usp=sharing)
     - [Single-Cycle CPU Control](https://drive.google.com/drive/folders/1QAqqFyQUAu8GE_FvvqGHlF_Nk5VKzleC) / [video](https://youtu.be/0WnPU46zjbA)
@@ -124,7 +131,7 @@ Computer Architecture (Fall 2023)
 
 * Week 11 (Nov 14): Quiz + Homework Review
     - [Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol)
-    - [Homework1](https://hackmd.io/@sysprog/2022-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2022-arch-homework2)
+    - [Homework1](https://hackmd.io/@sysprog/2023-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2023-arch-homework2)
     - [Complex Pipelines, Out-of-Order Issue, Register Renaming](https://inst.eecs.berkeley.edu/~cs152/sp19/lectures/L10-ComplexPipes.pdf)
 
 * Week 12 (Nov 21): Cache + Virtual Memory
