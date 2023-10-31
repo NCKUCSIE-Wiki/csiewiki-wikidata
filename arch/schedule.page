@@ -110,6 +110,7 @@ Computer Architecture (Fall 2023)
         * [slides](https://docs.google.com/presentation/d/1gMtABxBEDFbCFXN_-dPyvycNAyFROZKwk-HMcnxfTnU/edit#slide=id.p)
         * [Finite impulse response](https://en.wikipedia.org/wiki/Finite_impulse_response) (FIR)
         * [Learn Chisel online!](https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master)
+            + Please run the cell blocks by either pressing SHIFT+ENTER on your keyboard
     - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
         + [slides](https://docs.google.com/presentation/d/1SbeyDTycsb97201QvzxGa4CmE9bmRDyd/edit?usp=sharing)
     - [Single-Cycle CPU Control](https://drive.google.com/drive/folders/1QAqqFyQUAu8GE_FvvqGHlF_Nk5VKzleC) / [video](https://youtu.be/0WnPU46zjbA)
