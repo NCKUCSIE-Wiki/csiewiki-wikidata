@@ -103,7 +103,7 @@ Computer Architecture (Fall 2023)
 * Week 9 (Oct 31): [online via YouTube](https://youtube.com/live/WUpGwSrsz8g); Pipeline
     - Announcement:
         + New quiz is scheduled on Nov 14.
-        + Code Review for [Homework 2](https://hackmd.io/@sysprog/2023-arch-homework2) and on Nov 14.
+        + Code Review for [Homework 2](https://hackmd.io/@sysprog/2023-arch-homework2) and on Nov 7 and 14.
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
     - video: [Circuits recap](https://youtu.be/N36wWh0DriA)
     - Constructing Hardware in a Scala Embedded Language ([Chisel](https://github.com/chipsalliance/chisel)) is an open-source hardware description language (HDL) used to describe digital electronics and circuits at the register-transfer level that facilitates advanced circuit generation and design reuse for both ASIC and FPGA digital logic designs.
@@ -121,7 +121,7 @@ Computer Architecture (Fall 2023)
 * Week 10 (Nov 7): Pipelined Processors
     - Announcement:
         + Homework3 [SoftCPU](https://hackmd.io/@sysprog/2022-arch-homework3) is out.
-        + Next week, we will review all the assignments.
+        + Next week, we will continue reviewing all the assignments.
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p)
     - [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [RISC-V 5-Stage Pipeline / Hazards](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec14.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aq-xpoKcmd7X9w-l6KHiNMa)
