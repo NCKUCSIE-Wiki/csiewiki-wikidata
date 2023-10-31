@@ -103,7 +103,7 @@ Computer Architecture (Fall 2023)
 * Week 9 (Oct 31): [online via YouTube](https://youtube.com/live/WUpGwSrsz8g); Pipeline
     - Announcement:
         + New quiz is scheduled on Nov 14.
-        + Code Review for [Homework 1](https://hackmd.io/@sysprog/2023-arch-homework2) and on Nov 14.
+        + Code Review for [Homework 2](https://hackmd.io/@sysprog/2023-arch-homework2) and on Nov 14.
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
     - video: [Circuits recap](https://youtu.be/N36wWh0DriA)
     - Constructing Hardware in a Scala Embedded Language ([Chisel](https://github.com/chipsalliance/chisel)) is an open-source hardware description language (HDL) used to describe digital electronics and circuits at the register-transfer level that facilitates advanced circuit generation and design reuse for both ASIC and FPGA digital logic designs.
