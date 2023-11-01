@@ -100,7 +100,7 @@ Computer Architecture (Fall 2023)
     - [Quiz3](https://hackmd.io/@sysprog/arch2023-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2023-quiz3-sol)
     - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
 
-* Week 9 (Oct 31): [online via YouTube](https://youtube.com/live/WUpGwSrsz8g); Pipeline
+* Week 9 (Oct 31): [online via YouTube](https://youtube.com/live/WUpGwSrsz8g); Datapath and Control + Pipeline
     - Announcement:
         + New quiz is scheduled on Nov 14.
         + Code Review for [Homework 2](https://hackmd.io/@sysprog/2023-arch-homework2) and on Nov 7 and 14.
