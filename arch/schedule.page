@@ -122,6 +122,9 @@ Computer Architecture (Fall 2023)
     - Announcement:
         + Homework3 [SoftCPU](https://hackmd.io/@sysprog/2022-arch-homework3) is out.
         + Next week, we will continue reviewing all the assignments.
+    - [rv32emu](https://github.com/sysprog21/rv32emu) development
+        * commit [c1b8db0](https://github.com/sysprog21/rv32emu/commit/c1b8db0edec677cf654d19065b09db666bbd5b4f) successfully resolved a known issue that was preventing Doom from launching.
+        * However, Quake renders incorrectly. ([#258](https://github.com/sysprog21/rv32emu/issues/258))
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p)
     - [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [RISC-V 5-Stage Pipeline / Hazards](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec14.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aq-xpoKcmd7X9w-l6KHiNMa)
