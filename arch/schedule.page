@@ -120,8 +120,12 @@ Computer Architecture (Fall 2023)
 
 * Week 10 (Nov 7): Pipelined Processors
     - Announcement:
-        + Homework3 [SoftCPU](https://hackmd.io/@sysprog/2022-arch-homework3) is out.
+        + Refresh the page at 11:59 AM on Nov 8 to get the detailed description of Homework3, which is due on Nov 29.
         + Next week, we will continue reviewing all the assignments.
+        + Quiz4 is scheduled next week.
+            - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4) / [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
+            - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5) / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol) / [annotated with Ripes](https://hackmd.io/@wIVnCcUaTouAktrkMVLEMA/rkm8OkOjF)
+            - [2022 Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4) / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol)
     - [rv32emu](https://github.com/sysprog21/rv32emu) development
         * commit [c1b8db0](https://github.com/sysprog21/rv32emu/commit/c1b8db0edec677cf654d19065b09db666bbd5b4f) successfully resolved a known issue that was preventing Doom from launching.
         * However, Quake renders incorrectly. ([#258](https://github.com/sysprog21/rv32emu/issues/258))
@@ -130,8 +134,6 @@ Computer Architecture (Fall 2023)
     - [RISC-V 5-Stage Pipeline / Hazards](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec14.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aq-xpoKcmd7X9w-l6KHiNMa)
     - [Lab3: Chisel](https://hackmd.io/@sysprog/r1mlr3I7p)
     - Assignment: [Homework3: SoftCPU](https://hackmd.io/@sysprog/2023-arch-homework3)  (Due: Nov 29, 2023)
-    - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4) / [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
-    - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5) / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol) / [annotated with Ripes](https://hackmd.io/@wIVnCcUaTouAktrkMVLEMA/rkm8OkOjF)
 
 * Week 11 (Nov 14): Quiz + Homework Review
     - [Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol)
