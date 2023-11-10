@@ -120,7 +120,7 @@ Computer Architecture (Fall 2023)
 
 * Week 10 (Nov 7): Pipelined Processors
     - Announcement:
-        + [Homework3](https://hackmd.io/@sysprog/2023-arch-homework3) is out. Due: Dec 1.
+        + [Homework3](https://hackmd.io/@sysprog/2023-arch-homework3) is out.
         + Next week, we will continue reviewing all the assignments.
         + Quiz4 is scheduled next week.
             - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4) / [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
@@ -133,7 +133,7 @@ Computer Architecture (Fall 2023)
     - [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [RISC-V 5-Stage Pipeline / Hazards](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec14.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aq-xpoKcmd7X9w-l6KHiNMa)
     - [Lab3: Construct a single-cycle CPU with Chisel](https://hackmd.io/@sysprog/r1mlr3I7p)
-    - Assignment: [Homework3: SoftCPU](https://hackmd.io/@sysprog/2023-arch-homework3)  (Due: Nov 29, 2023)
+    - Assignment: [Homework3: Single-cycle CPU in Chisel](https://hackmd.io/@sysprog/2023-arch-homework3)  (Due: Dec 1, 2023)
 
 * Week 11 (Nov 14): Quiz + Homework Review
     - [Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol)
