@@ -125,7 +125,7 @@ Computer Architecture (Fall 2023)
         + Quiz4 is scheduled next week.
             - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4) / [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
             - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5) / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol) / [annotated with Ripes](https://hackmd.io/@wIVnCcUaTouAktrkMVLEMA/rkm8OkOjF)
-            - [2022 Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4) / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol)
+            - [2022 Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4) / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/SJxvlqOds)
     - [rv32emu](https://github.com/sysprog21/rv32emu) development
         * commit [c1b8db0](https://github.com/sysprog21/rv32emu/commit/c1b8db0edec677cf654d19065b09db666bbd5b4f) successfully resolved a known issue that was preventing Doom from launching.
         * However, Quake renders incorrectly. ([#258](https://github.com/sysprog21/rv32emu/issues/258))
