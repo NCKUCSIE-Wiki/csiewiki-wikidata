@@ -197,9 +197,8 @@ Computer Architecture (Fall 2023)
         * Trap Handling in 5-Stage Pipeline
 
 * Week17 (Dec 26): Modern Processors
-    - [Quiz7](https://hackmd.io/@sysprog/arch2022-quiz7) / [solution](https://hackmd.io/@sysprog/arch2022-quiz7-sol)
     - [listing of final/term projects](https://hackmd.io/@sysprog/arch2022-projects)
-        * You must provide the materials and demonstrate to the lecturer before Jan 13, 2023.
+        * You must provide the materials and demonstrate to the lecturer before Jan 14, 2023.
         * Summarize what you did and send email to `<jserv.tw@gmail.com>`.
     - [Modern Processor Architecture](https://youtu.be/sbGtFtxqkkg)
     - [Introduction to Dynamic Branch Prediction](https://youtu.be/PFmx2p6NA0A), [Advanced Branch Prediction](https://youtu.be/avp3bDqCXYM), [Tournament Predictors and Branch Prediction Accuracy](https://youtu.be/-T8yDJ8vTuI)
@@ -207,6 +206,7 @@ Computer Architecture (Fall 2023)
     - [Hardware Based Speculation](https://youtu.be/mFtX28lH4O8)
 
 * Week 18 (Jan 2): Modern Processors
+    - [Quiz7](https://hackmd.io/@sysprog/arch2022-quiz7) / [solution](https://hackmd.io/@sysprog/arch2022-quiz7-sol)
     - [Modern Processor Architecture](https://youtu.be/sbGtFtxqkkg)
     - [Introduction to Dynamic Branch Prediction](https://youtu.be/PFmx2p6NA0A), [Advanced Branch Prediction](https://youtu.be/avp3bDqCXYM), [Tournament Predictors and Branch Prediction Accuracy](https://youtu.be/-T8yDJ8vTuI)
     - Project: [Analyze and improve srv32](https://hackmd.io/@peishan/HkJrtKpoY)
