@@ -140,14 +140,17 @@ Computer Architecture (Fall 2023)
     - [Homework1](https://hackmd.io/@sysprog/2023-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2023-arch-homework2)
     - [Complex Pipelines, Out-of-Order Issue, Register Renaming](https://inst.eecs.berkeley.edu/~cs152/sp19/lectures/L10-ComplexPipes.pdf)
 
-* Week 12 (Nov 21): Cache + Virtual Memory
+* Week 12 (Nov 21): Cache
     * Announcement
         * Quiz 5 is scheduled on Dec 5
             - [2022-Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5) / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/ry3j69OOo)
             - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol) / [with Ripes simulation](https://hackmd.io/@arthur-chang/SyLa2qb3Y)
             - [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
+        * This semester, we will conduct 7 quizzes. Out of these, the best 4 will be selected for grading purposes.
     * [Caches: Direct-mapped, set-associative](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec16.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apRiQ2QPjzyq8APGEjnqW1w)
     * [Multi-level Caches, Cache Questions](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec17.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqHsuO6U2bIpwDGqO6UAetk)
+    - [Lab4: Cache](https://cs61c.org/fa20/labs/lab08/)
+        + [Reference work](https://hackmd.io/@Lt35rTMeTi22rWqrBgSQzg/SkXXQ_LJ8)
     * Recall: [The golden age of ever-changing computer architecture](https://hackaday.com/2019/11/27/the-golden-age-of-ever-changing-computer-architecture/)
         * [The next big tech war front: RISC-V](https://asiatimes.com/2023/11/the-next-big-tech-war-front-risc-v/)
         * [Computing on Andromeda: Chip Company Releases 13.5M Core Supercomputer](https://www.allaboutcircuits.com/news/computing-on-andromeda-chip-company-releases-13.5m-core-supercomputer/)
@@ -157,15 +160,13 @@ Computer Architecture (Fall 2023)
 * Week13 (Nov 28): Virtual Memory + Operating System
     - Announcement:
         + Term projects will be listed on Dec 5. [Term projects of 2022](https://hackmd.io/@sysprog/arch2022-projects)
-    - [Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol)
     * [Virtual Memory](https://youtu.be/TsxZlXOrt8U) / UCB: [Virtual Memory](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec19.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ar2Wia7JngBFMmwRlr4s79j)
-    - [Lab4: Cache](https://cs61c.org/fa20/labs/lab08/)
-        + [Reference work](https://hackmd.io/@Lt35rTMeTi22rWqrBgSQzg/SkXXQ_LJ8)
     - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
 
 * Week14 (Dec 5): Quiz + Synchronization
     - Announcement:
         * Check the listing of [final/term projects](https://hackmd.io/@sysprog/arch2022-projects) and fill in your names.
+    - [Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol)
     - [Apple Silicon Guide](https://github.com/mikeroyal/Apple-Silicon-Guide)
     - [Debunking CISC vs RISC code density](https://www.bitsnbites.eu/cisc-vs-risc-code-density/)
     - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
