@@ -161,6 +161,7 @@ Computer Architecture (Fall 2023)
         + Term projects will be listed on Dec 5. [Term projects of 2022](https://hackmd.io/@sysprog/arch2022-projects)
     * [Virtual Memory](https://youtu.be/TsxZlXOrt8U) / UCB: [Virtual Memory](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec19.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ar2Wia7JngBFMmwRlr4s79j)
     - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
+    - RISC-V Vector extension
 
 * Week14 (Dec 5): Quiz + Synchronization
     - Announcement:
