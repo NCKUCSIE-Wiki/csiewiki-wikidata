@@ -142,10 +142,11 @@ Computer Architecture (Fall 2023)
 
 * Week 12 (Nov 21): Cache + Virtual Memory
     * Announcement
-        * Term projects will be listed on Nov 29
+        * Term projects will be listed on Nov 28
     * [Caches: Direct-mapped, set-associative](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec16.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apRiQ2QPjzyq8APGEjnqW1w)
     * [Multi-level Caches, Cache Questions](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec17.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqHsuO6U2bIpwDGqO6UAetk)
-    * [The golden age of ever-changing computer architecture](https://hackaday.com/2019/11/27/the-golden-age-of-ever-changing-computer-architecture/)
+    * Recall: [The golden age of ever-changing computer architecture](https://hackaday.com/2019/11/27/the-golden-age-of-ever-changing-computer-architecture/)
+        * [The next big tech war front: RISC-V](https://asiatimes.com/2023/11/the-next-big-tech-war-front-risc-v/)
         * [Computing on Andromeda: Chip Company Releases 13.5M Core Supercomputer](https://www.allaboutcircuits.com/news/computing-on-andromeda-chip-company-releases-13.5m-core-supercomputer/)
         * [Designing in 2023: 10 Problems to Solve w/ Jim Keller](https://youtu.be/o70yKYWgtVI) - [Tenstorrent](https://tenstorrent.com/)
  8-wide Ascalon RISC-V core.
@@ -153,7 +154,7 @@ Computer Architecture (Fall 2023)
     * [2021-Qui6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol) / [with Ripes simulation](https://hackmd.io/@arthur-chang/SyLa2qb3Y)
     * [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
  
-* Week13 (Nov 28): Quiz + Virtual Memory + Operating System (Room 4201 (1F) at (old) CSIE Building)
+* Week13 (Nov 28): Quiz + Virtual Memory + Operating System
     - Announcement:
         + Be aware of [Term projects](https://hackmd.io/@sysprog/arch2022-projects)
     - [Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol)
