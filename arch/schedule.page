@@ -83,6 +83,10 @@ Computer Architecture (Fall 2023)
 * Week 7 (Oct 17): Digital Systems
     * Announcement:
         - Quiz 3 is scheduled for Oct 24 and will cover RISC-V assembly programming, software optimizations, instruction encoding, sequential logic, and combinational logic.
+            - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3) / [solution](https://hackmd.io/@sysprog/arch2020-quiz3-sol)
+            - [2021-Quiz3](https://hackmd.io/@sysprog/arch2021-quiz3) / [solution](https://hackmd.io/@sysprog/arch2021-quiz3-sol)
+            - [2021-Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4) / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
+            - [2022-Quiz3](https://hackmd.io/@sysprog/arch2022-quiz3) / [solution](https://hackmd.io/@sysprog/arch2022-quiz3-sol)
         - Code Review for [Homework 2](https://hackmd.io/@sysprog/2023-arch-homework2) is scheduled for Oct 24.
     * [Binary marble adding machine](https://woodgears.ca/marbleadd/) / [video](https://youtu.be/GcDshWmhF4A)
         - Yes, you can implement a few logic-like elements without electricity.
@@ -91,10 +95,6 @@ Computer Architecture (Fall 2023)
     - [Synchronous Digital Systems (SDS)](https://docs.google.com/presentation/d/1WOxk6JPmCxXuGfkX1A3Ocuiy4N-fyv76/edit?usp=sharing), [Boolean Algebra](https://docs.google.com/presentation/d/10bIPEobQ-O42TV97ggTfRcDUJ7vz5YB4/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ap04XFOxcFT2_Bflnz_RHWU)
         + sequential logic is a type of logic circuit whose output depends on the present value of its input signals and on the sequence of past inputs, the input history.
     - [State](https://docs.google.com/presentation/d/1AemtUUV207IXLP7j07RFOh-NLrKLSew_/edit?usp=sharing), [Combinational Logic](https://docs.google.com/presentation/d/1h0hoIl1bc2f9fUeoEGmaUHoAtf9zL5JS/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arH8SCGZilk8Wn_2B45SOpW)
-    - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3) / [solution](https://hackmd.io/@sysprog/arch2020-quiz3-sol)
-    - [2021-Quiz3](https://hackmd.io/@sysprog/arch2021-quiz3) / [solution](https://hackmd.io/@sysprog/arch2021-quiz3-sol)
-    - [2021-Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4) / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
-    - [2022-Quiz3](https://hackmd.io/@sysprog/arch2022-quiz3) / [solution](https://hackmd.io/@sysprog/arch2022-quiz3-sol)
 
 * Week 8 (Oct 24): Quiz + Datapath and Control
     - [Quiz3](https://hackmd.io/@sysprog/arch2023-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2023-quiz3-sol)
@@ -179,9 +179,9 @@ Computer Architecture (Fall 2023)
     - Announcement:
         * Quiz6 is scheduled on Dec 19
             - [2022-Quiz6](https://hackmd.io/@sysprog/arch2022-quiz6): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2022-quiz6-sol)
-            - [2021-Quiz7](https://hackmd.io/@sysprog/arch2021-quiz6) /[solution](https://hackmd.io/@sysprog/arch2021-quiz7-sol)
-            - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) /[solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol)
-            - [2020-Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6) /[solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
+            - [2021-Quiz7](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz7-sol)
+            - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol)
+            - [2020-Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6) / [solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
     - video: [The Future of Operating Systems on RISC-V](https://youtu.be/emnN9p4vhzk) / [transcript](https://www.infoq.com/presentations/risc-v-future/)
     - [Freestanding RISC-V Programs](https://youtu.be/iml0DBo5yqo)
         + [bare metal](https://en.wikipedia.org/wiki/Bare_machine)
