@@ -143,8 +143,8 @@ Computer Architecture (Fall 2023)
 * Week 12 (Nov 21): Cache + Virtual Memory
     * Announcement
         * Quiz 5 is scheduled on Nov 28
-            - [2022-Qui5](https://hackmd.io/@sysprog/arch2022-quiz5) / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/ry3j69OOo)
-            - [2021-Qui6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol) / [with Ripes simulation](https://hackmd.io/@arthur-chang/SyLa2qb3Y)
+            - [2022-Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5) / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/ry3j69OOo)
+            - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol) / [with Ripes simulation](https://hackmd.io/@arthur-chang/SyLa2qb3Y)
             - [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
     * [Caches: Direct-mapped, set-associative](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec16.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apRiQ2QPjzyq8APGEjnqW1w)
     * [Multi-level Caches, Cache Questions](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec17.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqHsuO6U2bIpwDGqO6UAetk)
