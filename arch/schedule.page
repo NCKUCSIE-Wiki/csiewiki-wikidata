@@ -142,7 +142,7 @@ Computer Architecture (Fall 2023)
 
 * Week 12 (Nov 21): Cache + Virtual Memory
     * Announcement
-        * Term projects will be listed on Nov 28
+        * Quiz 5 is scheduled on Nov 28
     * [Caches: Direct-mapped, set-associative](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec16.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apRiQ2QPjzyq8APGEjnqW1w)
     * [Multi-level Caches, Cache Questions](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec17.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqHsuO6U2bIpwDGqO6UAetk)
     * Recall: [The golden age of ever-changing computer architecture](https://hackaday.com/2019/11/27/the-golden-age-of-ever-changing-computer-architecture/)
@@ -156,7 +156,7 @@ Computer Architecture (Fall 2023)
  
 * Week13 (Nov 28): Quiz + Virtual Memory + Operating System
     - Announcement:
-        + Be aware of [Term projects](https://hackmd.io/@sysprog/arch2022-projects)
+        + Term projects will be listed on Dec 5. [Term projects of 2022](https://hackmd.io/@sysprog/arch2022-projects)
     - [Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol)
     - [Virtual Memory](https://6004.mit.edu/web/_static/fall21/resources/sp21/L18.pdf) / [video](https://youtu.be/TsxZlXOrt8U)
     - [Lab4: Cache](https://cs61c.org/fa20/labs/lab08/)
