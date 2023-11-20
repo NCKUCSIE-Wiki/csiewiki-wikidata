@@ -65,7 +65,6 @@ Computer Architecture (Fall 2023)
 
 * Week 5 (Oct 3): Code Review + RISC-V Instruction Format + GNU Toolchain
     - Announcement
-        * On October 10th, we will be conducting a makeup lesson for the Computer Architecture course. Please visit this website for online class information (recording included).
         * [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2023-arch-homework2) is out.
     - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2023-arch-homework1)
     - [Lab2: RISC-V RV32I[MACF] emulator with ELF support](https://hackmd.io/@sysprog/SJAR5XMmi)
