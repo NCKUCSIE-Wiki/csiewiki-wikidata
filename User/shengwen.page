@@ -16,7 +16,7 @@ categories: User
 
 - 機器人系統
 - 無人飛行/地面載具
-- 嵌入式系統
+- 嵌入式系統/即時作業系統設計
 - 電腦視覺
 - 數值模擬
 
@@ -30,14 +30,20 @@ categories: User
 
 - [STM32F4 教學 (共十一講)](https://www.youtube.com/playlist?list=PLe8KWt_uj6-MP0VAuhI_jwjfT6QTO4jBG)
 
+文章
+===
+
+- [旋轉矩陣及四元數的空間轉換](https://hackmd.io/@shengwen/rotation-matrix)
+- [MAVLink 原理及開發指南](https://hackmd.io/@shengwen/mavlink)
+
 主要作品
 =======
 
-- [UrsusPilot](https://www.youtube.com/watch?v=_DsNQWP7UXo): 2013-2015年期間參與之四軸飛行器專案 (由成大航太研究生主導)，原為開放原始碼專案，目前已轉為非公開
-- [多旋翼機全系統設計](https://www.youtube.com/watch?v=hBBe1Kj82B4): 碩班期間成果，設計包含非線性控制、感測器融合、SLAM、路徑規劃
-- [Puyuma](https://github.com/Puyuma/puyuma-core): 基於 Linux 的微型自駕車系統 [[技術報告]](https://drive.google.com/file/d/1rKgdAhpr7M2tiiu-zpXKDYbxuNX_QqWz/view?usp=share_link) [[簡報]](https://drive.google.com/file/d/1D9Cp7_kDHw4EDSdKVgKMuRb3Ri0mA4bN/view?usp=sharing)
-- [Tenok](https://github.com/shengwen-tw/tenok): 啟發自 rtenv+ 的即時作業系統 [[共筆]](https://hackmd.io/@shengwen/tenok) [[影片]](https://www.youtube.com/watch?v=byWihWcMP00)
-- [PU-01](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 包含機構設計、參數規劃、穩定性分析的定翼機設計 [[簡報]](https://drive.google.com/file/d/1hEJ8q8cbePwxY358UeMr3Z0nmIqtdnKo/view)
+- [多旋翼飛控全系統設計](https://www.youtube.com/watch?v=hBBe1Kj82B4): 碩班期間成果，包含非線性控制、多感測器慣性導航、即時定位與地圖建構 (SLAM)、最佳軌跡規劃等。曾經學術合作計畫授權予[國家太空中心 (TASA)](https://www.tasa.org.tw/)
+- [UrsusPilot](https://www.youtube.com/watch?v=_DsNQWP7UXo): 2013-2015年期間參與之四軸飛行器專案 (由成大航太-林清一教授之研究生主導)。原為開放原始碼專案，目前已轉為非公開 [[影片]](https://www.youtube.com/watch?v=_DsNQWP7UXo&t=31s)
+- [Tenok](https://github.com/shengwen-tw/tenok): 一個 Linux 風格、適用於機器人及物聯網應用的即時作業系統 [[共筆]](https://hackmd.io/@shengwen/tenok) [[影片]](https://www.youtube.com/watch?v=byWihWcMP00)
+- [Puyuma](https://github.com/Puyuma/puyuma-core): 基於 Linux 和電腦視覺、透過 Xenomai 達到 Real-time 的微型自駕車實驗系統 [[技術報告]](https://drive.google.com/file/d/1rKgdAhpr7M2tiiu-zpXKDYbxuNX_QqWz/view?usp=share_link) [[簡報]](https://drive.google.com/file/d/1D9Cp7_kDHw4EDSdKVgKMuRb3Ri0mA4bN/view?usp=sharing)
+- [PU-01](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 包含機構設計、參數規劃、穩定性分析的雙尾桿後推式定翼機設計 [[簡報]](https://drive.google.com/file/d/1hEJ8q8cbePwxY358UeMr3Z0nmIqtdnKo/view)
 
 數值模擬專案
 ===========
