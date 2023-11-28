@@ -158,12 +158,15 @@ Computer Architecture (Fall 2023)
         * [Designing in 2023: 10 Problems to Solve w/ Jim Keller](https://youtu.be/o70yKYWgtVI) - [Tenstorrent](https://tenstorrent.com/)
  8-wide Ascalon RISC-V core.
  
-* Week13 (Nov 28): online via [YouTube](https://youtube.com/live/A8AmpS3V8cE): Virtual Memory + Operating System
+* Week13 (Nov 28): online via [YouTube](https://youtube.com/live/A8AmpS3V8cE): Virtual Memory + Operating System + Vector Extension
     - Announcement:
         + Term projects will be listed on Dec 5. [Term projects of 2022](https://hackmd.io/@sysprog/arch2022-projects)
     * [Virtual Memory](https://youtu.be/TsxZlXOrt8U) / UCB: [Virtual Memory](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec19.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ar2Wia7JngBFMmwRlr4s79j)
     - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
     - RISC-V Vector extension
+        * [Introduction to the RISC-V Vector Extension](https://eupilot.eu/wp-content/uploads/2022/11/RISC-V-VectorExtension-1-1.pdf)
+        * [The RISC-V Vector ISA Tutorial](https://riscv.org/wp-content/uploads/2018/05/15.20-15.55-18.05.06.VEXT-bcn-v1.pdf)
+        * [RISC-V "V" Vector Extension](https://inst.eecs.berkeley.edu/~cs152/sp22/handouts/sp22/riscv-v-spec-0.10.pdf)
 
 * Week14 (Dec 5): Quiz + Synchronization
     - Announcement:
