@@ -173,7 +173,7 @@ Computer Architecture (Fall 2023)
 * Week14 (Dec 5): Quiz + Synchronization
     - Announcement:
         * Check the listing of [final/term projects](https://hackmd.io/@sysprog/arch2022-projects) and fill in your names.
-    - [Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol)
+    - [Quiz5](https://hackmd.io/@sysprog/arch2023-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2023-quiz5-sol)
     - [Apple Silicon Guide](https://github.com/mikeroyal/Apple-Silicon-Guide)
     - [Debunking CISC vs RISC code density](https://www.bitsnbites.eu/cisc-vs-risc-code-density/)
     - [Synchronization](https://youtu.be/r8H_af_dCF0)
