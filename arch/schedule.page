@@ -174,6 +174,7 @@ Computer Architecture (Fall 2023)
     - Announcement:
         * Check the listing of [final/term projects](https://hackmd.io/@sysprog/arch2023-projects) and fill in your names.
     - [Quiz5](https://hackmd.io/@sysprog/arch2023-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2023-quiz5-sol)
+    * [Virtual Memory](https://youtu.be/TsxZlXOrt8U) / UCB: [Virtual Memory](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec19.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ar2Wia7JngBFMmwRlr4s79j)
     - [Apple Silicon Guide](https://github.com/mikeroyal/Apple-Silicon-Guide)
     - [Debunking CISC vs RISC code density](https://www.bitsnbites.eu/cisc-vs-risc-code-density/)
     - [Synchronization](https://youtu.be/r8H_af_dCF0)
