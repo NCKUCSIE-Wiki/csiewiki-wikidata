@@ -179,9 +179,6 @@ Computer Architecture (Fall 2023)
     - [Debunking CISC vs RISC code density](https://www.bitsnbites.eu/cisc-vs-risc-code-density/)
     - [Synchronization](https://youtu.be/r8H_af_dCF0)
         + Please check your operating system textbook for such topic.
-    - [Thread-Level Parallelism](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec22.pdf) / [video](https://youtu.be/QLdN6p7-43U)
-        + Let's skip OpenMP part
-    - [Multithreading Issues + Cache Coherency](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec23.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqgj_8Og51XoE7iyAu5yEWZ)
 
 * Week15 (Dec 12): Operating System, Multithreading
     - Announcement:
@@ -190,15 +187,18 @@ Computer Architecture (Fall 2023)
             - [2021-Quiz7](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz7-sol)
             - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol)
             - [2020-Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6) / [solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
+    - [Synchronization](https://youtu.be/r8H_af_dCF0)
+        + Please check your operating system textbook for such topic.
+    - [Multithreading Issues + Cache Coherency](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec23.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqgj_8Og51XoE7iyAu5yEWZ)
+        + Let's skip OpenMP part
     - video: [The Future of Operating Systems on RISC-V](https://youtu.be/emnN9p4vhzk) / [transcript](https://www.infoq.com/presentations/risc-v-future/)
-    - [Multithreaded Application Synchronization Part I](https://youtu.be/kk8q5rwm1ZI)
-        + Taken from [CSCI 463: Computer Architecture and Systems Organization](http://faculty.cs.niu.edu/~winans/CS463/2021-fa/)
+    - [Multithreaded Application Synchronization Part I](https://youtu.be/kk8q5rwm1ZI) / [Part II](https://youtu.be/dAVZTHxC16w)
+        + Taken from [CSCI 463: Computer Architecture and Systems Organization](https://faculty.cs.niu.edu/~winans/CS463/2022-fa/)
+        + RISC-V AMOSWAP instruction
         + [RISC-V spec references the word 'hart' - what does 'hart' mean?](https://stackoverflow.com/questions/42676827/risc-v-spec-references-the-word-hart-what-does-hart-mean)
  
 * Week16 (Dec 19): Quiz + Multithreading, Synchronization, I/O
     - [Quiz6](https://hackmd.io/@sysprog/arch2022-quiz6) / [solution](https://hackmd.io/@sysprog/arch2022-quiz6-sol)
-    - [Multithreaded Application Synchronization Part II](https://youtu.be/dAVZTHxC16w)
-        + RISC-V AMOSWAP instruction
     - [Advanced topics on Synchronization - 1](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L19-MCM.pdf)
     - [Advanced topics on Synchronization - 2](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L22-Synch.pdf)
     - [I/O: Devices, Polling, Interrupts](https://drive.google.com/drive/folders/1NRoyYSbAyarMhmPD5LiY6YEqYpLoZx_s) / [video](https://youtu.be/0dyqcFC_q2Q?t=1247)
