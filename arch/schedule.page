@@ -197,8 +197,8 @@ Computer Architecture (Fall 2023)
         + RISC-V AMOSWAP instruction
         + [RISC-V spec references the word 'hart' - what does 'hart' mean?](https://stackoverflow.com/questions/42676827/risc-v-spec-references-the-word-hart-what-does-hart-mean)
  
-* Week16 (Dec 19): Quiz + Multithreading, Synchronization, I/O
-    - [Quiz6](https://hackmd.io/@sysprog/arch2022-quiz6) / [solution](https://hackmd.io/@sysprog/arch2022-quiz6-sol)
+* Week16 (Dec 19): online via [YouTube](https://youtube.com/live/5SMKUAglraQ?feature=share) | Quiz + Multithreading, Synchronization, I/O
+    - [Quiz6](https://hackmd.io/@sysprog/arch2023-quiz6) / [solution](https://hackmd.io/@sysprog/arch2023-quiz6-sol)
     - [Advanced topics on Synchronization - 1](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L19-MCM.pdf)
     - [Advanced topics on Synchronization - 2](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L22-Synch.pdf)
     - [I/O: Devices, Polling, Interrupts](https://drive.google.com/drive/folders/1NRoyYSbAyarMhmPD5LiY6YEqYpLoZx_s) / [video](https://youtu.be/0dyqcFC_q2Q?t=1247)
