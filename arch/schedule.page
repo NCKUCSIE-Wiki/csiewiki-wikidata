@@ -197,7 +197,7 @@ Computer Architecture (Fall 2023)
         + RISC-V AMOSWAP instruction
         + [RISC-V spec references the word 'hart' - what does 'hart' mean?](https://stackoverflow.com/questions/42676827/risc-v-spec-references-the-word-hart-what-does-hart-mean)
  
-* Week16 (Dec 19): online via [YouTube](https://youtube.com/live/5SMKUAglraQ) | Quiz + Multithreading, Synchronization, I/O
+* Week16 (Dec 19): online via [YouTube](https://youtube.com/live/5SMKUAglraQ) | Quiz + Memory Model, Synchronization, I/O
     - [Quiz6](https://hackmd.io/@sysprog/arch2023-quiz6) / [solution](https://hackmd.io/@sysprog/arch2023-quiz6-sol)
     - [Memory Model](https://youtu.be/QkbWgCSAEoo) / [slides](https://riscv.org/wp-content/uploads/2018/05/14.25-15.00-RISCVMemoryModelTutorial.pdf)
     - [Advanced topics on Synchronization - 1](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L19-MCM.pdf)
@@ -207,7 +207,7 @@ Computer Architecture (Fall 2023)
         * Trap Handling in 5-Stage Pipeline
 
 * Week17 (Dec 26): Modern Processors
-    - [listing of final/term projects](https://hackmd.io/@sysprog/arch2022-projects)
+    - [listing of final/term projects](https://hackmd.io/@sysprog/arch2023-projects)
         * You must provide the materials and demonstrate to the lecturer before Jan 14, 2023.
         * Summarize what you did and send email to `<jserv.tw@gmail.com>`.
     - [Modern Processor Architecture](https://youtu.be/sbGtFtxqkkg)
