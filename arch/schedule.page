@@ -207,6 +207,10 @@ Computer Architecture (Fall 2023)
         * Trap Handling in 5-Stage Pipeline
 
 * Week17 (Dec 26): Modern Processors
+    - Annoncements
+        * Due to the instructor's significant involvement in a confidential project, there has been limited participation in this course. Consequently, the instructor proposes a modification to the course grading structure.
+            - The new breakdown will be as follows: Quiz (30%), Homework (30%), Final/Term Project (25%), and an additional "Base" component (15%). This "Base" component ensures that each student's starting score is at least 15%.
+        * Quiz7 is scheduled on Jan 2, 2024
     - [listing of final/term projects](https://hackmd.io/@sysprog/arch2023-projects)
         * You must provide the materials and demonstrate to the lecturer before Jan 14, 2023.
         * Summarize what you did and send email to `<jserv.tw@gmail.com>`.
