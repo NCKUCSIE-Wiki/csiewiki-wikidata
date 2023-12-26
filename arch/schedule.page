@@ -218,6 +218,7 @@ Computer Architecture (Fall 2023)
         * You must provide the materials and demonstrate to the lecturer before Jan 14, 2023.
         * Summarize what you did and send email to `<jserv.tw@gmail.com>`.
     - [Modern Processor Architecture](https://youtu.be/sbGtFtxqkkg)
+        * [Modern Microprocessors: A 90-Minute Guide!](https://www.lighterra.com/papers/modernmicroprocessors/)
     - [Introduction to Dynamic Branch Prediction](https://youtu.be/PFmx2p6NA0A), [Advanced Branch Prediction](https://youtu.be/avp3bDqCXYM), [Tournament Predictors and Branch Prediction Accuracy](https://youtu.be/-T8yDJ8vTuI)
     - Project: [Analyze and improve srv32](https://hackmd.io/@peishan/HkJrtKpoY)
     - [Hardware Based Speculation](https://youtu.be/mFtX28lH4O8)
