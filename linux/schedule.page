@@ -10,15 +10,17 @@ toc: no
 - 討論區: [https://www.facebook.com/groups/system.software2024/](https://www.facebook.com/groups/system.software2024/)
 - 課程信箱: `<embedded.master2015@gmail.com>` (授課教師和助教會以該信箱發公告), [往年課程進度](/linux/schedule-old)
 - [Linux 核心設計 (線上講座)](https://hackmd.io/@sysprog/linux-kernel-internal)
-- 注意: 下方課程進度表標註有 `*` 的項目，表示內附錄影的教材
-- 注意: 新開的「Linux 核心實作」課程內容幾乎與「Linux 核心設計」一致，採線上為主的進行方式
+- 下方課程進度表標註有 `*` 的項目，表示內附錄影的教材
+- 「Linux 核心實作」課程內容幾乎與「Linux 核心設計」一致，採線上為主的進行方式
+- 注意: 「Linux 核心實作」實際授課時間為每週四 19:30-22:30，前半段是線上測驗，後半段則是檢討和講解，第一週則是例外，安排在 2 月 23 日 20:00
+- 注意: 參與「Linux 核心設計」的學員也該參加自 2 月 29 日起每週四晚間的線上測驗
 
 Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
 ------------------------------------------------------
 * 第 1 週 (Feb 20, 23): 誠實面對自己
     - [教材解說](https://youtu.be/ptbJQUAv2ro)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     - [課程簡介和注意須知](https://docs.google.com/presentation/d/1xmb_mvsHISWp6naP1rHOyrxzMzNQkVoKK69lGRRXV9M/edit?usp=sharing) / [課程簡介解說錄影](https://youtu.be/qebDgIIEDYw)`*`
-        * 每週均安排隨堂測驗，採計其中最高分的 9 次
+        * 每週均安排隨堂測驗，採計其中最高分的 12 次
         * 學期評分方式: 隨堂測驗 (20%) + 個人作業+報告及專題 (30%) + 自我評分 (50%)
     - 歷屆修課學生心得: [向景亘](/User/OscarShiang), [張家榮](/User/JaredCJR), [蕭奕凱](/User/Veck), [方鈺學](/User/JulianATA)
     - 分組報告示範: [ARM-Linux](/embedded/arm-linux), [Xvisor](/embedded/xvisor)
