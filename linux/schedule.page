@@ -26,13 +26,13 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     - 分組報告示範: [ARM-Linux](/embedded/arm-linux), [Xvisor](/embedded/xvisor)
     - [GNU/Linux 開發工具共筆](https://hackmd.io/@sysprog/gnu-linux-dev/)`*`: 務必 *自主* 學習 Linux 操作, Git, HackMD, LaTeX 語法 (特別是數學式), GNU make, perf, gnuplot
         * 確認 Ubuntu Linux 22.04-LTS (或更新的版本) 已順利安裝到你的電腦中
-    - [透過 Computer Systems: A Programmer’s Perspective 學習系統軟體](https://hackmd.io/c/S1vGugaDQ)`*`: 本課程指定的教科書 (請及早購買: [天瓏書店](https://www.tenlong.com.tw/products/9787111544937))
+    - [透過 Computer Systems: A Programmer’s Perspective 學習系統軟體](https://hackmd.io/@sysprog/CSAPP)`*`: 本課程指定的教科書 (請及早購買: [天瓏書店](https://www.tenlong.com.tw/products/9787111544937))
     - [軟體缺失導致的危害](https://hackmd.io/@sysprog/B1eo44C1-)
         * 1970 年代推出的首款廣體民航客機波音 747 軟體由大約 40 萬行程式碼構成，而 2011 年引進的波音 787 的軟體規模則是波音 747 的 16 倍，約 650 萬行程式碼。換言之，你我的性命緊繫於一系列極為複雜的軟體系統之中，能不花點時間了解嗎？
         * 軟體開發的安全性設計和測試驗證應獲得更高的重視
     - [The adoption of Rust in Business (2022)](https://rustmagazine.org/issue-1/2022-review-the-adoption-of-rust-in-business/)
         * 搭配觀看短片: [Rust in 100 Seconds](https://youtu.be/5C_HPTJg5ek)
-    - [解讀計算機編碼](https://hackmd.io/@sysprog/rylUqXLsm)
+    - [解讀計算機編碼](https://hackmd.io/@sysprog/binary-representation)
         * 人們對數學的加減運算可輕易在腦中辨識符號並理解其結果，但電腦做任何事都受限於實體資料儲存及操作方式，換言之，電腦硬體實際只認得 0 和 1，卻不知道符號 + 和 - 在數學及應用場域的意義，於是工程人員引入「補數」以表達人們認知上的正負數
         * 您有沒有想過，為何「二補數」(2’s complement) 被電腦廣泛採用呢？背後的設計考量是什麼？本文嘗試從數學觀點去解讀編碼背後的原理
     - [你所不知道的 C 語言：指標篇](https://hackmd.io/@sysprog/c-pointer)`*`
@@ -48,7 +48,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         * [題目4](https://hackmd.io/@sysprog/linux2021-quiz1) / [參考題解](https://hackmd.io/@linD026/2021q1_quiz1)
         * [題目5](https://hackmd.io/@sysprog/linux2022-quiz1) / [參考題解](https://hackmd.io/@qwe661234/linux2022-quiz1)
     - 佳句偶得：「大部分的人一輩子洞察力不彰，原因之一是怕講錯被笑。想了一點點就不敢繼續也沒記錄或分享，時間都花在讀書查資料看別人怎麼想。看完就真的沒有自己的洞察了」([出處](https://www.facebook.com/chtsai/posts/pfbid0Sw9Bv8GN8houyS6A6Mvg5gtWXShKFgguhTHuNFsDDGn9XZQE7C64pBy5atB9gXtJl))
-    - [作業](https://hackmd.io/@sysprog/linux2023-homework1): 截止繳交日: Feb 28, 2023
+    - [作業](https://hackmd.io/@sysprog/linux2024-homework1): 截止繳交日: Mar 5, 2024
         * [lab0](https://hackmd.io/@sysprog/linux2023-lab0)`*`
         * [quiz1](https://hackmd.io/@sysprog/ByiHJidps)
     - 第 1 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz1) (內含作答表單)
