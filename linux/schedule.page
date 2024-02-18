@@ -23,6 +23,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         * 每週均安排隨堂測驗，採計其中最高分的 12 次
         * 學期評分方式: 隨堂測驗 (20%) + 個人作業+報告及專題 (30%) + 自我評分 (50%)
     - 歷屆修課學生心得: [向景亘](/User/OscarShiang), [張家榮](/User/JaredCJR), [蕭奕凱](/User/Veck), [方鈺學](/User/JulianATA)
+    - 佳句偶得：「大部分的人一輩子洞察力不彰，原因之一是怕講錯被笑。想了一點點就不敢繼續也沒記錄或分享，時間都花在讀書查資料看別人怎麼想。看完就真的沒有自己的洞察了」([出處](https://www.facebook.com/chtsai/posts/pfbid0Sw9Bv8GN8houyS6A6Mvg5gtWXShKFgguhTHuNFsDDGn9XZQE7C64pBy5atB9gXtJl))
     - 分組報告示範: [ARM-Linux](/embedded/arm-linux), [Xvisor](/embedded/xvisor)
     - [GNU/Linux 開發工具共筆](https://hackmd.io/@sysprog/gnu-linux-dev/)`*`: 務必 *自主* 學習 Linux 操作, Git, HackMD, LaTeX 語法 (特別是數學式), GNU make, perf, gnuplot
         * 確認 Ubuntu Linux 22.04-LTS (或更新的版本) 已順利安裝到你的電腦中
@@ -47,7 +48,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         * [題目3](https://hackmd.io/@sysprog/sysprog2020-quiz1) / [參考題解](https://hackmd.io/@RinHizakura/BysgszHNw)
         * [題目4](https://hackmd.io/@sysprog/linux2021-quiz1) / [參考題解](https://hackmd.io/@linD026/2021q1_quiz1)
         * [題目5](https://hackmd.io/@sysprog/linux2022-quiz1) / [參考題解](https://hackmd.io/@qwe661234/linux2022-quiz1)
-    - 佳句偶得：「大部分的人一輩子洞察力不彰，原因之一是怕講錯被笑。想了一點點就不敢繼續也沒記錄或分享，時間都花在讀書查資料看別人怎麼想。看完就真的沒有自己的洞察了」([出處](https://www.facebook.com/chtsai/posts/pfbid0Sw9Bv8GN8houyS6A6Mvg5gtWXShKFgguhTHuNFsDDGn9XZQE7C64pBy5atB9gXtJl))
+    * [Linux: 作業系統術語及概念](https://hackmd.io/@sysprog/linux-concepts)`*`
     - [作業](https://hackmd.io/@sysprog/linux2024-homework1): 截止繳交日: Mar 5, 2024
         * [lab0](https://hackmd.io/@sysprog/linux2023-lab0)`*`
         * [quiz1](https://hackmd.io/@sysprog/ByiHJidps)
@@ -57,7 +58,6 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
 * 第 2 週 (Feb 27, 29): C 語言程式設計
     * [教材解說](https://youtu.be/YawpeXUiN1k)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux v6.2 發布](https://kernelnewbies.org/Linux_6.2): 接下來會是讓學員眼花撩亂的主版號/次版號的飛快跳躍 / [kernel.org](https://kernel.org/)
-    * [Linux: 作業系統術語及概念](https://hackmd.io/@sysprog/linux-concepts)`*`
     * [系統軟體開發思維](https://hackmd.io/@sysprog/concepts)
     - [C 語言: 數值系統](https://hackmd.io/@sysprog/c-numerics)`*`
         - 儘管數值系統並非 C 語言所特有，但在 Linux 核心大量存在 u8/u16/u32/u64 這樣透過 typedef 所定義的型態，伴隨著各式 alignment 存取，若學員對數值系統的認知不夠充分，可能立即就被阻擋在探索 Linux 核心之外 —— 畢竟你完全搞不清楚，為何在 Linux 核心存取特定資料需要繞一大圈。
