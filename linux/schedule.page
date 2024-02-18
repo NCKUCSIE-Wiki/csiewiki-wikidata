@@ -7,15 +7,15 @@ toc: no
 - Instructor: [Jim Huang](/User/jserv) (黃敬群) `<jserv.tw@gmail.com>`
     * [Facebook 粉絲專頁](https://www.facebook.com/JservFans) (不要擔心提了笨問題，這專門用來和學生互動，可預約一對一討論)
 - 訂閱 [Google Calendar](https://calendar.google.com/calendar/embed?src=embedded.master2015%40gmail.com&ctz=Asia%2FTaipei)
-- 討論區: [https://www.facebook.com/groups/system.software2023/](https://www.facebook.com/groups/system.software2023/)
+- 討論區: [https://www.facebook.com/groups/system.software2024/](https://www.facebook.com/groups/system.software2024/)
 - 課程信箱: `<embedded.master2015@gmail.com>` (授課教師和助教會以該信箱發公告), [往年課程進度](/linux/schedule-old)
 - [Linux 核心設計 (線上講座)](https://hackmd.io/@sysprog/linux-kernel-internal)
 - 注意: 下方課程進度表標註有 `*` 的項目，表示內附錄影的教材
 - 注意: 新開的「Linux 核心實作」課程內容幾乎與「Linux 核心設計」一致，採線上為主的進行方式
 
-Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
+Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
 ------------------------------------------------------
-* 第 1 週 (Feb 13, 14, 16): 誠實面對自己
+* 第 1 週 (Feb 20, 23): 誠實面對自己
     - [教材解說](https://youtu.be/ptbJQUAv2ro)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     - [課程簡介和注意須知](https://docs.google.com/presentation/d/1xmb_mvsHISWp6naP1rHOyrxzMzNQkVoKK69lGRRXV9M/edit?usp=sharing) / [課程簡介解說錄影](https://youtu.be/qebDgIIEDYw)`*`
         * 每週均安排隨堂測驗，採計其中最高分的 9 次
@@ -52,7 +52,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     - 第 1 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz1) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/VIvUZemESvGUev4aCwOnWA?view)
 
-* 第 2 週 (Feb 20, 21, 23): C 語言程式設計
+* 第 2 週 (Feb 27, 29): C 語言程式設計
     * [教材解說](https://youtu.be/YawpeXUiN1k)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux v6.2 發布](https://kernelnewbies.org/Linux_6.2): 接下來會是讓學員眼花撩亂的主版號/次版號的飛快跳躍 / [kernel.org](https://kernel.org/)
     * [Linux: 作業系統術語及概念](https://hackmd.io/@sysprog/linux-concepts)`*`
@@ -83,7 +83,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     - 第 2 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz2) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/VIvUZemESvGUev4aCwOnWA?view)
 
-* 第 3 週 (Feb 27, 28, Mar 2): 並行和 C 語言程式設計
+* 第 3 週 (Mar 5, 7): 並行和 C 語言程式設計
     * [教材解說](https://youtu.be/7efdpMCx-ak)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告
         + 2 月 28 日沒有實體課程，但安排線上測驗 (「Linux 核心設計」課程的學員務必參加)，在 15:20-23:59 之間依據 [Google Calendar](https://calendar.google.com/calendar/embed?src=embedded.master2015%40gmail.com&ctz=Asia%2FTaipei) 進行作答
@@ -105,7 +105,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - [fibdrv](https://hackmd.io/@sysprog/linux2023-fibdrv)`*`, [quiz3](https://hackmd.io/@sysprog/H1hV29nRj), [review](https://hackmd.io/@sysprog/linux2023-review)`*`
     * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz3) (內含作答表單)
 
-* 第 4 週 (Mar 6, 7, 9): 數值系統 + 編譯器
+* 第 4 週 (Mar 12, 14): 數值系統 + 編譯器
     - [教材解說](https://youtu.be/cjq0OuUeepA)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
         - 請填寫 [Google 表單](https://forms.gle/rANw1FmXxd2rB3dP8)，以利後續追蹤
@@ -131,7 +131,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz4) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/rJVas7NJn)
 
-* 第 5 週 (Mar 13, 14, 16): Linux CPU scheduler
+* 第 5 週 (Mar 19, 21): Linux CPU scheduler
     - [教材解說](https://youtu.be/f-SprmkcOI0)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
         - 本週導入客製化作業，讓學員選擇改進前四週的作業或自訂題目 (例如貢獻程式碼到 Linux 核心)，隨後安排授課教師和學員的線上一對一討論
@@ -151,7 +151,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz5) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/rJVas7NJn)
 
-* 第 6 週 (Mar 20, 21, 23): System call + CPU Scheduler
+* 第 6 週 (Mar 26, 28): System call + CPU Scheduler
     - [教材解說](https://youtu.be/zW_MAMy7DBE)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告
         - 自 3 月 22 日起，開放讓學員 (選課的學生 + 完成前二次作業過半要求的旁聽者) 跟授課教師預約一對一線上討論，請參照[課程行事曆](https://bit.ly/sysprog-calendar)裡頭標注 "Office hour" 的時段，發訊息到 [Facebook 粉絲專頁](https://www.facebook.com/JservFans/)，簡述你的學習狀況並選定偏好的時段 (建議是 30 分鐘)。留意課程發送的公告信件
@@ -174,7 +174,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Week6 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz6) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/rJVas7NJn)
 
-* 第 7 週 (Mar 27, 28, 30): Process, 並行和多執行緒
+* 第 7 週 (Apr 2, 4): Process, 並行和多執行緒
     - [教材解說-1](https://youtu.be/mnbIi82iT2A)`*`, [教材解說-2](https://youtu.be/G_BLP3tqocc)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
         * [第 5 次作業](https://hackmd.io/@sysprog/linux2023-homework5) 和 [第 6 次作業](https://hackmd.io/@sysprog/linux2023-homework6) 作業已指派
@@ -198,7 +198,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - [Thread-Level Parallelism](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f19/www/lectures/27-parallelism.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9ba08262-5318-45f2-a7e1-475e33a98e53)`*`
     - [課堂問答簡記](https://hackmd.io/@sysprog/SyOhklg-3)
 
-* 第 8 週 (Apr 3, 4, 6): 並行程式設計, lock-free, Linux 同步機制
+* 第 8 週 (Apr 9, 11): 並行程式設計, lock-free, Linux 同步機制
     - [教材解說](https://youtu.be/05x65CayUNw)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
         - 4 月 4 日下午到晚間安排在家測驗，請在當日 15:00 刷新課程進度表/行事曆，以得知測驗方式
@@ -214,7 +214,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [利用 lkm 來變更特定 Linux 行程的內部狀態](https://hackmd.io/@cwl0429/linux2022-quiz8-3)
     * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz8) (內含作答表單)
 
-* 第 9 週 (Apr 10, 11, 13): futex, RCU, 伺服器開發與 Linux 核心對應的系統呼叫
+* 第 9 週 (Apr 16, 18): futex, RCU, 伺服器開發與 Linux 核心對應的系統呼叫
     - [教材解說](https://youtu.be/BH6vdKd6kGY)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [第二次作業檢討](https://hackmd.io/@sysprog/linux2023-review2)
     * 公告:
@@ -236,7 +236,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Week9 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz9) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/B1smldGzh)
 
-* 第 10 週 (Apr 17, 18, 20): 現代微處理器
+* 第 10 週 (Apr 23, 25): 現代微處理器
     * [教材解說](https://youtu.be/1zDQfxp_AuU)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
         - 本週指派新作業: [ktcp](https://hackmd.io/@sysprog/linux2023-ktcp)`*`
@@ -265,7 +265,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
         - [ktcp](https://hackmd.io/@sysprog/linux2023-ktcp)
     - [課堂問答簡記](https://hackmd.io/@sysprog/H1NdQ5AGn)
 
-* 第 11 週 (Apr 24, 25, 20): 現代微處理器 + 記憶體管理
+* 第 11 週 (Apr 30, May 2): 現代微處理器 + 記憶體管理
     * [教材解說](https://youtu.be/JWuw8M6Q-_k)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告
         - 學員應及早跟授課教師預約一對一線上討論，請參照[課程行事曆](https://bit.ly/sysprog-calendar)裡頭標注 "Office hour" 的時段，發訊息到 [Facebook 粉絲專頁](https://www.facebook.com/JservFans/)，簡述你的學習狀況並選定偏好的時段 (建議是 30 分鐘)
@@ -281,12 +281,12 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Week11 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz11) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/H1NdQ5AGn)
 
-* 第 12 週 (May 1, 2, 4): 期末專題介紹和回顧
+* 第 12 週 (May 7, 9): 期末專題介紹和回顧
     * [課程期末專題](https://hackmd.io/@sysprog/linux2023-projects)`*`
     * Week12 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz12) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/H1NdQ5AGn)
 
-* 第 13 週 (May 8, 9, 11): 記憶體管理 + 裝置驅動程式
+* 第 13 週 (May 14, 16): 記憶體管理 + 裝置驅動程式
     * [教材解說-1](https://youtu.be/jOY159H0Iyo)`*`, [教材解說-2](https://youtu.be/eplQPz1Qegc)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [The Linux Virtual Memory System](https://people.redhat.com/pladd/NUMA_Linux_VM_NYRHUG.pdf)
     * [Linux: 記憶體管理](https://hackmd.io/@sysprog/linux-memory)`*`: 記憶體管理是 Linux 核心裡頭最複雜的部分，涉及到對計算機結構、slob/slab/slub 記憶體配置器、行程和執行檔樣貌、虛擬記憶體對應的例外處理、記憶體映射, UMA vs. NUMA 等等議題。
@@ -313,7 +313,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Linux: linked list, Queues, Maps, Binary Trees: [錄影](https://youtu.be/7ZQNb7Fu_A4)`*` / [共筆](https://docs.google.com/document/d/1n31QMPyvdAkS2uxM5AyKu_DD3uRu6-zoRukAitDwPvA/edit#)
     * [C11 atomic variables and the kernel](https://lwn.net/Articles/586838/) / [Linux Documentation: Circular Buffers](https://www.kernel.org/doc/Documentation/circular-buffers.txt)
 
-* 第 14 週 (May 15, 16, 18): 網路封包處理
+* 第 14 週 (May 21, 23): 網路封包處理
     * [教材解說](https://youtu.be/HfXYAQRLfko)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
         - 5 月 16 日恢復實體課程，討論期末專題
@@ -330,7 +330,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [Memory Externalization With userfaultfd](http://ftp.ntu.edu.tw/pub/linux/kernel/people/andrea/userfaultfd/userfaultfd-LSFMM-2015.pdf) / [錄影](https://youtu.be/pC8cWWRVSPw)`*` / [kernel documentation: userfaults](https://www.kernel.org/doc/html/latest/admin-guide/mm/userfaultfd.html)
     - [課堂問答簡記](https://hackmd.io/@sysprog/BySO9ieSn)
 
-* 第 15 週 (May 22, 23, 25): 網路封包處理 + 多核處理器架構
+* 第 15 週 (May 28, 30): 網路封包處理 + 多核處理器架構
     * [教材解說-1](https://youtu.be/WwyifIQIYdY)`*`, [教材解說-2](https://youtu.be/CkgL2dVAaag)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
         - 請學員及早進行 [課程期末專題](https://hackmd.io/@sysprog/linux2023-projects) 並預約一對一討論
@@ -354,7 +354,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz15) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/@sysprog/BySO9ieSn)
 
-* 第 16 週 (May 29, Jun 1): 程式碼最佳化概念 + 多核處理器架構
+* 第 16 週 (Jun 4, 6): 程式碼最佳化概念 + 多核處理器架構
     * [教材解說](https://youtu.be/ICRzw5Ye2sM)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告
        - 5 月 31 日下午，財團法人開放文化基金會 (OCF) 將在國立成功大學資訊工程系舉辦校園工作坊，主題是「[開放原始碼 ——
@@ -377,7 +377,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * Week16 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz16) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/@sysprog/BySO9ieSn)
  
-* 第 17 週 (Jun 10): 即時 Linux 的基礎建設
+* 第 17 週 (Jun 11, 13): 即時 Linux 的基礎建設
     * [教材解說](https://youtu.be/4kfRe8TQY9g)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告
         - 佔學期總成績 50% 的自我評量，請在 6 月 24 日前完成。範例: [User/OscarShiang](http://wiki.csie.ncku.edu.tw/User/OscarShiang)
@@ -394,7 +394,7 @@ Linux 核心設計/實作 (Spring 2023) 課程進度表暨線上資源
     * [Linux 核心搶佔](https://hackmd.io/@sysprog/linux-preempt)
     * [Towards PREEMPT_RT for the Full Task Isolation](https://ossna2022.sched.com/event/11NtQ)
 
-* 第 18 週 (Jun 12, 13): 即時 Linux 的基礎建設 + 多核處理器 + Rust
+* 第 18 週 (Jun 18, 20): 即時 Linux 的基礎建設 + 多核處理器 + Rust
     * [教材解說](https://youtu.be/VFgRAHemG0Q)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告
         - 6 月 13 日下午是本學期最後一次實體課程，以討論期末專題為主，歡迎大家出席，授課教師請喝飲料
@@ -413,7 +413,7 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
         - [撰寫 LKMPG 的 Rust 核心模組](https://hackmd.io/@sysprog/Sk8IMQ9S2)
     * [課堂問答簡記](https://hackmd.io/@sysprog/B1RFhOBP3)
 
-* 第 19 週 (Jun 18, 20): Rust, KVM
+* 第 19 週 (Jun 25, 27): Rust, KVM
     * [教材解說-1](https://youtu.be/vS8U23bhidg)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [COSCUP 2023 議程預覽](https://pretalx.coscup.org/coscup-2023/schedule/)
     * [Rust for Linux 研究](https://hackmd.io/@hank20010209/SJmVNPMQ2)
@@ -427,3 +427,5 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
     * [KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm)
         - [Arm64 移植](https://hackmd.io/@sysprog/rkro_FeSh)
         - [RISC-V 系統模擬器，支援 VirtIO](https://hackmd.io/@sysprog/Skuw3dJB3)
+
+* 第 20 週 (Jul 2): 截止繳交成績的前一天仍有授課
