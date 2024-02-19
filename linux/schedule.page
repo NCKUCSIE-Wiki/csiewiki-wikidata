@@ -44,12 +44,13 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
             + linked list 的操作，例如走訪 (traverse) 所有節點，反映出 Locality of reference (cache 用語) 的表現和記憶體階層架構 (memory hierarchy) 高度相關，學員很容易從實驗得知系統的行為，從而思考其衝擊和效能改進方案
             + 無論是作業系統核心、C 語言函式庫內部、應用程式框架，到應用程式，都不難見到 linked list 的身影，包含多種針對效能和安全議題所做的 linked list 變形，又還要考慮到應用程式的泛用性 (generic programming)，是很好的進階題材
         * [題目 1 + 分析](https://hackmd.io/@sysprog/linked-list-quiz)`*`
-        * [題目2](https://hackmd.io/@sysprog/linux2020-quiz1) / [參考題解1](https://hackmd.io/@Ryspon/HJVH8B0XU), [參考題解2](https://hackmd.io/@chses9440611/Sy5gwE37I)
-        * [題目3](https://hackmd.io/@sysprog/sysprog2020-quiz1) / [參考題解](https://hackmd.io/@RinHizakura/BysgszHNw)
-        * [題目4](https://hackmd.io/@sysprog/linux2021-quiz1) / [參考題解](https://hackmd.io/@linD026/2021q1_quiz1)
-        * [題目5](https://hackmd.io/@sysprog/linux2022-quiz1) / [參考題解](https://hackmd.io/@qwe661234/linux2022-quiz1)
+        * [題目 2](https://hackmd.io/@sysprog/linux2020-quiz1) / [參考題解1](https://hackmd.io/@Ryspon/HJVH8B0XU), [參考題解2](https://hackmd.io/@chses9440611/Sy5gwE37I)
+        * [題目 3](https://hackmd.io/@sysprog/sysprog2020-quiz1) / [參考題解](https://hackmd.io/@RinHizakura/BysgszHNw)
+        * [題目 4](https://hackmd.io/@sysprog/linux2021-quiz1) / [參考題解](https://hackmd.io/@linD026/2021q1_quiz1)
+        * [題目 5](https://hackmd.io/@sysprog/linux2022-quiz1) / [參考題解](https://hackmd.io/@qwe661234/linux2022-quiz1)
+        * [題目 6](https://hackmd.io/@sysprog/linux2023-quiz1) / [參考題解](https://hackmd.io/@yanjiew/linux2023q1-quiz1)
     * [Linux: 作業系統術語及概念](https://hackmd.io/@sysprog/linux-concepts)`*`
-    - [作業](https://hackmd.io/@sysprog/linux2024-homework1): 截止繳交日: Mar 5, 2024
+    - [作業](https://hackmd.io/@sysprog/linux2024-homework1): 截止繳交日: Mar 4, 2024
         * [lab0](https://hackmd.io/@sysprog/linux2024-lab0)`*`
     - 第 1 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz1) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/VIvUZemESvGUev4aCwOnWA?view)
