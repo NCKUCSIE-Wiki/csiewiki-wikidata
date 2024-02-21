@@ -54,6 +54,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * [Linux: 作業系統術語及概念](https://hackmd.io/@sysprog/linux-concepts)`*`
     - 作業截止繳交日: Mar 4, 2024
         * [lab0](https://hackmd.io/@sysprog/linux2024-lab0)`*`
+        * 注意: 若你在 2 月 21 日 09:10AM 之前，已從 GitHub [sysprog21/lab0-c](https://github.com/sysprog21/lab0-c) 進行 fork，請重新 fork
     - 第 1 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz1) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/YCnIwo_0R-GaYjISEZwG1A)
 
