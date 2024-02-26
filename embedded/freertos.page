@@ -40,7 +40,7 @@ toc: no
 
 FreeRTOS 架構
 -----------
-官方網站：[http://www.freertos.org/](http://www.freertos.org/)
+官方網站：[https://www.freertos.org/](https://www.freertos.org/)
 
 FreeRTOS 是一個相對其他作業系統而言較小的作業系統。最小化的 FreeRTOS 核心僅包括 3 個 .c 文件(tasks.c、queue.c、list.c)和少數標頭檔，總共不到 9000 行程式碼，還包括了註解和空行。一個典型的編譯後 binary（二進位碼）小於 10 KB。
 
