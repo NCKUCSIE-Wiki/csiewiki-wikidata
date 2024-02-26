@@ -62,6 +62,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * [部分教材解說](https://youtu.be/YawpeXUiN1k)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * video: [engineer 詞源](https://youtu.be/j6O-fWIEu5c)
     * [系統軟體開發思維](https://hackmd.io/@sysprog/concepts)
+    * [分析「快慢指標」](https://hackmd.io/@sysprog/ry8NwAMvT)
     - [C 語言: 數值系統](https://hackmd.io/@sysprog/c-numerics)`*`
         - 儘管數值系統並非 C 語言所特有，但在 Linux 核心大量存在 u8/u16/u32/u64 這樣透過 typedef 所定義的型態，伴隨著各式 alignment 存取，若學員對數值系統的認知不夠充分，可能立即就被阻擋在探索 Linux 核心之外 —— 畢竟你完全搞不清楚，為何在 Linux 核心存取特定資料需要繞一大圈。
     - [C 語言: Bitwise 操作](https://hackmd.io/@sysprog/c-bitwise)`*`
