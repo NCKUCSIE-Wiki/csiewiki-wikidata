@@ -57,8 +57,8 @@ FreeRTOS 的程式碼可以分為三個主要區塊：任務、通訊和硬體�
 
 原始碼
 ------------------
-* 官方下載：[https://sourceforge.net/projects/freertos](https://sourceforge.net/projects/freertos)
-* 最新版本：v8.2.1
+* 官方下載：[https://freertos.org/a00104.html](https://freertos.org/a00104.html)
+* 最新版本：v11.0.0
 
 * 核心程式碼：(Source)
   - tasks.c：主要掌管 task 的檔案
