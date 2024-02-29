@@ -89,7 +89,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         - bit field 是 C 語言一個很被忽略的特徵，但在 Linux 和 gcc 這類系統軟體很常出現，不僅是精準規範每個 bit 的作用，甚至用來「擴充」C 語言
     - [參考題目](https://hackmd.io/@sysprog/linux2023-quiz2) / [參考題目](https://hackmd.io/@sysprog/linux2022-quiz2) / [參考題目](https://hackmd.io/@sysprog/linux2021-quiz2)`*` / [參考題解 1](https://hackmd.io/@93i7xo2/sysprog2021q1-hw2-quiz2), [參考題解 2](https://hackmd.io/@hankluo6/2021q1quiz2), [參考題解 3](https://hackmd.io/@bakudr18/SkS-Y_lX_)
     - 作業: 截止繳交日 Mar 11
-        - [quiz2](https://hackmd.io/@sysprog/H143OpNCo)
+        - [quiz1+2](https://hackmd.io/@sysprog/BkmmEQCn6)
     - 第 2 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz2) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/YCnIwo_0R-GaYjISEZwG1A)
 
