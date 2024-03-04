@@ -92,15 +92,13 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     - 第 2 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz2) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/YCnIwo_0R-GaYjISEZwG1A)
 
-* 第 3 週 (Mar 5, 7): 並行和 C 語言程式設計
+* 第 3 週 (Mar 5, 7): 數值系統和 C 語言程式設計
     * [教材解說](https://youtu.be/7efdpMCx-ak)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
-    * 公告
-        + 2 月 28 日沒有實體課程，但安排線上測驗 (「Linux 核心設計」課程的學員務必參加)，在 15:20-23:59 之間依據 [Google Calendar](https://calendar.google.com/calendar/embed?src=embedded.master2015%40gmail.com&ctz=Asia%2FTaipei) 進行作答
-        + 第二次作業已指派，可在 2 月 28 日晚間起開始繳交，截止繳交日 Mar 7
-        + 3 月 1 日晚間安排第一次作業的檢討直播 (事後有錄影)，請參見 [Google Calendar](https://calendar.google.com/calendar/embed?src=embedded.master2015%40gmail.com&ctz=Asia%2FTaipei)
     * [Linux: 發展動態回顧](https://hackmd.io/@sysprog/linux-dev-review)`*`
     * [從 Revolution OS 看作業系統生態變化](https://hackmd.io/@sysprog/revolution-os-note)`*`
-    * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency/)`*`: 應涵蓋 Part 1 到 Part 4
+    * [浮點數運算](https://hackmd.io/@sysprog/c-floating-point)`*`: 工程領域往往是一系列的取捨結果，浮點數更是如此，在軟體發開發有太多失誤案例源自工程人員對浮點數運算的掌握不足，本議程希望藉由探討真實世界的血淋淋案例，帶著學員思考 IEEE 754 規格和相關軟硬體考量點，最後也會探討在深度學習領域為了改善資料處理效率，而引入的 [BFloat16](https://en.wikipedia.org/wiki/Bfloat16_floating-point_format) 這樣的新標準
+        - [float16 vs. bfloat16](https://twitter.com/rasbt/status/1631679894219284480)
+    * [並行程式設計: 排程器原理](https://hackmd.io/@sysprog/concurrent-sched)
     * [C 語言: 函式呼叫](https://hackmd.io/@sysprog/c-function)`*`
         - 著重在計算機架構對應的支援和行為分析
     * [C 語言: 遞迴呼叫](https://hackmd.io/@sysprog/c-recursion)`*`
@@ -116,9 +114,6 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
 
 * 第 4 週 (Mar 12, 14): 數值系統 + 編譯器
     - [教材解說](https://youtu.be/cjq0OuUeepA)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
-    * 公告:
-        - 請填寫 [Google 表單](https://forms.gle/rANw1FmXxd2rB3dP8)，以利後續追蹤
-        - 《Demystifying the Linux CPU Scheduler》的書稿已寄送給成功大學的選課學生，旁聽的學員預計在 3 月 13 日取得 (第 5 週進度)
     * 貢獻程式碼到 Linux 核心
         - [第一次給 Linux Kernel 發 patch](https://hackmd.io/@rhythm/BkjJeugOv)
         - [提交第一份 Patch 到 Linux Kernel](https://hackmd.io/@steven1lung/submitting-patches)
@@ -126,6 +121,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * [追求神乎其技的程式設計之道](https://vgod.medium.com/7cccc3c68f1e)
         - 「可以看出抄襲風氣在台灣並不只是小時候在學校抄抄作業而已；媒體工作者在報導中任意抄襲及轉載是種不尊重自己專業的表現，不但隱含著一種應付了事的心態，更代表著這些人對於自己的工作沒有熱情，更沒有著一點堅持。如果要說我在美國看到這邊和台灣有什麼最大的不同，我想關鍵的差異就在對自己的工作有沒有熱情和堅持而已了。」
         - 「程式藝術家也不過是在『簡潔』、『彈性』、『效率』這三大目標上進行一連串的取捨 (trade-off) 和最佳化。」
+    * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency/)`*`: 應涵蓋 Part 1 到 Part 4
     * [Linux 核心的紅黑樹](https://hackmd.io/@sysprog/linux-rbtree)
     * [CS:APP 第 2 章重點提示和練習](https://hackmd.io/@sysprog/CSAPP-ch2)`*`
     * 核心開發者當然要熟悉編譯器行為
@@ -144,8 +140,6 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     - [教材解說](https://youtu.be/f-SprmkcOI0)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
         - 本週導入客製化作業，讓學員選擇改進前四週的作業或自訂題目 (例如貢獻程式碼到 Linux 核心)，隨後安排授課教師和學員的線上一對一討論
-    * [浮點數運算](https://hackmd.io/@sysprog/c-floating-point)`*`: 工程領域往往是一系列的取捨結果，浮點數更是如此，在軟體發開發有太多失誤案例源自工程人員對浮點數運算的掌握不足，本議程希望藉由探討真實世界的血淋淋案例，帶著學員思考 IEEE 754 規格和相關軟硬體考量點，最後也會探討在深度學習領域為了改善資料處理效率，而引入的 [BFloat16](https://en.wikipedia.org/wiki/Bfloat16_floating-point_format) 這樣的新標準
-        - [float16 vs. bfloat16](https://twitter.com/rasbt/status/1631679894219284480)
     * 記憶體配置器涉及 bitwise 操作及浮點數運算。傳統的即時系統和該領域的作業系統 (即 RTOS) 為了讓系統行為更可預測，往往捨棄動態記憶體配置的能力，但這顯然讓系統的擴充能力大幅受限。後來研究人員提出 TLSF (Two-Level Segregated Fit) 嘗試讓即時系統也能享用動態記憶體管理，其關鍵訴求是 "O(1) cost for malloc, free, realloc, aligned_alloc"
         - [Benchmarking Malloc with Doom 3](https://www.forrestthewoods.com/blog/benchmarking-malloc-with-doom3/)
         - [tlsf-bsd](https://github.com/jserv/tlsf-bsd)
