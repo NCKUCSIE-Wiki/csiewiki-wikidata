@@ -122,6 +122,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         - [第一次給 Linux Kernel 發 patch](https://hackmd.io/@rhythm/BkjJeugOv)
         - [提交第一份 Patch 到 Linux Kernel](https://hackmd.io/@steven1lung/submitting-patches)
         - [第一次發 patch 到 LKML](https://hackmd.io/@Risheng/ry5futJF9)
+        - [Linux patch 心得](https://hackmd.io/@zoanana990/first-linux-patch)
     * [追求神乎其技的程式設計之道](https://vgod.medium.com/7cccc3c68f1e)
         - 「可以看出抄襲風氣在台灣並不只是小時候在學校抄抄作業而已；媒體工作者在報導中任意抄襲及轉載是種不尊重自己專業的表現，不但隱含著一種應付了事的心態，更代表著這些人對於自己的工作沒有熱情，更沒有著一點堅持。如果要說我在美國看到這邊和台灣有什麼最大的不同，我想關鍵的差異就在對自己的工作有沒有熱情和堅持而已了。」
         - 「程式藝術家也不過是在『簡潔』、『彈性』、『效率』這三大目標上進行一連串的取捨 (trade-off) 和最佳化。」
