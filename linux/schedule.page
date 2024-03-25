@@ -151,8 +151,22 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/3e8LI8_0SLOo_UTDAnPKYQ)
 
 * 第 6 週 (Mar 26, 28): System call + CPU Scheduler
+    - [rv32emu](https://github.com/sysprog21/rv32emu) 正式支援 WebAssembly，得以[在網頁瀏覽器中執行 RISC-V 程式](https://chinyikming.github.io/rv32emu/)，下一步是[執行 Linux 核心](https://github.com/sysprog21/semu)
     - [教材解說-1](https://youtu.be/f-SprmkcOI0)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
-    * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency/)`*`: 應涵蓋 Part 1 到 Part 4
+    * [Linux 核心模組運作原理](https://hackmd.io/@sysprog/linux-kernel-module)
+    * [Linux: 不只挑選任務的排程器](https://hackmd.io/@sysprog/linux-scheduler)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
+    * [C 語言: 動態連結器](https://hackmd.io/@sysprog/c-dynamic-linkage)`*`
+    * [C 語言: 連結器和執行檔資訊](https://hackmd.io/@sysprog/c-linker-loader)`*`
+    * [C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/@sysprog/c-runtime)`*`
+    - [教材解說-2](https://youtu.be/zW_MAMy7DBE)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [Linux: 賦予應用程式生命的系統呼叫](https://hackmd.io/@sysprog/linux-syscall)
+    * [vDSO: 快速的 Linux 系統呼叫機制](https://hackmd.io/@sysprog/linux-vdso)
+    * [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)
+    * Week6 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz6) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/@sysprog/rJVas7NJn)
+
+* 第 7 週 (Apr 2, 4): Process, 並行和多執行緒
+    - [教材解說-1](https://youtu.be/f-SprmkcOI0)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 記憶體配置器涉及 bitwise 操作及浮點數運算。傳統的即時系統和該領域的作業系統 (即 RTOS) 為了讓系統行為更可預測，往往捨棄動態記憶體配置的能力，但這顯然讓系統的擴充能力大幅受限。後來研究人員提出 TLSF (Two-Level Segregated Fit) 嘗試讓即時系統也能享用動態記憶體管理，其關鍵訴求是 "O(1) cost for malloc, free, realloc, aligned_alloc"
         - [Benchmarking Malloc with Doom 3](https://www.forrestthewoods.com/blog/benchmarking-malloc-with-doom3/)
         - [tlsf-bsd](https://github.com/jserv/tlsf-bsd)
@@ -166,31 +180,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         - [assessment](https://hackmd.io/@sysprog/r1O7Xcp12), [fibdrv](https://hackmd.io/@sysprog/linux2023-fibdrv)`*`
     * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz5) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/rJVas7NJn)
-    - [教材解說-2](https://youtu.be/zW_MAMy7DBE)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
-    * [coroutine](https://hackmd.io/@sysprog/coroutine)
-    * [Linux: 賦予應用程式生命的系統呼叫](https://hackmd.io/@sysprog/linux-syscall)
-    * [vDSO: 快速的 Linux 系統呼叫機制](https://hackmd.io/@sysprog/linux-vdso)
-    * [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)
-    * 《Demystifying the Linux CPU Scheduler》
-        - 1.2.1 System calls
-        - 1.2.2 A different kind of software
-        - 1.2.3 User and kernel stacks
-        - 1.3 Process management
-        - 2.1 Introduction
-        - 2.2 Prior to CFS
-        - 2.3 Completely Fair Scheduler (CFS)
-        - 3.1 Structs and their role
-    * [作業](https://hackmd.io/@sysprog/linux2023-homework6): 截止繳交 Apr 17
-        - [quiz5](https://hackmd.io/@sysprog/rJf4_1x-3), [quiz6](https://hackmd.io/@sysprog/B1rcF1e-h)
-    * Week6 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz6) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/@sysprog/rJVas7NJn)
-
-* 第 7 週 (Apr 2, 4): Process, 並行和多執行緒
     - [教材解說-1](https://youtu.be/mnbIi82iT2A)`*`, [教材解說-2](https://youtu.be/G_BLP3tqocc)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
-    * 公告:
-        * [第 5 次作業](https://hackmd.io/@sysprog/linux2023-homework5) 和 [第 6 次作業](https://hackmd.io/@sysprog/linux2023-homework6) 作業已指派
-        * 本週測驗順延到 4 月 4 日和 4 月 6 日，3 月 30 日晚間安排課程講解
-        * 4 月 3 日晚間依舊講課 (事後有錄影)、4 月 4 日下午到晚間安排在家測驗，4 月 6 日晚間安排測驗
     * [Linux: 不僅是個執行單元的 Process](https://hackmd.io/@sysprog/linux-process)`*`: Linux 核心對於 UNIX Process 的實作相當複雜，不僅蘊含歷史意義 (幾乎每個欄位都值得講古)，更是反映出資訊科技產業的變遷，核心程式碼的 `task_struct` 結構體更是一絕，廣泛涵蓋 process 狀態、處理器、檔案系統、signal 處理、底層追蹤機制等等資訊，更甚者，還很曖昧地保存著 thread 的必要欄位，好似這兩者天生就脫不了干係
         - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
     * [測試 Linux 核心的虛擬化環境](https://hackmd.io/@sysprog/linux-virtme)
