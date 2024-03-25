@@ -163,7 +163,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * [vDSO: 快速的 Linux 系統呼叫機制](https://hackmd.io/@sysprog/linux-vdso)
     * [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)
     * Week6 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz6) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/@sysprog/rJVas7NJn)
+    - [課堂問答簡記](https://hackmd.io/S-UYYCyCQVSaGzwhhVCm2g)
 
 * 第 7 週 (Apr 2, 4): Process, 並行和多執行緒
     - [教材解說-1](https://youtu.be/f-SprmkcOI0)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
