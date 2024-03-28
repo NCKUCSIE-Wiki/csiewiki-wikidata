@@ -154,7 +154,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     - 公告
         * [第 5 次作業](https://hackmd.io/@sysprog/BySwQtt06)已指派。對某些學員來說，這是最後一份全體學員通用的作業，之後就是期末專題或客製化作業。
         * 3 月 28 日晚間安排線上測驗和作業回顧，請學員以指定的 Google Meet 參加，務必確保耳機和麥克風運作正常，授課教師斟酌進行互動。
-    - [rv32emu](https://github.com/sysprog21/rv32emu) 正式[支援 WebAssembly](https://github.com/sysprog21/rv32emu/issues/75)，得以[在網頁瀏覽器中執行 RISC-V 程式](https://chinyikming.github.io/rv32emu/)，下一步是[執行 Linux 核心](https://github.com/sysprog21/semu)
+    - [rv32emu](https://github.com/sysprog21/rv32emu) 正式[支援 WebAssembly](https://github.com/sysprog21/rv32emu/issues/75)，得以[在網頁瀏覽器中執行 RISC-V 程式](https://sysprog21.github.io/rv32emu-demo/)，下一步是[執行 RISC-V 處理器架構的 Linux 核心](https://github.com/sysprog21/semu)
     - [教材解說-1](https://youtu.be/f-SprmkcOI0)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux 核心模組運作原理](https://hackmd.io/@sysprog/linux-kernel-module)
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/@sysprog/linux-scheduler)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
