@@ -153,7 +153,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
 * 第 6 週 (Mar 26, 28): System call + CPU Scheduler
     - 公告
         * [第 5 次作業](https://hackmd.io/@sysprog/BySwQtt06)已指派。對某些學員來說，這是最後一份全體學員通用的作業，之後就是期末專題或客製化作業。
-        * 3 月 28 日晚間安排線上測驗和作業回顧，請學員以指定的 Google Meet 參加，務必確保耳機和麥克風運作正常，授課教師斟酌進行互動。
+        * 3 月 28 日晚間安排線上測驗 (取消原定的討論)，作答時間 19:30 到 20:30
     - [rv32emu](https://github.com/sysprog21/rv32emu) 正式[支援 WebAssembly](https://github.com/sysprog21/rv32emu/issues/75)，得以[在網頁瀏覽器中執行 RISC-V 程式](https://sysprog21.github.io/rv32emu-demo/)，下一步是[執行 RISC-V 處理器架構的 Linux 核心](https://github.com/sysprog21/semu)
     - [教材解說-1](https://youtu.be/f-SprmkcOI0)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux 核心模組運作原理](https://hackmd.io/@sysprog/linux-kernel-module)
