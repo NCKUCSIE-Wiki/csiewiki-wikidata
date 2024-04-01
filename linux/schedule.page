@@ -101,7 +101,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * [從 Revolution OS 看作業系統生態變化](https://hackmd.io/@sysprog/revolution-os-note)`*`
     * [浮點數運算](https://hackmd.io/@sysprog/c-floating-point)`*`: 工程領域往往是一系列的取捨結果，浮點數更是如此，在軟體發開發有太多失誤案例源自工程人員對浮點數運算的掌握不足，本議程希望藉由探討真實世界的血淋淋案例，帶著學員思考 IEEE 754 規格和相關軟硬體考量點，最後也會探討在深度學習領域為了改善資料處理效率，而引入的 [BFloat16](https://en.wikipedia.org/wiki/Bfloat16_floating-point_format) 這樣的新標準
         - [float16 vs. bfloat16](https://twitter.com/rasbt/status/1631679894219284480)
-    * [並行程式設計: 排程器原理](https://hackmd.io/@sysprog/concurrent-sched)
+    * [並行程式設計: 排程器原理](https://hackmd.io/@sysprog/concurrent-sched)`*`
     * [C 語言: 函式呼叫](https://hackmd.io/@sysprog/c-function)`*`
         - 著重在計算機架構對應的支援和行為分析
     * [C 語言: 遞迴呼叫](https://hackmd.io/@sysprog/c-recursion)`*`
