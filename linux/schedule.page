@@ -179,7 +179,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * [Linux: 不僅是個執行單元的 Process](https://hackmd.io/@sysprog/linux-process)`*`: Linux 核心對於 UNIX Process 的實作相當複雜，不僅蘊含歷史意義 (幾乎每個欄位都值得講古)，更是反映出資訊科技產業的變遷，核心程式碼的 `task_struct` 結構體更是一絕，廣泛涵蓋 process 狀態、處理器、檔案系統、signal 處理、底層追蹤機制等等資訊，更甚者，還很曖昧地保存著 thread 的必要欄位，好似這兩者天生就脫不了干係
         - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
     * 《Demystifying the Linux CPU Scheduler》第 1 章
-    * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency)，涵蓋
+    * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency)`*`，涵蓋
         - Atomics 操作
         - POSIX Threads (請對照 CS:APP 第 12 章自行學習)
     * [測試 Linux 核心的虛擬化環境](https://hackmd.io/@sysprog/linux-virtme)
@@ -190,7 +190,6 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         - [C11 atomic variables and the kernel](https://lwn.net/Articles/586838/)
         - [C11 atomics part 2: "consume" semantics](https://lwn.net/Articles/588300/)
         - [An introduction to lockless algorithms](https://lwn.net/Articles/844224/)
-    * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency/)`*`
     * CS:APP 第 12 章
         - [Concurrency](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/22-concprog.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0be3c53f-5d35-40f0-a5ab-55897a2c91a5)`*`
         - [Synchronization: Basic](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/23-sync-basic.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aae5ff94-1551-42b6-8981-7d19157afa0c)`*`
