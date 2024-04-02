@@ -174,6 +174,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     - 公告:
         * 4 月 4 日晚間不停課，依舊安排線上測驗和討論 (事後提供錄影)，19:30 開始
         * 4 月 9 日不停課，改為 Google Meet 線上授課 (稍後確認進行方式)
+        - 研究生要依據[課程說明](https://bit.ly/linux2024-intro)，寄送學習狀況給「實驗室指導教授」(不是授課教師)，請詳閱[學習回顧信件之書寫範本和規範](https://hackmd.io/@sysprog/linux2024-progress)
     - [教材解說-1](https://youtu.be/mnbIi82iT2A)`*`, [教材解說-2](https://youtu.be/G_BLP3tqocc)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux: 不僅是個執行單元的 Process](https://hackmd.io/@sysprog/linux-process)`*`: Linux 核心對於 UNIX Process 的實作相當複雜，不僅蘊含歷史意義 (幾乎每個欄位都值得講古)，更是反映出資訊科技產業的變遷，核心程式碼的 `task_struct` 結構體更是一絕，廣泛涵蓋 process 狀態、處理器、檔案系統、signal 處理、底層追蹤機制等等資訊，更甚者，還很曖昧地保存著 thread 的必要欄位，好似這兩者天生就脫不了干係
         - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
