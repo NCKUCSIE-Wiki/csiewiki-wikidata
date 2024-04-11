@@ -200,14 +200,16 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
 
 * 第 8 週 (Apr 9, 11): 並行程式設計, lock-free, Linux 同步機制
     * 公告:
-        - 4 月 11 日 20:00 刷新本頁面以得知新作業，Linux 核心模組初體驗！
-        - 4 月 11 日晚間使用 [Google Meet]() 參與課程
+        - 4 月 11 日晚間使用 [Google Meet](https://www.google.com/url?q=https://meet.google.com/huv-gutb-bub) 參與課程
+        - [第 6 次作業](https://hackmd.io/@sysprog/linux2024-integration)已指派
     - [教材解說](https://youtu.be/05x65CayUNw)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency)，涵蓋
         - Atomics 操作
     * [Linux: 淺談同步機制](https://hackmd.io/@sysprog/linux-sync)`*`
     * [利用 lkm 來變更特定 Linux 行程的內部狀態](https://hackmd.io/@cwl0429/linux2022-quiz8-3)
     * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz8) (內含作答表單)
+    * 作業: 截止繳交日: Apr 29
+        - [integration](https://hackmd.io/@sysprog/linux2024-integration)
     - [課堂問答簡記](https://hackmd.io/S-UYYCyCQVSaGzwhhVCm2g)
 
 * 第 9 週 (Apr 16, 18): futex, RCU, 伺服器開發與 Linux 核心對應的系統呼叫
