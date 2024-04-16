@@ -200,7 +200,6 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
 
 * 第 8 週 (Apr 9, 11): 並行程式設計, lock-free, Linux 同步機制
     * 公告:
-        - 4 月 11 日晚間使用 [Google Meet](https://www.google.com/url?q=https://meet.google.com/huv-gutb-bub) 參與課程
         - [第 6 次作業](https://hackmd.io/@sysprog/linux2024-integration)已指派
     - [教材解說](https://youtu.be/05x65CayUNw)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency)，涵蓋
@@ -214,11 +213,6 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
 
 * 第 9 週 (Apr 16, 18): futex, RCU, 伺服器開發與 Linux 核心對應的系統呼叫
     - [教材解說](https://youtu.be/BH6vdKd6kGY)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
-    * [第二次作業檢討](https://hackmd.io/@sysprog/linux2023-review2)
-    * 公告:
-        + 請於 4 月 14 日 10:00PM 刷新本頁面，以得知新指派的作業
-        + 4 月 13 日晚間安排課程測驗和作業解說，優先回覆學員在[第 5 次作業](https://hackmd.io/@sysprog/linux2023-homework5)的提問
-        + 由於其他課程的期中考陸續告一段落，本課程又要恢復之前的強度，請務必跟授課教師預約一對一討論，以進行相關調整
     * Twitter 上面的笑話: index 的複數寫作 indices, complex 的複數寫作 complices, 那 mutex 的複數是什麼？答 "deadlock" -- [出處](https://twitter.com/jfbastien/status/1408440373408460803)
     * [A Deep dive into (implicit) Thread Local Storage](https://chao-tic.github.io/blog/2018/12/25/tls)
         - 允許執行緒擁有私自的資料。對於每個執行緒來說，TLS 是獨一無二，不會相互影響。案例: 全域變數 `errno` 可能在多執行緒並行執行時錯誤，透過 TLS 處理 `errno` 是個解決方案
