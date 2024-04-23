@@ -231,8 +231,11 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
 * 第 10 週 (Apr 23, 25): 現代微處理器
     * [教材解說](https://youtu.be/1zDQfxp_AuU)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
-        - 本週指派新作業: [ktcp](https://hackmd.io/@sysprog/linux2023-ktcp)`*`
-        - 選修「Linux 核心設計/實作」課程的研究生有額外的作業 (課程回顧和分享學習經驗給指導教授)，詳情請留意後續信件
+        - 本學期最後一份作業: [ktcp](https://hackmd.io/@sysprog/linux2023-ktcp)`*`，請在 4 月 26 日刷新本頁面，之後就會進行期末專題
+    * 產業動態
+        + [Embedded Open Source Summit 2024 會後紀錄](https://hackmd.io/@shengwen/EOSS2024)
+        + [Introducing Google Axion Processors, our new Arm-based CPUs](https://cloud.google.com/blog/products/compute/introducing-googles-new-arm-based-cpu/): 因為這個專案，Google 台灣增加許多職缺
+        + [我在 SiFive 處理器架構部門四年的經歷](https://furuame.blogspot.com/2024/04/four-years-at-sifive.html)
     * [Cautionary Tales on Implementing the Software That People Want](https://multicore.world/speakers/paul-mckenney/)`*`
         - [slides](https://2019multicoreworld.files.wordpress.com/2023/02/mckenney-paul-23.pdf)
         - 1990: Queueing Problem: Stochastic Fair Queueing: Hash
@@ -253,19 +256,15 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * [CPU caches](https://lwn.net/Articles/252125/) by Ulrich Drepper
         - 進行中的繁體中文翻譯: 《[每位程式開發者都該有的記憶體知識](https://sysprog21.github.io/cpumemory-zhtw/)》
         - 本文解釋用於現代電腦硬體的記憶體子系統的結構、闡述 CPU 快取發展的考量、它們如何運作，以及程式該如何針對記憶體操作調整，從而達到最佳的效能。
-    * [作業](https://hackmd.io/@sysprog/linux2022-homework6): 截止繳交 May 14
+    * 作業: 截止繳交 May 15
         - [ktcp](https://hackmd.io/@sysprog/linux2023-ktcp)
-    - [課堂問答簡記](https://hackmd.io/@sysprog/H1NdQ5AGn)
+    - [課堂問答簡記](https://hackmd.io/J5wYE-XzSkaekqe-OQw6mg)
 
 * 第 11 週 (Apr 30, May 2): 現代微處理器 + 記憶體管理
     * [教材解說](https://youtu.be/JWuw8M6Q-_k)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告
         - 學員應及早跟授課教師預約一對一線上討論，請參照[課程行事曆](https://bit.ly/sysprog-calendar)裡頭標注 "Office hour" 的時段，發訊息到 [Facebook 粉絲專頁](https://www.facebook.com/JservFans/)，簡述你的學習狀況並選定偏好的時段 (建議是 30 分鐘)
         - 課程規劃在 6 月下旬舉辦成果發表
-    * 產業動態
-        + [Embedded Open Source Summit 2024 會後紀錄](https://hackmd.io/@shengwen/EOSS2024)
-        + [Introducing Google Axion Processors, our new Arm-based CPUs](https://cloud.google.com/blog/products/compute/introducing-googles-new-arm-based-cpu/): 因為這個專案，Google 台灣增加許多職缺
-        + [我在 SiFive 處理器架構部門四年的經歷](https://furuame.blogspot.com/2024/04/four-years-at-sifive.html)
     * [CS:APP 第 6 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch6)`*`
     * [CPU caches](https://lwn.net/Articles/252125/) by Ulrich Drepper
         - 進行中的繁體中文翻譯: 《[每位程式開發者都該有的記憶體知識](https://sysprog21.github.io/cpumemory-zhtw/)》
