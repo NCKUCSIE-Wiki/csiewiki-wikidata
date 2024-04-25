@@ -247,17 +247,8 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         - Natural Selection: Bugs are Software!
         - People don’t know what they want. But for software developers, this is no excuse. 
     * [現代處理器設計：原理和關鍵特徵](https://hackmd.io/@sysprog/cpu-basics)`*`
-    * 《Demystifying the Linux CPU Scheduler》
-        + 2.4 Multiprocessing
-        + 3.2 Time keeping
-        + 3.4 Per-Entity Load Tracking
-        + 4.1 Group scheduling and cgroups: Introduction
-        + 4.2 Group scheduling and CPU bandwidth
     * [Linux: 中斷處理和現代架構考量](https://hackmd.io/@sysprog/linux-interrupt)`*`
     * [Linux: 多核處理器和 spinlock](https://hackmd.io/@sysprog/multicore-locks)`*`
-    * [CPU caches](https://lwn.net/Articles/252125/) by Ulrich Drepper
-        - 進行中的繁體中文翻譯: 《[每位程式開發者都該有的記憶體知識](https://sysprog21.github.io/cpumemory-zhtw/)》
-        - 本文解釋用於現代電腦硬體的記憶體子系統的結構、闡述 CPU 快取發展的考量、它們如何運作，以及程式該如何針對記憶體操作調整，從而達到最佳的效能。
     * 作業: 截止繳交 May 15
         - [ktcp](https://hackmd.io/@sysprog/linux2023-ktcp)
     * Week10 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz10) (內含作答表單)
@@ -267,6 +258,12 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * [教材解說](https://youtu.be/JWuw8M6Q-_k)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告
         - 課程規劃在 6 月下旬舉辦成果發表
+    * 《Demystifying the Linux CPU Scheduler》
+        + 2.4 Multiprocessing
+        + 3.2 Time keeping
+        + 3.4 Per-Entity Load Tracking
+        + 4.1 Group scheduling and cgroups: Introduction
+        + 4.2 Group scheduling and CPU bandwidth
     * [CS:APP 第 6 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch6)`*`
     * [CPU caches](https://lwn.net/Articles/252125/) by Ulrich Drepper
         - 進行中的繁體中文翻譯: 《[每位程式開發者都該有的記憶體知識](https://sysprog21.github.io/cpumemory-zhtw/)》
