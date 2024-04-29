@@ -255,6 +255,15 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/J5wYE-XzSkaekqe-OQw6mg)
 
 * 第 11 週 (Apr 30, May 2): 現代微處理器 + 記憶體管理
+    * 公告
+        - 課程規劃在 6 月下旬舉辦成果發表
+    - [2024 年開放原始碼專案協作](https://hackmd.io/@sysprog/ByLJ8DUFT)`*`
+    - [課堂問答簡記](https://hackmd.io/@sysprog/H1NdQ5AGn)
+
+* 第 12 週 (May 7, 9): 期末專題介紹和回顧
+    * [課程期末專題](https://hackmd.io/@sysprog/linux2023-projects)`*`
+    * Week12 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz12) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/@sysprog/H1NdQ5AGn)
     * [教材解說](https://youtu.be/JWuw8M6Q-_k)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告
         - 課程規劃在 6 月下旬舉辦成果發表
@@ -271,12 +280,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * [CS:APP 第 9 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch9)`*`
     * [解析 Linux 共享記憶體機制](https://hackmd.io/@sysprog/linux-shared-memory)
     * [Linux 核心的 /dev/mem 裝置](https://hackmd.io/@sysprog/linux-mem-device)
-    * Week11 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz11) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/@sysprog/H1NdQ5AGn)
-
-* 第 12 週 (May 7, 9): 期末專題介紹和回顧
-    * [課程期末專題](https://hackmd.io/@sysprog/linux2023-projects)`*`
-    * Week12 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz12) (內含作答表單)
+    * Week12 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz12) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/@sysprog/H1NdQ5AGn)
 
 * 第 13 週 (May 14, 16): 記憶體管理 + 裝置驅動程式
