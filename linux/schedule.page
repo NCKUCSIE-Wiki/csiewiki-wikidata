@@ -267,12 +267,11 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/7KH-fY-vRlmXfXCk88W1Dg)
 
 * 第 12 週 (May 7, 9): 現代微處理器 + 記憶體管理
-    * [課程期末專題](https://hackmd.io/@sysprog/linux2023-projects)`*`
-    * Week12 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz12) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/@sysprog/H1NdQ5AGn)
+    * [課程期末專題](https://hackmd.io/@sysprog/linux2024-projects)
     * [教材解說](https://youtu.be/JWuw8M6Q-_k)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
-    * 公告
-        - 課程規劃在 6 月下旬舉辦成果發表
+    * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency)講座近期新增:
+        - [實作輕量級的 Mutex Lock](https://hackmd.io/@sysprog/concurrency-mutex)
+        - [案例: Reference Count](https://hackmd.io/@sysprog/concurrency-reference-count)
     * 《Demystifying the Linux CPU Scheduler》
         + 2.4 Multiprocessing
         + 3.2 Time keeping
