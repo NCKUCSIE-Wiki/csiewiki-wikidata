@@ -270,7 +270,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * [課程期末專題](https://hackmd.io/@sysprog/linux2024-projects)
     * [教材解說](https://youtu.be/JWuw8M6Q-_k)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency)講座近期新增:
-        - [實作輕量級的 Mutex Lock](https://hackmd.io/@sysprog/concurrency-mutex)
+        - [實作輕量級的 Mutex Lock](https://hackmd.io/@sysprog/concurrency-mutex) / 搭配看 [Priority Inversion on Mars](https://wiki.csie.ncku.edu.tw/embedded/priority-inversion-on-Mars.pdf)
         - [案例: Reference Count](https://hackmd.io/@sysprog/concurrency-reference-count)
     * 《Demystifying the Linux CPU Scheduler》
         + 2.4 Multiprocessing
