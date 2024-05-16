@@ -325,6 +325,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         - [Skip List](http://en.wikipedia.org/wiki/Skip_list): 置放大量數字並進行排序的資料結構。不用樹狀結構，而改用高度不同的 List 來連接資料。資料結構在概念上可以表示成 Left Child-Right Sibling Binary Tree 的模式。是 Cache-oblivious Algorithm 的經典範例，時間複雜度與空間複雜度與 Binary Search Tree 皆相同，但精心調整的實作可超越 Binary Search Tree。
         - Linux 核心: [A kernel skiplist implementation (Part 1)](https://lwn.net/Articles/551896/), [Skiplists II: API and benchmarks](https://lwn.net/Articles/553047/)
     * Linux: linked list, Queues, Maps, Binary Trees: [錄影](https://youtu.be/7ZQNb7Fu_A4)`*` / [共筆](https://docs.google.com/document/d/1n31QMPyvdAkS2uxM5AyKu_DD3uRu6-zoRukAitDwPvA/edit#)
+    * Week13 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz13) (內含作答表單)
 
 * 第 14 週 (May 21, 23): 網路封包處理
     * [教材解說](https://youtu.be/HfXYAQRLfko)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
