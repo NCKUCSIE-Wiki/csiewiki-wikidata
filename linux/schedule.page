@@ -332,6 +332,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     - 公告
         * 原訂 5 月 23 日晚間課程，改為「Linux 核心設計：虛擬化技術」線上講座 (議程結束後提供錄影)
         * 原訂 5 月 28 日實體課程，改為線上方式進行
+    * [Embedded Virtualization applied in Mobile Devices](https://www.slideshare.net/jserv/mobile-virtualization) / [info](https://www.iis.sinica.edu.tw/zh/page/Events/data/DJ120045.html)
     - [課堂問答簡記](https://hackmd.io/@sysprog/BySO9ieSn)
 
 * 第 15 週 (May 28, 30): 網路封包處理 + 多核處理器架構
