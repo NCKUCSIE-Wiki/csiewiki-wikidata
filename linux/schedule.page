@@ -338,16 +338,12 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
 * 第 15 週 (May 28, 30): 網路封包處理 + 多核處理器架構
     * 公告
         - 原訂 5 月 28 日實體課程，改為線上方式進行
+        - 5 月 30 日晚間討論專題進行狀況
     * [LKL: 重用 Linux 核心的成果](https://hackmd.io/@sysprog/linux-lkl)
     * [教材解說-1](https://youtu.be/HfXYAQRLfko)`*`, [教材解說-2](https://youtu.be/WwyifIQIYdY)`*`, [教材解說-3](https://youtu.be/CkgL2dVAaag)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux 核心網路](https://hackmd.io/@rickywu0421/BJxD_3989)
         - [socket 的譯法](https://hackmd.io/@sysprog/it-vocabulary)
     * [semu: 精簡 RISC-V 系統模擬器](https://hackmd.io/@sysprog/Skuw3dJB3): 支援 TAP/TUN 以存取電腦網路
-    * [Build a virtual WiFi Driver for Linux](https://docs.google.com/presentation/d/1vlKkPRoURkqzCjZPDkvsGZVyfXtoRFF_/edit#slide=id.p1)`*` / [錄影](https://youtu.be/DZMIpBI4Rc0)
-        - [背景知識](https://hackmd.io/@rickywu0421/vwifi_background), [2022 年開發紀錄](https://hackmd.io/@rickywu0421/FinalProject)
-    * **[cserv](https://github.com/sysprog21/cserv)** is an event-driven and non-blocking web server.
-        - 展現 [event-driven, non-blocking I/O Multiplexing](https://hackmd.io/@sysprog/fast-web-server) (主要是 [epoll](https://man7.org/linux/man-pages/man7/epoll.7.html)), shared memory, processor affinity, coroutine, context switch, UNIX signal, [dynamic linking](https://hackmd.io/@sysprog/c-dynamic-linkage), circular buffer, hash table, red-black tree, atomic operations 等議題的實際應用
-        - 可視為 [seHTTPd](https://hackmd.io/@sysprog/linux2023-ktcp) 的後繼改進實作
     * [Memory Externalization With userfaultfd](http://ftp.ntu.edu.tw/pub/linux/kernel/people/andrea/userfaultfd/userfaultfd-LSFMM-2015.pdf) / [錄影](https://youtu.be/pC8cWWRVSPw)`*` / [kernel documentation: userfaults](https://www.kernel.org/doc/html/latest/admin-guide/mm/userfaultfd.html)
     * [How Linux Processes Your Network Packet](https://www.slideshare.net/DevopsCon/how-linux-processes-your-network-packet-elazar-leibovich) / [錄影](https://youtu.be/3Ij0aZRsw9w)`*`
     * [Kernel packet capture technologies](https://www.slideshare.net/ennael/kernel-recipes-2015-kernel-packet-capture-technologies) / [錄影](https://youtu.be/5gEWyCW-qx8)`*`
@@ -357,7 +353,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         - [圖解 Linux tcpdump](https://jgsun.github.io/2019/01/21/linux-tcpdump/)
     * [Multi-Core in Linux](https://youtu.be/UNI6Mbqryv0)`*`
     * [Multiprocessor OS](/11-smp_os.pdf)
-        - [Arm 處理器筆記](http://wiki.csie.ncku.edu.tw/embedded/arm-smp-note.pdf)
+        - [Arm 處理器筆記](https://wiki.csie.ncku.edu.tw/embedded/arm-smp-note.pdf)
     * 《Demystifying the Linux CPU Scheduler》
         - 2.4 Multiprocessing
         - 2.5 Energy-Aware Scheduling (EAS)
@@ -367,7 +363,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         - 4.4 Core scheduling
     * [從 CPU cache coherence 談 Linux spinlock 可擴展能力議題](https://hackmd.io/@sysprog/linux-spinlock-scalability)
     * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz15) (內含作答表單)
-    * [課堂問答簡記](https://hackmd.io/@sysprog/BySO9ieSn)
+    * [課堂問答簡記](https://hackmd.io/y1QvbjheQ0-alPvocnvPwg)
 
 * 第 16 週 (Jun 4, 6): 程式碼最佳化概念 + 多核處理器架構
     * [教材解說](https://youtu.be/ICRzw5Ye2sM)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
