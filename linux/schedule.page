@@ -339,6 +339,9 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * 公告
         - 原訂 5 月 28 日實體課程，改為線上方式進行
         - 5 月 30 日晚間討論專題進行狀況
+        - 研究生及早撰寫五月份學習彙報給指導教授 (並 Cc. 授課教師)，作為期末自我評量的依據之一。六月份不用特別撰寫學習彙報，而是邀請實驗室指導教授觀看你的期末專題
+        - [課程期末專題](https://hackmd.io/@sysprog/linux2024-projects)
+    * [slab 記憶體配置器](https://hackmd.io/@sysprog/linux-slab)
     * [LKL: 重用 Linux 核心的成果](https://hackmd.io/@sysprog/linux-lkl)
     * [教材解說-1](https://youtu.be/HfXYAQRLfko)`*`, [教材解說-2](https://youtu.be/WwyifIQIYdY)`*`, [教材解說-3](https://youtu.be/CkgL2dVAaag)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux 核心網路](https://hackmd.io/@rickywu0421/BJxD_3989)
