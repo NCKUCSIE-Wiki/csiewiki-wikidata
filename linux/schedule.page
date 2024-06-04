@@ -357,6 +357,16 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * [Multi-Core in Linux](https://youtu.be/UNI6Mbqryv0)`*`
     * [Multiprocessor OS](/11-smp_os.pdf)
         - [Arm 處理器筆記](https://wiki.csie.ncku.edu.tw/embedded/arm-smp-note.pdf)
+    * [從 CPU cache coherence 談 Linux spinlock 可擴展能力議題](https://hackmd.io/@sysprog/linux-spinlock-scalability)
+    * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz15) (內含作答表單)
+    * [課堂問答簡記](https://hackmd.io/y1QvbjheQ0-alPvocnvPwg)
+
+* 第 16 週 (Jun 4, 6): 程式碼最佳化概念 + 多核處理器架構
+    * 公告
+        - 預計在 6 月 7 日發布期末自我評量 (佔學期總成績的 50%) 的規範
+    * [教材解說](https://youtu.be/ICRzw5Ye2sM)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [Multiprocessor OS](/11-smp_os.pdf)
+        - [Arm 處理器筆記](https://wiki.csie.ncku.edu.tw/embedded/arm-smp-note.pdf)
     * 《Demystifying the Linux CPU Scheduler》
         - 2.4 Multiprocessing
         - 2.5 Energy-Aware Scheduling (EAS)
@@ -364,25 +374,16 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         - 4.2 Group scheduling and CPU bandwidth
         - 4.3 Control Groups
         - 4.4 Core scheduling
-    * [從 CPU cache coherence 談 Linux spinlock 可擴展能力議題](https://hackmd.io/@sysprog/linux-spinlock-scalability)
-    * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz15) (內含作答表單)
-    * [課堂問答簡記](https://hackmd.io/y1QvbjheQ0-alPvocnvPwg)
-
-* 第 16 週 (Jun 4, 6): 程式碼最佳化概念 + 多核處理器架構
-    * [教材解說](https://youtu.be/ICRzw5Ye2sM)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [現代硬體架構上的演算法: 以 Binary Search 為例](https://hackmd.io/@RinHizakura/BJ-Zjjw43)
         - [Beautiful Binary Search in D](https://muscar.eu/shar-binary-search-meta.html)
         - [binary_search.c](https://gist.github.com/jserv/6023c2fc2d4477fca9038b05f293a543)
     * [CS:APP 第 5 章重點提示和練習](https://hackmd.io/s/SyL8m4Lnm)`*`
     * [CS:APP Assign 5.18](https://hackmd.io/s/rkdzvWJTX)`*`
     * [Linux: Scalability 議題](https://hackmd.io/@sysprog/linux-scalability)`*`
-    * [atomic 和 memory order](https://medium.com/fcamels-notes/%E7%B0%A1%E4%BB%8B-c-11-memory-model-b3f4ed81fea6), [memory barrier 的實作和效果](https://medium.com/fcamels-notes/%E5%BE%9E%E7%A1%AC%E9%AB%94%E8%A7%80%E9%BB%9E%E4%BA%86%E8%A7%A3-memry-barrier-%E7%9A%84%E5%AF%A6%E4%BD%9C%E5%92%8C%E6%95%88%E6%9E%9C-416ff0a64fc1)
     * [Linux-Kernel Memory Ordering: Help Arrives At Last!](http://www.rdrop.com/users/paulmck/scalability/paper/LinuxMM.2017.04.08b.Barcamp.pdf) / [video](https://www.youtube.com/watch?v=ULFytshTvIY)`*`
-        - [I/O ordering 學習紀錄](https://hackmd.io/@butastur/rkkQEGjUN), [Memory ordering](https://hackmd.io/@Cbg1XpL0Rim8U6YOMdjgUg/rJ6NNKdqc)
-        - [Experiments on Concurrency - Happens-before](https://hackmd.io/@butastur/concurrency-happens-before)
         - [Memory barriers in C](https://mariadb.org/wp-content/uploads/2017/11/2017-11-Memory-barriers.pdf)
     * Week16 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2023-quiz16) (內含作答表單)
-    * [課堂問答簡記](https://hackmd.io/@sysprog/BySO9ieSn)
+    * [課堂問答簡記](https://hackmd.io/y1QvbjheQ0-alPvocnvPwg)
  
 * 第 17 週 (Jun 11, 13): 即時 Linux 的基礎建設
     * [教材解說](https://youtu.be/4kfRe8TQY9g)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
