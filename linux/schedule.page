@@ -402,6 +402,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * [PREEMPT_RT 作為邁向硬即時作業系統的機制](https://hackmd.io/@sysprog/preempt-rt)
     * [Linux 核心搶佔](https://hackmd.io/@sysprog/linux-preempt)
     * [Towards PREEMPT_RT for the Full Task Isolation](https://ossna2022.sched.com/event/11NtQ)
+    * [Linux and Zephyr “talking” to each other in the same SoC](https://events19.linuxfoundation.org/wp-content/uploads/2017/12/Linux-and-Zephyr-%E2%80%9CTalking%E2%80%9D-to-Each-Other-in-the-Same-SoC-Diego-Sueiro-Sepura-Embarcados.pdf)
     * Week17 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz17) (內含作答表單)
 
 * 第 18 週 (Jun 18, 20): 即時 Linux 的基礎建設 + 多核處理器 + Rust
