@@ -397,7 +397,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
             5. 所見所聞所感，務必提及閱讀〈因為自動飲料機而延畢的那一年〉和回顧自身在本課程的投入狀況
             6. 上述 (1) 到 (5) 各項都該有對應的評分，皆為介於 1 到 10 之間的「整數」(不要自作主張寫 `8.7` 這樣的數值) 並要能充分反映上述評分項目，附上對應的「公開」證明，如 commit log 和 pull requests
             7. 計算方式 (GEOMEAN 即針對上述 (1) 到 (5) 各項的[幾何平均](https://en.wikipedia.org/wiki/Geometric_mean)，若有計算錯誤，不計分) 如下，若超過 10，則取 10
-                - 方案 A (針對已對 Linux, glibc, gcc, llvm, rv32emu 等專案做出超過 3 項 non-trivial 貢獻 [即僅修正錯字或沒有改變程式行為的修改] 並獲得開發者採納): 8 + floor(0.3 * GEOMEAN)
+                - 方案 A (針對已對 Linux, glibc, gcc, llvm, rv32emu 等專案做出超過 3 項 non-trivial 貢獻 [僅修正錯字或沒有改變程式行為的修改視為 trivial] 並獲得開發者採納): 8 + floor(0.3 * GEOMEAN)
                 - 方案 B: 1 + floor(GEOMEAN)
     * [教材解說](https://youtu.be/4kfRe8TQY9g)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Re: [問卦] 精通作業系統對Coding有什麼幫助？](https://disp.cc/b/163-cidY)
