@@ -363,7 +363,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
 
 * 第 16 週 (Jun 4, 6): 程式碼最佳化概念 + 多核處理器架構
     * 公告
-        - 預計在 6 月 12 日公布期末自我評量 (佔學期總成績的 50%) 及[課程期末專題](https://hackmd.io/@sysprog/linux2024-projects)成果展示 (線上直播) 的規範，請保留 6 月 30 日
+        - [課程期末專題](https://hackmd.io/@sysprog/linux2024-projects)成果展示 (線上直播) 的規範，請保留 6 月 30 日
         - 善用[行事曆](https://bit.ly/sysprog-calendar)的 office hour，向授課教師預約一對一討論和補考 (6 月 28 日前皆可)
     * [教材解說](https://youtu.be/ICRzw5Ye2sM)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Multiprocessor OS](/11-smp_os.pdf)
@@ -390,11 +390,15 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         - 佔學期總成績 50% 的自我評量，請在 7 月 1 日前完成。範例: [User/OscarShiang](http://wiki.csie.ncku.edu.tw/User/OscarShiang)
         - 自我評量的網址**必須**符合 `/User/你的GitHub帳號名稱` 格式 (區分大小寫)，請不要打錯字
         - 自我評分項目 (都要有對應的超連結和延伸資訊)
-            * 成果發表: 與 Linux 核心相關的公開演講、貢獻到 Linux 核心和相關專案 (應標註對應的公開 commits/patches)
-            * 作業/隨堂測驗: 你的開發紀錄，人在做，Google 在看
-            * 期末專題: 開發紀錄，標注與授課教師「一對一討論」的時間，並列出你針對授課教師的問答、啟發及相關成果
-            * 所見所聞所感，包含授課教師編撰/翻譯的書籍 (《Demystifying the Linux CPU Scheduler》, 《Concurrency Primer》, 《Linux Kernel Module Programming Guide》, 〈每位程式開發者都該有的記憶體知識〉) 的讀後，務必提及閱讀〈因為自動飲料機而延畢的那一年〉和回顧自身在本課程的投入狀況
-            * 自我評量: 介於 1 到 10 之間的「整數」(不要自作主張寫 `8.7` 這樣的數值) 並要能充分反映上述評分項目
+            1. 成果發表: 與 Linux 核心相關的公開演講、貢獻到 Linux 核心和相關專案 (應標註對應的公開 commits/patches)。貢獻本課程的教材和專案，包含授課教師編撰/翻譯的書籍 (《Demystifying the Linux CPU Scheduler》, 《Concurrency Primer》, 《Linux Kernel Module Programming Guide》, 〈每位程式開發者都該有的記憶體知識〉
+            2. 作業/隨堂測驗: 你的開發紀錄，人在做，Google 在看
+            3. 期末專題: 開發紀錄和成果發表
+            4. 標注與授課教師「一對一討論」的時間，並列出你針對授課教師的問答、測驗和後續討論及啟發
+            5. 所見所聞所感，務必提及閱讀〈因為自動飲料機而延畢的那一年〉和回顧自身在本課程的投入狀況
+            6. 自我評量: 介於 1 到 10 之間的「整數」(不要自作主張寫 `8.7` 這樣的數值) 並要能充分反映上述評分項目
+            7. 計算方式 (GEOMEAN 即針對上述 (1) 到 (5) 各項的[幾何平均](https://en.wikipedia.org/wiki/Geometric_mean)，若有計算錯誤，不計分)
+                - 方案 A (針對已對 Linux, glibc, gcc, llvm, rv32emu 等專案做出超過 3 項 non-trivial 貢獻): 7 + floor(0.4 * GEOMEAN)
+                - 方案 B: 1 + floor(GEOMEAN)
     * [教材解說](https://youtu.be/4kfRe8TQY9g)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Re: [問卦] 精通作業系統對Coding有什麼幫助？](https://disp.cc/b/163-cidY)
     * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/linux-timer)
@@ -410,11 +414,9 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
 * 第 18 週 (Jun 18, 20): 即時 Linux 的基礎建設 + 多核處理器 + Rust
     * [教材解說](https://youtu.be/VFgRAHemG0Q)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告
-        - 6 月 13 日下午是本學期最後一次實體課程，以討論期末專題為主，歡迎大家出席，授課教師請喝飲料
         - 及早進行[期末專題](https://hackmd.io/@sysprog/linux2023-projects)
         - 準備自我評量 (佔學期總分的 50%)
     * [Linux 核心搶佔](https://hackmd.io/@sysprog/linux-preempt)
-    * [Towards PREEMPT_RT for the Full Task Isolation](https://ossna2022.sched.com/event/11NtQ)
     * [Customize Real-Time Linux for Rocket Flight Control System](https://osseu19.sched.com/event/TLNR)
     * [RTMux: A Thin Multiplexer To Provide Hard Realtime
 Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multiplexer_to_provide_hard_realtime_applications_for_linux.pdf) / [EVL](https://evlproject.org/)
