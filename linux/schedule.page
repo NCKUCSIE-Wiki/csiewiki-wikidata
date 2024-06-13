@@ -389,7 +389,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * 公告
         - 佔學期總成績 50% 的自我評量，請在 7 月 1 日前完成。範例: [User/OscarShiang](http://wiki.csie.ncku.edu.tw/User/OscarShiang)
         - 自我評量的網址**必須**符合 `/User/你的GitHub帳號名稱` 格式 (區分大小寫)，請不要打錯字
-        - 自我評分項目 (都要有對應的超連結和延伸資訊)
+        - 自我評分項目 (都要有對應的狀況說明、超連結、延伸資訊，和強調客觀事實，每項不少於 70 個 Unicode 字元)
             1. 成果發表和貢獻: 與 Linux 核心相關的公開演講、貢獻到 Linux 核心和相關專案 (應標註對應的公開 commits/patches)、貢獻本課程的教材和使用的專案，包含授課教師編撰/翻譯的書籍 (即《Demystifying the Linux CPU Scheduler》, 《Concurrency Primer》, 《Linux Kernel Module Programming Guide》, 〈每位程式開發者都該有的記憶體知識〉)，必須要獲得採納才算，即便只是修正錯字，也可列入貢獻。有效採計區間為 2 月 20 日到 6 月 30 日
             2. 作業/隨堂測驗: 你的開發紀錄，人在做，Google 在看
             3. 期末專題: 開發紀錄和成果發表
