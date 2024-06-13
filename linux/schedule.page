@@ -390,14 +390,14 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         - 佔學期總成績 50% 的自我評量，請在 7 月 1 日前完成。範例: [User/OscarShiang](http://wiki.csie.ncku.edu.tw/User/OscarShiang)
         - 自我評量的網址**必須**符合 `/User/你的GitHub帳號名稱` 格式 (區分大小寫)，請不要打錯字
         - 自我評分項目 (都要有對應的超連結和延伸資訊)
-            1. 成果發表: 與 Linux 核心相關的公開演講、貢獻到 Linux 核心和相關專案 (應標註對應的公開 commits/patches)。貢獻本課程的教材和專案，包含授課教師編撰/翻譯的書籍 (《Demystifying the Linux CPU Scheduler》, 《Concurrency Primer》, 《Linux Kernel Module Programming Guide》, 〈每位程式開發者都該有的記憶體知識〉
+            1. 成果發表和貢獻: 與 Linux 核心相關的公開演講、貢獻到 Linux 核心和相關專案 (應標註對應的公開 commits/patches)、貢獻本課程的教材和使用的專案，包含授課教師編撰/翻譯的書籍 (即《Demystifying the Linux CPU Scheduler》, 《Concurrency Primer》, 《Linux Kernel Module Programming Guide》, 〈每位程式開發者都該有的記憶體知識〉)，必須要獲得採納才算，即便只是修正錯字，也可列入貢獻。有效採計區間為 2 月 20 日到 6 月 30 日
             2. 作業/隨堂測驗: 你的開發紀錄，人在做，Google 在看
             3. 期末專題: 開發紀錄和成果發表
-            4. 標注與授課教師「一對一討論」的時間，並列出你針對授課教師的問答、測驗和後續討論及啟發
+            4. 與授課教師的互動: 標注與授課教師「一對一討論」的時間，並列出你針對授課教師的問答、測驗和後續討論及啟發。課堂問答也可列入
             5. 所見所聞所感，務必提及閱讀〈因為自動飲料機而延畢的那一年〉和回顧自身在本課程的投入狀況
-            6. 上述 (1) 到 (5) 各項都該有對應的評分，介於 1 到 10 之間的「整數」(不要自作主張寫 `8.7` 這樣的數值) 並要能充分反映上述評分項目，附上對應的「公開」證明，如 commit log 和 pull requests
-            7. 計算方式 (GEOMEAN 即針對上述 (1) 到 (5) 各項的[幾何平均](https://en.wikipedia.org/wiki/Geometric_mean)，若有計算錯誤，不計分)
-                - 方案 A (針對已對 Linux, glibc, gcc, llvm, rv32emu 等專案做出超過 3 項 non-trivial 貢獻): 7 + floor(0.4 * GEOMEAN)
+            6. 上述 (1) 到 (5) 各項都該有對應的評分，皆為介於 1 到 10 之間的「整數」(不要自作主張寫 `8.7` 這樣的數值) 並要能充分反映上述評分項目，附上對應的「公開」證明，如 commit log 和 pull requests
+            7. 計算方式 (GEOMEAN 即針對上述 (1) 到 (5) 各項的[幾何平均](https://en.wikipedia.org/wiki/Geometric_mean)，若有計算錯誤，不計分) 如下，若超過 10，則取 10
+                - 方案 A (針對已對 Linux, glibc, gcc, llvm, rv32emu 等專案做出超過 3 項 non-trivial 貢獻並獲得開發者採納): 8 + floor(0.3 * GEOMEAN)
                 - 方案 B: 1 + floor(GEOMEAN)
     * [教材解說](https://youtu.be/4kfRe8TQY9g)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Re: [問卦] 精通作業系統對Coding有什麼幫助？](https://disp.cc/b/163-cidY)
