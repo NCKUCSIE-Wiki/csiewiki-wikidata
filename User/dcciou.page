@@ -1,1 +1,62 @@
-test
+---
+title: dcciou (邱德昌)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 電腦與通訊工程研究所
+
+* GitHub: [`dcciou`](https://github.com/dcciou)
+* HackMD: [`dcciou`](https://hackmd.io/@dcciou)
+
+## 成果發表
+
+* Open Source Summit North America 2022 講者。講題: [Towards PREEMPT\_RT for the Full Task Isolation](https://ossna2022.sched.com/event/11NtQ)
+* FOSSASIA Summit 2022 講者。講題: "[Empower Embedded Computing with VexRiscv and FreeRTOS](https://eventyay.com/e/6b901f56/session/7569)"
+* 開源人年會 COSCUP 2021 講者。講題:「[藉由實作多任務核心來體驗作業系統概念](https://coscup.org/2021/zh-TW/session/WLTVU7)」
+* 開源人年會 COSCUP 2020 講者。講題:「[KTLS — Linux 核心內部的 TLS 實作](https://coscup.org/2020/zh-TW/agenda/JGX8JN)」
+
+## Linux 核心和相關專案貢獻
+* [rt-tests](https://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git): commit [c96e77dc](https://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git/commit/?id=c96e77dc74643354c20e9efb51b631467754d327), [d83bc06](https://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git/commit/?id=d83bc06e1fca7250dbc3c5e7be0f55a4ea6e7ef0), [d2ded8b](https://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git/commit/?id=d2ded8b1e863d3c7fd47e3f9a875fb9e6968ff61), [6f5ac3d](https://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git/commit/?id=6f5ac3d20aa0a0a04136760c2875ca931eebbaa5)
+* [Linux](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/): commit [62a40d](https://github.com/torvalds/linux/commit/62a40dad573406cdcb489dd45cfd201717c2e765), [cf2adec](https://github.com/torvalds/linux/commit/cf2adec7479d875973fe10782f8bf20377628ef2)
+* 《Demystifying the Linux CPU Scheduler》錯字修正和排版調整
+
+## 其他專案貢獻
+* [FreeRTOS](https://github.com/FreeRTOS/FreeRTOS): commit [0744c287](https://github.com/FreeRTOS/FreeRTOS/commit/0744c28749efbc0a0f08424eff5f6433078a25a2)
+* [raspi3-tutorial](https://github.com/bztsrc/raspi3-tutorial): commit [c59ad439](https://github.com/bztsrc/raspi3-tutorial/commit/c59ad439f427b0bbac48eef97e689f25ad4fac6c)
+
+# 2024 Linux 核心設計 春季班 自我評量
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/OscarShiang/lab0-c) / [HackMD](https://hackmd.io/@oscarshiang/linux_lab0)
+* fibdrv: [GitHub](https://github.com/OscarShiang/fibdrv) / [HackMD](https://hackmd.io/@oscarshiang/linux_fibdrv)
+* kcalc: [GitHub](https://github.com/OscarShiang/kcalc) / [HackMD](https://hackmd.io/@oscarshiang/linux_kcalc)
+* khttpd: [GitHub](https://github.com/OscarShiang/khttpd) / [HackMD](https://hackmd.io/@oscarshiang/linux_khttpd)
+* kecho: [GitHub](https://github.com/OscarShiang/kecho) / [HackMD](https://hackmd.io/@oscarshiang/linux_kecho)
+* sehttpd: [GitHub](https://github.com/OscarShiang/sehttpd) / [HackMD](https://hackmd.io/@oscarshiang/linux_sehttpd)
+
+
+## 測驗共筆
+
+* quiz2: [GitHub](https://github.com/OscarShiang/xstring) / [HackMD](https://hackmd.io/@oscarshiang/quiz2_xstring)
+* quiz3: [GitHub](https://github.com/OscarShiang/xorlist) / [HackMD](https://hackmd.io/@oscarshiang/linux_quiz3)
+* quiz4: [GitHub](https://github.com/OscarShiang/cvector) / [HackMD](https://hackmd.io/@oscarshiang/linux_quiz4)
+
+
+## 期末專題
+
+* KTLS: [HackMD](https://hackmd.io/@oscarshiang/linux_ktls)
+
+## 修課心得
+
+一開始在計畫要上這堂課的時候就發現課程的材料真的很多，估計要花上好幾小時才能完成每個星期的進度，而實際上這學期走過這門課也真的學了不少東西，不管是作圖用的 gnuplot，檢查記憶體使用情況的 valgrind 或是檢查格式的 clang-format，也才發現自己在 HackMD 跟 GitHub 好像也沒有用過很多的功能，頂多就是偶爾打開寫寫投影片，或是把最近寫的作業等等程式碼上傳上去而已。
+
+就如同老師在學期初所講的，這堂課雖然說是 Linux 核心設計，但課程的範圍囊括了資訊系許多必修課與選修課的內容，而且內容不但豐富，也相當的深入。因為我在修這堂課的時候是大二下，在這之前並沒有學習過計算機組織的知識，還好老師已經準備好了許多相關的教材，讓我不至於不知道要怎麼處理這方面的議題，而且在上計算機組織的時候也對 cache, virtual memory 這樣的議題更有認知。
+
+上這堂課還有另外一項好處，可以知道目前電腦、科技領域的發展脈絡，讓我們在學習核心實作的知識時，也可以了解我們現在所學的這些技能，將來可以用在哪裡，真的是收穫滿滿。
+
+## 自我評量 (1 ~ 10)
+
+我給自己 8 分
+
+學期初的時候真的是投入的大量的時間和精神在這堂課上，雖然仍有許多的教材還來不及看完，但至少在作業以及隨堂考的部分，我都有盡量做好。到了期末的時候，各科的期末考以及期末 Project 還是讓我有點忙不過來，導致有好幾週的教材到現在還只是看過而已，而沒有真正的看懂。這也表示我還有許多的地方可以繼續努力加油。謝謝老師這一學期以來的指導，老師您辛苦了。
