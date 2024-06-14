@@ -388,7 +388,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
 * 第 17 週 (Jun 11, 13): 即時 Linux 的基礎建設
     * 公告
         - 佔學期總成績 50% 的自我評量，請在 7 月 1 日前完成。範例: [User/OscarShiang](http://wiki.csie.ncku.edu.tw/User/OscarShiang)
-        - 自我評量的網址**必須**符合 `/User/你的GitHub帳號名稱` 格式 (區分大小寫)，請不要打錯字
+        - 自我評量的網址**必須**符合 `/User/你的GitHub帳號名稱` 格式 (區分大小寫)，請不要打錯字。「不能」用「上傳檔案」的功能，使用文字編輯
         - 填寫你的法定姓名和 GitHub 帳號名稱
         - 自我評分項目 (都要有對應的狀況說明、超連結、延伸資訊，和強調客觀事實，每項不少於 70 個 Unicode 字元，用流暢清晰的漢語書寫，採用指定的[資訊科技詞彙翻譯
 ](https://hackmd.io/@sysprog/it-vocabulary))
