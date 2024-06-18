@@ -420,7 +420,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         - 及早進行[期末專題](https://hackmd.io/@sysprog/linux2024-projects)
         - 準備自我評量 (佔學期總分的 50%)
     * [Linux 核心搶佔](https://hackmd.io/@sysprog/linux-preempt)
-    * [Customize Real-Time Linux for Rocket Flight Control System](https://osseu19.sched.com/event/TLNR)
+    * [Customize Real-Time Linux for Rocket Flight Control System](https://osseu19.sched.com/speaker/georgekang03)
     * [RTMux: A Thin Multiplexer To Provide Hard Realtime
 Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multiplexer_to_provide_hard_realtime_applications_for_linux.pdf) / [EVL](https://evlproject.org/)
     * Memory Barrier
