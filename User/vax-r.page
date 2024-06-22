@@ -15,8 +15,6 @@ categories: User
 [[PATCH] lib/plist.c: Enforce memory ordering in plist_check_list](https://lore.kernel.org/all/20240526140139.17220-1-richard120310@gmail.com/T/#u)
 * [sched_ext]: [PR 208](https://github.com/sched-ext/sched_ext/pull/208)
 
-評分：此項我為自己打的分數為 10 分，學期初預計能在本學期間對 Linux Kernel 做出一項貢獻即是我的目標，最後共計三項 non-trivial contribution ，外加數次 trivial contribution ，我認為達成的程度為目標之上，因此給予自己 10 分。
-
 ## 其他專案貢獻
 * [scx]: [commit 6cce01c](https://github.com/sched-ext/scx/commit/6cce01c66b6b8a92895964f1e9b63636ae15ab4e), [commit e605b06](https://github.com/sched-ext/scx/commit/e605b067c6ff11d354f811d30504fd20c6895cf0), [commit 5881c61](https://github.com/sched-ext/scx/commit/5881c61a5ee3aae4019c25fc042078af9923c107), [commit f839106](https://github.com/sched-ext/scx/commit/f839106a57f6428cb5e1bf859d0a992050f6f92a), [commit 0921fde](https://github.com/sched-ext/scx/commit/0921fde1f155aa5c866520918a70e5bb7cfdd891), [commit 4e30bb9](https://github.com/sched-ext/scx/commit/4e30bb9ccfbb4d7fee4bc0e89b5b02148b4c9578), [commit 94e3616](https://github.com/sched-ext/scx/commit/94e3616c02020a05867e71199a2348157dcb564c), [commit 1334a4d](https://github.com/sched-ext/scx/commit/1334a4df5dd91a687cde1b159c71f4c424ee1ebf), [commit 99960ad](https://github.com/sched-ext/scx/commit/99960ad96078b47481a14efe36e16cbbfb5c085a)
 * [vwifi]: [commit e5eb949](https://github.com/sysprog21/vwifi/commit/e5eb9496665c7d8c68f5c42c22546ddffc90b997), [commit 7814d59](https://github.com/sysprog21/vwifi/commit/7814d59e38cc4839c167a179742342ab4ef030bf), [commit 21a60d0](https://github.com/sysprog21/vwifi/commit/21a60d00367af0b8129d7efcbd2dbe399d046068), [commit baf4714](https://github.com/sysprog21/vwifi/commit/baf4714217e774e3f9a34902451ca339fd5d3954)
@@ -24,7 +22,7 @@ categories: User
 * [concurrency-primer]: [commit a74e1b1](https://github.com/sysprog21/concurrency-primer/pull/6/commits/a74e1b110c1e8b7a33f7db52f9714ca42dca4eb5)
 * [gatus]: [commit 34313be](https://github.com/TwiN/gatus/commit/34313bec7ee7488e1ef9fd811be406d2d9719e26), [commit 5c5a954](https://github.com/TwiN/gatus/commit/5c5a954b68a046010e9ddb33a9de4c8295a9f15b), [commit 1e82d2f](https://github.com/TwiN/gatus/commit/1e82d2f07db5c76f3881b98f6f24f22d7dbe684c)
 
-評分 : 此項目我為自己打 9 分，貢獻開源專案、發起開源專案本就是軟體工程師應該做的事，我用上述幾項貢獻說明我不只能夠修正程式碼的 bug ，同時也能針對現有程式進行效能改進，但我尚未能夠引入新的功能或者引導一項新的專案開發，還有進步空間，因此給自己 9 分。
+評分 : 此項目我為自己打 9 分，貢獻開源專案、發起開源專案本就是軟體工程師應該做的事，我用上述幾項貢獻說明我不只能夠修正程式碼的 bug ，同時也能針對現有程式進行效能改進，但我尚未能夠引入新的功能或者引導一項新的專案開發，還有進步空間。不過學期初預計能在本學期間對 Linux Kernel 做出一項貢獻即是我的目標，最後共計三項 non-trivial contribution ，外加數次 trivial contribution ，我認為達成的程度為目標之上，因此給自己 9 分。
 
 # 2024 Linux 核心設計 春季班 自我評量
 ## 作業/隨堂測驗
@@ -57,7 +55,7 @@ categories: User
 
 評分 : 此項目我為自己打 9 分，對我而言選修這門課的理由不外乎是我對資訊科技本身的興趣、想對 Linux Kernel 這樣高強度專案貢獻的興趣、以及授課老師本身的名氣。之前在科技公司實習就已經聽聞這個授課老師在資訊科技業界的影響力，許多公司也十分在意是否有修過這門課，所以我想這堂課列為成大資訊所的必修課都不為過。授課內容相較於課名 Linux 核心設計/實作，其實我更認爲是在上進階版的計算機概論， 20 週當中超過一半和 Linux Kernel 沒有直接相關，老師也很少直接教導我們 Linux Kernel 當中某些技術的運作機制，我一開始是有些不解的，不過在課程大約進行到第三週時我逐漸了解要是沒有前半段 2/3 的基本知識教學，我們試圖看 Linux Kernel 程式碼或者試圖了解當中機制都是無用的，看不懂也沒有能力看懂，不是多花幾天或幾週盯著相同程式碼就會了解的。 Linux Kernel 充滿太大量特化的機制以及功能，哪怕是想理解一個特定 device driver 的運作都需要大量 domain knowledge 的支持，更別說其他和我們原本在作業系統課程當中學到的，看似相同的 mutex lock 、 cache coherence 或 CPU scheduling 議題，在 Linux kernel 當中因為現代硬體以及某些效能上的需求，進行非常多特化的程式碼， fast path 、 middle path 、 slow path ，各種排程邏輯，排程時候涉及的多核心議題，多核心當中又會碰到的 cache 議題，甚至到更細緻的數學運算，這些都是我們過往的課程當中用片面的概念自以為有學到其實只有把名詞背起來的知識。沒有這前 2/3 的內容我們無法對任何高強度專案產生貢獻，而事實上這前 2/3 的內容也就足以讓我們對這些專案做出貢獻，在我的期末專題 scx 以及 sched_ext 專案當中，我送出的 patch 沒有引入任何新功能，單純就是修正程式碼錯誤和效能改進，而當中我運用到的 bitwise 技巧 、 branchless 技巧 、基本運算的成本等等就是來自前 2/3 的課程甚至只有前 1/3 的課程的教授內容，我沒有想出任何高級的演算法、沒有引入任何酷炫的新功能，非常單純的是減少運算次數、減少分支預測錯誤等等這一類非常非常基本但是經常被忽略的細節而已。我認為「誠實面對自己」在這裡就有很好的驗證，前 1/3 也就是前六週的內容，看似如此基本但如果我連使用這六週內容幫程式碼進行改進都做不到，還以為自己真的有學會就因為內容看似簡單，但是程式碼改不動，這豈能算是有學會？我在最後六週時確實的用上前六週的內容來為程式碼進行改進，我認為這可以驗證我有學會這部分的內容，而剩下的內容顯而易見我還沒有學會。針對 kernel 相關議題的知識這堂課僅是為我帶來了一個開頭，我無法在 18~20 週內完全學會，但未來我會繼續在這堂課給我的基礎上不斷擴充並繼續嘗試在這些專案當中貢獻。
 
-至於閱讀〈因為自動飲料機而延畢的那一年〉和這堂課的關聯性，我認為有兩個，第一個是解決真實世界的問題，從第一天開始我們的作業就是一個真實的專案，到最後我的期末專題要試圖在一群 Linux Kernel 開發者當中進行貢獻，他們建立的專案是實際會被公司採用的方案，存在世界上你我的電子裝置當中，我們在這堂課當中嘗試培養的就是這樣能影響真實世界的能力，不是發起什麼運動或抗爭，就一行程式碼就夠了，和那些真實參與 kernel 開發的工程師們交流，向他們提問，這過程當中我學到的非常多，詳細可以參考我期末專題的筆記有一部分是談及我一部分和開發者們的討論。第二個我認為是一個人不可能什麼都懂，哪怕是資訊領域，在進行期末專題的過程當中我挫折感蠻大的，因為我的目標僅僅是想改進排程器當中對於搬移任務與否的決策行為，連排程策略本身都沒涉及到，但這一個看似小小的問題卻引發背後我得學習 Rust 程式語言、 cache 與 NUMA 機制，量測 kernel 當中各項細節 metrics 的方法、 eBPF ... 太多太多單獨探討都需要大量時間的議題，我一個人怎麼做得到全部精通，很快我就意識到我不可能全部精通，我只能盡力並且選擇一個領域精通，剩下的交給時間以及和我合作的人們，要一個人全部了解在現在的情況已經不實際，即便花時間全盤瞭解了，所有機制日新月異更新的速度不是我們學習速度跟得上的。
+至於閱讀〈因為自動飲料機而延畢的那一年〉和這堂課的關聯性，我認為有兩個，第一個是解決真實世界的問題，從第一天開始我們的作業就是一個真實的專案，到最後我的期末專題要試圖在一群 Linux Kernel 開發者當中進行貢獻，他們建立的專案是實際會被公司採用的方案，存在世界上你我的電子裝置當中，我們在這堂課當中嘗試培養的就是這樣能影響真實世界的能力，不是發起什麼運動或抗爭，就一行程式碼就夠了，和那些真實參與 kernel 開發的工程師們交流，向他們提問，這過程當中我學到的非常多，詳細可以參考我期末專題的筆記有一部分是談及我一部分和開發者們的討論。第二個我認為是一個人不可能什麼都懂，哪怕是資訊領域，在進行期末專題的過程當中我挫折感蠻大的，因為我的目標僅僅是想改進排程器當中對於搬移任務與否的決策行為，連排程策略本身都沒涉及到，但這一個看似小小的問題卻引發背後我得學習 Rust 程式語言、 cache 與 NUMA 機制，量測 kernel 當中各項細節 metrics 的方法、 eBPF ... 太多太多單獨探討都需要大量時間的議題，我一個人怎麼做得到全部精通，很快我就意識到我不可能全部精通，我只能盡力並且選擇一個領域精通，剩下的交給時間以及和我合作的人們，要一個人全部了解在現在的情況已經不實際，即便花時間全盤瞭解了，所有機制日新月異更新的速度不是我們學習速度跟得上的。整體而言我認為我的投入程度以及學習成果有 9 分。
 
 ## 研究生發信時間
 * 二月份學習回顧 (2024/03/06) : 
