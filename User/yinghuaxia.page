@@ -7,6 +7,12 @@ Yinghua Yeh (葉楹樺)
 * HackMD: [yinghuaxia](https://hackmd.io/@yinghuaxia)
 
 ### 成果發表與貢獻
+
+閱讀文件時做的錯字修訂：
+
+* [lab0](https://hackmd.io/@jimmylu0303/linux2024-homework1)
+* [虛擬攝影機裝置驅動程式](https://hackmd.io/@sysprog/rJEhcgoSn)
+
 ### 作業與隨堂測驗
 * lab0: [GitHub](https://github.com/yinghuaxia/lab0-c) / [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework1)
 
@@ -77,5 +83,6 @@ vcam: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-final) / [GitHub](https:/
 
 ### 評分
 $(3 \times 9 \times 7 \times 7 \times 9 \times 8) ^ {1/6} = 6.22$ 
+
 使用方案 B 計分：1 + floor(6.22) = 7
 
