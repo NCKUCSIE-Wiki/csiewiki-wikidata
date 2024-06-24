@@ -1,0 +1,31 @@
+Yinghua Yeh (葉楹樺)
+---
+## 2024 Linux 核心設計 春季班 自我評量
+### 成果發表與貢獻
+### 作業與隨堂測驗
+* lab0: [GitHub](https://github.com/yinghuaxia/lab0-c) / [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework1)
+
+    這份作業中主要實作了針對指定串列的操作，從指派空間給一個 `list_head` 開始到對串列的元素順序進行調整、刪減等，也嘗試提供沒有偏好的洗牌方式給 qtest。
+
+* Integration: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework6)
+
+    作業中包含研讀 Linux 效能分析描述，在自己的實體電腦運作 GNU/Linux、閱讀〈Linux 核心模組運作原理〉並解析 `insmod` 的相關操作、閱讀《The Linux Kernel Module Programming Guide》(LKMPG) 並解釋 simrupt 程式碼裡頭的 mutex lock 的使用方式，並探討能否改寫為 lock-free 等。
+
+* Assessment: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework5)
+
+    紀錄閱讀〈因為自動飲料機而延畢的那一年〉的啟發，對前期作業進行改進並研讀 CS:APP 3/e 第二章。
+
+* quiz1 + 2: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework2)
+    
+    測驗中包含透過非遞迴的方式實作 quick sort 並針對 Timsort 進行實作；也包含給定 preorder 和 inorder travsersal 序列進行二元樹的重建、LRU 概念的呈現和於指定的記憶體空間中找出第 N 個設定的位元。
+* quiz3 + 4: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework4)
+    
+    內容包含 popcount、針對符合 $2^k+1$ 的除數所進行的餘數運算、較有效率的開根號、mod 10、div 10、 $log_2$、取平均等算法。
+
+### 期末專題
+
+vcam: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-final) / [GitHub](https://github.com/yinghuaxia/vcam)
+
+### 與授課教師的互動
+### 修課心得
+### 與指導教授的學習回顧
