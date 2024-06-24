@@ -16,27 +16,45 @@ categories: User
 ## 第二項、作業/隨堂測驗
 我給自己 10 分。
 
-HW1 [2024q1 Homework1 (lab0)](https://hackmd.io/mpoK-iFNRRiXbHTeiooz0g)
+HW1 [2024q1 Homework1 (lab0)][HackMD](https://hackmd.io/mpoK-iFNRRiXbHTeiooz0g)/[GitHub](https://github.com/SimonLee0316/lab0-c)
 
-HW2 [2024q1 Homework2 (quiz1+2)](https://hackmd.io/bAyUjId9QzWPqx7Lm5h4Rw)
+這份作業中主要實作了針對指定串列的操作，也引入的不同的洗牌演算法，並比較了自己實做的排序和 linux 核心程式碼之間的效能落差。
 
-HW3 [2024q1 Homework1 (lab0)](https://hackmd.io/mpoK-iFNRRiXbHTeiooz0g#%E4%BF%AE%E6%94%B9-qtest-%E7%A8%8B%E5%BC%8F%EF%BC%8C%E4%BD%BF%E5%85%B6%E6%96%B0%E5%A2%9E-ttt-%E5%91%BD%E4%BB%A4)
+HW2 [2024q1 Homework2 (quiz1+2)][HackMD](https://hackmd.io/bAyUjId9QzWPqx7Lm5h4Rw)
 
-HW5 [2024q1 Homework5 (assessment)](https://hackmd.io/ki2aCEL_Q3iz9daIqwJrEg)
+使用非遞迴的方式實做 quick sort 和實作 Timsort。
+藉由給定的 prorder 和 inorder traversal 序列，進行二元樹的重建和 LRU 概念的呈現。
 
-HW6 [2024q1 Homework6 (integration)](https://hackmd.io/pf4n8UYSQWymdKScemeVWA)
+HW3 [2024q1 Homework1 (lab0)][HackMD](https://hackmd.io/mpoK-iFNRRiXbHTeiooz0g#%E4%BF%AE%E6%94%B9-qtest-%E7%A8%8B%E5%BC%8F%EF%BC%8C%E4%BD%BF%E5%85%B6%E6%96%B0%E5%A2%9E-ttt-%E5%91%BD%E4%BB%A4)/[GitHub](https://github.com/SimonLee0316/lab0-c)
+
+藉由改寫井字遊戲來熟悉數值系統、bitwise 操作、排程器原理和 Linux 核心的 List API。
+
+HW4 [2024 Homework4 (quiz3+4)][HackMD](https://hackmd.io/U-Ez8DYHSuWtsv6wjDMmQw)
+
+使用 bit-waise技巧 包含 ： 取 $log_2$、對 mod 10 和 div 10 減少運算成本、popcount、針對符合 $2^k+1$ 的除數取模同餘。
+XTree 的平衡機制與 AVL tree 相似，利用高度來評估是否需要做 rotate。
+提供了五個 XTree 的操作。
+
+HW5 [2024q1 Homework5 (assessment)][HackMD](https://hackmd.io/ki2aCEL_Q3iz9daIqwJrEg)
+
+紀錄閱讀〈因為自動飲料機而延畢的那一年〉的啟發。
+
+HW6 [2024q1 Homework6 (integration)][HackMD](https://hackmd.io/pf4n8UYSQWymdKScemeVWA)/[GitHub](https://github.com/SimonLee0316/ksort)
+
+在自己的實體電腦運作 GNU/Linux、閱讀〈Linux 核心模組運作原理並解釋 insmod 、閱讀《The Linux Kernel Module Programming Guide》(LKMPG) 並解釋 simrupt 程式碼裡頭的 mutex lock 的使用方式，並探討能否改寫為 lock-free、閱讀論文 Pattern Defeating Quicksort (pdqsort)、善用 CMWQ 達成排序的並行處理。
 
 ## 第三項、期末專題
 我給自己 10 分。
 
-[Linux 核心專題](https://hackmd.io/LRgizse4Sw27kJMmsXc-vw)
+[Quiz8 並擴充為 web server][HackMD](https://hackmd.io/LRgizse4Sw27kJMmsXc-vw)/[GitHub](https://github.com/SimonLee0316/c-web-server)
+完成測驗八並說明程式碼運作原理並將其擴充為 web server。
 
 ## 第四項、與授課教師的互動
 我給自己 10 分。
 
 與授課教師「一對一討論」的時間為 2024/5/16 14:30。
 
-詳細討論可見[內容](https://hackmd.io/ki2aCEL_Q3iz9daIqwJrEg?view#%E4%B8%80%E5%B0%8D%E4%B8%80%E8%A8%8E%E8%AB%96)
+詳細討論可見[HackMD](https://hackmd.io/ki2aCEL_Q3iz9daIqwJrEg?view#%E4%B8%80%E5%B0%8D%E4%B8%80%E8%A8%8E%E8%AB%96)
 
 在討論中老師問我如何使用 bit-wise 方法做到浮點數乘 10，而我連乘 10 都不會，更不用說誠實面對自己，在討論結束之後我將自己在計算機組織所學到的浮點數乘法使用 bit-wise 實作出來，並搭配相關測試，在這個討論中我深刻理解在遇到問題時，不會的原因是因為我第一次看過這個問題，所以我才覺得我不會，但是如果我能夠具備足夠的基礎能力，無論遇到什麼沒遇到過的問題也能透過積累的經驗去慢慢解決問題。
 
