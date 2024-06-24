@@ -23,9 +23,16 @@ Yinghua Yeh (葉楹樺)
 * quiz1 + 2: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework2)
     
     測驗中包含透過非遞迴的方式實作 quick sort 並針對 Timsort 進行實作；也包含給定 preorder 和 inorder travsersal 序列進行二元樹的重建、LRU 概念的呈現和於指定的記憶體空間中找出第 N 個設定的位元。
+
 * quiz3 + 4: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework4)
     
     內容包含 popcount、針對符合 $2^k+1$ 的除數所進行的餘數運算、較有效率的開根號、mod 10、div 10、 $log_2$、取平均等算法。
+
+* 另外做的一些筆記：
+    * [作業 cmd line](https://jet-arch-619.notion.site/HW-cmd-line-ecf2cbc633a74df385210e164b62064b?pvs=4)
+    * [Makefile](https://jet-arch-619.notion.site/Makefile-a994c099f35a4be494d7d561b8e0f9c4?pvs=4)
+    * [linux/list.h 函式解析](https://jet-arch-619.notion.site/linux-list-h-85eba2d3da2b45108cb24d03c480b36c?pvs=4)
+
 
 ### 期末專題
 
@@ -67,4 +74,8 @@ vcam: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-final) / [GitHub](https:/
     1. 研讀 CS:APP 3/e 前兩章
     2. 研讀教材〈Linux 核心模組運作原理〉
     3. 期末專題討論
+
+### 評分
+$(3 \times 9 \times 7 \times 7 \times 9 \times 8) ^ {1/6} = 6.22$ 
+使用方案 B 計分：1 + floor(6.22) = 7
 
