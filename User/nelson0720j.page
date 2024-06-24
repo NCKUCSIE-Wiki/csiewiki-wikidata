@@ -11,10 +11,10 @@ categories: User
 
 # 2024 Linux 核心設計 春季班 自我評量
 ## 作業共筆
-* [hw1 lab0-c](https://hackmd.io/@woLves-1822/linux2024-homework1) / [GitHub](https://github.com/nelson0720j/lab0-c.git)
-* [hw2 quiz1+2](https://hackmd.io/@woLves-1822/linux2024-homework2)
-* [hw5 assessment](https://hackmd.io/@woLves-1822/linux2024-homework5)
-* [hw6 integration](https://hackmd.io/@woLves-1822/linux2024-homework6)
+* hw1 lab0-c: [HackMD](https://hackmd.io/@woLves-1822/linux2024-homework1) / [GitHub](https://github.com/nelson0720j/lab0-c.git)
+* hw2 quiz1+2: [HackMD](https://hackmd.io/@woLves-1822/linux2024-homework2)
+* hw5 assessment: [HackMD](https://hackmd.io/@woLves-1822/linux2024-homework5)
+* hw6 integration: [HackMD](https://hackmd.io/@woLves-1822/linux2024-homework6)
 
 ## 期末專題
 [改進 semu](https://hackmd.io/@sysprog/SkbSCLRBA)
