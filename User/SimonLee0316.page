@@ -31,7 +31,7 @@ Homework3 (tic-tac-toe) [HackMD](https://hackmd.io/mpoK-iFNRRiXbHTeiooz0g#%E4%BF
 
 Homework4 (quiz3+4) [HackMD](https://hackmd.io/U-Ez8DYHSuWtsv6wjDMmQw)
 
-使用 bit-waise技巧 包含 ： 取 $log_2$、對 mod 10 和 div 10 減少運算成本、popcount、針對符合 $2^k+1$ 的除數取模同餘。  
+使用 bit-waise 技巧包含 ： 取 $log_2$、對 mod 10 和 div 10 減少運算成本、popcount、針對符合 $2^k+1$ 的除數取模同餘。  
 XTree 的平衡機制與 AVL tree 相似，利用高度來評估是否需要做 rotate。
 提供了五個 XTree 的操作。
 
