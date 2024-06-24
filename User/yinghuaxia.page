@@ -32,18 +32,29 @@ vcam: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-final) / [GitHub](https:/
 
 一對一討論：5月 14日 (星期二)⋅下午9:00 - 9:30
 
+* [第四週測驗一](https://hackmd.io/ft3EYSusSS2aLyRicdqTzA?view#%E6%B8%AC%E9%A9%97%E4%B8%801): 討論將變數取反再取二補數的原因，以及 popcount 為何是以四個 bit 作為單位的原因。
+
+* [第四週測驗二](https://hackmd.io/ft3EYSusSS2aLyRicdqTzA?view#%E6%B8%AC%E9%A9%97%E4%BA%8C1): 討論在 popcount 中加上 39 以保證餘數為正的想法。
+
+* [作業六](https://hackmd.io/@yinghuaxia/linux2024-homework6): 討論主設備編號和次設備編號以 20 bit 和 12 bit 的長度進行分配的原因。
+
 ### 修課心得
 
 ### 與指導教授的學習回顧
 
 * 二月回顧：3月6日 週三 下午9:19
+
     1. 記憶體相關的使用 (circular doubly linked list)
     2. 撰寫紀錄文件並接受回饋
+
 * 三月回顧：4月6日 週六 下午7:36
+
     1. 學習 Linux 核心原始程式碼中的 lib/list_sort.c
     2. 使用 Valgrind 分析記憶體問題
     3. 學習 bitwise 的 operation
+
 * 四月回顧：5月9日 週四 下午9:07
+
     1. 研讀 CS:APP 3/e 前兩章
     2. 研讀教材〈Linux 核心模組運作原理〉
     3. 期末專題討論
