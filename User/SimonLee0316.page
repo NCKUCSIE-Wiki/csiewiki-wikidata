@@ -11,10 +11,13 @@ categories: User
 
 # 2024 Linux 核心實作 春季班 自我評量
 ## 第一項、成果發表和貢獻
+無。  
 評分: 
+我給自己 3 分，在閱讀理解教材上已花費相當大的力氣，尚無能力對於教材提出貢獻，在未來如果有機會再研究 linux 核心程式碼，期許自己可以提出貢獻。
 
 ## 第二項、作業/隨堂測驗
-評分: 
+評分:   
+我給自己 10 分，每份作業我都認真對待，盡自己最大的努力去寫，儘管不是每份作業都有完成到每個要求，但我認為我在每個作業當中都有學到東西，也投入了相當程度的時間。
 
 Homework1 (lab0) [HackMD](https://hackmd.io/mpoK-iFNRRiXbHTeiooz0g)/[GitHub](https://github.com/SimonLee0316/lab0-c)
 
@@ -44,14 +47,16 @@ Homework6 (integration) [HackMD](https://hackmd.io/pf4n8UYSQWymdKScemeVWA)/[GitH
 在自己的實體電腦運作 GNU/Linux、閱讀〈Linux 核心模組運作原理並解釋 insmod 、閱讀《The Linux Kernel Module Programming Guide》(LKMPG) 並解釋 simrupt 程式碼裡頭的 mutex lock 的使用方式，並探討能否改寫為 lock-free、閱讀論文 Pattern Defeating Quicksort (pdqsort)、善用 CMWQ 達成排序的並行處理。
 
 ## 第三項、期末專題
-評分: 
+評分:   
+我給我自己  分，起初我對網頁伺服器完全沒有概念，但透過閱讀許多文件以及實作，能夠理解其原理，並結合測驗八實作出一個網頁伺服器，並搭配相關測試，雖然最後的結果並沒有比全部測試的比較對象還要好，但我對於這個專題的投入，已盡學生最大的努力。 
 
 題目：Quiz8 並擴充為 web server [HackMD](https://hackmd.io/LRgizse4Sw27kJMmsXc-vw)/[GitHub](https://github.com/SimonLee0316/c-web-server)
 
 完成測驗八並說明程式碼運作原理並將其擴充為 web server。
 
 ## 第四項、與授課教師的互動
-評分: 
+評分:   
+我給自己 10 分，在討論過程中雖然我連乘 10 都不會，但是我在與老師討論的過程中，能夠理解討論的重點以及方向，並且會後針對討論內容做筆記及分析。
 
 與授課教師「一對一討論」的時間為 2024/5/16 14:30。
 
@@ -60,8 +65,8 @@ Homework6 (integration) [HackMD](https://hackmd.io/pf4n8UYSQWymdKScemeVWA)/[GitH
 在討論中老師問我如何使用 bit-wise 方法做到浮點數乘 10，而我連乘 10 都不會，更不用說誠實面對自己，在討論結束之後我將自己在計算機組織所學到的浮點數乘法使用 bit-wise 實作出來，並搭配相關測試，在這個討論中我深刻理解在遇到問題時，不會的原因是因為我第一次看過這個問題，所以我才覺得我不會，但是如果我能夠具備足夠的基礎能力，無論遇到什麼沒遇到過的問題也能透過積累的經驗去慢慢解決問題。
 
 ## 第五項、 所見所聞所感
-評分: 
-
+評分:   
+我給自己 10 分。  
 * [〈因為自動飲料機而延畢的那一年〉](https://blog.opasschang.com/the-story-of-auto-beverage-machine-1/) **讀後感想**：
 
 閱讀完後深刻體會到再做專案的時候，先做好規劃是很重要的。
@@ -76,12 +81,13 @@ Homework6 (integration) [HackMD](https://hackmd.io/pf4n8UYSQWymdKScemeVWA)/[GitH
 
 ## 第六項、每月發給實驗室指導教授的學習回顧
 
-評分: 
+評分:   
+我給自己 10 分，雖然我寄給指導教授的學習回顧數量不多，但我在實驗室進度開會的時候會跟指導教授說明課程的相關內容，指導教授也大概了解我的學習狀況，在回顧信中，我會詳細的說明我在課堂上的學習狀況還有掌握的知識。 
 
 * 四月發信日期：2024/5/13 21：15
 * 五月發信日期：2024/6/24 21：15
 
-雖然我寄給指導教授的學習回顧數量不多，但我在實驗室進度開會的時候會跟指導教授說明課程的相關內容，所以指導教授也是知道我的學習狀況的。 
+
  
 ## 自我總評量得分
 自我總評量我給自己  分。
