@@ -26,6 +26,25 @@ Yinghua Yeh (葉楹樺)
 
 vcam: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-final) / [GitHub](https://github.com/yinghuaxia/vcam)
 
+研究 vcam 在 V4L2 的框架中運作的原理，並對程式碼進行解析，最後進行 vcam 實現。
+
 ### 與授課教師的互動
+
+一對一討論：5月 14日 (星期二)⋅下午9:00 - 9:30
+
 ### 修課心得
+
 ### 與指導教授的學習回顧
+
+* 二月回顧：3月6日 週三 下午9:19
+    1. 記憶體相關的使用 (circular doubly linked list)
+    2. 撰寫紀錄文件並接受回饋
+* 三月回顧：4月6日 週六 下午7:36
+    1. 學習 Linux 核心原始程式碼中的 lib/list_sort.c
+    2. 使用 Valgrind 分析記憶體問題
+    3. 學習 bitwise 的 operation
+* 四月回顧：5月9日 週四 下午9:07
+    1. 研讀 CS:APP 3/e 前兩章
+    2. 研讀教材〈Linux 核心模組運作原理〉
+    3. 期末專題討論
+
