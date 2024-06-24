@@ -11,10 +11,10 @@ categories: User
 
 # 2024 Linux 核心實作 春季班 自我評量
 ## 第一項、成果發表和貢獻
-我給自己 3 分。
+評分: 
 
 ## 第二項、作業/隨堂測驗
-我給自己 10 分。
+評分: 
 
 Homework1 (lab0) [HackMD](https://hackmd.io/mpoK-iFNRRiXbHTeiooz0g)/[GitHub](https://github.com/SimonLee0316/lab0-c)
 
@@ -44,14 +44,14 @@ Homework6 (integration) [HackMD](https://hackmd.io/pf4n8UYSQWymdKScemeVWA)/[GitH
 在自己的實體電腦運作 GNU/Linux、閱讀〈Linux 核心模組運作原理並解釋 insmod 、閱讀《The Linux Kernel Module Programming Guide》(LKMPG) 並解釋 simrupt 程式碼裡頭的 mutex lock 的使用方式，並探討能否改寫為 lock-free、閱讀論文 Pattern Defeating Quicksort (pdqsort)、善用 CMWQ 達成排序的並行處理。
 
 ## 第三項、期末專題
-我給自己 10 分。
+評分: 
 
 題目：Quiz8 並擴充為 web server [HackMD](https://hackmd.io/LRgizse4Sw27kJMmsXc-vw)/[GitHub](https://github.com/SimonLee0316/c-web-server)
 
 完成測驗八並說明程式碼運作原理並將其擴充為 web server。
 
 ## 第四項、與授課教師的互動
-我給自己 10 分。
+評分: 
 
 與授課教師「一對一討論」的時間為 2024/5/16 14:30。
 
@@ -60,7 +60,7 @@ Homework6 (integration) [HackMD](https://hackmd.io/pf4n8UYSQWymdKScemeVWA)/[GitH
 在討論中老師問我如何使用 bit-wise 方法做到浮點數乘 10，而我連乘 10 都不會，更不用說誠實面對自己，在討論結束之後我將自己在計算機組織所學到的浮點數乘法使用 bit-wise 實作出來，並搭配相關測試，在這個討論中我深刻理解在遇到問題時，不會的原因是因為我第一次看過這個問題，所以我才覺得我不會，但是如果我能夠具備足夠的基礎能力，無論遇到什麼沒遇到過的問題也能透過積累的經驗去慢慢解決問題。
 
 ## 第五項、 所見所聞所感
-我給自己 10 分。
+評分: 
 
 * [〈因為自動飲料機而延畢的那一年〉](https://blog.opasschang.com/the-story-of-auto-beverage-machine-1/) **讀後感想**：
 
@@ -76,18 +76,16 @@ Homework6 (integration) [HackMD](https://hackmd.io/pf4n8UYSQWymdKScemeVWA)/[GitH
 
 ## 第六項、每月發給實驗室指導教授的學習回顧
 
-我給自己 10 分。
+評分: 
 
-* 二月發信日期：2024/5/13 21：15
-* 三月發信日期：2024/5/13 21：15
 * 四月發信日期：2024/5/13 21：15
 * 五月發信日期：2024/6/24 21：15
 
 雖然我寄給指導教授的學習回顧數量不多，但我在實驗室進度開會的時候會跟指導教授說明課程的相關內容，所以指導教授也是知道我的學習狀況的。 
  
 ## 自我總評量得分
-自我總評量我給自己 9 分。
+自我總評量我給自己  分。
 
-$(3*10*10*10*10*10)^{1/6} = 8.18$  
-根據幾何平均計算第一至第六項的細項得分，得到 GEOMEAN 為 8.18。  
-選擇方案 B 的計算方式 $1 + floor(8.18) = 9$，因此自我評量中得到了 9 分。
+$()^{1/6} = $  
+根據幾何平均計算第一至第六項的細項得分，得到 GEOMEAN 為 。  
+選擇方案 B 的計算方式 $1 + floor() = $，因此自我評量中得到了  分。
