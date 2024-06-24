@@ -16,37 +16,38 @@ categories: User
 ## 第二項、作業/隨堂測驗
 我給自己 10 分。
 
-HW1 [2024q1 Homework1 (lab0)][HackMD](https://hackmd.io/mpoK-iFNRRiXbHTeiooz0g)/[GitHub](https://github.com/SimonLee0316/lab0-c)
+Homework1 (lab0) [HackMD](https://hackmd.io/mpoK-iFNRRiXbHTeiooz0g)/[GitHub](https://github.com/SimonLee0316/lab0-c)
 
-這份作業中主要實作了針對指定串列的操作，也引入的不同的洗牌演算法，並比較了自己實做的排序和 linux 核心程式碼之間的效能落差。
+這份作業中主要實作了針對指定串列的操作，也引入的不同的洗牌演算法，並比較了自己實作的排序和 linux 核心程式碼之間的效能落差。
 
-HW2 [2024q1 Homework2 (quiz1+2)][HackMD](https://hackmd.io/bAyUjId9QzWPqx7Lm5h4Rw)
+Homework2 (quiz1+2) [HackMD](https://hackmd.io/bAyUjId9QzWPqx7Lm5h4Rw)
 
 使用非遞迴的方式實做 quick sort 和實作 Timsort。
 藉由給定的 prorder 和 inorder traversal 序列，進行二元樹的重建和 LRU 概念的呈現。
 
-HW3 [2024q1 Homework1 (lab0)][HackMD](https://hackmd.io/mpoK-iFNRRiXbHTeiooz0g#%E4%BF%AE%E6%94%B9-qtest-%E7%A8%8B%E5%BC%8F%EF%BC%8C%E4%BD%BF%E5%85%B6%E6%96%B0%E5%A2%9E-ttt-%E5%91%BD%E4%BB%A4)/[GitHub](https://github.com/SimonLee0316/lab0-c)
+Homework3 (tic-tac-toe) [HackMD](https://hackmd.io/mpoK-iFNRRiXbHTeiooz0g#%E4%BF%AE%E6%94%B9-qtest-%E7%A8%8B%E5%BC%8F%EF%BC%8C%E4%BD%BF%E5%85%B6%E6%96%B0%E5%A2%9E-ttt-%E5%91%BD%E4%BB%A4)/[GitHub](https://github.com/SimonLee0316/lab0-c)
 
 藉由改寫井字遊戲來熟悉數值系統、bitwise 操作、排程器原理和 Linux 核心的 List API。
 
-HW4 [2024 Homework4 (quiz3+4)][HackMD](https://hackmd.io/U-Ez8DYHSuWtsv6wjDMmQw)
+Homework4 (quiz3+4) [HackMD](https://hackmd.io/U-Ez8DYHSuWtsv6wjDMmQw)
 
-使用 bit-waise技巧 包含 ： 取 $log_2$、對 mod 10 和 div 10 減少運算成本、popcount、針對符合 $2^k+1$ 的除數取模同餘。
+使用 bit-waise技巧 包含 ： 取 $log_2$、對 mod 10 和 div 10 減少運算成本、popcount、針對符合 $2^k+1$ 的除數取模同餘。  
 XTree 的平衡機制與 AVL tree 相似，利用高度來評估是否需要做 rotate。
 提供了五個 XTree 的操作。
 
-HW5 [2024q1 Homework5 (assessment)][HackMD](https://hackmd.io/ki2aCEL_Q3iz9daIqwJrEg)
+Homework5 (assessment) [HackMD](https://hackmd.io/ki2aCEL_Q3iz9daIqwJrEg)
 
 紀錄閱讀〈因為自動飲料機而延畢的那一年〉的啟發。
 
-HW6 [2024q1 Homework6 (integration)][HackMD](https://hackmd.io/pf4n8UYSQWymdKScemeVWA)/[GitHub](https://github.com/SimonLee0316/ksort)
+Homework6 (integration) [HackMD](https://hackmd.io/pf4n8UYSQWymdKScemeVWA)/[GitHub](https://github.com/SimonLee0316/ksort)
 
 在自己的實體電腦運作 GNU/Linux、閱讀〈Linux 核心模組運作原理並解釋 insmod 、閱讀《The Linux Kernel Module Programming Guide》(LKMPG) 並解釋 simrupt 程式碼裡頭的 mutex lock 的使用方式，並探討能否改寫為 lock-free、閱讀論文 Pattern Defeating Quicksort (pdqsort)、善用 CMWQ 達成排序的並行處理。
 
 ## 第三項、期末專題
 我給自己 10 分。
 
-[Quiz8 並擴充為 web server][HackMD](https://hackmd.io/LRgizse4Sw27kJMmsXc-vw)/[GitHub](https://github.com/SimonLee0316/c-web-server)
+題目：Quiz8 並擴充為 web server [HackMD](https://hackmd.io/LRgizse4Sw27kJMmsXc-vw)/[GitHub](https://github.com/SimonLee0316/c-web-server)
+
 完成測驗八並說明程式碼運作原理並將其擴充為 web server。
 
 ## 第四項、與授課教師的互動
@@ -79,7 +80,6 @@ HW6 [2024q1 Homework6 (integration)][HackMD](https://hackmd.io/pf4n8UYSQWymdKSce
 我給自己 10 分。
 
 * 二月發信日期：2024/5/13 21：15
-* 二月發信日期：2024/5/13 21：15
 * 三月發信日期：2024/5/13 21：15
 * 四月發信日期：2024/5/13 21：15
 * 五月發信日期：2024/6/24 21：15
@@ -87,4 +87,6 @@ HW6 [2024q1 Homework6 (integration)][HackMD](https://hackmd.io/pf4n8UYSQWymdKSce
 ## 自我總評量得分
 自我總評量我給自己 9 分。
 
-根據幾何平均計算第一至第六項的細項得分，得到 GEOMEAN 為 8.18。而後選擇方案 B 的計算方式 1 + floor(GEOMEAN)，因此自我評量中得到了 9 分。
+$(3*10*10*10*10*10)^{1/6} = 8.18$  
+根據幾何平均計算第一至第六項的細項得分，得到 GEOMEAN 為 8.18。  
+選擇方案 B 的計算方式 1 + floor(GEOMEAN)，因此自我評量中得到了 9 分。
