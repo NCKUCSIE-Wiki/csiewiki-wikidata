@@ -69,4 +69,4 @@ categories: User
 
 ## 自我評量 (1 ~ 10)
 * GEOMEAN：$\sqrt[6]{3+8+9+9+8+8}=7.06$
-* 方案 B：
+* 方案 B：$1+\lfloor 7.06 \rfloor=8$
