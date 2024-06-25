@@ -1,0 +1,51 @@
+---
+title: ranvd (戴鈞彥)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程研究所 112 級
+
+* GitHub: [`ranvd`](https://github.com/ranvd)
+* HackMD: [`ranvd`](https://hackmd.io/@ranvd)
+
+# 2024 Linux 核心設計 春季班 自我評量
+
+## 作業/隨堂測驗:
+
+* lab0-c: [Github](https://github.com/ranvd/lab0-c) / [HackMD](https://hackmd.io/@ranvd/linux2024-homework1)
+* quiz(1+2): [HackMD](https://hackmd.io/@ranvd/linux2024-homework2)
+* quiz(3+4): [HackMD](https://hackmd.io/@ranvd/linux2024-homework4)
+* integration: [HackMD](https://hackmd.io/@ranvd/linux2024-homework6)
+
+這個項目我給自己 8 分，第一次作業 lab0-c 投入較多的時間，因此完成度較高。後續的作業因為能力有限，漸漸的跟不上課堂上的進度，不過皆有盡力去完成，因此給自己 8 分。
+
+## 期末專題
+
+* 多核 RISC-V 模擬和 Linux 驗證: [HackMD](https://hackmd.io/@sysprog/HyQ9UQ2E0)
+
+這個項目我給自己 10 分，透過這次的期末專題讓我了解到 Linux 開機流程與多核架構下需要考慮到的問題，我認為對我來說是難度適中的題目。
+
+## 與授課教師的互動
+
+* 5/1 上午11:30 一對一討論
+* 5/2 上午10:00 一對一討論
+* 6/6 課堂問答
+
+這個項目我給自己 9 分。
+
+## 所見所聞所感
+
+這個項目我給自己 10 分。這次的課程中透過閱讀[並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-concepts)讓我了解過去閱讀 RISC-V 規格書時不理解的地方，例如規格書在描述 memory barrier 與 atomic 操作時的敘述，在期末專題實作多核模擬時更是深刻體會到其重要性。並且透過期末專題讓我更了解到 OS 與 firmware 之間的關係與 Linux 的開機流程。
+
+## 研究生發信時間
+
+三月份學習回顧 (2024/4/4) 
+
+這個項目我給自己 7 分，由於期課後期程投入狀況不夠，因此後續並沒有向老師回報投入狀況。
+
+## 自我評量 (1 ~ 10)
+
+各項自評分數 (1+8+10+9+10+7)
+
+方案B: 7 分
