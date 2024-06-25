@@ -1,0 +1,51 @@
+---
+title: Kuanch (李冠澄)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 統計學系 106 級 (2013 ~ 2017)
+* 國立成功大學 人工智慧機器人 113 級 (2022 ~ 2024)
+
+* GitHub: [`Kuanch`](https://github.com/Kuanch)
+* HackMD: [`Kuanch`](https://hackmd.io/@Kuanch)
+
+# 2024 Linux 核心實作 春季班 自我評量
+
+## 相關共筆
+
+* [Linux Kernel Internals 2024 Spring](https://hackmd.io/@Kuanch/linux2024-collection)
+
+本篇是課程中所有共筆的集合，包含作業、課程材料的理解以及課程材料延伸問題的探討。
+
+
+## 期末專題
+
+* [CPU 排程器研究](https://hackmd.io/@sysprog/rkJd7TFX0)
+
+我的專題最重要的三個主題是  
+
+1. kprobe 和 tracepoint :  
+撰寫 tracepoint 的相關程式碼並不困難，但需要結合對排程器理解，撰寫 Kernel Module 與核心互動  
+加上再以 kprobe 復現功能，雖然僅有小小篇幅，但我認為足以作為專題的主題之一
+
+2. 使用 remote GDB 追蹤 CPU Scheduler 的行為 :  
+技術上並沒有什麼門檻，但一步步分析、理解排程器的作動，以及其延伸問題，對我學習 Linux 核心有巨大幫助。  
+
+3. 撰寫《Demystifying the Linux CPU Scheduler》:  
+感謝老師讓我參與該書 EEVDF 部分的貢獻，這部分最令我收穫良多的是從無止盡的 Patches 中找出當前 Linux 核心中重要的討論和主題  
+並加上自己的理解，將其轉換為其他人能夠快速吸收、理解的知識  
+
+可惜力有未逮，遺憾十分的多，程式碼的開發比例太少  
+譬如對於 sched_ext 和 eBPF 的開發，看起來非常有趣又可以與排程器結合  
+以及 schbench 的分析和進一步的開發，尤其是發現它與 hachbench 在開發排程器時被大量開發者應用  
+若是能夠在碩一時修課，應該還能夠有時間變得更強  
+
+## 修課心得
+
+
+
+## 自我評量 (1 ~ 10)
+
+我給自己 7 分。
+
