@@ -431,9 +431,9 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
     * Week18 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz18) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/t9DHn3F4RQyH3lI5TFZWpQ)
 
-* 第 19 週 (Jun 25, 27): Rust, KVM
+* 第 19 週 (Jun 25, 27): Rust, Linux 核心除錯
+    * [Linux kernel panic 排除](/kernel-debugging.pdf)
     * [教材解說-1](https://youtu.be/vS8U23bhidg)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
-    * [COSCUP 2023 議程預覽](https://pretalx.coscup.org/coscup-2023/schedule/)
     * [Rust for Linux 研究](https://hackmd.io/@hank20010209/SJmVNPMQ2)
     * [撰寫 LKMPG 的 Rust 核心模組](https://hackmd.io/@sysprog/Sk8IMQ9S2)
     * Rust 程式語言
@@ -442,8 +442,5 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
         - [C vs. Rust](http://www-verimag.imag.fr/~mounier/Enseignement/Software_Security/19RustVsC.pdf)
         - [Unsigned Integers Are Dangerous](https://jacobegner.blogspot.com/2019/11/unsigned-integers-are-dangerous.html)
         - [constant vs. immutable](https://hackmd.io/@jserv/By5307tsV)
-    * [KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm)
-        - [Arm64 移植](https://hackmd.io/@sysprog/rkro_FeSh)
-        - [RISC-V 系統模擬器，支援 VirtIO](https://hackmd.io/@sysprog/Skuw3dJB3)
 
 * 第 20 週 (Jul 2): 截止繳交成績的前一天仍有授課
