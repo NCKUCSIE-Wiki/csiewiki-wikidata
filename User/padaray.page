@@ -1,0 +1,51 @@
+---
+title: padaray (陳浩文)
+categories: User
+...
+
+## 2024 Linux 核心設計 春季班 自我評量
+
+* 簡介：國立成功大學電機所 114 級
+* GitHub: [padaray](https://github.com/padaray)
+* HackMD: [padaray](https://hackmd.io/@padaray)
+
+### 作業與隨堂測驗
+* lab0: [GitHub](https://github.com/padaray/lab0-c) / [HackMD](https://hackmd.io/@padaray/linux2024-homework1)
+
+* quiz1 + 2: [HackMD](https://hackmd.io/@padaray/linux2024-homework2)
+
+* quiz3 + 4: [HackMD](https://hackmd.io/@padaray/linux2024-homework4)
+
+* Assessment: [HackMD](https://hackmd.io/@padaray/linux2024-homework5)
+
+* Integration: [HackMD](https://hackmd.io/@padaray/linux2024-integration)
+
+### 期末專題
+
+vcam: [HackMD](https://hackmd.io/@padaray/linux2024-final)
+
+了解 V4L2 框架、Framebuffer、vcam 程式碼，在 Linux 6.8 版本成功運行 vcam
+
+### 與授課教師的互動
+一對一討論：5月 20日 (星期一)⋅下午6:30 - 7:00
+
+* [並行程式設計：排程器原理](https://hackmd.io/@sysprog/concurrency-sched)問題討論 1：coroutine 的機制存在，會不會取代 preemptive 機制
+
+* [Linux 核心的紅黑樹](https://hackmd.io/@sysprog/linux-rbtree)問題討論：AVL tree 和 rbtree 樹高分別是 1.44 × log⁡(𝑛+2) 和 2 × log(𝑛+1) ，1.44 和 2 這兩個常數如何計算而來
+
+* [CS:APP 3/e]問題討論：UTF-8 的編碼方式
+
+### 修課心得
+
+
+### 與指導教授的學習回顧
+* 二月回顧：3月8日 週五 下午8:53
+
+    1. circular doubly linked list 的實作中遇到的問題
+    2. 學習 git commit 撰寫
+
+* 三月回顧：4月8日 週一 下午9:26
+
+   1. 補全作業 1 的驗證亂數
+   2. graphviz 視覺化程式碼
+   3. Valgrind 記憶體管理工具
