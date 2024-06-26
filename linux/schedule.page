@@ -387,7 +387,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
  
 * 第 17 週 (Jun 11, 13): 即時 Linux 的基礎建設
     * 公告
-        - 佔學期總成績 50% 的自我評量，請在 7 月 1 日前完成。範例: [User/OscarShiang](http://wiki.csie.ncku.edu.tw/User/OscarShiang)
+        - 佔學期總成績 50% 的自我評量，請在 7 月 4 日中午前完成。範例: [User/OscarShiang](http://wiki.csie.ncku.edu.tw/User/OscarShiang)
         - 自我評量的網址**必須**符合 `/User/你的GitHub帳號名稱` 格式 (區分大小寫)，請不要打錯字。「不能」用「上傳檔案」的功能，使用文字編輯
         - 填寫你的法定姓名和 GitHub 帳號名稱
         - 自我評分項目 (都要有對應的狀況說明、超連結、延伸資訊，和用客觀事實佐證，每項不少於 70 個 Unicode 字元，用流暢清晰的漢語書寫，採用指定的[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)，你日後的同事和主管可能會看到你的評量)
@@ -432,6 +432,10 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
     * [課堂問答簡記](https://hackmd.io/t9DHn3F4RQyH3lI5TFZWpQ)
 
 * 第 19 週 (Jun 25, 27): Rust, Linux 核心除錯
+    * 公告
+        - 依據「教師線上成績登錄系統」，112 學年第 2 學期繳交期限為 7 月 7 日 23:59，授課教師預計在當日晚間繳交成績，學員在此之前都有努力空間，請重視自己的權益
+        - 自我評量務必在 7 月 4 日中午前完成
+        - 7 月 2 日是本學期最後一次授課，改為 19:30 進行，事後提供錄影
     * [Linux kernel panic 排除](/kernel-debugging.pdf)
     * [教材解說-1](https://youtu.be/vS8U23bhidg)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Rust for Linux 研究](https://hackmd.io/@hank20010209/SJmVNPMQ2)
@@ -445,4 +449,4 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
     * Week19 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz19) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/5QPCsxI-TkGZbSiW9VVdQw)
 
-* 第 20 週 (Jul 2): 截止繳交成績的前一天仍有授課
+* 第 20 週 (Jul 2): 截止繳交成績當週仍安排授課
