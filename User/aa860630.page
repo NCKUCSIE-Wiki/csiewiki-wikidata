@@ -1,0 +1,72 @@
+---
+title: aa860630 (魏泳禎)
+categories: User
+...
+
+## 2024 Linux 核心設計 春季班 自我評量
+
+* 簡介：國立成功大學電機所 114 級
+* GitHub: [aa860630 ](https://github.com/aa860630)
+* HackMD: [aa860630 ](https://hackmd.io/@aa860630)
+
+### 成果發表與貢獻
+
+閱讀文件時做的錯字修訂：
+
+
+### 作業與隨堂測驗
+* lab0: [GitHub](https://github.com/aa860630/lab0-c) / [HackMD](https://hackmd.io/@aa860630/linux2024-homework1)
+
+    針對佇列作指定的操作，實作出 q_sort 再與 list_sort 做效能上的評估與比較
+
+* Integration: [HackMD](https://hackmd.io/@aa860630/Sk2XZ7K-R)
+
+    閱讀〈Linux 核心模組運作原理〉並對照 Linux 核心原始程式碼 (v6.1+)，閱讀《The Linux Kernel Module Programming Guide》(LKMPG) 並解釋 simrupt 程式碼裡頭的 mutex lock 的使用方式
+* Assessment: [HackMD](https://hackmd.io/@aa860630/linux2024-homework5)
+
+    閱讀〈因為自動飲料機而延畢的那一年〉後的心得，研讀 CS:APP 3/e 第一章、第二章並對前期作業進行改進
+
+* quiz1 + 2: [HackMD](https://hackmd.io/@aa860630/linux2024-homework2)
+    探討 Quick sort 的儲存效能與其時間複雜度、Timsort 各個函式及 Timsort 的穩定性；針對 hash table 結構，討論 DFS 演算法過程與其程式碼
+
+* quiz3 + 4: [HackMD](https://hackmd.io/@aa860630/linux2024-homework4)
+    主要針對 bitwise 的操作，內容包含如何有效找到最高位元、利用加法與乘法來取代除法、及 Exponentially Weighted Moving Average 的實際操作，其中提到 GCC 提供一系列的 built-in 函數用來優化編譯結果 
+
+
+### 期末專題
+
+Netfilter: [HackMD](https://hackmd.io/@aa860630/linux2024-final) / [GitHub](https://github.com/aa860630/adriver)
+
+使用核心模組以過濾廣告，透過解析 TCP 與 UDP 協定的方式找到網路封包包含的有效訊息，並與 iptable 施行比對後決定是否允許封包通過，將含有廣告訊息的封包丟棄
+
+### 與授課教師的互動
+
+一對一討論：5月 20日 (星期一)⋅下午7:30 - 8:00
+
+* [問題一](https://hackmd.io/@aa860630/linux2024-homework5#%E7%A0%94%E8%AE%80-CSAPP-3e-%E7%AC%AC%E4%B8%80%E7%AB%A0): 在二的補數乘法應用中，討論到乘法溢位造成的安全漏洞，乘法溢位可能造成資料結構被破壞或者程式崩潰，還有哪些問題嚴重到可以被稱之為安全漏洞，抑或是上述問題可以如何被拿來惡意操作?
+
+* [問題二](https://hackmd.io/@aa860630/linux2024-homework5#%E6%95%99%E6%9D%90%E5%BB%B6%E4%BC%B8%E5%95%8F%E9%A1%8C): 在 bitwise 操作中，可以透過建立 LUT 來加速 RGB 轉為灰階的運算，方法不同可能產生哪些差別?
+
+* [問題三](https://hackmd.io/@aa860630/linux2024-homework5#%E6%95%99%E6%9D%90%E5%BB%B6%E4%BC%B8%E5%95%8F%E9%A1%8C): 在 RGBA 轉為灰階的操作中，為何透明度 alpha 不與 RGB 一樣建立表格?
+
+### 修課心得
+
+
+### 與指導教授的學習回顧
+
+* 二月回顧：3月7日 週四 下午7:15
+
+    1. 了解「Linux 核心實作」的作業對於程式碼品質、執行效率、記憶體使用率，還有各式「品味」(good taste，呼應 Linus Torvalds 在 TED 訪談的用語) 的重視
+    2. 閱讀 Linux 核心關於 linked list, hash table，以及 bitops 相關的原始程式碼，並試圖撰寫程式碼來使用 Linux 核心提供的 API
+
+* 三月回顧：4月8日 週一 下午9:50
+
+    1. Bitwise Operation 在程式上可以讓許多運算節省效能
+    2. 影響 list sort、merge sort 跟 tim sort 的因素很多，包括資料、穩定度等
+    3. 學習到工程師追求更精準、更有效率的精神
+
+### 自我評量
+$(3 \times 9 \times 7 \times 7 \times 9 \times 8) ^ {1/6} = 6.22$ 
+
+使用方案 B 計分：$1 + floor(6.22) = 7$
+
