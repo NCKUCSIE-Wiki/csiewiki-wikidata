@@ -46,6 +46,16 @@ Virtio-net with KVM-host: [HackMD](https://hackmd.io/@jimmylu0303/linux2024-fina
 
 ### 與授課教師的互動
 
+一對一討論：5月 20日 (星期一)⋅下午2:30 - 3:00
+
+* [問題一](https://hackmd.io/@jimmylu0303/linux2024-homework5#%E5%95%8F%E9%A1%8C%E4%B8%80): 為何後續 linux 的維護者不將不可靠信號改成可靠信號?
+額外分成非即時信號及即時信號的必要性?
+
+* [問題二](https://hackmd.io/@jimmylu0303/linux2024-homework5#%E5%95%8F%E9%A1%8C%E4%BA%8C): 當在一開始 A 呼叫 setjmp 時， setjmp 會將 stack pointer, instruction pointer, the values of other registers, the signal mask 存在 jmp_buf 的 buffer 內 longjmp 作使用。但在執行 setjmp 時， pc 會指向 line 8 的位置。
+當 B 使用 longjmp 時會恢復 Buf 內的資訊，那應該會執行printf("A setjmp address\n"); 一次，但是真實的作用是會觸發 setjmp(Buf) != 0 行為則執行 else 內的行為。
+
+* [問題三](https://hackmd.io/@jimmylu0303/linux2024-homework5#%E5%95%8F%E9%A1%8C%E4%B8%89): 在 /dev/ 下的裝置有 major number 和 minor number，在對 /dev/下的裝置作操作時， linux kernel 會透過 major number 去找到對應的 module ， 但是若有多個 device 對應到同個 major number，也是會找相同的 module，但是要如何透過不同的 minor number 去控制不同的驅動行為 ?
+
 ### 修課心得
 
 ### 與指導教授的學習回顧
