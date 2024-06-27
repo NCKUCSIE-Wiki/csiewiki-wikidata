@@ -8,3 +8,47 @@ categories: User
 
 * GitHub: [`jimmylu890303`](https://github.com/jimmylu890303)
 * HackMD: [`jimmylu0303`](https://hackmd.io/@jimmylu0303)
+
+## 2024 Linux 核心設計 春季班 自我評量
+
+### 成果發表與貢獻
+
+閱讀文件時做的錯字修訂：
+
+
+### 作業與隨堂測驗
+* lab0: [GitHub](https://github.com/jimmylu890303/lab0-c) / [HackMD](https://hackmd.io/@jimmylu0303/linux2024-homework1)
+
+    完成佇列作的操作，實作出 Fisher–Yates shuffle 及 q_sort ，再 q_sort 與 list_sort 及 tim_sort 做效能上的評估與比較
+
+* quiz1 + 2: [HackMD](https://hackmd.io/@jimmylu0303/linux2024-homework2)
+    
+    探討 Quick sort 的效能與其時間複雜度、Timsort 各個函式及使用雜湊表實作 LRU Cache。 
+
+* quiz3 + 4: [HackMD](https://hackmd.io/@jimmylu0303/linux2024-homework4)
+    
+    分析 bitwise 的操作，內容包含整數平方根的計算、 log2 、除以 10 和取餘數等操作，使用位元操作來加速計算，減少了除法和乘法的使用、及 Popcount 計算 Hamming  Distance 的操作，且外使用 GCC 提供的 built-in 函數用來優化編譯結果。
+
+* Assessment: [HackMD](https://hackmd.io/@jimmylu0303/linux2024-homework5)
+
+    撰寫閱讀〈因為自動飲料機而延畢的那一年〉後的心得，研讀 CS:APP 3/e 第一章、第二章並對前期作業進行改進兩題。
+
+* Integration: [HackMD](https://hackmd.io/@jimmylu0303/rJzI8mtZC)
+
+    閱讀〈Linux 核心模組運作原理〉並對照 Linux 核心原始程式碼 (v6.1+)，閱讀《The Linux Kernel Module Programming Guide》(LKMPG)，並且學習實作字符設備的練習。
+
+
+### 期末專題
+
+Virtio-net with KVM-host: [HackMD](https://hackmd.io/@jimmylu0303/linux2024-final) / [GitHub](https://github.com/jimmylu890303/kvm-host/tree/Implement-virtio-net)
+
+在這次專題中，分析 KVM 運作原理，並展示一個以 KVM 為基礎的精簡虛擬機器管理程式實作( kvm-host )，它能在 x86-64 及 arm64 平台上運作，提供了基本的 VirtIO 儲存裝置、 serial 裝置 (用來作為 console) ，並且能成功在上面執行 Linux 系統，而專題目標是在該虛擬機器上實作 Virtio-net 裝置。
+
+### 與授課教師的互動
+
+### 修課心得
+
+### 與指導教授的學習回顧
+
+
+### 自我評量
