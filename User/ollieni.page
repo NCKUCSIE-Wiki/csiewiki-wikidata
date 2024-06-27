@@ -10,6 +10,14 @@ categories: User
 * HackMD: [NIYINGCHIH](https://hackmd.io/@NIYINGCHIH)
 
 ### 成果發表與貢獻
+課程教材修訂
+* [你所不知道的 C 語言：編譯器和最佳化原理篇](https://hackmd.io/@sysprog/c-compiler-optimization): Braif*ck -> Brainf*ck、.改成，、增加空白、增加程式的格式
+* [你所不知道的 C 語言：編譯器原理和案例分析](https://hackmd.io/@sysprog/c-compiler-construction): 又 -> 有
+* [錯誤更正碼介紹和實作考量](https://hackmd.io/@sysprog/r1wrjOp6a): 增加空白，漢明離 -> 漢明距離
+* [你所不知道的 C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/@sysprog/c-runtime): imgur 圖片無法顯示修正
+* [你所不知道的 C 語言：連結器和執行檔資訊](https://hackmd.io/@sysprog/c-linker-loader): RELA relocation -> RELA relocations
+* [你所不知道的 C 語言：動態連結器篇](https://hackmd.io/@sysprog/c-dynamic-linkage): 作中學 -> 做中學
+* [你所不知道的 C 語言：物件導向程式設計篇](https://hackmd.io/@sysprog/c-oop): develeopment -> development
 
 ### 作業與隨堂測驗
 
