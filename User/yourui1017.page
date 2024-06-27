@@ -1,0 +1,58 @@
+---
+title: yourui1017 (李祐睿)
+categories: User
+...
+
+## 2024 Linux 核心設計 春季班 自我評量
+
+* 簡介 : 國立成功大學 電機所
+* GitHub: [yourui1017](https://github.com/yourui1017)
+* HackMD: [yourui1017](https://hackmd.io/@Yourui)
+
+### 成果發表與貢獻
+
+閱讀文件時做的錯字修訂：[lab0](https://hackmd.io/@MiohitoKiri5474/B13cPqfu6)
+
+### 作業與隨堂測驗
+* Homework1 (lab0) : [開發紀錄](https://hackmd.io/@Yourui/linux2024-homework1) / [Github](https://github.com/yourui1017/lab0-c)
+* Homework2 (quiz1+2) : [開發紀錄](https://hackmd.io/@Yourui/linux2024-homework2) / [Github](https://github.com/yourui1017/linux_hw2_lab)
+* Homework5 (assessment) : [開發紀錄](https://hackmd.io/@Yourui/linux2024-homework5)
+* Homework(quiz10) : [開發紀錄](https://hackmd.io/@Yourui/linux2024-quiz10)
+
+### 期末專題
+
+Homework(quiz10) : [開發紀錄](https://hackmd.io/@Yourui/linux2024-quiz10)，因為自身實力不足，只有重新將測驗 10 重新實作。
+
+### 與授課教師的互動
+
+一對一討論：5月16日 (星期四) 上午 11:00 - 11:30
+
+* [並行程式設計: 排程器原理](https://hackmd.io/@sysprog/concurrency-sched):討論 coroutine 中，stackful 和 stackless 的差別。
+* Homework5 (assessment) : [開發紀錄](https://hackmd.io/@Yourui/linux2024-homework5):僅使用 bitwise operation ，不使用乘/除法完成浮點數乘上 10 。
+
+### 修課心得
+
+在作業 5 曾經閱讀〈因為自動飲料機而延畢的那一年〉，裡面的狀況就很像是自己的狀況，「資工系的學生不會寫程式，機械系的學生不會做機械」，雖然在目前上完這堂課後，我不認為我有成功突破「資工系的學生不會寫程式，機械系的學生不會做機械」，但我還是有不同的收穫，我學習到資料的閱讀與整理的能力，並練習不要逃避問題，學著成為一個理工人，進行獨立思考，解決問題。
+
+### 與指導教授的學習回顧
+
+* 二月回顧：3月4日 週一 下午10:15
+1. 針對佇列進行特定操作
+2. 撰寫文件，記錄學習過程
+
+* 三月回顧：4月8日 週一 下午8:40
+1. 學習 Linux 核心原始程式碼中的 lib/list_sort.c
+2. 分析理解 timsort 演算法的實作方式
+
+* 四月回顧：5月9日 週四 下午9:07
+1. 研讀教材〈並行程式設計〉
+2. 學習 bitwise 的 operation
+
+* 五月回顧：6月3日 週一 下午10:20
+1. 期末專題討論
+2. 研讀教材〈並行程式設計〉
+
+### 自我評量
+$(2 \times 9 \times 7 \times 7 \times 9 \times 8) ^ {1/6} = 6.32$ 
+
+使用方案 B 計分：$1 + floor(6.32) = 7$
