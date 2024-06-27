@@ -9,7 +9,8 @@ categories: User
 
 * GitHub: [`devarajabc`](https://github.com/devarajabc)
 * HackMD: [`devarajabc`](https://hackmd.io/@devaraja)
-
+## Linux 核心和相關專案貢獻
+* 《Demystifying the Linux CPU Scheduler》：修改 Fixed point arithmetic[84b2454](https://github.com/sysprog21/linux-kernel-scheduler-internals/commit/84b24543a2e37c36097c09cc322c44342f4092c5), 修改 2.2.1 Early Linux Scheduler [3b1e731](https://github.com/sysprog21/linux-kernel-scheduler-internals/commit/3b1e731023068fd61d2d44028ef26d4cbf5e5d91)
 # 2024 Linux 核心設計 春季班 自我評量
 ## 作業及quiz共筆
 * lab0-c: [`HackMD`](https://hackmd.io/9Yf6buizRMKsgLnyk4wvnQ)
