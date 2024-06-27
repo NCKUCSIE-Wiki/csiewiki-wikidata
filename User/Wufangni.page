@@ -20,7 +20,7 @@ categories: User
 ### 作業與隨堂測驗
 * lab0: [HackMD](https://hackmd.io/@Wufangni/linux2024-homework1) / [GitHub](https://github.com/Wufangni/lab0-c)
 
-    第一次作業完成了對 Queue 的各種操作，且在第三次作業引入 lib/list_sort.c 、 shuffle等操作，且研讀指定論文並參考 dudect 原始程式，修改函式使所有測資皆可通過。
+    第一次作業完成了對 Queue 的各種操作，且在第三次作業引入 lib/list_sort.c 、 shuffle 等操作，且研讀指定論文並參考 dudect 原始程式，修改函式使所有測資皆可通過。
 * quiz1 + 2: [HackMD](https://hackmd.io/@Wufangni/linux2024-homework2)
 
     第二次作業重新回顧第一及第二週的隨堂測驗，對測驗時沒時間深入思考的程式原理有更深入的理解。
@@ -80,7 +80,7 @@ categories: User
     1.說明了第二次及第三次作業內容，包括自身的作業回顧和如何對前次作業進行補強
 
     2.附上作業筆記的連結供指導教授參考
-* 四月份學習回顧：3月7日 週四 下午10:27
+* 四月份學習回顧：5月7日 週二 下午8:52
 
     1.說明對第四次作業的測驗回顧內容，以及第五次作業的學習狀況
 
