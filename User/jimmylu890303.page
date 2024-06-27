@@ -59,6 +59,20 @@ Virtio-net with KVM-host: [HackMD](https://hackmd.io/@jimmylu0303/linux2024-fina
 ### 修課心得
 
 ### 與指導教授的學習回顧
+二月回顧：3月8日 下午12:58
 
+了解 Linux 核心中鏈結串列的實作(通用的結構（list_head）)、撰寫清晰好理解的 git commit message ，並且深入學習 Linux 核心知識以提升撰寫高品質程式的能力。
+
+三月回顧：4月8日 下午7:25
+
+學習 Bitwise Operation 操作，許多表達式都可以透過位元運算來實現。以轉換大小寫為例，過去我總是使用較笨拙的方法，但在閱讀老師的教材後，我才發現原來可以只需一行程式碼，即將目標字母與 32 進行 XOR 運算，就能完成轉換。此外，許多 Bitwise Operation 的程式碼寫得非常藝術，也極具效率。
+
+學習如何透過 C 語言中的前置處理器來優化和簡化程式碼。在 Linux Kernel 的程式碼中，廣泛使用了許多巨集（macro）。透過這些巨集，能夠有效地使程式碼變得更加簡潔。
+
+四月回顧：5月11日 下午3:33
+
+研讀黃敬群老師的《你所不知道的 C 語言》教材以及《 Computer Systems: A Programmer's Perspective 》這本課本的前兩章，並將學習到的東西紀錄下來。 在 CS:APP 這本書中，從最基礎的事情開始介紹，介紹許多關於變數型態的事情。 在撰寫程式時，常常會遇到未知的錯誤，而這些未知的錯誤常常就是因為不同型態的變數轉換所造成的錯誤，所以在閱讀完這前兩章後，有更進一步的了解數值系統的重要性。
+
+認識 Linux Kernel Module ，閱讀完黃敬群老師的教材後，認識到 Module 如何透過虛擬檔案系統  (Virtual File System, VFS) 與周邊裝置進行互動，並且透過 Character Device 可以將資料從 User space 到 Kernel space 間相互傳送。
 
 ### 自我評量
