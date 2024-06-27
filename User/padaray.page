@@ -34,11 +34,11 @@ vcam: [HackMD](https://hackmd.io/@padaray/linux2024-final) / [GitHub](https://gi
 ### 與授課教師的互動
 一對一討論：5月 20日 (星期一)⋅下午6:30 - 7:00
 
-* [並行程式設計：排程器原理](https://hackmd.io/@sysprog/concurrency-sched)問題討論 1：coroutine 的機制存在，會不會取代 preemptive 機制
+* [並行程式設計：排程器原理](https://hackmd.io/@sysprog/concurrency-sched)-問題討論：coroutine 的機制存在，會不會取代 preemptive 機制
 
-* [Linux 核心的紅黑樹](https://hackmd.io/@sysprog/linux-rbtree)問題討論：AVL tree 和 rbtree 樹高分別是 1.44 × log⁡(𝑛+2) 和 2 × log(𝑛+1) ，1.44 和 2 這兩個常數如何計算而來
+* [Linux 核心的紅黑樹](https://hackmd.io/@sysprog/linux-rbtree)-問題討論：AVL tree 和 rbtree 樹高分別是 1.44 × log⁡(𝑛+2) 和 2 × log(𝑛+1) ，1.44 和 2 這兩個常數如何計算而來
 
-* [CS:APP 3/e]問題討論：UTF-8 的編碼方式
+*  CS:APP 3/e-問題討論：UTF-8 的編碼方式
 
 ### 修課心得
 課程的一開始著重在 C 語言資料結構，第一份作業實作 lab-0 時，我就在思考這堂課不是叫做 Linux Kernel 實作嗎，一直寫 C 也沒搞懂甚麼是 Linux Kernel，直到作業六 - Integration 進入核心掛載才對 Kernel 框架有了大致的了解，但也在這時才知道當初課程著重在 C 語言技術的原因，Kernel 框架是由 C 語言技術堆疊而成的，若一開始直接從 Kernel 框架下去看而不熟悉 C 語言，在理解程式碼時就會處處碰壁，讓挫敗感很重。
