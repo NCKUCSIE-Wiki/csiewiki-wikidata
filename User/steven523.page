@@ -2,5 +2,32 @@
 title: steven523(林冠宏)
 categories: User
 ...
-# 7414
-2222222222222222222222222222222222222222222
+
+## 2024 Linux 核心設計 春季班 自我評量
+
+* 簡介：國立成功大學電機所 114 級
+* GitHub: [steven523](https://github.com/steven523)
+* HackMD: [steven523](https://hackmd.io/@steven523)
+
+### 成果發表與貢獻
+
+於 3/21 code review 回答問題：
+
+* [課堂問答簡記](https://hackmd.io/3e8LI8_0SLOo_UTDAnPKYQ#steven523) 回答 list sort 與一般 merge sort 的效能差異
+
+課程教材修訂：
+
+* [你所不知道的 C 語言：數值系統](https://hackmd.io/eSVH5k6SQ7OrzZ5cT-uiKg#Count-Leading-Zero) 實作範例程式碼時發現問題並修正
+```diff
+int BITS = 31;
+- while (--BITS) {
++ while (BITS) {
+    if (N & 0x80000000) break;
+    N <<= 1;
++   BITS--;
+}
+```
+
+* [slab 記憶體配置器](https://hackmd.io/5Fn8N3HeRkGIO7cZu7chIw?view#%E9%85%8D%E7%BD%AE%E8%A8%98%E6%86%B6%E9%AB%94) 在不同狀況況下 -> 在不同狀況下
+
+### 作業與隨堂測驗
