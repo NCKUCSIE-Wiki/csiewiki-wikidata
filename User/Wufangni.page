@@ -11,6 +11,12 @@ categories: User
 
 ### 成果發表和貢獻
 
+相關錯字修訂：
+
+[Linux 核心的紅黑樹](https://hackmd.io/x4IRgvnYSyCBOnrV7oH_iw?view)
+
+[Linux 核心專題: RISC-V 系統模擬器](https://hackmd.io/3_zIlJlvTs6YM0ZiAh-p-A?view)
+
 ### 作業與隨堂測驗
 * lab0: [HackMD](https://hackmd.io/@Wufangni/linux2024-homework1) / [GitHub](https://github.com/Wufangni/lab0-c)
 
@@ -88,6 +94,6 @@ categories: User
 
 ### 自我評量 (1 ~ 10)
 
-$(0 \times 9 \times 8 \times 8 \times 9 \times 9) ^ {1/6} = 6$ 
+$(2 \times 9 \times 7 \times 7 \times 9 \times 9) ^ {1/6} = 6.4$ 
 
-使用方案 B 計分：$1 + floor(6) = 7$
+使用方案 B 計分：$1 + floor(6.4) = 7$
