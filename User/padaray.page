@@ -9,6 +9,11 @@ categories: User
 * GitHub: [padaray](https://github.com/padaray)
 * HackMD: [padaray](https://hackmd.io/@padaray)
 
+### 成果發表與貢獻
+
+閱讀文件時做的錯字修訂：
+* [虛擬攝影機裝置驅動程式](https://hackmd.io/@sysprog/rJEhcgoSn):訪問->存取、接口->介面、內存->記憶體
+
 ### 作業與隨堂測驗
 * lab0: [GitHub](https://github.com/padaray/lab0-c) / [HackMD](https://hackmd.io/@padaray/linux2024-homework1)
 
@@ -36,7 +41,11 @@ vcam: [HackMD](https://hackmd.io/@padaray/linux2024-final)
 * [CS:APP 3/e]問題討論：UTF-8 的編碼方式
 
 ### 修課心得
+課程的一開始著重在 C 語言資料結構，第一份作業實作 lab-0 時，我就在思考這堂課不是叫做 Linux Kernel 實作嗎，一直寫 C 也沒搞懂甚麼是 Linux Kernel，直到作業六 - Integration 進入核心掛載才對 Kernel 框架有了大致的了解，但也在這時才知道當初課程著重在 C 語言技術的原因，Kernel 框架是由 C 語言技術堆疊而成的，若一開始直接從 Kernel 框架下去看而不熟悉 C 語言，在理解程式碼時就會處處碰壁，讓挫敗感很重。
 
+在學期的開始，老師就有說這是一堂需要花費大量時間的課程，每週至少要花特定時數，因為需要閱讀大量的文件，在學期初較不忙時，還能看完文件後再完成作業要求，但來到作業四時，沒有時間閱讀文件只能先完成作業，這是我要檢討的地方，沒有分配好時間造成學習效果不好。
+
+在這堂課體悟最多是在閱讀 CS:APP 3/e，本來對於讀規格相關的書籍我會感到很無趣，但經過這學期閱讀文件的經驗，我反而能靜下心來好好閱讀，且對這本書的內容感到有興趣，我認為這對以後開發需閱讀文件很有幫助。
 
 ### 與指導教授的學習回顧
 * 二月回顧：3月8日 週五 下午8:53
@@ -52,5 +61,10 @@ vcam: [HackMD](https://hackmd.io/@padaray/linux2024-final)
 
 * 五月回顧: 6月27日 周四 早上8:00
 
-    1. 閱讀 <因為自動飲料機而延畢的那一年> 
+    1. 閱讀 因為自動飲料機而延畢的那一年
     2. 閱讀 CS:APP 3/e
+
+### 自我評量
+$(3 \times 8 \times 6 \times 7 \times 8 \times 7) ^ {1/6} = 6.19$ 
+
+使用方案 B 計分：$1 + floor(6.19) = 7$
