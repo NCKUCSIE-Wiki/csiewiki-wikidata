@@ -29,15 +29,15 @@ categories: User
 
 * quiz1 + 2: [HackMD](https://hackmd.io/@david96514/linux2024-homework2)
     
-    內容為分析測驗中 quick sort 、 timsort 、建立二元樹、 LRU Cache 實作及在一段特地記憶體中尋找第 N 個設定位元的函式。
+    - 內容為分析測驗中 quick sort 、 timsort 、建立二元樹、 LRU Cache 實作及在一段特地記憶體中尋找第 N 個設定位元的函式。
 
 * quiz3 + 4: [HackMD](https://hackmd.io/@david96514/linux2024-homework4)
     
-    內容為分析測驗中有效率的開根號、避免使用除法的模除運算、 $log_2$ 、 EWMA 及漢明距離計算。
+    - 內容為分析測驗中有效率的開根號、避免使用除法的模除運算、 $log_2$ 、 EWMA 及漢明距離計算。
 
 * Assessment: [HackMD](https://hackmd.io/@david96514/linux2024-homework5)
 
-    作業內容我選擇改進
+    - 作業內容我選擇改進
     1. 第 2 周測驗 3 : fns 函式改進
     2. 第 3 周測驗 2 : 不依賴任何除法指令的 % 9 (modulo 9) 和 % 5 (modulo 5) 程式碼
     3. 第 4 周測驗 1 : 避免重複計算、一次輸入多個字串需要同時計算 Total Hamming Distance 的版本
@@ -46,11 +46,11 @@ categories: User
 
 * Integration: [HackMD](https://hackmd.io/@david96514/linux2024-homework6)
 
-    作業中除了閱讀給定教材並分析其功能外，在自己的實體電腦運作 GNU/Linux 並實際將模組掛載至核心執行，並嘗試將 simrupt/simrupt.c 內的 simrupt_work_func 改寫為 lock-free 。
+    - 作業中除了閱讀給定教材並分析其功能外，在自己的實體電腦運作 GNU/Linux 並實際將模組掛載至核心執行，並嘗試將 simrupt/simrupt.c 內的 simrupt_work_func 改寫為 lock-free 。
 
 * 另外做的一些筆記：
-    * [FNS 改進](https://hackmd.io/@david96514/HJoPc_YeR) 記錄了改進 fns 並嘗試發送 patch 的過程
-    * [Linux 核心實作 2024q1 第 18 週測驗題](https://hackmd.io/@david96514/linux2024-homework5) 因為當下沒有理解程式碼行為而無法回答老師問題，事後花了點時間重新理解。
+    - [FNS 改進](https://hackmd.io/@david96514/HJoPc_YeR) 記錄了改進 fns 並嘗試發送 patch 的過程
+    - [Linux 核心實作 2024q1 第 18 週測驗題](https://hackmd.io/@david96514/linux2024-homework5) 因為當下沒有理解程式碼行為而無法回答老師問題，事後花了點時間重新理解。
 
 
 ### 期末專題
