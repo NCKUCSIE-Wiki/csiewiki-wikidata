@@ -38,7 +38,7 @@ categories: User
 
 **評分：10**
 
-我的期末專題是關於 LLama 效能提升的量化分析與評估，具體內容和成果記錄在[Linux 核心專題: LLaMA 推論之效能議題](https://hackmd.io/@sysprog/BJ1T7UK80)。
+我的期末專題是關於 LLama 效能提升的量化分析與評估，具體內容和成果記錄在 [Linux 核心專題: LLaMA 推論之效能議題](https://hackmd.io/@sysprog/BJ1T7UK80)。
 
 其中有四個 TODO:
 - TODO: 實作程式碼 IEEE 754 浮點數乘以 2
