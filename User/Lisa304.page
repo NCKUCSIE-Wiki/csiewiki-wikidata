@@ -29,6 +29,7 @@ categories: User
 - [lab0-c](https://hackmd.io/@Lisa304/HyLx5qthp)
 - [tic-tac-toe](https://hackmd.io/@Lisa304/HyLx5qthp)
 - [assessment](https://hackmd.io/@Lisa304/HkyCfjPeA)
+- [Linux 核心專題: LLaMA 推論之效能議題](https://hackmd.io/@sysprog/BJ1T7UK80)
 
 測驗共筆:
 - [quiz1+2](https://hackmd.io/@Lisa304/HkcBeTrpa)
@@ -37,7 +38,7 @@ categories: User
 
 **評分：10**
 
-我的期末專題是關於 LLama 效能提升的量化分析與評估，具體內容和成果記錄在[assessment](https://hackmd.io/@Lisa304/HkyCfjPeA)，本來是應該要放在老師開設的網頁，但因為我尚未被分配到，所以我先放在作業五的頁面。
+我的期末專題是關於 LLama 效能提升的量化分析與評估，具體內容和成果記錄在[Linux 核心專題: LLaMA 推論之效能議題](https://hackmd.io/@sysprog/BJ1T7UK80)。
 
 其中有四個 TODO:
 - TODO: 實作程式碼 IEEE 754 浮點數乘以 2
