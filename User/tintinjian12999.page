@@ -1,0 +1,32 @@
+---
+title: tintinjian12999(姓名:簡瑋廷)
+categories: User
+[github](https://github.com/tintinjian12999)
+...
+
+
+# 2024 Linux 核心設計 春季班 自我評量
+## 成果發表和貢獻: 1
+## 作業/隨堂測驗: 6
+lab0 + ttt:[hackmd](https://hackmd.io/yvU29jMnQrixMCxzdN08qg)
+HW2:[hackmd](https://hackmd.io/T2PQLOMRTyWR6XSiEI3k9Q)
+HW5: [hackmd](https://hackmd.io/3Ey2P1eBQICkTHPUH-03Cg)
+
+## 期末專題: 6
+https://hackmd.io/@sysprog/BkqsnDc8R
+
+## 與授課教師的互動: 2
+5/16
+
+## 所見所聞所感: 8 
+這堂課在學習許多知識的同時更重要的是讓我深感自己的不足與時間安排上的沒效率，導致許多該更深入學習的作業課題等沒能好好吸收。
+
+## 研究生發信時間: 8
+* 二月份學習回顧 (2024/03/04) : 
+學習 git 的使用，記憶體檢測工具的使用，有效率程式碼和commit message 的重要
+* 三月份學習回顧 (2024/04/05) : 
+我們也實作了使用者層級的排程器，一開始我利用 setjmp() / longjmp() 進行動態 goto 的方式將不同的 AI 演算法實作與棋盤畫面更新等不同任務嘗試包裝成 coroutine ，但無法正確地將監聽鍵盤事件的任務包裝成 coroutine ，只能透過密集的函式呼叫。之後我將排程器實作改為利用 Linux Signal 與 user context 來實作 user-level context switch ，進一步完成使用者層級的可中斷排程器，並實作 Round-robin 排程策略，成功將各式函式包裝成 coroutine 。過程當中我學習到真實系統中 process 、 thread 、 coroutine 的實作區別，並非完全像過往作業系統課堂所教的，從這裡我們也開始延伸探討並行程式設計。
+* 五月份學習回顧 (2024/06/04) : 
+期末專題也開始著手進行，預計會是參與 scx 開發並且嘗試優化當中的負載平衡機制，目前已經瞭解了該專案如何利用 eBPF 將系統的 CPU 排程器變成一個 可拔插 的元件，同時也學習 BPF 及其相關的 profiling tools 包括 BCC, bpftrace 等工具，讓我們在了解作業系統核心上不只是臆測，而是真的運用工具去觀察並量化當中的行為。 
+
+# 方案 B: 4
