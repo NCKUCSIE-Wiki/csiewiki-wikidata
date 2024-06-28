@@ -158,7 +158,7 @@ USB是一種Polled Bus，由Host啟動(Initiates)資料傳輸，Device做出回�
 
 USB由幾種Protocol Layers所組成，資料藉由Pipes傳輸。
 
-* Stream Pipes  : Stream pipes可以被Host或者Device控制，資料的傳輸方向必須事先定義，定義為IN或或OUT。have no defined USB format）支援 Bulk Transfers, Isochronous Transfers, and Interrupt Transfers.
+* Stream Pipes  : Stream pipes可以被Host或者Device控制，資料的傳輸方向必須事先定義，定義為IN或或OUT。支援 Bulk Transfers, Isochronous Transfers, and Interrupt Transfers. （have no defined USB format）
 
 * Message Pipes : 為Host控制來進行資料傳輸設定，允許雙向通訊。只支援 Control Transfers。（have a defined USB format）
 
