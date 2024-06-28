@@ -11,11 +11,15 @@ categories: User
 
 # 2024 Linux 核心設計 春季班 自我評量
 ## 成果發表和貢獻
+在與老師一對一討論時有討論到 [quiz3-2](https://hackmd.io/@gawei1206/linux2024-homework4#%E6%B8%AC%E9%A9%97-2) 中的問題，老師希望我可以補上數學的證明，會在近日補上
+
+
 ## 作業/隨堂測驗
 * lab0-c : [HackMD](https://hackmd.io/@gawei1206/linux2024-homework1)
-Homework2 : [HackMD](https://hackmd.io/@gawei1206/linux2024-homework2)
-Homework4 : [HackMD](https://hackmd.io/@gawei1206/linux2024-homework4)
-Homework5 : [HackMD](https://hackmd.io/@gawei1206/linux2024-homework5)
+* Homework2 : [HackMD](https://hackmd.io/@gawei1206/linux2024-homework2)
+* Homework4 : [HackMD](https://hackmd.io/@gawei1206/linux2024-homework4)
+* Homework5 : [HackMD](https://hackmd.io/@gawei1206/linux2024-homework5)
+
 ## 期末專題
 * 透過 Netfilter 自動過濾廣告 : [HackMD](https://hackmd.io/@sysprog/SyKqH2ILA)
 
