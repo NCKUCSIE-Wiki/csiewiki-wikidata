@@ -26,7 +26,7 @@ Homework1 (lab0) [HackMD](https://hackmd.io/mpoK-iFNRRiXbHTeiooz0g)/[GitHub](htt
 Homework2 (quiz1+2) [HackMD](https://hackmd.io/bAyUjId9QzWPqx7Lm5h4Rw)
 
 使用非遞迴的方式實做 quick sort 和實作 Timsort。
-藉由給定的 prorder 和 inorder traversal 序列，進行二元樹的重建和 LRU 概念的呈現。
+藉由給定的 preorder 和 inorder traversal 序列，進行二元樹的重建和 LRU 概念的呈現。
 
 Homework3 (tic-tac-toe) [HackMD](https://hackmd.io/mpoK-iFNRRiXbHTeiooz0g#%E4%BF%AE%E6%94%B9-qtest-%E7%A8%8B%E5%BC%8F%EF%BC%8C%E4%BD%BF%E5%85%B6%E6%96%B0%E5%A2%9E-ttt-%E5%91%BD%E4%BB%A4)/[GitHub](https://github.com/SimonLee0316/lab0-c)
 
@@ -50,9 +50,9 @@ Homework6 (integration) [HackMD](https://hackmd.io/pf4n8UYSQWymdKScemeVWA)/[GitH
 評分:   
 我給我自己  分，起初我對網頁伺服器完全沒有概念，但透過閱讀許多文件以及實作，能夠理解其原理，並結合測驗八實作出一個網頁伺服器，並搭配相關測試，雖然最後的結果並沒有比全部測試的比較對象還要好，但我對於這個專題的投入，已盡學生最大的努力。 
 
-題目：Quiz8 並擴充為 web server [HackMD](https://hackmd.io/LRgizse4Sw27kJMmsXc-vw)/[GitHub](https://github.com/SimonLee0316/c-web-server)
+Linux 核心專題: 高效網頁伺服器 [HackMD](https://hackmd.io/@sysprog/Byq9C2q80)/[GitHub](https://github.com/SimonLee0316/c-web-server)
 
-完成測驗八並說明程式碼運作原理並將其擴充為 web server。
+藉由 coroutine 和 POSIX Thread，以 M:N 執行緒模型建構高性能的網頁伺服器。
 
 ## 第四項、與授課教師的互動
 評分:   
