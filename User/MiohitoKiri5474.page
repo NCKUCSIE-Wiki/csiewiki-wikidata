@@ -6,15 +6,40 @@
 
 ## 成果發表和貢獻
 
+- [並行程式設計: 概念](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-concepts)：錯字修訂
+
 ## 作業/隨堂測驗
+- lab0-c: [GitHub](https://github.com/MiohitoKiri5474/lab0-c)/[HackMD](https://hackmd.io/@MiohitoKiri5474/B13cPqfu6)
+- quiz1+2: [HackMD](https://hackmd.io/@MiohitoKiri5474/HkvX1f36T)
+- quiz3+4: [HackMD](https://hackmd.io/@MiohitoKiri5474/BJKXebHyC)
+- assessment: [HackMD](https://hackmd.io/@MiohitoKiri5474/ByoPGBceR)
 
 ## 期末專題
 
-## 與授課教師的互動
+Concurrent Red-Black Tree: [HackMD](https://hackmd.io/@MiohitoKiri5474/Hy52_dWIA) / [GitHub](https://github.com/MiohitoKiri5474/userspace_rbtree)
 
-## 所見所聞所感
+研讀教材了解 Linux Kernel 中的紅黑樹，以及如何將其改為並行版本。<br>
+其中 lock 版本已完成 insert 操作，Erase 操作和 lockfree 正在進行中。
+
+## 與授課教師的互動
+一對一討論：5 月 31 日（星期五）13:00 ~ 14:00
+
+- [2024q1 Homework5 (assessment)](https://hackmd.io/@MiohitoKiri5474/ByoPGBceR): 與教師討論如何撰寫 branchless 的 max 和 popcount
+
+## 修課心得
 
 ## 自我評量(1 ~ 10)
-- 方案 A : 不適用
-- 方案 B : 1 + 0 = 1
-- GEOMEAN = 0
+
+成果發表和貢獻：我給自己 6 分。雖然並沒有對程式碼或整體課程作出更多貢獻，但在閱讀教材期間對於紅黑樹以及並行程式設計有更多的理解，同時也修正了之前對於 process 和 thread 的錯誤認知，並對其中發現的錯字進行修正。
+
+作業與隨堂測驗：我給自己 8 分。
+
+期末專題：我給自己 6 分。
+
+與授課教師的互動：我給自己 8 分。
+
+修課心得：我給自己 10 分。
+
+GEOMEAN = $(6 \times 8 \times \ 6 \times 8 \times 10)^{\frac{1}{5}} = 7.45$
+
+使用方案 B 計分： $1 + floor (7.45) = 8$
