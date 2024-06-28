@@ -17,11 +17,11 @@ categories: User
 * [虛擬攝影機裝置驅動程式](https://hackmd.io/@sysprog/rJEhcgoSn)
 
 ### 作業與隨堂測驗
-* lab0: [GitHub](https://github.com/yinghuaxia/lab0-c) / [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework1)
+* lab0: [GitHub](https://github.com/david965154/lab0-c) / [HackMD](https://hackmd.io/@david96514/linux2024-homework1)
 
-    這份作業中主要實作了針對指定串列的操作，從指派空間給一個 `list_head` 開始到對串列的元素順序進行調整、刪減等，也嘗試提供沒有偏好的洗牌方式給 qtest。
+    這份作業中主要實作了佇列的基本操作，同時對一些特定功能進行分析，如洗牌亂度及排序時執行時間複雜度，在之後的作業三也加入了井字遊戲的實作。
 
-* Integration: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework6)
+* Integration: [HackMD](https://hackmd.io/@david965154/linux2024-homework6)
 
     作業中包含研讀 Linux 效能分析描述，在自己的實體電腦運作 GNU/Linux、閱讀〈Linux 核心模組運作原理〉並解析 `insmod` 的相關操作、閱讀《The Linux Kernel Module Programming Guide》(LKMPG) 並解釋 simrupt 程式碼裡頭的 mutex lock 的使用方式，並探討能否改寫為 lock-free 等。
 
@@ -33,9 +33,9 @@ categories: User
     
     測驗中包含透過非遞迴的方式實作 quick sort 並針對 Timsort 進行實作；也包含給定 preorder 和 inorder travsersal 序列進行二元樹的重建、LRU 概念的呈現和於指定的記憶體空間中找出第 N 個設定的位元。
 
-* quiz3 + 4: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework4)
+* quiz3 + 4: [HackMD](https://hackmd.io/@david96514/linux2024-homework4)
     
-    內容包含 popcount、針對符合 $2^k+1$ 的除數所進行的餘數運算、較有效率的開根號、mod 10、div 10、 $log_2$、取平均等算法。
+    內容為分析測驗中有效率的開根號、避免使用除法的模除運算、 $log_2$ 、 EWMA 及漢明距離計算。
 
 * 另外做的一些筆記：
     * [作業 cmd line](https://jet-arch-619.notion.site/HW-cmd-line-ecf2cbc633a74df385210e164b62064b?pvs=4)
