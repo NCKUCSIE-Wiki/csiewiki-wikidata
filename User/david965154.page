@@ -13,8 +13,14 @@ categories: User
 
 閱讀文件時做的錯字修訂：
 
-* [lab0](https://hackmd.io/@jimmylu0303/linux2024-homework1)
-* [虛擬攝影機裝置驅動程式](https://hackmd.io/@sysprog/rJEhcgoSn)
+* [Linux 核心模組運作原理](https://hackmd.io/@sysprog/linux-kernel-module)
+* [你所不知道的 C 語言：編譯器和最佳化原理篇](https://hackmd.io/@sysprog/c-compiler-optimization)
+* [Linux 核心設計: 淺談同步機制](https://hackmd.io/@sysprog/linux-sync)
+* [你所不知道的 C 語言：動態連結器篇](https://hackmd.io/@sysprog/c-dynamic-linkage)
+
+增加快速開平方根計算 magic number 計算方法解釋：
+
+* [從 √2 的存在談開平方根的快速運算](https://hackmd.io/@sysprog/sqrt)
 
 ### 作業與隨堂測驗
 * lab0: [GitHub](https://github.com/david965154/lab0-c) / [HackMD](https://hackmd.io/@david96514/linux2024-homework1)
@@ -31,7 +37,7 @@ categories: User
 
 * Assessment: [HackMD](https://hackmd.io/@david96514/linux2024-homework5)
 
-    作業內容我選擇改進了 
+    作業內容我選擇改進
     1. 第 2 周測驗 3 : fns 函式改進
     2. 第 3 周測驗 2 : 不依賴任何除法指令的 % 9 (modulo 9) 和 % 5 (modulo 5) 程式碼
     3. 第 4 周測驗 1 : 避免重複計算、一次輸入多個字串需要同時計算 Total Hamming Distance 的版本
@@ -57,24 +63,28 @@ bitops: [HackMD](https://hackmd.io/@david96514/HJnf3TOQC)
 
 ### 與授課教師的互動
 
-一對一討論：5月 14日 (星期二)⋅下午9:00 - 9:30
+一對一討論： 5 月 19 日 (星期日) 下午9:30 - 10:15
 
-* [第四週測驗一](https://hackmd.io/ft3EYSusSS2aLyRicdqTzA?view#%E6%B8%AC%E9%A9%97%E4%B8%801): 討論將變數取反再取二補數的原因，以及 popcount 為何是以四個 bit 作為單位的原因。
+* [2024-04-16 問答簡記](https://hackmd.io/VyLWa5VNQG-EpDoi2WqTMw#david965154): 討論 mmap 於 fork 的應用，並理解 fork 並非越多越好。
+
+* [FNS 改進](https://hackmd.io/@david96514/HJoPc_YeR): macro 定義在何時會被設定。
+
+* [2024q1 Homework5 (assessment)](https://hackmd.io/eebnNSnvT8KSASWLG6aw1g#%E7%A0%94%E8%AE%80-CSAPP-3e): 研讀 CS:APP 3/e 後關於使用變數型態選擇的問題。
 
 ### 修課心得
 
 
 ### 與指導教授的學習回顧
 
-* 二月回顧：
-
-* 三月回顧：
-
-* 四月回顧：
-
+* 二月回顧：3月7日 週四 下午11:23
+- 學習有效率的應用時間
+* 三月回顧：4月8日 週一 下午7:38
+- 對於已經超過繳交期限的作業再去嘗試完成
+* 四月回顧：5月16日 週四 上午1:32
+- 嘗試發送 patch 貢獻至 linux 核心的過程
 
 ### 自我評量
-$(3 \times 8 \times 7 \times 6 \times 8 \times 8) ^ {1/6} = 6.33$ 
+$(5 \times 8 \times 8 \times 7 \times 8 \times 7) ^ {1/6} = 7.07$ 
 
-使用方案 B 計分：$1 + floor(6.33) = 7$
+使用方案 B 計分：$1 + floor(7.07) = 8$
 
