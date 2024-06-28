@@ -25,7 +25,7 @@ categories: User
 ### 作業與隨堂測驗
 * lab0: [GitHub](https://github.com/david965154/lab0-c) / [HackMD](https://hackmd.io/@david96514/linux2024-homework1)
 
-    這份作業中主要實作了佇列的基本操作，同時對一些特定功能進行分析，如洗牌亂度及排序時執行時間複雜度，在之後的作業三也加入了井字遊戲不同演算法及功能的實作，並閱讀 coroutine。
+    - 這份作業中主要實作了佇列的基本操作，同時對一些特定功能進行分析，如洗牌亂度及排序時執行時間複雜度，在之後的作業三也加入了井字遊戲不同演算法及功能的實作，並閱讀 coroutine。
 
 * quiz1 + 2: [HackMD](https://hackmd.io/@david96514/linux2024-homework2)
     
