@@ -1,0 +1,91 @@
+---
+title: Chinchun Chen (陳金諄)
+categories: User
+...
+
+## 2024 Linux 核心實作 春季班 自我評量
+
+* 簡介：國立成功大學電機所 114 級
+* GitHub: [david965154](https://github.com/david965154)
+* HackMD: [david965154](https://hackmd.io/@david96514)
+
+### 成果發表與貢獻
+
+閱讀文件時做的錯字修訂：
+
+* [lab0](https://hackmd.io/@jimmylu0303/linux2024-homework1)
+* [虛擬攝影機裝置驅動程式](https://hackmd.io/@sysprog/rJEhcgoSn)
+
+### 作業與隨堂測驗
+* lab0: [GitHub](https://github.com/yinghuaxia/lab0-c) / [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework1)
+
+    這份作業中主要實作了針對指定串列的操作，從指派空間給一個 `list_head` 開始到對串列的元素順序進行調整、刪減等，也嘗試提供沒有偏好的洗牌方式給 qtest。
+
+* Integration: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework6)
+
+    作業中包含研讀 Linux 效能分析描述，在自己的實體電腦運作 GNU/Linux、閱讀〈Linux 核心模組運作原理〉並解析 `insmod` 的相關操作、閱讀《The Linux Kernel Module Programming Guide》(LKMPG) 並解釋 simrupt 程式碼裡頭的 mutex lock 的使用方式，並探討能否改寫為 lock-free 等。
+
+* Assessment: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework5)
+
+    紀錄閱讀〈因為自動飲料機而延畢的那一年〉的啟發，對前期作業進行改進並研讀 CS:APP 3/e 第二章。
+
+* quiz1 + 2: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework2)
+    
+    測驗中包含透過非遞迴的方式實作 quick sort 並針對 Timsort 進行實作；也包含給定 preorder 和 inorder travsersal 序列進行二元樹的重建、LRU 概念的呈現和於指定的記憶體空間中找出第 N 個設定的位元。
+
+* quiz3 + 4: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework4)
+    
+    內容包含 popcount、針對符合 $2^k+1$ 的除數所進行的餘數運算、較有效率的開根號、mod 10、div 10、 $log_2$、取平均等算法。
+
+* 另外做的一些筆記：
+    * [作業 cmd line](https://jet-arch-619.notion.site/HW-cmd-line-ecf2cbc633a74df385210e164b62064b?pvs=4)
+    * [Makefile](https://jet-arch-619.notion.site/Makefile-a994c099f35a4be494d7d561b8e0f9c4?pvs=4)
+    * [linux/list.h 函式解析](https://jet-arch-619.notion.site/linux-list-h-85eba2d3da2b45108cb24d03c480b36c?pvs=4)
+
+
+### 期末專題
+
+vcam: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-final) / [GitHub](https://github.com/yinghuaxia/vcam)
+
+研究 vcam 在 V4L2 的框架中運作的原理，並對程式碼進行解析，最後進行 vcam 實現。
+
+### 與授課教師的互動
+
+一對一討論：5月 14日 (星期二)⋅下午9:00 - 9:30
+
+* [第四週測驗一](https://hackmd.io/ft3EYSusSS2aLyRicdqTzA?view#%E6%B8%AC%E9%A9%97%E4%B8%801): 討論將變數取反再取二補數的原因，以及 popcount 為何是以四個 bit 作為單位的原因。
+
+* [第四週測驗二](https://hackmd.io/ft3EYSusSS2aLyRicdqTzA?view#%E6%B8%AC%E9%A9%97%E4%BA%8C1): 討論在 popcount 中加上 39 以保證餘數為正的想法。
+
+* [作業六](https://hackmd.io/@yinghuaxia/linux2024-homework6): 討論主設備編號和次設備編號以 20 bit 和 12 bit 的長度進行分配的原因。
+
+### 修課心得
+
+到學期末其實發現，這門課所帶給我的收穫與預期的不一樣。說是不一樣的原因，其實是因為一開始在修這門課的期望在於可以針對不同的專案進行各種實現，並對較靠近電腦層級的操作更熟悉。然而實際上做得更多的卻是資料的閱讀、收集與統整，一方面是受限於實驗室本身研究與修課，常常在 Windows 與 Ubuntu 之間切換，並沒有足夠多的時間全力投入於作業或專題等的開發中；另一方面則是因為每次的作業中都包含了太多不熟悉的知識，在閱讀各種文件時往往需要一邊閱讀一邊整合才有辦法對整個架構有更全面的理解。這也讓我對蒐集並整合資料有更多練習的機會。
+
+除了學習到 Linux Kernel 相關的知識之外，課程中其實也會從很多較小的角度去切入探討，讓我對整個核心的編寫邏輯也較有概念。比如說在測驗題中提到的對數值加一的步驟，在與老師討論之後才知道為了防止 overflow 的發生，因此會使用二補數相關的做法進行這項操作，這讓我聯想到在做 testing unit 時會需要針對較容易出錯的臨界值進行測試，而實作 Linux Kernel 相關的程式碼亦是如此，開發者比須先針對可能發生的不同情形想出不會讓錯誤發生的寫法，而這往往是需要大量經驗的累積與試錯才有辦法達成。這門課對我的幫助不僅僅是更了解核心程式的架構與運作，更多時候是在幫助我練習做時間規劃、事情重要程度的排序、在力所能及的情況下做到最好，以及開始一項龐大且未知專案的決心。透過觀摩其他學員的文件內容也讓我可以從更多角度認知到自己的不足以及可以繼續改進的地方。
+
+### 與指導教授的學習回顧
+
+* 二月回顧：3月6日 週三 下午9:19
+
+    1. 記憶體相關的使用 (circular doubly linked list)
+    2. 撰寫紀錄文件並接受回饋
+
+* 三月回顧：4月6日 週六 下午7:36
+
+    1. 學習 Linux 核心原始程式碼中的 lib/list_sort.c
+    2. 使用 Valgrind 分析記憶體問題
+    3. 學習 bitwise 的 operation
+
+* 四月回顧：5月9日 週四 下午9:07
+
+    1. 研讀 CS:APP 3/e 前兩章
+    2. 研讀教材〈Linux 核心模組運作原理〉
+    3. 期末專題討論
+
+### 自我評量
+$(3 \times 8 \times 7 \times 6 \times 8 \times 8) ^ {1/6} = 6.33$ 
+
+使用方案 B 計分：$1 + floor(6.33) = 7$
+
