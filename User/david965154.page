@@ -36,23 +36,22 @@ categories: User
     2. 第 3 周測驗 2 : 不依賴任何除法指令的 % 9 (modulo 9) 和 % 5 (modulo 5) 程式碼
     3. 第 4 周測驗 1 : 避免重複計算、一次輸入多個字串需要同時計算 Total Hamming Distance 的版本
     
-     並紀錄閱讀〈因為自動飲料機而延畢的那一年〉的啟發，並研讀 CS:APP 3/e 第二章。
+    並紀錄閱讀〈因為自動飲料機而延畢的那一年〉的啟發，並研讀 CS:APP 3/e 第二章。
 
 * Integration: [HackMD](https://hackmd.io/@david96514/linux2024-homework6)
 
     作業中除了閱讀給定教材並分析其功能外，在自己的實體電腦運作 GNU/Linux 並實際將模組掛載至核心執行，並嘗試將 simrupt/simrupt.c 內的 simrupt_work_func 改寫為 lock-free 。
 
 * 另外做的一些筆記：
-    * [作業 cmd line](https://jet-arch-619.notion.site/HW-cmd-line-ecf2cbc633a74df385210e164b62064b?pvs=4)
-    * [Makefile](https://jet-arch-619.notion.site/Makefile-a994c099f35a4be494d7d561b8e0f9c4?pvs=4)
-    * [linux/list.h 函式解析](https://jet-arch-619.notion.site/linux-list-h-85eba2d3da2b45108cb24d03c480b36c?pvs=4)
+    * [FNS 改進](https://hackmd.io/@david96514/HJoPc_YeR) 記錄了改進 fns 並嘗試發送 patch 的過程
+    * [Linux 核心實作 2024q1 第 18 週測驗題](https://hackmd.io/@david96514/linux2024-homework5) 因為當下沒有理解程式碼行為而無法回答老師問題，事後花了點時間重新理解。
 
 
 ### 期末專題
 
-vcam: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-final) / [GitHub](https://github.com/yinghuaxia/vcam)
+bitops: [HackMD](https://hackmd.io/@david96514/HJnf3TOQC)
 
-研究 vcam 在 V4L2 的框架中運作的原理，並對程式碼進行解析，最後進行 vcam 實現。
+嘗試重現前面執行人的改進並套用至 Linux v6.8+ 版本，並提出驗證方法證明其與現有版本相容
 
 ### 與授課教師的互動
 
