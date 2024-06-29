@@ -6,10 +6,10 @@ categories: User
 ## 簡介
 
 - 國立成功大學 電機工程學系學士班 112 級 (2019 ~ 2024)
-- 網站 [NCKU STUDY 成大學業心得網](https://nckustudy.com) 協作者
+- [NCKU STUDY 成大學業心得網](https://nckustudy.com) 協作者
 - 相關連結
-    - [HackMD](https://hackmd.io/@vacantron)
     - [GitHub](https://github.com/vacantron)
+    - [HackMD](https://hackmd.io/@vacantron)
 
 ## 2022 Linux 核心設計 春季班 自我評量
 
@@ -44,10 +44,47 @@ categories: User
 ## 2024 Linux 核心實作 春季班 自我評量
 
 ### 成果發表和貢獻
+
+- CTHPC 2024 : Accelerate RISC-V Instruction Set Simulation by Tiered JIT Compilation
+
+- COSCUP 2024 : 從零開始建構 C 語言最佳化編譯器
+
+- [sysprog21/shecc](https://github.com/sysprog21/shecc)
+
+  - [pull/114](https://github.com/sysprog21/shecc/pull/114) : 在目前的架構下，shecc 會馬上將內容被改變的全域變數 (global variable) 儲存回堆疊 (stack) 中而沒有參與 SSA (static single assignment) 的變數重新命名 (variable renaming) 步驟，因此若我們對全域變數進行共同表示式消除而沒有重新從堆疊中載入的話會得到過時的內容。
+
+- [sysprog21/rv32emu](https://github.com/sysprog21/rv32emu)
+
+  - [pull/376](https://github.com/sysprog21/rv32emu/pull/376) : 消除潛在的 stack overflow 問題。
+
+  - [pull/384](https://github.com/sysprog21/rv32emu/pull/384) : 省略「將未被覆寫的暫存器儲存回堆疊中」的行為，降低 rv32emu 在直譯器與 JIT 編譯器間切換的開銷。
+
+  - [pull/395](https://github.com/sysprog21/rv32emu/pull/395) : 設定 `cmv` 指令的目標暫存器的 `dirty` 旗標 (可以將 `cmv` 指令視為 `addi rd, rs, 0`)，確保在切換至直譯器時暫存器中的內容符合預期。
+
+  - [pull/418](https://github.com/sysprog21/rv32emu/pull/418) : 為 rv32emu 的 JIT 編譯器引入 linear-scan register allocation 演算法，增加主機實體暫存器的使用效率。
+
 ### 作業/隨堂測驗
+
+- lab0-c : [GitHub](https://github.com/vacantron/lab0-c) / [HackMD](https://hackmd.io/@vacantron/linux2024-homework1)
+
 ### 期末專題
+
+- [RISC-V 最佳化編譯器實作](https://hackmd.io/@sysprog/H11Da3FQA)
+
 ### 與授課教師的互動
+
+- 06/28 :
+
+  - 引入 [dstogov/ir](https://github.com/dstogov/ir) 作為 LLVM IR 的替代選擇
+
+  - 改善 rv32emu 的 JIT 編譯器遇到 RISC-V 的 `jalr` 指令時的行為。
+
+  - 將測試與性能評估程式遷移至 [rv32emu-prebuilt](https://github.com/sysprog21/rv32emu-prebuilt) 儲存庫中。
+
 ### 所見所聞所感
+
+
+
 ### 自我評量 (1 ~ 10)
 
-方案 A : 8 + floor(0.3 * pow(, 0.2)) = 
+方案 A : 8 + floor(0.3 * pow( *  *  *  * , 0.2)) = 
