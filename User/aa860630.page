@@ -36,6 +36,7 @@ categories: User
 ### 期末專題
 
 Netfilter: [HackMD](https://hackmd.io/@aa860630/linux2024-final) / [GitHub](https://github.com/aa860630/adriver)
+影片:[youtube.com](https://youtu.be/1cDO52NlVTw)
 
 使用核心模組以過濾廣告，透過解析 TCP 與 UDP 協定的方式找到網路封包包含的有效訊息，並與 iptable 施行比對後決定是否允許封包通過，將含有廣告訊息的封包丟棄
 
