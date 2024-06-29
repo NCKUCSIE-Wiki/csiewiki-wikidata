@@ -31,7 +31,7 @@ categories: User
 
 題目：重做 lab0 [HackMD](https://hackmd.io/@sysprog/Syc7ROemA)/[GitHub](https://github.com/popo8712/lab0-c)
 
-* 影片：https://youtu.be/HPJ5DiofuHE
+* [影片](https://youtu.be/HPJ5DiofuHE)
 * 解釋 Linux 核心的 list_sort 並評估 (動手做實驗比較) 效能，要考慮到 merge sort 最差的狀況：https://hackmd.io/3e8LI8_0SLOo_UTDAnPKYQ
 * web server 的強化，特別留意 linenoise 的整合 (coroutine)
     * 嘗試改進 coroutine，可善用之後課程提及的基礎建設
@@ -47,6 +47,7 @@ categories: User
 
 ## 五、 所見所聞所感
 評分：我給自己 10 分。
+
 * [因為自動飲料機而延畢的那一年](https://blog.opasschang.com/the-story-of-auto-beverage-machine-1/) 
 
 閱後心得：
