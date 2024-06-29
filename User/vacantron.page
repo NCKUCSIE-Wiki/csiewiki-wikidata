@@ -63,13 +63,19 @@ categories: User
 
   - [pull/418](https://github.com/sysprog21/rv32emu/pull/418) : 為 rv32emu 的 JIT 編譯器引入 linear-scan register allocation 演算法，增加主機實體暫存器的使用效率。
 
+我給自己 10 分。起初只是覺得在資訊系修的編譯系統很有趣想再多加深掘，而想起一年多前曾被介紹過的 shecc 專案並加入開發；而後續也藉由 rv32emu 將對 JIT 編譯器的理解從概念提升為實際的實作與驗證。
+
 ### 作業/隨堂測驗
 
 - lab0-c : [GitHub](https://github.com/vacantron/lab0-c) / [HackMD](https://hackmd.io/@vacantron/linux2024-homework1)
 
+我給自己 1 分，除了作業 1 外並未投入太多的時間。
+
 ### 期末專題
 
 - [RISC-V 最佳化編譯器實作](https://hackmd.io/@sysprog/H11Da3FQA)
+
+我給自己 3 分，主要為修正內文、回覆問題與 code review。
 
 ### 與授課教師的互動
 
@@ -81,10 +87,12 @@ categories: User
 
   - 將測試與性能評估程式遷移至 [rv32emu-prebuilt](https://github.com/sysprog21/rv32emu-prebuilt) 儲存庫中。
 
+我給自己 8 分。在討論中我更加地體認到作為一位學生、研究生亦或是工程師的表達能力的重要，唯有清楚的闡述自己的想法才能與他人建立有效率的溝通。
+
 ### 所見所聞所感
 
-
+我給自己 8 分。也許是因為時空背景相異、亦或是生活圈不同，我鮮少遇到如同 [〈因為自動飲料機而延畢的那一年〉](https://blog.opasschang.com/the-story-of-auto-beverage-machine-1/) 的作者般有熱情並持續堅持的人，大多數人由於升學制度的影響都被迫向分數看齊，而錯過能無後顧之憂一展長才的黃金時間；此外，雖然在開發各項專案時也不時遇到撞牆期，但這些 trial-and-error 的經驗也能成為鋪墊自己基礎的踏腳石，當然前提是沒有半途而廢。
 
 ### 自我評量 (1 ~ 10)
 
-方案 A : 8 + floor(0.3 * pow( *  *  *  * , 0.2)) = 
+方案 A : 8 + floor(0.3 * pow(10 * 1 * 3 * 8 * 8, 0.2)) = 8 + 1 = 9
