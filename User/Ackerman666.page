@@ -16,6 +16,15 @@ categories: User
 2024/4/27 針對教材 [`並行程式設計: Atomics 操作`](https://hackmd.io/@sysprog/concurrency-atomics) 中的 MOESI protocol ，發現敘述有誤，給予提醒，隨後被老師採納更正。
 
 ## 第二項、作業/隨堂測驗
+評分:   
+我給自己 7 分
+我認為我投入在作業的時間不夠多，導致很多部分完成度都差強人意。
+但還是學到許多以往不曾接觸的部分 (bitwise操作、用linux list API刻佇列、統計手法驗證分布性、linux module等)
+*Homework1 (lab0) [HackMD](https://hackmd.io/1HP3bGVXQMOImkxC80inOQ)/[GitHub](https://github.com/Ackerman666/lab0-c)
+*Homework2 (quiz1+2) [HackMD](https://hackmd.io/116CP2whQeC7xC5CuMFmeQ)
+*Homework4 (quiz3+4) [HackMD](https://hackmd.io/fH8oEX_FR7KYnHdI_tbZEA)
+*Homework5 (assessment) [HackMD](https://hackmd.io/5cKITs1cTFu1fGDvmWafXg)
+*Homework6 (integration) [HackMD](https://hackmd.io/kXFroi_hQRqAqzPtoi8ylg)
 
 ## 第三項、期末專題
 
