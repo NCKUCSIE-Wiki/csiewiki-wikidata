@@ -46,7 +46,7 @@ categories: User
 * git rebase 的使用
 * 測試程式的撰寫
 * 定點數相關運算
-* 身為工程師表達用詞要嚴謹
+* **身為工程師表達用詞要嚴謹**
 
 ## 期末專題
 * 虛擬無線網路裝置驅動程式 : [Github](https://github.com/jychen0611/vwifi)/[HackMD](https://hackmd.io/@sysprog/rJ-LF4nNC)
@@ -69,6 +69,8 @@ categories: User
 這部份我打 10 分，找到 `Jserv` 最快的方式就是提交 pull request
 
 ## 所見所聞所感
+
+這部份我打 10 分，這堂課影響我的價值觀，讓我的身份認同從 學生 轉變成 工程師
 
 ## 針對研究生，每月發給實驗室指導教授的學習回顧
 * 二月學習回顧(2024.03.01): 描述作業一的進行狀況
