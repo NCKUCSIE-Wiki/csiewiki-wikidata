@@ -19,11 +19,23 @@ categories: User
     * [Support data rate and MCS](https://github.com/sysprog21/vwifi/commit/a8bdf8a4405cbc5e25beb29bb1956bfac82ca303)
     * [Support transmit power](https://github.com/sysprog21/vwifi/commit/f63872b273f223b963c807c5e39b5f3299a818f5)
 
+這部份我打 9 分，在對 vwifi 做出貢獻的同時使我熟悉
+* git 相關操作，像是 git rebase 
+* 提交 pull request 的流程
+* 建立 issue 討論專案走向
+* 維持協作專案程式碼風格的一致性
+* 查閱 commit message 了解專案發展
+* 接受 code review 並改進 
+* 寫好 commit message
+
 # 2024 Linux 核心設計 春季班
+
 ## 作業/隨堂測驗
 * lab0-c/ttt : [Github](https://github.com/jychen0611/lab0-c)/[HackMD](https://hackmd.io/NCV2VQAWQe60GtwtIjypjA)
+
 ## 期末專題
 * 虛擬無線網路裝置驅動程式 : [Github](https://github.com/jychen0611/vwifi)/[HackMD](https://hackmd.io/@sysprog/rJ-LF4nNC)
+
 ## 與授課教師的互動
 * 2024.03.21 23:00 課後詢問 lab0-c 相關問題
 * 2024.05.03 16:00 一對一討論
