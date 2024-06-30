@@ -1,0 +1,82 @@
+---
+title: yu-hsiennn (吳彧賢)
+categories: User
+...
+
+## 簡介
+
+- 國立成功大學 人工智慧碩士學位學程 113 級
+
+- Github: [yu-hsiennn](https://github.com/yu-hsiennn)
+
+- HackMD: [yu_hsien](https://hackmd.io/@yuu907)
+
+## [2024 Linux 核心實作](https://wiki.csie.ncku.edu.tw/linux/schedule) 春季班 自我評量成績計算
+自評分數: **8** 分
+
+- 方案 B: 1 + floor(GEOMEAN)
+
+$GM = \sqrt[6]{x_1 \cdot x_2 \cdot x_3 \cdot x_4 \cdot x_5 \cdot x_6}$
+
+$score = 1 + \lfloor GM \rfloor = 1 + \lfloor 7.33 \rfloor = 8$
+
+### 成果發表與貢獻
+自評分數: 3 分
+
+在這部分並沒有做出很顯卓的貢獻，只是發現了一些當時在閱讀教材時感到疑惑的地方，嘗試理解並進行修正而已。
+
+* [你所不知道的 C 語言：前置處理器應用篇](https://hackmd.io/@sysprog/c-preprocessor) 筆記中的 `應用: String switch in C` 找到的小錯誤，再範例程式中有定義了一個 `MULTICHAR_CONSTANT`，但下面的程式碼卻是打 `MULTICHAR_CONSTANT_L`，故需要進行修正。
+
+* [2024q1 第 3 週測驗題](https://hackmd.io/@sysprog/linux2024-quiz3) 中的測驗 1，下方因為 `HackMD` 數學式錯誤顯示的關係，在當時卡了很久，修正的地方可以參考我的 [2024q1 Homework4 (quiz3+4)](https://hackmd.io/@yuu907/linux2024-homework4)
+
+### 作業/隨堂測驗
+自評分數: 9 分
+
+我還記得在完成第一個作業時，我對 Linux list API 完全不熟悉，花了整整一周的時間才逐漸理解並學會使用它。由於之前已經養成了在 LeetCode 上練習的習慣，設計如 queue 這樣的資料結構對我來說相對容易，也頗具挑戰性和樂趣。正當我投入於作業中時，第一個截止日期就迅速到來，緊接著第二次作業也馬上下來，讓我深刻體會到未完成作業的壓力。藉由作業和教材也讓我學會使用了一些新工具，如 graphviz 等等。然而，隨著課程的進展和論文實驗的壓力增大，我發現自己後期分配給作業的心力和精力明顯減少了。
+
+作業筆記:
+
+* [作業一/三](https://hackmd.io/@yuu907/r1gnvsn93a)
+
+* [作業二](https://hackmd.io/@yuu907/Sk7txXNaa)
+
+* [作業四](https://hackmd.io/@yuu907/linux2024-homework4)
+
+* [作業五](https://hackmd.io/@yuu907/linux2024-homework5)
+
+* [作業六](https://hackmd.io/@yuu907/linux2024-homework6)
+
+### 期末專題
+自評分數: 8 分
+
+我的期末專題是: 改進 [ksort](https://github.com/sysprog21/ksort)，起初，對於 workqueue、CMWQ 等概念我感到完全陌生，因此開始閱讀《[The Linux Kernel Module Programming Guide](https://sysprog21.github.io/lkmpg/)》和其他相關教材。透過這些學習資源，我慢慢了解到這些工具的用途。隨後，我著手研究 ksort 的運作機制，並在其內部實現的註解中發現了 “[Engineering a Sort Function](https://cs.fit.edu/~pkc/classes/writing/papers/bentley93engineering.pdf)” 的字樣，這促使我進一步深入閱讀並理解 ksort 的排序原理。儘管我投入了大量努力，但最終仍未能完成所有的 TODO。
+
+- [期末專題: 改進 ksort](https://hackmd.io/@sysprog/rJBcqBFUR)
+
+### 與授課教師的互動
+自評分數: 8 分
+
+在最近的一次互動中，老師幫助我解答了許多疑問，這些都詳細記錄在《[2024q1 Homework5 (assessment)](https://hackmd.io/@yuu907/linux2024-homework5)》中。這次的討論不僅釐清了我對某些專業概念的理解，還提供了關於選擇期末專題的建議，特別是考慮到我即將畢業並尋找工作的情況。
+
+互動時間:
+2024年5月11日 (週六) 下午1:30 – 下午2點 (GMT+8)
+
+### 所見所聞所感
+自評分數: 9 分
+
+在修讀這門課程期間，面對堆積如山的教材，我總覺得自己永遠無法完全讀完它們。我一直保持著盡力而為的心態，硬撐到現在。經過這段時間的學習，我敢說自己比起課程開始時已經強大許多，也掌握了許多實用的知識，例如撰寫有效的 commit message 。在學習過程中，由於同時要應對論文實驗的壓力，我多次想過放棄。然而，在讀了《[因為自動飲料機而延畢的那一年](https://blog.opasschang.com/the-story-of-auto-beverage-machine-1)》這篇文章後，受到文章中學長的故事啟發，我決定不輕易放棄，持續堅持下去。在撰寫作業的時候，我會觀察其他同學的方法，反思自己的不足之處，這也讓我意識到自己還有很大的進步空間。正如老師所言，要**誠實面對自己**的不足，知道的就是知道，不知道的就是不知道，只需找到方法補齊這些不足。我期待未來能持續以這種精神前進，不斷進步。
+
+### 指導教授的學習回顧
+自評分數: 10 分
+
+在每個月結束時，我都會按時與我的指導教授分享過去一個月的學習成果和進度回顧。這不僅幫助我確認自己的學習是否有實質進展，也讓我檢視自己是否僅是原地踏步，從而更精確地調整未來的學習計劃。
+
+發信時間:
+
+- 二月: 2024/03/02(六) 18:53
+
+- 三月: 2024/04/02(二) 21:45
+
+- 四月: 2024/05/17(五) 20:39
+
+- 五月: 2024/06/18(二) 14:29
