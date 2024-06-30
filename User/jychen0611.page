@@ -50,12 +50,22 @@ categories: User
 ## 期末專題
 * 虛擬無線網路裝置驅動程式 : [Github](https://github.com/jychen0611/vwifi)/[HackMD](https://hackmd.io/@sysprog/rJ-LF4nNC)
 
+這部份我打 9 分，我使 `vwifi` 
+
+* 得以運作於 Linux v6.8+
+* 增添 802.11n (HT) 的 MCS data rates 的支援
+* 針對 cfg80211 介面實作對應的功率設定機制
+
+並且嘗試實作 ad hoc (IBSS) mode 並提交 pull request (詳見 [Support ad hoc network](https://github.com/sysprog21/vwifi/pull/70))
+
 ## 與授課教師的互動
 * 2024.03.21 23:00 課後詢問 lab0-c 相關問題
 * 2024.05.03 16:00 一對一討論
 * 2024.06.06 19:30 課堂討論
 * 2024.06.30 16:30 成果展示
 * 在 github 上與老師的互動
+
+這部份我打 10 分，找到 `Jserv` 最快的方式就是提交 pull request
 
 ## 所見所聞所感
 
@@ -64,3 +74,5 @@ categories: User
 * 三月學習回顧(2024.04.08): 描述作業一的進行狀況
 * 四月學習回顧(2024.05.05): 描述作業三的進行狀況
 * 五月學習回顧(2024.06.01): 描述期末專題進行狀況
+
+這部份我打 10 分，我每個月都有撰寫對應的學習回顧給指導教授並 Cc.授課教師
