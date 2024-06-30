@@ -1,0 +1,23 @@
+# 自我評量
+整體分數 
+
+## 成果發表和貢獻 (7/10)
+1. 修正 《Demystifying the Linux CPU Scheduler》第一章錯字，因為老師的書籍沒有公開且修正方法是口頭告知老師，所以沒有證明
+2. 修正 openSBI 文件錯字，[commit 0e45b63](https://github.com/riscv-software-src/opensbi/commit/0e45b634713d8a67d8a905e8970e93682c1db64f)
+
+## 作業/隨堂測驗 (9/10)
+1. [作業一](https://hackmd.io/KbgAPOOvT-uqnX9IbsA15g)
+2. [作業二](https://hackmd.io/7vC8dtKoQnW3V_SYdkIn2Q)
+3. [作業三](https://hackmd.io/KbgAPOOvT-uqnX9IbsA15g) ttt 部分
+4. [作業四](https://hackmd.io/j_7_rQ4URzOueOYEYv0L8w)
+在訂正前幾周隨堂測驗時，都有嘗試以數學證明或做相對應的測試程式，也有使用 perf 做分析。另外也有將 cpython 中 sort test 移植使用 C 語言實作。這幾個作業我覺得算是在我進入研究所之前，讓我知道真實世界的研究、分析是如何進行的，就算未來研究的目標可能不是軟體，仍然可以套用。
+
+## 期末專題 (10/10)
+[開發紀錄](https://hackmd.io/IA8sew79T52ntv-uzB-4Lg?view#Obtain-previous-project-file)
+做了期末專題才知道真實世界的 CPU 是如何和作業系統溝通，也學到先前完全零概念的作業系統啟動流程。這個專案很像我大學的總複習，從計算機架構、計算機微架構、verilog RTL 實作、C語言、組合語言，若任何一個部分不熟專案在運到問題時都會窒礙難行，很難快速聯想到哪裡會有問題。經過這次專案，之後研究所要做 CPU 架構、微架構的研究能夠透過這次專案的經驗實作出 FPGA emulation demo 的成品。
+
+## 與授課教師的互動 (8/10)
+一對一討論時段: 5月 2日 (星期四)⋅上午11:00 - 11:30
+整學期的課程，包括星期二實體上課和星期四線上上課我沒有一次缺席，被老師點到的次數很少但是每次老師在問其他同學問題時(尤其是剛開學)我都有跟著思考並嘗試回答。學期中老師曾問我和學長 同步及非同步的區別，我有查看電子學課本嘗試回答，[筆記連結](https://hackmd.io/VzNbbFbrS3ijG7NI5lb-rA), Propagation Delay 部分。
+
+## 所見所聞所感 ()
