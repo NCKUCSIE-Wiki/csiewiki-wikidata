@@ -28,6 +28,18 @@ categories: User
 * Homework6 (integration) [HackMD](https://hackmd.io/kXFroi_hQRqAqzPtoi8ylg)
 
 ## 第三項、期末專題
+評分:   
+我給自己 9 分
+* Linux 核心專題: 高性能網頁伺服器 [HackMD](https://hackmd.io/OVUxtUIxQr6N7pqLwUQyFA?view)/[GitHub](https://github.com/Ackerman666/khttpd)
+
+期末專題是以 khttpd (核心模組的網頁伺服器)為基礎去做改進，過程中學到了以下幾點。
+* 學到 HTTP1.1 keep alive，與 TCP 連斷線的運作機制。
+* 利用 CMWQ 代替 kthread， 以此降低面對新連線反覆製造執行緒的成本。
+* 透過分塊傳輸編碼實現基本目錄展示功能，並透過 MIME 使瀏覽器能展出不同種類的檔案內容。
+* 透過 ebpf, ftrace 方法追蹤關鍵函式執行成本
+
+我在期末專題主要欠缺了利用 RCU 機制釋放系統資源 (如清除閒置連線)，相關流程與資料結構大致想好，但就差尚未動手實現。
+在之後暑假實習空閒之餘，我會努力補足剩下內容，將專題做個結尾也對自己有一個交代。
 
 ## 第四項、與授課教師的互動
 評分:   
