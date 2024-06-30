@@ -4,13 +4,20 @@ categories: User
 ...
 
 # 簡介
-* 國立成功大學 資訊工程學系 110 級 (2017 ~ 2022)
-* 國立成功大學 資訊工程研究所 (2023 ~ )
+* 國立台南二中
+* 國立成功大學 資訊工程學系 
+* 國立成功大學 資訊工程研究所 
 
 * GitHub: [`jychen0611`](https://github.com/jychen0611)
 * HackMD: [`jychen0611`](https://hackmd.io/@jychen0611)
 
-## 成果發表和貢獻
+## 專案貢獻
+* [vwifi](https://github.com/sysprog21/vwifi)
+    * [Align with recent cfg80211 header](https://github.com/sysprog21/vwifi/commit/35ca058e767d87a7c809091ae910b2bf02687870)
+    * [Fix buffer overflow](https://github.com/sysprog21/vwifi/commit/362639786d5611b855c47365e62bcaed615dc20a)
+    * [Fix commands in top-level documentation](https://github.com/sysprog21/vwifi/commit/de729c3c4a56be44a658dbe1c3306722ba296bf9)
+    * [Support data rate and MCS](https://github.com/sysprog21/vwifi/commit/a8bdf8a4405cbc5e25beb29bb1956bfac82ca303)
+    * [Support transmit power](https://github.com/sysprog21/vwifi/commit/f63872b273f223b963c807c5e39b5f3299a818f5)
 
 ## 作業/隨堂測驗
 
