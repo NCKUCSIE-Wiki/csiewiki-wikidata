@@ -4,18 +4,46 @@ categories: User
 ...
 
 # 簡介
-- 國立成功大學 資訊工程學系114級
+- 國立成功大學 資訊工程學系 114 級
 - Github: [yenslife](https://github.com/yenslife)
 - HackMD: [yenslife](https://hackmd.io/@yenslife)
 
 # 2024 Linux 核心設計 春季班 自我評量
 
 ## 成果發表和貢獻
+- [lab0-c](https://github.com/sysprog21/lab0-c) 
+  - [Check if sorting implementation is stable (commit b0aa080)](https://github.com/sysprog21/lab0-c/commit/b0aa080e0ee61b745d8b6c30711496fff2f48bce)
+- 《Demystifying the Linux CPU Scheduler》修訂
+  - [Add explanations related to DEFINE_SCHED_CLASS (commit 670559f)](https://github.com/sysprog21/linux-kernel-scheduler-internals/commit/670559f9c39a8bbcb02d14d71df69c115f9e20e8)
+  - [Update sched_class.h for kernel v6.x (commit 5fd54f9)](https://github.com/sysprog21/linux-kernel-scheduler-internals/commit/5fd54f9375fc0c87646fb15c4362527b21c6d02c)
+  - [Update task_struct state docs for kernel v6.x (commit c22f920)](https://github.com/sysprog21/linux-kernel-scheduler-internals/commit/c22f920249fc6861a6f289cc3e0cc2e299815ee1)
+  - [Update task_struct.h for current Linux kernel (commit 1ff5d23)](https://github.com/sysprog21/linux-kernel-scheduler-internals/commit/1ff5d23333d02ddba80f7074dc9127ce441f0d22)
+  - [Improve section Per-Entity Load Tracking (commit 9bbbffe)](https://github.com/sysprog21/linux-kernel-scheduler-internals/commit/9bbbffe24e737dc102ca23fba5d5716b6778ee25)
+  - [Fix typos in scheduler.tex (commit be5a7cd)](https://github.com/sysprog21/linux-kernel-scheduler-internals/commit/be5a7cd1051a9e204e41cbf3450fd1e45df76171)
+
+課程教材貢獻
+
+TODO: 自我評分與反省
 
 ## 作業/隨堂測驗共筆
+- lab0-c/homework3-review: [Github](https://github.com/yenslife/lab0-c) / [HackMD](https://hackmd.io/@yenslife/linux2024-homework1)
+- Homework2 (quiz1+2): [HackMD](https://hackmd.io/@yenslife/linux2024-homework2)
+- Homework5 (assessment): [HackMD](https://hackmd.io/@yenslife/linux2024-homework5)
+
+TODO: 自我評分與反省
 
 ## 期末專題
 
+TODO: 列出專題、自我評分與反省
+
 ## 與授課教師的互動
 
+TODO: 列出課堂討論、一對一討論、PR 互動、自我評分與反省
+
 ## 所見所聞所感
+
+TODO: 自我評分及反思
+
+## 自我評分
+
+TODO: 完成上方自評後，案方案 B 計算成績
