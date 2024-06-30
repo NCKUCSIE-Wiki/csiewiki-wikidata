@@ -20,6 +20,7 @@ categories: User
     * [Support transmit power](https://github.com/sysprog21/vwifi/commit/f63872b273f223b963c807c5e39b5f3299a818f5)
 
 這部份我打 9 分，在對 vwifi 做出貢獻的同時使我熟悉
+
 * git 相關操作，像是 git rebase 
 * 提交 pull request 的流程
 * 建立 issue 討論專案走向
@@ -32,6 +33,19 @@ categories: User
 
 ## 作業/隨堂測驗
 * lab0-c/ttt : [Github](https://github.com/jychen0611/lab0-c)/[HackMD](https://hackmd.io/NCV2VQAWQe60GtwtIjypjA)
+
+這部份我打 8 分，作業一和作業三讓我學到了
+
+* 裝 linux 雙系統，設定相關開發環境
+* List API 的使用
+* 寫好 commit message
+* 接受 code review 並改進
+* 習慣閱讀第一手材料
+* 使用 `gnuplot` 畫圖
+* coding style 的重要性
+* git rebase 的使用
+* 測試程式的撰寫
+* 定點數相關運算
 
 ## 期末專題
 * 虛擬無線網路裝置驅動程式 : [Github](https://github.com/jychen0611/vwifi)/[HackMD](https://hackmd.io/@sysprog/rJ-LF4nNC)
