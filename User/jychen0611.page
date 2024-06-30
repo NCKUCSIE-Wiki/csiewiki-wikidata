@@ -32,7 +32,7 @@ categories: User
 # 2024 Linux 核心設計 春季班
 
 ## 作業/隨堂測驗
-* lab0-c/ttt : [Github](https://github.com/jychen0611/lab0-c)/[HackMD](https://hackmd.io/NCV2VQAWQe60GtwtIjypjA)
+* lab0-c / ttt : [Github](https://github.com/jychen0611/lab0-c) / [HackMD](https://hackmd.io/NCV2VQAWQe60GtwtIjypjA)
 
 這部份我打 8 分，作業一和作業三讓我學到了
 
@@ -49,9 +49,9 @@ categories: User
 * **身為工程師表達用詞要嚴謹**
 
 ## 期末專題
-* 虛擬無線網路裝置驅動程式 : [Github](https://github.com/jychen0611/vwifi)/[HackMD](https://hackmd.io/@sysprog/rJ-LF4nNC)
+* 虛擬無線網路裝置驅動程式 : [Github](https://github.com/jychen0611/vwifi) / [HackMD](https://hackmd.io/@sysprog/rJ-LF4nNC)
 
-這部份我打 9 分，我使 `vwifi` 
+這部份我打 9 分，我使 [vwifi](https://github.com/sysprog21/vwifi) 
 
 * 得以運作於 Linux v6.8+
 * 增添 802.11n (HT) 的 MCS data rates 的支援
@@ -66,7 +66,7 @@ categories: User
 * 2024.06.30 16:30 成果展示
 * 在 github 上與老師的互動
 
-這部份我打 10 分，找到 `Jserv` 最快的方式就是提交 pull request
+這部份我打 10 分，找到 [Jserv](https://wiki.csie.ncku.edu.tw/User/jserv) 最快的方式就是提交 pull request
 
 ## 所見所聞所感
 
