@@ -30,9 +30,11 @@ categories: User
 ## 第三項、期末專題
 評分:   
 我給自己 9 分
+
 * Linux 核心專題: 高性能網頁伺服器 [HackMD](https://hackmd.io/OVUxtUIxQr6N7pqLwUQyFA?view)/[GitHub](https://github.com/Ackerman666/khttpd)
 
 期末專題是以 khttpd (核心模組的網頁伺服器)為基礎去做改進，過程中學到了以下幾點。
+
 * 學到 HTTP1.1 keep alive，與 TCP 連斷線的運作機制。
 * 利用 CMWQ 代替 kthread， 以此降低面對新連線反覆製造執行緒的成本。
 * 透過分塊傳輸編碼實現基本目錄展示功能，並透過 MIME 使瀏覽器能展出不同種類的檔案內容。
