@@ -12,15 +12,49 @@ categories: User
 * HackMD: [ShchangAnderson](https://hackmd.io/@ShchangAnderson)
 
 ### 成果發表與貢獻
+自評分數: 6 分
 
+在這部分並沒有做出實際的貢獻，不過透過這堂課的教材以及作業，實際的閱讀第一手的原文資料以及接觸開源程式碼專案，在期末專題當中實際的修改去年的期末專題程式碼，同時閱讀 Linux 核心當中的 commit 紀錄，進行更多的實驗，這些經驗一定能讓我在未來有對於 Linux 核心和相關專案有機會進行貢獻。
 ### 作業與隨堂測驗
+自評分數: 10 分
+
+我用心投入每份作業，儘管有些部分尚未臻至完美，但在此課程中，我所付出的努力與時間早已超乎當初的預期。透過實作，我深入了解了 C 語言和 Linux 核心的運作原理，並從 Linux 核心原始程式碼中學習到良好的 coding style。我也掌握了 git 版本控制的精確技巧，能有效管理專案的開發流程。
+
+課程中，我運用 Linux 核心提供的 List API 實作鏈結串列的各項功能，更學會使用 Valgrind 和 perf 等工具進行執行時期的記憶體錯誤偵測和程式效能分析。這些實踐經驗不僅提升了我的程式開發能力，更讓我對系統底層的運作機制有了更深刻的理解。
+
+* Homework1 (lab0) [HackMD](https://hackmd.io/@ShchangAnderson/ryWsAyUna)
+* Homework2 (quiz1+2) [HackMD](https://hackmd.io/@ShchangAnderson/linux2024-homework2)
+* Homework4 (quiz3+4) [HackMD](https://hackmd.io/@ShchangAnderson/linux2024-homework4)
+* Homework5 (assessment) [HackMD](https://hackmd.io/@ShchangAnderson/linux2024-homework5)
+* Homework6 (integration) [HackMD](https://hackmd.io/@ShchangAnderson/2024q1_Homework6)
 
 ### 期末專題
+自評分數: 10 分
+
+在期末專題中，我深入研究了 rhashtable 和核心記憶體管理。我並未止步於理論，而是實際修改了去年的專題程式碼，並撰寫 Linux 核心模組的測試程式碼來驗證想法。為了讓專題更貼近實務，我研讀了 Linux 核心程式碼的變革，並將其加入我的研究中。這些努力不僅展現了我在這堂課的學習成果，更體現了我在這堂課中的進步。
+
+* rhashtable 和核心記憶體管理研究：[Github](https://github.com/SHChang-Anderson/rcuhashbash) / [HackMD](https://hackmd.io/@sysprog/rkOByUtI0)
 
 ### 與授課教師的互動
+自評分數: 8 分
+
+* 5/11 下午 2:30 一對一討論
+
+在一對一討論中，我把握機會向老師請教了關於中斷處理實作的相關問題，並獲得了詳細的解答。同時，我也在這次討論中與老師共同訂定了期末專題的題目。雖然與老師的互動只有一次，但這次討論對我釐清觀念和確定專題研究方向有著很大的幫助。
 
 ### 修課心得
+自評分數: 10 分
+
+閱讀《因為自飲料機而延畢的那一年》，我深刻體會到理論與實務的差距，並意識到許多學生空有知識卻不懂應用。在這門課中，老師鼓勵我們動手實作，透過撰寫 Linux 核心模組、進行實驗，將課堂所學的理論知識與實際操作結合。在期末專題中，我更進一步研讀 Linux 核心原始程式碼，並從中學習如何將理論應用於解決實際問題。這樣的學習方式讓我獲益匪淺，不僅加深了對課程內容的理解，更培養了解決問題的能力。
 
 ### 與指導教授的學習回顧
+自評分數: 6 分
+
+在此部份我只有在期末時做一個總結回顧然而在實驗室個別 meeting 當中，有向指導教授報告說明本課程內容，以及自身的投入狀況。
+雖然與教授的正式回顧只有一次期末的總結回顧，但我也曾在實驗室的個別 meeting 中向指導教授報告說明本課程內容，以及自身的投入狀況。
+
+* 學習回顧 (2024年6月28日 下午4:17)  
 
 ### 自我評量
+* GEOMEAN：$\sqrt[6]{6*10*10*8*9*6}=8.12$
+* 方案 B：$1+\lfloor 8.12 \rfloor=9$
