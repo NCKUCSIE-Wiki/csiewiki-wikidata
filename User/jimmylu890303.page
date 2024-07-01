@@ -47,6 +47,8 @@ Virtio-net with KVM-host: [HackMD](https://hackmd.io/lmEdNQoAQxyvwaTdGAeqNQ?view
 
 在這次專題中，分析 KVM 運作原理，並展示一個以 KVM 為基礎的精簡虛擬機器管理程式實作( kvm-host )，它能在 x86-64 及 arm64 平台上運作，提供了基本的 VirtIO 儲存裝置、 serial 裝置 (用來作為 console) ，並且能成功在上面執行 Linux 系統，而專題目標是在該虛擬機器上實作 Virtio-net 裝置。
 
+並且目前正在提交 [pull request](https://github.com/sysprog21/kvm-host/pull/34) 貢獻到 kvm-host 上。
+
 ### 與授課教師的互動
 
 一對一討論：5月 20日 (星期一)⋅下午2:30 - 3:00
@@ -60,6 +62,14 @@ Virtio-net with KVM-host: [HackMD](https://hackmd.io/lmEdNQoAQxyvwaTdGAeqNQ?view
 * [問題三](https://hackmd.io/@jimmylu0303/linux2024-homework5#%E5%95%8F%E9%A1%8C%E4%B8%89): 在 /dev/ 下的裝置有 major number 和 minor number，在對 /dev/下的裝置作操作時， linux kernel 會透過 major number 去找到對應的 module ， 但是若有多個 device 對應到同個 major number，也是會找相同的 module，但是要如何透過不同的 minor number 去控制不同的驅動行為 ?
 
 ### 修課心得
+
+當我開始這門課程時，我便一直在追趕進度。每次作業的死線一到，我還是無法完成作業，同時也無法掌握所有的教材，只能勉強閱讀部分內容。然而，我認識到人不可能什麼都懂，必須要取捨學習的重點。對於《你所不知道的 C 語言》這本教材，我學到了許多撰寫程式的技巧，尤其是如何使用前置處理器進行優化，並學習了位元操作（Bit Operation）及其優化方法。
+
+此外，關於 Linux Kernel Module 的教材，我也受益良多，特別是學習如何使用 Character Device 進行驅動開發。在期中時，我曾仔細閱讀這部分內容，因此在期末專題進行 virtqueue 的 Operation callback function 時，我有了較清晰的概念。因為 Character Device 在進行讀寫操作時，也會呼叫相應的操作回調函數，所以儘管我只閱讀了部分教材，但這些內容都與我未來的職涯發展有著正相關的影響。
+
+最後，談到期末專題，在實作過程中我遇到了許多問題，網路上找不到解決方案，最終還是回去閱讀規格書，並且在規格書中找到了相關定義。這堂課帶給我最大的收穫是學會了如何查閱第一手資料。起初，我以為自己無法完成這個專題，但我仍然努力學習，最終順利完成並在線上發表，這是一個非常圓滿的結束。
+
+總結來說，這門課程雖然挑戰重重，但我學到了許多實用的技巧和知識，這些對我未來的職涯發展都有積極的影響。
 
 ### 與指導教授的學習回顧
 二月回顧：3月8日 下午12:58
@@ -76,6 +86,6 @@ Virtio-net with KVM-host: [HackMD](https://hackmd.io/lmEdNQoAQxyvwaTdGAeqNQ?view
 
 研讀黃敬群老師的《你所不知道的 C 語言》教材以及《 Computer Systems: A Programmer's Perspective 》這本課本的前兩章，並將學習到的東西紀錄下來。 在 CS:APP 這本書中，從最基礎的事情開始介紹，介紹許多關於變數型態的事情。 在撰寫程式時，常常會遇到未知的錯誤，而這些未知的錯誤常常就是因為不同型態的變數轉換所造成的錯誤，所以在閱讀完這前兩章後，有更進一步的了解數值系統的重要性。
 
-認識 Linux Kernel Module ，閱讀完黃敬群老師的教材後，認識到 Module 如何透過虛擬檔案系統  (Virtual File System, VFS) 與周邊裝置進行互動，並且透過 Character Device 可以將資料從 User space 到 Kernel space 間相互傳送。
+認識 Linux Kernel Module ，閱讀完黃敬群老師的教材後，認識到 Module 如何透過虛擬檔案系統  (Virtual File System, VFS) 與週邊裝置進行互動，並且透過 Character Device 可以將資料從 User space 到 Kernel space 間相互傳送。
 
 ### 自我評量
