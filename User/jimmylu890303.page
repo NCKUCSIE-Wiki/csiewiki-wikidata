@@ -89,3 +89,6 @@ categories: User
 認識 Linux Kernel Module ，閱讀完黃敬群老師的教材後，認識到 Module 如何透過虛擬檔案系統  (Virtual File System, VFS) 與週邊裝置進行互動，並且透過 Character Device 可以將資料從 User space 到 Kernel space 間相互傳送。
 
 ### 自我評量
+$(4 \times 7 \times 9 \times 7 \times 9 \times 8) ^ {1/6} = 7.09$ 
+
+使用方案 B 計分：$1 + floor(7.09) = 8$
