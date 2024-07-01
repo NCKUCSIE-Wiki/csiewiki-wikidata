@@ -59,9 +59,21 @@ categories: User
 ## 分項自我評量
 
 1. 參與 《Demystifying the Linux CPU Scheduler》 編撰 (9 分)
+    修改第二章文法及錯別字，以及 2.4 EEVDF 章節，增修 2.4.2 之後章節。
+由於 EEVDF 仍在開發中，並且持續改進原始論文或原先設計，需要持續追蹤 Patch Series 了解未來可能進行的變更及其理由
+故亦將過程整理為 [Patch Review](https://hackmd.io/@Kuanch/eevdf) 心得。
+
 2. 作業 1 - 6 皆有如期完成，且有一定完成度 (9 分)
+    所有的作業都有對應的產出，並有不同於其他同學的延伸問題探討；如[HW4 W3-Q2](https://hackmd.io/@Kuanch/linux2024-collection/https%3A%2F%2Fhackmd.io%2F%40Kuanch%2Flinux2024-homework4#%E8%A9%95%E4%BC%B0-CPU-%E9%80%B1%E6%9C%9F%E6%95%B8%E9%87%8F) 等。
+此外，我認為我記載於 [Linux Kernel Internals 2024 Spring](https://hackmd.io/@Kuanch/linux2024-collection) 的其他筆記，如 "[從 start_kernel 到第一個任務](https://hackmd.io/@Kuanch/linux-kernel-scheduler-notes4)" 等延伸討論，也可作為此項計分。
+
 3. 期末專題可參考前述，具有一定完成度，所有的 TODO 皆有產出 (9 分)
+    對於每一項 TODO 皆有相對應內容，並且參與期末專題展出；此外，專題內容遠多於專題展示內容，並且在 TODO 之外的相關延伸，
+譬如 kprobe 以及 qemu 等使用都有詳盡介紹，故我在此項也給予高分。
+
 4. 與老師討論兩次，分別為 5 / 1 及 6 / 8 (7 分)
+    事實上除了本兩次討論外，也有多次未成功的預約，我認為雖然僅有兩次討論，但展現的積極度可以加分。
+
 5. 投入狀況以及心得 (7 分)
 
     投入狀況我給自己 7 分。
