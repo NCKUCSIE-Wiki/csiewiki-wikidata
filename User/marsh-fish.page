@@ -14,8 +14,8 @@ categories: User
 評分:   
 我給自己 6 分
 
-在研究 [rbtree.c](https://elixir.bootlin.com/linux/v6.9.6/source/lib/rbtree.c) 的程式碼時，發現了例子錯誤，便順手發了 patch，這也是我第一次發 patch，雖然僅僅是修改例子錯誤，能被接受還是令我相當雀躍。
-[Fix the example typo patch](https://lore.kernel.org/all/20240628142229.69419-1-zxcvb600870024@gmail.com/T/#u)
+[Fix the example typo patch](https://lore.kernel.org/all/20240628142229.69419-1-zxcvb600870024@gmail.com/T/#u) 在研究 [rbtree.c](https://elixir.bootlin.com/linux/v6.9.6/source/lib/rbtree.c) 的程式碼時，發現了例子錯誤，便順手發了 patch，這也是我第一次發 patch，雖然僅僅是修改例子錯誤，能被接受還是令我相當雀躍。
+
 
 ## 第二項、作業/隨堂測驗
 評分:   
@@ -49,7 +49,10 @@ Homework6 (integration) [HackMD](https://hackmd.io/@marsh-fish/linux2024-homewor
 評分:   
 我給我自己  分。
 
-題目：研究紅黑樹: https://hackmd.io/@sysprog/rJbMiW3S3 紀錄問題並重現實驗 + extra [HackMD](https://hackmd.io/@marsh-fish/B1jj9GhSC)
+Linux 核心專題: 紅黑樹實作 [HackMD](https://hackmd.io/@sysprog/HkZcqus8R)
+
+最初我的 TODO 並沒有被明確的寫下來，令我有些不知所措，猶豫半刻後，便決定先把知道的部分做出來，後來，我為了真正的了解紅黑樹，往後的時間我都拿來研讀紅黑樹的相關教材，和 [rbtree.c](https://elixir.bootlin.com/linux/v6.9.6/source/lib/rbtree.c) 的程式碼，也因此讓我有機會修正其中的錯誤，最讓我驚訝的是 TODO 的 extra 內容竟然和我在做的事情一模一樣，這也令我又一次體會到「機會是留給準備好的人」。
+
 
 
 ## 第四項、與授課教師的互動
