@@ -28,13 +28,15 @@ categories: User
 
 ### 作業與隨堂測驗
 * lab0: [HackMD](https://hackmd.io/@NIYINGCHIH/linux2024-homework1)
+完成指定的佇列操作，針對使用到的 git hook 和 clang-format 做查詢並理解，完成 list_sort 和 Tim_sort 的引入，實作 Fisher–Yates shuffle。
 
 * quiz1 + 2: [HackMD](https://hackmd.io/@NIYINGCHIH/2024q1_Homework2)
+
 
 * quiz3 + 4: [HackMD](https://hackmd.io/@NIYINGCHIH/linux2024-homework4)
 
 * Assessment: [HackMD](https://hackmd.io/@NIYINGCHIH/2024q1_Homework5_assessment)
-
+撰寫閱讀〈因為自動飲料機而延畢的那一年〉後的心得，研讀課程教材並提出疑問。
 * Integration: [HackMD](https://hackmd.io/@NIYINGCHIH/linux2024-homework6)
 
 ### 期末專題
@@ -65,7 +67,7 @@ Pub/Sub模擬: [HackMD](https://hackmd.io/@NIYINGCHIH/PubSub)
 
 * 陸游的名言："紙上得來終覺淺，絕知此事要躬行"，以及蔡志浩的觀點："大部分的人一輩子洞察力不彰，原因之一是怕講錯被笑。想了一點點就不敢繼續也沒記錄或分享，時間都花在讀書查資料看別人怎麼想。看完就真的沒有自己的洞察了"
 
-*<The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits>
+* <The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits>
 
 ### 自我評量
 
