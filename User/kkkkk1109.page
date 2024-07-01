@@ -12,14 +12,19 @@ categories: User
 # 2024 Linux 核心實作自我評量
 ## 成果發表與貢獻
 ## 作業/隨堂測驗
-* [`Homework 1`](https://github.com/kkkkk1109)
-* [`Homework 2`](https://github.com/kkkkk1109)
-* [`Homework 3`](https://github.com/kkkkk1109)
-* [`Homework 4`](https://github.com/kkkkk1109)
-* [`Homework 5`](https://github.com/kkkkk1109)
-* [`Homework 6`](https://github.com/kkkkk1109)
+對於作業，我選擇給自己 9 分，即使我並沒有達成所有的作業要求。
+在作業一中，重新複習了資料結構中的內容，如各種排序法和佇列的操作。其中對於雙向佇列的操作，是第一次碰到使用龜兔賽跑法來找佇列中央的節點，藉由指針的操作來思考如何有效率和安全的進行節點操作，也用在實驗室的計畫當中。除此之外，也學習到了各種工具的使用方法:如使用 Valgrind 檢查記憶體釋放和 Linux 、 Github 的基本操作。
+* [`Homework 1(\lab0)`](https://hackmd.io/@kkkkk1109/linux2024-homework1)
+在作業二中，要對第一週和第二週的測驗題進行解釋和分析。第一週測驗著重在各種排序法，Timsort 排序是我第一次碰到，光是研讀程式碼內容就花費了許多時間，也為了理解其中原理和同學討論到半夜。
+* [`Homework 2`](https://hackmd.io/@kkkkk1109/linux2024-homework2)
+* [`Homework 3`](https://hackmd.io/@kkkkk1109/linux2024-homework1)
+* [`Homework 4`](https://hackmd.io/@kkkkk1109/linux2024-homework4)
+* [`Homework 5`](https://hackmd.io/@kkkkk1109/linux2024-homework5)
+* [`Homework 6`](https://hackmd.io/@kkkkk1109/linux2024-homework6)
+
 ## 期末專題
 ## 與授課教師的互動
+* [`課堂筆記`](https://hackmd.io/3e8LI8_0SLOo_UTDAnPKYQ#kkkkk1109)
 ## 所見所聞所感
 
 
