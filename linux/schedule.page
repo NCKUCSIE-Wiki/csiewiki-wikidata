@@ -435,7 +435,7 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
     * 公告
         - 依據「教師線上成績登錄系統」，112 學年第 2 學期繳交期限為 7 月 7 日 23:59，授課教師預計在當日晚間繳交成績，學員在此之前都有努力空間，請重視自己的權益
         - 自我評量務必在 7 月 4 日中午前完成
-        - [2024 年 Linux 核心設計/實作課程期末展示](https://hackmd.io/@sysprog/linux2024-showcase)
+        - [2024 年 Linux 核心設計/實作課程期末展示](https://hackmd.io/@sysprog/linux2024-showcase)`*`
         - 7 月 2 日是本學期最後一次授課，改為 19:30 進行 (事後提供錄影)，涉及期末專題和自我評量的檢討，所有學員務必參加。
     * [Linux kernel panic 排除](/kernel-debugging.pdf)
     * [教材解說-1](https://youtu.be/vS8U23bhidg)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
@@ -452,5 +452,6 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
 
 * 第 20 週 (Jul 2): 回顧和檢討
     * [課程自我評量](https://hackmd.io/@sysprog/linux2024-assessment)
-    * [透過 Linux 核心重新認識數位化世界](https://bit.ly/linux2024-short): 藉由 Dominic Walliman 製作的〈Map of Computer Science〉短片，探討電腦科學的多個面向，諸如電腦網路、圖形處理、抽象機器及理論( 如Turing machine)、NP-Complete 問題、計算機架構、排序演算法、資料壓縮、現代密碼學、形式化方法、作業系統排程、異質多核運算、編譯器，和程式語言，來回顧今日的 Linux 核心 ── 電腦科學的子學科幾乎都可反映在 Linux 核心中。
+    * [透過 Linux 核心重新認識數位化世界](https://bit.ly/linux2024-short): 藉由 Dominic Walliman 製作的〈[Map of Computer Science](https://youtu.be/SzJ46YA_RaA)〉短片，探討電腦科學的多個面向，諸如電腦網路、圖形處理、抽象機器及理論( 如Turing machine)、NP-Complete 問題、計算機架構、排序演算法、資料壓縮、現代密碼學、形式化方法、作業系統排程、異質多核運算、編譯器，和程式語言，來回顧今日的 Linux 核心 ── 電腦科學的子學科幾乎都可反映在 Linux 核心中。
+    * [課程期末展示](https://hackmd.io/@sysprog/linux2024-showcase)`*`
     * [期末專題](https://hackmd.io/@sysprog/linux2024-projects)檢討
