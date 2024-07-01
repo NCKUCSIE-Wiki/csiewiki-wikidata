@@ -18,14 +18,35 @@ categories: User
 
 ### 作業/隨堂測驗
 
-目前我的作業沒有達到老師的標準，但我在作業上也收穫很多，列舉如下。
-* 資料結構
-  double linked list ， ring buffer ， 紅黑樹 ， kfifo 等等
-* 演算法
-  混合排序
-* 作業系統
-  同步機制，並行設計，中斷系統
-在隨堂測驗方面，我參與了每一次的測驗，每一次測驗的內容都不太一樣，很多測驗對我來說還是很困難的，但這些測驗讓我認識了 Linux 核心設計的各種議題。這一評分項目，我給自己打7分。
+作業 :
+
+[`2024q1 Homework1 (lab0)`](https://hackmd.io/vgp02AauR2eojpu1Cfe0_g)
+
+[`2024q1 Homework2 (quiz1+2)`](https://hackmd.io/OCEwBZvpSqm8zVb351EwCw)
+
+[`2024q1 Homework3 (review)`](https://hackmd.io/vgp02AauR2eojpu1Cfe0_g)
+
+[`2024q1 Homework4 (quiz3+4)`](https://hackmd.io/qavQR5TATaGJO28nelw09A)
+
+[`2024q1 Homework5 (assessment)`](https://hackmd.io/ocs-q3HnTt2B4z4U1LSOQw)
+
+[`2024q1 Homework6 (integration)`](https://hackmd.io/M6ASHNaQR4i1gng7VYm8cw)
+
+目前我的作業沒有達到老師的標準，但我在作業上也收穫很多，具體收穫如下：
+
+* 資料結構 : double linked list ， ring buffer ， 紅黑樹 ， kfifo 等等
+
+* 演算法 : 混合排序
+
+* 作業系統 : 同步機制，並行設計，中斷系統 等等
+
+隨堂測驗 : 
+
+在隨堂測驗方面，我參與了每一次的測驗，每一次測驗的內容都不太一樣，每一次測驗要在短時間內理解 200 - 300 行程式對我來說還是很困難的，特別是 bitwise 的考題，但這些測驗讓我認識了 Linux 核心設計的各種議題，具體收穫如下：
+
+* bitwise 操作，這學期好幾周的考題都是有關 bitwise 操作，到了最後一次測驗也是關於 bitwise 操作的，還是只考了 50 分，目前對 bitwise 掌握度還是不高，後續還要 review 考題。
+
+* 並行程序設計，包含 Atomics ， RCU(有一次上課在討論 RCU ，但忘了是不是考題內容)， Producer-consumer problem 。
 
 評分: 7分
 
@@ -64,4 +85,6 @@ categories: User
 
 這項評分本該是送分項目，但 3 月與 4 月未發學習回顧給實驗室指導教授，因此我給自己打 7 分。
 
-### 自我評分
+### 自我評量
+* GEOMEAN：$\sqrt[6]{7*7*7*7*7*7}=7$
+* 方案 B：$1+\lfloor 7 \rfloor=8$
