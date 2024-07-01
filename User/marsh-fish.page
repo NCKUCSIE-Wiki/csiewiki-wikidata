@@ -11,6 +11,11 @@ categories: User
 
 # 2024 Linux 核心實作 春季班 自我評量
 ## 第一項、成果發表和貢獻
+評分:   
+我給自己 6 分
+
+在研究 [rbtree.c](https://elixir.bootlin.com/linux/v6.9.6/source/lib/rbtree.c) 的程式碼時，發現了例子錯誤，便順手發了 patch，這也是我第一次發 patch，雖然僅僅是修改例子錯誤，能被接受還是令我相當雀躍。
+[Fix the example typo patch](https://lore.kernel.org/all/20240628142229.69419-1-zxcvb600870024@gmail.com/T/#u)
 
 ## 第二項、作業/隨堂測驗
 評分:   
