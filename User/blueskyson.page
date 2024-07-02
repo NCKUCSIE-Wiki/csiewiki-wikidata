@@ -66,5 +66,3 @@ categories: User
 在學期初做 lab0 實作 linked list 的 merge sort 過程中，學習到了查閱原始材料的重要性，其可以避免繞許多彎路，也不會被其他人的穿鑿附會所誤導，再來 trace code 時也要避免舉燭，而要參照 commit message 理解目標程式碼的目的，並搭配實驗去執行。在設計演算法的同時最好也針對硬體特性來優化，例如 linux 的 list_sort 為了減少 cache thrashing，引進了 2:1 balanced merge。前述這些經驗都幫助我在未來設計軟體時考慮到更多議題。
 
 在學期中做 fibdrv 時，學習了 kernel module 的特性和相關議題，例如 kernel space 到 user space 資料複製的成本、讓記憶體配置能夠 deterministic、in-place，比較 Karatsuba 和 Schönhage–Strassen 乘法的差異。在 ktcp 的作業追蹤了 kernel module 載入的過程。
-
-很可惜學期末一個月，因為個人能力不足，將大部分時間分配給另外兩門課，所以期末專題進度缺乏。
