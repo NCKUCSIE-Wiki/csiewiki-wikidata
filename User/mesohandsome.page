@@ -1,0 +1,69 @@
+---
+title: mesohandsome (柯朋佑)
+categories: User
+...
+
+## 簡介
+
+- 國立成功大學 資訊工程學系碩士班 113 級
+
+- Github: [mesohandsome](https://github.com/mesohandsome)
+
+- HackMD: [playone0317](https://hackmd.io/@Peng-You)
+
+## [2024 Linux 核心實作](https://wiki.csie.ncku.edu.tw/linux/schedule) 春季班 自我評量成績計算
+自評分數: **8** 分
+
+- 方案 B: 1 + floor(GEOMEAN)
+
+$GM = \sqrt[6]{x_1 \cdot x_2 \cdot x_3 \cdot x_4 \cdot x_5 \cdot x_6}$
+
+$score = 1 + \lfloor GM \rfloor = 1 + \lfloor 7.03 \rfloor = 8$
+
+### 成果發表與貢獻
+自評分數: 3 分
+
+記錄了幾項先前在閱讀教材的過程中所發現的錯誤，並在筆記中做了一些修正方案。
+
+- [第 3 週測驗 1](https://hackmd.io/@sysprog/linux2024-quiz3)中，有部分 Latex 數學式在 HackMD 上會有錯誤，讓我在閱讀這段證明時花了非常多時間才理解，相關的修正方式我有放在[作業筆記](https://hackmd.io/@Peng-You/linux2024-homework4)中。
+
+- [LKMPG 14.1 Tasklets](https://sysprog21.github.io/lkmpg/#:~:text=the%20tasklet%20debate.-,14.1%20Tasklets,-Here%20is%20an) 中的 example 所提供的範例及其輸出有誤，在我的[期末專題](https://hackmd.io/AfeJoiZKQwqy1PQ3QNY0Cw)中有提及這項錯誤。
+
+### 作業/隨堂測驗
+自評分數: 9 分
+
+剛接觸到第一個作業時，我以為能像以前一樣打開作業就開始寫，但看了作業要求後才發現自己完全不會使用 list API。此後，在做新的作業之前，我都會花一段時間閱讀並理解教材，然後才開始著手進行作業。當一個作業告一段落後，下一個作業隨即接踵而來，因此我投入更多精力閱讀教材並盡力完成作業。在這個過程中，我學習到過去沒有學完整的 C 語言以及 Linux 相關知識。然而，到了學期中後段，由於實驗及論文的進度壓力，我無法再將太多時間分配給課堂的教材和作業。儘管如此，我仍然努力完成作業。
+
+作業筆記:
+
+* [作業一/三](https://hackmd.io/@Peng-You/HJGcqpr3T)
+
+* [作業二](https://hackmd.io/@Peng-You/S1lgtZmpT)
+
+* [作業四](https://hackmd.io/@Peng-You/linux2024-homework4)
+
+* [作業五](https://hackmd.io/OC0bsw5xT8SoNMejFmnRuw)
+
+### 期末專題
+自評分數: 8 分
+
+我的期末專題是改進 [LKMPG](https://sysprog21.github.io/lkmpg/)。一開始，我對於 kernel module 完全沒有接觸過，而專題內容要求改進 LKMPG，因此我通讀了《The Linux Kernel Module Programming Guide》，學習如何使用及開發 kernel module，並記錄了閱讀中的疑惑和我認為可以改進的地方。我針對幾個項目提出了改進方法。另外，老師指定要引入 [simrupt](https://github.com/sysprog21/simrupt) 來說明 tasklet、mutex 和 kfifo 的使用方式。為此，我閱讀了相關教材和原始碼，將我所理解的內容整理成說明，同時也加深了我對這幾個項目的印象。
+
+- [期末專題: 改進 LKMPG](https://hackmd.io/AfeJoiZKQwqy1PQ3QNY0Cw)
+
+### 與授課教師的互動
+自評分數: 8 分
+
+在與老師的討論互動中，我進一步了解了自己目前欠缺的知識，也意識到以前在課堂上學到的一些知識僅僅停留在表面，並未深入理解其背後的原理。討論中，老師即時出了一道題目讓我作答，當下的我感到慌張。在回答完後，老師指出了我的不足之處，並告訴我這些不足在未來求職面試中的影響，使我能夠有針對性地改進自己的缺點。
+
+### 所見所聞所感
+自評分數: 10 分
+
+在上這堂課的過程中，透過每週大量的教材和作業，我深刻體會到自己對 Linux 相關知識的不足以及對無法完成作業的力不從心。儘管如此，我依然保持著學習的熱忱，努力完成課堂的要求。在這個過程中，我不僅學習到更多 C 語言和 Linux 的知識，還學會了使用 perf 進行效能測量、graphviz 繪圖等實用工具。到了學期中後段，我開始萌生退意，但總會想到老師所說的「**誠實面對自己**」。因此，我積極面對自己的不足之處，因為我知道自己不是天資聰穎的人，未來也會遇到許多不理解、不會的事情，不可能每次都退縮。期許未來我能夠記住並保持這樣的態度，努力進取。
+
+### 指導教授的學習回顧
+自評分數: 8 分
+
+對於每個月的課程和學習狀況，我對自己的學習進度有一定程度的掌握。不論是在課堂還是實驗室的實驗和論文方面，我能妥善管理。因此，除了第一個月之外，我並沒有頻繁地發送學習回顧。在這個過程中，我學到了許多與研究內容相關的知識，並能夠相互對應，從中找到更多有用的知識並加以利用。
+
+- 二月: 2024/03/06
