@@ -11,22 +11,46 @@ categories: User
 
 # 2024 Linux 核心設計 秋季班 自我評量
 ## 作業共筆
+自評分數: 10分
+
+作業和隨堂測驗都盡自己最大努力去實現。
 
 * lab0-c: [GitHub](https://github.com/brian049/lab0-c) / [HackMD](https://hackmd.io/@brianPA/linux2024-homework1)
 * quiz(1+2): [HackMD](https://hackmd.io/@brianPA/linux2024Homework2)
 * quiz(3+4): [HackMD](https://hackmd.io/@brianPA/LinuxHomework4)
+* assessment: [HackMD](https://hackmd.io/@brianPA/2024q1Homework5)
+* integration: [HackMD](https://hackmd.io/@brianPA/linux2024-homework6)
 
 
 ## 期末專題
+自評分數: 10分
+
+這次期末專題，讓我補齊了第六次作業缺少的部分，並透過觀摩其他學員，站在各學員的角度看待事件，並藉此機會學習該如何有效的面對實作作業過程中碰上的問題。
 
 * 改進 ttt 作為核心模組: [HackMD](https://hackmd.io/@sysprog/ry5zvDcUA)
 
+## 與授課教師的互動
+
+自評分數: 8分
+
+- 5/16 中午12:00 一對一討論
+
+
 ## 修課心得
+自評分數: 10分
+
+在此課程我培養良好的版本控制技巧，學習眾多偵錯工具以達到程式運作的正確性，學習 profiling tools 像是 eBPF 來觀察 Linux 核心以測量 latency 或是 stack 資訊，
+並透過課堂中的測驗題以及期末專題了解研究生自主思考的重要性。
+
 
 ## 研究生發信時間
+自評分數: 8分
 
-五月份學習回顧 (2024/6/27) 
+由於前期投入並不多，因此在最後統整學習狀況向老師回報。
 
-這個項目我給自己 8 分，由於前期投入並不多，因此在最後統整學習狀況向老師回報。
+- 五月份學習回顧 (2024/6/27) 
 
 ## 自我評量 (1 ~ 10)
+
+- 各項自評分數 (1, 10, 10, 8, 10, 8)
+- 方案 B：1+⌊6.32⌋=7
