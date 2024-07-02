@@ -110,6 +110,6 @@ categories: User
 
 我在這門課的自我評分： 
 
-$(2 \times 9 \times 7 \times 7 \times 9 \times 9) ^ {1/6} = 6.4$ 
+$(2 \times 8 \times 6 \times 7 \times 8 \times 9) ^ {1/6} = 6.03$ 
 
-使用方案 B 計分：$1 + floor(6.4) = 7$
+使用方案 B 計分：$1 + floor(6.03) = 7$
