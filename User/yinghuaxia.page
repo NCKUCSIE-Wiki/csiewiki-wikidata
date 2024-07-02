@@ -16,6 +16,14 @@ categories: User
 * [lab0](https://hackmd.io/@jimmylu0303/linux2024-homework1)
 * [虛擬攝影機裝置驅動程式](https://hackmd.io/@sysprog/rJEhcgoSn)
 
+閱讀同學文件：
+
+* [Linux 核心專題: 透過 Netfilter 自動過濾廣告](https://hackmd.io/@sysprog/SyKqH2ILA)
+* [Linux 核心專題: 異質多核通訊機制](https://hackmd.io/@sysprog/ryvE2tK8C)
+* [Linux 核心專題: LLaMA 推論之效能議題](https://hackmd.io/@sysprog/BJ1T7UK80)
+* [Linux 核心專題: 高效記憶體配置器](https://hackmd.io/@sysprog/rkZQsLhLR)
+* [Linux 核心專題: 錯誤更正碼 (ECC) 介紹和實作考量](https://hackmd.io/@sysprog/HkxFLnvL0)
+
 ### 作業與隨堂測驗
 * lab0: [GitHub](https://github.com/yinghuaxia/lab0-c) / [HackMD](https://hackmd.io/@yinghuaxia/linux2024-homework1)
 
@@ -85,7 +93,7 @@ vcam: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-final) / [GitHub](https:/
     3. 期末專題討論
 
 ### 自我評量
-$(3 \times 8 \times 7 \times 6 \times 8 \times 8) ^ {1/6} = 6.33$ 
+$(4 \times 8 \times 7 \times 6 \times 8 \times 8) ^ {1/6} = 6.64$ 
 
 使用方案 B 計分：$1 + floor(6.33) = 7$
 
