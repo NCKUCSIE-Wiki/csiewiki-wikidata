@@ -1,0 +1,62 @@
+---
+title: pao0626 (鮑弘仁)
+categories: User
+...
+
+# 簡介
+
+* 國立成功大學 資訊工程研究所
+* Github: [`pao0626`](https://github.com/pao0626)
+* HackMD: [`pao0626`](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA) (課程評分後會更改使用者名稱讓網址更簡潔)
+
+# 2024 Linux 核心設計 春季班 自我評量
+## 成果發表和貢獻
+評分 : 此項目我為自己打 6 分。
+在作業 5 中，我曾提出〈[你所不知道的 C 語言: linked list 和非連續記憶體](https://hackmd.io/@sysprog/c-linked-list#%E6%A1%88%E4%BE%8B%E6%8E%A2%E8%A8%8E-Leetcode-2095-Delete-the-Middle-Node-of-a-Linked-List)〉內容的兩個改進並被老師採納。並還有一個小改進本來想與老師討論後再做更動。此外，我對〈[並行程式設計: Atomics 操作 – 案例探討 SPSC](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-atomics#wait-free-amp-lock-free)〉內容提出了一個勘誤，但未被採納，可惜我不知道自己的理解錯在哪裡。
+在期末專題中，我也嘗試貢獻《[Linux Kernel Module Programming Guide](https://sysprog21.github.io/lkmpg/)》，但不知道是否應該透過 Google 搜尋到的 [github 頁面](https://github.com/sysprog21/lkmpg)發出 issue 來與老師溝通，因為我看到最新的幾則 issue 都沒有被回覆。
+最後，由於我並沒有實際貢獻 Linux 核心，辜負了老師開設這門課程的初衷，好手好腳卻浪費了納稅人的錢，身為資工人卻沒能做到開源貢獻，所以給自己及格分 6 分。
+
+## 作業/隨堂測驗
+
+* Homework1&3: [HackMD](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA/linux2024-homework1)
+* Homework2: [HackMD](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA/linux2024-homework2)
+* Homework4: [HackMD](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA/linux2024-homework4)
+* Homework5: [HackMD](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA/linux2024-homework5)
+
+評分 : 此項目我為自己打 7 分。
+完成了大約一半的作業，但仍有提升空間。雖然幾乎參加了每次測驗，但大部分只涉及書面知識的學習，還有許多測驗所需的實作等待完成。然而，在這過程中我確實學到了很多東西。例如，大幅提升了C語言的熟練度，這在面試過程中給我帶來了巨大的幫助；完整掌握了Git等工具的使用；了解了各種排序演算法及其時間複雜度的理想與現實差距；掌握了位運算、哈希表及紅黑樹的實作方法等。投入程度可以參考我上面提供的 HackMD 筆記。基於上述原因，我為自己打了略高於及格的 7 分。
+
+## 期末專題
+
+* simrupt 研究和應用 : [HackMD](https://hackmd.io/@sysprog/rJQJo98LC)
+* 課堂教材筆記 : [HackMD](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA/linux2024-note)
+
+
+評分 : 此項目我為自己打 8 分。
+在 5 月份與老師進行一對一專案確認後，最初的目標是熟悉並評估 simrupt。我按照作業 6 的要求，先複習了課堂上的C語言教材，包括數值系統、浮點數運算、位運算、List API、對齊方式及遞迴呼叫等內容。並詳細閱讀了 〈[Linux 核心模組運作原理](https://hackmd.io/@sysprog/linux-kernel-module)〉和 《[The Linux Kernel Module Programming Guide](https://sysprog21.github.io/lkmpg/)》。
+在期末前幾天收到老師的信件，對期末專案的方向更加明確。在剩餘的時間裡，我使專題更加完善，設計了幾個小實驗。我覺得可以改進的地方有幾點：首先，應該更早向老師索要筆記頁面，以便更確定細節（這部分歸類在下一個主題扣分）。其次，我覺得以我的能力設計的實驗和分析還不夠好，但我沒有向老師尋求幫助。綜上所述，我為自己打 8 分。
+
+## 與授課教師的互動
+
+* 5/10 19:30 一對一討論
+
+評分 : 此項目我為自己打 9 分。
+首先是上個主題中提到的，我不應該因為害怕自己程度不夠而耽誤老師的時間，導致不敢多約幾次，這樣反而限制了自己的成長。此外，上課時聽同學和老師之間的問答時，我常在心中默想自己能否回答得出來，但每次都覺得自己辦不到，因此對與老師的上課互動感到畏懼，這實在不理想。然而，課堂中提出的問題我會在後續中努力去理解。最有印象的是討論浮點數的那次，本以為自己對浮點數的認識已經足夠，但事實證明並非如此。基於上述原因，我為自己打 9 分。
+
+## 所見所聞所感
+
+* Homework5: [HackMD](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA/linux2024-homework5)
+
+評分 : 此項目我為自己打 10 分。
+這部分的評分要求與作業 5 要求雷同，我完整的闡述了所見所聞所感，可參考我的 HackMD 頁面。
+
+## 研究生發信時間
+
+* 五月份學習回顧 (2024/6/14 週五 上午4:15) : 
+
+評分 : 此項目我為自己打 9 分。
+由於我們實驗室每週都有會議並要求寄送進度報告的信件，因此我認為並沒有因為這堂課而疏忽教授要求的顧慮，這也是學習回顧的初衷。所以我只在最後一個月時，寄了一封統整整堂課程所學和所用的信件，整理出各項對我實驗室研究內容有幫助的內容，並細分成每個月的成長。然而，課堂要求每個月都寄信，我確實沒有完成這項任務，因此折衷給自己 9 分。
+
+## 自我評量 (1 ~ 10)
+* GEOMEAN is calculated by {6, 7, 8, 9, 10, 9} = 8.05
+* 方案 B 總分: 1 + 8 = 9
