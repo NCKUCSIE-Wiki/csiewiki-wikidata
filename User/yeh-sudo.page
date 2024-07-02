@@ -20,10 +20,26 @@ categories: User
 # 2024 Linux 核心設計 春季班 自我評量
 
 ## 作業/隨堂測驗
+* lab0-c: [GitHub](https://github.com/yeh-sudo/lab0-c) / [HackMD](https://hackmd.io/@yehsudo/linux2024-homework1)
+* Homework 2 (quiz 1 + 2): [HackMD](https://hackmd.io/@yehsudo/linux2024-homework2)
+* Homework 4 (quiz 3 + 4): [HackMD](https://hackmd.io/@yehsudo/linux2024-homework4)
+* Homework 5 (assessment): [HackMD](https://hackmd.io/@yehsudo/linux2024-homework5)
+* Homework 6 (integration): [HackMD](https://hackmd.io/@yehsudo/linux2024-homework6)
+
+評分: 
 
 ## 期末專題
+* 並行化的 Redis 實作: [GitHub](https://github.com/yeh-sudo/mt-redis) / [HackMD](https://hackmd.io/@sysprog/B1W2HKTER)
+
+評分: 
 
 ## 與授課教師的互動
+* 2024/05/03, 21:30: 一對一討論
+* 2024/03/12: [課堂問答](https://hackmd.io/_GIs8jAvQH2q505AiAbQ4A#yeh-sudo)
+* 2024/06/13: [課堂問答](https://hackmd.io/t9DHn3F4RQyH3lI5TFZWpQ#%E9%81%8B%E7%94%A8%E4%B8%A6%E8%A1%8C%E8%99%95%E7%90%86%E4%BE%86%E5%BC%B7%E5%8C%96%E6%97%A2%E6%9C%89%E7%9A%84%E6%87%89%E7%94%A8%E5%A0%B4%E6%99%AF-Redis)
+* 2024/06/30: [期末專題發表互動](https://hackmd.io/@sysprog/linux2024-showcase)
+
+評分: 
 
 ## 所見所聞所感
 
