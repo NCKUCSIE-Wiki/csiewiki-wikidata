@@ -38,15 +38,13 @@ TODO: 列出專題、自我評分與反省
 
 ## 與授課教師的互動
 
-一對一討論
+- 一對一討論
+  - 05/03 16:30 確認任務、不要講風險、審視學習狀況、浮點數觀念釐清
+  - 06/29 16:00 確認電子書修訂情形、第二章內容釐清、定點數觀念釐清
 
-- 5/3 16:30
-- 6/29 16:00
-
-課堂討論
-
-- 3/21 [課堂討論](https://hackmd.io/@sysprog/BkZjK4S0p)
-- [PR #177: Check if sorting implementation is stable](https://github.com/sysprog21/lab0-c/pull/177)
+- 課堂討論
+  - 3/21 [課堂討論](https://hackmd.io/@sysprog/BkZjK4S0p) 針對穩定排序檢測的討論
+  - [PR #177: Check if sorting implementation is stable](https://github.com/sysprog21/lab0-c/pull/177)
 
 TODO: 自我評分與反省
 
