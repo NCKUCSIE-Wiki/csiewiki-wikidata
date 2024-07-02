@@ -35,7 +35,7 @@ categories: User
 ## 期末專題
 * 並行化的 Redis 實作: [GitHub](https://github.com/yeh-sudo/mt-redis) / [HackMD](https://hackmd.io/@sysprog/B1W2HKTER)
 
-很驚訝能在期末發表我的專題報告，我覺得我只是做好我應該做的事情，我們最在乎的事情是效能，所以我就在我能力所及範圍內將效能往上提升，並進行測試，除了 mt-redis 這個專案，之後也會嘗試貢獻 ValKey 或是 Dragonfly DB 等相似的 in-memory storage ，雖然我的專題有很多地方可以改進，像是測試方法等，還有報告時的表達能力，都有待加強，不過也讓我有了這次寶貴的經驗，知道哪裡可以改進，讓我往後找工作面試時可以更流暢的表達與介紹自己。
+很驚訝能在期末發表我的專題報告，我覺得我只是做好我應該做的事情，我們最在乎的事情是效能，透過 CPU affinity 與 urcu，在我能力所及範圍內將效能往上提升，並進行測試，除了 mt-redis 這個專案，之後也會嘗試貢獻 ValKey 或是 Dragonfly DB 等相似的 in-memory storage ，雖然我的專題有很多地方可以改進，像是測試方法、 mt-redis 的 tail latency 等，還有報告時的表達能力，都有待加強，不過也讓我有了這次寶貴的經驗，知道哪裡可以改進，讓我往後找工作面試時可以更流暢的表達與介紹自己。
 
 評分: 9 分。
 
