@@ -60,4 +60,4 @@ categories: User
 在這次的課程，還順便發現諸如潮汐現象、檢測越界使用記憶體之類等困擾競賽常用的評測系統的問題都是可以解決的，目前正在和同學一起研究，並加入我們自己做的評測系統中。
 
 ## 自我評量 (1 ~ 10)
-方案 B: 1 + floor(GEOMEAN) = 9
+方案 B: $1+\lfloor\sqrt[5]{7\times9\times7\times8\times10}\rfloor=8$
