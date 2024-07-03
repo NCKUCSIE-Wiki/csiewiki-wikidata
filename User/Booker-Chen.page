@@ -21,6 +21,12 @@ categories: User
 
 ## 期末專題
 
+* 判定常數時間: [HackMD](https://hackmd.io/@sysprog/SyHrtSWDC)
+
+我給自己 8 分
+
+在製作期末專題的過程中，我將常數時間的 memcmp 餵給 ChatGPT 請它解釋程式碼。在閱讀其產生的解釋後發現它給我的解釋有錯，於是自己從頭開始自己研究程式碼，發現明明自己可以花比較少的時間完成的事情卻捨近求遠，依賴不完全正確的 ChatGPT。透過彙整其他學員的成果可以發現自己有的疑問別人可能也會有，像是設定閾值的函數可能有問題。出現自己沒想過的問題，比方說 unbiased sample variance 不能直接在分子上面用 sigma 累加後相減的原因是因為會發生 Catastrophic Cancellation。
+
 ## 與授課教師的互動
 
 ## 所見所聞所感
