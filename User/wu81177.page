@@ -6,26 +6,59 @@ categories: User
 # 簡介
 * 國立成功大學 電機工程研究所
 * GitHub：[wu81177](https://github.com/wu81177)
-* HackMD：[Shiang1212](https://hackmd.io/@wu81177)
+* HackMD：[wu81177](https://hackmd.io/@wu81177)
 
 # 2024 Linux 核心實作 春季班 自我評量
 
 ## 成果發表和貢獻
+評分: 5 分
 
+自知起點較低，能力尚不足以貢獻 Linux 核心，因此這學期主要將心力放在閱讀課堂教材和完成作業，相信自己未來也有機會對開原社群盡一份心力。
 
-## 作業
+## 作業/隨堂測驗
+評分: 9 分
 
+* lab0-c: [GitHub](https://github.com/164253/lab0-c) / [HackMD](https://hackmd.io/@wu81177/linux2024-homework1)
+* Homework 2 (quiz 1 + 2): [HackMD](https://hackmd.io/@wu81177/linux2024-homework2)
+* Homework 4 (quiz 3 + 4): [HackMD](https://hackmd.io/@wu81177/linux2024-homework4)
+* Homework 5 (assessment): [HackMD](https://hackmd.io/@wu81177/linux2024-homework5)
+* Homework 6 (integration): [HackMD](https://hackmd.io/@wu81177/linux2024-homework6)
+這學期的作業讓我認識了什麼是 Linux 風格的 linked list ，同時也了解了一些排序演算法的細節行為，也理解了一些 bitwise 運算的數學原理。除了理論知識，也學會了像是 Hackmd 和 github 等工具的基本使用。而第六次作業閱讀 LKMPG 使我對撰寫 linux driver 有了一些概念
 
 ## 期末專題
+評分: 10 分
 
+Linux 核心專題: 並行的環狀雙向鏈結串列: [HackMD](https://hackmd.io/@sysprog/rk4C6djLR)
+這份專題主要讓我了解到了並行的議題，像是 CAS 等 atomic operations ，還有一些 lockfree 的演算法，在實作過程中也更加熟悉 Makefile 的撰寫，以及一些偵錯工具的使用，像是 GDB 和 ThreadSanitizer 。而撰寫筆記過程中老師也時常提醒我要注意用字的嚴謹，尤其是我使用了很多不夠精確的對岸專有名詞翻譯，日後會更加注意這些細節。
 
 ## 與授課教師的互動
+評分: 8 分
 
+* 一對一討論：5月16日 週四 下午4:00
+會議過程中老師要我現場撰寫考慮並行的 add_tail 和 list_remove ，當時我十分慌張，寫出的程式也沒有考慮到並行，我表示自己能力較差，老師提醒我不該有示弱的心態，而是要每天持續精進自我，這個觀念我至今時常反覆回味，受益良多。
 
 ## 所見所聞所感
+評分: 10 分
 
+閱讀〈因為自動飲料機而延畢的那一年〉後心態轉變很大，我發現我常因過分想像事情的困難程度，對自己能力缺乏信心，不敢去做，進而拖延，即使開始了，也常因達不到期望的進度而喪失動力。因此看到有人在不熟悉的領域中投入14個月開發，這樣的毅力令我震撼。期許自己未來能夠勇敢試錯，把時間投入實作，遇到問題時穩住心態解決，而不是逃避。
 
 ## 研究生發信時間
+評分: 8 分
 
+* 二月回顧：3月5日 週二 上午8:00
+    1. 學習如何撰寫清晰且具體的git commit message
+    2. 通過實作和閱讀相關論文，學習到時序攻擊的防範技術和統計原理
+    3. 撰寫程式碼來使用Linux核心提供的API，提高對Linux核心運作的理解和實作能力
+
+* 三月回顧：4月2日 週二 下午2:57
+    1. 了解排序演算法的細節
+    2. 了解 C 語言中的 bitwise operations
+    3. 養成隨手撰寫開發紀錄的習慣
+
+前幾個月教授看到我們和他分享課堂所學有給出正向的回應和互動，但之後我臉皮太薄沒有持續寄信。
 
 ## 自我評量 (1 ~ 10)
+自我總評量得分為 **9** 分。
+
+* GEOMEAN : $\sqrt[6]{5*9*10*8*10*8} = 8.13$  
+* 方案 B：$1+\lfloor 8.13 \rfloor=9$
