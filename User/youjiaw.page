@@ -13,7 +13,7 @@ categories: User
 * [並行程式設計: 實作輕量級的 Mutex Lock](https://hackmd.io/@sysprog/concurrency-mutex) 修正錯字與用詞
 
 評分：
-我給自己 8 分，
+我給自己 8 分，剛修課時並沒有想到自己可以在哪個課程部分有所貢獻，但是在研讀教材的過程中，我就注意到了可以修正的內容，也呼應了老師多次強調的「注意細節」。
 
 ## 作業/隨堂測驗
 * lab0-c: [GitHub](https://github.com/youjiaw/lab0-c) / [HackMD](https://hackmd.io/@youjiaw/linux2024-homework1)
@@ -23,10 +23,14 @@ categories: User
 
 評分：
 
+我給自己 8 分，
+
 ## 期末專題
 * 改進 concurrent (fork) merge sort: [HackMD](https://hackmd.io/f30zO2wBTDGbUHXlHyBjsQ?view#Linux-%E6%A0%B8%E5%BF%83%E5%B0%88%E9%A1%8C-%E6%94%B9%E9%80%B2-concurrent-fork-merge-sort)
 
 評分：
+
+我給自己 7 分，
 
 ## 與授課教師的互動
 * 5/10 12:00 一對一討論
