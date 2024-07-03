@@ -9,10 +9,13 @@ categories: User
 * GitHub: [`kkkkk1109`](https://github.com/kkkkk1109)
 * HackMD: [`kkkkk1109`](https://hackmd.io/@kkkkk1109)
 
-# 2024 Linux 核心實作自我評量
+# 2024 Linux 核心實作 春季班 自我評量
 ## 成果發表與貢獻
+
+尚無
+
 ## 作業/隨堂測驗
-對於作業，我選擇給自己 `9` 分。
+對於作業，我選擇給自己 `7` 分。
 
 在作業一中，重新複習了資料結構中的內容，如各種排序法和佇列的操作。其中對於 Doubly linked list的操作，是第一次碰到使用快慢指標來找佇列中央的節點，也發現我自己想的由頭尾找中點方法和同學一樣，並藉由Linux 提供的 list.h API 來思考如何有效率和安全的進行節點操作，也用在實驗室的計畫當中。除此之外，也學習到了各種工具的使用方法:如使用 Valgrind 檢查記憶體釋放和 Linux 、 Github 的基本操作。除此之外，我也學到了 C 語言的基本使用方法，像是我原先完全不知道 #define 要如何使用，或是 static 宣告是靜態函數等基本使用方式。
 
@@ -35,14 +38,17 @@ categories: User
 * [`Homework 5`](https://hackmd.io/@kkkkk1109/linux2024-homework5)
 
 作業六閱讀了 [`《The Linux Kernel Module Programming Guide》`](https://sysprog21.github.io/lkmpg/) ，紀錄和學習 kernal module 的使用和範例，沒有完成後續作業。
+
 * [`Homework 6`](https://hackmd.io/@kkkkk1109/linux2024-homework6)
 
 ## 期末專題
-[`期末專題`](https://hackmd.io/@sysprog/Skyd45U8A)
-[`閱讀筆記`](https://hackmd.io/@kkkkk1109/ry9tV2hzA/edit)
+
 我選擇給自己 `9` 分。
 
-在和老師 05/10 的討論後，就開始閱讀並行程式設計，並於上方的閱讀筆記中紀錄了閱讀並行程式的紀錄。先前沒有修過作業系統，對於許多概念都不懂，閱讀 [`課堂指定教材`](https://hackmd.io/@sysprog/linux-concepts#Linux-%E6%A0%B8%E5%BF%83%E8%A8%AD%E8%A8%88-%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E8%A1%93%E8%AA%9E%E5%8F%8A%E6%A6%82%E5%BF%B5)時，完全不懂 fork 在幹嘛，有看沒有懂。而撰寫 [`第十週測驗題`](https://hackmd.io/@sysprog/linux2024-quiz10) 的詳解後，便看到了實際 fork 使用的方法，再回頭看指定教材，才知道使用 fork 出子行程並並行運行。並且為了保護 critical section ，使用不同同步的方式。並照著教材練習實作，才知道 mutex 是持有鎖的人解鎖，使用 condition variables 增加使用鎖的靈活性。而在 [`第十二週測驗題`](https://hackmd.io/@sysprog/linux2024-quiz12)中，使用 ThreadSanitizer 來解決 data race 讓我學到最多。在完成第二題的空缺程式碼後，使用 ThreadSanitizer 去編譯，編譯時卻只有說明在哪兩個函式和記憶體位置發生data race ，我又使用了 valgrind 的 Helgrind 來幫助 debug ，好不容易找到競爭的變數，並嘗試在各種地方加鎖都失敗，試了一個禮拜才找出原因。雖然花了很久，覺得我不可能找到，但最後也是成功的找出錯誤，讓我覺得這些時間非常值得。
+[`期末專題`](https://hackmd.io/@sysprog/Skyd45U8A)
+[`閱讀筆記`](https://hackmd.io/@kkkkk1109/ry9tV2hzA/edit)
+
+在和老師 05/10 的討論後，就開始閱讀並行程式設計，並於上方的閱讀筆記中紀錄了閱讀並行程式的紀錄。先前沒有修過作業系統，對於許多概念都不懂，閱讀 [`課堂指定教材`](https://hackmd.io/@sysprog/linux-concepts#Linux-%E6%A0%B8%E5%BF%83%E8%A8%AD%E8%A8%88-%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E8%A1%93%E8%AA%9E%E5%8F%8A%E6%A6%82%E5%BF%B5)時，完全不懂 fork 在幹嘛，有看沒有懂。而撰寫 [`第十週測驗題`](https://hackmd.io/@sysprog/linux2024-quiz10) 的詳解後，便看到了實際 fork 使用的方法，再回頭看指定教材，才知道使用 fork 出子行程並並行運行。並且為了保護 critical section ，使用不同同步的方式。並照著教材練習實作，才知道 mutex 是持有鎖的人解鎖，使用 condition variables 增加使用鎖的靈活性。而在 [`第十二週測驗題`](https://hackmd.io/@sysprog/linux2024-quiz12)中，使用 ThreadSanitizer 來解決 data race 讓我學到最多。在完成第二題的空缺程式碼後，使用 ThreadSanitizer 去編譯，編譯時卻只有說明在哪兩個函式和記憶體位置發生data race ，我又使用了 valgrind 的 Helgrind 來幫助 debug ，好不容易找到競爭的變數，並嘗試在各種地方加鎖都失敗，試了一個禮拜才找出原因。雖然花了很久，覺得我不可能找到，但最後也是成功的找出錯誤，讓我感到這些時間非常值得。
 
 ## 與授課教師的互動
 我選擇給自己 `8` 分。
@@ -57,15 +63,19 @@ categories: User
 
 我給自己 `8` 分
 
+由於實驗室工作繁忙，因此我時間排序為，白天完成實驗室研究和計畫任務，晚上學習課堂內容和完成作業。雖然在剛開學時，對每個教材都是看過卻無法理解，但藉著一次次的作業和測驗題後，也能夠自己理解其中概念。而不論是實體還是線上課程，都可以從同學們的發問中感受到自身的差距，不過老師常說誠實面對自己，不懂就不懂。經過這學期，我可以很誠實地說，我理解並行程式和平行程式的差別，一個是可以透過單一處理器完成，另一個得在多核處理器完成，lock-free 中可以使用到鎖和 lock-less 不使用鎖便完成設計、避免 false sharing 的方法、 使用工具來檢查 data race，運用 POSIX API 完成多執行緒程式。這堂課不僅讓我知道自己的不足，也讓我知道自己掌握了那些技巧，並繼續學習，成為有用的人。
+
 
 
 ## 每月發給實驗室指導教授的學習回顧
 
-我選擇給自己 `7` 分
+我選擇給自己 `6` 分
 
 我於 4/3 和 6/30 寄出學習回顧，即便沒有和指導教授討論過此課程內容，仍然將課堂所學應用到實驗室中。在計畫中，我使用了 lab0 中所學之 linked list 資料結構來實現排序，並考量到了節點記憶體配置失敗等措施，除此之外就沒有了。
 
 
+## 評分
 
+採用方案 B ，1+floor(Geo) =1+ (7 $\times$ 8 $\times$ 9 $\times$ 8 $\times$ 6)$^{1/5}$ = 1 + floor(7.52) = 1+8 = 9
 
 
