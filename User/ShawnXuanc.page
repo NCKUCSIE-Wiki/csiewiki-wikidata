@@ -22,9 +22,10 @@ categories: User
 * commit 94c631d753a9be7d15871f8c3580956c4a7e852a
 * commit 01b42b105ed9571a50e3703bd5d3db2dab376ac6
 * commit 8447f69f56c3bf7e7f8624589b2b132b65919798
+* commit 8a3cf858339f232d47a2869e936369dbce95e1f0
 
 對於書本的貢獻是這學期最開心的，對於每一次的提交都十分的重視以及慎重，
-在這部份我給自己 8 分。
+在這部份我給自己 9 分。
 
 ## 作業/隨堂測驗:
 * HW1,3(lab0): [HackMD](https://hackmd.io/@shawne/linux2024-homework1)
@@ -33,7 +34,9 @@ categories: User
 * HW5(assessment): [HackMD](https://hackmd.io/@shawne/linux2024-homework5)
 * HW6(integration): [HackMD](https://hackmd.io/@shawne/linux2024-homework6)
 
-對於作業以及測驗的部分，皆有對其投入在作業 1 的時候學習 linux 風格的鏈結串列、sort, 並搭配使用 git、perf、valgrind，在作業 2, 4 對測驗的檢討，在作業 3 對 corutine 進行了解並搭配 ttt 運行，在作業 5 對閱讀的教材進行紀錄並提問，在作業 6 搭配 LKMPG 的閱讀以及 simrupt 的理解
+對於作業以及測驗的部分，皆有對其投入在作業 1 的時候學習 linux 風格的鏈結串列、sort, 並搭配使用 git、perf、valgrind，在作業 2, 4 對測驗的檢討，在作業 3 對 corutine 進行了解並搭配 ttt 運行，在作業 5 對閱讀的教材進行紀錄並提問，在作業 6 搭配 LKMPG 的閱讀以及 simrupt 的理解，但是仍有很多需要學習以及加強的地方
+
+我給自己 7 分
 
 ## 期末專題
 
@@ -55,6 +58,8 @@ categories: User
 在期末專題的部分我認為我有盡我所能的去進行尤其在書籍閱讀的部分，也因為這樣有了一些貢獻的機會，
 但是在最後並沒有做的很好，可以進行更多實驗比較以及解讀，並更加深入對各種工具進行了解。
 
+我給自己 8 分
+
 ## 與授課教師的互動: 
 
 一對一討論時間: 2024/5/10 8:30-9:00 PM，在一對一討論與授課教師詢問關於中斷的議題，並討論期末專題的進行。
@@ -63,6 +68,8 @@ categories: User
 
 使用電子郵件與老師進行溝通，包含 patch 的提交。
 
+我給自己 8 分
+
 ## 所見所聞所感
 
 在課程中可以遇見很多厲害的同學，每次看到大家的成果都會讓我反省自己的不足，
@@ -70,6 +77,7 @@ categories: User
 過程中的累積都是自己的，在遇到困難時都會讓我想到 [〈因為自動飲料機而延畢的那一年〉](https://blog.opasschang.com/the-story-of-auto-beverage-machine-1/) 中所提到的 "你該學習的不是看到事情要完蛋了就去避免失敗，而是應該學習如何處理與承受失敗"，並勉勵自己堅持下去，
 到現在還有很多不足的地方需要加強並勉勵自己繼續精進，最後很慶幸自己在這學期能夠有機會參與課程並持續到現在。
 
+我給自己 8 分
 
 ## 每月發給實驗室指導教授的學習回顧
 
@@ -92,3 +100,8 @@ categories: User
 並提醒自己未做完的部分。
 
 在這部分我給自己 9 分
+
+## 成績
+$(9\times7\times8\times8\times8\times9)^{1/6}$
+
+方案B 1 + floor(8.13) = 9
