@@ -9,7 +9,13 @@ categories: User
 * HackMD: [`Petakuo`](https://hackmd.io/@Petakuo)
 
 # 2024 Linux 核心實作 自我評量
+## 成果發表和貢獻
+評分: 1\
+目前暫無貢獻，未來會繼續努力。
+
 ## 作業/隨堂測驗
+評分: 9\
+
 * lab0: [GitHub](https://github.com/Petakuo/lab0-c) / [HackMD](https://hackmd.io/@Petakuo/SJkkdg866)
 * homework2: [HackMD](https://hackmd.io/@Petakuo/H1h8ue36a)
 * homework4: [HackMD](https://hackmd.io/@Petakuo/rkz3naDJC)
@@ -17,10 +23,14 @@ categories: User
 * 客製化隨堂測驗: [HackMD](https://hackmd.io/@sysprog/B1gqoWD6T)
 
 ## 期末專題
+評分: 9\
+
 * 重作第四次作業: [HackMD](https://hackmd.io/@sysprog/r1WImnwIC)
 * 浮點數乘法探討: [HackMD](https://hackmd.io/@Petakuo/SywgMV44R)
 
 ## 與授課教師的互動
+評分: 9\
+
 * 2024/03/21(四) 19:00-21:00 [課堂討論簡記](https://hackmd.io/3e8LI8_0SLOo_UTDAnPKYQ#Petakuo)
     * 不同排序法 locality 的比較
     * 探討 merge sort 變形後之情形
@@ -29,7 +39,12 @@ categories: User
     * 檢測 bitwise operation 的熟練度
 
 ## 所見所聞所感
+評分: 9\
+一開始選修這門課時原本是抱持著一定要把老師教的東西學好的心態，但後來發現老師給的知識量實在是太多了，只好先以自己負荷的了的部份學習。隨著課程的進展，我漸漸有辦法掌握每次的小考，雖然不會都 100 分，但至少已經不像一開始完全看不懂，這讓我了解到我又進步了一點。就如同〈因為自動飲料機而延畢的那一年〉中所提到的「這個世界比任何人都殘酷，也比任何人都公平，犧牲了多少就會得到多少。」，之後我還要付出更多努力來提昇自己。
 
 ## 每月學習回顧
+評分: 10\
+每月皆有確實寄信告知教授學習狀況。
 
 ## 分數計算
+1+floor(GEO(65610)) = 6
