@@ -1,0 +1,55 @@
+---
+title: williamlin0518 (林承緯)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程學系 113 級 (2020 ~ 2024)
+
+* GitHub: [`williamlin0518`](https://github.com/williamlin0518)
+* HackMD: [`williamlin0518`](https://hackmd.io/@Q9dzmk3STwmqGC7d4NT6mw)
+
+## Linux 核心和相關專案貢獻
+
+## 其他專案貢獻
+
+在觀看程式碼時，並未先主動質疑其正確性，並改進其中的不足之處。
+
+評分: 2 分。
+
+# 2024 Linux 核心設計 春季班 自我評量
+
+## 作業/隨堂測驗
+* lab0-c: [HackMD](https://hackmd.io/sOpTLI2DTqmobZ_zOwMTmw)
+* Homework 2 (quiz 1 + 2): [HackMD](https://hackmd.io/hUCMgVN_ShKPXHb4Up6Ryg)
+* Homework 4 (quiz 3 + 4): [HackMD](https://hackmd.io/BW4Necn3QYaSlf6Jt4afnw)
+* Homework 5 (assessment): [HackMD](https://hackmd.io/cKtkbUDqQvOhybdkHMKwDQ)
+* Homework 6 (integration): [HackMD](https://hackmd.io/8PypGIk2RaydNKJToDyDFg)
+
+每次作業我都盡力完成指定的要求，盡管並未能完全達成目標，這顯示了我仍有極大進步的空間。因此，我給自己這個分數。
+
+評分: 8 分。
+
+## 期末專題
+* Linux 核心專題: kHTTPd 改進 : [HackMD](https://hackmd.io/X8IerfSNSQWxPIxkmo2csg?both)
+
+我的專題有很多地方可以改進，尤其是實驗方法以及如何驗證，錄影時的表達能力，對先備知識的理解，都有待加強，因此過程就像是舉燭，不過也學習到了的經驗，知道下次該從何下手大型專案
+評分: 8 分。
+
+## 與授課教師的互動
+* 2024/05/01, 21:30: 一對一討論
+
+
+上課時都很怕被老師點到名回答問題會出糗，但是在 5/1 一對一討論時，發現自己常推託於表達不好，實則是自己知識儲備不佳。深深意識到自己沒有gut，經過研究我的期末專題，了解完期末專題的程式碼和架構後，開始著手進行，這個學期的經歷不僅增強了我的專業知識，也提升了我的溝通能力。
+
+
+評分: 8 分。
+
+## 所見所聞所感
+
+閱讀〈因為自動飲料機而延畢的那一年〉，課程即將結速，回想當初自己修課的原因，讀懂linux核心，精熟作業系統，了解SOC，深入嵌入式系統，貢獻開源軟體，多麼豪情壯志，現在看來達成率是近乎0%，但是沒有收穫嗎?一個個課堂測驗，都要花費大量時間參考文獻，分頁開了又開，卻仍似懂非懂，也開始重頭審視自己，誠實面對自己，是我目前最大的收穫了，了解自己其實什麼都不會，這四年只摸了個皮毛，看清這些後，也讓我更好奇這些領域，渴望更深入的學習
+評分: 10 分。
+
+## 自我評量 (1 ~ 10)
+
+方案 B: 1 + floor(GEOMEAN) = 8
