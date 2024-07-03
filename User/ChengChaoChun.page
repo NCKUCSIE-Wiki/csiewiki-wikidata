@@ -11,6 +11,8 @@ categories: User
 
 ## 2024 Linux 核心實作 春季班 自我評量
 ### 成果發表和貢獻
+* ksort: [`commit`](https://github.com/sysprog21/ksort/commit/a7f5ab652a4f072ae272bfdcaaecbd4faf6456c9)
+* simrupt: [`commit`](https://github.com/sysprog21/simrupt/commit/9043d41b81c12c24263df14a50ca0a131c9f9b35)
 
 在本學期老師提供了許多的教材和相關的專案，這一個評分項本應該有很多發揮的空間，但截至 6 月 30 日前我只有提交 2 個 commit，我意識到自己的貢獻有限，還有很大的提升空間，因此這一項我給我自己打7分。 
 
