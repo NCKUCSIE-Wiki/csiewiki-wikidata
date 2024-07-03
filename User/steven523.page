@@ -84,6 +84,7 @@ Netfilter: [HackMD](https://hackmd.io/@sysprog/BkxyL1bvC) / [GitHub](https://git
     3. 使用 perf 效能工具程式對程式做測試
 
 * 四月回顧 : 5月10日 週五 下午7:43
+
     1. 學習 bitwise operation，並使用 bitwise operation 來加速一些特定的運算
     2. 閱讀《因為自動飲料機而延畢的那一年》並撰寫心得
     2. 練習 linux 核心模組的操作，了解核心的運作原理
