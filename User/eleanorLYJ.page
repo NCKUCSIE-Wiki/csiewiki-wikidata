@@ -1,0 +1,72 @@
+---
+title: eleanor (林祐君)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊管理所
+
+* GitHub: [`eleanorLin`](https://github.com/eleanorLYJ)
+* HackMD: [`eleanorLin`](https://hackmd.io/@eleanorLin)
+
+## 1. 成果發表和貢獻
+我給自己 6 分，認為自己沒有做足夠多貢獻，更多只是隨手之勞的改錯字與順勢學習 github Action 的使用。  
+
+### github 專案  
+* [sysprog21/concurrency-primer](https://github.com/sysprog21/concurrency-primer) / [Commit 86fb930](https://github.com/sysprog21/concurrency-primer/commit/86fb93046175f11ab6b62496850ae303436dd9a3)、[Commit 4915ddc](https://github.com/sysprog21/concurrency-primer/commit/4915ddceeea0ab4073fc2b21fed6b4357ebf4f85)   增加 使用 github Action 添增 CI，每有新的 commit 被推上，就會生成新的pdf，並放置 release 區域，供他人方便閱讀。  
+* [sysprog21/fiber]()[https://github.com/sysprog21/fiber] / [Commit 9c50274](https://github.com/sysprog21/fiber/commit/9c50274d1db0bc2cbdbec35a3f2da5d08be19e37) 修改錯字 : varialbles-> variable  
+
+### 課程教材修訂
+* [Linux 核心設計: 作業系統術語及概念](https://hackmd.io/Hzl3DrqWRIyR7spRuNAVDA) 修改錯字: 活者 -> 活著  
+
+## 2. 作業/隨堂測驗
+
+我給自己 7 分，我每次拿到作業後，會詳細的閱讀作業需求後，而在寫作業的過程中，對自己的能力、學習進度誠實，投入大量時間，然而自己覺得完成度大概 7 成。  
+
+* lab0: [hackmd](https://hackmd.io/@eleanorLin/linux2024-homework1) / [Github](https://github.com/eleanorLYJ/lab0-c): 完成佇列操作的程式碼實作、另外學習使用 valgrind、GDB 測試程式，最後有實作 Fisher–Yates shuffle 演算法。
+* 2024q1 Homework2 (quiz1+2): [hackmd](https://hackmd.io/@eleanorLin/linux2024-homework2) /[Github](https://github.com/eleanorLYJ/lab2)
+* ttt: [hackmd](https://hackmd.io/@eleanorLin/linux2024-homework1) / [Github](https://github.com/eleanorLYJ/ttt): 引入 coroutine 與處理鍵盤事件。
+* hw4: [hackmd](https://hackmd.io/@eleanorLin/linux2024-homework4): bitwise 練習與數學推導。  
+* 2024q1 Homework5 (assessment): [hackmd](https://hackmd.io/@eleanorLin/linux2024-homework5): 對課程提問與心得。  
+* 2024q1 Homework6 (integration): [hackmd](https://hackmd.io/@eleanorLin/linux2024-homework6): 理解核心模組運作並首次掛載核心、其餘相關主題為 MODULE_LiCENSEC、CMWQ (Concurrency Managed Workqueue) 接著看 ksort 與 simrupt如何運用 CMWQ 達到並行目標。  
+
+## 3. 期末專題
+我給自己 9 分，對於測試部分的解讀還需要加強。  
+
+### 本人專題: 
+開發紀錄: [Linux 核心專題: RCU 實作](https://hackmd.io/@sysprog/HkkWZ20B0) / [Github](https://github.com/eleanorLYJ/ctp)    
+探討 ctp 這似 RCU 的 thread-safe variable 在哪些情況適用，因此除了逐步探討 RCU 與 ctp程式碼 以外，比較 ctp 與 其他 userspace RCU 的 throughput、記憶體使用量等。  
+
+### 對他人專題的發問
+- [Linux 核心專題: Usperspace RCU 研究](https://hackmd.io/@sysprog/Byga7v9U0#%E4%BB%BB%E5%8B)
+
+
+## 4. 與授課教師的互動
+
+我給自己 8 分，扣的兩分為，我在與教師互動過程中，我總是無法順利回答問題。  
+* 5 月 9 日 (週四), 下午3:00 – 下午3:30，討論 vm_area_strcut  
+* 7 月 3 日 (週三), 下午3:00 – 下午3:30，此次主要討論 [專題]((https://hackmd.io/@sysprog/HkkWZ20B0) 中測試結果，教師提供具體的方向，提出我的電腦處理器為 intel 12代，會區分 P-cores 與 E-cores 因此從此角度重新修正我的測試結果。  
+
+## 5. 所見所聞所感
+我給自己 10 分  
+* 教師總是強調「誠實面對自己」。我將「誠實」態度當作我成長的重要指標。另外，想成為一名工程人員，就得注意細節和講話精確至關重要。如同教師總在我的作業中推薦的查詢詞彙的連結:[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary) 與 [詞彙對照表](https://hackmd.io/@l10n-tw/glossaries)。  
+* 閱讀 《因為自動飲料機而延畢的那一年》  時，發現我總對現實有不切實際的幻想，而當要理解自己與現實的差距時，將面對巨大挫折感。  
+* 因此此門課有教師有時幽默、有時嚴厲、循循善誘教學風格下，理解工業強度的現實是以多麼複雜的流程運作著。  
+* 具備足夠 9的內心，因為發現當我不仔細閱讀作業規範時，在寫作業時肯定為踩到坑，另外，在不完全理解就隨意的參考他人程式碼時，只會讓自己越混亂。  
+* 課程強調觀摩他人的做法並提出建議。而我發現，要提出深入的建議，就必須更加投入。  
+* 在閱讀 Linux kernel 程式碼的過程中，我看到了很多能夠從細節中發現錯誤並改進的人的例子，讓我敬佩這些人的細心與創意，也期待自己能夠成為這樣的人。  
+* 培養官方文件、可靠來源資訊的好習慣  
+
+## 6. 學習回顧的簡短內容
+我給自己 10 分
+* 二月份學習回顧: 3 月 4 日發送，學習主題為撰寫 lab0 時所需要的 C 語言技巧與 Git。  
+* 三月份學習回顧: 4 月 5 日發送，學習主題為 C 語言的程式技巧、撰寫排序與其測試檔，並且其中檢驗亂數是否達統計意義的夠亂。  
+* 四月份學習回顧: 5 月 6 日發送，學習主題為並行處理的議題、Linux 核心模組、device driver 的運作過程，其餘，還有 workqueue, tasklet,等程式碼，這些讓我得以細緻的控制 Linux 核心的諸多任務。最後還有，圍棋AI(蒙地卡羅樹搜尋與 minimax n的演算法)、與其專案中的協同式多工與搶佔式多工的實作。  
+* 五月份學習回顧: 6 月 5 日發送，學習主題主要為多執行緒程式設計，並開始撰寫期末專題。  
+
+## 分數
+採用方案 B 計算方式
+```python
+1 + math.floor(pow(6*7*9*8*10*10, 1/6)) = 9
+```
+我的分數為 9 分。
