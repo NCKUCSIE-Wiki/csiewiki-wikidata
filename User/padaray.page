@@ -28,7 +28,7 @@ categories: User
 
 ### 期末專題
 
-vcam: [HackMD](https://hackmd.io/@padaray/linux2024-final) / [GitHub](https://github.com/padaray/vcam) / [Youtube](https://youtu.be/OVUKaIWNOFA)
+vcam: [HackMD](https://hackmd.io/@sysprog/ByzkF6xDA) / [GitHub](https://github.com/padaray/vcam) / [Youtube](https://youtu.be/OVUKaIWNOFA)
 
 了解 V4L2 框架、Framebuffer、vcam 程式碼，在 Linux 6.8 版本成功運行 vcam
 
