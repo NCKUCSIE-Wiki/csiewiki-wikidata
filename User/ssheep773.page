@@ -27,13 +27,16 @@ categories: User
 * quiz3+4: [HackMD](https://hackmd.io/@Xsheep/linux2024-homework4)
 
 ## 期末專題
+
 自評分數: 9 分
+
 * Work-stealing: [Github](https://github.com/ssheep773/work-stealing) / [HackMD](https://hackmd.io/@sysprog/SJoqB8Y80)
 
 在期末專題中，我運用老師的 work-stealing 範例程式與論文說明的方法，將程式碼打包成閉包執行，用於計算費式數並用 work-stealing 平衡每個執行緒的工作量，並使用 pref 分析結果。
 
 ## 與授課教師的互動
 自評分數: 9 分
+
 * 一對一討論時間: 2024/05/11 下午 4:00
 在一對一討論中，我向老師請教 RCU 與 lock-free 差異，經由老師提醒 RCU 的重點是 scalability ，讓我了解過去學習的缺失。同時也訂定期末專題的題目工作竊取，並向老師詢問若再排程器能準確排程的情況下，為何還需要工作竊取，經由老師解答了解到程式執行會因為例外事件等因素，造成執行時間的不可預期，因此需要工作竊取作工作的負載平衡。
 
@@ -56,5 +59,6 @@ categories: User
 學習到 RCU 等並行處理方法，可以使用到擴充實驗室研究內容中
 
 ##自我評量
+
 * GEOMEAN：$\sqrt[6]{6*8*9*8*9*9}=8.08$
 * 方案 B：$1+\lfloor 8.08 \rfloor=9$
