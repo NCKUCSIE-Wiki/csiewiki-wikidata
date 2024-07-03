@@ -1,1 +1,37 @@
-簡介
+---
+title: Ken-LuWeiRu (呂威儒)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程學系 111 級 (2018 ~ 2022)
+
+* GitHub: [`Ken-LuWeiRu`](https://github.com/Ken-LuWeiRu)
+* HackMD: [`Ken-LuWeiRu`](https://hackmd.io/@jackkinsinging)
+
+
+# 2024 Linux 核心設計 春季班 自我評量
+## 作業共筆
+
+* lab0-c: [GitHub](https://github.com/Ken-LuWeiRu/lab0-c) / [HackMD](https://hackmd.io/@jackkinsinging/SJhGj-mTT)
+* 2024 年 Linux 核心設計/實作課程第 2 次作業: [HackMD](https://hackmd.io/@jackkinsinging/linux2024-homework2)
+* 2024 年 Linux 核心設計/實作課程第 4 次作業: [HackMD](https://hackmd.io/@jackkinsinging/linux2024-homework4)
+* 2024 年 Linux 核心設計/實作課程第 5 次作業: [HackMD](https://hackmd.io/@jackkinsinging/linux2024-homework5)
+* 2024 年 Linux 核心設計/實作課程[第 6 次作業](https://hackmd.io/@sysprog/linux2024-homework6): [HackMD](https://hackmd.io/@jackkinsinging/Homework6)
+
+
+## 期末專題
+
+* lab0-c : 如果改用多執行緒 & 重作 Homework4: [HackMD](https://hackmd.io/@jackkinsinging/Linux-final-Ken-LuWeiRu)
+
+## 修課心得
+
+一開始在計畫要上這堂課的時候就發現課程的材料真的很多，估計要花上好幾小時才能完成每個星期的進度，而實際上這學期走過這門課也真的學了不少東西，不管是作圖用的 gnuplot，檢查記憶體使用情況的 valgrind 或是檢查格式的 clang-format，也才發現自己在 HackMD 跟 GitHub 好像也沒有用過很多的功能，頂多就是偶爾打開寫寫投影片，或是把最近寫的作業等等程式碼上傳上去而已。
+
+就如同老師在學期初所講的，這堂課雖然說是 Linux 核心設計，但課程的範圍囊括了資訊系許多必修課與選修課的內容，而且內容不但豐富，也相當的深入。因為我在修這堂課的時候是大二下，在這之前並沒有學習過計算機組織的知識，還好老師已經準備好了許多相關的教材，讓我不至於不知道要怎麼處理這方面的議題，而且在上計算機組織的時候也對 cache, virtual memory 這樣的議題更有認知。
+
+上這堂課還有另外一項好處，可以知道目前電腦、科技領域的發展脈絡，讓我們在學習核心實作的知識時，也可以了解我們現在所學的這些技能，將來可以用在哪裡，真的是收穫滿滿。
+
+## 自我評量 (1 ~ 10)
+
+
