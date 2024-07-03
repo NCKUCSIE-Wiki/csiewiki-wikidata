@@ -11,8 +11,9 @@ categories: User
 
 # 2024 Linux 核心實作 春季班 自我評量
 ## 第一項、成果發表和貢獻
-評分: 
+評分:   
 我給自己 8 分
+
 2024/4/27 針對教材 [`並行程式設計: Atomics 操作`](https://hackmd.io/@sysprog/concurrency-atomics) 中的 MOESI protocol ，發現敘述有誤，給予提醒，隨後被老師採納更正。
 
 ## 第二項、作業/隨堂測驗
