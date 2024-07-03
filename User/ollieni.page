@@ -28,20 +28,26 @@ categories: User
 
 ### 作業與隨堂測驗
 * lab0: [HackMD](https://hackmd.io/@NIYINGCHIH/linux2024-homework1)
+
 完成指定的佇列操作，針對使用到的 git hook 和 clang-format 做查詢並理解，完成 list_sort 和 Tim_sort 的引入，實作 Fisher–Yates shuffle。
 
 * quiz1 + 2: [HackMD](https://hackmd.io/@NIYINGCHIH/2024q1_Homework2)
 
+重新理解並探討 quiz1 + 2
 
 * quiz3 + 4: [HackMD](https://hackmd.io/@NIYINGCHIH/linux2024-homework4)
 
+重新理解並探討 quiz3 + 4
 * Assessment: [HackMD](https://hackmd.io/@NIYINGCHIH/2024q1_Homework5_assessment)
+
 撰寫閱讀〈因為自動飲料機而延畢的那一年〉後的心得，研讀課程教材並提出疑問。
 * Integration: [HackMD](https://hackmd.io/@NIYINGCHIH/linux2024-homework6)
 
 ### 期末專題
 
 Pub/Sub模擬: [HackMD](https://hackmd.io/@NIYINGCHIH/PubSub)
+
+我實作出 Pub/Sub 模型的 Linux kernel module，還有探討訂閱者數量 vs. 執行時間在不同組態的表現，也有做 Kthread 和 CMWQ 的效能比較。
 
 ### 與授課教師的互動
 一對一討論：5月 20日 (星期一)⋅下午 7:00 - 7:30
@@ -57,6 +63,12 @@ Pub/Sub模擬: [HackMD](https://hackmd.io/@NIYINGCHIH/PubSub)
 * 6/20 上課 按計算機計算答案
 
 ### 修課心得
+
+我學到很多大學沒注意到的事情，例如使用 hook 來要求 commit message 的品質，以及使用 clang format ，使程式有一致的風格，可以使得大專案變得更加容易協作，更好的去實行 code review 的動作，這對要成為一個工程師來說是一個很好的素養。
+
+實作期末專題讓我理解甚麼是 Pub/Sub 模型，也練習了如何做出一個 Linux kernel module，我也理解並使用 ktime 函式庫做時間的測量。
+
+閱讀〈因為自動飲料機而延畢的那一年〉給我很多心得感想，在完成一整個專案的過程，一定會遇到很多困難，看了前輩的整個心路歷程，我覺得很重要的事情是如何面對困難與挫折，在這堂課我誠實面對自己，我基礎打得不好，在很多方面以我想成為的人來說都有所欠缺，但是這堂課有提升我的自我學習能力，我覺得這是非常好的收穫。
 
 ### 與指導教授的學習回顧
 二月份回顧 : 3月7日 週四 下午 10:41
