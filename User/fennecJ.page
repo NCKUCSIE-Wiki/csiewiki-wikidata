@@ -3,10 +3,186 @@ title: fennecJ (蔡孟宗)
 categories: User
 ---
 
+
 ### 簡介
 * 國立成功大學 電機工程系 112 級
+* 國立成功大學 電機工程所 (2023~)
 * Github: [fennecJ](https://github.com/fennecJ)
 * Hackmd: [fennecJ](https://hackmd.io/@fennecJ)
+
+### 2024 Linux 核心設計 春季班 自我評量
+
+#### 自我評量
+GEOMEAN：$$ \sqrt[6]{(6*7*7*8*9*6)} = 7.08 $$
+
+$$ 1 + \lfloor 7.08 \rfloor = 8 $$
+
+總分 8 分。
+
+#### 成果發表和貢獻 (6/10)
+* 修正「 Demystifying the Linux CPU Scheduler 」中的錯字，但老師並未公開本書的 repo ，無法標示對應的 commit 為何。
+
+* 針對課堂考試的題目來源 [queue.h](https://github.com/anas2660/queue) 進行錯字修正，對應 [PR](https://github.com/anas2660/queue/pull/1)
+
+由於採記期間僅為本學期 2月 ～ 6月，因此雖然我曾發過大量 PR 到 [lkmpg](https://github.com/sysprog21/lkmpg) 專案中，能紀錄的貢獻相對較少，這項指標我給自己 6 分。
+
+自評： 6分
+
+#### 作業/隨堂測驗 (7/10)
+
+[lab0-c](https://hackmd.io/aBrDRMphQ3KRfAToZMCR6Q)
+
+* 透過數位電路中多工器 / 解多工器解釋系統呼叫 `select` 的行為
+* 測試其他同學提交的 web-server 實做手法，指出其缺陷並討論造成該缺陷的成因。
+
+[2024q1 Homework2 (quiz1+2)](https://hackmd.io/kl_6PwxbRZeHQ2PACi_yUA)
+
+* 針對 powersort 進行詳盡的解釋，並透過分析其虛擬碼實做，提供對應的 C 語言實做
+* 參考 cpython 中 listsort 提到的測試 [資料集](https://github.com/python/cpython/blob/main/Objects/listsort.txt) ，在 C 語言中實做出對應的資料集產生器並進行實驗比較不同演算法的效能。
+
+[M03: ttt](https://hackmd.io/aBrDRMphQ3KRfAToZMCR6Q)
+
+* 透過 `poll` 系統呼叫實做出了「人 vs 電腦」下即時更新時間的功能。
+* 探討了如何用定點數實做出四則運算、開根號、取 log 等操作
+
+[2024q1 Homework5 (assessment)](https://hackmd.io/BzLGVQdPRpWeBO_u7d_Bzw?view)
+
+本學期中我認真完成作業，且有一定的產出，因此我給自己 7 分。
+
+自評： 7 分
+
+#### 期末專題 (7/10)
+
+[Linux 核心專題: 針對鏈結串列的資料排序改進](https://hackmd.io/Pb6dRlaoTRyuBHZi1zG-iQ)
+
+在這項專題中，我留意到 XFS 檔案系統大量使用到 list_sort ，其中有部份函式呼叫 list_sort 時的資料分佈非常適合使用 timsort 和其衍生算法處理，例如 `xlog_cil_push_work` 這個函式，我收集了這個函式呼叫 list_sort 前的資料分佈用作實驗用的資料集，發現該函式的資料分佈透過 timsort 的衍生算法 - adaptive_Shiverssort 排序時相比原本 kernel 中實做的作法平均能節省 32% 的排序時間以及節省 25% 的比較次數。其中，在蒐集到的最長資料集中，其節省時間甚至高達 60% ，並可節省 55% 的比較次數。由於使用者體驗上最在意的是 tail-latency ，因此在最長的資料集下能取得如此進步意義是很重大的。
+
+同學專題討論與提問：
+
+- [Linux 核心專題: 並行程式設計](https://hackmd.io/@sysprog/Skyd45U8A)
+- [Linux 核心專題: rhashtable 及核心記憶體管理研究](https://hackmd.io/@sysprog/rkOByUtI0)
+- [Linux 核心專題: 浮點數運算案例探討](https://hackmd.io/@sysprog/BJDY-YoL0)
+- [Linux 核心專題: 井字遊戲改進](https://hackmd.io/VpOFbwPLRCqQ5_i0ZOUtfQ)
+- [Linux 核心專題: 紅黑樹實作改進](https://hackmd.io/8EXDGddgQ9SMTF1yjrQJ0w)
+
+在期末專題中，我主要完成以下事情：
+
+* 簡介 timsort 演算法及其衍生演算法：探討 timsort 以及基於它的衍生演算法有何特性，適合如何的資料集。
+* 修改 linux kernel：修改了 Linux 核心，取得不同函式使用 list_sort 的資料分佈，了解實際應用中的資料特性。
+* 撰寫 kernel module：為了使實驗結果更具說服力，我撰寫 kernel module 並關閉 interrupt/preemption ，並透過撰寫的 kernel module 進行實驗。
+* 比較演算法效能：將 timsort 演算法及其衍生演算法，基於前面取得的資料分佈進行比較，證明了 timsort 以及基於它的衍生演算法在特定應用下的表現相比 list_sort 有超過 30% 的明顯進步。
+
+我認為我的期末專題有取得一定程度的結果，因此我給我自己評分 7 分。
+
+自評： 7 分
+
+#### 與授課教師的互動 (8/10)
+
+課堂問答：
+
+* [2024-03-{19,21} 討論簡記](https://hackmd.io/3e8LI8_0SLOo_UTDAnPKYQ)
+    回答了一系列針對 `harness.c` 的問題，並針對同步 / 非同步的概念進行探討
+
+* [2024-03-26 / 04-02,04,09,11 討論簡記](https://hackmd.io/S-UYYCyCQVSaGzwhhVCm2g)
+    針對鏈結串列的 Timsort, Adaptive Shivers Sort, PowerSort 進行簡短的討論
+
+* [2024-06-25,27 討論簡記](https://hackmd.io/5QPCsxI-TkGZbSiW9VVdQw)
+    其中如何擴充為 MPMC 等相關議題是上課時和教授討論的問題。
+
+課後互動：
+在進行針對鏈結串列的 Timsort, Adaptive Shivers Sort, PowerSort 之相關研究時，有數次課後我有留下來和教授進行簡短討論。此外，針對期末專題也有數次課後留下來和教授進行簡短討論。
+
+一對一討論：
+5/2 11:00~11:30 和教授針對期末專題主題進行討論，並確定了期末專題要完成的目標（簡介 timsort, 收集資料分佈，實做 timsort 進 kernel 中並進行實驗）。
+
+FB 私訊：
+針對期末專題遇到的困難進行了簡短討論。
+
+在本學期課程中我投入了大量時間和教授進行討論及互動，因此我打算給自己 8 分。
+
+自評： 8 分
+
+#### 所見所聞所感 (9/10)
+
+在 〈因為自動飲料機而延畢的那一年〉 文中作者嘗試透過他的專業解決真實世界發生的問題，並將過程遇到的困難和啟發記錄下來。文章內我較有印象的有幾點：
+* 學用落差
+
+作者觀察到許多科系的學生實做能力低落：「除了資工系的學生不會寫程式，機械系的學生不會做機械，現在又多一條電工系的學生不會焊電路，這世界到底怎麼了啊。」
+
+* 「一項產業進步的速度，很大程度取決於做實驗修正問題的速度」
+
+作者提及機械設計的迭代曠日費時。相較之下，軟體因為能快速實驗修正的特性因此進步速度非常快。不免令人擔心會不會跟不上許多飛快發展的新技術。不過我還是相信真正重要，關鍵的知識，往往不會因為新技術的發展而顯的過時，唯有深刻掌握諸如線性代數、演算法、資料結構等基礎知識，才能在變化迅速的時代中站穩腳步。
+
+* 「如果問題過於困難無法解決，那就重新定義問題」
+
+定期審視當前設立的目標難度並進行合理的調整是很重要的。
+
+* 「你最大的問題在太害怕失敗了… 你該學習的不是看到事情要完蛋了就去避免失敗，而是應該學習如何處理與承受失敗，你才能變得比以前更強大。」 
+
+這段話對我形同當頭棒喝，我也是一個因為害怕失敗傾向不要進行嘗試的人。近期我看到 Steven Bartlett 提到的概念：
+```
+失敗 = 反饋
+反饋 = 知識
+知識 = 力量
+所以失敗會帶給你力量
+```
+另外， IBM 前總裁也說過類似的話：「如果想比你的對手更成功，那就把失敗率加倍」
+以上這兩段話都和文中的這段話不謀而合，這段話也間接鼓勵我確立我的 [期末專題](https://hackmd.io/Pb6dRlaoTRyuBHZi1zG-iQ) 。當時在決定期末專題時，我正好遇到了之前專題題目也是在研究 linux 核心中的 list_sort - [Linux 核心專題: 改進 lib/list_sort.c](https://hackmd.io/@sysprog/Hy5hmaKBh) ，且對演算法頗有心得的 [visitorckw](https://hackmd.io/@sysprog/Hy5hmaKBh) 。
+我和他到提我打算延續他的研究，尋求改善 linux 核心中的 list_sort 的機會。原本提出是希望能得到前輩的鼓勵，不過他很誠懇的和我分析， list_sort 目前的實做方法已經足夠好且實驗結果非常接近理論上的最佳時間複雜度，加上 linux 核心的開發者其實滿嚴格的，因此他認為要能改善 list_sort 不是一個很簡單的任務，並建議我思考換成其他專題的可能。如果沒有看到這篇文章，我可能就真的會改去研究其他題目，不過最後我還是頭鐵，抱著大不了失敗獲得力量的精神選擇了這項專題。最終發現了在特定應用場景下，改善後的演算法相比原本的作法最高能有高達 60 % 的效能進步。
+
+
+在本學期的 linux kernel 課程中，我積極把握和教授互動的機會，並透過回答教授問題的過程，整理筆記也溫故知新，深化既有認知。諸如在 lab0-c 的 [作業](https://hackmd.io/aBrDRMphQ3KRfAToZMCR6Q?view#%E7%B6%B2%E9%A0%81%E4%BC%BA%E6%9C%8D%E5%99%A8) 中，我透過使用硬體設計中的多工器解釋 [select](https://man7.org/linux/man-pages/man2/select.2.html) 這個 syscall 的行為。
+
+另外，當老師問出我當下無法清楚回答的問題時，我便能重新檢視自己所學，彌補自己的不足。例如在 [2024-03-{19,21} 討論簡記](https://hackmd.io/3e8LI8_0SLOo_UTDAnPKYQ?view#fennecJ) 中，老師要球我解釋同步 / 非同步 / propagation dealy 的概念，我才意識到這些在電機系被視為理所當然的議題，想要將他清楚的表達給沒有硬體背景的其他同學不是一件簡單的事情，我也意識到無法清楚的表達，表示我學的不夠扎實，可以趁此機會補足。回家後，我便和同為電機系的 [millaker](https://hackmd.io/@millaker) 討論，查閱相關教材後一起合作整理成筆記並更新於當日的討論簡記中。
+
+除了和老師進行問答外，我也藉由完成作業的過程中持續學習精進。在進行 [M03:ttt](https://hackmd.io/@sysprog/linux2024-ttt#-%E4%BD%9C%E6%A5%AD%E8%A6%81%E6%B1%82) 中的作業要求有一點為：
+
+* 對弈的過程中，要在螢幕顯示當下的時間 (含秒數)，並持續更新。
+
+我在進行該項作業時留意到所有同學的實做方法都只有在「電腦 vs 電腦」時達成該項功能，而「人 vs 電腦」則沒有。原因在於使用一般的作法讀取使用者輸入時是 blocking read ，此時只要使用者沒按下 enter ，我們就不能直接切換到其他 function 來刷新畫面。我想要挑戰這個限制，順便熟悉前陣子看到的 [poll](https://man7.org/linux/man-pages/man2/poll.2.html) 。透過 poll 實做出 stdin 有輸入（即使用者按下鍵盤）後才透過 read 進行讀取到一個暫時的 buffer ，直到使用者按下 ENTER 後才解析 buffer 的內容進行對應的操作，如此便能避免 blocking read 造成讀取輸入時無法切換到其他 function 來刷新畫面的問題，呈現結果如下：
+[影片](https://youtu.be/s2wYWHZ0K3s)
+
+可以看到能順利在 「人 vs 電腦」 的模式下達成精確到秒的時間更新畫面。
+
+在本學期的課程中，我能夠明確感受到自己的成長，並留下數份筆記和課堂問答作為紀錄，因此我打算給自己 9 分的高分。
+
+自評： 9 分
+
+
+#### 發給實驗室指導教授的學習回顧 (6/10)
+
+
+* 3 月回顧
+
+主旨：linux 核心實做三月回顧  
+寄信時間： 2024年4月6日 上午4:09  
+寄信信箱： chchen@mail.ncku.edu.tw,   
+c.c. 	jserv@ccns.ncku.edu.tw  
+信中提及課程內容中和實驗室可連結的議題，以下簡單摘錄：
+
+* shannon entropy  
+在閱讀課堂上提供的材料時，重新複習了一下 shannon entropy 的概念，也因此在聽到加速器組的驊宸報告說「為了讓量化後的資訊量最大，我們應該確保將資料盡可能平均的分配到不同的 bin 而非高機率落在少數幾個 bin」時我能迅速理解並與其討論相關議題。
+
+* bloom filter  
+在閱讀課堂上提供的材料時，得知了 bloom filter 這個資料結構。而在閱讀 sandbox prefetcher 的論文時，該論文便是使用 bloom filter 用來紀錄一個 addr 是否曾被 prefetcher predict 過。而因為有了前述的先備知識，我得以順利迅速了解其實做的核心概念。
+
+* 6 月回顧（期末專題邀請信）
+
+主旨： linux 核心期末專題成果發表  
+寄信時間： 2024年6月30日 下午10:27  
+寄信信箱： chchen@mail.ncku.edu.tw,   
+c.c. 	jserv@ccns.ncku.edu.tw  
+
+本信主要針對我的期末專題進行簡短介紹，並提及可能對實驗室有幫助的其他同學的專題成果，以下簡單摘錄：
+
+* 在本次專題中，我學會了如何透過撰寫 kernel_module 以及修改 linux 核心後順利將其編譯後執行於實際硬體上。之前和伯維學長討論時有聊到好的 prefetcher 需要作業系統（軟體）和硬體的配合，有了前述經驗，到時若需要修改 linux kernel 進行實驗，我將更具信心和能力完成相關工作。
+
+* 本次志懋同學進行的實驗為：建構 RISC-V 相容處理器並運作 Linux 核心，我相信他的專題對易騰和佩珊進行的計畫很有幫助，因此這裡也一併附上。
+
+
+雖然沒能達成每個月寄信的要求，但我仍在平時開會討論時提及自己所學，例如課堂中學到的 Bloom filter ，我便在實驗室的會議上提出，並簡單探討引入  Bloom filter 能帶來的效能改善即可行性。我認為有達到及格的水準，因此這項指標我決定給自己 6 分。
+
+自評： 6 分
 
 ### 2023 Linux 核心設計 春季班 自我評量
 
