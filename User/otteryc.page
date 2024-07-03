@@ -1,1 +1,49 @@
-# otteryc (陳禹丞)
+---
+title: otteryc (陳禹丞)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程學系 114 級
+
+* GitHub: [`otteryc`](https://github.com/otteryc)
+* HackMD: [`otteryc`](https://hackmd.io/@otteryc)
+
+# 2024 Linux 核心設計 春季班 自我評量
+
+## 成果發表與貢獻
+1. [sysprog21/ksort PR#1](https://github.com/sysprog21/ksort/pull/1)
+2. [sched-ext/scx PR#396](https://github.com/sched-ext/scx/pull/396), 後由 [PR#400](https://github.com/sched-ext/scx/pull/400) revert 
+
+其中， 1. 有在 [sysprog21/simrupt PR#1](https://github.com/sysprog21/simrupt/pull/1) 以及 [sysprog21/lkmpg commit e1b44579](https://github.com/sysprog21/lkmpg/commit/e1b44579b0f416a20cfe7b9ba0205e1fb674dba5) 中被引用。
+這部分我給自己 8 分。
+
+## 作業/隨堂測驗:
+
+* lab0-c: [Github](https://github.com/otteryc/lab0-c) / [HackMD](https://hackmd.io/@otteryc/linux2024-homework1)
+* quiz(3+4): [HackMD](https://hackmd.io/@otteryc/linux2024-homework4)
+* Assessment: [HackMD](https://hackmd.io/@otteryc/linux2024-homework5)
+* integration: [HackMD](https://hackmd.io/@otteryc/linux2024-homework6)
+這個項目我給自己 6 分，除了第一次作業 lab0-c 有較高的投入以外，在 overcommit 的一個學期之內，確實沒有足夠的投入在這門課程中。
+## 期末專題
+
+* sched_ext 研究: [HackMD](https://hackmd.io/@sysprog/H1u6D9LI0)
+
+這個項目我給自己 10 分，透過這次的期末專題，讓我真正的去理解一個開源專案的運作方式，並且嘗試貢獻，雖然最後受到 revert ，但是仍然是一個珍貴的學習機會。
+
+## 與授課教師的互動
+
+* 5/10 下午 1:30 一對一討論
+
+在這次討論過後，授課教師回答完我對 KASAN 的疑問之後，問了一個關於無號數在常數時間比大小的問題（作答紀錄在 HW5），讓我反思了我的學習態度，以及重新閱讀了多次的課程教材，所以這個項目我給自己 9 分。
+
+## 所見所聞所感
+在與 scx 開發者討論的過程中讓我體會了 NVIDIA 執行長黃仁勳先生所說的 "feedback is learning" ，雖然我所提交的 PR 不能真正的解決問題反而會造成 segfault ，但是我不應該因為感到羞恥而逃避，要直面錯誤並從中學習。
+我也想在此感謝 vax-r 邀請我接下來一起進一步瞭解 scx 專案在 kernel 中的改動，我預計先在先前滑倒的地方(libbpf comaptiable issue)開始，盡所能為 scx 專案提出貢獻。
+
+這一部分，我想給自己 9 分
+
+## 自我評量 （1-10 分）
+$GEOMEAN = \sqrt{8 \times 6 \times 10 \times 9 \times 9} = 8.27$ 
+
+方案 B : $1 + \lfloor GEOMEAN \rfloor =$ 9 分 
