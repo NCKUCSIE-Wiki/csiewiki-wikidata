@@ -60,6 +60,9 @@ categories: User
 
 並且嘗試實作 ad hoc (IBSS) mode 並提交 pull request (詳見 [Support ad hoc network](https://github.com/sysprog21/vwifi/pull/70))
 
+此外，我亦詳細查看同儕的期末專案開發紀錄與 commit 內容，對其提出問題並以自身經驗給予建議。
+詳見 [Reviewed by jychen0611](https://hackmd.io/@sysprog/ryJXC9iIR#Reviewed-by-jychen0611)
+
 ## 與授課教師的互動
 * 2024.03.21 23:00 課後詢問 lab0-c 相關問題
 * 2024.05.03 16:00 一對一討論
