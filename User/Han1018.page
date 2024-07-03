@@ -32,13 +32,13 @@ kHTTPd 開源專案參考資料修訂，改善 [Paintako](https://hackmd.io/@sys
 
 * 2024q1 Homework6 (integration)：[HackMD](https://hackmd.io/@zRlFO_buT66gBhkP4gN7vg/linux2024-homework6)
 
-在課程中的作業與測驗中學到了非常多的東西，首先是各種工具的使用，如 Valgrind、Perf、Ftrace 和 Git 等。在作業一和作業三中，我使用 Valgrind 分析記憶體問題，並排除 qtest 實作的記憶體錯誤，同時使用 Massif 視覺化記憶體使用量。為了檢驗實作的 merge sort 效果，我在作業中使用 Perf 工具，測量排序百萬個節點所需的 cycles、instructions 及執行時間，並比較了 merge sort 與 Linux 核心的 list_sort 的差異。
+在課程中的作業與測驗中學到了非常多的東西，首先是各種工具的使用，如 Valgrind、Perf、Ftrace 和 Git 等。在作業一和作業三中，使用 Valgrind 分析記憶體問題，排除了 qtest 實作的記憶體錯誤。為了檢驗實作的 merge sort 效果，我在作業中使用 Perf 工具，測量排序百萬個節點所需的 cycles、instructions 及執行時間，並比較了 merge sort 與 Linux 核心的 list_sort 的差異。
 
-Ftrace 則被用來觀察 kernel space 程式的效能瓶頸。在期末專題中，我使用 Ftrace 發現某些特定 function 有著異常高的執行時間，透過觀察並使用快取機制進行改進後，系統吞吐量提升了兩倍以上（詳見期末專題開發紀錄）。
+Ftrace 則被用來觀察 kernel space 程式的效能瓶頸。在期末專題中，使用 Ftrace 發現到某些特定 function 有著異常高的執行時間，透過觀察並使用快取機制進行改進後，系統吞吐量提升了兩倍以上（詳見期末專題開發紀錄）。
 
-此外，作業中我學習到 Linux 核心鏈結串列的實作，並利用此知識開發和改進核心模組，包括 bitwise 操作、並行處理機制和檢驗複雜度的方法。特別是在學習檢驗複雜度方法時，我通過閱讀論文《Dude, is my code constant time?》和使用其檢測工具 [dudect](https://github.com/oreparaz/dudect)，修正了作業 lab0-c 中使用 Student's t-distribution 檢驗時間複雜度的缺陷，去除了在小樣本估計未知標準差時可能出現的極端值。
+此外，作業中學習到 Linux 核心鏈結串列的實作，並利用此知識開發和改進核心模組，還有 bitwise 操作、並行處理機制和檢驗複雜度的方法。在學習檢驗複雜度方法時，通過閱讀論文《Dude, is my code constant time?》和使用其檢測工具 [dudect](https://github.com/oreparaz/dudect)，修正了作業 lab0-c 中使用 Student's t-distribution 檢驗時間複雜度的缺陷，去除了在小樣本估計未知標準差時可能出現的極端值。
 
-在期末專題中，我大量使用了並行處理機制，如 atomic、spinlock，並實作了 lock-free 機制中的 RCU，用於維護放置快取內容的雜湊表。
+在期末專題中，大量使用了並行處理機制，如 atomic、spinlock，並實作了 lock-free 機制中的 RCU，用於維護放置快取內容的雜湊表。通過引入 CMWQ 改善了創建 kthread 時的成本，改善吞吐量約 1.5 倍。
 
 ## 3. 期末專題
 
