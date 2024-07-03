@@ -18,7 +18,7 @@ kHTTPd 開源專案參考資料修訂，改善 [Paintako](https://hackmd.io/@sys
 
 * MIME 型態章節：調整「MIME 是由主要型態（type) ... 如下： type/subtype;parameter=value」段落，修正多餘換行。
 
-* 帶來的額外 I/O 開銷
+* 讀取檔案內容章節：修訂「帶來的額外 IO 開銷」，改為「帶來的額外 I/O 開銷」
 
 
 ## 2. 作業/隨堂測驗
