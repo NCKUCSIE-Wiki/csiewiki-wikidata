@@ -23,6 +23,7 @@ categories: User
 * Homework 4 (quiz 3 + 4): [HackMD](https://hackmd.io/@wu81177/linux2024-homework4)
 * Homework 5 (assessment): [HackMD](https://hackmd.io/@wu81177/linux2024-homework5)
 * Homework 6 (integration): [HackMD](https://hackmd.io/@wu81177/linux2024-homework6)
+
 這學期的作業讓我認識了什麼是 Linux 風格的 linked list ，同時也了解了一些排序演算法的細節行為，也理解了一些 bitwise 運算的數學原理。除了理論知識，也學會了像是 Hackmd 和 github 等工具的基本使用。而第六次作業閱讀 LKMPG 使我對撰寫 linux driver 有了一些概念
 
 ## 期末專題
