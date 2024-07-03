@@ -1,0 +1,62 @@
+## 簡介
+- 國立成功大學 資訊工程研究所 114級
+- Github: [st10740](https://github.com/st10740)
+- HackMD: [ivywang2015](https://hackmd.io/@ivywang2015)
+
+## 成果發表和貢獻
+- 〈每位程式開發者都該有的記憶體知識〉
+    - [Proofread DRAM AL operation of memory writing (commit 97ca055)](https://github.com/sysprog21/cpumemory-zhtw/commit/97ca055247334e19dca5a79130b1fc99b0c16f5e)
+    - [Proofread two level 2 page directories for heap & stack (commit f20856f)](https://github.com/sysprog21/cpumemory-zhtw/commit/f20856f6bc1a85f9017bca02cf297bd557e5fe2b)
+    - [Proofread about unprivileged DomU kernels (commit 77d4387)](https://github.com/sysprog21/cpumemory-zhtw/commit/77d4387bebd5d0670341f220cb3e82f10b03afc2)
+    - [Proofread processes and processors (commit da62866)](https://github.com/sysprog21/cpumemory-zhtw/commit/da628661ddf68e733ff9af3d085e90a6d5d1202c)
+    - [Proofread not translated sentence about hitting the L1d (commit 689ac4c)](https://github.com/sysprog21/cpumemory-zhtw/commit/689ac4cbf889f7e09adbd63b6bec5960ed8e77ba)
+    - [Proofread untranslated sentence about page alignment (commit 7c8c06c)](https://github.com/sysprog21/cpumemory-zhtw/commit/7c8c06ccf25f38c892b71bf7910bf7b65da41e44)
+
+評分：9
+
+起初我在提交 [Pull request](https://github.com/sysprog21/cpumemory-zhtw/pull/8) 的時候連 Git Commit Message 都寫不好，每個 commit 的更動也未能明確劃分，在老師的提點和不斷改進下，我將原本只有概略說明 commit 所做的變更內容的方式，轉變為詳細描述其動機和更動情境，才順利被老師採納。我也深刻體認到，即使只是簡單修改文字和重新詮釋句子，也要清楚說明更動的理由，必須將每個細節都做好，才能有效率地與他人合作，並且投入更多貢獻到開源。雖然我僅針對老師翻譯的書籍進行校閱，但這是我第一次貢獻到開源專案，讓我明白了貢獻開源所需注意的細節，因此我給我自己 9 分。
+
+## 作業/隨堂測驗
+- lab0-c：[Github](https://github.com/st10740/lab0-c) / [HackMD](https://hackmd.io/@ivywang2015/linux2024-homework1)
+- Homework2 (quiz1+2)：[Github](https://github.com/st10740/linux-homework2) / [HackMD](https://hackmd.io/@ivywang2015/linux2024-homework2)
+- Homework4 (quiz3+4)：[HackMD](https://hackmd.io/@ivywang2015/linux2024-homework4)
+- Homework5 (assessment)：[HackMD](https://hackmd.io/@ivywang2015/linux2024-homework5)
+
+評分：8
+
+一開始在進行 lab0-c 時，我因急於實作佇列操作而直接閱讀程式碼想藉由推敲來理解整個架構和實作方法，但是這個做法使我花費許多時間卻依然無法理解鏈結串列結構體設計的原由，後來才發現在老師關於 Linked list 在 Linux 核心原始程式碼的教材當中已有介紹被用來實作作業中佇列的結構體，我也從中理解到在實作一項功能之前不應該急於從程式碼著手，而是應該先具備相關的背景知識。真的開始實作後，我又因為指標操作不當以及動態記憶體配置的問題使得許多測試無法通過，於是借助 Valgrint 工具針對動態配置的記憶體進行除錯，並從其他同學的做法中學習，將問題一一排除，最後通過 95% 的測試。在進行研讀 lib/list_sort.c 作業時，我依循先前學習到的經驗，先閱讀教材中有關 list_sort 的介紹並參考作者的註解來理解程式碼，將理解完的方法記錄在 lab0-c 的開發紀錄，並將其整合回專案與使用 perf 工具進行效能評估測試。在與測驗題相關的作業中，我除了重新練習原先答不出來的題目外，也有針對延伸題進行討論，像是使用 Linux 核心風格的鏈結串列改進非遞迴的快速排序法、在Linux 中找尋並理解測驗題出現的函式。雖然沒有達成大多數老師設計的作業目標，但是在做作業的過程中我不斷調整自己的學習方法，因此我給我自己 8 分。
+
+## 期末專題
+- 〈每位程式開發者都該有的記憶體知識〉修訂：[HackMD](https://hackmd.io/@sysprog/HJRd-jUUA)
+- 觀摩其他學員的期末專題：[kevinzxc1217](https://hackmd.io/@sysprog/rkZQsLhLR) / [hungyuhang](https://hackmd.io/@sysprog/HJBxRsRr0)
+
+評分：9
+
+我參考論文原文的內容，對〈每位程式開發者都該有的記憶體知識〉進行校閱，重新詮釋特定句子，修正翻譯錯誤的詞彙，並提交 Pull Request。針對論文中的實驗內容設計實驗方法進行重現，並討論與原始論文結果歧異的原因，此外我也有觀摩其他同學的期末專題，並提出疑問，因此我給我自己 9 分。
+
+
+## 與授課教師的互動
+- 5/10 下午9:00 一對一討論：釐清位元運算可攜性疑問、釐清 extern 與 pointer 轉換疑問、確定期末專題題目
+
+評分：9
+
+在一對一討論中，除了將閱讀教材時遇到的疑問向老師提出外，我最印象深刻的是在討論期末專題題目時，因為我列出了三個想要嘗試的專題主題，老師便一一詢問我想做的原因？這才忽然發現自己有兩個主題是完全答不出具體原因的，只能勉強說出有興趣，但是有興趣是不夠的，具體來說是什麼樣的興趣呢？我過去是否有相關經驗可以佐證？透過這次的討論讓我反思，應當持續充實自己，若對一個主題有興趣也應該確實投入有所產出，因此我給我自己 9 分。
+
+## 所見所聞所感
+評分：10
+
+這門課的難度遠遠超出我當初預期的強度，常常光是閱讀完一份教材就要花上一個禮拜，包含重複聽講解錄影以及完整閱讀一遍教材，針對不理解的地方上網查找答案或是利用 GDB 做實驗測試，也因此使我屢屢感到挫折，總覺得永遠跟不上課堂進度。但是這個過程也正好讓我省思自己欠缺的東西，透過觀摩同儕的作業和專題，我能夠更具體地看見我們之間的差距，激勵我以他們為榜樣持續投入。除了技術上的強度外，我也從中學習到許多同樣重要但是容易被忽略的細節，像是要盡量參考第一手資料才能獲取較正確或最新的資料；能夠清楚表達腦中想法的重要性；要將 Commit Message 寫得好才能讓其他協作者更快進入狀況，減少來回溝通的時間成本；提出一個結論要有實際的實驗數據等等。在〈因為自動飲料機而延畢的那一年〉中有一句話寫道：「這些基本到不行、看起來不難的東西，動手做之後才會發現很多細節要注意。」這充分應證我在課堂中體悟到的事，在還沒有開始動手做之前我總是低估了完成事情所需的時間，唯有真正投入下去才能找到問題的癥結點並且不斷精進自己。在這門課中我充分了解自己的不足，並持續投入學習教材和參與作業和期末專題，因此我給自己 10 分。
+
+## 每月發給實驗室指導教授的學習回顧
+- 二月份學習回顧 (2024/03/05 22:22)：說明撰寫清晰易懂的 Git Commit Message 的重要性，期望藉此在投入實驗室的系統開發時提升多人協作的效率；說明作業要求清楚表達想法，對於實驗室的研究工作有幫助；課堂強調看第一手資料的重要性，培養日後研讀論文和英文閱讀能力。
+- 三月份學習回顧 (2024/04/15 17:05)：作業強調提出一個論證要有實際的實驗數據、bit-wise 操作的方式進行位元反轉可以使用於快速傅利葉轉換、浮點數的有效範圍之內也無法完整表達所有實數促使我在進行有關浮點數運算的演算法時特別注意出錯的原因。
+- 五月份學習回顧 (2024/06/28 14:33)：說明正在進行的課堂期末專題以及專題內容簡介。
+
+評分：8
+
+雖然我沒有寄到四月的學習回顧，但是在其他月份我都有向指導教授提出這門課所學與實驗室研究的關聯性，或是讓老師了解我的學習狀況，因此我給我自己 8 分。
+
+## 自我評量 (1 ~ 10)
+- 自評分數：(9, 8, 9, 9, 10, 8)
+- GEOMEAN = 8.8
+- 採用方案 B 計算成績 = 1 + floor(8.8) = 9
