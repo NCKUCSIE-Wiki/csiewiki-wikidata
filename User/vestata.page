@@ -13,6 +13,13 @@ categories: User
 # 2024 Linux 核心實作 春季班 自我評量
 ## 1.
 ## 2. 作業/隨堂測驗
+* Homework1： [GitHub](https://github.com/vestata/lab0-c) / [HackMD](https://hackmd.io/@tony268596/linux2024-homework1)
+* Homework2： [HackMD](https://hackmd.io/@tony268596/linux2024-homework2)
+* Homework3： [GitHub](https://github.com/vestata/lab0-c.git) / [HackMD](https://hackmd.io/@tony268596/linux2024-homework1) (同 Homework1)
+* Homework4： [HackMD](https://hackmd.io/@tony268596/linux2024-homework4)
+* Homework5： [HackMD](https://hackmd.io/@tony268596/linux2024-homework5)
+* Homework6： [GitHub](https://github.com/vestata/ksort) / [HackMD](https://hackmd.io/@tony268596/linux2024-homework6)
+
 
 ## 3. 期末專題
 * [LLaMA 效能分析](https://hackmd.io/@sysprog/ryIUgeJBC)
@@ -23,11 +30,14 @@ categories: User
 
 
 ## 5. 所見所聞所感
+在第一次作業 lab0-c 撰寫開發紀錄的時候，老師便提醒我撰寫規範，從資訊科技詞彙翻譯及詞彙對照表對應到最細節的 `git diff` 的位移量都被糾正，讓我了解從未在意的細節，讓我理解細節的重要性。在第一次實體上課的時候，在老師與同學課後討論排序測試的時候，以口頭提醒老師在 timsort 排序檢測是否 stable 的時候尚未設定 seq 數值[Hackmd](https://hackmd.io/NqdkZCHNTC2oKjtUsQfjgQ#%E6%94%B9%E9%80%B2%E6%96%B9%E6%A1%881)。在第十一周的實體課程也去跟老師討論關於第六次作業，我在老師跟我說道要限縮問題，也讓我反省我往往都
+
 ## 6. 給實驗室指導教授的學習回顧
-2024-03-01 15:27 二月份學習回顧：
+* 2024-03-01 15:27 二月份學習回顧：我學習到撰寫清晰易懂的 git commit 訊息的重要性。回顧與實驗室學長一起開發的專案，如果當時能規範撰寫 git commit 訊息並提高程式碼質量，必能有效提升工作效率。通過學習，我不僅熟悉了 Linux 作業系統，還提高了在「工業物聯網」課程中擔任助教的教學能力。
 
+* 2024-04-01 17:11 三月份學習回顧：在第三次作業中，我將 MCTS 和 negamax 算法結合到利用 Linux kernel list API 開發的 queue 項目中，面臨了極大的挑戰。通過學習 jserv/ttt 專案中的算法，我複習了 AI 基礎理論並深入理解了其在實際項目中的應用，增進了我對複雜系統中決策過程的理解。
 
-
+* 2024-06-04 09:58 五月份學習回顧：在期末專題中，我研究了 llama.cpp 和 llamafile 這兩個的大型語言專案，學習其量化方法及 PyTorch 在處理大型語言模型時的限制。探討不同資料型態和準確度對困惑度的影響，並研究提升矩陣乘法效能的方法。
 
 ## 7. 
 
