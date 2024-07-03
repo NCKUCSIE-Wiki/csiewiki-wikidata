@@ -44,6 +44,10 @@ Ftrace 則被用來觀察 kernel space 程式的效能瓶頸。在期末專題�
 
 * Linux 核心專題: 高性能網頁伺服器：[GitHub](https://github.com/Han1018/khttpd) / [HackMD](https://hackmd.io/@sysprog/HkyNQeJrR)
 
+課程專題聚焦於提升 kernel mode 網頁伺服器的吞吐量。專題中增添了 kernel 模組的目錄顯示功能，並透過 Ftrace 定位效能瓶頸進行改善，過程中使用了 Ftrace、CMWQ、RCU 和網路通訊機制。透過 CMWQ、content cache 改善了吞吐量，與現行網站相比在特定使用情境下吞吐量有大幅的優勢。
+
+這個項目我的評分為 **10** 分，過程中學習並運用了並行處理機制保護 critical section，並且使用了 Ftrace 定位出效能瓶頸區域並予以改善，實際開發了 kernel module 並使用 CMWQ 改善原先實作建立 kthread 時的時間成本。
+
 ## 4. 與授課教師的互動
 
 ## 5. 所見所聞所感，務必提及閱讀〈因為自動飲料機而延畢的那一年〉和回顧自身在本課程的投入狀況
