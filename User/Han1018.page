@@ -18,7 +18,7 @@ kHTTPd 開源專案參考資料修訂，改善 [Paintako](https://hackmd.io/@sys
 
 * MIME 型態章節：調整「MIME 是由主要型態（type) ... 如下： type/subtype;parameter=value」段落，修正多餘換行。
 
-* 讀取檔案內容章節：修訂「帶來的額外 IO 開銷」，改為「帶來的額外 I/O 開銷」
+* 讀取檔案內容章節：「帶來的額外 IO 開銷」，改為「帶來的額外 I/O 開銷」
 
 
 ## 2. 作業/隨堂測驗
@@ -31,6 +31,10 @@ kHTTPd 開源專案參考資料修訂，改善 [Paintako](https://hackmd.io/@sys
 * 2024q1 Homework5 (assessment)：[HackMD](https://hackmd.io/@zRlFO_buT66gBhkP4gN7vg/linux2024-homework5)
 
 * 2024q1 Homework6 (integration)：[HackMD](https://hackmd.io/@zRlFO_buT66gBhkP4gN7vg/linux2024-homework6)
+
+課程中在作業與測驗中學到非常多東西首先是工具的使用，如 Valgrind、Perf、Ftrace、Git 等。在作業一、三中使用 Valgrind 分析記憶體問題並且排除 qtest 實作的記憶體錯誤，並且使用了 Massif 視覺化記憶體使用量。使用到 Perf 工具的機會是，作業中為了檢驗實作的 merge sort 效果，使用 perf 工具得到排序百萬個節點的 cycles、instructions、執行時間，比較了 merget sort 與 linux 核心的 list_sort 差異。而 Ftrace 可以觀察 kernel space 程式的效能瓶頸，在期末專題中藉由使用 Ftrace，發現到特定 function 有著異常高的執行時間，觀察並使用快取機制改善後，增加了 2 倍以上的吞吐量(詳見期末專題開發紀錄)。
+
+此外，作業中學習到 Linux 核心鏈結串列的實作並用此開發和改進核心模組、bitwise 操作、並行處理機制、檢驗複雜度的方法。其中學習檢驗複雜度方法時透過閱讀論文 <Dude, is my code constant time?> 和其檢測工具 [dudect](https://github.com/oreparaz/dudect)，修正了作業 lab0-c 中 `Student's t-distribution` 檢驗時間複雜度的缺陷，去除小樣本來估計未知標準差的母體時出現的極端值。在專題中，大量使用到並行處理機制中，如 atomic、spinlock，並實作 lock-free 機制中的 RCU 用於維護放置快取內容的雜湊表。
 
 ## 3. 期末專題
 
