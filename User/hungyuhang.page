@@ -9,10 +9,14 @@ categories: User
 * GitHub: [`hungyuhang`](https://github.com/hungyuhang)
 * HackMD: [`hungyuhang`](https://hackmd.io/@hungyuhang)
 
+# 2024 Linux 核心實作 春季班 自我評量
+
 ## 成果發表和貢獻
 * [vcam](https://github.com/sysprog21/vcam): commit [98db839](https://github.com/sysprog21/vcam/commit/98db8397faefe09d2d2822459012ed08b56daddb), [a7e6f0e](https://github.com/sysprog21/vcam/commit/a7e6f0ea18ee3eb49e3db9649ca5b94cc7f2563b)
 
-# 2024 Linux 核心實作 春季班 自我評量
+自我評分：8
+
+這次首度嘗試對 vcam 開源專案提交 pull request ，雖然提交的內容不算多，但對我自己而言仍是一個新的突破。
 
 ## 作業與隨堂測驗
 * lab0: [GitHub](https://github.com/hungyuhang/lab0-c) / [HackMD](https://hackmd.io/@hungyuhang/linux2024-homework1)
@@ -21,13 +25,62 @@ categories: User
 * assessment: [HackMD](https://hackmd.io/@hungyuhang/linux2024-homework5)
 * integration: [HackMD](https://hackmd.io/@hungyuhang/linux2024-homework6)
 
+自我評分：6
+
+在作業一當中，我學到了怎麼使用 perf valgrind 這類的效能分析工具來分析自己寫的程式。而在作業五的時候，其中一項要求是『研讀第 1 到第 6 週「課程教材」和 CS:APP 3/e (至少到第二章)，紀錄心得和』，但我本來並不是一個會作筆記以及紀錄心得的人，所以在這次作業當中我也學習到了怎麼透過作筆記以及紀錄心得跟問題來加強自己的學習。但綜觀而言，我自身在寫作業的突破點並沒有到很多，所以我給自己 6 分。
+
 ## 期末專題
 * vcam: [GitHub](https://github.com/hungyuhang/vcam) / [HackMD](https://hackmd.io/@sysprog/HJBxRsRr0)
 
+自我評分：8
+
+原本我對 v4l2 框架， Linux framebuffer 甚至是 Linux driver 完全一竅不通，但是在期末專題這段時間裡面，我試著去閱讀各種資料（並且也要求自己優先閱讀第一手文獻，例如[核心原始碼](https://elixir.bootlin.com/linux/latest/source)或是 [kernel.org](https://docs.kernel.org/) ）來讓自己對這些東西的概念以及架構有一定的理解，並且從 vcam 程式碼去實際理解 Linux driver 以及各種 driver 框架是怎麼運行的。盡管這些 driver 相關的資訊跟知識很多都相當零碎，但我還是從中了解了 Linux driver 的架構並且提交了 pull request 到 vcam 專案上。相較於其他部份我自認我在期末專題上的突破是比較多的，所以我給自己 8 分。
+
 ## 與授課教師的互動
+* 一對一討論：5月9日 週四 下午2:30
+    * 提問： C 跟 Java 對於 data 的 formats and encodings 的規範之間的差異
+    * 測驗：撰寫「不用乘法的方式把一個 float 的數字乘以二」的程式碼
+        * [測驗後續訂正](https://hackmd.io/@hungyuhang/linux2024-homework5#%E7%99%BD%E6%9D%BF%E9%A1%8C)
+    * 測驗延伸：探討「[為什麼將一個 unsigned 變數的 binary representation 往左移可以得到該數字的二的冪的乘積](https://hackmd.io/@hungyuhang/linux2024-homework5#%E7%99%BD%E6%9D%BF%E9%A1%8C-%E5%BB%B6%E4%BC%B8)」
+
+自我評分：8
+
+雖然老師給我的白板題我答不出來，但我藉著後續的訂正來讓自己對浮點數相關的操作更加熟悉，並且透過這次的經驗，我也學習到寫程式這件事情不能光看一堆文件跟教學，然後不實際試著去寫一些程式碼來驗證自己所學到的東西。
+
+而在老師給我的測驗延伸題目當中，我也成功的用數學的角度去解釋「為什麼將一個 unsigned 變數的 binary representation 往左移可以得到該數字的二的冪的乘積」，以前的我從來沒想過我有辦法透過數學的角度去解釋一些程式碼的行為。
 
 ## 修課心得
 
+自我評分：6
+
+由於這堂課的教材實在很多，所以我在閱讀大多數教材的時候基本上就是順順的看過一遍，並沒有透過實際撰寫程式碼來驗證所學，或是另外作筆記。但我認為這對我未來解決問題的能力還是有幫助的，在閱讀這些大量的教材之後，如果未來寫程式遇到問題的時候，或許我無法立刻解出來，但我的背景知識還是有比修課之前還要廣泛，所以我就可以更知道要往哪個方向去尋找問題。
+
+在「[因為自動飲料機而延畢的那一年](https://blog.opasschang.com/the-story-of-auto-beverage-machine-1/)」一系列文章當中，作者在實際投入專案之前，也是以為專案的難度普通，但在實際投入之後才知道事情沒有想像中的那麼簡單。
+
+而寫程式這件事情對我而言也一樣，有時候是要當自己實際做下去之後，才會發現一切跟自己想的好像不太一樣，有時候要實際做下去之後，才有辦法切身的體會到某些事情。例如在之前，我也大概了解 insertion sort 跟 merge sort 在時間複雜度之間的差異。但當實際寫作業時，透過一些工具程式，實際的去測量到不同演算法之間的效能差異之後，我才真的體會到不同實作方式對程式是「真的」可以帶來很大的影響的。所以在這堂課當中，我認為我有把心裡面對某些事物的模糊認知轉化成實際經驗。
+
+但總結來看，我自認我在這堂課的表現仍有待加強，所以我給自己 6 分。
+
 ## 每月給指導教授的學習回顧
+* 二月回顧：3月7日 週四 下午10:21
+    1. 撰寫紀錄文件所帶來的成長
+    2. 能對於程式碼「實際」的執行方式要有所認知
+    3. 學習如何撰寫可讀性更高的程式碼
+
+* 三月回顧：4月2日 週二 下午2:57
+    1. 應定期回顧自身所做的研究，並且嘗試用不同角度去重新分析並且探討
+    2. 應學習工具程式來協助分析，進而改善程式碼或是正在進行的研究
+
+* 四月回顧：5月5日 週日 上午9:52
+    1. 學習 bitwise operation ，並使用 bitwise operation 來加速一些特定的運算
+    2. 研讀教材並紀錄問題
+    3. 說明希望能投入的期末專案
+
+自我評分：7
+
+除了最後一個月之外，都有定期向指導教授發信解釋目前的學習狀況。
 
 ## 自我評量 (1 ~ 10)
+$(8 \times 6 \times 8 \times 8 \times 6 \times 7) ^ {1/6} = 7.11$ 
+
+使用方案 B 計分：$1 + floor(7.11) = 8$
