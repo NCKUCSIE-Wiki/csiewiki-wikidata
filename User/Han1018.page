@@ -32,7 +32,7 @@ kHTTPd 開源專案參考資料修訂，改善 [Paintako](https://hackmd.io/@sys
 
 * 2024q1 Homework6 (integration)：[HackMD](https://hackmd.io/@zRlFO_buT66gBhkP4gN7vg/linux2024-homework6)
 
-在課程中的作業與測驗中學到了非常多的東西，首先是各種工具的使用，如 Valgrind、Perf、Ftrace 和 Git 等。在作業一和作業三中，使用 Valgrind 分析記憶體問題，排除了 qtest 實作的記憶體錯誤。為了檢驗實作的 merge sort 效果，我在作業中使用 Perf 工具，測量排序百萬個節點所需的 cycles、instructions 及執行時間，並比較了 merge sort 與 Linux 核心的 list_sort 的差異。
+在課程中的作業與測驗中學到了非常多的東西，首先是各種工具的使用，如 Valgrind、Perf、Ftrace 和 Git 等。在作業一和作業三中，使用 Valgrind 分析記憶體問題，排除了 qtest 實作的記憶體錯誤。為了檢驗實作的 merge sort 效果，在作業中使用到 Perf 工具，測量排序百萬個節點所需的 cycles、instructions 及執行時間，並比較了 merge sort 與 Linux 核心的 list_sort 的差異。
 
 Ftrace 則被用來觀察 kernel space 程式的效能瓶頸。在期末專題中，使用 Ftrace 發現到某些特定 function 有著異常高的執行時間，透過觀察並使用快取機制進行改進後，系統吞吐量提升了兩倍以上（詳見期末專題開發紀錄）。
 
