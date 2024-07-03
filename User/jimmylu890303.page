@@ -11,7 +11,7 @@ categories: User
 
 ## 2024 Linux 核心設計 春季班 自我評量
 
-### 成果發表與貢獻
+### 成果發表與貢獻 (4分)
 
 閱讀文件時做的排版修訂：
 
@@ -19,7 +19,7 @@ categories: User
 
 [Linux-KVM 教材](https://hackmd.io/@sysprog/linux-kvm)
 
-### 作業與隨堂測驗
+### 作業與隨堂測驗 (7分)
 * lab0: [GitHub](https://github.com/jimmylu890303/lab0-c) / [HackMD](https://hackmd.io/@jimmylu0303/linux2024-homework1)
 
     完成佇列作的操作，實作出 Fisher–Yates shuffle 及 q_sort ，再 q_sort 與 list_sort 及 tim_sort 做效能上的評估與比較
@@ -41,7 +41,7 @@ categories: User
     閱讀〈Linux 核心模組運作原理〉並對照 Linux 核心原始程式碼 (v6.1+)，閱讀《The Linux Kernel Module Programming Guide》(LKMPG)，並且學習實作字符設備的練習。
 
 
-### 期末專題
+### 期末專題 (9分)
 
 打造具備網路連線的精簡虛擬機器 : [HackMD](https://hackmd.io/lmEdNQoAQxyvwaTdGAeqNQ?view) / [GitHub](https://github.com/jimmylu890303/kvm-host/tree/Implement-virtio-net)
 
@@ -49,7 +49,7 @@ categories: User
 
 並且目前正在提交 [pull request](https://github.com/sysprog21/kvm-host/pull/34) 貢獻到 kvm-host 上。
 
-### 與授課教師的互動
+### 與授課教師的互動 (7分)
 
 一對一討論：5月 20日 (星期一)⋅下午2:30 - 3:00
 
@@ -61,17 +61,17 @@ categories: User
 
 * [問題三](https://hackmd.io/@jimmylu0303/linux2024-homework5#%E5%95%8F%E9%A1%8C%E4%B8%89): 在 /dev/ 下的裝置有 major number 和 minor number，在對 /dev/下的裝置作操作時， linux kernel 會透過 major number 去找到對應的 module ， 但是若有多個 device 對應到同個 major number，也是會找相同的 module，但是要如何透過不同的 minor number 去控制不同的驅動行為 ?
 
-### 修課心得
+### 修課心得 (9分)
 
-當我開始這門課程時，我便一直在追趕進度。每次作業的死線一到，我還是無法完成作業，同時也無法掌握所有的教材，只能勉強閱讀部分內容。然而，我認識到人不可能什麼都懂，必須要取捨學習的重點。對於《你所不知道的 C 語言》這本教材，我學到了許多撰寫程式的技巧，尤其是如何使用前置處理器進行優化，並學習了位元操作（Bit Operation）及其優化方法。
+當我開始這門課程時，我便一直在追趕進度。每次作業的死線一到，我還是無法完成作業，同時也無法掌握所有的教材，只能勉強閱讀部分內容。然而，我認識到人不可能什麼都懂，必須要取捨學習的重點。對於《你所不知道的 C 語言》這本教材，我學到了許多撰寫程式的技巧，尤其是如何使用前置處理器進行優化，並學習了位元操作（Bit Operation）。
 
-此外，關於 Linux Kernel Module 的教材，我也受益良多，特別是學習如何使用 Character Device 進行驅動開發。在期中時，我曾仔細閱讀這部分內容，因此在期末專題進行 virtqueue 的 Operation callback function 時，我有了較清晰的概念。因為 Character Device 在進行讀寫操作時，也會呼叫相應的操作回調函數，所以儘管我只閱讀了部分教材，但這些內容都與我未來的職涯發展有著正相關的影響。
+此外，關於 Linux Kernel Module 的教材，我也受益良多，特別是學習如何使用 Character Device 進行驅動開發。在期中時，我曾仔細閱讀這部分內容，因此在期末專題進行 virtqueue 的 Operation callback function 時，我有了較清晰的概念。因為 Character Device 在進行讀寫操作時，也會呼叫相應的操作回呼函數，所以儘管我只閱讀了部分教材，但這些內容都對我來說是有幫助的。
 
 最後，談到期末專題，在實作過程中我遇到了許多問題，網路上找不到解決方案，最終還是回去閱讀規格書，並且在規格書中找到了相關定義。這堂課帶給我最大的收穫是學會了如何查閱第一手資料。起初，我以為自己無法完成這個專題，但我仍然努力學習，最終順利完成並在線上發表，這是一個非常圓滿的結束。
 
 總結來說，這門課程雖然挑戰重重，但我學到了許多實用的技巧和知識，這些對我未來的職涯發展都有積極的影響。
 
-### 與指導教授的學習回顧
+### 與指導教授的學習回顧 (8分)
 二月回顧：3月8日 下午12:58
 
 了解 Linux 核心中鏈結串列的實作(通用的結構（list_head）)、撰寫清晰好理解的 git commit message ，並且深入學習 Linux 核心知識以提升撰寫高品質程式的能力。
