@@ -31,7 +31,7 @@ int BITS = 31;
 * [slab 記憶體配置器](https://hackmd.io/5Fn8N3HeRkGIO7cZu7chIw?view#%E9%85%8D%E7%BD%AE%E8%A8%98%E6%86%B6%E9%AB%94) 在不同狀況況下 -> 在不同狀況下
 
 ### 作業與隨堂測驗
-* lab0: [GitHub](https://github.com/steven523/lab0-c) / [HackMD](https://hackmd.io/@steven523/linux2024-homework1)
+* lab0: [GitHub](https://github.com/steven523/lab0-c/tree/implement_queue) / [HackMD](https://hackmd.io/@steven523/linux2024-homework1)
 
     完成指定的佇列實作，參考 Fisher–Yates shuffle 演算法對佇列中所有節點進行 shuffle，引入 list_sort 到專案並對自己實作的 merge sort 做效能比對
 
