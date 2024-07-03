@@ -24,6 +24,7 @@ kHTTPd 開源專案參考資料修訂，改善 [Paintako](https://hackmd.io/@sys
 * 讀取檔案內容章節：「帶來的額外 IO 開銷」，改為「帶來的額外 I/O 開銷」
 
 在這個項目，我給自己的評分為 **4** 分。
+
 ## 2. 作業/隨堂測驗
 * 2024q1 Homework1 (lab0)：[GitHub](https://github.com/Han1018/lab0-c) / [HackMD](https://hackmd.io/@zRlFO_buT66gBhkP4gN7vg/linux2024-homework1)
 
