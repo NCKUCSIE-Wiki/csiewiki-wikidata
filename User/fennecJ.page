@@ -139,7 +139,7 @@ FB 私訊：
 
 * 對弈的過程中，要在螢幕顯示當下的時間 (含秒數)，並持續更新。
 
-我在進行該項作業時留意到所有同學的實做方法都只有在「電腦 vs 電腦」時達成該項功能，而「人 vs 電腦」則沒有。原因在於使用一般的作法讀取使用者輸入時是 blocking read ，此時只要使用者沒按下 enter ，我們就不能直接切換到其他 function 來刷新畫面。我想要挑戰這個限制，順便熟悉前陣子看到的 [poll](https://man7.org/linux/man-pages/man2/poll.2.html) 。透過 poll 實做出 stdin 有輸入（即使用者按下鍵盤）後才透過 read 進行讀取到一個暫時的 buffer ，直到使用者按下 ENTER 後才解析 buffer 的內容進行對應的操作，如此便能避免 blocking read 造成讀取輸入時無法切換到其他 function 來刷新畫面的問題，呈現結果如下：
+我在進行該項作業時留意到所有同學的實做方法都只有在「電腦 vs 電腦」時達成該項功能，而「人 vs 電腦」則沒有。原因在於使用一般的作法讀取使用者輸入時是 blocking read ，此時只要使用者沒按下鍵盤輸入 ，我們就不能直接切換到其他 function 來刷新畫面。我想要挑戰這個限制，順便熟悉前陣子看到的 [poll](https://man7.org/linux/man-pages/man2/poll.2.html) 。透過 poll 實做出 stdin 有輸入（即使用者按下鍵盤）後才透過 read 進行讀取到一個暫時的 buffer ，直到使用者按下 ENTER 後才解析 buffer 的內容進行對應的操作，如此便能避免 blocking read 時由於 STDIN 中沒有新的輸入使程式停在那邊無法切換到其他 function 來刷新畫面的問題，呈現結果如下：
 [影片](https://youtu.be/s2wYWHZ0K3s)
 
 可以看到能順利在 「人 vs 電腦」 的模式下達成精確到秒的時間更新畫面。
