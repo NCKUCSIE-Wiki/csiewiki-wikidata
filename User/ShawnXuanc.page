@@ -24,7 +24,7 @@ categories: User
 * commit 8447f69f56c3bf7e7f8624589b2b132b65919798
 
 對於書本的貢獻是這學期最開心的，對於每一次的提交都十分的重視以及慎重，
-在這部份我給自己 8 分
+在這部份我給自己 8 分。
 
 ## 作業/隨堂測驗:
 * HW1,3(lab0): [HackMD](https://hackmd.io/@shawne/linux2024-homework1)
@@ -32,6 +32,8 @@ categories: User
 * HW4(quiz3+4): [HackMD](https://hackmd.io/@shawne/linux2024-homework4)
 * HW5(assessment): [HackMD](https://hackmd.io/@shawne/linux2024-homework5)
 * HW6(integration): [HackMD](https://hackmd.io/@shawne/linux2024-homework6)
+
+對於作業以及測驗的部分，皆有對其投入在作業 1 的時候學習 linux 風格的鏈結串列、sort, 並搭配使用 git、perf、valgrind，在作業 2, 4 對測驗的檢討，在作業 3 對 corutine 進行了解並搭配 ttt 運行，在作業 5 對閱讀的教材進行紀錄並提問，在作業 6 搭配 LKMPG 的閱讀以及 simrupt 的理解
 
 ## 期末專題
 
@@ -49,6 +51,9 @@ categories: User
 並對排程行為進行視覺化。
 
 期末專題: [CPU 排程器研究](https://hackmd.io/@sysprog/SyTH65LUC)
+
+在期末專題的部分我認為我有盡我所能的去進行尤其在書籍閱讀的部分，也因為這樣有了一些貢獻的機會，
+但是在最後並沒有做的很好，可以進行更多實驗比較以及解讀，並更加深入對各種工具進行了解。
 
 ## 與授課教師的互動: 
 
@@ -71,14 +76,19 @@ categories: User
 進行 4 次的學習回顧報告，與指導教授回報在課程中所學，
 日期如下
 
-3/5: 回顧第一次作業，包含 git commit 的缺失，
+二月學習回顧 3/5 下午 12:40 回顧第一次作業，包含 git commit 的缺失，
 程式碼品質，使用工具查看記憶體錯誤等。
 
-4/4: 對第一次作業進行加強，包含 list_sort，
+三月學習回顧 4/4 下午 12:35 對第一次作業進行加強，包含 list_sort，
 第二次作業的檢討，第三次作業的準備，與實體授課的所見所聞。
 
-5/5: 對 3,4 週考試的檢討，主要聚焦在紅黑樹以及 bitwise，
+四月學習回顧 5/5 下午 1:50  對 3,4 週考試的檢討，主要聚焦在紅黑樹以及 bitwise，
 第三次作業的補強，以及再次閱讀教材跟，LKMPG 的閱讀，以及第 6 次作業的準備。
 
-6/7: 進行期末的 TODO 事項，書籍的問題紀錄，
+五月學習回顧 6/7 上午 11:25 進行期末的 TODO 事項，書籍的問題紀錄，
 與指導教授分享課程期末專題的連結。
+
+針對每一次的學習回顧我皆不馬虎的認真撰寫，藉此來記錄這個月所做的事情，
+並提醒自己未做完的部分。
+
+在這部分我給自己 9 分
