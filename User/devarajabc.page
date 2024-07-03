@@ -15,7 +15,8 @@ categories: User
 ## Linux 核心和相關專案貢獻
 * 《Demystifying the Linux CPU Scheduler》：
 
-修改 Fixed point arithmetic [84b2454](https://github.com/sysprog21/linux-kernel-scheduler-internals/commit/84b24543a2e37c36097c09cc322c44342f4092c5),修改 2.2.1 Early Linux Scheduler [3b1e731](https://github.com/sysprog21/linux-kernel-scheduler-internals/commit/3b1e731023068fd61d2d44028ef26d4cbf5e5d91)
+* 修改 Fixed point arithmetic [84b2454](https://github.com/sysprog21/linux-kernel-scheduler-internals/commit/84b24543a2e37c36097c09cc322c44342f4092c5)
+* 修改 2.2.1 Early Linux Scheduler [3b1e731](https://github.com/sysprog21/linux-kernel-scheduler-internals/commit/3b1e731023068fd61d2d44028ef26d4cbf5e5d91)
 
 
 ## 與授課教師的互動
