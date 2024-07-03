@@ -2,3 +2,48 @@
 title: teresasa0731 (李臻茵)
 categories: User
 ...
+
+# 簡介
+* 國立清華大學 動力機械工程學系 24級 (2022~2024)
+
+* Github: [`teresasa0731`](https://github.com/teresasa0731)
+* HackMD: [`teresasa`](https://hackmd.io/@teresasa)
+
+# Linux 核心設計/實作 (Spring 2024) 自我評量
+### 1. 成果發表和貢獻: 
+在這部份我沒有實際的貢獻，但透過教師建議的學習方式，包含閱讀第一手原文資料，追溯開源程式碼專案等，在完成作業測驗與專題過程中，透過實際搜尋 Linux 核心程式碼與教材相比較，並透過觀察 commit 紀錄的變化，從重大的版本更新點，到細微的呼叫函式修正，了解到大型專案的開發進程與考量，我認為都可以作為將來參與開發的基石。
+
+自我評分: 6分
+
+### 2. 作業/隨堂測驗:
+* 作業共筆
+   * lab0-c: [HackMD](https://hackmd.io/@teresasa/linux2024-homework1) / [GitHub](https://github.com/teresasa0731/lab0-c)
+   * homework5 (assessment) : [HackMD](https://hackmd.io/@teresasa/linux2024-homework5)
+   * homework6 (integration): [HackMD](https://hackmd.io/@teresasa/linux2024-homework6)
+* 測驗共筆
+    * quiz1+2: [HackMD](https://hackmd.io/@teresasa/linux2024-homework2)
+    * quiz3+4: [HackMD](https://hackmd.io/@teresasa/linux2024-homework4)
+
+作業部份目前每項都大約一半完成度，測驗部份則是有幾個設計實驗的部份尚未完成，花較多時間在補足基本的知識與閱讀參考資料，雖然在選修這堂課之前就應該謹慎評估能力，但我想我學習到第一件事就是量力而為的重要性，我自認沒有付出100％的努力在課程上，而是更多在處理畢業相關的學分，當然自評不免俗還是考慮了成績問題（還是不想被當掉），但我要求自己在暑假進實驗室前空檔補齊。
+而透過每週測驗的練習，從一開始逐行 trace code 到後半學期學會快速理解並作答，也更了解 bitwise 的應用面等。
+
+自我評分: 7分
+
+### 3. 期末專題:
+自我評分:
+
+### 4. 與授課教師的互動:
+* 一對一討論: 5/11 下午08:30 - 下午09:30
+
+在一對一討論中，老師出了一題 bitwise 操作題目，關於浮點數的乘法運算，另外也點出我在閱讀資料時不應該一昧吸收記憶，應該去理解質疑，並紀錄相關的疑惑。最後決定期末專題挑戰亂數產生器的相關研究。
+
+自我評分: 8分
+
+### 5. 所見所聞所感:
+
+
+自我評分: 分
+
+
+
+### 7. 1~6幾何平均分數:
