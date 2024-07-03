@@ -12,12 +12,12 @@ categories: User
 ## 1. 成果發表和貢獻
 [課堂簡記互動](https://hackmd.io/7svssG2MQpe9ozE_IRRZdg?view#han1018)中提出同學間的共同疑惑 kernel space 的 GDB 方式，得到老師 KDB / UML 的解答。後續便整理 kHTTPd 開源專案安裝至 UML 的方法於專題開發紀錄中。
 
-`kHTTPd` 參考資料修訂，改善 [Paintako](https://hackmd.io/@sysprog/BkSW8Z2Bn) 同學的專案開發紀錄，使語意更通順。
+kHTTPd 開源專案參考資料修訂，改善 [Paintako](https://hackmd.io/@sysprog/BkSW8Z2Bn) 同學的專案開發紀錄，使語意更通順。
 - 引入 CMWQ 章節：「在 kernal kmalloc 一塊空間，再把 work 給丟進 CMWQ 中」。改為：「在 kernal kmalloc 分配一段空間給 http_request 結構體，再把 work 放入至 CMWQ 中。」
 - MIME 型態章節：調整「MIME 是由主要型態（type) ... 如下： type/subtype;parameter=value」段落，修正多餘換行。
+- 帶來的額外 I/O 開銷
 
 
-帶來的額外 I/O 開銷
 ## 2. 作業/隨堂測驗
 * 2024q1 Homework1 (lab0)：[GitHub](https://github.com/Han1018/lab0-c) / [HackMD](https://hackmd.io/@zRlFO_buT66gBhkP4gN7vg/linux2024-homework1)
 
