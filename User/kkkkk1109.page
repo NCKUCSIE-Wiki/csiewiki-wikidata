@@ -12,23 +12,59 @@ categories: User
 # 2024 Linux 核心實作自我評量
 ## 成果發表與貢獻
 ## 作業/隨堂測驗
-對於作業，我選擇給自己 9 分，即使我並沒有達成所有的作業要求。
-在作業一中，重新複習了資料結構中的內容，如各種排序法和佇列的操作。其中對於雙向佇列的操作，是第一次碰到使用龜兔賽跑法來找佇列中央的節點，藉由指針的操作來思考如何有效率和安全的進行節點操作，也用在實驗室的計畫當中。除此之外，也學習到了各種工具的使用方法:如使用 Valgrind 檢查記憶體釋放和 Linux 、 Github 的基本操作。
+對於作業，我選擇給自己 `9` 分。
+
+在作業一中，重新複習了資料結構中的內容，如各種排序法和佇列的操作。其中對於 Doubly linked list的操作，是第一次碰到使用快慢指標來找佇列中央的節點，也發現我自己想的由頭尾找中點方法和同學一樣，並藉由Linux 提供的 list.h API 來思考如何有效率和安全的進行節點操作，也用在實驗室的計畫當中。除此之外，也學習到了各種工具的使用方法:如使用 Valgrind 檢查記憶體釋放和 Linux 、 Github 的基本操作。除此之外，我也學到了 C 語言的基本使用方法，像是我原先完全不知道 #define 要如何使用，或是 static 宣告是靜態函數等基本使用方式。
 
 * [`Homework 1(\lab0)`](https://hackmd.io/@kkkkk1109/linux2024-homework1)
 
-在作業二中，要對第一週和第二週的測驗題進行解釋和分析。第一週測驗著重在各種排序法，Timsort 排序是我第一次碰到，光是研讀程式碼內容就花費了許多時間，也為了理解其中原理和同學討論到半夜。
+在作業二中，要對第一週和第二週的測驗題進行解釋和分析。第一週測驗著重在各種排序法，以前修資料結構時，只有在考試前背各種排序法的時間複雜度和大致的排序方法，考完就忘了。而一般的的 quick sort 都是使用遞迴的方式來進行，測驗一則思考了使用非遞迴的方式，而我也發現可以減少變數的使用而完成程式。也在第二週學習到了以前沒有聽過的 Timsort，並理解了其運行原理，而最有收穫的應該是指標的指標的使用方法，在[`標篇`](https://hackmd.io/@kkkkk1109/linux2024-homework1)中說明了指標的指標的使用，但是道理都懂，實際上做出來又是另一回事，後來嘗試在 leetcode 中使用指標的指標實作，才感覺真的懂了。
 
 * [`Homework 2`](https://hackmd.io/@kkkkk1109/linux2024-homework2)
+
+在作業三中，我將作業一尚未完成的部分補上，並閱讀了 Linux 核心中的 list sort，發現了他和 Timsort 中合併的程式碼非常類似，都是使用指針的指針來進行合併。另外，也學到了排序法 stable 不會改變相同鍵值的排序，in-place sort 的概念是不額外使用記憶體進行排序。除此之外，我也使用了 git-rebase 去修改第一週所提交的 commit ，並理解正確的 git 操作，不過還沒有學習到如何切換分支等等。
+
 * [`Homework 3`](https://hackmd.io/@kkkkk1109/linux2024-homework1)
+
+作業四中，學習到了許多 bitwise 的操作。第一次接觸到 bitwise 是在上學期的計算機結構中，第一次了解到電腦的運作方式，也學習到 IEEE754 規格的浮點數，和如何使用位元運算。作業四中學到了如何使用位元運算快速取對數，和使用 popcount 來計算 hamming distance 和求得餘數，閱讀測驗題目並自己也推導 popcount 的計算方式。
+
 * [`Homework 4`](https://hackmd.io/@kkkkk1109/linux2024-homework4)
+
+作業五中，記錄了閱讀 [`因為自動飲料機而延畢的那一年`](https://blog.opasschang.com/the-story-of-auto-beverage-machine-1/)，了解到了理論上和工程上的不同，並被老師所說的話  “我相信這個問題絕對不會沒有人碰過，一定有人解決過，所以你不該卡在這裡，因為這件事卡在這裡是相當不值得的。”  打動，並記錄了在閱讀並行程式設計中的問題。
+
 * [`Homework 5`](https://hackmd.io/@kkkkk1109/linux2024-homework5)
+
+作業六閱讀了 [`《The Linux Kernel Module Programming Guide》`](https://sysprog21.github.io/lkmpg/) ，紀錄和學習 kernal module 的使用和範例，沒有完成後續作業。
 * [`Homework 6`](https://hackmd.io/@kkkkk1109/linux2024-homework6)
 
 ## 期末專題
+[`期末專題`](https://hackmd.io/@sysprog/Skyd45U8A)
+[`閱讀筆記`](https://hackmd.io/@kkkkk1109/ry9tV2hzA/edit)
+我選擇給自己 `9` 分。
+
+在和老師 05/10 的討論後，就開始閱讀並行程式設計，並於上方的閱讀筆記中紀錄了閱讀並行程式的紀錄。先前沒有修過作業系統，對於許多概念都不懂，閱讀 [`課堂指定教材`](https://hackmd.io/@sysprog/linux-concepts#Linux-%E6%A0%B8%E5%BF%83%E8%A8%AD%E8%A8%88-%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E8%A1%93%E8%AA%9E%E5%8F%8A%E6%A6%82%E5%BF%B5)時，完全不懂 fork 在幹嘛，有看沒有懂。而撰寫 [`第十週測驗題`](https://hackmd.io/@sysprog/linux2024-quiz10) 的詳解後，便看到了實際 fork 使用的方法，再回頭看指定教材，才知道使用 fork 出子行程並並行運行。並且為了保護 critical section ，使用不同同步的方式。並照著教材練習實作，才知道 mutex 是持有鎖的人解鎖，使用 condition variables 增加使用鎖的靈活性。而在 [`第十二週測驗題`](https://hackmd.io/@sysprog/linux2024-quiz12)中，使用 ThreadSanitizer 來解決 data race 讓我學到最多。在完成第二題的空缺程式碼後，使用 ThreadSanitizer 去編譯，編譯時卻只有說明在哪兩個函式和記憶體位置發生data race ，我又使用了 valgrind 的 Helgrind 來幫助 debug ，好不容易找到競爭的變數，並嘗試在各種地方加鎖都失敗，試了一個禮拜才找出原因。雖然花了很久，覺得我不可能找到，但最後也是成功的找出錯誤，讓我覺得這些時間非常值得。
+
 ## 與授課教師的互動
+我選擇給自己 `8` 分。
+
+在 03/21 上課時，被老師問到論文〈[Dude, is my code constant time?](https://eprint.iacr.org/2016/1123.pdf)〉中為何要使用 t-test 方法。在閱讀時完全沒有想過為何要使用這個方法，才去閱讀檢定方法的區別，理解 Z-test 和 T-test 中的差異為母數的標準差是否已知，再去進行不同的檢定方法。
+
 * [`課堂筆記`](https://hackmd.io/3e8LI8_0SLOo_UTDAnPKYQ#kkkkk1109)
+
+於 2024/05/10 下午 1 點和老師預約一對一討論期末專題和學習狀況。老師詢問我看了什麼，並且問我 false sharing 是什麼，我當時回答的卻是 atomic 操作中的 CAS。老師便指派我閱讀並行程式設計和解釋測驗題當作我的期末專題。閱讀 [`並行程式設計: Atomics 操作`](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-atomics) 後才真正了解 false sharing 的原因，是為了避免在同個 cacheline 中的變數，因為其他的變數的 cache miss 而導致整個 cacheline 都要更新。若沒有這個一對一討論，我也不會發現自己的問題所在，而自以為是的讀懂。
+
 ## 所見所聞所感
+
+我給自己 `8` 分
+
+
+
+## 每月發給實驗室指導教授的學習回顧
+
+我選擇給自己 `7` 分
+
+我於 4/3 和 6/30 寄出學習回顧，即便沒有和指導教授討論過此課程內容，仍然將課堂所學應用到實驗室中。在計畫中，我使用了 lab0 中所學之 linked list 資料結構來實現排序，並考量到了節點記憶體配置失敗等措施，除此之外就沒有了。
+
 
 
 
