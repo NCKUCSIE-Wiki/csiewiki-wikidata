@@ -11,9 +11,9 @@ categories: User
 # 2024 Linux 核心實作 春季班 自我評量
 ## 1. 成果發表和貢獻
 
-複習[你所不知道的 C 語言：記憶體管理、對齊及硬體特性](https://hackmd.io/@sysprog/c-prog/%2Fs%2FBkuMDQ9K7)篇時，注意一些中英之間沒有空白字元便增添上去，詳見 hackmd 版本紀錄。
+* 複習[你所不知道的 C 語言：記憶體管理、對齊及硬體特性](https://hackmd.io/@sysprog/c-prog/%2Fs%2FBkuMDQ9K7)篇時，注意一些中英之間沒有空白字元便增添上去，詳見 hackmd 版本紀錄。
 
-[課堂簡記互動](https://hackmd.io/7svssG2MQpe9ozE_IRRZdg?view#han1018) 中提出同學間的共同疑惑 kernel space 的 GDB 方式，得到老師 KDB / UML 的解答後。後續便整理 kHTTPd 開源專案安裝至 UML 的方法於專題開發紀錄中。
+* [課堂簡記互動](https://hackmd.io/7svssG2MQpe9ozE_IRRZdg?view#han1018) 中提出同學間的共同疑惑 kernel space 的 GDB 方式，得到老師 KDB / UML 的解答後。後續便整理 kHTTPd 開源專案安裝至 UML 的方法於專題開發紀錄中。
 
 kHTTPd 開源專案參考資料修訂，改善 [Paintako](https://hackmd.io/@sysprog/BkSW8Z2Bn) 同學的專案開發紀錄，使語意更通順。
 
