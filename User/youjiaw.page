@@ -10,9 +10,10 @@ categories: User
 
 # Linux 核心設計/實作 (Spring 2024) 自我評量
 ## 貢獻課程的教材
+* [並行程式設計: 實作輕量級的 Mutex Lock](https://hackmd.io/@sysprog/concurrency-mutex) 修正錯字與用詞
 
 評分：
-
+我給自己 8 分，
 
 ## 作業/隨堂測驗
 * lab0-c: [GitHub](https://github.com/youjiaw/lab0-c) / [HackMD](https://hackmd.io/@youjiaw/linux2024-homework1)
@@ -22,15 +23,17 @@ categories: User
 
 評分：
 
-
 ## 期末專題
 * 改進 concurrent (fork) merge sort: [HackMD](https://hackmd.io/f30zO2wBTDGbUHXlHyBjsQ?view#Linux-%E6%A0%B8%E5%BF%83%E5%B0%88%E9%A1%8C-%E6%94%B9%E9%80%B2-concurrent-fork-merge-sort)
 
 評分：
 
 ## 與授課教師的互動
+* 5/10 12:00 一對一討論
+* 6/13 課堂問答
 
 評分：
+我給自己 9 分，
 
 ## 所見所聞所感
 
@@ -39,5 +42,6 @@ categories: User
 ## 每月發給實驗室指導教授的學習回顧
 
 評分：
+我給自己 9 分，
 
 ## 自我評量 (1 ~ 10)
