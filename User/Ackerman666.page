@@ -7,7 +7,7 @@ categories: User
 * 國立中山大學 資訊工程研究所 (2023 ~ )
 
 * GitHub: [`Ackerman666`](https://github.com/Ackerman666)
-* HackMD: [`Ackerman666`](https://hackmd.io/@Ackerman)
+* HackMD: [`Ackerman666`](https://hackmd.io/@Ackerman666)
 
 # 2024 Linux 核心實作 春季班 自我評量
 ## 第一項、成果發表和貢獻
@@ -18,8 +18,10 @@ categories: User
 ## 第二項、作業/隨堂測驗
 評分:   
 我給自己 7 分
-我認為我投入在作業的時間不夠多，導致很多部分完成度都差強人意。
-但還是學到許多以往不曾接觸的部分，(bitwise操作、用linux list API刻佇列、統計手法驗證分布性、linux module等)。
+我認為我投入在作業的時間不夠多，導致很多部分完成度不足。
+但還是學到許多以往不曾接觸的部分。（熟悉 bitwise 操作、用 linux list API 刻佇列、統計手法驗證分布性、熟悉 linux module 等)。
+
+其中我認為對我研究很有幫助的是，透過作業一熟悉了假說檢定的流程，這對於將來要在論文證明實驗結果與假想情況是否相同是個好用的方式。
 
 * Homework1 (lab0) [HackMD](https://hackmd.io/1HP3bGVXQMOImkxC80inOQ)/[GitHub](https://github.com/Ackerman666/lab0-c)
 * Homework2 (quiz1+2) [HackMD](https://hackmd.io/116CP2whQeC7xC5CuMFmeQ)
@@ -29,7 +31,7 @@ categories: User
 
 ## 第三項、期末專題
 評分:   
-我給自己  分
+我給自己 9 分
 
 * Linux 核心專題: 高性能網頁伺服器 [HackMD](https://hackmd.io/OVUxtUIxQr6N7pqLwUQyFA?view)/[GitHub](https://github.com/Ackerman666/khttpd)
 
@@ -40,12 +42,11 @@ categories: User
 * 透過分塊傳輸編碼實現基本目錄展示功能，並透過 MIME 使瀏覽器能展出不同種類的檔案內容。
 * 透過 ebpf, ftrace 方法追蹤關鍵函式執行成本
 
-我在期末專題主要欠缺了利用 RCU 機制釋放系統資源 (如清除閒置連線)，相關流程與資料結構大致想好，但就差尚未動手實現。
-在之後暑假實習空閒之餘，我會努力補足剩下內容，將專題做個結尾也對自己有一個交代。
 
 ## 第四項、與授課教師的互動
 評分:   
 我給自己 10 分
+
 *「一對一討論」時間為 2024/5/16 10:00
 討論了閱讀教材時的一些疑惑，可參考 [`筆記`](https://hackmd.io/5cKITs1cTFu1fGDvmWafXg?view)
 討論最後老師問了 TCP 為何要三次交握，當下只回答了確保連線正確，卻無法更深入探討其機制直接被老師抓包，討論結束後也立刻去補相關知識。
@@ -64,10 +65,16 @@ categories: User
   
 ## 第六項、每月發給實驗室指導教授的學習回顧
 評分:   
-我給自己 10 分
+我給自己 8 分
 信中會提到學習的內容，並誠實面對自己在學習上體悟的心路轉折，雖沒有每月都寄信，但在 Meeting 時還是會和老師分享學習的狀況。
 
 * 三月學習回顧發信日期：2024/4/7 13：45 
 (分享學習到的內容 : 你所不知道的 C 語言、並行程式設計: 排程器原理等。並誠實面對自己指出自身學習狀況太心浮氣躁，急著上網找答案，卻忽視第一手教材的存在)
 * 五月學習回顧發信日期：2024/6/25 11：54 
 (分享學習到的內容 : CMWQ、eBPF、Linux 同步機制等)
+
+## 自我總評量得分
+自我總評量得分為 **9** 分。
+
+* GEOMEAN : $\sqrt[6]{8*7*9*10*10*8} = 8.59$  
+* 方案 B：$1+\lfloor 8.59 \rfloor=9$
