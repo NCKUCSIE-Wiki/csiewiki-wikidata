@@ -13,7 +13,7 @@ categories: User
 
 閱讀文件時做的錯字修訂：
 
-* [虛擬攝影機裝置驅動程式](https://hackmd.io/@sysprog/rJEhcgoSn):訪問->存取、接口->介面、內存->記憶體
+* [虛擬攝影機裝置驅動程式](https://hackmd.io/@sysprog/rJEhcgoSn) : 訪問->存取、接口->介面、內存->記憶體
 
 ### 作業與隨堂測驗
 * lab0: [GitHub](https://github.com/padaray/lab0-c) / [HackMD](https://hackmd.io/@padaray/linux2024-homework1)
