@@ -13,41 +13,62 @@ categories: User
 
 ## 成果發表和貢獻
 
-自我評分：
+期初很想做出對於 Linux 核心和相關專案的貢獻，但隨著作業的推進，從中認知到了自己的不足，僅能盡力的去完成每次分配作業以及閱讀相關教材，期許自己在未來能夠有能力做出貢獻。
+
+閱讀文件時做的排版修訂：
+
+* [Linux-lockfree 教材](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-lockfree)
+
+* [Linux-atomic 教材](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-atomics)
+
+自我評分：5
 
 ## 作業與隨堂測驗
-* lab0: [GitHub](https://github.com/kevinzxc1217/lab0-c) / [HackMD](https://hackmd.io/@kevinzxc1217/B1LU2WR3a)
-* quiz1+2: [HackMD](https://hackmd.io/@kevinzxc1217/SkFa6iBap)
-* quiz3+4: [HackMD](https://hackmd.io/@kevinzxc1217/Hkr6sqZ1A)
-* assessment: [HackMD](https://hackmd.io/@kevinzxc1217/HyRr0dWlA)
-* integration: [HackMD](https://hackmd.io/@kevinzxc1217/BycDNOmWR)
+* lab0：[GitHub](https://github.com/kevinzxc1217/lab0-c) / [HackMD](https://hackmd.io/@kevinzxc1217/B1LU2WR3a)
+* quiz1+2：[HackMD](https://hackmd.io/@kevinzxc1217/SkFa6iBap)
+* quiz3+4：[HackMD](https://hackmd.io/@kevinzxc1217/Hkr6sqZ1A)
+* assessment：[HackMD](https://hackmd.io/@kevinzxc1217/HyRr0dWlA)
+* integration：[HackMD](https://hackmd.io/@kevinzxc1217/BycDNOmWR)
 
-自我評分：
+本學期中我都有盡自己能力以及時間去完成作業，但仍有許多地方可以再加強。其中在撰寫筆記過程，對於漢語表達上有了更多的認知，此外，透過課程作業和教材的學習，我對 C 語言的理解達到了當初選修這門課給自己的預期目標。
+
+自我評分：9
 
 
 ## 期末專題
 * 高效記憶體配置: [HackMD](https://hackmd.io/@sysprog/rkZQsLhLR)
 
-自我評分：
+之前對於記憶體配置的理解，僅止於會使用動態配置或靜態配置的指令，對於其內部是如何去配置或釋放沒有太多的認知。透過這次期末專題，我重現了 LLfree 的實驗，並且能夠詳細的描述其過程以及其關鍵策略，讓我對於記憶體配置有了更多的了解。
+
+自我評分：8
 
 ## 與授課教師的互動
-* 一對一討論：
-    * 提問：
+* 一對一討論：5/18 下午 15:30
+    * 提問：這段程式碼為什麼要強制將 __pmember 轉換成 char 型態再和經過 offsetof 函式出來的值做計算?
 
-自我評分：
+在閱讀 C 語言巨集程式碼的時候，我對於包夾著較多型態轉換以及指標的程式會感到排斥，但透過老師一步步的拆解指引，讓我理解到括弧內每層的用意，以及了解到從 C 語言規格書中的重要性。
+
+自我評分：8
 
 
 ## 修課心得
 
-自我評分：
+閱讀〈因為自動飲料機而延畢的那一年〉文章後，我發現生活中許多地方都可用到所學的知識，像是對於飲料機創業這項跟程式設計八竿子打不著的領域，仍可以透過程式進行實驗分析，來達到更好的評估效果。雖然這篇故事並非典型的創業成功故事，但我相信作者真正獲得的是在這個過程中所經歷到的成長和體悟，這些經歷都是作者這輩子無可取代的養分。也期許自己，未來遇到困難時，能夠秉持著作者鍥而不捨的精神，不斷的嘗試，克服重重難關。
+
+針對本學期「Linux 核心實作」課程，讓我受益匪淺，過程中學到了許多新的知識，也從中認識了自己，知道自己的不足。在做每週的測驗題目時，需要閱讀較為複雜的程式碼，可以從中培養閱讀程式的速讀以及理解能力，並且在後續檢討測驗題目時，可以從中學習其理論和思維，以及撰寫程式的技巧。以及之前學習到的排序算法 merge sort 是我當時認知最快的方法，但在實際比較中卻輸給了 Linux 核心內部的 list sort，課程中探討了兩者的差別以及 list sort 之所以更快的原因，除了學習更快的演算法之外，這堂課程對於數學推導也是非常重視，每個程式背後都有其數學原理，也讓我意識到數學在程式中的重要性。
+
+自我評分：9
 
 ## 每月給指導教授的學習回顧
 
-* 五月回顧：
-    1. 
-    2. 
-    3. 
+五月回顧：6月19日 下午8:17
 
-自我評分：
+本月主要是進行Linux核心的期末專題研究，我做的主題是「高效記憶體配置器」。首先，我研讀了論文《LLFree: Scalable and Optionally-Persistent Page-Frame Allocation》，理解其方法並重現相關實驗。透過這些學習過程，我對記憶體配置有了更深入的理解。例如，在多個 CPU 存在的情況下，如何處理記憶體的分配與釋放？Linux buddy allocator 存在哪些可以改進的問題？並行設計時有哪些問題需要考量？這些都是非常重要的議題。在過程中，我也理解了 llfree-c/tests 內建測試程式的功能，從中學習到了設計測試程式時需考量到的技巧，像是善用 assert 進行判斷、corner case 的設計等等，以確保程式的可靠性。像是在實驗室進行 AI 相關研究時，經常會遇到 CUDA Out Of Memory 的問題，當嘗試分配超過 GPU 可用的記憶體空間時，會出現 OOM 錯誤，此時對於更高效的記憶體配置器就顯得格外重要。
+
+自我評分：5
+
+沒能達到每月寄信的要求，僅在最後一個月發信給指導老師，並說明期末專題研究狀況，這裡給自己 5 分。
 
 ## 自我評量 (1 ~ 10)
+* GEOMEAN：$\sqrt[6]{5*9*8*8*9*5}=7.1138$
+* 方案 B：$1+\lfloor 7.1138 \rfloor=8$
