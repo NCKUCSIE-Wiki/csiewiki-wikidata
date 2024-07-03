@@ -109,3 +109,6 @@ Ftrace 則被用來觀察 kernel space 程式的效能瓶頸。在期末專題�
 
 ## 7.使用GEOMEAN 來計算上述 (1) 到 (6) 各項的幾何平均
 
+GEOMEAN = (4*7*10*10*9*10)1/6
+ = 7.94
+方案 B: 1 + floor(GEOMEAN) = 1 + 7 = 8
