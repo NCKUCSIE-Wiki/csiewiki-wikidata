@@ -31,3 +31,69 @@ int BITS = 31;
 * [slab 記憶體配置器](https://hackmd.io/5Fn8N3HeRkGIO7cZu7chIw?view#%E9%85%8D%E7%BD%AE%E8%A8%98%E6%86%B6%E9%AB%94) 在不同狀況況下 -> 在不同狀況下
 
 ### 作業與隨堂測驗
+* lab0: [GitHub](https://github.com/steven523/lab0-c) / [HackMD](https://hackmd.io/@steven523/linux2024-homework1)
+
+    完成指定的佇列實作，參考 Fisher–Yates shuffle 演算法對佇列中所有節點進行 shuffle，引入 list_sort 到專案並對自己實作的 merge sort 做效能比對
+
+* Assessment: [HackMD](https://hackmd.io/@steven523/linux2024-homework5)
+
+    撰寫閱讀〈因為自動飲料機而延畢的那一年〉後的心得，記錄閱讀教材後的感想與收穫，提問感到好奇的問題
+
+* Integration: [HackMD](https://hackmd.io/@steven523/linux2024-homework6)
+
+    閱讀〈Linux 核心模組運作原理〉並對照 Linux 核心原始程式碼 (v6.1+) 後解釋指定的問題，練習核心模組的撰寫、掛載及卸載
+
+* quiz1 + 2: [HackMD](https://hackmd.io/@steven523/linux2024-homework2)
+    探討 Quick sort 的儲存效能與其時間複雜度，參考 Linux 核心的 hash table 實作理解二元樹的排序及重建
+
+### 期末專題
+
+Netfilter: [HackMD](https://hackmd.io/@sysprog/BkxyL1bvC) / [GitHub](https://github.com/steven523/Netfilter-Adblock)
+
+透過 netfilter 自動過濾廣告，在指定 hook 點捕獲 TCP 與 UDP 協定的封包並撰寫核心模組來提取其域名，將其與欲阻擋的域名清單比對，決定是否阻擋該封包
+
+### 與授課教師的互動
+
+一對一討論：5月 22日 (星期三)⋅下午 1:00 - 1:30
+
+* [問題一](https://hackmd.io/@steven523/linux2024-homework5#%E9%A1%9E%E7%A5%9E%E7%B6%93%E7%B6%B2%E8%B7%AF%E7%9A%84-ReLU-%E5%8F%8A%E5%85%B6%E5%B8%B8%E6%95%B8%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6%E5%AF%A6%E4%BD%9C): 文章裡提到使用了位元操作來實作 ReLU，為何不直接使用條件判斷 ? 這樣做對於像是 SIMD 或其他平行計算架構的性能等有何差異?
+
+* [問題二](https://hackmd.io/@steven523/linux2024-homework5#%E4%BD%A0%E6%89%80%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84-C-%E8%AA%9E%E8%A8%80%EF%BC%9A%E6%95%B8%E5%80%BC%E7%B3%BB%E7%B5%B1): 既然文中提到平衡三進位具有易於正負轉換的特性，轉換效率好，且不需要像二進位表示法那樣特別考慮 signed 和 unsigned 的區別，為什麼目前大多數系統還是使用二進位？
+
+### 修課心得
+
+自從上大學開始到上這堂課前，我幾乎沒怎麼接觸過 linux 這方面的知識，且第一周就開始指派作業，於是我便一直努力跟上進度。雖然無法完全完成，但是通過學習提供的教材《你所不知道的 C 語言》，我也漸漸地理解並掌握了許多撰寫程式碼的技巧，以及對位元的操作產生了許多新的認知。雖然作業量使我感到疲憊，但是我完全不會有想退選的想法，因為一開始選這門課就是為了學習 linux 並提升自己，且看到其他同學也日以繼夜地更新自己的開發紀錄，更令我覺得自己要多努力。
+
+在比較不同排序算法的過程中，如 list sort、merge sort，我除了學到了多種工具的使用，也從本課程理解為何要講求程式的精準和效率，不僅僅是考慮時間複雜度，還要注重資料結構和穩定性等細節。除了 C 語言的學習外，學習 Linux Kernel Module 的部分也給我帶來了許多收穫，對於期末專題的實作也會使用到，儘管最終成果只實現部份功能，但是一整個學期下來，透過閱讀提供的教材，還有實作指派的功課，我著實感受到自己的進步，雖然對於 linux 核心的掌握度與其他能力很強的同學比起來還不足掛齒，但我在課堂中學到了如何誠實面對自己，而不是假裝自己會，對於關鍵技術不要只是看，而是要真的去做，去做才知道是不是真的已經會了。
+
+在 linux 核心課程中我的收穫是不能用短短幾字來形容，能夠跟同學們一起學習並討論 linux 非常充實且具挑戰，在未來也會持續精進自我。 
+
+
+### 與指導教授的學習回顧
+
+* 二月回顧：3月7日 週四 下午10:17
+    
+    1. 了解 Linux 核心中鏈結串列的實作
+    2. 學習記憶體相關的使用
+    3. 了解 Git commit message 與 GitHub 的使用，並撰寫開發紀錄並接受回饋
+    
+* 三月回顧：4月7日 週日 下午7:18
+
+    1. 學習如何利用 Graphviz 來更清楚的解釋程式的運作原理
+    2. 閱讀了關於排程器及編譯器原理和有關數值系統的知識
+    3. 使用 perf 效能工具程式對程式做測試
+
+* 四月回顧 : 5月10日 週五 下午7:43
+    1. 學習 bitwise operation，並使用 bitwise operation 來加速一些特定的運算
+    2. 閱讀《因為自動飲料機而延畢的那一年》並撰寫心得
+    2. 練習 linux 核心模組的操作，了解核心的運作原理
+
+* 五月回顧 : 6月28日 週五 上午2:15 
+
+    1.期末專題主題討論
+    2.學習網路相關知識及理解 Netfilter 對封包的處理
+
+### 自我評量
+$(9 \times 6 \times 6 \times 7 \times 7 \times 9) ^ {1/6} = 7.23$ 
+
+使用方案 B 計分：$1 + floor(7.23) = 8$
