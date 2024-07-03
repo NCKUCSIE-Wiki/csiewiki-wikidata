@@ -17,14 +17,17 @@ categories: User
 
 ### 作業與隨堂測驗
 * lab0: [GitHub](https://github.com/padaray/lab0-c) / [HackMD](https://hackmd.io/@padaray/linux2024-homework1)
+    完成 C 語言佇列實作和改進，實作和驗證 Fisher–Yates shuffle 演算法，研讀 lib/list_sort.c
 
 * quiz1 + 2: [HackMD](https://hackmd.io/@padaray/linux2024-homework2)
 
 * quiz3 + 4: [HackMD](https://hackmd.io/@padaray/linux2024-homework4)
 
 * Assessment: [HackMD](https://hackmd.io/@padaray/linux2024-homework5)
+    閱讀〈因為自動飲料機而延畢的那一年〉，研讀課程教材和 CS:APP 3/e
 
 * Integration: [HackMD](https://hackmd.io/@padaray/linux2024-integration)
+    運作基本的 linux 核心模組
 
 ### 期末專題
 
