@@ -10,17 +10,202 @@ categories: User
 
 # 2024 Linux 核心設計/實作 春季班 自我評量
 ## 成果發表和貢獻
+7分。
+
+起初，讀教材發現有錯字，或是看到有地方可以改善的時候，都有直接提出，紀錄如下，到後來整合自己學的知識，並對書籍提出改善。最後我希望除了這些以外我能夠在真實世界中找到問題，並用學到的知識來解決。因為這件事情未達成，還在進行中，所以計算下列的付出是 7 分。
+
+* Linux patch
+
+    * 2024/05/30 : https://lore.kernel.org/all/20240512054211.24726-1-weihsinyeh168@gmail.com/T/
+    
+    * 在分析 bloom filter 的數學後，跟老師進行一對一討論 [shannon entropy 與隨機數的問題](https://hackmd.io/@weihsinyeh/linux2024-homework6#423-25)。[之後繼續研究 kernel 的 bloom filter](https://hackmd.io/vtxwO8T3SmWoK84Up4m7Qg?view#Kernel-%E7%9A%84-Bloom-Filter) 發現可以貢獻的機會。
+
+* Linux Kernel Module Programming Guide
+
+    * 2024/04/16：[Fix typo](https://github.com/sysprog21/lkmpg/commit/f52c126c439c7f89632d64865ee85c6cc168973f)
+
+    * 2024/04/13：[Fix unmatched quotation](https://github.com/sysprog21/lkmpg/commit/6640ccdc0fdea47bdd60ff813104f7bbfd21ce61)
+    
+    * 這是我第一次用 pull request，過程中，發現原作者可以改我的 commit message，以及原作者要接受是透過 merge 。將與其他人用 git 合作的經驗用在工作以及下面修訂《Concurrency Primer》的過程中。
+
+* Concurrency Primer
+
+    * 2024/06/17：[Fix Figure 3](https://github.com/sysprog21/concurrency-primer/commit/8a2fb8df6b565cbfb3faa55731c9892e48e363f3)
+
+    * 2024/06/19：[Enforce consistent naming scheme](https://github.com/sysprog21/concurrency-primer/commit/9cb7487883c0992e75dcb35ee34de0ca8d908e17)
+
+    * 2024/06/25：[Summarize concepts about Atomicity](https://github.com/sysprog21/concurrency-primer/commit/ef0d6c5ee6c875a322450556356cab25c48d9bbd)
+
+    * 學習並行程式設計時，原先無法整理這些零散的知識。為了使學習更有效率，我決定找一個思考脈落，瞭解哪個知識在並行程式中扮演的角色，過程中修訂《Concurrency Primer》，透過老師的評語檢視有沒有學對知識。
+
+* 教材
+
+    * [並行程式設計: Ring buffer](https://hackmd.io/@sysprog/concurrency-ringbuffer) 
+        * 2024/05/03：實做 $\to$ 實作
+
+    * [並行程式設計: Lock-Free Programming](https://hackmd.io/@sysprog/concurrency-lockfree)
+        * 2024/04/28-29：實做 $\to$ 實作 與 gcc 命令
+        * 2024/05/03：競態 (race condition)
+
+    * [並行程式設計: Atomics 操作](https://hackmd.io/@sysprog/concurrency-atomics)
+        * 2024/05/04：改連結
+        * 2024/05/05：改標點符號
+        * 2024/05/20：統一處理器的用詞
+        * 2024/05/21：上訴 $\to$ 上述
+        * 2024/06/14：執行續 $\to$ 執行緒
+        * 2024/06/18：調整 cache coherence 對程式效能的衝擊的圖示
+        
+    * [並行程式設計: 實作輕量級的 Mutex Lock](https://hackmd.io/@sysprog/concurrency-mutex)
+        * 2024/05/10：執行續 $\to$ 執行緒
+        * 2024/05/12：刪除多餘的字
+    * [並行程式設計: 建立相容於 POSIX Thread 的實作](https://hackmd.io/@sysprog/concurrency-thread-package)
+        * 2024/05/11：補其少打的字 o $\to$ to
+    * [並行程式設計: 概念](https://hackmd.io/@sysprog/concurrency-concepts)
+        * 2024/06/04：非強取式核心 $\to$ 非搶佔式核心
+    * [從 CPU cache coherence 談 Linux spinlock 可擴展能力議題](https://hackmd.io/@sysprog/linux-spinlock-scalability)
+        * 2024/06/09：聯通電子訊號 $\to$ 連通電子訊號、以太網路 $\to$ 乙太網路、刪除贅字
+    * [Linux 核心設計: 不只挑選任務的排程器](https://hackmd.io/@sysprog/linux-scheduler)
+        * 2024/04/06：修改失效連結
+    * [你所不知道的C語言: Stream I/O, EOF 和例外處理](https://hackmd.io/@sysprog/c-stream-io)
+        * 2024/03/20：修改失效連結
+    * [藉由 spinlock 的調整，改善多核處理器建立 TCP 連線效能](https://hackmd.io/fzLFYqT7RTeWVFMm61Oq2w)
+        * 2024/06/09：刪除多餘的字
+            
+    * 在 [第 2 週測驗題第 1 題](https://hackmd.io/YCnIwo_0R-GaYjISEZwG1A#2024q1-%E7%AC%AC-2-%E9%80%B1%E6%B8%AC%E9%A9%97%E9%A1%8C%E7%AC%AC-1-%E9%A1%8C) 後，知道我需要加強論述一個理論的能力。於是，在閱讀教材時會把內容逐字寫下來，以了解作者的思考邏輯，同時專注於問題的出現原因，有哪些面向的方法因應出現。將此方式用在學習並行程式設計中，同時在研究 [LCG (Linear congruential generator) 亂數產生器](https://hackmd.io/S-UYYCyCQVSaGzwhhVCm2g)以及[研讀 Linux 核心原始程式碼的 lib/list_sort.c 程式與論文](https://hackmd.io/@weihsinyeh/ry2RWmNTT#%E7%A0%94%E8%AE%80-Linux-%E6%A0%B8%E5%BF%83%E5%8E%9F%E5%A7%8B%E7%A8%8B%E5%BC%8F%E7%A2%BC%E7%9A%84-liblist_sortc)時我都模仿教材的說話方式。這些過程中也不斷發現很多錯別字，如上方的說明。
 
 ## 作業/隨堂測驗
+10分。
+
+* [2024q1 Homework1 (lab0)](https://hackmd.io/@weihsinyeh/SJUVTnEn6)
+* [2024q1 Homework2 (quiz1+2)](https://hackmd.io/@weihsinyeh/ry2RWmNTT)
+* [2024q1 Homework4 (quiz3+4)](https://hackmd.io/@weihsinyeh/ByOQ5cpaT)
+* [linux2024-homework5](https://hackmd.io/@weihsinyeh/linux2024-homework5)
+* [linux2024-homework6](https://hackmd.io/@weihsinyeh/linux2024-homework6)
+
+在這堂課最大的收穫，除了作業本身，我也特別在讀論文時看別人怎麼分析問題，透過數學來驗證自己的邏輯，這些使我理解別人的思考脈絡。
+
+* 算數學
+    * [Welford method](https://hackmd.io/@weihsinyeh/SJUVTnEn6#%E5%8E%9F%E5%A7%8B%E7%A8%8B%E5%BC%8F%E7%A2%BC) 看到數學公式因為電腦精度而有所調整
+    * [Linear congruential generator 到亂度與均勻分佈兩者的關係](https://hackmd.io/@weihsinyeh/SJUVTnEn6#%E5%8E%9F%E5%A7%8B%E7%A8%8B%E5%BC%8F%E7%A2%BC) 知道統計的意義
+    * [Hacker's Delight Population count](https://hackmd.io/@weihsinyeh/ByOQ5cpaT#%E6%B8%AC%E9%A9%97-11) 與 [我嘗試的改進](https://hackmd.io/@weihsinyeh/linux2024-homework5#%E7%AC%AC%E5%9B%9B%E5%91%A8-%E6%B8%AC%E9%A9%97-1)
+    * [Rounding Up/Down to the Next Power of 2](https://hackmd.io/@weihsinyeh/ByOQ5cpaT#Rounding-UpDown-to-the-Next-Power-of-2) 學習到改進演算法來降低計算成本
+
+* 分析問題
+    * [研讀論文〈 Dude, is my code constant time? 〉](https://hackmd.io/@weihsinyeh/SJUVTnEn6#%E7%A0%94%E8%AE%80%E8%AB%96%E6%96%87%E3%80%88-Dude-is-my-code-constant-time-%E3%80%89)
+    * [研讀 Linux 核心原始程式碼的 lib/list_sort.c 程式與論文](https://hackmd.io/@weihsinyeh/ry2RWmNTT#%E7%A0%94%E8%AE%80-Linux-%E6%A0%B8%E5%BF%83%E5%8E%9F%E5%A7%8B%E7%A8%8B%E5%BC%8F%E7%A2%BC%E7%9A%84-liblist_sortc)
+    * [研讀 work steal的論文 : Cilk : An Efficient Multithreaded Runtime System ](https://hackmd.io/@sysprog/H1dCuDxQR#%E3%80%88%E6%8E%92%E7%A8%8B%E5%99%A8%E3%80%89)
+    * [研讀論文： B-Queue: Efficient and Practical Queuing for Fast Core-to-Core Communication](https://hackmd.io/dV98JlUPQm-O7y2cpTVOpg#%E7%AB%B6%E7%88%AD%E8%B3%87%E6%BA%90%E7%9A%84%E5%95%8F%E9%A1%8C)
+* 透過算數學來分析問題
+    * [研讀 Linux spinlock 的論文 : Non-scalable locks are dangerous](https://hackmd.io/dV98JlUPQm-O7y2cpTVOpg#%E3%80%88%E5%BE%9E-CPU-cache-coherence-%E8%AB%87-Linux-spinlock-%E5%8F%AF%E6%93%B4%E5%B1%95%E8%83%BD%E5%8A%9B%E8%AD%B0%E9%A1%8C%E3%80%89)
+    * [統計方法驗證 shuffle](https://hackmd.io/@weihsinyeh/SJUVTnEn6#%E7%B5%B1%E8%A8%88%E6%96%B9%E6%B3%95%E9%A9%97%E8%AD%89-shuffle)
 
 ## 期末專題
+10分。
+
+* [Linux 核心專題: 並行程式設計教材修訂](https://hackmd.io/@sysprog/H1dCuDxQR)
+
+剛開始從教材開始看，後來改看程式碼，同時邊改邊看他的執行結果，如 [low-memory-footprint mutex](https://hackmd.io/dV98JlUPQm-O7y2cpTVOpg#%E3%80%88%E5%AF%A6%E4%BD%9C%E8%BC%95%E9%87%8F%E7%B4%9A%E7%9A%84-Mutex-Lock%E3%80%89)，到理解整個程式運作就用時一週。開始讀論文，理解提出的方法是要解決甚麼問題。後來開始跟另一位簡志瑋一起討論 Issue 7 的寫法以及聽別人的演講，學習別人的思考脈絡。做第一個 TODO 到最後一週，過程中一直調整學習方式。而這每個過程學習到的知識，使得在最後整理出一個思考脈絡時，能夠運用上，最後一週完成後面三個 TODO 。
+
+* TODO: 〈並行和多執行緒程式設計〉系列講座並紀錄問題和提出改進 
+* [TODO: 協作 Issue #7](https://github.com/sysprog21/concurrency-primer/pull/7)
+* [TODO: 改進〈Concurrency Primer〉關於 Atomics 的論述](https://github.com/sysprog21/concurrency-primer/commit/ef0d6c5ee6c875a322450556356cab25c48d9bbd)
+* [TODO: 新增 lock free](https://github.com/sysprog21/concurrency-primer/pull/15)
+* [參與期末展示(下)](https://youtu.be/qUd1PtF-R38?t=4187)
+* 觀摩其他同學 :
+    * Linux 核心專題: 亂數產生器研究
+    * Linux 核心專題: 並行佇列設計和實作
+    * Linux 核心專題: 針對鏈結串列的資料排序改進
+
 
 ## 與授課教師的互動
+10分。
+
+* 第二週：2/27、2/29
+    * [課堂討論：02/27 : 2024q1 第 2 週測驗題第 1 題](https://hackmd.io/YCnIwo_0R-GaYjISEZwG1A)
+      上實體課時老師針對第 2 週測驗題第 1 題對我提出問題，課後更新到共筆的過程，我才發現原先自己只是知道概念，並不懂原理才回答的不清楚。從此意識到邏輯不順暢影響表達能力，所以我開始學習老師講話（成果發表和貢獻第一點-教材 所提到的）。
+
+* 第三週：3/5、3/7
+    * [lib/list_sort.c 分析](https://hackmd.io/@weihsinyeh/ry2RWmNTT#%E7%A0%94%E8%AE%80-Linux-%E6%A0%B8%E5%BF%83%E5%8E%9F%E5%A7%8B%E7%A8%8B%E5%BC%8F%E7%A2%BC%E7%9A%84-liblist_sortc)
+    過程中學習如何整理論文，看他們將 merge sort 的過程變成二元數，將其有沒有像 Complete binary tree 已達到 optimal merge sort 的概念應用到程式碼中，除了這些演算法中數學推導，還要考慮資料結構對 cache 友不友善，同時程式碼用 bitwise 與 2 的冪的巧思來實作何時合併。我學習如何從很多個角度來看待一個問題。   
+ 
+* 第六週：3/26、3/28
+    * [LCG (Linear congruential generator) 亂數產生器。](https://hackmd.io/S-UYYCyCQVSaGzwhhVCm2g)
+    找到一個問題以及其對應的解法，但它其實解決三個面向的問題。原先我知道，所以用控制這個方法是否出現，看結果來思考這個方法是針對哪種問題而出現。最後理解要亂度高也就是真的很隨機，就不能只看一次，因此隨機需要到思考到更高的維度，需要統計達到 Uniform Distribution。同時也想到老師上課說「統計是提高分析資料的維度」，到這刻才知道這句話有多難理解。
+ 
+* 第七週：4/2、4/4
+    * 線上直播中提問編譯器最佳化
+
+* 第九週：4/16、4/18
+    * [2024-04-16 問答簡記](https://hackmd.io/VyLWa5VNQG-EpDoi2WqTMw)
+    * [第四周 測驗 1](https://hackmd.io/@weihsinyeh/linux2024-homework5#%E7%AC%AC%E5%9B%9B%E5%91%A8-%E6%B8%AC%E9%A9%97-1)
+      [問題：我對 popcount 的改進無法反應在效能上面?](https://hackmd.io/@weihsinyeh/linux2024-homework5#%E7%AC%AC%E5%9B%9B%E5%91%A8-%E6%B8%AC%E9%A9%97-1) 學習到測量時間方式的差異
+    * [weakly order / strogly order](https://hackmd.io/@weihsinyeh/linux2024-homework5#9-Do-we-always-need-sequentially-consistent-operations)
+      問題 : 為什麼有 weakly-ordered V.S. strongly-ordered ?
+    * 問題 : LKMPG 裡面 magic number 0xbfff978 ?
+
+* 第十週：4/23、4/26
+    * [04/23 bloom filter 數學分析](https://hackmd.io/J5wYE-XzSkaekqe-OQw6mg)
+    * [04/25 (週四), 下午3:00 – 下午3:30 : 一對一討論: weihsinyeh](https://hackmd.io/@weihsinyeh/linux2024-homework6#423-25)
+      因為上課中提到 bloom filter 一個鍵會設定位元兩次，卻只用一個 hash fucntion 這會影響亂度。因為依據之前所學，只要足夠均勻分佈，亂度就夠高，所以我就想去看後面的亂度到底是如何計算出來的。之後一對一討論知道原來 hash function 是要因應場景不同而需求不同。資安看亂度，bloom filter 看計算的成本。
+      
+* 第十二週：5/7、5/9
+    * [5/7 測驗題1](https://hackmd.io/@weihsinyeh/linux2024-homework6#%E7%AC%AC12%E9%80%B1%E6%B8%AC%E9%A9%97%E9%A1%8C--%E6%B8%AC%E9%A9%97%E9%A1%8C%E4%BA%8C)
+    * chan_recv_unbuf() 函式目的?
+    * 取資料時先等待再喚醒 futex_wake(&ch->send_ftx, 1); 的原因?
+    * 能否用來量測 context switch 的運作時間? 
+
+* 第十三週：5/14、5/16 
+    * [提問：實驗函式傳遞參數使用的暫存器數量](https://hackmd.io/@weihsinyeh/linux2024-homework6#%E5%AF%A6%E9%A9%97%E5%87%BD%E5%BC%8F%E5%82%B3%E9%81%9E%E5%8F%83%E6%95%B8%E4%BD%BF%E7%94%A8%E7%9A%84%E6%9A%AB%E5%AD%98%E5%99%A8%E6%95%B8%E9%87%8F)
+        *    老師叫我回去把 machine code 印出來。
+        *    編譯器不是不執行程式，簡單的常數計算也會做，才會有變成 0 的魔法。
+
+* 第十四週：5/21、5/23 
+    * [提問： Ring buffer 的存在意義:](https://hackmd.io/@weihsinyeh/linux2024-homework6#Ring-buffer-%E7%9A%84%E5%AD%98%E5%9C%A8%E6%84%8F%E7%BE%A9)
+    * [提問：探討 READ_ONCE 的意義 ](https://hackmd.io/@weihsinyeh/linux2024-homework6#%E6%8E%A2%E8%A8%8E-READ_ONCE-%E7%9A%84%E6%84%8F%E7%BE%A9)
+    * [提問：memory order](https://hackmd.io/vtxwO8T3SmWoK84Up4m7Qg#%E4%B8%A6%E8%A1%8C%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88-Lock-Free-Programming)
+        *    釐清 mutex 的功能，老師跟我講了塞車的故事 
+        *    False Sharing 教材的範例太小了，在電腦顯現不出來
+        *    memory order 用 cortex-A8 local / global monitor 解釋 [source](https://developer.arm.com/documentation/dht0008/a/CJAGCFAF#CJABBBAE)
+        *    printk
+
+* 第十六週：6/4、6/6、6/8
+    * 問老師專題題目，老師說搬運或是能夠把程式碼用自己的方式解釋也是一種學習。
+    * 6/8：討論（一） [spinlock 跟核的總數 𝑛的關係。老師用演唱會的故事舉例給我聽](https://hackmd.io/@sysprog/H1dCuDxQR#%E3%80%88%E5%BE%9E-CPU-cache-coherence-%E8%AB%87-Linux-spinlock-%E5%8F%AF%E6%93%B4%E5%B1%95%E8%83%BD%E5%8A%9B%E8%AD%B0%E9%A1%8C%E3%80%89)
+    * 6/8：討論（二） [mutex 與 semphapore 的差別。](https://hackmd.io/@sysprog/H1dCuDxQR#%EF%BC%88%E4%B8%89%EF%BC%89%E5%B7%A5%E4%BD%9C%E9%96%93%E7%9A%84%E6%BA%9D%E9%80%9A%E7%AE%A1%E9%81%93)
+
+* 第十七週：6/11、6/13
+    * [ABA 問題](https://hackmd.io/@sysprog/SyucUYHrR)
+    * [我問老師 Work Steal 的問題](https://hackmd.io/@sysprog/H1dCuDxQR#%E3%80%88%E6%8E%92%E7%A8%8B%E5%99%A8%E3%80%89)
+    * 藉由 spinlock 的調整，改善多核處理器建立 TCP 連線效能
+    * 線上討論 [lock dependency](https://hackmd.io/@sysprog/SyucUYHrR)
+
+* 第十九週：6/25、6/27
+    * 線上討論 [atmoic 指令集問題](https://hackmd.io/@sysprog/H1dCuDxQR#TODO-%E6%8C%87%E4%BB%A4%E9%9B%86%E7%9A%84%E5%95%8F%E9%A1%8C)
 
 ## 所見所聞所感
+10分。
+
+* 觀察同學們的心得
+
+    在這堂課看到很多人都比我還要用功，這是跟〈因為自動飲料機而延畢的那一年〉最有相關的事情。在做每件事情的時候，即便都先入為主假設做完也不可能超越經典，但還是嘗試突破。舉例：在作業二的時候我看了葉承憲同學的作業，看到他做的實驗分析啟發我，所以我在後續的作業都會認真思考這個經典演算法、實作方式，有哪裡還可以改進，並設計實驗探討，參考 [第一周測驗題:QuickSort](https://hackmd.io/@weihsinyeh/ry2RWmNTT#%E7%AC%AC%E4%B8%80%E9%80%B1%E6%B8%AC%E9%A9%97%E9%A1%8C)。在這堂課看到很多同學他們會去思考一些我忽略的問題，像是有個同學下課花很久思考「定點數的整數與小數要取多少位比較好？」，坐在我隔壁同學的期末專題研究「可自我編譯的最佳化編譯器」就需要研究 logical-and 的問題。還有鄭以新同學在他的專題上克服的困難還要去學 Rust 。還有像 Henry 同學想要把自己的專題題目做好的毅力。不管起點是哪裡，大家都很努力去克服自己學習上的困難。讓我總是能一直找到學習的榜樣。
+
+* 觀察老師的心得
+
+    每次看到老師都很有活力的上課，把困難的事物變得學起來很有趣。上課可以吸收很多正能量，拿回去用於鼓勵自己學習。想休息的時候就會想到老師都比學生還要認真，所以還是去讀書。除了知識外，經過這學期價值觀也改變很多，以前很多事物都直接相信，不太會分析其對錯。現在看到一件事情，不會再被形容詞蒙蔽。學會透過「是否如實呈現有邏輯的推論？」與「是否有分析結果以及是用哪種工具來分析的？」等的客觀事實來分析，這件事情不只用於課業，還有生活。
+
+* 回顧自身在本課程的投入狀況
+
+    從觀察其他同學不可勝計的付出與龐大的課程教材，知道每個知識得來不易，因此為了不要讓自己只是懂概念，也就是在第二周我所學到的，除了投入在課堂的教材(如前幾個項目的說明外)，還會讀其他好書，舉例：[作業一中讀《The Art of Computer Programming》將數學與程式對應的內容](https://hackmd.io/@weihsinyeh/SJUVTnEn6)以及在[第四周測驗題讀《Hacker Delight》的 popcount ](https://hackmd.io/@weihsinyeh/ByOQ5cpaT#%E6%B8%AC%E9%A9%97-11)的時候，我超級喜歡閱讀的過程不斷地被腦力激盪，還沒讀到下一頁，就可以立刻想到進一步優化。這本書不斷讓我有發現新知的快樂。
+
+    此外研究很多數學的原理與程式碼間的關聯，像在 [Hamming code 的 mask](https://hackmd.io/@weihsinyeh/ry2RWmNTT#%E6%B8%AC%E9%A9%97-3)、均勻分佈與亂度的關係與 list_sort.c 中 pending 上的節點與合併的時機，每次自己推導發現數學真的被巧妙的應用在實作中，都充滿成就感。
+
+    最後我會紀錄課堂的討論，每次被問問題時都會有很多從來沒有的思維產生，這也是這堂課我學到最重要的事情，不像過去的問題都很單純，問題需要從不同面向分析，同時需要用很多解決方式。而這種多方位思考方式需要整合很多領域的知識，也因此我在後期課程開始會紀錄課堂上的問題還有老師的提到的關鍵到筆記中。
 
 ## 自我評量 (1 ~ 10)：
-方案 B: 1 + floor(GEOMEAN)
+$GEOMEAN = ( 7 \times 10 \times 10 \times 10 \times 10 )^{1/5} = 9.31149915095$
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + 9 = 10$
+
 
 
 
