@@ -24,10 +24,10 @@ categories: User
 
 評分：
 
-我給自己 8 分，
+我給自己 8 分，透過作業，我學到如何運用 clang-format 來確保一致的 coding style，也練習了如何寫出好的 Git commit message，培養自己的基本素養。我也使用了 Linux 核心的 List API 來實作雙向環狀鏈結串列的一系列操作，從而更好的理解開放原始碼專案的實作。
 
 ## 期末專題
-* 改進 concurrent (fork) merge sort: [HackMD](https://hackmd.io/f30zO2wBTDGbUHXlHyBjsQ?view#Linux-%E6%A0%B8%E5%BF%83%E5%B0%88%E9%A1%8C-%E6%94%B9%E9%80%B2-concurrent-fork-merge-sort)
+* 並行化的合併排序及其改進: [HackMD](https://hackmd.io/@sysprog/B1TOj7mwR)
 
 評分：
 
