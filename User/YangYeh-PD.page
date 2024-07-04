@@ -9,8 +9,26 @@ categories: User
 * GitHub: [`YangYeh-PD`](https://github.com/YangYeh-PD)
 * HackMD: [`YangYeh`](https://hackmd.io/@YangYeh)
 
+# 個人背景
+這其實是我第二次修這堂課，第一次修這堂課是在去年。考慮到我那個學期還有修量子物理以及熱統計等課程，因此在第 13 週星期五的時候退選了。
+
+那時候退選能寫的程度，跟我今年剛開始修這門課時的程度差不多，就是只會 C 語言的基本語法以及簡單的 DSA，對於作業系統的認知一竅不通，只知道 OS 能做電腦資源的管理。
+
+我覺得這也是我的問題，沒有好好利用去年的時間增強自己的實力。
+
 # 成果發表與貢獻
-(待完成)
+我其實在前六週的作業中，想嘗試對 Linux 當中的 [`lib/math/int_sqrt.c`](https://github.com/torvalds/linux/blob/master/lib/math/int_sqrt.c) 做出改善效能的貢獻。
+
+由於我在看該核心程式碼赫然發現有使用到**分支**，因此我本來想利用前幾週所學到的 **bitmask** 來避免掉這個分支。不過我做過實驗後才發現 bitmask 的作法竟然比分支多了 5 個 instructions。因此我最後沒有送出我的程式碼。(詳情請見 [`2024q1 Homework4 (quiz3+4)`](https://hackmd.io/@YangYeh/linux2024-homework4))
+
+雖然我對大型的 Github 教材專案沒有貢獻，不過在看 HackMD 教材的時候，我會修改裡面的錯字、排版，以及對應 C 語言規格書補充相關的內容。
+
+以下是目前透過 HackMD 還能夠追溯到的修改內容。
+
+* [錯誤更正碼介紹和實作考量](https://hackmd.io/2xkLnKGIRt-bZokpCyAgTw) - 改良某處數學式的表達。
+* [你所不知道的 C 語言 : bitwise 操作](https://hackmd.io/WxAJUeZKQMuKk5IV9yBlqg#) - 修正原先**算術位移**的錯誤描述，並引入 C99 規格書佐證。
+
+考量到這部份雖然嘗試過，但終究對大型專案沒什麼貢獻，只對教材有些許調整，因此我只能給自己 **5** 分。
 
 # 作業與隨堂測驗
 (待完成)
