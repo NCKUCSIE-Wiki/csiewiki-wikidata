@@ -24,7 +24,7 @@ categories: User
 
 評分：
 
-我給自己 8 分，透過作業，我學到如何運用 clang-format 來確保一致的 coding style，也練習了如何寫出好的 Git commit message，培養自己的基本素養。我也使用了 Linux 核心的 List API 來實作雙向環狀鏈結串列的一系列操作，從而更好的理解開放原始碼專案的實作。
+我給自己 7 分，透過作業，我學到如何運用 clang-format 來確保一致的 coding style，也練習了如何寫出好的 Git commit message，培養自己的基本素養。我也使用了 Linux 核心的 List API 來實作雙向環狀鏈結串列的一系列操作，從而更好的理解開放原始碼專案的實作。
 
 ## 期末專題
 * 並行化的合併排序及其改進: [HackMD](https://hackmd.io/@sysprog/B1TOj7mwR)
@@ -59,3 +59,5 @@ categories: User
 我給自己 9 分，我整理和分析了自己的學習進度和所見所聞，並提出了修課感想，這些都獲得了指導教授的肯定，並在一次實驗室會議中稱讚我的態度。
 
 ## 自我評量 (1 ~ 10)
+* GEOMEAN：$\sqrt[6]{8*7*8*9*9*9}=8.29$
+* 方案 B：$1+\lfloor 8.29 \rfloor=9$
