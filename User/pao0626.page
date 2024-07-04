@@ -9,12 +9,22 @@ categories: User
 * Github: [`pao0626`](https://github.com/pao0626)
 * HackMD: [`pao0626`](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA) (課程評分後會更改使用者名稱讓網址更簡潔)
 
-# 2024 Linux 核心設計 春季班 自我評量
+# 2024 Linux 核心設計/實作 春季班 自我評量
 ## 成果發表和貢獻
-評分 : 此項目我為自己打 6 分。
-在作業 5 中，我曾提出〈[你所不知道的 C 語言: linked list 和非連續記憶體](https://hackmd.io/@sysprog/c-linked-list#%E6%A1%88%E4%BE%8B%E6%8E%A2%E8%A8%8E-Leetcode-2095-Delete-the-Middle-Node-of-a-Linked-List)〉內容的兩個改進並被老師採納。並還有一個小改進本來想與老師討論後再做更動。此外，我對〈[並行程式設計: Atomics 操作 – 案例探討 SPSC](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-atomics#wait-free-amp-lock-free)〉內容提出了一個勘誤，但未被採納，可惜我不知道自己的理解錯在哪裡。
-在期末專題中，我也嘗試貢獻《[Linux Kernel Module Programming Guide](https://sysprog21.github.io/lkmpg/)》，但不知道是否應該透過 Google 搜尋到的 [github 頁面](https://github.com/sysprog21/lkmpg)發出 issue 來與老師溝通，因為我看到最新的幾則 issue 都沒有被回覆。
-最後，由於我並沒有實際貢獻 Linux 核心，辜負了老師開設這門課程的初衷，好手好腳卻浪費了納稅人的錢，身為資工人卻沒能做到開源貢獻，所以給自己及格分 6 分。
+
+* [lkmpg]: [PR 263](https://github.com/sysprog21/lkmpg/pull/263)
+
+評分：這個項目我給自己打6分。
+
+在〈[你所不知道的 C 語言: linked list 和非連續記憶體](https://hackmd.io/@sysprog/c-linked-list#%E6%A1%88%E4%BE%8B%E6%8E%A2%E8%A8%8E-Leetcode-2095-Delete-the-Middle-Node-of-a-Linked-List)〉中，我提出了兩段程式碼的改進方向，並被老師採納，但因某些原因最終未實際更動。對於介紹 circular linked list 程式碼中的註解，我本打算與老師討論後再修改，但最終在7月初時直接改動了。(詳見[筆記](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA/linux2024-homework5#%E4%BD%A0%E6%89%80%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84-C-%E8%AA%9E%E8%A8%80-linked-list-%E5%92%8C%E9%9D%9E%E9%80%A3%E7%BA%8C%E8%A8%98%E6%86%B6%E9%AB%94)第 1、2、4 項目)
+
+對〈[並行程式設計: Atomics 操作 – 案例探討 SPSC](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-atomics#wait-free-amp-lock-free)〉內容提出了一個勘誤，但未被採納，可惜的是我不知道自己的理解錯在哪裡。(詳見[筆記](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA/linux2024-homework5#%E4%B8%A6%E8%A1%8C%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88-Atomics-%E6%93%8D%E4%BD%9C-%E2%80%93-%E6%A1%88%E4%BE%8B%E6%8E%A2%E8%A8%8E-SPSC))
+
+在期末專題中，我對 simrupt 程式碼的註解提出了改善建議，但尚未得到回覆。(詳見 [issue](https://github.com/sysprog21/simrupt/issues/3))
+
+我也嘗試貢獻《[Linux Kernel Module Programming Guide](https://sysprog21.github.io/lkmpg/)》，但一開始不確定是否透過 Google 搜尋到的 [github 頁面](https://github.com/sysprog21/lkmpg)發出 issue 來與老師溝通，因為我看到最新的幾則 issue 都沒有被回覆。不過，在 7 月初時得到老師回覆並提交了 [PR](https://github.com/sysprog21/lkmpg/pull/263)，最終成功做出一些小貢獻。
+
+最後，由於我沒有實際貢獻 Linux 核心，未能完全達到老師開設這門課程的初衷，加上部分改動超過有效採計區間，因此給自己打了及格分 6 分。
 
 ## 作業/隨堂測驗
 
@@ -23,40 +33,60 @@ categories: User
 * Homework4: [HackMD](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA/linux2024-homework4)
 * Homework5: [HackMD](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA/linux2024-homework5)
 
-評分 : 此項目我為自己打 7 分。
-完成了大約一半的作業，但仍有提升空間。雖然幾乎參加了每次測驗，但大部分只涉及書面知識的學習，還有許多測驗所需的實作等待完成。然而，在這過程中我確實學到了很多東西。例如，大幅提升了C語言的熟練度，這在面試過程中給我帶來了巨大的幫助；完整掌握了Git等工具的使用；了解了各種排序演算法及其時間複雜度的理想與現實差距；掌握了位運算、哈希表及紅黑樹的實作方法等。投入程度可以參考我上面提供的 HackMD 筆記。基於上述原因，我為自己打了略高於及格的 7 分。
+評分 : 這個項目我為自己打 6 分。
+
+作業未能全部完成，也沒有完成每周測驗的延伸實作。然而，在這過程中我學到了許多內容：
+
+1. C 語言的熟練度大幅提升：這在面試過程中給我帶來了巨大的幫助，例如解釋巨集的使用、static 的意義等。
+2. 掌握了 Git 的使用：親身經歷版本控制流程，除了常見的 add、commit、push、pull、merge 之外，還深入研究了 rebase，取代了以前偷懶使用的 sync fork，更加靈活地控制同步需求，並理解了 upstream 和 origin 之間的關係，以及 fetch 和 clone 的差異。在面試過程中也被問到相關問題。
+3. 初步接觸了分析工具並使用：如 valgrind 和 perf。
+4. 了解了 merge sort 演算法：不同實作方式及其差異，並比較了時間複雜度的理想與現實。
+5. 學習了 bitwise 的應用：在 Linux 中用於改善除法效率，開發網路時 LSB <-> MSB 轉換所需的 reverse bit 操作，以及計算 log2 時使用到的 clz 等等。
+6. 學習了 Linux 的資料結構：包括雜湊函數和佇列的實作方法及其差異，還有 lock-free 所需的 Atomics 操作。
+
+這些內容的投入程度可以參考我上面提供的 HackMD 筆記。基於上述原因，給自己打了及格分 6 分。
 
 ## 期末專題
 
-* simrupt 研究和應用 : [HackMD](https://hackmd.io/@sysprog/rJQJo98LC)
-* 課堂教材筆記 : [HackMD](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA/linux2024-note)
+* simrupt 研究和應用: [HackMD](https://hackmd.io/@sysprog/rJQJo98LC)
+* 課堂教材筆記: [HackMD](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA/linux2024-note)
 
+評分: 這個項目我為自己打 7 分。
 
-評分 : 此項目我為自己打 8 分。
-在 5 月份與老師進行一對一專案確認後，最初的目標是熟悉並評估 simrupt。我按照作業 6 的要求，先複習了課堂上的C語言教材，包括數值系統、浮點數運算、位運算、List API、對齊方式及遞迴呼叫等內容。並詳細閱讀了 〈[Linux 核心模組運作原理](https://hackmd.io/@sysprog/linux-kernel-module)〉和 《[The Linux Kernel Module Programming Guide](https://sysprog21.github.io/lkmpg/)》。
-在期末前幾天收到老師的信件，對期末專案的方向更加明確。在剩餘的時間裡，我使專題更加完善，設計了幾個小實驗。我覺得可以改進的地方有幾點：首先，應該更早向老師索要筆記頁面，以便更確定細節（這部分歸類在下一個主題扣分）。其次，我覺得以我的能力設計的實驗和分析還不夠好，但我沒有向老師尋求幫助。綜上所述，我為自己打 8 分。
+在 5 月份與老師進行一對一專案確認後，我的初步目標是熟悉核心模組並評估 simrupt。按照作業 6 的要求，我複習了課堂上的 C 語言教材，包括數值系統、浮點數運算、位運算、List API、對齊方式及遞迴呼叫等內容，我針對一些內容撰寫了[筆記](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA/linux2024-note)。我還詳細閱讀了〈[Linux 核心模組運作原理](https://hackmd.io/@sysprog/linux-kernel-module)〉和 《[The Linux Kernel Module Programming Guide](https://sysprog21.github.io/lkmpg/)》。原本對模組一無所知的我，透過吸收書本內的知識及實際操作書中範例，了解了模組存在的目的和運用方法，包含其與一般程式不同的運作方式，以及與使用者的互動方法。在實際操作過程中，我還發現書中的一個小錯誤並提出了貢獻。在研究 simrupt 專案的過程中，我理解了 Linux 對中斷處理的流程，包括 irq、softirq、tasklet、workqueue 的差異和存在意義。
+
+在期末前幾天收到老師的信件，對期末專案的方向更加明確。在剩餘的時間裡，我使專題內容更加充實，設計了幾個小實驗。我認為可以改進的地方有幾點：首先，應該更早向老師索要筆記頁面，以便更確定細節。其次，我覺得以我的能力設計的實驗和分析還不夠好，但我沒有向老師尋求幫助。綜上所述，我為自己打 7 分。
 
 ## 與授課教師的互動
 
 * 5/10 19:30 一對一討論
 
-評分 : 此項目我為自己打 9 分。
-首先是上個主題中提到的，我不應該因為害怕自己程度不夠而耽誤老師的時間，導致不敢多約幾次，這樣反而限制了自己的成長。此外，上課時聽同學和老師之間的問答時，我常在心中默想自己能否回答得出來，但每次都覺得自己辦不到，因此對與老師的上課互動感到畏懼，這實在不理想。然而，課堂中提出的問題我會在後續中努力去理解。最有印象的是討論浮點數的那次，本以為自己對浮點數的認識已經足夠，但事實證明並非如此。基於上述原因，我為自己打 9 分。
+評分 : 這個項目我為自己打 7 分。
+
+首先，針對上個主題中提到的問題，我因為害怕自己程度不夠而耽誤老師的時間，導致不敢多約幾次。此外，在課堂上聽同學和老師之間的問答時，我常在心中默想自己是否能回答得出來，但每次都覺得自己辦不到，因此對與老師的互動感到畏懼。不過，課堂中提出的問題我會在後續努力去理解。最有印象的是討論浮點數的那次，本以為自己對浮點數的認識已經足夠，但事實證明並非如此，為此我複習了 CS:APP 第二章和 IEEE 754，並了解直接對浮點數進行位元操作是不允許的，需要先透過指針類型轉換或是 memcpy 的方法轉換成 unsigned int 型態。
+
+在課程末期發 PR 的過程中，我反覆與老師交流，並且從僅有的一次一對一討論中收穫良多。老師對我說要先變強才能談論選擇權，這一點我會銘記於心。雖然老師不喜歡聽過於禮貌的阿諛奉承之詞，但我還是想感謝老師願意花時間討論和批改作業。基於上述原因，我為自己打 7 分。
 
 ## 所見所聞所感
 
-* Homework5: [HackMD](https://hackmd.io/@dYc__gtWRkqGvuNcfK1ZJA/linux2024-homework5)
+評分 : 這個項目我為自己打 9 分。
 
-評分 : 此項目我為自己打 10 分。
-這部分的評分要求與作業 5 要求雷同，我完整的闡述了所見所聞所感，可參考我的 HackMD 頁面。
+我選修這門課程，儘管背負著碩士研究可能會延誤的風險，是因為我希望在最後的學生時期，能夠誠實面對自己並學點東西。不僅希望能對找工作有幫助，也期許自己能跳脫填鴨式教育與成績至上的思維影響。過去的我時常畏懼挑戰，習慣憑藉小聰明快速得到一些成果來安慰自己。尤其當我進入碩士後，踏入新的資訊工程領域時，不僅對程式語言不熟，作業系統等概念也只是為了考試而囫圇吞棗，因此不敢修一些太難的課程。甚至在第一次修資訊科技產業課程時，因能力不足而退選。
+
+現在回顧自身在本課程的投入狀況，我很慶幸自己選擇了這條路並堅持下來。在修課過程中，我不斷觀摩其他優秀同學的作業，學習他們如何設計實驗來驗證想法，真正有效地使用程式碼解決問題，並在期末專案中成功設計了一些簡單的實驗來驗證自己的想法。我也體驗了學習中必經的痛苦過程，例如透過閱讀 Linux 原始文件和程式碼來理解 fast circular buffer、kfifo 和 workqueue 等，過程雖枯燥且難以快速見效，但卻讓我最終理解更加透徹。
+
+在發 PR 給老師的過程中，我遇到了一些挫折。儘管詳細閱讀了 [How to Write a Git Commit Message](https://cbea.ms/git-commit/)，但在實際提交時仍難以設計出良好的內容。不過，這也讓我在最後成功時多了一點成就感，雖然只是一個小小的開始，卻讓我有了貢獻知名開源專案的經驗。
+
+閱讀〈因為自動飲料機而延畢的那一年〉後，我明白了很多事情需要勇於實踐，而非空想。只有親自動手，我們才能理解失敗的原因。基於我的起點，我認為在這堂課程中的收穫和進步值得 9 分。
 
 ## 研究生發信時間
 
 * 五月份學習回顧 (2024/6/14 週五 上午4:15) : 
 
-評分 : 此項目我為自己打 9 分。
-由於我們實驗室每週都有會議並要求寄送進度報告的信件，因此我認為並沒有因為這堂課而疏忽教授要求的顧慮，這也是學習回顧的初衷。所以我只在最後一個月時，寄了一封統整整堂課程所學和所用的信件，整理出各項對我實驗室研究內容有幫助的內容，並細分成每個月的成長。然而，課堂要求每個月都寄信，我確實沒有完成這項任務，因此折衷給自己 9 分。
+評分 : 這個項目我為自己打 8 分。
+
+由於我們實驗室每週都有會議並要求寄送進度報告的信件，因此我認為並沒有因為這堂課而疏忽教授要求的顧慮，本以為這也是學習回顧的初衷。但後來才發現，學習回顧同時也是培養自己闡述所學的訓練，能延伸至面試中如何將自己的能力與公司需求掛勾。所以，在最後一個月，我寄了一封統整整堂課程所學和所用的信件，整理出各項對我實驗室研究內容有幫助的內容，並細分成每個月的成長。然而，課堂要求每個月都寄信，我確實沒有完成這項任務，因此折衷給自己 8 分。
 
 ## 自我評量 (1 ~ 10)
-* GEOMEAN is calculated by {6, 7, 8, 9, 10, 9} = 8.05
-* 方案 B 總分: 1 + 8 = 9
+* GEOMEAN is calculated by {6, 6, 7, 7, 9, 8} = 7.08
+* 方案 B 總分: 1 + 7 = 8
