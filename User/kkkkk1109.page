@@ -12,7 +12,7 @@ categories: User
 # 2024 Linux 核心實作 春季班 自我評量
 ## 成果發表與貢獻
 
-尚無
+尚無，給自己 `5` 分
 
 ## 作業/隨堂測驗
 對於作業，我選擇給自己 `7` 分。
@@ -76,6 +76,6 @@ categories: User
 
 ## 評分
 
-採用方案 B ，1+floor(GeoMean) =1+ (7 $\times$ 9 $\times$ 8 $\times$ 8 $\times$ 6)$^{1/5}$ = 1 + floor(7.52) = 1+7 = 8
+採用方案 B ，1+floor(GeoMean) =1+ (5 \$times$ 7 $\times$ 9 $\times$ 8 $\times$ 8 $\times$ 6)$^{1/6}$ = 1 + floor(7.03) = 1+7 = 8
 
 
