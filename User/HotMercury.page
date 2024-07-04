@@ -1,0 +1,65 @@
+# 期末自評
+
+# 簡介
+* 法定姓名 張澤家
+* 國立成功大學 資訊工程研究所
+* Github: [`HotMercury`](https://github.com/HotMercury)
+* HackMD: [`NeedSleep`](https://hackmd.io/@NeedSleep)
+* LinkedIn: [張澤家](https://www.linkedin.com/feed/)
+
+## 專案貢獻
+* 《Demystifying the Linux CPU Scheduler》4/8 透過 email 與老師告知排版問題
+* [simplefs] [commit 55fd46a](https://github.com/sysprog21/simplefs/commit/55fd46a18629a6a645e394453dc5ddbcabd9dadb), [commit a84c775](https://github.com/sysprog21/simplefs/commit/a84c775d11326b6598bd9ab6b33d40719b1649d3),[ commit 79a2831](https://github.com/sysprog21/simplefs/commit/79a28317620a38ca6e52064c3116ceb12f0b8fe5), [commit 855c339](https://github.com/sysprog21/simplefs/commit/855c339457b782843a790e1e67e017e9b219dd46), [commit 056bd2a](https://github.com/sysprog21/simplefs/commit/056bd2af9fe5a910bff42deb65cb358b90ae14c7), [commit 1f1fec6](https://github.com/sysprog21/simplefs/commit/1f1fec6782a4146dcca69c87ae29c86707697ed8), [commit 01f582a](https://github.com/sysprog21/simplefs/commit/01f582a8391e33da1928962601b8160f50597e3a), [commit 4cd7983](https://github.com/sysprog21/simplefs/commit/4cd7983cf457c84001ffc0a38ee6aeff3e3f3291)
+
+評分：此項目我給自己打 8 分，參預 open source 的貢獻讓我覺的非常有趣，很遺憾的是到了課程後半才開始投入，前期跟作業時明明會有很多機會可以貢獻，我在這方面學到了觀察他人程式碼，一定要搭配自己的思考，發現寫的好的第方可以嘗試理解內化，很可能會在其他專案可以貢獻。
+還有一點這學期有向 linux 發 patch 很可惜沒有被收錄 [email](https://lore.kernel.org/dm-devel/20240513064700.88178-1-merqqcury@gmail.com/T/#u)
+
+# 2024 Linux 核心設計 春季班 自我評量
+## 作業共筆
+* lab0-c : [GitHub](https://github.com/HotMercury/lab0-c) / [HackMD](https://hackmd.io/3ZnOb3fjTviutNRFhSqu-A?view)
+* ttt-in-lab0 : [GitHub](https://github.com/HotMercury/lab0-c) / [HackMD](https://hackmd.io/3ZnOb3fjTviutNRFhSqu-A?view)
+* 期中自我檢視 :[HackMd](https://hackmd.io/Pp5CEun2SfmgI5DAbotlaQ)
+* KMLdrv : [HackMd](https://hackmd.io/UlGzIC05S6qXhm5kbMuYLw)
+
+## 測驗共筆
+* quize 1+2 : [HackMD](https://hackmd.io/UAq6Xx8DRieVVlxJUbrzoQ)
+* quize 3+4 : [HackMd](https://hackmd.io/uQNgEt5rTnulQwkwq3kVMg)
+
+評分：此部份我給自己 8 分，我在前半部有較多的作業投入，只是我認我方式不太對，對於 kernel 的部份，我會直接去看 code，效率非常差，後期學習到如何使用 git message 去了解原因，或是使用一些 tool 像是 qemu 搭配 debug 來使用，後期學習到 corutine，workqueue 等作法，不過後期的作業還需要加強。
+
+## 期末專題: 開發紀錄
+評分：我給自己 9 分，我覺的我充分投入，研究 journal filesystem 的原理，[document](https://www.kernel.org/doc/html/latest/filesystems/ext4/journal.html) 閱讀，並嘗試規劃程式碼流程，然後進入 debug 地獄。
+
+## 與授課教師的互動
+這次的課程我與老師約了三次的討論
+* 第一次討論，準備不充足，基本上沒有提問，老師單方面的講述期末專題該如何準備，學習了從論文獲取資訊，像是提到的 journal filesystem 的 performace 冊量概念。
+* 第二次討論，我覺的這次是一次很不良的討論，我根據老師第一次的要求後卻沒有總結並提出問題，當時只把程式跑起來並沒有提出計畫或方向，只期待老師給予方向。
+* 第三次討論，我覺的是比較有意義的，我將流程提出與老師討論，並得到一些討論結果
+
+總結：討論前應該有對於問題了解夠多，並至少有個明確的問題，或是解釋不只一種方向再與老師討論，像是第三次的 flow 我沒有給老師第二種流程，老師只能覺的目前 flow 是可行的，這樣討論的意義就不容易學習到老師的想法。
+評分：我給自己 10 分
+
+## 所見所聞所感
+這學期讓我最有感的文章不是[〈因為自動飲料機而延畢的那一年〉](https://blog.opasschang.com/the-story-of-auto-beverage-machine-1/)而是 [<Git 的故事：這一次沒這麼好玩>](https://blog.brachiosoft.com/posts/git/?fbclid=IwZXh0bgNhZW0CMTEAAR2A0gxMtesHUxlChe0Z1Fv-UULzdZdd9rvayWBfd-jsGrRSUayUkzKeTrc_aem_HUnSIjo9oKzSQjYjkpG49Q)，看完有一種想參與世界級的專案開發，開源的世界不只是一個人面對電腦，而是充滿者人情，也伴隨著利益衝突，最有感覺的是 濱野純說：他一口氣讀完 git 並開始著手貢獻，我就會思考，我們有這麼大差距嗎，是不是我也可以，只是我並沒有實際的去參與我接處到的專案，我會想貢獻，領導專案，從小處做起，運用所學，貢獻世界。
+
+關於這學期的總結有幾點
+1. 很遺憾沒能參預第六次作業 coroutine 的開發，只有大致閱讀 coro 專案的 code，我的理解是可以透過 userspace 來操作簡易的 scheduler，降低程式間互換的 context switch，也沒作到第七次 TCP 的實做，我對這部份蠻有興趣的，事後會補上。
+2. 透過了幾次的作業，使用到了非常多的工具，測試方式，像是 qemu, debug, fio, ftrace,等等 透過這些工具可以檢視程式碼品質，不在只是理想上的分析。
+3. 數學推理，因為想用定點數代替浮點數，分析了泰勒級數，尤拉，真正運用數學到程式碼。
+4. 期末專案，參預 open source 的感覺很不錯
+5. 大略學習到了排程器 cfs eevdf 等等排程器，其中的一些原理，像是只考慮 nice 或加入考慮 deadline 的議題，都是很值得學習的，但目前只閱讀第一章，希望之後可以看完
+
+評分：我給自己 8 分
+
+
+## 每月發給實驗室指導教授的學習回顧
+* 3/6 : 我學習到了 linux 中 link list 的 API, 研究第一手資料 c reference, 投入 lab0-c 作業
+* 4/14 : 嘗試貢獻 linux kernel 未被接收
+* 7/2 : 總結了這學期的學習經驗
+
+評分：我給自己 6 分
+
+## 評分計算
+plan A : no
+plan B : 9
+幾何平均 : 8.07...
