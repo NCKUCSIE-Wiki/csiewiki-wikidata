@@ -30,7 +30,7 @@
 ## 期末專題: 開發紀錄
 我覺的我充分投入，研究 journal filesystem 的原理，[document](https://www.kernel.org/doc/html/latest/filesystems/ext4/journal.html) 閱讀，並嘗試規劃程式碼流程，然後進入 debug 地獄。
 
-這學期大部分時間在於越讀 simplefs 的程式碼，與閱讀 jbd2 的 document，其中修改最多的是一些 simplefs 的一些基本功能與 bug，像是最一開始的 extend block 未清空的問題，接下來我想聊解的是有關於記憶體的洩漏問題，老師其實有一直提到可以用 kernel thread 來解決，但我真的還是不清楚，希望之後可以再跟老師多多討論。
+這學期大部分時間在於閱讀 simplefs 的程式碼，與閱讀 jbd2 的 document，其中修改最多的是一些 simplefs 的一些基本功能與 bug，像是最一開始的 extend block 未清空的問題，接下來我想了解的是有關於記憶體的洩漏問題，老師其實有一直提到可以用 kernel thread 來解決，但我真的還是不清楚，希望之後可以再跟老師多多討論。
 至於 journal 目前對於成品還有一段距離。
 評分：我給自己 9 分
 
