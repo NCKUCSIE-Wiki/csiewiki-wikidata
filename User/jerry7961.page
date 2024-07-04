@@ -32,6 +32,8 @@ $score = 1 + \lfloor GM \rfloor = 1 + \lfloor 6.4451 \rfloor = 7$
 
 我的期末專題是重作第一次作業。這次期末專題，我有很多應完成的地方未完成，但過程中讓我對 valgrind, massif 等工具有更多的了解，也成功找出之前撰寫的函式中有錯誤的部分，並把錯誤的部分改正。
 
+* [Linux 核心專題: 重作第一次作業](https://hackmd.io/@sysprog/Sy85Ue-DC)
+
 ### 與授課教師的互動
 自評分數: 8 分
 
