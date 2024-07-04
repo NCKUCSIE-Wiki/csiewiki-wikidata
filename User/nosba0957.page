@@ -1,0 +1,51 @@
+---
+title: nosba0957(吳昱輝)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程系 114 級 (2020~2025)
+
+* GitHub: [`nosba0957`](https://github.com/nosba0957)
+* HackMD: [`chucknos`](https://hackmd.io/@chucknos)
+
+# Linux 核心設計/實作 (Spring 2024) 自我評量
+## 成果發表和貢獻
+1 分。
+並未對教材進行貢獻。
+
+## 作業/隨堂測驗
+7 分
+
+* Homework1: [HackMD](https://hackmd.io/@chucknos/linux2024-homework1)
+* Homework2: [HackMD](https://hackmd.io/@chucknos/linux2024-homework2)
+* Homework5: [HackMD](https://hackmd.io/@chucknos/linux2024-homework5)
+* Homework6: [HackMD](https://hackmd.io/@chucknos/linux2024-homework6)
+
+在 Homework1 和 Homework2 學習到 linux 核心是如何使用 list API，container_of。學習如何撰寫出好的 commit message。研讀 linux 核心程式碼 list_sort.c，學習到排序演算法並不是單純背誦時間複雜度，是要將背後數學證明計算出來互相比較，甚至針對 cache 影響有對應的方式。在 Homework1 比較不同排序演算法效能時，看到 [fennecJ](https://hackmd.io/@fennecJ/linux2024-q1q2#%E5%8F%83%E8%80%83-cpython-%E6%BA%96%E5%82%99%E8%B3%87%E6%96%99%E9%9B%86%E9%80%B2%E8%A1%8C%E5%AF%A6%E9%A9%97) 同學分享他的測試結果，學習到每個演算法有適合的情境，測試資料的大小也並非隨意指定。Homework5,Homework6 學習將論文、文章中的數學證明重新跟著證明一次，嘗試透過 bitwise 操作實作不依賴除法運算的 mod 3，mod 9。
+
+## 期末專題
+7 分
+
+* Linux 核心專題: shecc [HackMD](https://hackmd.io/@sysprog/H11Da3FQA)
+
+在期末專題學習到編譯器如何解析輸入的程式建立 SSA，和施行最佳化，其中我實作任務是消除 shecc self-host 失敗的問題，找到原因是 logical-and 實作錯誤。原本以為能快速修改成功，但經過其他貢獻者提出的意見，發現我連 C99 規格書都沒看仔細，也沒有謹慎思考到特殊的例子，所以又重新修正。但後面重新修正時發現要從根本開始修改，而我急著想寫程式(老師在第 19 週提示我們常犯的錯誤)，反而最後花了更多時間才修改好。所以除了編譯器的知識，也學習到老師說工程師有 80% 的時間在分析，只有 20% 用來寫程式。
+
+## 與授課教師的互動
+8 分
+
+* 2024-5-1 一對一討論。
+討論期末專題，老師首先詢問我對 SSA 的概念，SSA 使用在哪些編譯器最佳化上。
+並且也告訴我為何要會問問題
+1. 問問題可以讓你和專業的人對話。
+2. 見證自己成長
+ 
+## 所見所聞所感
+10 分
+
+從第五週的現場實體 code review 讓我體會到什麼是幻滅，先前做的作業 1 完全沒有注意細節，只想趕快撰寫程式，然後達到 100 分，卻對老師問的任何問題都沒辦法回答，開始體會到何謂重視細節，並且誠實面對自己的不足。但我也在看到我的不足後開始退縮，後面撰寫開發紀錄的時候會開始害怕自己錯誤，害怕被批評，最後不敢寫。後來看完〈因為自動飲料機而延畢的那一年〉，看見別人就算遇到失敗和挫折但也繼續下去，我開始誠實面對自己的情緒，並希望能效仿強者不怕批評的心態。所以在後面的作業我開始嘗試將自己理解的知識寫在開發紀錄上，就算被老師批評也是直接面對而不是逃避錯誤。而期末專題和上面所述一樣，學習到不能心急的想趕快寫程式，工程師最常做的是分析而不是寫程式。
+在這堂課中，不僅學習到知識，學習到更多的是面對資訊科技難題的心態，面對困難和挫折的強健心理。
+
+## 自我評分
+* GEOMEAN: $\sqrt[5]{1 \times 7 \times 7 \times 8 \times 10} = 5.2319$
+* 方案 B: 1 + floor(GEOMEAN) = 1 + 5 = 6
