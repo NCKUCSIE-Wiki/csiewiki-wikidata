@@ -28,7 +28,11 @@
 評分：此部份我給自己 8 分，我在前半部有較多的作業投入，只是我認我方式不太對，對於 kernel 的部份，我會直接去看 code，效率非常差，後期學習到如何使用 git message 去了解原因，或是使用一些 tool 像是 qemu 搭配 debug 來使用，後期學習到 corutine，workqueue 等作法，不過後期的作業還需要加強。
 
 ## 期末專題: 開發紀錄
-評分：我給自己 9 分，我覺的我充分投入，研究 journal filesystem 的原理，[document](https://www.kernel.org/doc/html/latest/filesystems/ext4/journal.html) 閱讀，並嘗試規劃程式碼流程，然後進入 debug 地獄。
+我覺的我充分投入，研究 journal filesystem 的原理，[document](https://www.kernel.org/doc/html/latest/filesystems/ext4/journal.html) 閱讀，並嘗試規劃程式碼流程，然後進入 debug 地獄。
+
+這學期大部分時間在於越讀 simplefs 的程式碼，與閱讀 jbd2 的 document，其中修改最多的是一些 simplefs 的一些基本功能與 bug，像是最一開始的 extend block 未清空的問題，接下來我想聊解的是有關於記憶體的洩漏問題，老師其實有一直提到可以用 kernel thread 來解決，但我真的還是不清楚，希望之後可以再跟老師多多討論。
+至於 journal 目前對於成品還有一段距離。
+評分：我給自己 9 分
 
 ## 與授課教師的互動
 這次的課程我與老師約了三次的討論
