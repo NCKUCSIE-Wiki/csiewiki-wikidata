@@ -47,7 +47,11 @@ categories: User
 
 提問紀錄：
 
-(待完成)
+* [Linux 核心專題: 並行程式設計](https://hackmd.io/lpNYFc8fS7-9LSXWXZGD4Q)
+* [Linux 核心專題: 重作第 10 和第 12 週測驗題](https://hackmd.io/@sysprog/SJXN0y9UR)
+* [Linux 核心專題: 並行的環狀雙向鏈結串列](https://hackmd.io/@sysprog/rk4C6djLR)
+* [Linux 核心專題: 並行化的 Redis 實作](https://hackmd.io/WcW-q-n4QwSOfPK4YRT8Mw)
+* [Linux 核心專題: RCU 實作](https://hackmd.io/2Jv0y1OpRgG0IdlcBD9Snw)
 
 ## 與授課教師的互動
 評分：9
@@ -66,7 +70,7 @@ categories: User
 
 回首這學期的課程，我把我的學習內容總結成兩點：**強化曾經學習的知識**與**補齊尚未學習的知識**。
 
-透過這次的課程，我意識到自己曾經學過的知識是多麼不堪一擊，一問就倒，即使大學修習過資料結構，準備研究所時也有再次複習，但在第一次 code review 中，對於 min-max  heap 的操作是一問三不知，就連 quicksort 的執行步驟也是想了一陣子才想起來。隨著課程進度，我也發現越來越多我曾經學過但沒學好的東西：在第一次作業重新學習 github 的使用並了解 commit message 的重要性，<[你所不知道的 C 語言：linked list 和非連續記憶體](https://hackmd.io/@sysprog/c-linked-list)> 讓我複習我本來就不熟悉的指標操作，<[Linux 核心設計：淺談同步機制](https://hackmd.io/@sysprog/linux-sync)> 讓我重新學習 mutex lock、semaphore 以及如何實作於 Linux 核心，幾乎能在每週的課程中找到自己過往學習成效不彰的證據。
+透過這次的課程，我意識到自己曾經學過的知識是多麼不堪一擊，一問就倒，即使大學修習過資料結構，準備研究所時也有再次複習，但在第一次 code review 中，對於 min-max  heap 的操作是一問三不知，就連 quicksort 的執行步驟也是想了一陣子才想起來。隨著課程進度，我也發現越來越多我曾經學過但沒學好的東西：在第一次作業重新學習 github 的使用並了解 commit message 的重要性，<[你所不知道的 C 語言: linked list 和非連續記憶體](https://hackmd.io/@sysprog/c-linked-list)> 讓我複習我本來就不熟悉的指標操作，<[Linux 核心設計: 淺談同步機制](https://hackmd.io/@sysprog/linux-sync)> 讓我重新學習 mutex lock、semaphore 以及如何實作於 Linux 核心，幾乎能在每週的課程中找到自己過往學習成效不彰的證據。
 
 除了既有的知識，我也學到很多從沒看過的東西，就以本次的專題為例，在修習這堂課之前我從來沒聽過 RCU，突然要我使用 RCU 進行實作，並搭配 Valgrind、ThreadSanitizer 等等工具進行程式的評估，對我來說實在是一大挑戰。這也讓我想起我曾經聽一位主管等級的人說過，碩士生與大學生最大的差別就是解決問題的能力，大學生傾向等待別人給答案，碩士生傾向自己理解問題並提出可能的解法。為此，我閱讀相關教材以及網路上的資料，嘗試進行實作，並聽取老師與同學的建議，積極改進尚有缺陷的地方。經過這次的課程，我想我也向我心中碩士生該有的樣子邁進了一步。
 
