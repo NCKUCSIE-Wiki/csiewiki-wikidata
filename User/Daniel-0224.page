@@ -1,0 +1,60 @@
+---
+title: Daniel-0224 (曾鼎棊)
+categories: User
+...
+
+# 簡介
+
+* 國立成功大學 資訊工程研究所
+* Github: [`Daniel-0224`] (https://github.com/Daniel-0224)
+* HackMD: [`Daniel-0224`] (https://hackmd.io/@NdB0NahsRSSnwZagYYcL6g)
+
+# 2024 Linux 核心設計 春季班 自我評量
+## 成果發表和貢獻
+評分 : 此項目我為自己打 6 分。
+我只修改了 CS:APP 第 4 章重點提示和練習 執行(excute->execute) ，雖然在 ttt 專題中有發現一些註解的錯誤，但發現在 pull request 時發現會將不只錯誤註解的修改都 commit ，這部分還在嘗試。最後，由於我並沒有實際貢獻 Linux 核心，所以給自己及格分 6 分。
+
+## 作業/隨堂測驗
+
+* Homework1&3: [HackMD](https://hackmd.io/@NdB0NahsRSSnwZagYYcL6g/linux2024-homework1)
+* Homework2: [HackMD](https://hackmd.io/@NdB0NahsRSSnwZagYYcL6g/linux2024-homework2)
+* Homework4: [HackMD](https://hackmd.io/@NdB0NahsRSSnwZagYYcL6g/linux2024-homework4)
+* Homework5: [HackMD](https://hackmd.io/@NdB0NahsRSSnwZagYYcL6g/linux2024-homework5)
+
+評分 : 此項目我為自己打 8 分。
+這些作業內容仍有提升空間，有許多問題還沒有詳細解答。然而，在這完成作業的過程中我確實學到了。例如，嘗試閱讀 Linux kernel 程式碼，提升了C語言的熟練度；學習了如何書寫 Git commit message 以及使用 perf 等工具的使用；了解了各種排序演算法及其時間複雜度的理想與現實差距；基於上述原因，我為自己打 8 分。
+
+## 期末專題
+
+*井字遊戲改進:[HackMD](https://hackmd.io/@sysprog/rkF2M6FIA)
+透過期末專題我了解了定點數的運算，其中難題在實作出定點數的 log 與 sqrt，這其中的數學證明還要再寫得更完善。
+*觀摩其他學員的期末專題
+目前觀摩了 Linux 核心專題: Data Lab ， Linux 核心專題: 位元操作的應用 ， Linux 核心專題: 重作第 3, 4, 7 週測驗題 ， Linux 核心專題: 浮點數運算案例探討。
+
+評分 : 此項目我為自己打 7 分。
+
+
+## 與授課教師的互動
+
+* 5/14 10:30 一對一討論
+這次面談對我的啟發。雖然我已經讀了 bitwise 及 floating point 的教材，但當面對白板題時，我發現自己腦袋一片空白，這讓我深刻認識到光是閱讀教材是不夠的，我需要更多地寫程式來實際運用這些知識。
+當時測驗是 float point multiple 10 without use mul 。
+評分 : 此項目我為自己打 7 分。
+
+
+## 所見所聞所感
+
+* 在這堂課中學習到的，嘗試閱讀 Linux kernel 程式碼，提升了C語言的熟練度；學習了如何書寫 Git commit message 以及使用 perf 等工具的使用，原本以為數學證明對於寫程式作用不大，後來才了解許多程式實作的基礎都是一系列嚴謹的證明，並且也學習到實驗的測資是需要經過設計已找出程式的瓶頸。
+
+評分 : 此項目我為自己打 8 分。
+
+## 研究生發信時間
+
+* 五月份學習回顧 (6月21日 週五 上午5:04): 
+
+評分 : 此項目我為自己打 7 分。
+由於我們實驗室每週都有進度報告並要求寄送進度報告的信件，我認為並沒有因這堂課而疏忽教授要求的顧慮，但後來了解授課老師要求書寫學習回顧的初衷是紀錄每個月學習了甚麼。所以我在最後一個月時，寄了一封統整目前課程所學和所用的信件，整理出目前對我實驗室研究內容有幫助的內容，然而，課堂要求每個月都寄信，我確實沒有完成這項任務，因此給自己 7 分。
+
+## 自我評量 (1 ~ 10)
+* GEOMEAN is calculated by {6, 8, 7, 7, 8, 7} = 7.1329
+* 方案 B 總分: 1 + 7 = 8
