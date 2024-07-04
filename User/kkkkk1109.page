@@ -76,6 +76,6 @@ categories: User
 
 ## 評分
 
-採用方案 B ，1+floor(GeoMean) =1+ (7 $\times$ 9 $\times$ 8 $\times$ 8 $\times$ 6)$^{1/5}$ = 1 + floor(7.52) = 1+8 = 9
+採用方案 B ，1+floor(GeoMean) =1+ (7 $\times$ 9 $\times$ 8 $\times$ 8 $\times$ 6)$^{1/5}$ = 1 + floor(7.52) = 1+7 = 8
 
 
