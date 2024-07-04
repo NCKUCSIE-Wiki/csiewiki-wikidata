@@ -31,20 +31,23 @@ categories: User
 * 2024q1 Homework6 (integration): [hackmd](https://hackmd.io/@eleanorLin/linux2024-homework6): 理解核心模組運作並首次掛載核心、其餘相關主題為 MODULE_LiCENSEC、CMWQ (Concurrency Managed Workqueue) 接著看 ksort 與 simrupt如何運用 CMWQ 達到並行目標。  
 
 ## 3. 期末專題
-我給自己 9 分，對於測試部分的解讀還需要加強。  
+我給自己 9 分，對於測試部分的結果解讀還需要加強。  
 
 ### 本人專題: 
 開發紀錄: [Linux 核心專題: RCU 實作](https://hackmd.io/@sysprog/HkkWZ20B0) / [Github](https://github.com/eleanorLYJ/ctp)    
 探討 ctp 這似 RCU 的 thread-safe variable 在哪些情況適用，因此除了逐步探討 RCU 與 ctp程式碼 以外，比較 ctp 與 其他 userspace RCU 的 throughput、記憶體使用量等。  
 
 ### 對他人專題的發問
-- [Linux 核心專題: Usperspace RCU 研究](https://hackmd.io/@sysprog/Byga7v9U0#%E4%BB%BB%E5%8B)
-
+* [Linux 核心專題: Usperspace RCU 研究](https://hackmd.io/@sysprog/Byga7v9U0#%E4%BB%BB%E5%8B)    
+* [Linux 核心專題: POSIX Thread 相容實作](https://hackmd.io/@sysprog/H1_iu8CSA)  
+* [Linux 核心專題：排程器原理](https://hackmd.io/@sysprog/HyDijL0HR)  
+* [Linux 核心專題: 重作第 10 和第 12 週測驗題](https://hackmd.io/@sysprog/SJXN0y9UR#TODO-%E7%AC%AC-10-%E9%80%B1%E6%B8%AC%E9%A9%97%E7%9A%84%E7%AC%AC-1-%E9%A1%8C)  
+* [Linux 核心專題: 井字遊戲改進](https://hackmd.io/VpOFbwPLRCqQ5_i0ZOUtfQ?view)  
 
 ## 4. 與授課教師的互動
 
-我給自己 8 分，扣的兩分為，我在與教師互動過程中，我總是無法順利回答問題。  
-* 5 月 9 日 (週四), 下午3:00 – 下午3:30，討論 vm_area_strcut  
+我給自己 8 分，扣的兩分為，我在與教師互動過程中，我總是無法順利回答問題。   
+* 5 月 9 日 (週四), 下午3:00 – 下午3:30，討論 vm_area_strcut 、fork 如何做 CoW (copy-on-write) 與期末專題主題的討論  
 * 7 月 3 日 (週三), 下午3:00 – 下午3:30，此次主要討論 [專題]((https://hackmd.io/@sysprog/HkkWZ20B0) 中測試結果，教師提供具體的方向，提出我的電腦處理器為 intel 12代，會區分 P-cores 與 E-cores 因此從此角度重新修正我的測試結果。  
 
 ## 5. 所見所聞所感
