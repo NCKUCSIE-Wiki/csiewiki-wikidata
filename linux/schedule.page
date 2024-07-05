@@ -456,7 +456,7 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
         - 倘若你沒在 6 月 30 日進行[專題展示發表](https://hackmd.io/@sysprog/linux2024-showcase)，就要在 7 月 4 日中午前，挑出至少 5
 個由其他學員進行的題目，觀看其解說錄影、開發紀錄、程式碼和成果進行批評，紀錄於下方對應專案的開發紀錄中，針對個別題目，至少提出 1 個問題或建議。注意：比照[第三次作業](https://hackmd.io/@sysprog/linux2024-review)的風格，在 (自己以外) 學員的開發紀錄上留言。
         -  針對其他學員 (含授課教師和社會人士) 在開發紀錄頁面提出的問題或建議，務必在 7 月 6 日中午前予以回應和改進。
-    * [課程自我評量](https://hackmd.io/@sysprog/linux2024-assessment)
+    * [課程自我評量](https://hackmd.io/@sysprog/linux2024-assessment)`*`
     * [透過 Linux 核心重新認識數位化世界](https://bit.ly/linux2024-short): 藉由 Dominic Walliman 製作的〈[Map of Computer Science](https://youtu.be/SzJ46YA_RaA)〉短片，探討電腦科學的多個面向，諸如電腦網路、圖形處理、抽象機器及理論 (如Turing machine)、NP-Complete 問題、計算機架構、排序演算法、資料壓縮、現代密碼學、形式化方法、作業系統排程、異質多核運算、編譯器，和程式語言，來回顧今日的 Linux 核心 ── 電腦科學的子學科幾乎都可反映在 Linux 核心中。
     * [課程期末展示](https://hackmd.io/@sysprog/linux2024-showcase)`*`
     * [期末專題](https://hackmd.io/@sysprog/linux2024-projects)檢討
