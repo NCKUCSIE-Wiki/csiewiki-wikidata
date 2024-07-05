@@ -13,6 +13,23 @@ categories: User
 
 ## 成果發表和貢獻
 
+評分標準：每個 non-trivial 貢獻得 1 分，貢獻獲得採納再額外多得 1 分，教材勘誤每次得 0.5 分，各項貢獻得分加總後四捨五入。
+
+- 並行程式設計：概念
+    - 勘誤：在 [搶佔式與非強取式核心](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-concepts#%E6%90%B6%E4%BD%94%E5%BC%8F%E8%88%87%E9%9D%9E%E5%BC%B7%E5%8F%96%E5%BC%8F%E6%A0%B8%E5%BF%83) 中，內文都是採用「非搶佔式核心」，但標題卻是「非強取式核心」，兩者不一致
+- 並行程式設計：執行順序
+    - 勘誤：在 [Happens-before](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-ordering#Happens-before) 中，文字說明為「Java 程式」但展示的程式碼為 C 語言
+    - 勘誤：在 [Happens-before](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-ordering#Happens-before) 中，total order 的定義有誤，和參考資料的定義不一致，少了 relexivity
+    - 修改 memory consistency model 中關於 [sequential consistency 的解釋](https://hackmd.io/@sysprog/BkNqX71L0#%E4%BF%AE%E6%94%B9%E3%80%88%E6%9C%80%E7%9B%B4%E8%A6%BA%E7%9A%84%E7%B4%84%E5%AE%9A%EF%BC%9ASequential-Consistency%E3%80%89)
+    - 新增 [執行順序的數學描述](https://hackmd.io/@sysprog/BkNqX71L0#%E6%96%B0%E5%A2%9E%E3%80%88%E5%9F%B7%E8%A1%8C%E9%A0%86%E5%BA%8F%E7%9A%84%E6%95%B8%E5%AD%B8%E6%8F%8F%E8%BF%B0%E3%80%89)
+    - 新增 x86-TSO、ARM 的 [hardware memory consistency model](https://hackmd.io/@sysprog/BkNqX71L0#%E6%96%B0%E5%A2%9E%E3%80%88Hardware-Memory-Consistency-Models%E3%80%89) 和 litmus tests
+- Concurrency Primer
+    - 新增 memory consistency model 章節 ([PR#16](https://github.com/sysprog21/concurrency-primer/pull/16))
+
+閱讀教材過程中有發現錯誤，並記錄在[期末專題](https://hackmd.io/@sysprog/BkNqX71L0)的筆記中以 warning 區塊標示，共計三處各得 0.5 分。新增和修改內容的部分還在審查當中，尚未獲得採納，因此四項各拿 1 分。
+
+本項得分：round(0.5 + 0.5 + 0.5 + 1 + 1 + 1 + 1) = 6 分。
+
 ## 作業/隨堂測驗
 
 ## 期末專題
