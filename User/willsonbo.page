@@ -18,6 +18,7 @@ categories: User
 [HW1](https://hackmd.io/a0i1d57CTcyR_F0WDuZHOg)
 [HW5](https://hackmd.io/vjPqCl6sQmKhGFwJQH4Fow)
 [HW6](https://hackmd.io/dE6RNY57QniNg0q4iMpYCQ)
+
 ## 期末專題
 評分 : 此項目我為自己打 5 分。
 原本對於作業沒有具體方向，在跟老師討論後，明白要解決的問題點，並嘗試讀取作業六 ttt 中 mcts 中 uct_score 的浮點數值用來找到更好的 scaling factor，以改進vax-r 同學的定點數運算，以及透過學習老師先前[作業](https://hackmd.io/@jserv/S1RVdgza?type=view)，嘗試使用gnuplot繪圖並觀察。
