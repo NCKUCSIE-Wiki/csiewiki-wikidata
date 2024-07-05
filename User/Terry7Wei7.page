@@ -1,0 +1,61 @@
+---
+title: TerryWei (魏彥庭)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程產業碩士專班碩一 (2023~)
+* Github: [`Terry7Wei7`](https://github.com/Terry7Wei7)
+* HackMD: [`Brandon2000`](https://hackmd.io/@Terry7Wei7)
+
+# 2024 Linux 核心實作 自我評量
+
+## 1. 成果發表與貢獻
+自評分數: 7分
+
+在這部分並沒有對 linux 核心做出實際的貢獻，但本次期末專題 data lab 的部分，預期在之後可以提供給對此議題有興趣的人一點幫助
+
+## 2. 作業與隨堂測驗
+自評分數: 9分
+
+* [2024q1 Homework1 (lab0)](https://hackmd.io/@Terry7Wei7/linux2024-homework1)
+* [2024q1 Homework2 (quiz1+2)](https://hackmd.io/@Terry7Wei7/linux2024-homework2)
+* [2024q1 Homework3 (lab0)](https://hackmd.io/@Terry7Wei7/linux2024-homework1)
+* [2024q1 Homework4 (quiz1+2)](https://hackmd.io/@Terry7Wei7/linux2024-homework4)
+* [2024q1 Homework5 (assessment)](https://hackmd.io/@Terry7Wei7/linux2024-homework5)
+* [2024q1 Homework6 (assessment)](https://hackmd.io/@Terry7Wei7/linux2024-homework6)
+在這幾次作業中，我學習到了安裝ubuntu/windows雙系統，git commit 的撰寫以及規範，熟悉 git 指令
+經過這幾次作業的練習，我更加熟練了 C 語言。但這些作業還有一部分的改進空間
+
+## 3. 期末專題
+自評分數: 10分
+
+* Data Lab: [GitHub](https://github.com/Terry7Wei7/datalab) / [HackMD](https://hackmd.io/@sysprog/rkpgxY0HC)
+在期末專題中我學習到很多 bitwise 位元運算，像是有些題目運用到了笛摩根定律，以及在比較位元時可以用 xor 判斷
+## 4. 與授課教師的互動
+自評分數: 10分
+
+* 「一對一討論」時間 : 2024/05/09 11:00 am
+
+在與老師一對一的討論中，首先老師針對我近期學習的教材，並出題考驗，但很顯然我並沒有很熟練，所以回答不上來
+從結果來看這就是不會，過程中老師希望我們誠實面對自己，缺什麼補什麼，不要不懂裝懂，後續老師安排了 DataLab 這份任務給我
+好讓我在 6 月底有個實際的產出
+
+## 5. 所見所聞所感
+自評分數: 10分
+
+在這堂課中學習到的，嘗試閱讀 Linux kernel 程式碼，提升了C語言的熟練度；學習了如何書寫 Git commit message 以及使用 perf 等工具的使用
+觀察了許多同學的開發紀錄並且從中學習，最主要的還是誠實面對自己，哪裡缺乏補哪裡，不然永遠都不會進步
+
+## 6. 與指導教授的學習回顧
+自評分數: 7分
+
+二月份學習回顧信件 2024/3/9 16:17 寄出
+
+雖然與教授的正式回顧只有一次二月份的學習回顧，不過實驗室 meeting 指導教授偶爾會關心我們的修課狀況，
+並且也很認同我來這堂課學習。
+
+## 自我評量
+1 ~ 6 各項的GEOMEAN：$\sqrt[6]{7*9*10*10*10*7}=8.7245$
+
+自評方式採方案 B：1+floor(GEOMEAN) = 9，我給自己 9 分
