@@ -24,6 +24,7 @@ categories: User
 * [2024q1 Homework4 (quiz1+2)](https://hackmd.io/@Terry7Wei7/linux2024-homework4)
 * [2024q1 Homework5 (assessment)](https://hackmd.io/@Terry7Wei7/linux2024-homework5)
 * [2024q1 Homework6 (assessment)](https://hackmd.io/@Terry7Wei7/linux2024-homework6)
+
 在這幾次作業中，我學習到了安裝ubuntu/windows雙系統，git commit 的撰寫以及規範，熟悉 git 指令
 經過這幾次作業的練習，我更加熟練了 C 語言。但這些作業還有一部分的改進空間
 
@@ -32,6 +33,7 @@ categories: User
 
 * Data Lab: [GitHub](https://github.com/Terry7Wei7/datalab) / [HackMD](https://hackmd.io/@sysprog/rkpgxY0HC)
 在期末專題中我學習到很多 bitwise 位元運算，像是有些題目運用到了笛摩根定律，以及在比較位元時可以用 xor 判斷
+
 ## 4. 與授課教師的互動
 自評分數: 10分
 
