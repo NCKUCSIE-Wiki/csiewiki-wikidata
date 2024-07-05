@@ -34,6 +34,24 @@ categories: User
 
 ## 期末專題
 
+評分標準：下列各項加總後四捨五入，若超過則取 10 分
+
+- 詳實記錄開發過程、成果與產出：0 ~ 6 分
+- 觀摩其他同學的期末專題並提問：每個 0.8 分，最多 4 分
+- 獲得[期末成果發表](https://hackmd.io/@sysprog/linux2024-showcase)機會：4 分
+
+《Concurrency Primer》校訂和範例撰寫：[HackMD](https://hackmd.io/@sysprog/BkNqX71L0) / [GitHub](https://github.com/sysprog21/concurrency-primer) /  [Slides](https://docs.google.com/presentation/d/1we4EP9-CVLkawnnIxCxiboqJEyjJRYgc/edit?usp=sharing&ouid=100267826973884342963&rtpof=true&sd=true) / [Video](https://youtu.be/Hwc6HGfyCkQ?si=I1ukLFFXxUMP7y5M)
+
+由於過去未曾學習過 concurrency 相關議題，因此在這兩個月中，我從閱讀《並行與多執行緒程式設計》系列講座開始，逐步建立基礎知識，將我的認知與偶然在教材中發現的若干錯誤記錄於[專題開發紀錄](https://hackmd.io/@sysprog/BkNqX71L0#%E9%96%B1%E8%AE%80%E3%80%88%E4%B8%A6%E8%A1%8C%E5%92%8C%E5%A4%9A%E5%9F%B7%E8%A1%8C%E7%B7%92%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E3%80%89%E7%B3%BB%E5%88%97%E8%AC%9B%E5%BA%A7%E4%B8%A6%E7%B4%80%E9%8C%84%E5%95%8F%E9%A1%8C)當中。
+
+在第二個月，我開始閱讀專題指定材料，即 Russ Cox 所寫的 〈[Hardware Memory Models](https://research.swtch.com/hwmm)〉和 〈[Programming Language Memory Models](https://research.swtch.com/plmm)〉，消化後貢獻 [sequential consistency](https://hackmd.io/@sysprog/BkNqX71L0#%E4%BF%AE%E6%94%B9%E3%80%88%E6%9C%80%E7%9B%B4%E8%A6%BA%E7%9A%84%E7%B4%84%E5%AE%9A%EF%BC%9ASequential-Consistency%E3%80%89) 和 [x86/ARM memory consistency models](https://hackmd.io/@sysprog/BkNqX71L0#%E6%96%B0%E5%A2%9E%E3%80%88Hardware-Memory-Consistency-Models%E3%80%89) 至《並行與多執行緒程式設計》系列講座，以及貢獻 [memory consistency models](https://github.com/sysprog21/concurrency-primer/pull/16) 至《Concurrency Primer》當中。
+
+最後我自主閱讀了論文《[Litmus Tests for Comparing Memory Consistency Models: How Long Do They Need to Be?](https://acg.cis.upenn.edu/papers/dac11_litmus.pdf)》學習如何用數學語言描述程式的執行順序及 memory consistency model，並將 [執行順序的數學描述](https://hackmd.io/@sysprog/BkNqX71L0#%E6%96%B0%E5%A2%9E%E3%80%88%E5%9F%B7%E8%A1%8C%E9%A0%86%E5%BA%8F%E7%9A%84%E6%95%B8%E5%AD%B8%E6%8F%8F%E8%BF%B0%E3%80%89) 貢獻至《並行與多執行緒程式設計》系列講座，能夠在這麼短的時間內理解艱深的內容，理出自己的思考脈絡並做出貢獻，超出我最初的預期，因此在開發過程與成果產出這個項目我給自己滿分 6 分。
+
+但很遺憾這次沒有獲得[期末成果發表](https://hackmd.io/@sysprog/linux2024-showcase)的機會，且觀摩其他同學並提問尚未開始進行，因此這部分沒有拿到分數。
+
+本項得分：6 分
+
 ## 與授課教師的互動
 
 ## 所見所聞所感
