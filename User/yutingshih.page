@@ -32,6 +32,17 @@ categories: User
 
 ## 作業/隨堂測驗
 
+評分標準：下列每項作業 0 ~ 2.5 分，加總後四捨五入至整數位。
+
+- Homework 1 & 3 (lab0-c): [GitHub](https://github.com/yutingshih/lab0-c)/[HackMD](https://hackmd.io/@yutingshih/linux2024-homework1)
+- Homework 2 (quiz1+2): [HackMD](https://hackmd.io/@yutingshih/linux2024-homework2)
+- Homework 4 (quiz3+4): [HackMD](https://hackmd.io/@yutingshih/linux2024-homework4)
+- Homework 5 (assessment): [HackMD](https://hackmd.io/@yutingshih/linux2024-homework5)
+
+第一次作業使用 Linux linked list API 實現了佇列，並分析 merge sort 最佳及最差情況的時間複雜度，得 1.5 分。作業二僅做到部分題目的程式碼理解，並未作出改進，得 1 分，第五次作業進行了〈[因為自動飲料機而延畢的那一年](https://blog.opasschang.com/the-story-of-auto-beverage-machine-1)〉的閱讀、針對課程教材提問，以及期末專題的提案，得 1.5 分。
+
+本項得分：round(1.5 + 1 + 1.5) = 4 分
+
 ## 期末專題
 
 評分標準：下列各項加總後四捨五入，若超過則取 10 分
