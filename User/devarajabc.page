@@ -59,10 +59,14 @@ categories: User
 * Homework5-Assessment: [`HackMD`](https://hackmd.io/9Z8p-TgYSkKWLWehQUlqIw)
 
 ## Linux 核心期末專題: 
-一開始在閱讀 《Demystifying the Linux CPU Scheduler》 的過程中我感到非常痛苦，洋洋灑灑列了一整頁的問題（詳見 [研讀第 1 到第 6 週「課程教材](https://hackmd.io/9Z8p-TgYSkKWLWehQUlqIw)），一開始以為是自己英文能力太差，但其實是因為這本書其實是與不同年代、不同作者所拼貼而成，造成章節之間的連貫性有很致命的缺陷
+
+一開始在閱讀 《Demystifying the Linux CPU Scheduler》 的過程中我感到非常痛苦，每個單字都會但合起來就看不懂是什麼意思，還洋洋灑灑列了一整頁的問題（詳見 [研讀第 1 到第 6 週「課程教材](https://hackmd.io/9Z8p-TgYSkKWLWehQUlqIw)），一開始以為是自己英文能力太差，但其實是因為這本書是與不同年代、不同作者所拼貼而成，造成章節之間的連貫性有很致命的缺陷，因此我的專題： CPU 排程器研究便著重於改善 《Demystifying the Linux CPU Scheduler》，使其內容更通暢。
+以下是我在這學期的貢獻，在學期結束之後亦會繼續投入：
+
 * Refine section "O(n) Scheduler"
 * Refine section "Early Scheduler"
 * Improve section "Fixed point arithmetic"
+
 
 ## 所見所聞
 我認為這學期的成長可以分成對內與對外，對外請見 「與授課老師互動」，而對內的成長在於心態與時間管理。
