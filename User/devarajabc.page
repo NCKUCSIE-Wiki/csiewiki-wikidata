@@ -69,10 +69,12 @@ categories: User
 
 * lab0-c: [`HackMD`](https://hackmd.io/9Yf6buizRMKsgLnyk4wvnQ)
 * quiz1+2: [`HackMD`](https://hackmd.io/BFPkJzJMTm6EGlAHBGrTQg)
+* quiz3+4:[`Hackmd`](https://hackmd.io/@devaraja/HJlvWIy0p)
 * Homework5-Assessment: [`HackMD`](https://hackmd.io/9Z8p-TgYSkKWLWehQUlqIw)
 
 
-這部分我給自己 6 分，
+這部分我給自己 6 分，扣掉的 4 分在於作業內容完成度低，而 6 分在於我在 lab0-c 中有成功完成 queue.c ，使其滿足自動評分標準。
+此外我在既有的基礎下新增 worst-case generator [Commit 16f69b2](https://github.com/devarajabc/lab0-c/commit/16f69b2a5af1ab778850c6c37f5c3242fcb3e507)，方能檢驗 merge sort 在最差情況下的運作狀況。
 
 ## Linux 核心期末專題: 
 
