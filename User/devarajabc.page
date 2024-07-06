@@ -82,6 +82,7 @@ categories: User
 * Refine section "O(n) Scheduler"
 * Refine section "Early Scheduler"
 * Improve section "Fixed point arithmetic"
+詳見 [《Demystifying the Linux CPU Scheduler》重點提示](https://hackmd.io/@devaraja/SJPT27VwA)
 
 此外考慮到 linux 是個不斷進化，猶如星之卡比一般，必須建立統一的書寫結構，方能使後繼的修改者能方便增補。
 
