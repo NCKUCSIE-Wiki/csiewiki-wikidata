@@ -12,6 +12,17 @@ categories: User
 
 
 # 2024 Linux 核心設計 春季班 自我評量
+
+## 自我評分
+
+1. 成果發表和貢獻： 10 分
+2. 作業/隨堂測驗： 10 分
+3. 期末專題： 6 分
+4. 與授課教師的互動： 10 分
+5. 所見所聞所感： 10 分
+
+總分：使用方案 B: 1 + floor(GEOMEAN) ＝ 1 + floor(9.028804514) = 10 
+
 ## Linux 核心和相關專案貢獻
 * 《Demystifying the Linux CPU Scheduler》：
 
@@ -61,7 +72,7 @@ categories: User
 * Homework5-Assessment: [`HackMD`](https://hackmd.io/9Z8p-TgYSkKWLWehQUlqIw)
 
 
-這部分我給自己 6 分
+這部分我給自己 6 分，
 
 ## Linux 核心期末專題: 
 
