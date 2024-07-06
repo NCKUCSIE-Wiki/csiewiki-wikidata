@@ -19,6 +19,7 @@ categories: User
 * 修改 2.2.1 Early Linux Scheduler [3b1e731](https://github.com/sysprog21/linux-kernel-scheduler-internals/commit/3b1e731023068fd61d2d44028ef26d4cbf5e5d91)
 
 這部分我給自己 10 分，藉由改善《Demystifying the Linux CPU Scheduler》可以使未來的同學在學習 linux scheduler 的過程更加順利，間接推動科技發展。
+
 ## 與授課教師的互動
 * 5/11 一對一討論
 * 5/31 一對一討論
@@ -68,9 +69,10 @@ categories: User
 * Improve section "Fixed point arithmetic"
 
 此外考慮到 linux 是個不斷進化，猶如星之卡比一般，必須建立統一的書寫結構，方能使後繼的修改者能方便增補。
+
 具體內容如下：
-歷史事實使用過去式，內容包含此次變革旨解決什麼問題，以及此版本面臨的問題
-其餘部分使用現在簡單式，例如說明演算法，資料結構等
+歷史事實使用過去式，內容包含對「過去」的排程器的定性分析，以及此次變革旨解決什麼問題和此版本面臨的問題，利用時態的變化來強調其演變。
+其餘部分使用現在簡單式，例如說明演算法，資料結構等，使用現在簡單式能方便後人收錄開發者的 commit message 。
 
 這部分我給自己 10 分，五分是給肯定自己在如考古學家一般在網路上翻找上古的資料並進行彙整，另外五分在於我將彙整後的資料與既有的內如進行編排，使讀者能更輕易閱讀。
 
