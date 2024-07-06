@@ -4,19 +4,96 @@
 * HackMD: [`cychen`](https://hackmd.io/@cychen)
 
 ### 成果發表和貢獻
+閱讀教材時做的錯字修訂：
+
+* [你所不知道的 C 語言：bitwise 操作](https://hackmd.io/@sysprog/c-bitwise)
+
+閱讀學員期末專題開發紀錄並提問：
+
+* [Linux 核心專題: 錯誤更正碼 (ECC) 介紹和實作考量](https://hackmd.io/@sysprog/HkxFLnvL0)
+
+* [Linux 核心專題: 高效記憶體配置器](https://hackmd.io/@sysprog/rkZQsLhLR)
+
+* [Linux 核心專題: 異質多核通訊機制](https://hackmd.io/@sysprog/ryvE2tK8C)
+
+* [Linux 核心專題: 井字遊戲改進](https://hackmd.io/@sysprog/r1faEmnVR)
+
+* [Linux 核心專題: 重做 lab0](https://hackmd.io/@sysprog/BkltCg5IA)
 
 
 ### 作業與隨堂測驗
+* lab0: [HackMD](https://hackmd.io/@cychen/linux2024-homework1) / [GitHub](https://github.com/hugo0406/lab0-c)
+
+    這份作業中主要實作了針對指定串列的操作，從指派空間給一個 `list_head` 開始到對串列的元素順序進行調整、刪減等。
+ 
+* quiz1 + 2: [HackMD](https://hackmd.io/@cychen/linux2024-homework2)
+
+    第二次作業重新回顧第一及第二週的隨堂測驗，測驗中包含給定 preorder 和 inorder travsersal 序列進行二元樹的重建、指定的記憶體空間中找出第 N 個設定的位元，對測驗時因時間有限無法深入探討程式背後原理有更深入的理解。
+    
+* quiz3 + 4: [HackMD](https://hackmd.io/@cychen/linux2024-homework4)
+
+    與第二次作業類似，第四次作業重新回顧第三及第四週的隨堂測驗，內容包含 popcount、針對符合 $2^k+1$ 的除數所進行的餘數運算、較有效率的開根號、mod 10、div 10、 $log_2$、取平均等算法。
+    
+* Assessment: [HackMD](https://hackmd.io/@cychen/linux2024-homework5)
+
+    紀錄閱讀〈因為自動飲料機而延畢的那一年〉的啟發，且研讀了課程指定教材 CS:APP 3/e 到第二章節內容，對於電腦處理數值的方式和各種細節操作更加熟悉，並與授課教師線上一對一約談討論期末專題。
+  
+* 額外的筆記:
+    * [Graphviz 使用教學](https://hackmd.io/@cychen/graphviz)
 
 
 ### 期末專題
+Linux 核心專題: STM32F4 移植和系統初始化流程 [HackMD](https://hackmd.io/@sysprog/rJhbQU-wR) / [Github](https://github.com/hugo0406)
 
+理解 Linux 核心在 [STM32F429i-Discovery](https://www.st.com/en/evaluation-tools/32f429idiscovery.html) 系統晶片上運作的方式，探究相關的準備工作，特別是相關系統初始化的流程。
 
 ### 與授課教師的互動
+一對一約談時間：5月31日 (週五) 下午2:00 – 下午2:30
+
+* 期末專題討論:
+    * Boot loader 存在必要？
+    * XIP(Executed in Place) 與 non-XIP 
+    
+一對一約談時間：6月10日 (週一) 上午11:00 – 上午11:30
+
+* 期末專題討論:
+    *  u-boot
+    *  boot cmd (boot args)
+
+一對一約談時間：7月06日  (週六) 上午11:00 – 上午11:30
+
+* 期末專題討論:
 
 ### 修課心得
+在作業五中我詳細閱讀了〈因為自動飲料機而延畢的那一年〉深受啟發，對於作者勇於嘗試、不願放棄的精神感到敬佩，從一開始的滿腔熱血，過程中的不斷自我懷疑之後做出延畢的決定，最後做出成果。若是換成一般人，可能會迫於現實的壓力而放棄。
 
+一開始非常猶豫要不要修 Linux 核心實作 這門課，因為這堂課是出了名的硬，要花費大量的心力及時間。在聽了老師第一堂課程介紹後，首先就是要誠實面對自己，想到過去大學的自己不求甚解，學的不夠扎實，那就趁這個機會，把基礎打好，改變自己的學習態度，就頭鐵決定修下去。
+
+在修課中，對我來說最重要的是我學習到如何靜下心來去看文件。以前在學習上遇到疑惑的時候，都會透過 Google 搜尋去解決問題，這次學會從一手資料及官方文件靜下心去細讀文件來嘗試解決心中的疑惑，雖然過程很痛苦，很常投入大量時間，卻沒得到想要的結果。官方文件常常預設看的人都有相關背景知識，點到為止，使我很常在看文件的時候完全無法理解再說什麼，這邊非常感謝老師開放一對一線上面談討論幫我解惑。
 
 ### 每月給指導教授的學習回顧
+* 二月份學習回顧：3月8日 週五 下午9:33
+
+    1.與指導教授提及 Linux 核心實作 課程可習得的內容以及可對自身與實驗室研究帶來的好處
+   
+    2.學習指標與非連續記憶體的操作(linked list)
+    
+    3.附上作業筆記的連結供指導教授參考
+    
+* 三月份學習回顧：4月11日 週四 上午1:43
+
+    1.說明了第二次及第四次作業內容，包括自身的作業回顧
+
+    2.學習工具 Graphviz 把想法視覺化 
+
+    3.附上作業筆記的連結供指導教授參考
+
+* 五月份學習回顧：6月28日 週五 上午11:39
+    
+    1.附上作業筆記的連結以及期末專題方向供指導教授參考
+
 
 ### 自我評量 (1 ~ 10)
+$(3 \times 5 \times 7 \times 8 \times 8 \times 7) ^ {1/6} = 6.008$ 
+
+使用方案 B 計分：$1 + floor(6.008) = 7$
