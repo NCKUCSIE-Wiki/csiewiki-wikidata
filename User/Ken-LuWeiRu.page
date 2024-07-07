@@ -5,13 +5,19 @@ categories: User
 
 # 簡介
 * 國立成功大學 敏求學院 人工智慧機器人碩士學位學程 111 級 (2022 ~ 預計2024)
-
 * GitHub: [`Ken-LuWeiRu`](https://github.com/Ken-LuWeiRu)
 * HackMD: [`Ken-LuWeiRu`](https://hackmd.io/@jackkinsinging)
 
 
-# 2024 Linux 核心設計 春季班 自我評量
-## 作業共筆
+# 2024 Linux 核心設計/實作 春季班 自我評量
+## 成果發表和貢獻
+
+2分。
+
+我意識到在這段期間內未能對Linux核心或相關專案做出貢獻，這是我需要改進的地方。在未來，我計畫先從老師的教材 [The Linux Kernel Module Programming Guide](https://sysprog21.github.io/lkmpg/) 開始研讀，主要是我希望應徵[聯詠的軟韌體開發工程師](https://www.google.com/search?q=%E8%81%AF%E8%A9%A0+%E8%BB%9F%E9%9F%8C%E9%AB%94&sca_esv=c156bc25fbc52adf&sxsrf=ADLYWIJdzF1GgLpEdAS1kolpHiLL7a9wdg:1719215950286&ei=Tid5ZoKEEafh2roPnu-BsA0&uact=5&oq=%E8%81%AF%E8%A9%A0+%E5%B7%A5%E4%BD%9C&gs_lp=Egxnd3Mtd2l6LXNlcnAiDeiBr-ipoCDlt6XkvZwyBRAAGIAEMgUQABiABEi1GFCeD1jSF3ADeACQAQCYAUmgAZYEqgEBObgBA8gBAPgBAZgCC6ACjATCAgoQABiwAxjWBBhHwgIIEAAYgAQYogTCAgQQABgewgIGEAAYHhgPwgIGEAAYCBgewgIOEAAYgAQYsQMYgwEYigXCAgQQABgDwgIREC4YgAQYsQMY0QMYxwEYigXCAgsQABiABBixAxiDAZgDAIgGAZAGCpIHAjExoAepEQ&sclient=gws-wiz-serp&ibp=htl;jobs&htidocid=iSRcl9xZ9zKEv8Y3AAAAAA%3D%3D&sa=X&ved=2ahUKEwiqm4zI4vOGAxU1lFYBHUTNCl8Qkd0GegQIHBAB#fpstate=tldetail&htivrt=jobs&htidocid=iSRcl9xZ9zKEv8Y3AAAAAA%3D%3D)，我預計從抓錯字與文法錯誤尋找貢獻機會。
+
+## 作業/隨堂測驗
+8分。
 
 * lab0-c: [GitHub](https://github.com/Ken-LuWeiRu/lab0-c) / [HackMD](https://hackmd.io/@jackkinsinging/SJhGj-mTT)
 * 2024 年 Linux 核心設計/實作課程第 2 次作業: [HackMD](https://hackmd.io/@jackkinsinging/linux2024-homework2)
@@ -20,66 +26,57 @@ categories: User
 * 2024 年 Linux 核心設計/實作課程[第 6 次作業](https://hackmd.io/@sysprog/linux2024-homework6): [HackMD](https://hackmd.io/@jackkinsinging/Homework6)
 
 
+作為一個物理系背景的學生，我唸碩士才開始學 python ，選這堂課程後開始學 C 語言，在短時間內快速掌握了 C 語言，並在 lab0-c 中取得了穩定的100分。同時，我成功平衡了碩士研究、計畫案和課程作業，在後續的作業中，我都是在三頭燒的情況下，取得一定得成果。展現了優秀的時間管理能力和學習方法。
+
+
 ## 期末專題
+8分。
 
-* lab0-c : 如果改用多執行緒 & 重作 Homework4: [HackMD](https://hackmd.io/@jackkinsinging/Linux-final-Ken-LuWeiRu)
+* [Linux 核心專題: 重作第四次作業](https://hackmd.io/@sysprog/H1Jr7XmPC)
 
-## 修課心得
+期末專題中，花費頗多時間觀摩其他學員的呈現結果來反思自己，可以從我整理的 ref 學員列表中看出。雖然最初的 lab0-c 網頁未能如期完成，但我及時調整策略，成功處理了 tiny-web-server 的實作。我學會了如何更有效地進行多執行緒編程，並取得了寶貴的實戰經驗。
 
+## 與授課教師的互動
+8分。
 
-1. 成果發表和貢獻: 與 Linux 核心相關的公開演講、貢獻到 Linux 核心和相關專案 (應標註對應的公開commits/patches)、貢獻本課程的教材和使用的專案，包含授課教師編撰/翻譯的書籍 (即《Demystifying the Linux CPU Scheduler》, 《Concurrency Primer》, 《Linux Kernel Module Programming Guide》,〈每位程式開發者都該有的記憶體知識〉)，必須要獲得採納才算，即便只是修正錯字，也可列入貢獻。有效採計區間為 2 月 20 日到 6 月 30 日。
-
-2分，我意識到在這段期間內未能對Linux核心或相關專案做出貢獻，這是我需要改進的地方。在未來，我計畫先從老師的教材 [The Linux Kernel Module Programming Guide](https://sysprog21.github.io/lkmpg/) 開始研讀，主要是我希望應徵[聯詠的軟韌體開發工程師](https://www.google.com/search?q=%E8%81%AF%E8%A9%A0+%E8%BB%9F%E9%9F%8C%E9%AB%94&sca_esv=c156bc25fbc52adf&sxsrf=ADLYWIJdzF1GgLpEdAS1kolpHiLL7a9wdg:1719215950286&ei=Tid5ZoKEEafh2roPnu-BsA0&uact=5&oq=%E8%81%AF%E8%A9%A0+%E5%B7%A5%E4%BD%9C&gs_lp=Egxnd3Mtd2l6LXNlcnAiDeiBr-ipoCDlt6XkvZwyBRAAGIAEMgUQABiABEi1GFCeD1jSF3ADeACQAQCYAUmgAZYEqgEBObgBA8gBAPgBAZgCC6ACjATCAgoQABiwAxjWBBhHwgIIEAAYgAQYogTCAgQQABgewgIGEAAYHhgPwgIGEAAYCBgewgIOEAAYgAQYsQMYgwEYigXCAgQQABgDwgIREC4YgAQYsQMY0QMYxwEYigXCAgsQABiABBixAxiDAZgDAIgGAZAGCpIHAjExoAepEQ&sclient=gws-wiz-serp&ibp=htl;jobs&htidocid=iSRcl9xZ9zKEv8Y3AAAAAA%3D%3D&sa=X&ved=2ahUKEwiqm4zI4vOGAxU1lFYBHUTNCl8Qkd0GegQIHBAB#fpstate=tldetail&htivrt=jobs&htidocid=iSRcl9xZ9zKEv8Y3AAAAAA%3D%3D)，我預計從抓錯字與文法錯誤尋找貢獻機會。
-
-2. 作業/隨堂測驗: 你的開發紀錄，人在做，Google 在看。
-
-8分，我大學念物理系，考上碩一開學時我連 python 的 for 迴圈如何寫都要看教學開始，這堂課的 lab0-c 是我人生第一份 C 程式碼，我在短時間內快速從頭學起，並且在其測試中達到穩定的100分。同時間，我的碩士研究在本學期才換題目確認下來，我得同時兼顧計畫案與國科會的進度報告，滿足資工系的主要計畫主持人連震杰教授的各式要求，與我自己教授的要求和實驗室各項雜事，令老師滿意認可我可以9月份在口試。
-
-3. 期末專題: 開發紀錄、評量成果和產出，以及觀摩其他學員的期末專題並提問 (要有對應的公開軌跡)，且至少要涵蓋一項列於課程期末展示的專案 (已在 6 月 30 日進行專題成果展示者，可忽略本項)。注意：你有義務回覆其他學員 (和授課教師) 對你期末專題的提問，並在 7 月 6 日中午前做出回應且更新更新在期末專題頁面。
-
-8分，我花費頗多時間觀摩其他學員的呈現結果來反思自己，可以從我整理的ref 學員列表中看出，我有看過其他學員，來學習如何好的撰寫、操作 linux 核心這個課程。而在本次期末專題頗為可惜是我花太多時間處理 lab0-c 的網頁最後也沒有跑起來，最後一刻我才緊急切換處理 tiny-web-server 來快速做出一個成果展現。專題的結果雖未達預期，但我學到了如何更有效地進行多執行緒編程。
-
-4. 與授課教師的互動: 標注與授課教師「一對一討論」的時間，並列出你針對授課教師的問答、測驗和後續討論及啟發。課堂問答也可列入。
-
-8，我碩一進來前就耳聞過老師了，進來後更是被那句來翻身的言論深深打動，因此在課程開始前，我就已經有在網路上聽 youtube 上的公開課程來看看，奈何碩一時連 python 的 for 都不會寫，沒有勇氣選修老師的面試課程與 linux 核心課程，但是我在碩一就把所有學分修得，就是為了碩二可以上學期專心修資訊產業專班，碩二下專心修 linux 核心實作課程。可以說我確實是被那句翻身論激勵，深刻地可望翻身才堅持沒有休學。
-
-5. 所見所聞所感，務必提及閱讀〈因為自動飲料機而延畢的那一年〉和回顧自身在本課程的投入狀況。
-
-8，閱讀〈因為自動飲料機而延畢的那一年〉讓我深受啟發。我學會了如何面對和處理失敗，而不是逃避問題。在這門課程中，我遇到了許多困難，但我堅持下來，並逐漸提高了自己的程式設計能力。我自己是相當佩服學長的意志，現在也在思考為了應徵[聯詠的軟韌體開發工程師](https://www.google.com/search?q=%E8%81%AF%E8%A9%A0+%E8%BB%9F%E9%9F%8C%E9%AB%94&sca_esv=c156bc25fbc52adf&sxsrf=ADLYWIJdzF1GgLpEdAS1kolpHiLL7a9wdg:1719215950286&ei=Tid5ZoKEEafh2roPnu-BsA0&uact=5&oq=%E8%81%AF%E8%A9%A0+%E5%B7%A5%E4%BD%9C&gs_lp=Egxnd3Mtd2l6LXNlcnAiDeiBr-ipoCDlt6XkvZwyBRAAGIAEMgUQABiABEi1GFCeD1jSF3ADeACQAQCYAUmgAZYEqgEBObgBA8gBAPgBAZgCC6ACjATCAgoQABiwAxjWBBhHwgIIEAAYgAQYogTCAgQQABgewgIGEAAYHhgPwgIGEAAYCBgewgIOEAAYgAQYsQMYgwEYigXCAgQQABgDwgIREC4YgAQYsQMY0QMYxwEYigXCAgsQABiABBixAxiDAZgDAIgGAZAGCpIHAjExoAepEQ&sclient=gws-wiz-serp&ibp=htl;jobs&htidocid=iSRcl9xZ9zKEv8Y3AAAAAA%3D%3D&sa=X&ved=2ahUKEwiqm4zI4vOGAxU1lFYBHUTNCl8Qkd0GegQIHBAB#fpstate=tldetail&htivrt=jobs&htidocid=iSRcl9xZ9zKEv8Y3AAAAAA%3D%3D)我能否在暑假完成9月口試條件下做出一點東西來吻合其應徵條件，像展示我在 linux 核心的學習，我自己規劃是先把老師寫的教材看過一輪並看 Demystifying the Linux CPU 一書，然後我自己最近有興趣的是，我在成大工設系的設計展看到警察平日所使用的燈，那種在處理交通事故時會放在肩膀上照到處理文件上的燈，我注意到每個警員的習慣不同而且燈具不是每次都在最佳位置，我想要訓練一個輕量化的 yolo 模型來追蹤文件，然後再找一個低功率輕量化的攝影機，來控制燈轉的上下照耀到文件上，整個系統我認為困難點頗多，像是把整個系統做成嵌入式系統、燈的轉向、低功號攝影機的部屬。但我認為未來發展方向也很多，我平常常看美國警方追犯人，警察會遇到犯人向警察開槍，這實警察會用燈罩到犯人上，讓犯人看不清楚警察身影，但我注意到不是每個警察都有空或反應力在突發犯人準備朝警察開槍，這時候沒有燈干擾犯人就會中槍，我認為這個系統後續也可以改成把燈指向犯人來保護警察的性命。甚至後續做更好就會是無人機槍那種科幻的武器。
-我在本課程的投入在學期初十分大量，因為不會寫 C ，要從頭學起來並且快速的把 lab0-c 寫到 100 分，我看了好幾次的日出才完成，後續每個作業其實隨著學期越接近期末，我花費時間越少，主要是我在平衡計劃案與畢業壓力。我判斷在期中未收到須努力通知，便繼續選修。
-
-6. 針對研究生，每月發給實驗室指導教授的學習回顧，要包含二月、三月、四月，和五月。大學部學生則忽略本項目。應當在自我評量中列出學習回顧的簡短內容，並標示發信的日期和時間，唯有授課教師也列入信件副本才可列出。每月的學習回顧信件只能在當月或隔月寄送。
-
-6，我以為我堅持不到最後，會在期中退選就一直沒有寄 email 給指導教授，每次作業我都在思考要不要退選，但那句要翻身總是讓我繼續修下去，過程中我雖然沒有寄送 email 給指導教授，但我有在會議上主動跟指導教授討論過這件事情，指導教授的態度是支持的，而且指導教授也沒有覺得我因選修這堂課耽誤到指導教授所期望的實驗進度與國科會進度，所以我認為我是有讓
-
-7. 上述 (1) 到 (6) 各項都該有對應的評分，皆為介於 1 到 10 之間的「整數」(不要自作主張寫 8.7 這樣的數值)
-並要能充分反映上述評分項目，附上對應的「公開」證明，如 commit log 和 pull requests
-8. 計算方式 (GEOMEAN 即針對上述 (1) 到 (6) 各項的幾何平均，沒有加權。若有計算錯誤，整個自我評量不計分) 如下，若超過 10，則取 10
-+ 方案 A (針對已對 Linux, glibc, gcc, llvm, rv32emu 等專案做出超過 3 項 non-trivial
-貢獻 [僅修正錯字或沒有改變程式行為的修改視為 trivial] 並獲得開發者採納): 8 + floor(0.3 * GEOMEAN)
-+ 方案 B: 1 + floor(GEOMEAN)
-
-最後分數採取方案 B
-   $G = \sqrt[6]{3 \times 8 \times 8 \times 8 \times 8 \times 5} = \sqrt[6]{245760} \approx 7.25$
-
-分數 = 1 + floor(7.25) = 8
-分數是8分
+我碩一進來前就耳聞過老師了，進來後更是被那句來翻身的言論深深打動，因此在課程開始前，我就已經有在網路上聽 youtube 上的公開課程來看看，奈何碩一時連 python 的 for 都不會寫，沒有勇氣選修老師的面試課程與 linux 核心課程，但是我在碩一就把所有學分修得，就是為了碩二可以上學期專心修資訊產業專班，碩二下專心修 linux 核心實作課程。可以說我確實是被那句翻身論激勵，深刻地可望翻身才堅持沒有休學
 
 
-## 對其他學員的期末專題的提問和建
+## 所見所聞所感
+8分。
+
+閱讀〈因為自動飲料機而延畢的那一年〉對我有深刻的啟發，讓我學會了如何面對和處理失敗。在這門課程中，我遇到了許多困難，但我堅持下來，並逐漸提高了自己的程式設計能力。這門課程不僅提升了我的技術水平，還培養了我解決問題的能力，這對我未來的職業發展非常有幫助。
+
+
+## 針對研究生
+6分。
+
+我以為我堅持不到最後，會在期中退選就一直沒有寄 email 給指導教授，每次作業我都在思考要不要退選，但那句要翻身總是讓我繼續修下去，過程中我雖然沒有寄送 email 給指導教授，但我有在會議上主動跟指導教授討論過這件事情，指導教授的態度是支持的，而且指導教授也沒有覺得我因選修這堂課耽誤到指導教授所期望的實驗進度與國科會進度，所以我認為我是有讓我更有信心繼續學習。
+
+## 對其他學員的期末專題的提問和建議
 
 https://hackmd.io/sevSO8DbQXW5s8LIB2mX6g?view#Review-by-Ken-LuWeiRu
 
 https://hackmd.io/ihKBegZgQDStSl-LAYJg8w?view#Review-by-Ken-LuWeiRu
 
-https://hackmd.io/@sysprog/rJk76rtIR
-我認為上面這份老師的評論特別好，在 git 命令使用方面的檢視與建議特別清晰。
-
 https://hackmd.io/9vA-ufNwT22UQ-Pi-bKmlA?view#Review-by-ken-LuWeiRu
 
+------
+https://hackmd.io/@sysprog/rJk76rtIR
+我認為上面這份老師的評論特別好，在 git 命令使用方面的檢視與建議特別清晰。
 
 閱讀[〈並行和多執行緒程式設計〉](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-concepts)系列講座
 https://hackmd.io/@sysprog/BkNqX71L0
 https://hackmd.io/@sysprog/HyDijL0HR
 
-這幾會很好的呈現要如何講解吸收到的知識，特別是製作表格與圖表呈現。
+這幾位很好的呈現要如何講解吸收到的知識，特別是製作表格與圖表呈現。
+
+## 自我評量 (1 ~ 10)：
+8分。
+
+$GEOMEAN = \sqrt[6]{3 \times 8 \times 8 \times 8 \times 8 \times 5}  \approx 7.25$
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + 7 = 8$
+
+通過這門課程，我在多個方面都取得了的進步。我還通過期末專題學會了多執行緒編程，並與授課教師進行了多次有益的互動。根據各項評分標準，我的幾何平均數約為7.25，因此最終評分為8分。
+
