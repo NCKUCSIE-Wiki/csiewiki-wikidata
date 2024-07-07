@@ -13,7 +13,7 @@ categories: User
 
 ## 成果發表和貢獻
 
-評分標準：每個 non-trivial 貢獻得 1 分，貢獻獲得採納再額外多得 1 分，教材勘誤每次得 0.5 分，各項貢獻得分加總後四捨五入。
+評分標準：每個 non-trivial 貢獻得 2 分，教材勘誤每次得 0.5 分，各項貢獻得分加總後四捨五入，最高 10 分。
 
 - 並行程式設計：概念
     - 勘誤：在 [搶佔式與非強取式核心](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-concepts#%E6%90%B6%E4%BD%94%E5%BC%8F%E8%88%87%E9%9D%9E%E5%BC%B7%E5%8F%96%E5%BC%8F%E6%A0%B8%E5%BF%83) 中，內文都是採用「非搶佔式核心」，但標題卻是「非強取式核心」，兩者不一致
@@ -26,9 +26,9 @@ categories: User
 - Concurrency Primer
     - 新增 memory consistency model 章節 ([PR#16](https://github.com/sysprog21/concurrency-primer/pull/16))
 
-閱讀教材過程中有發現錯誤，並記錄在[期末專題](https://hackmd.io/@sysprog/BkNqX71L0)的筆記中以 warning 區塊標示，共計三處各得 0.5 分。新增和修改內容的部分還在審查當中，尚未獲得採納，因此四項各拿 1 分。
+閱讀教材過程中有發現錯誤，並記錄在[期末專題](https://hackmd.io/@sysprog/BkNqX71L0)的筆記中以 warning 區塊標示，共計三處各得 0.5 分。新增和修改內容的部分四項各拿 2 分。
 
-本項得分：round(0.5 + 0.5 + 0.5 + 1 + 1 + 1 + 1) = 6 分
+本項得分：$\text{min}(10, \text{round}(0.5 + 0.5 + 0.5 + 2 + 2 + 2 + 2)) = 10$ 分。
 
 ## 作業/隨堂測驗
 
@@ -39,29 +39,21 @@ categories: User
 - Homework 4 (quiz3+4): [HackMD](https://hackmd.io/@yutingshih/linux2024-homework4)
 - Homework 5 (assessment): [HackMD](https://hackmd.io/@yutingshih/linux2024-homework5)
 
-第一次作業使用 Linux linked list API 實現了佇列，並分析 merge sort 最佳及最差情況的時間複雜度，得 1.5 分。作業二僅做到部分題目的程式碼理解，並未作出改進，得 1 分，第五次作業進行了〈[因為自動飲料機而延畢的那一年](https://blog.opasschang.com/the-story-of-auto-beverage-machine-1)〉的閱讀、針對課程教材提問，以及期末專題的提案，得 1.5 分。
+第一次作業使用 Linux linked list API 實現了佇列，並分析 merge sort 最佳及最差情況的時間複雜度，得 2 分。作業二僅做到部分題目的程式碼理解，並未作出改進，得 1.5 分，第五次作業進行了〈[因為自動飲料機而延畢的那一年](https://blog.opasschang.com/the-story-of-auto-beverage-machine-1)〉的閱讀、針對課程教材提問，以及期末專題的提案，得 2 分。
 
-本項得分：round(1.5 + 1 + 1.5) = 4 分
+本項得分：$\text{min}(10, \text{round}(2 + 1.5 + 2)) = 6$ 分
 
 ## 期末專題
-
-評分標準：下列各項加總後四捨五入，若超過則取 10 分
-
-- 詳實記錄開發過程、成果與產出：0 ~ 7 分
-- 觀摩其他同學的期末專題並提問：每個 0.6 分，最多 3 分
-- 獲得[期末成果發表](https://hackmd.io/@sysprog/linux2024-showcase)機會：3 分
 
 《Concurrency Primer》校訂和範例撰寫：[HackMD](https://hackmd.io/@sysprog/BkNqX71L0) / [GitHub](https://github.com/sysprog21/concurrency-primer) /  [Slides](https://docs.google.com/presentation/d/1we4EP9-CVLkawnnIxCxiboqJEyjJRYgc/edit?usp=sharing&ouid=100267826973884342963&rtpof=true&sd=true) / [Video](https://youtu.be/Hwc6HGfyCkQ?si=I1ukLFFXxUMP7y5M)
 
 由於過去未曾學習過 concurrency 相關議題，因此在這兩個月中，我從閱讀《並行與多執行緒程式設計》系列講座開始，逐步建立基礎知識，將我的認知與偶然在教材中發現的若干錯誤記錄於[專題開發紀錄](https://hackmd.io/@sysprog/BkNqX71L0#%E9%96%B1%E8%AE%80%E3%80%88%E4%B8%A6%E8%A1%8C%E5%92%8C%E5%A4%9A%E5%9F%B7%E8%A1%8C%E7%B7%92%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E3%80%89%E7%B3%BB%E5%88%97%E8%AC%9B%E5%BA%A7%E4%B8%A6%E7%B4%80%E9%8C%84%E5%95%8F%E9%A1%8C)當中。
 
-在第二個月，我開始閱讀專題指定材料，即 Russ Cox 所寫的 〈[Hardware Memory Models](https://research.swtch.com/hwmm)〉和 〈[Programming Language Memory Models](https://research.swtch.com/plmm)〉，消化後貢獻 [sequential consistency](https://hackmd.io/@sysprog/BkNqX71L0#%E4%BF%AE%E6%94%B9%E3%80%88%E6%9C%80%E7%9B%B4%E8%A6%BA%E7%9A%84%E7%B4%84%E5%AE%9A%EF%BC%9ASequential-Consistency%E3%80%89) 和 [x86/ARM memory consistency models](https://hackmd.io/@sysprog/BkNqX71L0#%E6%96%B0%E5%A2%9E%E3%80%88Hardware-Memory-Consistency-Models%E3%80%89) 至《並行與多執行緒程式設計》系列講座，以及貢獻 [memory consistency models](https://github.com/sysprog21/concurrency-primer/pull/16) 至《Concurrency Primer》當中。
+在第二個月，我開始閱讀專題指定材料，即 Russ Cox 所寫的 〈[Hardware Memory Models](https://research.swtch.com/hwmm)〉和〈[Programming Language Memory Models](https://research.swtch.com/plmm)〉，消化後貢獻 [sequential consistency](https://hackmd.io/@sysprog/BkNqX71L0#%E4%BF%AE%E6%94%B9%E3%80%88%E6%9C%80%E7%9B%B4%E8%A6%BA%E7%9A%84%E7%B4%84%E5%AE%9A%EF%BC%9ASequential-Consistency%E3%80%89) 和 [x86/ARM memory consistency models](https://hackmd.io/@sysprog/BkNqX71L0#%E6%96%B0%E5%A2%9E%E3%80%88Hardware-Memory-Consistency-Models%E3%80%89) 至《並行與多執行緒程式設計》系列講座，以及貢獻 [memory consistency models](https://github.com/sysprog21/concurrency-primer/pull/16) 至《Concurrency Primer》當中。
 
-最後我自主閱讀了論文《[Litmus Tests for Comparing Memory Consistency Models: How Long Do They Need to Be?](https://acg.cis.upenn.edu/papers/dac11_litmus.pdf)》學習如何用數學語言描述程式的執行順序及 memory consistency model，並將 [執行順序的數學描述](https://hackmd.io/@sysprog/BkNqX71L0#%E6%96%B0%E5%A2%9E%E3%80%88%E5%9F%B7%E8%A1%8C%E9%A0%86%E5%BA%8F%E7%9A%84%E6%95%B8%E5%AD%B8%E6%8F%8F%E8%BF%B0%E3%80%89) 貢獻至《並行與多執行緒程式設計》系列講座，能夠在這麼短的時間內理解艱深的內容，理出自己的思考脈絡並做出貢獻，超出我最初的預期，因此在開發過程與成果產出這個項目我給自己滿分 7 分。
+最後我自主閱讀了論文《[Litmus Tests for Comparing Memory Consistency Models: How Long Do They Need to Be?](https://acg.cis.upenn.edu/papers/dac11_litmus.pdf)》學習如何用數學語言描述程式的執行順序及 memory consistency model，並將 [執行順序的數學描述](https://hackmd.io/@sysprog/BkNqX71L0#%E6%96%B0%E5%A2%9E%E3%80%88%E5%9F%B7%E8%A1%8C%E9%A0%86%E5%BA%8F%E7%9A%84%E6%95%B8%E5%AD%B8%E6%8F%8F%E8%BF%B0%E3%80%89) 貢獻至《並行與多執行緒程式設計》系列講座，能夠在這麼短的時間內理解艱深的內容，理出自己的思考脈絡並做出貢獻，超出我最初的預期，因此在開發過程與成果產出這個項目我給自己滿分 10 分。
 
-但很遺憾這次沒有獲得[期末成果發表](https://hackmd.io/@sysprog/linux2024-showcase)的機會，且觀摩其他同學並提問尚未開始進行，因此這部分沒有拿到分數。
-
-本項得分：7 分
+本項得分：$10$ 分
 
 ## 與授課教師的互動
 
@@ -87,14 +79,14 @@ categories: User
 
 除了和老師的一對一討論之外，我也有認真參與課堂討論，例如在 [2024-03-19](https://hackmd.io/3e8LI8_0SLOo_UTDAnPKYQ#164253) 的課堂討論中老師問到 merge sort 最佳和最差狀況的複雜度，以及如何確保測試有涵蓋到演算法的最差狀況，除了課堂上有認真跟著思考，回家後我也自己仔細推導 [merge sort 效能分析](https://hackmd.io/@yutingshih/linux2024/%2Fz6ni8UdNQGmvfvUiXaPA3Q#%E6%95%88%E8%83%BD%E5%88%86%E6%9E%90) 算出最佳和最差狀況的時間複雜度，並參考其他人的做法嘗試建構能夠涵蓋到最差狀況的測試程式，讓我體驗到即便是一個小小的排序程式，都能夠有這麼多討論和改進的空間，同時也欽佩課堂上的同學靈活的思考，能夠提出這麼多元的解法。
 
-本項得分：10 分
+本項得分：$10$ 分
 
 ## 所見所聞所感
 
 在閱讀〈因為自動飲料機而延畢的那一年〉，裡面提到：「你最大的問題在太害怕失敗了，既然都已經決定要延畢做飲料機了，那就要好好做，才不會辜負當初自己的期望。」這句話讓我很有共鳴，一直以來我都有個壞習慣，對於困難的目標，很常會下意識告訴自己不可能完成，進而失去動力想躺平，原因就是在於太害怕失敗，回顧自身在本課程的投入狀況，和班上很多同學相比並不算突出，仔細觀察那些時常被老師讚賞的同學，我發現一個很大的差別，就是他們專注於學習本身，因此能夠不斷有突破和成長，與其擔心一些還沒發生的事情而陷入內耗，不如起身行動，畢竟「既然都已經決定要修 Linux 了，那就要好好做，才不會辜負當初自己的期望。」
 在認知到自己的瓶頸後，我開始試圖改善這樣的困境，例如在 2024-05-23 的直播課 [KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm)中開始跟著做[筆記](https://hackmd.io/@yutingshih/B1tUjs2XR)，而非只是聽過就忘，在執行[期末專題](https://hackmd.io/@sysprog/BkNqX71L0)時，專注在學習上，好好把基礎打穩，不要被前半學期表現不佳的自己所影響，最後也確實得到了好的成果，正如同老師從第一堂課就一直不斷提到的「誠實面對自己」是翻身的第一步，這是我在這堂課上最大的收穫。
 
-本項得分：9 分
+本項得分：$10$ 分
 
 ## 研究生學習回顧
 
@@ -105,8 +97,8 @@ categories: User
 
 這個項目要求整學期總共要寄出四封學習回顧信件，我只有兩次學習回顧信件符合標準 (準時寄出且有副本給授課教師)，因此只拿一半的分數。
 
-本項得分：round(2.5 + 2.5) = 5 分
+本項得分：$\text{round}(2.5 + 2.5) = 5$ 分
 
 ## 自我評量 (1 ~ 10)
 
-方案 B：$1 + \lfloor \sqrt[5]{6 \times 4 \times 7 \times 10 \times 9 \times 5} \rfloor = 7$
+方案 B：$1 + \lfloor \sqrt[5]{10 \times 6 \times 10 \times 10 \times 10 \times 5} \rfloor = 9$
