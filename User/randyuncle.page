@@ -15,23 +15,46 @@ categories: User
 
 * [ksort]: [commit 4fffe83](https://github.com/sysprog21/ksort/commit/4fffe83e29d9739c6a519a88c2905eb670bfdaa5)
 
+評分：3 分。
+
 ## 作業/隨堂測驗: 
 
 * lab0-c: [Github](https://github.com/randyuncle/lab0-c) / [hackmd](https://hackmd.io/@rkhuncle/linux2024-homework1)
 * Homework2: [hackmd](https://hackmd.io/@rkhuncle/linux2024-homework2)
 * assesment: [hackmd](https://hackmd.io/@rkhuncle/linux2024-homework5)
 
+在這些作業中，學到最多的地方莫過於直接查看第一手資料。
+
+評分：6 分。
+
 ## 期末專題: 
 
 * 針對鏈結串列的資料排序改進: [Github](https://github.com/randyuncle/linux2024_final_listsort) / [hackmd](https://hackmd.io/@sysprog/ryr7zfh4R)
+
+
+
+評分：8 分。
 
 ## 與授課教師的互動: 
 
 5/1 下午 4:00 – 4:30 一對一討論
 
+
+
+評分：5 分。
+
 ## 所見所聞所感
 
+回顧自己在這堂課的表現，雖然說起初會選修本課程，有很大一部份的原因是想要了解如何貢獻如 Linux 核心規模的開源專案，但是在修習這堂課的過程，我感受到我最大的進步不是開始做出貢獻，而是自己對於基本功的掌握（lab0-c 作業中使用測試工具驗證程式的問題、製作測試程式、git 操作的使用，和 assessment 作業的 CS:APP 第二章的閱讀筆記了解 C 語言的整數型態）、以及不要害怕失敗（期末專題的撰寫及實驗設計）。在〈因為自動飲料機而延畢的那一年〉的文章中，有幾句話說：「你最大的問題就是你太害怕失敗了」、「你該學習的不是看到事情就要完蛋了就去避免失敗，而是更應該學習如何處理及承受失敗，你才能變得比以前強大」。現在回想，我以前確實會因為害怕程式運作失敗會導致的各種問題，所以常常實作都會拖來拖去。但是，在這課程中，我在 Homework2 作業中開始在 lab0-c 環境嘗試改進課程中現有的 Timsort 程式碼，於其中增加 Tim Peter 原先在 cpython 實作中的合併排序改進手段（實作 galloping mode、run 填入策略），到後續期末專題中，對 Timsort 中的 binary insertion sort 是否合適在鏈結串列中提出實驗及討論、實作針對鏈結串列資料排序的核心測試模組並 debug 其對裝置所造成的死機問題、閱讀和整理多方對於 Timsort 的理論討論和實作他人對於 merge_collapse 架構的改進策略、以及後續嘗試在期末專題整理他人所做的 Timsort 複雜度證明及其證明基礎（succinct data structure、compressing permutations 對於 adaptive sorting 影響的整理）。當然，還有我對於本課程的專案 ksort 提出人生中的第一次 pull request。這也讓我知道，不害怕失敗，我也能做出不俗的成果。
 
+不過，在閱讀〈因為自動飲料機而延畢的那一年〉的過程中，除了以上對於不要害怕失敗的體悟中，也有一個人無法懂所有知識。這體現在期末專題之中。我在上段有寫到，我嘗試整理其他研究者對於 Timsort 的複雜度的證明，會做這部的原因是方便自己或後續其他人，如果想要提交對 Linux `lib/list_sort.c` 的 Timsort 改進的 pull request，有一個可以參考的證明方向。但是，只是描述 Timsort 的複雜度，卻可以牽涉到非常多資訊領域的知識，例如說資訊理論的 succint data structure、sequence 資料壓縮議題、permutations 對排序演算法的理論含意等，這些很大部份我過去的學習中都沒接觸到，而需要大量時間去探究和閱讀相關的經典論文和書籍。我沒辦法在兼顧測試程式及 Timsort 完整策略的程式撰寫，和了解[其他課程作業](https://github.com/randyuncle/Generative-Models-for-Visual-Signals)的情況下，而全面探討所有該證明會牽涉到的相關知識。所以，我先將測試程式撰寫完成，對其他研究者於 Timsort 的 merge_collapse 改進的研究先做了解，並配合鏈結串列中的 binary insertion sort 議題一同實驗，再回頭嘗試懂那些知識。
+
+總體而言，我認為我在這門的投入，以及目前的學習成果，自評 8 分。
+
+評分：8 分。
 
 ## 自我評量 (1 ~ 10)
 
+幾何平均數：$GEOMEAN = (3 \times 6 \times 8 \times 5 \times 8)^{1/5} = 5.65...$
+
+方案 B：$1 + floor(GEOMEAN) = 6$
