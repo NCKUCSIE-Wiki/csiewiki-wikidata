@@ -44,7 +44,7 @@ categories: User
 
 * 針對鏈結串列的資料排序改進: [Github](https://github.com/randyuncle/linux2024_final_listsort) / [hackmd](https://hackmd.io/@sysprog/ryr7zfh4R)
 
-
+我在專題中提出在節點數較少的鏈接串列中實作 binary insertion sort 還是 linear insertion sort 究竟誰比較好的疑問，以及不同論文中對於 Timsort 的 merge_collapse 策略提出的改進方案做整理和實作，並於最後將它們於自製的 Linux 核心測試模組中做實驗，並歸納實驗的結果。在其中，有嘗試整理 Timsort 複雜度的證明，以及 xoroshiro128+ 亂數產生器和 Linux 亂數產生器的比較，不過最後沒能完成感到有些遺憾，因此我給自己 8 分。
 
 評分：8 分。
 
