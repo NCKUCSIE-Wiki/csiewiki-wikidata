@@ -53,7 +53,7 @@ categories: User
 
 ### 期末專題
 
-vcam: [HackMD](https://hackmd.io/@yinghuaxia/linux2024-final) / [GitHub](https://github.com/yinghuaxia/vcam)
+vcam: [HackMD](https://hackmd.io/@sysprog/S1l3ZlcLA) / [GitHub](https://github.com/yinghuaxia/vcam)
 
 研究 vcam 在 V4L2 的框架中運作的原理，並對程式碼進行解析，最後進行 vcam 實現。
 
