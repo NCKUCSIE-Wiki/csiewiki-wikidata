@@ -47,7 +47,7 @@ categories: User
 
 ### 期末專題
 
-Pub/Sub模擬: [HackMD](https://hackmd.io/@NIYINGCHIH/PubSub)
+Pub/Sub模擬: [HackMD](https://hackmd.io/@sysprog/B1Q1e1bDR)
 
 我實作出 Pub/Sub 模型的 Linux kernel module，還有探討訂閱者數量 vs. 執行時間在不同組態的表現，也有做 Kthread 和 CMWQ 的效能比較。
 
