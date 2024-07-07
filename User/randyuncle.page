@@ -14,6 +14,7 @@ categories: User
 ## 成果發表和貢獻
 
 * [ksort]: [commit 4fffe83](https://github.com/sysprog21/ksort/commit/4fffe83e29d9739c6a519a88c2905eb670bfdaa5)
+    * 針對專案中的錯字提出修正。
 
 評分：3 分。
 
@@ -23,7 +24,19 @@ categories: User
 * Homework2: [hackmd](https://hackmd.io/@rkhuncle/linux2024-homework2)
 * assesment: [hackmd](https://hackmd.io/@rkhuncle/linux2024-homework5)
 
-在這些作業中，學到最多的地方莫過於直接查看第一手資料。
+在這些作業中，我有了以下的收穫：
+
+1. 熟練 git 操作（使用 git blame、git log 追蹤程式碼的歷史，以及使用 git rebase 等 git 操作）。
+
+2. 查閱第一手資料，而非網路上別人所整理資料。
+
+3. 撰寫測試程式，以測試指定程式的效能議題。
+
+4. 使用效能評比工具，測量程式的效能。
+
+5. 研讀 Linux lib/list_sort.c 的程式及參考論文，初步知道不同實作方法的合併排序演算法，有不同的分析結果。
+
+6. 從閱讀 cpython 中的 listsort.txt，知道測試排序程式需要考量到不同的資料分佈，以及原作者設計 Timsort 的細節。
 
 評分：6 分。
 
@@ -37,9 +50,8 @@ categories: User
 
 ## 與授課教師的互動: 
 
-5/1 下午 4:00 – 4:30 一對一討論
-
-
+* 5/1 下午 4:00 – 4:30 一對一討論
+    * Linux 核心為何使用 circular doubly-linked list、確認期末專題的題目、討論 CS:APP 第二章中提及的 C 語言整數型態的議題。
 
 評分：5 分。
 
