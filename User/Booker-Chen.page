@@ -15,7 +15,7 @@ categories: User
 
 * [dudect discussion](https://github.com/oreparaz/dudect/discussions/42)
 
-老師常說，我們本該對這個世界有所貢獻，本該如此，即使是改錯字這種看似微不足道的改動，也是貢獻。在研讀 dudect 這篇論文時，發現一些不嚴謹以及不明白的地方，像是設閾值的設定、累積分布函數的繪製等。於是決定在 GitHub 的 dudect 中發起一個 discussion，向作者請教。
+老師常說，我們本該對這個世界有所貢獻，本該如此，即使是改錯字這種看似微不足道的改動，也是貢獻。在研讀 dudect 這篇論文時，發現一些不嚴謹以及不明白的地方，像是閾值的設定、累積分布函數的繪製等。於是決定在 GitHub 的 dudect 中發起一個 discussion，向作者請教。
 
 ## 作業/隨堂測驗
 
