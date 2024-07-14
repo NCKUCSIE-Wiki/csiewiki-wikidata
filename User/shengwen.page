@@ -45,9 +45,17 @@ categories: User
 
 - [多旋翼飛控全系統設計](https://www.youtube.com/watch?v=hBBe1Kj82B4): 碩班期間成果，包含非線性控制、多感測器慣性導航、即時定位與地圖建構 (SLAM)、及最佳軌跡規劃等。曾經學術合作計畫授權予[國家太空中心 (TASA)](https://www.tasa.org.tw/)
 - [UrsusPilot](https://www.youtube.com/watch?v=_DsNQWP7UXo): 2013-2015年期間參與之四軸飛行器專案 (由成大航太-林清一教授之研究生主導)。原為開放原始碼專案，目前已轉為非公開
-- [Tenok](https://github.com/shengwen-tw/tenok): 一個 Linux 風格、適用於機器人及物聯網應用的即時作業系統 [[共筆]](https://hackmd.io/@shengwen/tenok) [[影片]](https://www.youtube.com/watch?v=byWihWcMP00)
+- [Tenok](https://github.com/tenok-rtos/tenok): 一個 Linux 風格、適用於機器人及物聯網應用的即時作業系統 [[共筆]](https://hackmd.io/@shengwen/tenok) [[影片]](https://www.youtube.com/watch?v=byWihWcMP00)
 - [Puyuma](https://github.com/Puyuma/puyuma-core): 基於 Linux 和電腦視覺、透過 Xenomai 達到 Real-time 的微型自駕車實驗系統 [[技術報告]](https://drive.google.com/file/d/1rKgdAhpr7M2tiiu-zpXKDYbxuNX_QqWz/view?usp=share_link) [[簡報]](https://drive.google.com/file/d/1D9Cp7_kDHw4EDSdKVgKMuRb3Ri0mA4bN/view?usp=sharing)
 - [PU-01](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 包含機構設計、參數規劃、穩定性分析的雙尾桿後推式定翼機設計 [[簡報]](https://drive.google.com/file/d/1hEJ8q8cbePwxY358UeMr3Z0nmIqtdnKo/view)
+
+開放原始碼參與
+=============
+
+- [semu](https://github.com/sysprog21/semu): 輕量級 RV32IMA 虛擬機，可執行 Linux。貢獻 virtio-blk 及 virtio-gpu 虛擬化基礎建設。
+- [DirectFB2](https://github.com/directfb2/DirectFB2): 輕量級的 Linux 圖形系統，針對 RV32 平台編譯問題進行修正。
+- [linenoise](https://github.com/antirez/linenoise): 小型列編輯函式庫 (line editing library), 改進按鍵處理之程式架構。
+- [Rust 程式語言電子書](https://rust-lang.tw/book-tw/): 修正錯別字。
 
 數值模擬專案
 ===========
