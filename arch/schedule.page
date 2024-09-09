@@ -16,7 +16,7 @@ Computer Architecture (Fall 2024)
 * Week 1 (Sep 10): Introduction
     - Announcement
         * Despite September 17th being a national holiday for Mid-Autumn Festival, our class will continue as scheduled. The session will be conducted via YouTube, and students are required to complete an online quiz. For information on how to participate and access the remote class, please refer to this website.
-    - **[Course Introduction](https://docs.google.com/presentation/d/1Syfz3hNJtNH1G8i_n-ThyzH7BbUZ2Rmk-GGvoe6KvwI/edit?usp=sharing)**
+    - **[Course Introduction](https://docs.google.com/presentation/d/19nSmimXfaZ9JyViZSgmWdsmNlWXjKUxx3c3Ptw7x0UM/edit?usp=sharing)**
     - [David Patterson](https://en.wikipedia.org/wiki/David_Patterson_(computer_scientist)): [A New Golden Age for Computer Architecture: History, Challenges and Opportunities](https://content.riscv.org/wp-content/uploads/2018/12/A-New-Golden-Age-for-Computer-Architecture-History-Challenges-and-Opportunities-David-Patterson-.pdf) / [video](https://youtu.be/uyc_pDBJotI)
         * [Article](https://cacm.acm.org/magazines/2019/2/234352-a-new-golden-age-for-computer-architecture/fulltext), [note](https://github.com/cristiean/notes/blob/4c4ceb291ba68c55659ab0d4571385c8cccacd21/a-new-golden-age-for-computer-architecture.md)
     - David Patterson: [From Mainframe CPUs to Neural-Network TPUs and Open RISC-V](https://riscv.org/wp-content/uploads/2017/05/Mon0915-RISC-V-50-Years-Computer-Arch.pdf) / [video](https://youtu.be/eH9_ygsio3I) 
