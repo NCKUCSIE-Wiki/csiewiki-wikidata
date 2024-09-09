@@ -34,7 +34,7 @@ Computer Architecture (Fall 2024)
 
 * Week 3 (Sep 24): RISC-V
     - Announcement:
-        + Quiz2 is scheduled on Sep 26
+        + Quiz2 is scheduled on Oct 1
             * [2022 Quiz2](https://hackmd.io/@sysprog/arch2022-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2022-quiz2-sol)
             * [2021 Quiz2](https://hackmd.io/@sysprog/arch2021-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2021-quiz2-sol)
         + [Homework 1](https://hackmd.io/@sysprog/2023-arch-homework1) is out.
@@ -83,12 +83,12 @@ Computer Architecture (Fall 2024)
 
 * Week 7 (Oct 22): Digital Systems
     * Announcement:
-        - Quiz 3 is scheduled for Oct 24 and will cover RISC-V assembly programming, software optimizations, instruction encoding, sequential logic, and combinational logic.
+        - Quiz 3 is scheduled for Oct 29 and will cover RISC-V assembly programming, software optimizations, instruction encoding, sequential logic, and combinational logic.
             - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3) / [solution](https://hackmd.io/@sysprog/arch2020-quiz3-sol)
             - [2021-Quiz3](https://hackmd.io/@sysprog/arch2021-quiz3) / [solution](https://hackmd.io/@sysprog/arch2021-quiz3-sol)
             - [2021-Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4) / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
             - [2022-Quiz3](https://hackmd.io/@sysprog/arch2022-quiz3) / [solution](https://hackmd.io/@sysprog/arch2022-quiz3-sol)
-        - Code Review for [Homework 2](https://hackmd.io/@sysprog/2023-arch-homework2) is scheduled for Oct 24.
+        - Code Review for [Homework 2](https://hackmd.io/@sysprog/2023-arch-homework2) is scheduled for Oct 29.
     * [Binary marble adding machine](https://woodgears.ca/marbleadd/) / [video](https://youtu.be/GcDshWmhF4A)
         - Yes, you can implement a few logic-like elements without electricity.
         - Logic gates are primarily implemented using diodes or transistors acting as electronic switches, but can also be constructed using vacuum tubes, electromagnetic relays (relay logic), fluidic logic, pneumatic logic, optics, molecules, or even mechanical elements. Now, most logic gates are made from MOSFETs (metal–oxide–semiconductor field-effect transistors).
@@ -102,9 +102,6 @@ Computer Architecture (Fall 2024)
     - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
 
 * Week 9 (Nov 5): Datapath and Control + Pipeline
-    - Announcement:
-        + New quiz is scheduled on Nov 14.
-        + Code Review for [Homework 2](https://hackmd.io/@sysprog/2023-arch-homework2) is scheduled on N14.
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
     - video: [Circuits recap](https://youtu.be/N36wWh0DriA)
     - Constructing Hardware in a Scala Embedded Language ([Chisel](https://github.com/chipsalliance/chisel)) is an open-source hardware description language (HDL) used to describe digital electronics and circuits at the register-transfer level that facilitates advanced circuit generation and design reuse for both ASIC and FPGA digital logic designs.
@@ -143,8 +140,7 @@ Computer Architecture (Fall 2024)
 
 * Week 12 (Nov 26): Cache
     * Announcement
-        * The class scheduled for Nov 28 will be conducted online and will be available via YouTube.
-        * Quiz 5 is scheduled on Dec 5
+        * Quiz 5 is scheduled on Dec 10
             - [2022-Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5) / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/ry3j69OOo)
             - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol) / [with Ripes simulation](https://hackmd.io/@arthur-chang/SyLa2qb3Y)
             - [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
@@ -184,7 +180,7 @@ Computer Architecture (Fall 2024)
 
 * Week15 (Dec 17): Operating System, Multithreading
     - Announcement:
-        * Quiz6 is scheduled on Dec 19
+        * Quiz6 is scheduled on Dec 24
             - [2022-Quiz6](https://hackmd.io/@sysprog/arch2022-quiz6): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2022-quiz6-sol)
             - [2021-Quiz7](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz7-sol)
             - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol)
@@ -212,8 +208,7 @@ Computer Architecture (Fall 2024)
     - Announcements
         * Due to the instructor's significant involvement in a confidential project, there has been limited participation in this course. Consequently, the instructor proposes a modification to the course grading structure.
             - The new breakdown will be as follows: Quiz (30%), Homework (30%), Final/Term Project (25%), and an additional "Base" component (15%). This "Base" component ensures that each student's starting score is at least 15%.
-        * Quiz7 is scheduled on Jan 2, 2024
-    - [SSE2NEON v1.7](https://github.com/DLTcollab/sse2neon/releases/tag/v1.7.0) is out.
+        * Quiz7 is scheduled on Jan 7, 2024
     - [rv32emu](https://github.com/sysprog21/rv32emu) introduces tier-1 JIT compiler to accelerate RISC-V simulation.
         * Execute `make ENABLE_JIT=1 clean all` and then run `build/rv32emu build/smolnes.elf` to play NES games.
     - [listing of final/term projects](https://hackmd.io/@sysprog/arch2023-projects)
