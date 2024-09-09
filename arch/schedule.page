@@ -23,7 +23,7 @@ Computer Architecture (Fall 2024)
     - [Floating Point](https://docs.google.com/presentation/d/166v96_iwGaq_RWB6Y_Wg7DBA8sZciP21R7Gf0ZDXbMQ/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apCExy6OTfkoaciJtfA8hir)
     - [C Memory Management](https://docs.google.com/presentation/d/14N0cWG2SnBSqhc2cLF0_2VerB9FF8JN3/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqxW0XGUcDl5r0m_eRU30C9)
 
-* Week 2 (Sep 17): Quiz + RISC-V / online via [YouTube](https://youtube.com/live/YAdl6owYnZU)
+* Week 2 (Sep 17): Quiz + RISC-V / online via YouTube
     - Announcement
         * There is an online quiz from 10:50 AM to 11:59 AM.
         * The first assignment, consisting of RISC-V assembly programming, will be given next week.
@@ -99,7 +99,7 @@ Computer Architecture (Fall 2024)
     - [Quiz3](https://hackmd.io/@sysprog/arch2023-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2023-quiz3-sol)
     - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
 
-* Week 9 (Nov 5): [online via YouTube](https://youtube.com/live/WUpGwSrsz8g); Datapath and Control + Pipeline
+* Week 9 (Nov 5): Datapath and Control + Pipeline
     - Announcement:
         + New quiz is scheduled on Nov 14.
         + Code Review for [Homework 2](https://hackmd.io/@sysprog/2023-arch-homework2) is scheduled on N14.
@@ -158,7 +158,7 @@ Computer Architecture (Fall 2024)
         * [Designing in 2023: 10 Problems to Solve w/ Jim Keller](https://youtu.be/o70yKYWgtVI) - [Tenstorrent](https://tenstorrent.com/)
  8-wide Ascalon RISC-V core.
  
-* Week13 (Dec 3): online via [YouTube](https://youtube.com/live/A8AmpS3V8cE): Virtual Memory + Operating System + Vector Extension
+* Week13 (Dec 3): Virtual Memory + Operating System + Vector Extension
     - Announcement:
         + Term projects will be listed on Dec 5. [Term projects of 2022](https://hackmd.io/@sysprog/arch2022-projects)
     * [Virtual Memory](https://youtu.be/TsxZlXOrt8U) / UCB: [Virtual Memory](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec19.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ar2Wia7JngBFMmwRlr4s79j)
@@ -197,7 +197,7 @@ Computer Architecture (Fall 2024)
         + RISC-V AMOSWAP instruction
         + [RISC-V spec references the word 'hart' - what does 'hart' mean?](https://stackoverflow.com/questions/42676827/risc-v-spec-references-the-word-hart-what-does-hart-mean)
  
-* Week16 (Dec 24): online via [YouTube](https://youtube.com/live/5SMKUAglraQ) | Quiz + Memory Model, Synchronization, I/O
+* Week16 (Dec 24): Quiz + Memory Model, Synchronization, I/O
     - [Quiz6](https://hackmd.io/@sysprog/arch2023-quiz6) / [solution](https://hackmd.io/@sysprog/arch2023-quiz6-sol)
     - [Memory Model](https://youtu.be/QkbWgCSAEoo) / [slides](https://riscv.org/wp-content/uploads/2018/05/14.25-15.00-RISCVMemoryModelTutorial.pdf)
     - [Advanced topics on Synchronization - 1](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L19-MCM.pdf)
