@@ -28,9 +28,9 @@ Computer Architecture (Fall 2024)
 
 * Week 2 (Sep 17): Quiz
     - Announcement
-        * There is an online quiz from 09:10 AM to 11:59 AM.
+        * There is an online quiz from 9:10 AM to 11:59 AM. Refresh this page to check the instructions for proceeding with the quiz. Refer to the hyperlink titled **Quiz1** for details.
         * The first assignment, consisting of RISC-V assembly programming, will be given next week.
-    - [Quiz1](https://hackmd.io/@sysprog/arch2023-quiz1): C programming, bit-wise operations, number representation, floating-point / [Solutions](https://hackmd.io/@sysprog/arch2023-quiz1-sol)
+    - [Quiz1](https://hackmd.io/@sysprog/arch2024-quiz1): C programming, bit-wise operations, number representation, floating-point / [Solutions](https://hackmd.io/@sysprog/arch2024-quiz1-sol)
 
 * Week 3 (Sep 24): RISC-V
     - Announcement:
