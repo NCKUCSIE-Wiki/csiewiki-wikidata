@@ -34,7 +34,8 @@ Computer Architecture (Fall 2024)
 
 * Week 3 (Sep 24): RISC-V
     - Announcement:
-        + Quiz2 is scheduled on Oct 1
+        + Quiz2 is scheduled on Oct 8
+            * [2023 Quiz2](https://hackmd.io/@sysprog/arch2023-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2023-quiz2-sol)
             * [2022 Quiz2](https://hackmd.io/@sysprog/arch2022-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2022-quiz2-sol)
             * [2021 Quiz2](https://hackmd.io/@sysprog/arch2021-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2021-quiz2-sol)
         + [Homework 1](https://hackmd.io/@sysprog/2023-arch-homework1) is out.
