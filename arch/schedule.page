@@ -56,8 +56,6 @@ Computer Architecture (Fall 2024)
     - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2023-arch-homework1) (Due: Oct 10, 2023)
 
 * Week 4 (Oct 1): Quiz + RISC-V
-    * Errata
-        * [2023 Quiz1](https://hackmd.io/@sysprog/arch2023-quiz1-sol): Additional `x += (x >> 32)` statement in Problem A
     - [Quiz2](https://hackmd.io/@sysprog/arch2023-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2023-quiz2-sol)
     - [Fixed-point Arithmetic](https://hackmd.io/@maromaSamsa/HkjefPbFs)
     - [NASA, Microchip, SiFive Announces Partnership for RISC-V Spaceflight Computing Platform](https://www.hackster.io/news/nasa-microchip-sifive-announces-partnership-for-risc-v-spaceflight-computing-platform-f52c55cf14f6)
