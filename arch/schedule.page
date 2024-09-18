@@ -40,9 +40,8 @@ Computer Architecture (Fall 2024)
             * [2021 Quiz2](https://hackmd.io/@sysprog/arch2021-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2021-quiz2-sol)
         + [Homework 1](https://hackmd.io/@sysprog/2023-arch-homework1) is out.
         + Code Review for [Homework 1](https://hackmd.io/@sysprog/2023-arch-homework1) on Oct 3
-    - Apple [A17 Pro](https://twitter.com/VadimYuryev/status/1702351628236718206)
-        * 19 billion transistors compared to 16 billion on the A16. [further reading](https://twitter.com/VadimYuryev/status/1702401409885544551)
-        * [graphics benchmark](https://twitter.com/VadimYuryev/status/1702505691314024646)
+    - Apple [A18 Pro](https://x.com/VadimYuryev/status/1834671673855164763) / [Wikipedia](https://en.wikipedia.org/wiki/Apple_A18)
+        * used in the iPhone 16 and iPhone 16 Pro lineups, and built on a second generation 3 nm process by TSMC.
         * [ARM1 (1985) vs. Apple M1 Max (2021)](https://twitter.com/kenshirriff/status/1450179024639049731)
         * [Apple Announces M1 Pro & M1 Max: Giant New Arm SoCs with All-Out Performance](https://www.anandtech.com/show/17019/apple-announced-m1-pro-m1-max-giant-new-socs-with-allout-performance)
     - [Intro to RISC-V](https://docs.google.com/presentation/d/1PeBOPGgaBSbqng00PM_NaqddFOoz-5__N8lLAk2MKho/edit?usp=sharing) / [video](https://youtu.be/xdma5w1_iVI)
