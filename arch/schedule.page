@@ -39,7 +39,7 @@ Computer Architecture (Fall 2024)
             * [2022 Quiz2](https://hackmd.io/@sysprog/arch2022-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2022-quiz2-sol)
             * [2021 Quiz2](https://hackmd.io/@sysprog/arch2021-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2021-quiz2-sol)
         + [Homework 1](https://hackmd.io/@sysprog/2023-arch-homework1) is out.
-        + Code Review for [Homework 1](https://hackmd.io/@sysprog/2023-arch-homework1) on Oct 3
+        + Code Review for [Homework 1](https://hackmd.io/@sysprog/2023-arch-homework1) on Oct 8
     - [Intro to RISC-V](https://docs.google.com/presentation/d/1PeBOPGgaBSbqng00PM_NaqddFOoz-5__N8lLAk2MKho/edit?usp=sharing) / [video](https://youtu.be/xdma5w1_iVI)
         * [RISC-V Assembly Programmer's Manual](https://github.com/riscv/riscv-asm-manual/blob/master/riscv-asm.md)
         * [The RISC-V Instruction Set Manual: Volume I: Unprivileged ISA](https://content.riscv.org/wp-content/uploads/2019/06/riscv-spec.pdf)
