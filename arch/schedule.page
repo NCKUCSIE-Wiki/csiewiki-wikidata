@@ -48,7 +48,7 @@ Computer Architecture (Fall 2024)
     - [RISC-V Procedures](https://docs.google.com/presentation/d/18F1vHY5Mv5E6WU6BvktXzkVbZrTZ3jQUbkWOjEPGE4I/edit?usp=sharing) / [video](https://youtu.be/slyeHO64sWg)
     - [Lab0: Web-based Emulators](https://hackmd.io/@sysprog/SJ7ht_MuS)
     - [Lab1: RV32I Assembly](https://hackmd.io/@sysprog/H1TpVYMdB)
-    - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2023-arch-homework1) (Due: Oct 14, 2024)
+    - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2024-arch-homework1) (Due: Oct 14, 2024)
 
 * Week 4 (Oct 1): Quiz + RISC-V
     - [Quiz2](https://hackmd.io/@sysprog/arch2023-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2023-quiz2-sol)
