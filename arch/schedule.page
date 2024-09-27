@@ -57,7 +57,6 @@ Computer Architecture (Fall 2024)
         * [ARM1 (1985) vs. Apple M1 Max (2021)](https://twitter.com/kenshirriff/status/1450179024639049731)
         * [Apple Announces M1 Pro & M1 Max: Giant New Arm SoCs with All-Out Performance](https://www.anandtech.com/show/17019/apple-announced-m1-pro-m1-max-giant-new-socs-with-allout-performance)
     - [Fixed-point Arithmetic](https://hackmd.io/@maromaSamsa/HkjefPbFs)
-    - [Calling Convention for RISC-V](https://docs.google.com/presentation/d/10-LTD_zwQO23yxRNGL1gOpYmab8rDFsv/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apCzwwwJGKn2p57tnhtSIIz)
     - [CALL = Compiling, Assembling, Linking, and Loading](https://docs.google.com/presentation/d/1Kiu675d7Q0NimIvdtxkXE5kp8-jLDmIt/edit?usp=sharing&ouid=113685665535544054506&rtpof=true&sd=true) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aoprCVNj3PG1kx7DTm3Qs6q)
 
 * Week 5 (Oct 8): Code Review + RISC-V Instruction Format + GNU Toolchain
@@ -68,10 +67,8 @@ Computer Architecture (Fall 2024)
     - Assignment: [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2023-arch-homework2) (Due: Oct 31)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1k5qJyfuyk3ITzOfK0cIosyNl0nh1o9UC/edit?usp=sharing) / [Part II](https://docs.google.com/presentation/d/19Zt2UpvJDerRPn2P2XkgcxkhXKIuWJ1g/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apqzuxnUN2fkwt1IGbu3km3)
 
-* Week 6 (Oct 15): National Day | make up a lesson on Oct 12 night via [YouTube](https://youtube.com/live/l7sKCIMo9AY)
+* Week 6 (Oct 15): 
     * Announcement:
-        - Given the consistent progress of the lecture, we will schedule a makeup lesson for 19:30 on October 12th via [YouTube](https://youtube.com/live/l7sKCIMo9AY).
-        - [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2023-arch-homework2) is out. (Due: Oct 31)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1k5qJyfuyk3ITzOfK0cIosyNl0nh1o9UC/edit?usp=sharing) / [Part II](https://docs.google.com/presentation/d/19Zt2UpvJDerRPn2P2XkgcxkhXKIuWJ1g/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apqzuxnUN2fkwt1IGbu3km3)
         * [online tool for RISC-V Instruction Encoder/Decoder](https://luplab.gitlab.io/rvcodecjs/) / [source code](https://gitlab.com/luplab/rvcodecjs)
     - Further reading [FPGA design for Software Engineers](https://www.walknsqualk.com/post/014-tiny-fpga-bx/)
