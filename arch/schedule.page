@@ -53,7 +53,8 @@ Computer Architecture (Fall 2024)
 * Week 4 (Oct 1): Quiz + RISC-V
     - Announcement
         * Due to the impact of Typhoon Krathon, Quiz 2 will be conducted online instead of in-person. Please refresh this web page to obtain the latest information on how to participate in the online quiz and attend the course remotely.
-    - [Quiz2](https://hackmd.io/@sysprog/arch2023-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2023-quiz2-sol)
+        * Access the live-streamed course on [YouTube](https://youtube.com/live/pVjSV5l6aNA). Watch the live stream carefully: Quiz 2 participation instructions will be provided during the broadcast.
+    - [Quiz2](https://hackmd.io/@sysprog/arch2024-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2024-quiz2-sol)
     - Apple [A18 Pro](https://x.com/VadimYuryev/status/1834671673855164763) / [Wikipedia](https://en.wikipedia.org/wiki/Apple_A18)
         * used in the iPhone 16 and iPhone 16 Pro lineups, and built on a second generation 3 nm process by TSMC.
         * [ARM1 (1985) vs. Apple M1 Max (2021)](https://twitter.com/kenshirriff/status/1450179024639049731)
