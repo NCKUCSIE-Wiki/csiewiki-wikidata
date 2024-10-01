@@ -41,7 +41,7 @@ Computer Architecture (Fall 2024)
         + Code Review for [Homework 1](https://hackmd.io/@sysprog/2024-arch-homework1) on Oct 8
     - [Principles of this course](https://docs.google.com/presentation/d/1V_X3jKMotcwaiNIXhUbS7t2gWb0s7okWhYXbZeDc3jM/edit?usp=sharing)
     - [Intro to RISC-V](https://docs.google.com/presentation/d/1PeBOPGgaBSbqng00PM_NaqddFOoz-5__N8lLAk2MKho/edit?usp=sharing) / [video](https://youtu.be/xdma5w1_iVI)
-        * [RISC-V Assembly Programmer's Manual](https://github.com/riscv/riscv-asm-manual/blob/master/riscv-asm.md)
+        * [RISC-V Assembly Programmer's Manual](https://github.com/riscv-non-isa/riscv-asm-manual/blob/main/src/asm-manual.adoc)
         * [The RISC-V Instruction Set Manual: Volume I: Unprivileged ISA](https://content.riscv.org/wp-content/uploads/2019/06/riscv-spec.pdf)
     - [RISC-V Data Transfer](https://docs.google.com/presentation/d/1N1ZyPLwJDN2hEqKT59nDunYWbXnVZsVDq5rg32Vckv8/edit?usp=sharing) / [video](https://youtu.be/-i6BmbdyftI)
     - [RISC-V Decision Making and Logical Operations](https://docs.google.com/presentation/d/1-vTyUiY8LeQZ1yD2x1EVsu85iXfJ0iSYiyWvLQ9QzLI/edit?usp=sharing) / [video](https://youtu.be/_qIYRafGUUs)
