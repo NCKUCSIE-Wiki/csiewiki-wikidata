@@ -62,12 +62,10 @@ Computer Architecture (Fall 2024)
 * Week 5 (Oct 8): Code Review + RISC-V Instruction Format + GNU Toolchain
     - Announcement
         * [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2023-arch-homework2) is out.
+    - Review: [RISC-V Architecture Instruction Encoding](https://youtu.be/l0AUp6MwiR0)
+        * Revisit the RV32I specification and instruction encoding, as they serve as the foundation for implementing RISC-V processor cores in HDL.
+        * The system instructions: `ecall`, `ebreak`, and `csr*`.
     - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2024-arch-homework1)
-    - Apple [A18 Pro](https://x.com/VadimYuryev/status/1834671673855164763) / [Wikipedia](https://en.wikipedia.org/wiki/Apple_A18)
-        * used in the iPhone 16 and iPhone 16 Pro lineups, and built on a second generation 3 nm process by TSMC.
-        * [ARM1 (1985) vs. Apple M1 Max (2021)](https://twitter.com/kenshirriff/status/1450179024639049731)
-        * [Apple Announces M1 Pro & M1 Max: Giant New Arm SoCs with All-Out Performance](https://www.anandtech.com/show/17019/apple-announced-m1-pro-m1-max-giant-new-socs-with-allout-performance)
-
     - [Lab2: RISC-V RV32I[MACF] emulator with ELF support](https://hackmd.io/@sysprog/SJAR5XMmi)
     - Assignment: [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2023-arch-homework2) (Due: Oct 31)
     - [CALL = Compiling, Assembling, Linking, and Loading](https://docs.google.com/presentation/d/1Kiu675d7Q0NimIvdtxkXE5kp8-jLDmIt/edit?usp=sharing&ouid=113685665535544054506&rtpof=true&sd=true) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aoprCVNj3PG1kx7DTm3Qs6q)
