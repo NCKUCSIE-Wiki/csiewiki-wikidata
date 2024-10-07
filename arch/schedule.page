@@ -72,11 +72,13 @@ Computer Architecture (Fall 2024)
     - [CALL = Compiling, Assembling, Linking, and Loading](https://docs.google.com/presentation/d/1Kiu675d7Q0NimIvdtxkXE5kp8-jLDmIt/edit?usp=sharing&ouid=113685665535544054506&rtpof=true&sd=true) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aoprCVNj3PG1kx7DTm3Qs6q)
 
 * Week 6 (Oct 15): Digital Systems
+    - Announcement
         - Quiz 3 is scheduled for Oct 22 and will cover RISC-V assembly programming, software optimizations, instruction encoding, sequential logic, and combinational logic.
             - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3) / [solution](https://hackmd.io/@sysprog/arch2020-quiz3-sol)
             - [2021-Quiz3](https://hackmd.io/@sysprog/arch2021-quiz3) / [solution](https://hackmd.io/@sysprog/arch2021-quiz3-sol)
             - [2021-Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4) / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
             - [2022-Quiz3](https://hackmd.io/@sysprog/arch2022-quiz3) / [solution](https://hackmd.io/@sysprog/arch2022-quiz3-sol)
+            - [2023-Quiz3](https://hackmd.io/@sysprog/arch2023-quiz3) / [solution](https://hackmd.io/@sysprog/arch2023-quiz3-sol)
         - Code Review for [Homework 2](https://hackmd.io/@sysprog/2023-arch-homework2) is scheduled for Oct 22.
     * [Binary marble adding machine](https://woodgears.ca/marbleadd/) / [video](https://youtu.be/GcDshWmhF4A)
         - Yes, you can implement a few logic-like elements without electricity.
