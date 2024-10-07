@@ -68,7 +68,7 @@ Computer Architecture (Fall 2024)
         * [online tool for RISC-V Instruction Encoder/Decoder](https://luplab.gitlab.io/rvcodecjs/) / [source code](https://gitlab.com/luplab/rvcodecjs)
     - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2024-arch-homework1)
     - [Lab2: RISC-V RV32I[MACF] emulator with ELF support](https://hackmd.io/@sysprog/SJAR5XMmi)
-    - Assignment: [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2023-arch-homework2) (Due: Oct 31)
+    - Assignment: [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2023-arch-homework2) (Due: Oct 28)
     - [Compiling, Assembling, Linking, and Loading](https://docs.google.com/presentation/d/1uAURy-tL-K9oMtUP1gY9034gsOrxbhhDL9MnoTm1NKM/edit?usp=sharing) / [video-1](https://youtu.be/oeRTvGGLRZI) / [video-2](https://youtu.be/Y8d6igTajtQ)
 
 * Week 6 (Oct 15): Digital Systems
