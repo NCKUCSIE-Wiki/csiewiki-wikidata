@@ -66,6 +66,7 @@ Computer Architecture (Fall 2024)
         * Revisit the RV32I specification and instruction encoding, as they serve as the foundation for implementing RISC-V processor cores in HDL.
         * The system instructions: `ecall`, `ebreak`, and `csr*`.
         * [online tool for RISC-V Instruction Encoder/Decoder](https://luplab.gitlab.io/rvcodecjs/) / [source code](https://gitlab.com/luplab/rvcodecjs)
+    - [Recursion as a Problem-Solving Technique](https://hackmd.io/@sysprog/SyTFEhxyJe)
     - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2024-arch-homework1)
     - [Lab2: RISC-V RV32I[MACF] emulator with ELF support](https://hackmd.io/@sysprog/SJAR5XMmi)
     - Assignment: [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2023-arch-homework2) (Due: Oct 28)
