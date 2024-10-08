@@ -61,15 +61,15 @@ Computer Architecture (Fall 2024)
 
 * Week 5 (Oct 8): Code Review + GNU Toolchain
     - Announcement
-        * [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2023-arch-homework2) is out.
+        * Check this page again after noon on October 9 for Homework 2 information.
     - Review: [RISC-V Architecture Instruction Encoding](https://youtu.be/l0AUp6MwiR0)
         * Revisit the RV32I specification and instruction encoding, as they serve as the foundation for implementing RISC-V processor cores in HDL.
         * The system instructions: `ecall`, `ebreak`, and `csr*`.
         * [online tool for RISC-V Instruction Encoder/Decoder](https://luplab.gitlab.io/rvcodecjs/) / [source code](https://gitlab.com/luplab/rvcodecjs)
     - [Recursion as a Problem-Solving Technique](https://hackmd.io/@sysprog/SyTFEhxyJe)
     - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2024-arch-homework1)
-    - [Lab2: RISC-V RV32I[MACF] emulator with ELF support](https://hackmd.io/@sysprog/SJAR5XMmi)
-    - Assignment: [Homework2: RISC-V Toolchain](https://hackmd.io/@sysprog/2023-arch-homework2) (Due: Oct 28)
+    - [Lab2: RISC-V + VENUS](https://cs61c.org/fa24/labs/lab03/) / [slides](https://docs.google.com/presentation/d/1vsXYoqsyJtZTE1_z2wtnXgsnbZaVFHGLjQdJsckxFIc/edit?usp=sharing)
+    - Assignment: Homework2 (Due: Oct 28)
     - [Compiling, Assembling, Linking, and Loading](https://docs.google.com/presentation/d/1uAURy-tL-K9oMtUP1gY9034gsOrxbhhDL9MnoTm1NKM/edit?usp=sharing) / [video-1](https://youtu.be/oeRTvGGLRZI) / [video-2](https://youtu.be/Y8d6igTajtQ)
 
 * Week 6 (Oct 15): Digital Systems
