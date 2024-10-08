@@ -59,7 +59,7 @@ Computer Architecture (Fall 2024)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1pXcXcBjmUCXFJNFi4DpFLtpyDKsol5SaKfVce1hKdXE/edit?usp=sharing) / [video](https://youtu.be/VqzPnKPjcj8)
     - RISC-V Instruction Formats [Part II](https://docs.google.com/presentation/d/1rYJeuDUPezDdk01M8ib3XTo15IGLdsMJclzD4Vv9XGQ/edit?usp=sharing) / [video](https://youtu.be/6L5EeJl7T9w)
 
-* Week 5 (Oct 8): Code Review + GNU Toolchain
+* Week 5 (Oct 8): Code Review + Toolchain
     - Announcement
         * Check this page again after noon on October 9 for Homework 2 information.
     - Review: [RISC-V Architecture Instruction Encoding](https://youtu.be/l0AUp6MwiR0)
@@ -70,7 +70,7 @@ Computer Architecture (Fall 2024)
     - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2024-arch-homework1)
     - [Lab2: RISC-V + VENUS](https://cs61c.org/fa24/labs/lab03/) / [slides](https://docs.google.com/presentation/d/1vsXYoqsyJtZTE1_z2wtnXgsnbZaVFHGLjQdJsckxFIc/edit?usp=sharing)
     - Assignment: Homework2 (Due: Oct 28)
-    - [Compiling, Assembling, Linking, and Loading](https://docs.google.com/presentation/d/1uAURy-tL-K9oMtUP1gY9034gsOrxbhhDL9MnoTm1NKM/edit?usp=sharing) / [video-1](https://youtu.be/oeRTvGGLRZI) / [video-2](https://youtu.be/Y8d6igTajtQ)
+    - [Compiling, Assembling, Linking, and Loading](https://docs.google.com/presentation/d/1uAURy-tL-K9oMtUP1gY9034gsOrxbhhDL9MnoTm1NKM/edit?usp=sharing) / [video-1](https://youtu.be/oeRTvGGLRZI) + [video-2](https://youtu.be/Y8d6igTajtQ)
 
 * Week 6 (Oct 15): Digital Systems
     - Announcement
