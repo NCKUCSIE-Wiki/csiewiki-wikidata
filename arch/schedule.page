@@ -61,7 +61,7 @@ Computer Architecture (Fall 2024)
 
 * Week 5 (Oct 8): Code Review + Toolchain
     - Announcement
-        * Check this page again after noon on October 10 for Homework 2 information.
+        * Check this page again after noon on October 11 for Homework 2 information.
     - Review: [RISC-V Architecture Instruction Encoding](https://youtu.be/l0AUp6MwiR0)
         * Revisit the RV32I specification and instruction encoding, as they serve as the foundation for implementing RISC-V processor cores in HDL.
         * The system instructions: `ecall`, `ebreak`, and `csr*`.
