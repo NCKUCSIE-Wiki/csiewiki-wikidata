@@ -53,7 +53,8 @@ categories: User
 =============
 
 - [semu](https://github.com/sysprog21/semu): 輕量級 RV32IMA 虛擬機，可執行 Linux。貢獻 virtio-blk 及 virtio-gpu 虛擬化基礎建設。
-- [DirectFB2](https://github.com/directfb2/DirectFB2): 輕量級的 Linux 圖形系統，針對 RV32 平台編譯問題進行修正。
+- [DirectFB2](https://github.com/directfb2/DirectFB2): 輕量級的 Linux/Nuttx 視窗系統，修正 RV32 及 DRM 相關問題。
+- [Mado](https://github.com/sysprog21/mado): 用於資源受限硬體的視窗系統，貢獻 Linux framebuffer device 實做。
 - [linenoise](https://github.com/antirez/linenoise): 小型列編輯函式庫 (line editing library), 改進按鍵處理之程式架構。
 - [Rust 程式語言電子書](https://rust-lang.tw/book-tw/): 修正錯別字。
 
