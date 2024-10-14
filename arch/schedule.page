@@ -82,10 +82,10 @@ Computer Architecture (Fall 2024)
     * [Binary marble adding machine](https://woodgears.ca/marbleadd/) / [video](https://youtu.be/GcDshWmhF4A)
         - Yes, you can implement a few logic-like elements without electricity.
         - Logic gates are primarily implemented using diodes or transistors acting as electronic switches, but can also be constructed using vacuum tubes, electromagnetic relays (relay logic), fluidic logic, pneumatic logic, optics, molecules, or even mechanical elements. Now, most logic gates are made from MOSFETs (metal–oxide–semiconductor field-effect transistors).
-    - [Synchronous Digital Systems (SDS)](https://docs.google.com/presentation/d/1xP8Vc1i_9QY4t2GQhcpI2MsWsrhr-mvTY7jVXnso6yE/edit?usp=sharing) / [video]()
-    - [Combinational Logic](https://docs.google.com/presentation/d/1P6-AFWlwillUVtY-6p66SUldojB9R59Mcj_lKDF53S0/edit?usp=sharing) / [video]()
+    - [Synchronous Digital Systems (SDS)](https://docs.google.com/presentation/d/1xP8Vc1i_9QY4t2GQhcpI2MsWsrhr-mvTY7jVXnso6yE/edit?usp=sharing) / [video](https://youtu.be/GOu6BW-R_cs)
+    - [Combinational Logic](https://docs.google.com/presentation/d/1P6-AFWlwillUVtY-6p66SUldojB9R59Mcj_lKDF53S0/edit?usp=sharing) / [video](https://youtu.be/DPEE8ILCXMs)
         + sequential logic is a type of logic circuit whose output depends on the present value of its input signals and on the sequence of past inputs, the input history.
-    - [State](https://docs.google.com/presentation/d/1AemtUUV207IXLP7j07RFOh-NLrKLSew_/edit?usp=sharing), [Combinational Logic](https://docs.google.com/presentation/d/1h0hoIl1bc2f9fUeoEGmaUHoAtf9zL5JS/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arH8SCGZilk8Wn_2B45SOpW)
+    - [SDS State](https://docs.google.com/presentation/d/1qXyH6xN_1QxII2YjoyuF5DUIst-A7pB1JG1PKdwKkgE/edit?usp=sharing) / [video]()
 
 * Week 7 (Oct 22): Quiz
     - [Quiz3](https://hackmd.io/@sysprog/arch2023-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2023-quiz3-sol)
