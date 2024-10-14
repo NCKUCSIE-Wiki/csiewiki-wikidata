@@ -69,7 +69,7 @@ Computer Architecture (Fall 2024)
     - [Lab2: RISC-V + VENUS](https://cs61c.org/fa24/labs/lab03/) / [slides](https://docs.google.com/presentation/d/1vsXYoqsyJtZTE1_z2wtnXgsnbZaVFHGLjQdJsckxFIc/edit?usp=sharing)
     - Assignment: Homework2 (Due: Oct 28)
 
-* Week 6 (Oct 15): Digital Systems
+* Week 6 (Oct 15): Toolchain + Digital Systems
     - Announcement
         - Quiz 3 is scheduled for Oct 22 and will cover RISC-V assembly programming, software optimizations, instruction encoding, sequential logic, and combinational logic.
             - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3) / [solution](https://hackmd.io/@sysprog/arch2020-quiz3-sol)
