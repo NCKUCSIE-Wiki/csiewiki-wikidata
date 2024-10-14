@@ -86,7 +86,7 @@ Computer Architecture (Fall 2024)
     - [Combinational Logic](https://docs.google.com/presentation/d/1P6-AFWlwillUVtY-6p66SUldojB9R59Mcj_lKDF53S0/edit?usp=sharing) / [video](https://youtu.be/DPEE8ILCXMs)
         + sequential logic is a type of logic circuit whose output depends on the present value of its input signals and on the sequence of past inputs, the input history.
     - [SDS State](https://docs.google.com/presentation/d/1qXyH6xN_1QxII2YjoyuF5DUIst-A7pB1JG1PKdwKkgE/edit?usp=sharing) / [video](https://youtu.be/wOohQuD9wAg)
-    - [Combinational Logic Blocks](https://docs.google.com/presentation/d/1JahtX4WzKs2JGx_qYfjkdJE5pQwBfXBX46w4NnQOV_E/edit?usp=sharing) / [video]()
+    - [Combinational Logic Blocks](https://docs.google.com/presentation/d/1JahtX4WzKs2JGx_qYfjkdJE5pQwBfXBX46w4NnQOV_E/edit?usp=sharing) / [video](https://youtu.be/S6TNo2jSu9A)
 
 * Week 7 (Oct 22): Quiz
     - [Quiz3](https://hackmd.io/@sysprog/arch2023-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2023-quiz3-sol)
