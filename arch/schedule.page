@@ -60,8 +60,6 @@ Computer Architecture (Fall 2024)
     - RISC-V Instruction Formats [Part II](https://docs.google.com/presentation/d/1rYJeuDUPezDdk01M8ib3XTo15IGLdsMJclzD4Vv9XGQ/edit?usp=sharing) / [video](https://youtu.be/6L5EeJl7T9w)
 
 * Week 5 (Oct 8): Code Review + Toolchain
-    - Announcement
-        * Check this page again after noon on October 14 for Homework 2 information.
     - Review: [RISC-V Architecture Instruction Encoding](https://youtu.be/l0AUp6MwiR0)
         * Revisit the RV32I specification and instruction encoding, as they serve as the foundation for implementing RISC-V processor cores in HDL.
         * The system instructions: `ecall`, `ebreak`, and `csr*`.
@@ -84,8 +82,8 @@ Computer Architecture (Fall 2024)
     * [Binary marble adding machine](https://woodgears.ca/marbleadd/) / [video](https://youtu.be/GcDshWmhF4A)
         - Yes, you can implement a few logic-like elements without electricity.
         - Logic gates are primarily implemented using diodes or transistors acting as electronic switches, but can also be constructed using vacuum tubes, electromagnetic relays (relay logic), fluidic logic, pneumatic logic, optics, molecules, or even mechanical elements. Now, most logic gates are made from MOSFETs (metal–oxide–semiconductor field-effect transistors).
-    - [nand2tetris](https://www.nand2tetris.org/)
-    - [Synchronous Digital Systems (SDS)](https://docs.google.com/presentation/d/1WOxk6JPmCxXuGfkX1A3Ocuiy4N-fyv76/edit?usp=sharing), [Boolean Algebra](https://docs.google.com/presentation/d/10bIPEobQ-O42TV97ggTfRcDUJ7vz5YB4/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ap04XFOxcFT2_Bflnz_RHWU)
+    - [Synchronous Digital Systems (SDS)](https://docs.google.com/presentation/d/1xP8Vc1i_9QY4t2GQhcpI2MsWsrhr-mvTY7jVXnso6yE/edit?usp=sharing) / [video]()
+    - [Boolean Algebra](https://docs.google.com/presentation/d/10bIPEobQ-O42TV97ggTfRcDUJ7vz5YB4/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ap04XFOxcFT2_Bflnz_RHWU)
         + sequential logic is a type of logic circuit whose output depends on the present value of its input signals and on the sequence of past inputs, the input history.
     - [State](https://docs.google.com/presentation/d/1AemtUUV207IXLP7j07RFOh-NLrKLSew_/edit?usp=sharing), [Combinational Logic](https://docs.google.com/presentation/d/1h0hoIl1bc2f9fUeoEGmaUHoAtf9zL5JS/edit?usp=sharing) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arH8SCGZilk8Wn_2B45SOpW)
 
