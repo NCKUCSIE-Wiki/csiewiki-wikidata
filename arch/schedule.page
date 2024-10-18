@@ -60,7 +60,7 @@ Computer Architecture (Fall 2024)
     - RISC-V Instruction Formats [Part II](https://docs.google.com/presentation/d/1rYJeuDUPezDdk01M8ib3XTo15IGLdsMJclzD4Vv9XGQ/edit?usp=sharing) / [video](https://youtu.be/6L5EeJl7T9w)
 
 * Week 5 (Oct 8): RV32I + Code Review
-    - Review: [RISC-V Architecture Instruction Encoding](https://youtu.be/l0AUp6MwiR0)
+    - Review: [RISC-V Architecture Instruction Encoding](https://youtu.be/NmxhoMCeH8I)
         * Revisit the RV32I specification and instruction encoding, as they serve as the foundation for implementing RISC-V processor cores in HDL.
         * The system instructions: `ecall`, `ebreak`, and `csr*`.
         * [online tool for RISC-V Instruction Encoder/Decoder](https://luplab.gitlab.io/rvcodecjs/) / [source code](https://gitlab.com/luplab/rvcodecjs)
