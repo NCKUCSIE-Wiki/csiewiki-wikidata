@@ -75,8 +75,6 @@ Computer Architecture (Fall 2024)
             - [2021-Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4) / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
             - [2022-Quiz3](https://hackmd.io/@sysprog/arch2022-quiz3) / [solution](https://hackmd.io/@sysprog/arch2022-quiz3-sol)
             - [2023-Quiz3](https://hackmd.io/@sysprog/arch2023-quiz3) / [solution](https://hackmd.io/@sysprog/arch2023-quiz3-sol)
-        - [Homework 2](https://hackmd.io/@sysprog/2024-arch-homework2) is out. Due: Nov 4
-        - Code Review for [Homework 2](https://hackmd.io/@sysprog/2023-arch-homework2) is scheduled for Oct 29.
     - [Compiling, Assembling, Linking, and Loading](https://docs.google.com/presentation/d/1uAURy-tL-K9oMtUP1gY9034gsOrxbhhDL9MnoTm1NKM/edit?usp=sharing) / [video-1](https://youtu.be/oeRTvGGLRZI) + [video-2](https://youtu.be/Y8d6igTajtQ)
     * [Lab2: RISC-V + VENUS](https://cs61c.org/fa24/labs/lab03/) / [slides](https://docs.google.com/presentation/d/1vsXYoqsyJtZTE1_z2wtnXgsnbZaVFHGLjQdJsckxFIc/edit?usp=sharing)
     * [Binary marble adding machine](https://woodgears.ca/marbleadd/) / [video](https://youtu.be/GcDshWmhF4A)
@@ -92,6 +90,9 @@ Computer Architecture (Fall 2024)
     - [Quiz3](https://hackmd.io/@sysprog/arch2024-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2024-quiz3-sol)
 
 * Week 8 (Oct 29): Review + Datapath and Control
+    - Announcement:
+       - [Homework 2](https://hackmd.io/@sysprog/2024-arch-homework2) is undergoing significant revisions. Please keep an eye on your email for updates.
+       - The instructor has been grappling with the LLM for several weeks though.
     - "What I cannot create, I do not understand." - On Richard Feynman's blackboard at the time of his death in 1988 / [Build Your Own X](https://build-your-own-x.vercel.app/)
     - Revisit [Quiz 3](https://hackmd.io/@sysprog/arch2024-quiz3-sol)
         * [RISC-V Architecture Instruction Encoding](https://youtu.be/NmxhoMCeH8I)
