@@ -92,7 +92,8 @@ Computer Architecture (Fall 2024)
     - [Quiz3](https://hackmd.io/@sysprog/arch2024-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2024-quiz3-sol)
 
 * Week 8 (Oct 29): Review + Datapath and Control
-    - [RISC-V Datapath I](https://docs.google.com/presentation/d/1kYFjJROF0OVFPPXCrPXBnlY7d9lP2rwcLxNJvI6DuAE/edit?usp=sharing) / [video](https://youtu.be/X2rg2LDON1Y)
+    - "What I cannot create, I do not understand." - On Richard Feynman's blackboard at the time of his death in 1988 / [Build Your Own X](https://build-your-own-x.vercel.app/)
+    - [RISC-V Datapath I](https://docs.google.com/presentation/d/1kYFjJROF0OVFPPXCrPXBnlY7d9lP2rwcLxNJvI6DuAE/edit?usp=sharing) / [video](https://youtu.be/hPJXX91kurw)
     - [RISC-V Datapath II](https://docs.google.com/presentation/d/1nJknDrB402GuriZuqeYOVpoJv9bvYoZeFRSPKzqjdqw/edit?usp=sharing) / [video](https://youtu.be/wQC7mjjfJDw)
     - [RISC-V Processor Design Control](https://docs.google.com/presentation/d/1EoTcGYgOlqO7ytnzHmQi_2JB1g-fyXpyYp7AV7dvwMs/edit?usp=sharing) / [video](https://youtu.be/bTM2t0uiv6I)
 
