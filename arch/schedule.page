@@ -98,21 +98,17 @@ Computer Architecture (Fall 2024)
         * [RISC-V Architecture Instruction Encoding](https://youtu.be/NmxhoMCeH8I)
         * [World's Fastest Square Root: Newton's Method](https://youtu.be/FpOEx6zFf1o)
     - [RISC-V Datapath I](https://docs.google.com/presentation/d/1kYFjJROF0OVFPPXCrPXBnlY7d9lP2rwcLxNJvI6DuAE/edit?usp=sharing) / [video](https://youtu.be/hPJXX91kurw)
-    - [RISC-V Datapath II](https://docs.google.com/presentation/d/1nJknDrB402GuriZuqeYOVpoJv9bvYoZeFRSPKzqjdqw/edit?usp=sharing) / [video](https://youtu.be/wQC7mjjfJDw)
-    - [RISC-V Processor Design Control](https://docs.google.com/presentation/d/1EoTcGYgOlqO7ytnzHmQi_2JB1g-fyXpyYp7AV7dvwMs/edit?usp=sharing) / [video](https://youtu.be/bTM2t0uiv6I)
 
 * Week 9 (Nov 5): Datapath and Control + Pipeline
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
     - video: [Circuits recap](https://youtu.be/N36wWh0DriA)
+    - [RISC-V Datapath II](https://docs.google.com/presentation/d/1nJknDrB402GuriZuqeYOVpoJv9bvYoZeFRSPKzqjdqw/edit?usp=sharing) / [video](https://youtu.be/wQC7mjjfJDw)
+    - [RISC-V Processor Design Control](https://docs.google.com/presentation/d/1EoTcGYgOlqO7ytnzHmQi_2JB1g-fyXpyYp7AV7dvwMs/edit?usp=sharing) / [video](https://youtu.be/bTM2t0uiv6I)
     - Constructing Hardware in a Scala Embedded Language ([Chisel](https://github.com/chipsalliance/chisel)) is an open-source hardware description language (HDL) used to describe digital electronics and circuits at the register-transfer level that facilitates advanced circuit generation and design reuse for both ASIC and FPGA digital logic designs.
         * [slides](https://docs.google.com/presentation/d/1gMtABxBEDFbCFXN_-dPyvycNAyFROZKwk-HMcnxfTnU/edit#slide=id.p)
         * [Finite impulse response](https://en.wikipedia.org/wiki/Finite_impulse_response) (FIR)
         * [Learn Chisel online!](https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master)
             + Please run the cell blocks by either pressing SHIFT+ENTER on your keyboard
-    - [RISC-V CPU Datapath](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec12.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arQ_gDRnVS4ams3sUajgfEL)
-        + [slides](https://docs.google.com/presentation/d/1SbeyDTycsb97201QvzxGa4CmE9bmRDyd/edit?usp=sharing)
-    - [Single-Cycle CPU Control](https://drive.google.com/drive/folders/1QAqqFyQUAu8GE_FvvqGHlF_Nk5VKzleC) / [video](https://youtu.be/0WnPU46zjbA)
-        + [slides](https://docs.google.com/presentation/d/1UvXegiqDEGa5IOWMnnybxK4jftMY7MOF/edit?usp=sharing)
     - MIT 6.191 [L15: Introduction to Pipelining](https://youtu.be/5NQkhqZe8_8), [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA)
         * [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
 
