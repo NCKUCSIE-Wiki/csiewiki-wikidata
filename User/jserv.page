@@ -106,6 +106,7 @@ categories: User
 
 近期研究
 =======
+- [Accelerate RISC-V Instruction Set Simulation by Tiered JIT Compilation](https://dl.acm.org/doi/10.1145/3689490.3690399)
 - [RON: One-Way Circular Shortest Routing to Achieve Efficient and Bounded-waiting Spinlocks](https://www.usenix.org/conference/osdi23/presentation/lo)
 - [Effective System Call Aggregation (ESCA)](https://eecheng87.github.io/ESCA/)
 - [A Novel Massive Deployment Solution Based on the Peer-to-Peer Protocol](https://www.mdpi.com/2076-3417/9/2/296)
