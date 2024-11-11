@@ -126,7 +126,7 @@ Computer Architecture (Fall 2024)
     - [rv32emu](https://github.com/sysprog21/rv32emu) development, [capable of running Linux kernel smoothly](https://www.facebook.com/groups/system.software2024/posts/1722546388523252/) ([#508](https://github.com/sysprog21/rv32emu/pull/508))
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p)
     - [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
-    - [RISC-V 5-Stage Pipeline / Hazards](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec14.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aq-xpoKcmd7X9w-l6KHiNMa)
+    - [RISC-V 5-Stage Pipeline](https://docs.google.com/presentation/d/1v-Squx8lK-oOrflFOwBZh-ue94seVHZudqDOgJmFf5Q/edit?usp=sharing) / [video-1](https://youtu.be/LJt737KqWzI), [video-2](https://youtu.be/UxMLmMdFzTI), [video-3](https://youtu.be/oPmRV9MzuIU)
     - [Lab3: Construct a single-cycle CPU with Chisel](https://hackmd.io/@sysprog/r1mlr3I7p)
     - Assignment: [Homework3: Single-cycle CPU in Chisel](https://hackmd.io/@sysprog/2023-arch-homework3)  (Due: Dec 1, 2023)
 
