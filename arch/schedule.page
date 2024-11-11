@@ -122,9 +122,8 @@ Computer Architecture (Fall 2024)
             - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4) / [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
             - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5) / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol) / [annotated with Ripes](https://hackmd.io/@wIVnCcUaTouAktrkMVLEMA/rkm8OkOjF)
             - [2022 Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4) / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/SJxvlqOds)
-    - [rv32emu](https://github.com/sysprog21/rv32emu) development
-        * commit [c1b8db0](https://github.com/sysprog21/rv32emu/commit/c1b8db0edec677cf654d19065b09db666bbd5b4f) successfully resolved a known issue that was preventing Doom from launching.
-        * However, Quake renders incorrectly. ([#258](https://github.com/sysprog21/rv32emu/issues/258))
+            - [2023 Quiz4](https://hackmd.io/@sysprog/arch2023-quiz4) / [solution](https://hackmd.io/@sysprog/arch20223-quiz4-sol) / [annotated](https://hackmd.io/@c3WNnG7RRK2J17ifSiezZA/Bk1mQfKuT)
+    - [rv32emu](https://github.com/sysprog21/rv32emu) development, [capable of running Linux kernel smoothly](https://www.facebook.com/groups/system.software2024/posts/1722546388523252/) ([#508](https://github.com/sysprog21/rv32emu/pull/508))
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p)
     - [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [RISC-V 5-Stage Pipeline / Hazards](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec14.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aq-xpoKcmd7X9w-l6KHiNMa)
