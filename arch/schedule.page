@@ -116,24 +116,22 @@ Computer Architecture (Fall 2024)
 
 * Week 10 (Nov 12): Pipelined Processors
     - Announcement:
-        + [Homework3](https://hackmd.io/@sysprog/2023-arch-homework3) is out.
         + Next week, we will continue reviewing all the assignments.
-        + Quiz4 is scheduled next week.
+        + Quiz 4 is scheduled next week.
             - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4) / [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
             - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5) / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol) / [annotated with Ripes](https://hackmd.io/@wIVnCcUaTouAktrkMVLEMA/rkm8OkOjF)
             - [2022 Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4) / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/SJxvlqOds)
             - [2023 Quiz4](https://hackmd.io/@sysprog/arch2023-quiz4) / [solution](https://hackmd.io/@sysprog/arch2023-quiz4-sol) / [annotated](https://hackmd.io/@c3WNnG7RRK2J17ifSiezZA/Bk1mQfKuT)
+        + The next homework assignment will be given out next week, along with Quiz 4. Please review [last year's homework](https://hackmd.io/@sysprog/2023-arch-homework3) to get familiar with the procedure and expectations.
     - [rv32emu](https://github.com/sysprog21/rv32emu) development, [capable of running Linux kernel smoothly](https://www.facebook.com/groups/system.software2024/posts/1722546388523252/) ([#508](https://github.com/sysprog21/rv32emu/pull/508))
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p)
     - [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [RISC-V 5-Stage Pipeline](https://docs.google.com/presentation/d/1v-Squx8lK-oOrflFOwBZh-ue94seVHZudqDOgJmFf5Q/edit?usp=sharing) / [video-1](https://youtu.be/LJt737KqWzI), [video-2](https://youtu.be/UxMLmMdFzTI), [video-3](https://youtu.be/oPmRV9MzuIU)
     - [Lab3: Construct a single-cycle CPU with Chisel](https://hackmd.io/@sysprog/r1mlr3I7p)
-    - Assignment: [Homework3: Single-cycle CPU in Chisel](https://hackmd.io/@sysprog/2023-arch-homework3)  (Due: Dec 1, 2023)
 
 * Week 11 (Nov 19): Quiz + Homework Review
-    - [Quiz4](https://hackmd.io/@sysprog/arch2023-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2023-quiz4-sol)
-    - [Homework1](https://hackmd.io/@sysprog/2023-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2023-arch-homework2)
-    - [Complex Pipelines, Out-of-Order Issue, Register Renaming](https://inst.eecs.berkeley.edu/~cs152/sp19/lectures/L10-ComplexPipes.pdf)
+    - [Quiz4](https://hackmd.io/@sysprog/arch2024-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2024-quiz4-sol)
+    - [Homework1](https://hackmd.io/@sysprog/2024-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2024-arch-homework2)
 
 * Week 12 (Nov 26): Cache
     * Announcement
