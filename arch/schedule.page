@@ -141,15 +141,12 @@ Computer Architecture (Fall 2024)
             - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol) / [with Ripes simulation](https://hackmd.io/@arthur-chang/SyLa2qb3Y)
             - [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
         * This semester, we will conduct 7 quizzes. Out of these, the best 4 will be selected for grading purposes.
-        * The instructor will submit the grades on the school's designated deadline ([Jan 17, 2024](https://www.ncku.edu.tw/p/412-1000-6149.php?Lang=zh-tw)) for grade registration. This means that students will have ample time to dedicate to the final project assigned in this course.
-    * [Caches: Direct-mapped, set-associative](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec16.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0apRiQ2QPjzyq8APGEjnqW1w)
-    * [Multi-level Caches, Cache Questions](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec17.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqHsuO6U2bIpwDGqO6UAetk)
-    - [Lab4: Cache](https://inst.eecs.berkeley.edu/~cs61c/fa22/labs/lab07/)
-        + [Requirements](https://inst.eecs.berkeley.edu/~cs61c/fa20/labs/lab08/) / [Reference work](https://hackmd.io/@Lt35rTMeTi22rWqrBgSQzg/SkXXQ_LJ8)
+        * The instructor will submit the grades on the school's designated deadline ([Jan 24, 2025](https://www.ncku.edu.tw/p/412-1000-6149.php?Lang=zh-tw)) for grade registration. This means that students will have ample time to dedicate to the final project assigned in this course.
+    * [Cache (1)](https://docs.google.com/presentation/d/1dv9zkRV5mS2heGojIPm00Ms0fAqKDQ2D7yE26P4MgJI/edit?usp=sharing) / [video](https://youtu.be/nsdIU-S0pp4)
     * Recall: [The golden age of ever-changing computer architecture](https://hackaday.com/2019/11/27/the-golden-age-of-ever-changing-computer-architecture/)
         * [The next big tech war front: RISC-V](https://asiatimes.com/2023/11/the-next-big-tech-war-front-risc-v/)
         * [Computing on Andromeda: Chip Company Releases 13.5M Core Supercomputer](https://www.allaboutcircuits.com/news/computing-on-andromeda-chip-company-releases-13.5m-core-supercomputer/)
-        * [Designing in 2023: 10 Problems to Solve w/ Jim Keller](https://youtu.be/o70yKYWgtVI) - [Tenstorrent](https://tenstorrent.com/)
+        * [Designing in 2023: 10 Problems to Solve](https://youtu.be/o70yKYWgtVI) - Jim Keller, [Tenstorrent](https://tenstorrent.com/)
  8-wide Ascalon RISC-V core.
  
 * Week13 (Dec 3): Virtual Memory + Operating System + Vector Extension
