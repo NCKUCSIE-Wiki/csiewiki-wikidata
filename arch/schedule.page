@@ -148,7 +148,6 @@ Computer Architecture (Fall 2024)
     * [Cache (4)](https://docs.google.com/presentation/d/18ISfU5CJujmOwekab3fJ8A8W6z2cFgZ_BNy6moyX8Po/edit?usp=sharing) / [video](https://youtu.be/SQLmn3VgABc)
     * Recall: [The golden age of ever-changing computer architecture](https://hackaday.com/2019/11/27/the-golden-age-of-ever-changing-computer-architecture/)
         * [The next big tech war front: RISC-V](https://asiatimes.com/2023/11/the-next-big-tech-war-front-risc-v/)
-        * [Computing on Andromeda: Chip Company Releases 13.5M Core Supercomputer](https://www.allaboutcircuits.com/news/computing-on-andromeda-chip-company-releases-13.5m-core-supercomputer/)
         * [Designing in 2023: 10 Problems to Solve](https://youtu.be/o70yKYWgtVI) - Jim Keller, [Tenstorrent](https://tenstorrent.com/)
             - [Oral History of Jim Keller](https://youtu.be/Xh8nhK7WS80)
 * Week13 (Dec 3): Virtual Memory + Operating System + Vector Extension
