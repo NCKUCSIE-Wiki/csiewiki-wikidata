@@ -153,7 +153,8 @@ Computer Architecture (Fall 2024)
             - [Oral History of Jim Keller](https://youtu.be/Xh8nhK7WS80)
 * Week13 (Dec 3): Virtual Memory + Operating System + Vector Extension
     - Announcement:
-        + Term projects will be listed on Dec 5. [Term projects of 2022](https://hackmd.io/@sysprog/arch2022-projects)
+        + Term projects will be listed on Dec 5. [Term projects of 2023](https://hackmd.io/@sysprog/arch2023-projects)
+    * News: [Intel Announces Retirement of CEO Pat Gelsinger](https://www.intel.com/content/www/us/en/newsroom/news/intel-ceo-news-dec-2024.html) - Early last month, Intel was removed from the Dow Jones Industrial Average, which comprises 30 leading U.S. stocks, to make room for Nvidia as the index shifts toward AI pioneers. / [What Is the Dow Jones Industrial Average?](https://youtu.be/Q7Jj20OrdiM)
     * [Virtual Memory](https://youtu.be/TsxZlXOrt8U) / UCB: [Virtual Memory](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec19.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0ar2Wia7JngBFMmwRlr4s79j)
     - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
     - [Freestanding RISC-V Programs](https://youtu.be/iml0DBo5yqo)
