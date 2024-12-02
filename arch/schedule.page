@@ -136,13 +136,6 @@ Computer Architecture (Fall 2024)
 * Week 12 (Nov 26): Cache
     * Announcement
         * Moved to self-study, no in-class session today!
-        * Quiz 5 is scheduled on Dec 10
-            - [2023-Quiz5](https://hackmd.io/@sysprog/arch2023-quiz5) / [solution](https://hackmd.io/@sysprog/arch2023-quiz5-sol)
-            - [2022-Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5) / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/ry3j69OOo)
-            - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol) / [with Ripes simulation](https://hackmd.io/@arthur-chang/SyLa2qb3Y)
-            - [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
-        * This semester, we will conduct 7 quizzes. Out of these, the best 4 will be selected for grading purposes.
-        * The instructor will submit the grades on the school's designated deadline ([Jan 24, 2025](https://www.ncku.edu.tw/p/412-1000-6149.php?Lang=zh-tw)) for grade registration. This means that students will have ample time to dedicate to the final project assigned in this course.
     * [Cache (1)](https://docs.google.com/presentation/d/1dv9zkRV5mS2heGojIPm00Ms0fAqKDQ2D7yE26P4MgJI/edit?usp=sharing) / [video](https://youtu.be/nsdIU-S0pp4)
     * [Cache (2)](https://docs.google.com/presentation/d/1rmFD2GZBMjCSsNuHikNiFiDgoDWORYT9anz52l7bgzc/edit?usp=sharing) / [video](https://youtu.be/APK4_rEDT_U)
     * [Cache (3)](https://docs.google.com/presentation/d/1dN876ETDdJATOV0JYQJzvHadBcXAgA03NqG311es7QU/edit?usp=sharing) / [video](https://youtu.be/pQkplfQtIfM)
@@ -153,18 +146,26 @@ Computer Architecture (Fall 2024)
             - [Oral History of Jim Keller](https://youtu.be/Xh8nhK7WS80)
 * Week13 (Dec 3): Virtual Memory + Operating System + Vector Extension
     - Announcement:
+        * Quiz 5 is scheduled on Dec 10
+            - [2023-Quiz5](https://hackmd.io/@sysprog/arch2023-quiz5) / [solution](https://hackmd.io/@sysprog/arch2023-quiz5-sol) / [annotated](https://hackmd.io/@c3WNnG7RRK2J17ifSiezZA/Bk1mQfKuT)
+            - [2022-Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5) / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/ry3j69OOo)
+            - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol) / [with Ripes simulation](https://hackmd.io/@arthur-chang/SyLa2qb3Y)
+            - [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
+        * This semester, we will conduct 7 quizzes. Out of these, the best 4 will be selected for grading purposes.
+        * The instructor will submit the grades on the school's designated deadline ([Jan 24, 2025](https://www.ncku.edu.tw/p/412-1000-6149.php?Lang=zh-tw)) for grade registration. This means that students will have ample time to dedicate to the final project assigned in this course.
         + Term projects will be listed on Dec 5. [Term projects of 2023](https://hackmd.io/@sysprog/arch2023-projects)
     * News: [Intel Announces Retirement of CEO Pat Gelsinger](https://www.intel.com/content/www/us/en/newsroom/news/intel-ceo-news-dec-2024.html) - Early last month, Intel was removed from the Dow Jones Industrial Average, which comprises 30 leading U.S. stocks, to make room for Nvidia as the index shifts toward AI pioneers. / [What Is the Dow Jones Industrial Average?](https://youtu.be/Q7Jj20OrdiM)
     * [Virtual Memory](https://youtu.be/TsxZlXOrt8U)
         - UCB: [Virtual Memory I](https://docs.google.com/presentation/d/1_KtUjyxALrATgiT9JsiK8GKQXNw5M0BAllsdz78Lm74/edit?usp=sharing) / [video](https://youtu.be/lU0MDQHmGxA)
         - UCB: [Virtual Memory II](https://docs.google.com/presentation/d/1KB2HKnvqsKq65udERzMw9imTMtV8KREMWmKc7w8XOfk/edit?usp=sharing) / [video](https://youtu.be/YtBlu56U3Lw)
-    - [Operating Systems](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec18.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
     - [Freestanding RISC-V Programs](https://youtu.be/iml0DBo5yqo)
         + [bare metal](https://en.wikipedia.org/wiki/Bare_machine)
-    - RISC-V Vector extension
+    - UCB: [Operating Systems](https://www.youtube.com/playlist?list=PLDoI-XvXO0arq3vh2gcLvr5isLK4CuK3B)
+    - RISC-V Vector extension (RVV)
+        * [The Magic of RISC-V Vector Processing](https://youtu.be/Ozj_xU0rSyY)
         * [Introduction to the RISC-V Vector Extension](https://eupilot.eu/wp-content/uploads/2022/11/RISC-V-VectorExtension-1-1.pdf)
         * [The RISC-V Vector ISA Tutorial](https://riscv.org/wp-content/uploads/2018/05/15.20-15.55-18.05.06.VEXT-bcn-v1.pdf)
-        * [RISC-V "V" Vector Extension](https://inst.eecs.berkeley.edu/~cs152/sp22/handouts/sp22/riscv-v-spec-0.10.pdf)
+        * [RISC-V "V" Vector Extension](https://github.com/riscvarchive/riscv-v-spec/blob/master/v-spec.adoc)
 
 * Week14 (Dec 10): Quiz + Synchronization
     - Announcement:
