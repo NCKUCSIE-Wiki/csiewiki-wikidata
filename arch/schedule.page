@@ -159,7 +159,8 @@ Computer Architecture (Fall 2024)
         - UCB: [Virtual Memory I](https://docs.google.com/presentation/d/1_KtUjyxALrATgiT9JsiK8GKQXNw5M0BAllsdz78Lm74/edit?usp=sharing) / [video](https://youtu.be/lU0MDQHmGxA)
         - UCB: [Virtual Memory II](https://docs.google.com/presentation/d/1KB2HKnvqsKq65udERzMw9imTMtV8KREMWmKc7w8XOfk/edit?usp=sharing) / [video](https://youtu.be/YtBlu56U3Lw)
     - [The Future of Mission Critical Edge Compute Is RISC-V](https://youtu.be/Clvg2q3cC8M)
-        * multi-core flexibility: SMP, AMP, hypervisor
+        * (12:47) multi-core flexibility: SMP, AMP, hypervisor
+        * [Lockstep systems](https://en.wikipedia.org/wiki/Lockstep_(computing)) are fault-tolerant computers that simultaneously perform identical operations in parallel. Borrowed from military marching terminology, these systems use redundancy to detect and correct errors. With two systems (dual modular redundancy), errors can be identified, and with three systems (triple modular redundancy), errors can be automatically corrected through majority voting.
         * [Customizing Linux Systems in Aerospace](https://docs.google.com/presentation/d/1pRThP2vP78nNeb3Ds2563eNJne8QeAC2mWF67_FnLKw/edit?usp=sharing)
     - [Freestanding RISC-V Programs](https://youtu.be/iml0DBo5yqo)
         + [bare metal](https://en.wikipedia.org/wiki/Bare_machine)
