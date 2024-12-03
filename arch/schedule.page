@@ -155,6 +155,7 @@ Computer Architecture (Fall 2024)
         * The instructor will submit the grades on the school's designated deadline ([Jan 24, 2025](https://www.ncku.edu.tw/p/412-1000-6149.php?Lang=zh-tw)) for grade registration. This means that students will have ample time to dedicate to the final project assigned in this course.
         + Term projects will be listed on Dec 5. [Term projects of 2023](https://hackmd.io/@sysprog/arch2023-projects)
     * News: [Intel Announces Retirement of CEO Pat Gelsinger](https://www.intel.com/content/www/us/en/newsroom/news/intel-ceo-news-dec-2024.html) - Early last month, Intel was removed from the Dow Jones Industrial Average, which comprises 30 leading U.S. stocks, to make room for Nvidia as the index shifts toward AI pioneers. / [What Is the Dow Jones Industrial Average?](https://youtu.be/Q7Jj20OrdiM)
+    * [Lab3: Construct a RISC-V CPU with Chisel](https://hackmd.io/@sysprog/SJrf1Rim1l)
     * [Virtual Memory](https://youtu.be/TsxZlXOrt8U)
         - UCB: [Virtual Memory I](https://docs.google.com/presentation/d/1_KtUjyxALrATgiT9JsiK8GKQXNw5M0BAllsdz78Lm74/edit?usp=sharing) / [video](https://youtu.be/lU0MDQHmGxA)
         - UCB: [Virtual Memory II](https://docs.google.com/presentation/d/1KB2HKnvqsKq65udERzMw9imTMtV8KREMWmKc7w8XOfk/edit?usp=sharing) / [video](https://youtu.be/YtBlu56U3Lw)
