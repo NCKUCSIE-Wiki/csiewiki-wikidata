@@ -174,7 +174,8 @@ Computer Architecture (Fall 2024)
 
 * Week14 (Dec 10): Quiz + Synchronization
     - Announcement:
-        * Check the listing of [final/term projects](https://hackmd.io/@sysprog/arch2023-projects) and fill in your names.
+        * Regarding the final project, students may form groups of 1 to 3 members (the project's difficulty will depend on the group size and members' backgrounds). Please refer to last year’s projects for reference and send an email to `jserv.tw@gmail.com`, specifying your group members and proposed project topics (you may suggest multiple topics, with the final decision made by the instructor).
+        * Check the listing of [final/term projects in 2023](https://hackmd.io/@sysprog/arch2023-projects) for reference.
     - [Quiz5](https://hackmd.io/@sysprog/arch2024-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2024-quiz5-sol)
     - [Debunking CISC vs RISC code density](https://www.bitsnbites.eu/cisc-vs-risc-code-density/)
     - [Synchronization](https://youtu.be/r8H_af_dCF0)
