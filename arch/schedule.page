@@ -184,13 +184,14 @@ Computer Architecture (Fall 2024)
 * Week15 (Dec 17): Operating System, Multithreading
     - Announcement:
         * Quiz6 is scheduled on Dec 24
-            - [2022-Quiz6](https://hackmd.io/@sysprog/arch2022-quiz6): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2022-quiz6-sol)
+            - [2023-Quiz6](https://hackmd.io/@sysprog/arch2023-quiz6) / [solution](https://hackmd.io/@sysprog/arch2023-quiz6-sol)
+            - [2022-Quiz6](https://hackmd.io/@sysprog/arch2022-quiz6) / [solution](https://hackmd.io/@sysprog/arch2022-quiz6-sol)
             - [2021-Quiz7](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz7-sol)
             - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol)
             - [2020-Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6) / [solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
     - [Synchronization](https://youtu.be/r8H_af_dCF0)
         + Please check your operating system textbook for such topic.
-    - [Multithreading Issues + Cache Coherency](https://inst.eecs.berkeley.edu/~cs61c/su20/pdfs/lectures/lec23.pdf) / [video](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqgj_8Og51XoE7iyAu5yEWZ)
+    - [Multithreading Issues + Cache Coherency](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqgj_8Og51XoE7iyAu5yEWZ)
         + Let's skip OpenMP part
     - video: [The Future of Operating Systems on RISC-V](https://youtu.be/emnN9p4vhzk) / [transcript](https://www.infoq.com/presentations/risc-v-future/)
     - [Multithreaded Application Synchronization Part I](https://youtu.be/kk8q5rwm1ZI) / [Part II](https://youtu.be/dAVZTHxC16w)
