@@ -200,11 +200,9 @@ Computer Architecture (Fall 2024)
         + RISC-V AMOSWAP instruction
         + [RISC-V spec references the word 'hart' - what does 'hart' mean?](https://stackoverflow.com/questions/42676827/risc-v-spec-references-the-word-hart-what-does-hart-mean)
  
-* Week16 (Dec 24): Quiz + Memory Model, Synchronization, I/O
-    - [Quiz6](https://hackmd.io/@sysprog/arch2023-quiz6) / [solution](https://hackmd.io/@sysprog/arch2023-quiz6-sol)
+* Week16 (Dec 24): Quiz + Memory Model, I/O
+    - [Quiz6](https://hackmd.io/@sysprog/arch2024-quiz6) / [solution](https://hackmd.io/@sysprog/arch2024-quiz6-sol)
     - [Memory Model](https://youtu.be/QkbWgCSAEoo) / [slides](https://riscv.org/wp-content/uploads/2018/05/14.25-15.00-RISCVMemoryModelTutorial.pdf)
-    - [Advanced topics on Synchronization - 1](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L19-MCM.pdf)
-    - [Advanced topics on Synchronization - 2](https://inst.eecs.berkeley.edu/~cs152/sp20/lectures/L22-Synch.pdf)
     - [I/O: Devices, Polling, Interrupts](https://drive.google.com/drive/folders/1NRoyYSbAyarMhmPD5LiY6YEqYpLoZx_s) / [video](https://youtu.be/0dyqcFC_q2Q?t=1247)
         * Traps/Interrupts/Exceptions
         * Trap Handling in 5-Stage Pipeline
@@ -213,12 +211,9 @@ Computer Architecture (Fall 2024)
     - Announcements
         * Due to the instructor's significant involvement in a confidential project, there has been limited participation in this course. Consequently, the instructor proposes a modification to the course grading structure.
             - The new breakdown will be as follows: Quiz (30%), Homework (30%), Final/Term Project (25%), and an additional "Base" component (15%). This "Base" component ensures that each student's starting score is at least 15%.
-        * Quiz7 is scheduled on Jan 7, 2024
+        * Quiz7 is scheduled on Jan 7, 2025
     - [rv32emu](https://github.com/sysprog21/rv32emu) introduces tier-1 JIT compiler to accelerate RISC-V simulation.
         * Execute `make ENABLE_JIT=1 clean all` and then run `build/rv32emu build/smolnes.elf` to play NES games.
-    - [listing of final/term projects](https://hackmd.io/@sysprog/arch2023-projects)
-        * You must provide the materials and demonstrate to the lecturer before Jan 14, 2023.
-        * Summarize what you did and send email to `<jserv.tw@gmail.com>`.
     - [Modern Processor Architecture](https://youtu.be/sbGtFtxqkkg)
         * [Modern Microprocessors: A 90-Minute Guide!](https://www.lighterra.com/papers/modernmicroprocessors/)
     - [Introduction to Dynamic Branch Prediction](https://youtu.be/PFmx2p6NA0A), [Advanced Branch Prediction](https://youtu.be/avp3bDqCXYM)
