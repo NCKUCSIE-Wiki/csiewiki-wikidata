@@ -214,19 +214,16 @@ Computer Architecture (Fall 2024)
 * Week17 (Dec 31): Modern Processors
     - Announcements
         * Quiz7 is scheduled on Jan 7, 2025
-    - [rv32emu](https://github.com/sysprog21/rv32emu) introduces tier-1 JIT compiler to accelerate RISC-V simulation.
-        * Execute `make ENABLE_JIT=1 clean all` and then run `build/rv32emu build/smolnes.elf` to play NES games.
     - [Modern Processor Architecture](https://youtu.be/sbGtFtxqkkg)
         * [Modern Microprocessors: A 90-Minute Guide!](https://www.lighterra.com/papers/modernmicroprocessors/)
     - [Introduction to Dynamic Branch Prediction](https://youtu.be/PFmx2p6NA0A), [Advanced Branch Prediction](https://youtu.be/avp3bDqCXYM)
-
-* Week 18 (Jan 7): Modern Processors
-    - [Quiz7](https://hackmd.io/@sysprog/arch2023-quiz7) / [solution](https://hackmd.io/@sysprog/arch2023-quiz7-sol)
     - [Tournament Predictors and Branch Prediction Accuracy](https://youtu.be/-T8yDJ8vTuI)
     - Project: [Analyze and improve srv32](https://hackmd.io/@peishan/HkJrtKpoY)
     - [Hardware Based Speculation](https://youtu.be/mFtX28lH4O8)
         * [Speculative Processor Vulnerability](https://developer.arm.com/Arm%20Security%20Center/Speculative%20Processor%20Vulnerability)
         * [Spectre-BHB](https://developer.arm.com/Arm%20Security%20Center/Spectre-BHB)
-    - Case study: [SoomRV](https://github.com/mathis-s/SoomRV) - simple superscalar out-of-order RISC-V core. It can execute up to 4 instructions per cycle and is able to boot Linux.
     - [RISC vs. CISC](https://yarchive.net/comp/risc_definition.html) by [John Mashey](https://en.wikipedia.org/wiki/John_Mashey), one of the founders of the Standard Performance Evaluation Corporation (SPEC) benchmarking group.
         * [HackerNews](https://news.ycombinator.com/item?id=34196370)
+
+* Week 18 (Jan 7): Modern Processors
+    - [Quiz7](https://hackmd.io/@sysprog/arch2023-quiz7) / [solution](https://hackmd.io/@sysprog/arch2023-quiz7-sol)
