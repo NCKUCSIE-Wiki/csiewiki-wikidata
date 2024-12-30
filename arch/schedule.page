@@ -211,7 +211,7 @@ Computer Architecture (Fall 2024)
         * Traps/Interrupts/Exceptions
         * Trap Handling in 5-Stage Pipeline
 
-* Week17 (Dec 31): Modern Processors
+* Week17 (Dec 31): Modern Processors | [online via YouTube](https://youtube.com/live/OnW1YjgTew8?feature=share)
     - Announcements
         * Quiz7 is scheduled on Jan 7, 2025
     - [Modern Processor Architecture](https://youtu.be/sbGtFtxqkkg)
@@ -225,5 +225,5 @@ Computer Architecture (Fall 2024)
     - [RISC vs. CISC](https://yarchive.net/comp/risc_definition.html) by [John Mashey](https://en.wikipedia.org/wiki/John_Mashey), one of the founders of the Standard Performance Evaluation Corporation (SPEC) benchmarking group.
         * [HackerNews](https://news.ycombinator.com/item?id=34196370)
 
-* Week 18 (Jan 7): Modern Processors
+* Week 18 (Jan 7): Review
     - [Quiz7](https://hackmd.io/@sysprog/arch2023-quiz7) / [solution](https://hackmd.io/@sysprog/arch2023-quiz7-sol)
