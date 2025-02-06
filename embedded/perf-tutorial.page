@@ -198,7 +198,7 @@ Perf 包含 20 幾種子工具集，不過我還沒碰過很多，我根據目�
 $ perf help <command>
 ```
 
-###perf list
+### perf list
 這應該是大部分的人第一次安裝 perf 後所下的第一個指令，它能印出 perf 可以觸發哪些 event，不同 CPU 可能支援不同 hardware event，不同 kernel 版本支援的 software、tracepoint event 也不同。我的 perf 版本是`3.19.8`，所支援的 event 已經超過 1400 項（另外要列出 Tracepoint event 必須開啟 root 權限）。
 ```
 $ perf list
@@ -283,7 +283,7 @@ $ perf stat --repeat 5 -e cache-misses,cache-references,instructions,cycles ./pe
 
 cache-references 從 `128,483,262`下降到 `2,414,202`，差了五十幾倍，執行時間也縮短為原來的三分之一！
 
-###perf record & perf report
+### perf record & perf report
 有別於 stat，record 可以針對函式級別進行 event 統計，方便我們對程序「熱點」作更精細的分析和優化。
 我們來對以下程式，使用 perf record 進行 branch 情況分析
 ```c
