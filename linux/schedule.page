@@ -1,5 +1,5 @@
 ---
-title: Linux 核心設計/實作 (Linux Kernel Internals)
+title: Linux 核心設計 (Linux Kernel Internals)
 categories: linux, performance, security, compiler, kernel, rtos, unix
 toc: no
 ---
@@ -14,7 +14,7 @@ toc: no
 - 「Linux 核心設計」實際授課時間為每週二 15:10-18:10 (實體授課) 及每週四 19:30-21:00 (線上測驗和討論)
 - 暫定 6 月 28 日安排期末專題展示，將邀請資訊科技產業主管和工程人員前來指教，請排開其他行程
 
-Linux 核心設計/實作 (Spring 2025) 課程進度表暨線上資源
+Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
 ------------------------------------------------------
 * 第 1 週 (Feb 18, 20): 誠實面對自己
     - [課程簡介和注意須知](https://bit.ly/linux2024-intro) / [課程簡介解說錄影](https://youtu.be/tKj-YODhPsE)`*`
