@@ -7,27 +7,25 @@ toc: no
 - Instructor: [Jim Huang](/User/jserv) (黃敬群) `<jserv.tw@gmail.com>`
     * [Facebook 粉絲專頁](https://www.facebook.com/JservFans) (不要擔心提了笨問題，這專門用來和學生互動，可預約一對一討論)
 - 訂閱 [Google Calendar](https://calendar.google.com/calendar/embed?src=embedded.master2015%40gmail.com&ctz=Asia%2FTaipei) 以得知實體/線上課程的進行方式
-- 討論區: [https://www.facebook.com/groups/system.software2024/](https://www.facebook.com/groups/system.software2024/)
+- 討論區: [https://www.facebook.com/groups/system.software2025/](https://www.facebook.com/groups/system.software2025/)
 - 課程信箱: `<embedded.master2015@gmail.com>` (授課教師和助教會以該信箱發公告), [往年課程進度](/linux/schedule-old)
 - [Linux 核心設計 (線上講座)](https://hackmd.io/@sysprog/linux-kernel-internal)
 - 下方課程進度表標註有 `*` 的項目，表示內附錄影的教材
-- 「Linux 核心實作」課程內容幾乎與「Linux 核心設計」一致，採線上為主的進行方式
-- 注意: 「Linux 核心實作」實際授課時間為每週四 19:30-22:30，前半段是線上測驗，後半段則是檢討和講解，第一週則是例外，安排在 2 月 23 日 20:00
-- 注意: 參與「Linux 核心設計」的學員也該參加自 2 月 29 日起每週四晚間的線上測驗，直到 6 月 27 日晚間
+- 「Linux 核心設計」實際授課時間為每週二 15:10-18:10 (實體授課) 及每週四 19:30-21:00 (線上測驗和討論)
 
-Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
+Linux 核心設計/實作 (Spring 2025) 課程進度表暨線上資源
 ------------------------------------------------------
-* 第 1 週 (Feb 20, 23): 誠實面對自己
+* 第 1 週 (Feb 18, 20): 誠實面對自己
     - [課程簡介和注意須知](https://bit.ly/linux2024-intro) / [課程簡介解說錄影](https://youtu.be/tKj-YODhPsE)`*`
         * 每週均安排隨堂測驗，採計其中最高分的 12 次
         * 學期評分方式: 隨堂測驗 (20%) + 個人作業+報告及專題 (30%) + 自我評分 (50%)
         * 留意[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)
     - [部分教材解說](https://youtu.be/ptbJQUAv2ro)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
-    - 歷屆修課學生心得: [向景亘](/User/OscarShiang), [張家榮](/User/JaredCJR), [蕭奕凱](/User/Veck), [方鈺學](/User/JulianATA)
+    - 歷屆修課學生心得: [葉惟欣](/User/weihsinyeh), [向景亘](/User/OscarShiang), [張家榮](/User/JaredCJR), [方鈺學](/User/JulianATA)
     - 佳句偶得：「大部分的人一輩子洞察力不彰，原因之一是怕講錯被笑。想了一點點就不敢繼續也沒記錄或分享，時間都花在讀書查資料看別人怎麼想。看完就真的沒有自己的洞察了」([出處](https://www.facebook.com/chtsai/posts/pfbid0Sw9Bv8GN8houyS6A6Mvg5gtWXShKFgguhTHuNFsDDGn9XZQE7C64pBy5atB9gXtJl))
     - 分組報告示範: [ARM-Linux](/embedded/arm-linux), [Xvisor](/embedded/xvisor)
     - [GNU/Linux 開發工具共筆](https://hackmd.io/@sysprog/gnu-linux-dev/)`*`: 務必 *自主* 學習 Linux 操作, Git, HackMD, LaTeX 語法 (特別是數學式), GNU make, perf, gnuplot
-        * 確認 Ubuntu Linux 22.04-LTS (或更新的版本) 已順利安裝到你的電腦中
+        * 確認 Ubuntu Linux 24.04-LTS 已順利安裝到你的電腦中
     - [透過 Computer Systems: A Programmer’s Perspective 學習系統軟體](https://hackmd.io/@sysprog/CSAPP)`*`: 本課程指定的教科書 (請及早購買: [天瓏書店](https://www.tenlong.com.tw/products/9787111544937))
     - [軟體缺失導致的危害](https://hackmd.io/@sysprog/B1eo44C1-)
         * 1970 年代推出的首款廣體民航客機波音 747 軟體由大約 40 萬行程式碼構成，而 2011 年引進的波音 787 的軟體規模則是波音 747 的 16 倍，約 650 萬行程式碼。換言之，你我的性命緊繫於一系列極為複雜的軟體系統之中，能不花點時間了解嗎？
@@ -58,7 +56,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     - 第 1 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz1) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/YCnIwo_0R-GaYjISEZwG1A)
 
-* 第 2 週 (Feb 27, 29): C 語言程式設計
+* 第 2 週 (Feb 25, 27): C 語言程式設計
     * 公告
         - 研究生要依據[課程說明](https://bit.ly/linux2024-intro)，寄送學習狀況給「實驗室指導教授」(不是授課教師)，請詳閱[學習回顧信件之書寫範本和規範](https://hackmd.io/@sysprog/linux2024-progress)
     * [部分教材解說](https://youtu.be/YawpeXUiN1k)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
@@ -92,7 +90,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     - 第 2 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz2) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/YCnIwo_0R-GaYjISEZwG1A)
 
-* 第 3 週 (Mar 5, 7): 數值系統和 C 語言程式設計
+* 第 3 週 (Mar 4, 6): 數值系統和 C 語言程式設計
     * 公告:
         - 第 3 次作業包含二項子作業。
         - 研究生要依據[課程說明](https://bit.ly/linux2024-intro)，寄送學習狀況給「實驗室指導教授」(不是授課教師)，請詳閱[學習回顧信件之書寫範本和規範](https://hackmd.io/@sysprog/linux2024-progress)
@@ -116,7 +114,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz3) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/_GIs8jAvQH2q505AiAbQ4A)
 
-* 第 4 週 (Mar 12, 14): 數值系統 + 編譯器
+* 第 4 週 (Mar 11, 13): 數值系統 + 編譯器
     - 公告
         + [第四次作業](https://hackmd.io/@sysprog/HkatSCZCT)已指派，內容是第三週和第四週測驗題
         + 3 月 21 日 19:00 安排 code review (在成大資訊系舊館二樓的 4263 教室)，請留意信件通知，以得知進行方式
@@ -143,14 +141,13 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz4) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/_GIs8jAvQH2q505AiAbQ4A)
 
-* 第 5 週 (Mar 19, 21): Code Review
+* 第 5 週 (Mar 18, 20): Code Review
     - 公告
         + [第四次作業](https://hackmd.io/@sysprog/HkatSCZCT)已指派，內容是第三週和第四週測驗題
-        + 3 月 21 日 19:00 安排 code review (在成大資訊系舊館二樓的 4263 教室)
     * 回顧學員的參與狀況
     - [課堂問答簡記](https://hackmd.io/3e8LI8_0SLOo_UTDAnPKYQ)
 
-* 第 6 週 (Mar 26, 28): System call + CPU Scheduler
+* 第 6 週 (Mar 25, 27): System call + CPU Scheduler
     - 公告
         * [第 5 次作業](https://hackmd.io/@sysprog/BySwQtt06)已指派。對某些學員來說，這是最後一份全體學員通用的作業，之後就是期末專題或客製化作業。
         * 3 月 28 日晚間安排線上測驗 (取消原定的討論)，作答時間 19:30 到 20:30
@@ -170,11 +167,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * [作業](https://hackmd.io/@sysprog/linux2024-homework5): 截止繳交日: Apr 15
         - [assessment](https://hackmd.io/@sysprog/BySwQtt06)
 
-* 第 7 週 (Apr 2, 4): Process, 並行和多執行緒
-    - 公告:
-        * 4 月 4 日晚間不停課，依舊安排線上測驗和討論 (事後提供錄影)，19:30 開始
-        * 4 月 9 日不停課，改為 Google Meet 線上授課 (稍後確認進行方式)
-        - 研究生要依據[課程說明](https://bit.ly/linux2024-intro)，寄送學習狀況給「實驗室指導教授」(不是授課教師)，請詳閱[學習回顧信件之書寫範本和規範](https://hackmd.io/@sysprog/linux2024-progress)
+* 第 7 週 (Apr 1, 3): Process, 並行和多執行緒
     - [教材解說-1](https://youtu.be/mnbIi82iT2A)`*`, [教材解說-2](https://youtu.be/G_BLP3tqocc)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux: 不僅是個執行單元的 Process](https://hackmd.io/@sysprog/linux-process)`*`: Linux 核心對於 UNIX Process 的實作相當複雜，不僅蘊含歷史意義 (幾乎每個欄位都值得講古)，更是反映出資訊科技產業的變遷，核心程式碼的 `task_struct` 結構體更是一絕，廣泛涵蓋 process 狀態、處理器、檔案系統、signal 處理、底層追蹤機制等等資訊，更甚者，還很曖昧地保存著 thread 的必要欄位，好似這兩者天生就脫不了干係
         - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
@@ -198,7 +191,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * Week7 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz7) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/S-UYYCyCQVSaGzwhhVCm2g)
 
-* 第 8 週 (Apr 9, 11): 並行程式設計, lock-free, Linux 同步機制
+* 第 8 週 (Apr 8, 10): 並行程式設計, lock-free, Linux 同步機制
     * 公告:
         - [第 6 次作業](https://hackmd.io/@sysprog/linux2024-integration)已指派
     - [教材解說](https://youtu.be/05x65CayUNw)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
@@ -211,7 +204,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         - [integration](https://hackmd.io/@sysprog/linux2024-integration)
     - [課堂問答簡記](https://hackmd.io/S-UYYCyCQVSaGzwhhVCm2g)
 
-* 第 9 週 (Apr 16, 18): futex, RCU, 伺服器開發與 Linux 核心對應的系統呼叫
+* 第 9 週 (Apr 15, 17): futex, RCU, 伺服器開發與 Linux 核心對應的系統呼叫
     - [教材解說](https://youtu.be/BH6vdKd6kGY)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * Twitter 上面的笑話: index 的複數寫作 indices, complex 的複數寫作 complices, 那 mutex 的複數是什麼？答 "deadlock" -- [出處](https://twitter.com/jfbastien/status/1408440373408460803)
     * [A Deep dive into (implicit) Thread Local Storage](https://chao-tic.github.io/blog/2018/12/25/tls)
@@ -228,7 +221,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * Week9 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz9) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/VyLWa5VNQG-EpDoi2WqTMw)
 
-* 第 10 週 (Apr 23, 25): 現代微處理器
+* 第 10 週 (Apr 22, 24): 現代微處理器
     * [教材解說](https://youtu.be/1zDQfxp_AuU)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告:
         - 本學期最後一份作業: [ktcp](https://hackmd.io/@sysprog/linux2024-ktcp)`*`，之後會進行期末專題
@@ -254,7 +247,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * Week10 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz10) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/J5wYE-XzSkaekqe-OQw6mg)
 
-* 第 11 週 (Apr 30, May 2): 作業回顧 + 期末專題
+* 第 11 週 (Apr 29, May 1): 作業回顧 + 期末專題
     * 公告
         - 課程規劃在 6 月下旬舉辦成果發表，預計採用實體 + 線上直播的模式
         - 注意最後一份作業 [ktcp](https://hackmd.io/@sysprog/linux2024-ktcp)，截止繳交 May 15
@@ -266,7 +259,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     - [2024 年 Linux 核心設計/實作課程期末專題](https://hackmd.io/@sysprog/linux2024-projects)
     - [課堂問答簡記](https://hackmd.io/7KH-fY-vRlmXfXCk88W1Dg)
 
-* 第 12 週 (May 7, 9): 現代微處理器 + 記憶體管理
+* 第 12 週 (May 6, 8): 現代微處理器 + 記憶體管理
     * 公告
         - 5 月 14 日下午，授課教師請大家喝飲料並討論期末專題規劃，請在 15:10 - 16:00 到資訊系新館二樓電腦教室登記飲料
     * [課程期末專題](https://hackmd.io/@sysprog/linux2024-projects)
@@ -290,7 +283,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * Week12 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz12) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/7svssG2MQpe9ozE_IRRZdg)
 
-* 第 13 週 (May 14, 16): 記憶體管理 + 裝置驅動程式
+* 第 13 週 (May 13, 15): 記憶體管理 + 裝置驅動程式
     * 公告:
         - 慶祝專案順利推進，授課教師請學員喝飲料
         - 本週「已進行一對一討論」的學員會收到期末專題的確認信件，尚未預約討論的學員請及早進行
@@ -328,14 +321,14 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * Week13 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz13) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/7svssG2MQpe9ozE_IRRZdg)
 
-* 第 14 週 (May 21, 23): 虛擬化技術
+* 第 14 週 (May 20, 22): 虛擬化技術
     - 公告
         * 原訂 5 月 23 日晚間課程，改為「Linux 核心設計：虛擬化技術」線上講座 (議程結束後提供錄影)
     * [Embedded Virtualization applied in Mobile Devices](https://www.slideshare.net/jserv/mobile-virtualization) / [info](https://www.iis.sinica.edu.tw/zh/page/Events/data/DJ120045.html)
     * [KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm)`*`
     * [2024 年 Linux 核心設計/實作課程期末專題](https://hackmd.io/@sysprog/linux2024-projects)
 
-* 第 15 週 (May 28, 30): 網路封包處理 + 多核處理器架構
+* 第 15 週 (May 27, 29): 網路封包處理 + 多核處理器架構
     * 公告
         - 原訂 5 月 28 日實體課程，改為線上方式進行
         - 5 月 30 日晚間討論專題進行狀況
@@ -361,7 +354,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz15) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/y1QvbjheQ0-alPvocnvPwg)
 
-* 第 16 週 (Jun 4, 6): 程式碼最佳化概念 + 多核處理器架構
+* 第 16 週 (Jun 3, 5): 程式碼最佳化概念 + 多核處理器架構
     * 公告
         - [課程期末專題](https://hackmd.io/@sysprog/linux2024-projects)成果展示 (線上直播) 的規範，請保留 6 月 30 日
         - 善用[行事曆](https://bit.ly/sysprog-calendar)的 office hour，向授課教師預約一對一討論和補考 (6 月 28 日前皆可)
@@ -385,7 +378,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
         - [Memory barriers in C](https://mariadb.org/wp-content/uploads/2017/11/2017-11-Memory-barriers.pdf)
     * [課堂問答簡記](https://hackmd.io/y1QvbjheQ0-alPvocnvPwg)
  
-* 第 17 週 (Jun 11, 13): 即時 Linux 的基礎建設
+* 第 17 週 (Jun 10, 12): 即時 Linux 的基礎建設
     * 公告
         - 佔學期總成績 50% 的自我評量，請在 7 月 4 日中午前完成。範例: [User/OscarShiang](http://wiki.csie.ncku.edu.tw/User/OscarShiang)
         - 自我評量的網址**必須**符合 `/User/你的GitHub帳號名稱` 格式 (區分大小寫)，請不要打錯字。「不能」用「上傳檔案」的功能，使用文字編輯
@@ -413,7 +406,7 @@ Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
     * Week17 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz17) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/t9DHn3F4RQyH3lI5TFZWpQ)
 
-* 第 18 週 (Jun 18, 20): 多核處理器 + Rust
+* 第 18 週 (Jun 17, 19): 多核處理器 + Rust
     * [教材解說](https://youtu.be/VFgRAHemG0Q)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 公告
         - 及早進行[期末專題](https://hackmd.io/@sysprog/linux2024-projects)
@@ -431,12 +424,11 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
     * Week18 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz18) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/t9DHn3F4RQyH3lI5TFZWpQ)
 
-* 第 19 週 (Jun 25, 27): Rust, Linux 核心除錯
+* 第 19 週 (Jun 24, 26): Rust, Linux 核心除錯
     * 公告
-        - 依據「教師線上成績登錄系統」，112 學年第 2 學期繳交期限為 7 月 7 日 23:59，授課教師預計在當日晚間繳交成績，學員在此之前都有努力空間，請重視自己的權益
-        - 自我評量務必在 7 月 4 日中午前完成
+        - 自我評量務必在 7 月 3 日中午前完成
         - [2024 年 Linux 核心設計/實作課程期末展示](https://hackmd.io/@sysprog/linux2024-showcase)`*`
-        - 7 月 2 日是本學期最後一次授課，改為 19:30 進行 (事後提供錄影)，涉及期末專題和自我評量的檢討，所有學員務必參加。
+        - 7 月 1 日是本學期最後一次授課，改為 19:30 進行 (事後提供錄影)，涉及期末專題和自我評量的檢討，所有學員務必參加。
     * [Linux kernel panic 排除](/kernel-debugging.pdf)
     * [教材解說-1](https://youtu.be/vS8U23bhidg)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Rust for Linux 研究](https://hackmd.io/@hank20010209/SJmVNPMQ2)
@@ -450,12 +442,12 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
     * Week19 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz19) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/5QPCsxI-TkGZbSiW9VVdQw)
 
-* 第 20 週 (Jul 2): 回顧和檢討
+* 第 20 週 (Jul 1): 回顧和檢討
     * 注意事項
-        - 之所以將 6 月 29 日訂為期末專題錄影解說的繳交時限，是便於同儕檢討，學員應持續改進期末專題，作為日後能寫在個人簡歷的成果。
-        - 倘若你沒在 6 月 30 日進行[專題展示發表](https://hackmd.io/@sysprog/linux2024-showcase)，就要在 7 月 4 日中午前，挑出至少 5
+        - 之所以將 6 月 28 日訂為期末專題錄影解說的繳交時限，是便於同儕檢討，學員應持續改進期末專題，作為日後能寫在個人簡歷的成果。
+        - 倘若你沒在 6 月 28 日進行[專題展示發表](https://hackmd.io/@sysprog/linux2024-showcase)，就要在 7 月 3 日中午前，挑出至少 5
 個由其他學員進行的題目，觀看其解說錄影、開發紀錄、程式碼和成果進行批評，紀錄於下方對應專案的開發紀錄中，針對個別題目，至少提出 1 個問題或建議。注意：比照[第三次作業](https://hackmd.io/@sysprog/linux2024-review)的風格，在 (自己以外) 學員的開發紀錄上留言。
-        -  針對其他學員 (含授課教師和社會人士) 在開發紀錄頁面提出的問題或建議，務必在 7 月 6 日中午前予以回應和改進。
+        -  針對其他學員 (含授課教師和社會人士) 在開發紀錄頁面提出的問題或建議，務必在 7 月 3 日中午前予以回應和改進。
     * [課程自我評量](https://hackmd.io/@sysprog/linux2024-assessment)`*`
     * [透過 Linux 核心重新認識數位化世界](https://bit.ly/linux2024-short): 藉由 Dominic Walliman 製作的〈[Map of Computer Science](https://youtu.be/SzJ46YA_RaA)〉短片，探討電腦科學的多個面向，諸如電腦網路、圖形處理、抽象機器及理論 (如Turing machine)、NP-Complete 問題、計算機架構、排序演算法、資料壓縮、現代密碼學、形式化方法、作業系統排程、異質多核運算、編譯器，和程式語言，來回顧今日的 Linux 核心 ── 電腦科學的子學科幾乎都可反映在 Linux 核心中。
     * [課程期末展示](https://hackmd.io/@sysprog/linux2024-showcase)`*`
