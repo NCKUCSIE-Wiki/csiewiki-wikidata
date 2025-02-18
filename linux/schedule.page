@@ -52,9 +52,8 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
         * [題目 7](https://hackmd.io/@sysprog/linux2024-quiz1)
     * Linus Torvalds: [Nothing better than C](https://twitter.com/nixcraft/status/1371787200455528450) 
     * [Linux: 作業系統術語及概念](https://hackmd.io/@sysprog/linux-concepts)`*`
-    - [作業](https://hackmd.io/@sysprog/linux2024-homework1): 2 月 20 日 11:59AM 指派，屆時請刷新本頁面以得知詳情。截止繳交日: Mar 9, 2025
-        * [lab0](https://hackmd.io/@sysprog/linux2024-lab0)`*`
-        * 注意: 若你在 2 月 20 日 11:59AM 之前，已從 GitHub [sysprog21/lab0-c](https://github.com/sysprog21/lab0-c) 進行 fork，請重新 fork
+    - [作業](https://hackmd.io/@sysprog/linux2024-homework1): 截止繳交日: Mar 9, 2025
+        * [lab0](https://hackmd.io/@sysprog/linux2024-lab0)`*` | 2 月 20 日 11:59AM 指派作業，屆時請刷新本頁面以得知詳情
     - 第 1 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz1) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/2jXewm-kQBSDHwWVEZBg2w)
 
