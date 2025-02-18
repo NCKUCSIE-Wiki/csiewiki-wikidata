@@ -49,12 +49,13 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
         * [題目 4](https://hackmd.io/@sysprog/linux2021-quiz1) / [參考題解](https://hackmd.io/@linD026/2021q1_quiz1)
         * [題目 5](https://hackmd.io/@sysprog/linux2022-quiz1) / [參考題解](https://hackmd.io/@qwe661234/linux2022-quiz1)
         * [題目 6](https://hackmd.io/@sysprog/linux2023-quiz1) / [參考題解](https://hackmd.io/@yanjiew/linux2023q1-quiz1)
+        * [題目 7](https://hackmd.io/@sysprog/linux2024-quiz1)
     * Linus Torvalds: [Nothing better than C](https://twitter.com/nixcraft/status/1371787200455528450) 
     * [Linux: 作業系統術語及概念](https://hackmd.io/@sysprog/linux-concepts)`*`
-    - [作業](https://hackmd.io/@sysprog/linux2024-homework1): 截止繳交日: Mar 9, 2025
+    - [作業](https://hackmd.io/@sysprog/linux2024-homework1): 2 月 20 日 11:59AM 指派，屆時請刷新本頁面以得知詳情。截止繳交日: Mar 9, 2025
         * [lab0](https://hackmd.io/@sysprog/linux2024-lab0)`*`
-        * 注意: 若你在 2 月 19 日 09:10AM 之前，已從 GitHub [sysprog21/lab0-c](https://github.com/sysprog21/lab0-c) 進行 fork，請重新 fork
-    - 第 1 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz1) (內含作答表單)
+        * 注意: 若你在 2 月 20 日 11:59AM 之前，已從 GitHub [sysprog21/lab0-c](https://github.com/sysprog21/lab0-c) 進行 fork，請重新 fork
+    - 第 1 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz1) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/YCnIwo_0R-GaYjISEZwG1A)
 
 * 第 2 週 (Feb 25, 27): C 語言程式設計
