@@ -28,7 +28,7 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
     - [GNU/Linux 開發工具共筆](https://hackmd.io/@sysprog/gnu-linux-dev/)`*`: 務必 *自主* 學習 Linux 操作, Git, HackMD, LaTeX 語法 (特別是數學式), GNU make, perf, gnuplot
         * 確認 Ubuntu Linux 24.04-LTS 已順利安裝到你的電腦中
     - [透過 Computer Systems: A Programmer’s Perspective 學習系統軟體](https://hackmd.io/@sysprog/CSAPP)`*`: 本課程指定的教科書 (請及早購買: [天瓏書店](https://www.tenlong.com.tw/products/9787111544937))
-    - [軟體缺失導致的危害](https://hackmd.io/@sysprog/B1eo44C1-)
+    - [軟體缺失導致的危害](https://hackmd.io/@sysprog/software-failure)
         * 1970 年代推出的首款廣體民航客機波音 747 軟體由大約 40 萬行程式碼構成，而 2011 年引進的波音 787 的軟體規模則是波音 747 的 16 倍，約 650 萬行程式碼。換言之，你我的性命緊繫於一系列極為複雜的軟體系統之中，能不花點時間了解嗎？
         * 軟體開發的安全性設計和測試驗證應獲得更高的重視
     - [The adoption of Rust in Business (2022)](https://rustmagazine.org/issue-1/2022-review-the-adoption-of-rust-in-business/)
