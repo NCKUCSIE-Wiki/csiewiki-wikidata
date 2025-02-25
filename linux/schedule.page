@@ -96,9 +96,6 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/l4--gpsZQBiEI5LKS1lDvg)
 
 * 第 3 週 (Mar 4, 6): 數值系統和 C 語言程式設計
-    * 公告:
-        - 第 3 次作業包含二項子作業。
-        - 研究生要依據[課程說明](https://bit.ly/linux2024-intro)，寄送學習狀況給「實驗室指導教授」(不是授課教師)，請詳閱[學習回顧信件之書寫範本和規範](https://hackmd.io/@sysprog/linux2024-progress)
     * [教材解說](https://youtu.be/7efdpMCx-ak)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux: 發展動態回顧](https://hackmd.io/@sysprog/linux-dev-review)`*`
     * [從 Revolution OS 看作業系統生態變化](https://hackmd.io/@sysprog/revolution-os-note)`*`
@@ -259,7 +256,6 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
         - 5 月 2 日 19:00 安排作業回顧 (在成大資訊系舊館二樓的 4263 教室)
         - 學員應及早跟授課教師預約一對一線上討論，請參照[課程行事曆](https://bit.ly/sysprog-calendar)裡頭標注 "Office hour" 的時段，發訊息到 [Facebook 粉絲專頁](https://www.facebook.com/JservFans/)，簡述你的學習狀況並選定偏好的時段 (建議是 30 分鐘)
         - 期末專題可由單人或二人進行，但後者會有更高的難度，且需要授課教師充分溝通
-        - 研究生要依據[課程說明](https://bit.ly/linux2024-intro)，寄送學習狀況給「實驗室指導教授」(不是授課教師)，請詳閱[學習回顧信件之書寫範本和規範](https://hackmd.io/@sysprog/linux2024-progress)
     - [2024 年開放原始碼專案協作](https://hackmd.io/@sysprog/ByLJ8DUFT)`*`
     - [2024 年 Linux 核心設計/實作課程期末專題](https://hackmd.io/@sysprog/linux2024-projects)
     - [課堂問答簡記](https://hackmd.io/7KH-fY-vRlmXfXCk88W1Dg)
@@ -337,7 +333,6 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
     * 公告
         - 原訂 5 月 28 日實體課程，改為線上方式進行
         - 5 月 30 日晚間討論專題進行狀況
-        - 研究生及早撰寫五月份學習彙報給指導教授 (並 Cc. 授課教師)，作為期末自我評量的依據之一。六月份不用特別撰寫學習彙報，而是邀請實驗室指導教授觀看你的期末專題
         - [課程期末專題](https://hackmd.io/@sysprog/linux2024-projects)
     * [slab 記憶體配置器](https://hackmd.io/@sysprog/linux-slab)
     * [LKL: 重用 Linux 核心的成果](https://hackmd.io/@sysprog/linux-lkl)
@@ -394,9 +389,8 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
             3. 期末專題: 開發紀錄、評量成果和產出，以及觀摩其他學員的期末專題並提問 (要有對應的公開軌跡)，且至少要涵蓋一項列於[課程期末展示](https://hackmd.io/@sysprog/linux2024-showcase)的專案。注意：你有義務回覆其他學員 (和授課教師) 對你期末專題的提問，並在 7 月 6 日中午前做出回應且更新更新在期末專題頁面
             4. 與授課教師的互動: 標注與授課教師「一對一討論」的時間，並列出你針對授課教師的問答、測驗和後續討論及啟發。課堂問答也可列入
             5. 所見所聞所感，務必提及閱讀〈因為自動飲料機而延畢的那一年〉和回顧自身在本課程的投入狀況
-            6. 針對研究生，每月發給實驗室指導教授的學習回顧，要包含二月、三月、四月，和五月。大學部學生則忽略本項目。應當在自我評量中列出學習回顧的簡短內容，並標示發信的日期和時間，唯有授課教師也列入信件副本才可列出。每月的學習回顧信件只能在當月或隔月寄送
             6. 上述 (1) 到 (6) 各項都該有對應的評分，皆為介於 1 到 10 之間的「整數」(不要自作主張寫 `8.7` 這樣的數值) 並要能充分反映上述評分項目，附上對應的「公開」證明，如 commit log 和 pull requests
-            7. 計算方式 (GEOMEAN 即針對上述 (1) 到 (6) 各項的[幾何平均](https://en.wikipedia.org/wiki/Geometric_mean)，沒有加權。若有計算錯誤，整個自我評量不計分) 如下，若超過 10，則取 10
+            6. 計算方式 (GEOMEAN 即針對上述 (1) 到 (5) 各項的[幾何平均](https://en.wikipedia.org/wiki/Geometric_mean)，沒有加權。若有計算錯誤，整個自我評量不計分) 如下，若超過 10，則取 10
                 - 方案 A (針對已對 Linux, glibc, gcc, llvm, rv32emu 等專案做出超過 3 項 non-trivial 貢獻 [僅修正錯字或沒有改變程式行為的修改視為 trivial] 並獲得開發者採納): 8 + floor(0.3 * GEOMEAN)
                 - 方案 B: 1 + floor(GEOMEAN)
     * [教材解說](https://youtu.be/4kfRe8TQY9g)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
