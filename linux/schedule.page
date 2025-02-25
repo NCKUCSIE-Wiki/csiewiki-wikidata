@@ -60,7 +60,7 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
 
 * 第 2 週 (Feb 25, 27): C 語言程式設計
     * 公告
-        - 研究生要依據[課程說明](https://bit.ly/linux2024-intro)，寄送學習狀況給「實驗室指導教授」(不是授課教師)，請詳閱[學習回顧信件之書寫範本和規範](https://hackmd.io/@sysprog/linux2024-progress)
+        - 第一份及第二份作業均已指派
     * [部分教材解說](https://youtu.be/YawpeXUiN1k)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * video: [engineer 詞源](https://youtu.be/j6O-fWIEu5c)
     * 校友經驗分享: [Google](https://medium.com/@jhan1998/summer-2024-intern-summary-b6ab14d0c253), [Apple](https://ztex.medium.com/2024-summer-internship-review-5f109c6d37f3)
@@ -72,6 +72,7 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
         - Linux 核心原始程式碼存在大量 bit(-wise) operations (簡稱 bitops)，頗多乍看像是魔法的 C 程式碼就是 bitops 的組合
         - [類神經網路的 ReLU 及其常數時間實作](https://hackmd.io/@sysprog/constant-time-relu)
         - [從 √2 的存在談開平方根的快速運算](https://hackmd.io/@sysprog/sqrt)
+        - [Linux 核心原始程式碼的整數除法](https://hackmd.io/@sysprog/linux-intdiv)
     * [Linux 核心的 hash table 實作](https://hackmd.io/@sysprog/linux-hashtable)
     * [為什麼要深入學習 C 語言？](https://hackmd.io/@sysprog/c-standards)`*`
         - C 語言發明者 Dennis M. Ritchie 說：「C 很彆扭又缺陷重重，卻異常成功。固然有歷史的巧合推波助瀾，可也的確是因為它能滿足於系統軟體實作的程式語言期待：既有相當的效率來取代組合語言，又可充分達到抽象且流暢，能用於描述在多樣環境的演算法。」
