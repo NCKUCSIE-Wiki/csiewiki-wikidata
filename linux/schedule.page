@@ -70,7 +70,7 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
         - 儘管數值系統並非 C 語言所特有，但在 Linux 核心大量存在 u8/u16/u32/u64 這樣透過 typedef 所定義的型態，伴隨著各式 alignment 存取，若學員對數值系統的認知不夠充分，可能立即就被阻擋在探索 Linux 核心之外 —— 畢竟你完全搞不清楚，為何在 Linux 核心存取特定資料需要繞一大圈。
     - [C 語言: Bitwise 操作](https://hackmd.io/@sysprog/c-bitwise)`*`
         - Linux 核心原始程式碼存在大量 bit(-wise) operations (簡稱 bitops)，頗多乍看像是魔法的 C 程式碼就是 bitops 的組合
-        - [類神經網路的 ReLU 及其常數時間複雜度實作](https://hackmd.io/@sysprog/constant-time-relu)
+        - [類神經網路的 ReLU 及其常數時間實作](https://hackmd.io/@sysprog/constant-time-relu)
         - [從 √2 的存在談開平方根的快速運算](https://hackmd.io/@sysprog/sqrt)
     * [Linux 核心的 hash table 實作](https://hackmd.io/@sysprog/linux-hashtable)
     * [為什麼要深入學習 C 語言？](https://hackmd.io/@sysprog/c-standards)`*`
