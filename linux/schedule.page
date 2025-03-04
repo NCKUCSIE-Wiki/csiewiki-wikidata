@@ -96,8 +96,11 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/l4--gpsZQBiEI5LKS1lDvg)
 
 * 第 3 週 (Mar 4, 6): 數值系統和 C 語言程式設計
+    * 公告
+        - 3 月 6 日將公告第 3 份作業，當日也會解說作業內容，與 bitops、數值系統、浮點數運算，及 Linux 核心考量因素相關
     * [教材解說](https://youtu.be/7efdpMCx-ak)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux: 發展動態回顧](https://hackmd.io/@sysprog/linux-dev-review)`*`
+    * [最大公因數特性和實作考量](https://hackmd.io/@sysprog/gcd-impl)
     * [從 Revolution OS 看作業系統生態變化](https://hackmd.io/@sysprog/revolution-os-note)`*`
     * [浮點數運算](https://hackmd.io/@sysprog/c-floating-point)`*`: 工程領域往往是一系列的取捨結果，浮點數更是如此，在軟體發開發有太多失誤案例源自工程人員對浮點數運算的掌握不足，本議程希望藉由探討真實世界的血淋淋案例，帶著學員思考 IEEE 754 規格和相關軟硬體考量點，最後也會探討在深度學習領域為了改善資料處理效率，而引入的 [BFloat16](https://en.wikipedia.org/wiki/Bfloat16_floating-point_format) 這樣的新標準
         - [float16 vs. bfloat16](https://twitter.com/rasbt/status/1631679894219284480)
@@ -111,9 +114,9 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
     * [C 語言: goto 和流程控制](https://hackmd.io/@sysprog/c-control-flow)`*`
         - goto 在 C 語言被某些人看做是妖魔般的存在，不過實在不用這樣看待，至少在 Linux 核心原始程式碼中，goto 是大量存在 (跟你想像中不同吧)。有時不用 goto 會寫出更可怕的程式碼
     * [C 語言程式設計技巧](https://hackmd.io/@sysprog/c-trick)`*`
-    * [作業](https://hackmd.io/@sysprog/linux2024-homework1): 截止繳交日: Mar 25
+    * [作業](https://hackmd.io/@sysprog/linux2025-homework3): 截止繳交日: Mar 31
         - [review](https://hackmd.io/@sysprog/linux2024-review)`*`, [tic-tac-toe](https://hackmd.io/@sysprog/linux2024-ttt)
-    * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz3) (內含作答表單)
+    * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz3) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/K4C5ofeqQg6LC8OEbdVcwg)
 
 * 第 4 週 (Mar 11, 13): 數值系統 + 編譯器
