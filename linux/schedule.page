@@ -97,7 +97,7 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
 
 * 第 3 週 (Mar 4, 6): 數值系統和 C 語言程式設計
     * 公告
-        - 3 月 6 日將公告第 3 份作業，當日也會解說作業內容，與 bitops、數值系統、浮點數運算，及 Linux 核心考量因素相關
+        - 3 月 8 日將公告第 3 份作業，當日也會解說作業內容，與 bitops、數值系統、浮點數運算，及 Linux 核心考量因素相關
     * [教材解說](https://youtu.be/7efdpMCx-ak)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux: 發展動態回顧](https://hackmd.io/@sysprog/linux-dev-review)`*`
     * [最大公因數特性和實作考量](https://hackmd.io/@sysprog/gcd-impl)
