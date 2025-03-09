@@ -114,8 +114,8 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
     * [C 語言: goto 和流程控制](https://hackmd.io/@sysprog/c-control-flow)`*`
         - goto 在 C 語言被某些人看做是妖魔般的存在，不過實在不用這樣看待，至少在 Linux 核心原始程式碼中，goto 是大量存在 (跟你想像中不同吧)。有時不用 goto 會寫出更可怕的程式碼
     * [C 語言程式設計技巧](https://hackmd.io/@sysprog/c-trick)`*`
-    * [作業](https://hackmd.io/@sysprog/linux2025-homework3): 截止繳交日: Mar 31
-        - [review](https://hackmd.io/@sysprog/linux2024-review)`*`, [tic-tac-toe](https://hackmd.io/@sysprog/linux2024-ttt)
+    * [作業](https://hackmd.io/@sysprog/linux2025-homework3): 截止繳交日: Apr 6
+        - [review](https://hackmd.io/@sysprog/linux2025-review)`*`, [kxo](https://hackmd.io/@sysprog/linux2025-kxo)`*`
     * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz3) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/K4C5ofeqQg6LC8OEbdVcwg)
 
