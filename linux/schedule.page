@@ -121,7 +121,7 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
 
 * 第 4 週 (Mar 11, 13): 數值系統 + 編譯器
     - 公告
-        + [第四次作業](https://hackmd.io/@sysprog/HkatSCZCT)已指派，內容是第三週和第四週測驗題
+        + 本週安排邱冠維分享 Linux 核心貢獻的第一手資訊，課堂「舉手」討論並追蹤後續，視為有效的問答
     - [教材解說](https://youtu.be/cjq0OuUeepA)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 貢獻程式碼到 Linux 核心
         - [第一次給 Linux Kernel 發 patch](https://hackmd.io/@rhythm/BkjJeugOv)
@@ -143,7 +143,7 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
     * [作業](https://hackmd.io/@sysprog/linux2024-homework4): 截止繳交日: Apr 14
         - [quiz3+4](https://hackmd.io/@sysprog/HkatSCZCT)
     * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz4) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/_GIs8jAvQH2q505AiAbQ4A)
+    - [課堂問答簡記](https://hackmd.io/AVg2YkX9RveH1W6SVWmNIw)
 
 * 第 5 週 (Mar 18, 20): Code Review
     - 公告
