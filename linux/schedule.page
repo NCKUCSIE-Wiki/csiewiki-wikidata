@@ -156,7 +156,7 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
     * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz5) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/EFs_Nfs6TOmIA5ldA_tZsQ)
 
-* 第 6 週 (Mar 25, 27): System call + CPU Scheduler
+* 第 6 週 (Mar 25, 27): C runtime/linker 及 fork/exec 系統呼叫
     * 公告
         - 4 月 1 日實體授課，4 月 4 日晚間依舊授課 (線上，備有錄影)，4 月 8 日改為線上授課，務必查閱課程行事曆。當然也安排隨堂測驗。
         - 第 5 份作業將於 3 月 26 日 20:00 指派，也會公布「一對一線上討論」的辦法
