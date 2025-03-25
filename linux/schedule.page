@@ -161,6 +161,7 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
         - 4 月 1 日實體授課，4 月 4 日晚間依舊授課 (線上，備有錄影)，4 月 8 日改為線上授課，務必查閱課程行事曆
         - 下週正式探討 Linux 核心
     - [教材解說-1](https://youtu.be/f-SprmkcOI0)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [從模除偏差談亂數分布](https://hackmd.io/@sysprog/BkSydKkaJg)
     * [C 語言: 動態連結器](https://hackmd.io/@sysprog/c-dynamic-linkage)`*`
     * [C 語言: 連結器和執行檔資訊](https://hackmd.io/@sysprog/c-linker-loader)`*`
     * [C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/@sysprog/c-runtime)`*`
