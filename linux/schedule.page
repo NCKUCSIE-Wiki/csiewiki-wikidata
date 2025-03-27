@@ -168,6 +168,7 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
     * [C 語言: 連結器和執行檔資訊](https://hackmd.io/@sysprog/c-linker-loader)`*`
     * [C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/@sysprog/c-runtime)`*`
     - [教材解說-2](https://youtu.be/zW_MAMy7DBE)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [「一切皆為檔案」的理念與解讀](https://hackmd.io/@sysprog/io-universality)
     * [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)
     * Week6 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz6) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/QISdbcjUShy1Be48NHVqaw)
