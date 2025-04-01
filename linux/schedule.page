@@ -175,10 +175,15 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
         - [assessment](https://hackmd.io/@sysprog/BySwQtt06)
 
 * 第 7 週 (Apr 1, 3): Process, 並行和多執行緒
-    - [教材解說-1](https://youtu.be/mnbIi82iT2A)`*`, [教材解說-2](https://youtu.be/G_BLP3tqocc)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * 公告:
+        - 凡是「選課」且「成功繳交第一份作業」的學員，在 4 月 1 日下午會收到授課教師撰寫、尚未出版的《Demystifying the Linux
+CPU Scheduler》電子書，請留意電子郵件信箱
+        - 選修/旁聽的學員亦可向授課教師索取書稿，前提是已充分投入第一份和第二份作業，去信 `<jserv.tw@gmail.com>` 附上繳交作業的證明 (需要在作業區正確收錄) 和個人簡介
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/@sysprog/linux-scheduler)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
     * [Linux: 不僅是個執行單元的 Process](https://hackmd.io/@sysprog/linux-process)`*`: Linux 核心對於 UNIX Process 的實作相當複雜，不僅蘊含歷史意義 (幾乎每個欄位都值得講古)，更是反映出資訊科技產業的變遷，核心程式碼的 `task_struct` 結構體更是一絕，廣泛涵蓋 process 狀態、處理器、檔案系統、signal 處理、底層追蹤機制等等資訊，更甚者，還很曖昧地保存著 thread 的必要欄位，好似這兩者天生就脫不了干係
         - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
+    * [利用 lkm 來變更特定 Linux 行程的內部狀態](https://hackmd.io/@cwl0429/linux2022-quiz8-3)
+    * [Linux: 賦予應用程式生命的系統呼叫](https://hackmd.io/@sysprog/linux-syscall)`*`
     * [vDSO: 快速的 Linux 系統呼叫機制](https://hackmd.io/@sysprog/linux-vdso)
     * 《Demystifying the Linux CPU Scheduler》第 1 章
     * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency)`*`，涵蓋
@@ -186,6 +191,10 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
         - POSIX Threads (請對照 CS:APP 第 12 章自行學習)
     * [測試 Linux 核心的虛擬化環境](https://hackmd.io/@sysprog/linux-virtme)
     * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
+    * Week7 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz7) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/6LwE3wF5SUO9NZY5KiRUpg)
+
+* 第 8 週 (Apr 8, 10): 並行程式設計, lock-free, Linux 同步機制
     * [〈Concurrency Primer〉導讀](https://hackmd.io/@sysprog/concurrency-primer)
     * [The C11 and C++11 Concurrency Model](https://docs.google.com/presentation/d/1IndzU1LDyHcm1blE0FecDyY1QpCfysUm95q_D2Cj-_U/edit?usp=sharing)
         - [Time to move to C11 atomics?](https://lwn.net/Articles/691128/)
@@ -197,17 +206,7 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
         - [Synchronization: Basic](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/23-sync-basic.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aae5ff94-1551-42b6-8981-7d19157afa0c)`*`
         - [Synchronization: Advanced](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/24-sync-advanced.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=06892ab8-1a16-46de-8910-537dab546828)`*`
         - [Thread-Level Parallelism](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/25-parallelism.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9ba08262-5318-45f2-a7e1-475e33a98e53)`*`
-    * Week7 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz7) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/6LwE3wF5SUO9NZY5KiRUpg)
-
-* 第 8 週 (Apr 8, 10): 並行程式設計, lock-free, Linux 同步機制
-    * 公告:
-        - [第 6 次作業](https://hackmd.io/@sysprog/linux2024-integration)已指派
-    - [教材解說](https://youtu.be/05x65CayUNw)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
-    * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency)，涵蓋
-        - Atomics 操作
     * [Linux: 淺談同步機制](https://hackmd.io/@sysprog/linux-sync)`*`
-    * [利用 lkm 來變更特定 Linux 行程的內部狀態](https://hackmd.io/@cwl0429/linux2022-quiz8-3)
     * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz8) (內含作答表單)
     * [作業](https://hackmd.io/@sysprog/linux2024-homework6): 截止繳交日: Apr 29
         - [integration](https://hackmd.io/@sysprog/linux2024-integration)
