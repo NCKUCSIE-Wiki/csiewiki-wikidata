@@ -188,9 +188,6 @@ CPU Scheduler》電子書，請留意電子郵件信箱
     * [Linux: 賦予應用程式生命的系統呼叫](https://hackmd.io/@sysprog/linux-syscall)`*`
     * [vDSO: 快速的 Linux 系統呼叫機制](https://hackmd.io/@sysprog/linux-vdso)
     * 《Demystifying the Linux CPU Scheduler》第 1 章
-    * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency)`*`，涵蓋
-        - Atomics 操作
-        - POSIX Threads (請對照 CS:APP 第 12 章自行學習)
     * [測試 Linux 核心的虛擬化環境](https://hackmd.io/@sysprog/linux-virtme)
     * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
     * Week7 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz7) (內含作答表單)
