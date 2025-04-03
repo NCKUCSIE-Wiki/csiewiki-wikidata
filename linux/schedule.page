@@ -181,7 +181,7 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
         - 凡是「選課」且「成功繳交第一份作業」的學員，在 4 月 1 日下午會收到授課教師撰寫、尚未出版的《Demystifying the Linux
 CPU Scheduler》電子書，請留意電子郵件信箱
         - 選修/旁聽的學員亦可向授課教師索取書稿，前提是已充分投入第一份和第二份作業，去信 `<jserv.tw@gmail.com>` 附上繳交作業的證明 (需要在作業區正確收錄) 和個人簡介
-        - 開放預約「一對一」討論，請留意[相關辦法](https://hackmd.io/@sysprog/HkNNMsjaJl)
+        - 開放預約「一對一」討論，請留意[相關辦法](https://hackmd.io/@sysprog/HkNNMsjaJl)。期末自我評量要反映出「專業的成長」，見[範例](https://wiki.csie.ncku.edu.tw/User/weihsinyeh)
     * [歐拉數：描述連續變化的基石](https://hackmd.io/@sysprog/S1lBrHrp1e)
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/@sysprog/linux-scheduler)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
     * [Linux: 不僅是個執行單元的 Process](https://hackmd.io/@sysprog/linux-process)`*`: Linux 核心對於 UNIX Process 的實作相當複雜，不僅蘊含歷史意義 (幾乎每個欄位都值得講古)，更是反映出資訊科技產業的變遷，核心程式碼的 `task_struct` 結構體更是一絕，廣泛涵蓋 process 狀態、處理器、檔案系統、signal 處理、底層追蹤機制等等資訊，更甚者，還很曖昧地保存著 thread 的必要欄位，好似這兩者天生就脫不了干係
