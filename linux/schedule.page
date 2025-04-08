@@ -195,25 +195,26 @@ CPU Scheduler》電子書，請留意電子郵件信箱
     * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
     - [課堂問答簡記](https://hackmd.io/6LwE3wF5SUO9NZY5KiRUpg)
 
-* 第 8 週 (Apr 8, 10): 並行程式設計, lock-free, Linux 同步機制
+* 第 8 週 (Apr 8, 10): 並行程式設計, Linux 同步機制
+    * [並行程式設計](https://hackmd.io/@sysprog/concurrency): 概念, 執行順序, Atomics 操作
     * [〈Concurrency Primer〉導讀](https://hackmd.io/@sysprog/concurrency-primer)
-    * [The C11 and C++11 Concurrency Model](https://docs.google.com/presentation/d/1IndzU1LDyHcm1blE0FecDyY1QpCfysUm95q_D2Cj-_U/edit?usp=sharing)
-        - [Time to move to C11 atomics?](https://lwn.net/Articles/691128/)
-        - [C11 atomic variables and the kernel](https://lwn.net/Articles/586838/)
-        - [C11 atomics part 2: "consume" semantics](https://lwn.net/Articles/588300/)
-        - [An introduction to lockless algorithms](https://lwn.net/Articles/844224/)
     * CS:APP 第 12 章
         - [Concurrency](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/22-concprog.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0be3c53f-5d35-40f0-a5ab-55897a2c91a5)`*`
         - [Synchronization: Basic](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/23-sync-basic.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aae5ff94-1551-42b6-8981-7d19157afa0c)`*`
         - [Synchronization: Advanced](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/24-sync-advanced.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=06892ab8-1a16-46de-8910-537dab546828)`*`
         - [Thread-Level Parallelism](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/25-parallelism.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9ba08262-5318-45f2-a7e1-475e33a98e53)`*`
     * [Linux: 淺談同步機制](https://hackmd.io/@sysprog/linux-sync)`*`
+    * 《Demystifying the Linux CPU Scheduler》: 2.1 Introduction, 2.2.1 Early Linux Scheduler, 2.2.2 O(n) Scheduler
     * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz8) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/WrnjVMbeQ1aXjRdvPAL9LA)
 
 * 第 9 週 (Apr 15, 17): futex, RCU, 伺服器開發與 Linux 核心對應的系統呼叫
-    - [教材解說](https://youtu.be/BH6vdKd6kGY)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
-    * Twitter 上面的笑話: index 的複數寫作 indices, complex 的複數寫作 complices, 那 mutex 的複數是什麼？答 "deadlock" -- [出處](https://twitter.com/jfbastien/status/1408440373408460803)
+    * Twitter/X 上面的笑話: index 的複數寫作 indices, complex 的複數寫作 complices, 那 mutex 的複數是什麼？答 "deadlock" -- [出處](https://x.com/jfbastien/status/1408440373408460803)
+    * [The C11 and C++11 Concurrency Model](https://docs.google.com/presentation/d/1IndzU1LDyHcm1blE0FecDyY1QpCfysUm95q_D2Cj-_U/edit?usp=sharing)
+        - [Time to move to C11 atomics?](https://lwn.net/Articles/691128/)
+        - [C11 atomic variables and the kernel](https://lwn.net/Articles/586838/)
+        - [C11 atomics part 2: "consume" semantics](https://lwn.net/Articles/588300/)
+        - [An introduction to lockless algorithms](https://lwn.net/Articles/844224/)
     * [A Deep dive into (implicit) Thread Local Storage](https://chao-tic.github.io/blog/2018/12/25/tls)
         - 允許執行緒擁有私自的資料。對於每個執行緒來說，TLS 是獨一無二，不會相互影響。案例: 全域變數 `errno` 可能在多執行緒並行執行時錯誤，透過 TLS 處理 `errno` 是個解決方案
         - `__thread`, 在 POSIX Thread 稱為 thread-specific data，可見 [pthread_key_create](https://linux.die.net/man/3/pthread_key_create), [pthread_setspecific](https://linux.die.net/man/3/pthread_setspecific)
