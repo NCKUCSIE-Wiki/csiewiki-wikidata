@@ -208,10 +208,8 @@ CPU Scheduler》電子書，請留意電子郵件信箱
         - [Synchronization: Advanced](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/24-sync-advanced.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=06892ab8-1a16-46de-8910-537dab546828)`*`
         - [Thread-Level Parallelism](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/25-parallelism.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9ba08262-5318-45f2-a7e1-475e33a98e53)`*`
     * [Linux: 淺談同步機制](https://hackmd.io/@sysprog/linux-sync)`*`
-    * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz8) (內含作答表單)
-    * [作業](https://hackmd.io/@sysprog/linux2024-homework6): 截止繳交日: Apr 29
-        - [integration](https://hackmd.io/@sysprog/linux2024-integration)
-    - [課堂問答簡記](https://hackmd.io/S-UYYCyCQVSaGzwhhVCm2g)
+    * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz8) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/WrnjVMbeQ1aXjRdvPAL9LA)
 
 * 第 9 週 (Apr 15, 17): futex, RCU, 伺服器開發與 Linux 核心對應的系統呼叫
     - [教材解說](https://youtu.be/BH6vdKd6kGY)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
