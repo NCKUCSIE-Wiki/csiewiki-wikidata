@@ -1,93 +1,21 @@
----
-title: 成功大學資工系(所) Wiki 系統
-toc: no
-categories: 系統頁面
-...
-
-這是成大資工的 wiki 系統，您可自由地在此編撰與閱讀學習筆記。
-注意：**Wiki 不等同於 Wikipedia (維基百科)**。
-Wiki 泛指提供多人協同編撰的平台，而 [Wikipedia](http://www.wikipedia.org/) 是藉由 wiki 系統建立的百科全書 (encyclopedia)。
-
-Linux 核心設計/實作 (2019-2025)
-================================
-![](/0-tux-small.jpg)
-
-- [課程進度表](/linux/schedule)
-
-Computer Architecture (2019-2024)
-============================
-![](/mips-arch-small.png)
-
-- [Schedule](/arch/schedule)
-
-* 「[資訊科技產業專案設計](https://hackmd.io/@sysprog/info2024)」課程
-
-系統軟體系列課程 (2016-2020)
-================================
-![](/sysprog-small.png)
-
-- [課程進度表](/sysprog/schedule)
-- 冬季和夏季課程
-    * [2021年暑期](https://hackmd.io/@sysprog/linux2021-summer)
-    * [2018年暑期](https://hackmd.io/s/rkJfYQLvX)
-    * [2017年暑期](https://hackmd.io/s/BJRtkreHW)
-    * [2017年冬季](https://hackmd.io/s/H1KTTZP8l)
-    * [2016年暑期](https://hackmd.io/s/SJppVSp2)
-
-ACM-ICPC 培訓隊課程
-================================
-
- - [課程主題重點整理](acm/course)
-
-嵌入式系統系列課程 (2012-2016)
-================================
-![](/embedded/logo-2012-small.png)
-
-- [課程進度表](embedded/schedule)
-- [課堂測驗與解答](embedded/quiz)
-- 分組報告
-    - [FreeRTOS](/embedded/freertos), [rtenv+](/embedded/rtenv), [FreeRTOS (MMU)](/embedded/freertos-mmu), [RT-Thread](/embedded/rt-thread)
-    - [Linux](/embedded/arm-linux), [Xenomai](/embedded/xenomai), [uClinux](/embedded/uclinux)
-    - [Xvisor](/embedded/xvisor)  ( [ARMv8](/embedded/ARMv8) ), [F9 microkernel](/embedded/f9-kernel)
-- 分組報告 (針對 STM32 週邊): [GPIO](/embedded/GPIO), [USART](/embedded/USART), [ADC](/embedded/ADC), [I2C](/embedded/I2C), [PWM](/embedded/PWM), [USB](/embedded/USB), [SPI](/embedded/SPI), [Flash](/embedded/Flash), [CAN](/embedded/CAN)
-- [線上資源](embedded/resources)
-- 期末專題
-    - [2015年秋季](/embedded/team2015)
-    - [2014年秋季](/embedded/team2014) / [2014年春季](/embedded/os-team2014)
-    - [2013年秋季](/embedded/team2013)
-    - [2012年秋季](/embedded/team2012)
-- 冬季和夏季課程
-    - [2015年暑期](embedded/summer2015)
-    - [2014年暑期](/embedded/summer2014) / [2014年冬季](/embedded/winter2014)
-    - [2013年暑期](embedded/summer2013)
-
---------
+<a href="https://789p.onl/ ">789P </a> – cổng cá cược trực tuyến uy tín, tiên phong trong lĩnh vực giải trí. Với công nghệ hiện đại và đội ngũ chuyên gia giàu kinh nghiệm, 789P mang đến sân chơi chất lượng hàng đầu châu Á. Đăng ký ngay nhận 88K và tận hưởng thế giới cá cược đỉnh cao!
+Thông tin:
+Website: <a href="https://789p.onl/ ">https://789p.onl/ </a>
+Email: 789ponl@gmail.com
+SĐT: 0963555211
+Địa chỉ: 74 Đ. Trần Bình Trọng, Phường 1, Quận 5, Hồ Chí Minh, Việt Nam
+Hastag: #789p #789pbet #789pcasino #789pdangnhap #nhacai789p #dangky789p
 
 
-使用方式
-=======
 
-瀏覽
-----
-你可以點選連結到特定的頁面，在左方點選「隨機頁面」即可連到一頁隨機的頁面，或是在「搜尋」中輸入想要尋找的關鍵字。
-你也可以直接在網址列後方輸入頁面名稱，即可連結到特定頁面。
-若該頁面尚未被建立 (不存在)，你可以進行編輯，分享給大家知道！
 
-編輯
-----
-編輯頁面需要擁有帳號，畫面右上方可申請新帳號，登入後就擁有 wiki 的編輯權限。
-點選已存在的頁面上方的「edit」即可編輯頁面，或是跟著不存在的頁面的指示，就可以開始編輯頁面。
-編輯 wiki 時要用一種稱為 reStructuredText 的語法撰寫。編輯時，左方就有範例可以參考。
-放心，這比維基百科的語法簡單多了....歡迎來討論！
-
-你可以在編輯時建立連到其他 wiki 頁面的超連結，[說明文件 ](Help#wiki-links)中有詳細的說明。
-如果該頁面不存在，也可以透過這個連結建立新頁面。
-
-如何開始
-=======
-這裡有一些實用的頁面，可以先看看：
-
-- [Sandbox ](sandbox) 可用來測試 wiki 語法，可自由寫作運用。此外，編輯時有「Preview」按鈕可預覽結果，避免出錯。
-- [錯誤回報 ]()是用來回報錯誤的，如果你發現系統有錯誤，請到上面回報，管理員會儘量處理。回報前請先看看這個問題是不是已經被別人提過了。
-
-說明文件可在側欄中的「說明」取得，更多相關資訊可參考 [Gitit User's Guide ](Gitit User's Guide)。
+7<a href="https://www.facebook.com/789ponl/">https://www.facebook.com/789ponl/</a>
+<a href="https://x.com/789ponl">https://x.com/789ponl</a>
+<a href="https://www.youtube.com/@789ponl">https://www.youtube.com/@789ponl</a>
+<a href="https://www.pinterest.com/789ponl/">https://www.pinterest.com/789ponl/</a>
+<a href="https://www.blogger.com/profile/11634531507213374099">https://www.blogger.com/profile/11634531507213374099</a>
+<a href="https://gravatar.com/789ponl">https://gravatar.com/789ponl</a>
+<a href="https://www.openstreetmap.org/user/789ponl">https://www.openstreetmap.org/user/789ponl</a>
+<a href="https://profile.hatena.ne.jp/k789ponl/profile">https://profile.hatena.ne.jp/k789ponl/profile</a>
+<a href="https://issuu.com/789ponl">https://issuu.com/789ponl</a>
+<a href="https://disqus.com/by/789ponl/about/">https://disqus.com/by/789ponl/about/</a>
