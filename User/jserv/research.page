@@ -1,0 +1,50 @@
+---
+title: 研究方向和成果 [黃敬群]
+categories: User jserv
+...
+
+「[人在做，Google 在看](https://www.google.com/search?q=jserv)」
+
+# 個人經歷
+* 和沛移動 / 首席顧問
+* 台達電子 / 自動化機電事業群 顧問
+* 資訊工業策進會 / 顧問
+* 工業技術研究院 / 資通所 顧問
+* 聯發科技 / CTO 顧問
+* 南星創業加速器 / 技術長
+* 台灣創新行動服務推廣協會 / 理事長
+* 晶心科技 / 幕僚工程師
+
+# 專長及研究領域
+* 作業系統
+* 嵌入式系統
+* 消費性電子產品
+
+## 資訊安全與軟體品質
+* [uVisor Debugging Facility Improvements for ARM mbed](http://events.linuxfoundation.org/sites/events/files/slides/mbed-uvisor.pdf)
+    - 發表於 OpenIoT Summit 2016, Linux Foundation
+* [Construct an Efficient and Secure Microkernel for IoT](http://www.slideshare.net/jserv/iot-microkernel)
+    - 發表於 Workshop on Compiler Techniques and System Software for High-Performance and Embedded Computing 2015
+* [Faults inside System Software](http://www.slideshare.net/jserv/system-faults)
+
+## 即時系統
+* [Making Linux do Hard Real-time](http://www.slideshare.net/jserv/realtime-linux)
+* [Priority Inversion on Mars](http://www.slideshare.net/jserv/priority-inversion-30367388)
+* [Xenomai](/embedded/xenomai): Real-time framework for Linux (GPL)
+    - 發表於 Real-time Linux Workshops 2015, Open Source Automation Development Lab (OSADL)
+* [RTMux](https://github.com/rtmux): Lightweight Temporal and Spatial Partitioning of Real-Time Linux (GPL)
+    - 發表於 Embedded Linux Conference Europe 2014, Linux Foundation
+
+## 嵌入式系統和作業系統
+* [uVisor](https://github.com/ARMmbed/uvisor): device security layer for ARMv7M microcontrollers (Apache License)
+    - 發表於開源操作系統技術年會 2015 (北京清華大學)
+* [F9 Microkernel](https://github.com/f9micro) : 針對 ARM Cortex-M4 特性並基於 L4 微核心架構，重新打造的嵌入式作業系統 (BSD License)
+    - 發表於 Workshop on Compiler Techniques and System Software for High-Performance and Embedded Computing 2015
+* [uClinux](https://github.com/uclinux-cortexm):  Linux kernel for ARM Cortex-M based microcontrollers  without a memory management unit (GPL)
+    - 發表於 Embedded Linux Conference 2015, Linux Foundation
+* [olibc](http://olibc.so) : 針對嵌入式系統開發的高度最佳化、高客製化的 C runtime (libc; BSD License)
+    -  發表於 Embedded Linux Conference 2013, Linux Foundation
+* [TuxOnIce](http://tuxonice.nigelcunningham.com.au/): Snapshot boot for ARM，用 6 秒啟動 Android 裝置 (GPL/LGPL)
+    - 發表於 Automotive Linux Summit 2013, Linux Foundation
+* [DMTCP](http://dmtcp.sourceforge.net/): Distributed MultiThreaded CheckPointing for Android (LGPL)
+    - 發表於 Embedded Linux Conference Europe 2012, Linux Foundation
