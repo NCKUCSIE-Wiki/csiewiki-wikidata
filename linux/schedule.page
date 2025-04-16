@@ -142,7 +142,7 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
     * [C 語言: 未定義行為](https://hackmd.io/@sysprog/c-undefined-behavior)`*`: C 語言最初為了開發 UNIX 和系統軟體而生，本質是低階的程式語言，在語言規範層級存在 undefined behavior，可允許編譯器引入更多最佳化
     * [C 語言: 編譯器和最佳化原理](https://hackmd.io/@sysprog/c-compiler-optimization)`*`
     * [錯誤更正碼 (ECC) 介紹和實作考量](https://hackmd.io/@sysprog/r1wrjOp6a)
-    * [作業](https://hackmd.io/@sysprog/linux2024-homework4): 截止繳交日: Apr 15
+    * [作業](https://hackmd.io/@sysprog/linux2025-homework4): 截止繳交日: Apr 15
         - [quiz3+4](https://hackmd.io/@sysprog/HkXPOqI31l)
     * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz4) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/AVg2YkX9RveH1W6SVWmNIw)
@@ -171,7 +171,7 @@ Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
     * [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)
     * Week6 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz6) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/QISdbcjUShy1Be48NHVqaw)
-    * [作業](https://hackmd.io/@sysprog/linux2024-homework5): 截止繳交日: Apr 23
+    * [作業](https://hackmd.io/@sysprog/linux2025-homework5): 截止繳交日: Apr 23
         - [assessment](https://hackmd.io/@sysprog/linux2025-assessment)
 
 * 第 7 週 (Apr 1, 3): Process 和 CPU 排程
