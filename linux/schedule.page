@@ -294,14 +294,7 @@ CPU Scheduler》電子書，請留意電子郵件信箱
 
 * 第 13 週 (May 13, 15): 記憶體管理 + 裝置驅動程式
     * 公告:
-        - 慶祝專案順利推進，授課教師請學員喝飲料
-        - 本週「已進行一對一討論」的學員會收到期末專題的確認信件，尚未預約討論的學員請及早進行
         - [課程期末專題](https://hackmd.io/@sysprog/linux2024-projects) 由一人或二人執行，若要二人為一組，請向授課教師確認
-    * Linux kernel v6.9 發佈，[主要新特性](https://9to5linux.com/linux-kernel-6-9-officially-released-this-is-whats-new):
-        - Rust support on AArch64 (Arm64) architectures
-        - Named Address Spaces feature in GCC that allows the compiler to better optimize per-CPU data access
-        - LZ4 compression support for the hibernation image creation and loading code
-        - The F2FS (Flash-Friendly File System) flash file system received zoned block device support
     * [教材解說-1](https://youtu.be/jOY159H0Iyo)`*`, [教材解說-2](https://youtu.be/eplQPz1Qegc)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Introduction to Memory Management in Linux](https://youtu.be/7aONIVSXiJ8)`*`
     * [The Linux Virtual Memory System](https://people.redhat.com/pladd/NUMA_Linux_VM_NYRHUG.pdf)
@@ -327,8 +320,8 @@ CPU Scheduler》電子書，請留意電子郵件信箱
         - [Skip List](http://en.wikipedia.org/wiki/Skip_list): 置放大量數字並進行排序的資料結構。不用樹狀結構，而改用高度不同的 List 來連接資料。資料結構在概念上可以表示成 Left Child-Right Sibling Binary Tree 的模式。是 Cache-oblivious Algorithm 的經典範例，時間複雜度與空間複雜度與 Binary Search Tree 皆相同，但精心調整的實作可超越 Binary Search Tree。
         - Linux 核心: [A kernel skiplist implementation (Part 1)](https://lwn.net/Articles/551896/), [Skiplists II: API and benchmarks](https://lwn.net/Articles/553047/)
     * Linux: linked list, Queues, Maps, Binary Trees: [錄影](https://youtu.be/7ZQNb7Fu_A4)`*` / [共筆](https://docs.google.com/document/d/1n31QMPyvdAkS2uxM5AyKu_DD3uRu6-zoRukAitDwPvA/edit#)
-    * Week13 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz13) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/7svssG2MQpe9ozE_IRRZdg)
+    * Week13 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz13) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/uiNwM35dQ6qeFQwfTypc_w)
 
 * 第 14 週 (May 20, 22): 虛擬化技術
     - 公告
