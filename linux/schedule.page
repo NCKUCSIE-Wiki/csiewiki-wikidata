@@ -287,8 +287,6 @@ CPU Scheduler》電子書，請留意電子郵件信箱
         - 進行中的繁體中文翻譯: 《[每位程式開發者都該有的記憶體知識](https://sysprog21.github.io/cpumemory-zhtw/)》
         - 本文解釋用於現代電腦硬體的記憶體子系統的結構、闡述 CPU 快取發展的考量、它們如何運作，以及程式該如何針對記憶體操作調整，從而達到最佳的效能。
     * [CS:APP 第 9 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch9)`*`
-    * [解析 Linux 共享記憶體機制](https://hackmd.io/@sysprog/linux-shared-memory)
-    * [Linux 核心的 /dev/mem 裝置](https://hackmd.io/@sysprog/linux-mem-device)
     * Week12 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz12) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/8rwu2EOaQwW7AzjJOFK-gw)
 
@@ -300,6 +298,8 @@ CPU Scheduler》電子書，請留意電子郵件信箱
     * [The Linux Virtual Memory System](https://people.redhat.com/pladd/NUMA_Linux_VM_NYRHUG.pdf)
     * [Linux: 記憶體管理](https://hackmd.io/@sysprog/linux-memory)`*`: 記憶體管理是 Linux 核心裡頭最複雜的部分，涉及到對計算機結構、slob/slab/slub 記憶體配置器、行程和執行檔樣貌、虛擬記憶體對應的例外處理、記憶體映射, UMA vs. NUMA 等等議題。
     * [POSIX Shared Memory](http://logan.tw/posts/2018/01/07/posix-shared-memory/): 在 Linux 中要實作出共享記憶體 (shared memory) 的機制很多，例如: 1) SysV shared memory; POSIX shared memory; 3) 以 `mmap` 對檔案進行記憶體映射; 4) 以 `memfd_create` 實作跨越行程存取; 本文章探討 POSIX shared memory 的使用，並提供完整應用案例，最後探討相關的同步議題。
+    * [解析 Linux 共享記憶體機制](https://hackmd.io/@sysprog/linux-shared-memory)
+    * [Linux 核心的 /dev/mem 裝置](https://hackmd.io/@sysprog/linux-mem-device)
     * [C 語言: 物件導向程式設計](https://hackmd.io/@sysprog/c-oop)`*`
     * [Object-oriented design patterns in the kernel, part 1](https://lwn.net/Articles/444910/) / [Object-oriented design patterns in the kernel, part 2](https://lwn.net/Articles/446317/)
         + 對照《Demystifying the Linux CPU Scheduler》 `3.1 Structs and their role: sched class`
@@ -323,11 +323,8 @@ CPU Scheduler》電子書，請留意電子郵件信箱
     - [課堂問答簡記](https://hackmd.io/uiNwM35dQ6qeFQwfTypc_w)
 
 * 第 14 週 (May 20, 22): 虛擬化技術
-    - 公告
-        * 原訂 5 月 23 日晚間課程，改為「Linux 核心設計：虛擬化技術」線上講座 (議程結束後提供錄影)
     * [Embedded Virtualization applied in Mobile Devices](https://www.slideshare.net/jserv/mobile-virtualization) / [info](https://www.iis.sinica.edu.tw/zh/page/Events/data/DJ120045.html)
     * [KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm)`*`
-    * [2024 年 Linux 核心設計/實作課程期末專題](https://hackmd.io/@sysprog/linux2024-projects)
 
 * 第 15 週 (May 27, 29): 網路封包處理 + 多核處理器架構
     * 公告
