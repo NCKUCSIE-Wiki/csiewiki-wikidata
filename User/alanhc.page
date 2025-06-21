@@ -1,0 +1,18 @@
+---
+title: alanhc (曾宏鈞)
+categories: User
+...
+
+# 簡介
+* GitHub: [`alanhc`](https://github.com/alanhc)
+* HackMD: [`alanhc`](https://hackmd.io/@alanhc)
+
+# 2025 Linux 核心設計/實作
+## 成果發表和貢獻
+- [Linux 核心設計: 透過 eBPF 觀察作業系統行為](https://hackmd.io/CJb5S2gxTCiX-__krLUFpg?both=) eBPF 在 Cloud Native 下的使用
+- [運用 Perf 分析程式效能並改善](https://hackmd.io/@sysprog/linux-perf) flamegraph補充
+- [Linux 核心設計: 記憶體管理](https://hackmd.io/@sysprog/linux-memory) HUGE Page補充
+
+## 期末專題
+- [BitNet 效能分](https://hackmd.io/@alanhc/2025q1-term-project)
+    - 使用效能分析工具如 `perf`、`uftrace` 等工具分析排程、記憶體嘗試找出效能問題  
