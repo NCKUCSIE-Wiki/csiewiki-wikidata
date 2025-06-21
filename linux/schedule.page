@@ -421,7 +421,6 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
     * Rust 程式語言
         - 現況: [已被 Google Android 團隊選為開發系統軟體的另一個程式語言，與 C 和 C++ 並列](https://www.phoronix.com/scan.php?page=news_item&px=Rust-For-Android-OS-System-Work); [自 2017 年 Facebook 內部採納 Rust 程式語言的專案增加，像是加密貨幣 Diem (前身為 Libra) 就將 Rust 作為主要程式語言並對外發布](https://engineering.fb.com/2021/04/29/developer-tools/rust/), 
         - [撰寫 LKMPG 的 Rust 核心模組](https://hackmd.io/@sysprog/Sk8IMQ9S2)
-    * Week18 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz18) (內含作答表單)
     * [課堂問答簡記](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA)
 
 * 第 19 週 (Jun 24, 26): Rust, Linux 核心除錯
