@@ -423,8 +423,9 @@ Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multi
         - [撰寫 LKMPG 的 Rust 核心模組](https://hackmd.io/@sysprog/Sk8IMQ9S2)
     * [課堂問答簡記](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA)
 
-* 第 19 週 (Jun 24, 26): Rust, Linux 核心除錯
+* 第 19 週 (Jun 24): Rust, Linux 核心除錯
     * 公告
+        - 6 月 24 日課程採用 [Google Meet 進行](https://meet.google.com/vzw-kgeu-kch)，授課教師本週在美國參加研討會，請尚未進行課程互動的學員把握本次補救機會
         - 自我評量務必在 7 月 3 日中午前完成
         - [2024 年 Linux 核心設計/實作課程期末展示](https://hackmd.io/@sysprog/linux2024-showcase)`*`
         - 7 月 1 日是本學期最後一次授課，改為 19:30 進行 (事後提供錄影)，涉及期末專題和自我評量的檢討，所有學員務必參加。
