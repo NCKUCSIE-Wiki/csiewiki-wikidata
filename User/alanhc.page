@@ -12,7 +12,9 @@ categories: User
 - [Linux 核心設計: 透過 eBPF 觀察作業系統行為](https://hackmd.io/CJb5S2gxTCiX-__krLUFpg?both=) eBPF 在 Cloud Native 下的使用
 - [運用 Perf 分析程式效能並改善](https://hackmd.io/@sysprog/linux-perf) flamegraph補充
 - [Linux 核心設計: 記憶體管理](https://hackmd.io/@sysprog/linux-memory) HUGE Page補充
+- 第十七週提到的 在Github有 2.6k star 的 1000行寫一個 RISC-V OS，貢獻繁體中文的翻譯 [#8b116c7](https://github.com/nuta/operating-system-in-1000-lines/commit/8b116c7b58498cec373d5d34e99af15c0b778cc9)（已經merge）
+
 
 ## 期末專題
-- [BitNet 效能分](https://hackmd.io/@alanhc/2025q1-term-project)
+- [BitNet 效能分析](https://hackmd.io/@alanhc/2025q1-term-project)
     - 使用效能分析工具如 `perf`、`uftrace` 等工具分析排程、記憶體嘗試找出效能問題  
