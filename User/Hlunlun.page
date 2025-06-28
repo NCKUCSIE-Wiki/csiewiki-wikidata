@@ -11,6 +11,9 @@ categories: User
 # 2025 Linux 核心設計/實作 春季班 自我評量
 
 ## 成果發表和貢獻
+在寫專題參考文件 [Linux 核心設計: Scheduler(4): PELT](https://hackmd.io/@sysprog/Hka7Kzeap/%2FBk4y_5o-9) 時，發現 `decay_load` 的數學部分解釋有誤，有流言提醒
+
+4 分
 
 ## 作業/隨堂測驗
 * lab0-c: [Github ](https://github.com/Hlunlun/lab0-c)/ [HackMD](https://hackmd.io/@clh/linux2025-homework1)
@@ -34,11 +37,13 @@ categories: User
 
 ## 所見所聞所感
 
+10
+
 
 ## 自我評量 (1 ~ 10)：
-$GEOMEAN = (  \times  \times  \times  \times )^{1/5} = $
+$GEOMEAN = (4  \times 7 \times 10 \times 10 \times 10)^{1/5} = 7.1$
 
-方案 B ：$1 + floor(GEOMEAN) = 1 +  = $
+方案 B ：$1 + floor(GEOMEAN) = 1 +  = 8$
 
 
 
