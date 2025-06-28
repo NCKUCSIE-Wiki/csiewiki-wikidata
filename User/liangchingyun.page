@@ -58,7 +58,7 @@ categories: User
 
 
 ## 自我評量 (1 ~ 10)：
-$GEOMEAN = ( 7 \times 10 \times 9 \times 10 \times 10 )^{1/5} = 9.117
+$GEOMEAN = ( 7 \times 10 \times 9 \times 10 \times 10 )^{1/5} = 9.117$
 
 方案 B ：$1 + floor(GEOMEAN) = 1 + 9 = 10$
 
