@@ -26,7 +26,7 @@ categories: User
 ## 期末專題
 9分。
 
-一開始在理解如何執行此專案就花了不少時間，曾遇到錯誤想了一週如何 debug，後來才發現是自己執行的問題。後來也成功完成 TODO 事項並提交 pull request，學會如何正確的 commit, rebase。目前還欠缺完整的測試程式，會盡快將此部分完成。
+一開始在理解如何執行此專案就花了不少時間，曾遇到錯誤想了一週如何 debug，後來才發現是自己執行的問題。最後有成功完成 TODO 事項並提交 pull request，學會如何正確的 commit, rebase。目前還欠缺完整的測試程式，會盡快將此部分完成。
 
 [Linux 核心專題: 虛擬攝影裝置驅動程式](https://hackmd.io/@sysprog/r1xqIXO-lx)
 * [TODO: 重現去年實驗並確保在 Linux v6.11+ 運作](https://hackmd.io/PZ-Z80sWSQCPl2247sDkDQ?view#TODO-%E9%87%8D%E7%8F%BE%E5%8E%BB%E5%B9%B4%E5%AF%A6%E9%A9%97%E4%B8%A6%E7%A2%BA%E4%BF%9D%E5%9C%A8-Linux-v611-%E9%81%8B%E4%BD%9C)
