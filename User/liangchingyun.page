@@ -9,3 +9,52 @@ categories: User
 * HackMD: [`liangchingyun`](https://hackmd.io/@liangchingyun)
 
 # 2025 Linux 核心設計 春季班 自我評量
+## 成果發表和貢獻
+a分。
+
+## 作業/隨堂測驗
+b分。
+
+* [2025q1 Homework1 (lab0)](https://hackmd.io/@liangchingyun/linux2025-homework1)
+* [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@liangchingyun/linux2025-homework2)
+* [2025q1 Homework3 (kxo)](https://hackmd.io/@liangchingyun/linux2025-homework3)
+* [2025q1 Homework4 (quiz3+4)](https://hackmd.io/@liangchingyun/linux2025-homework4)
+* [2025q1 Homework5 (assessment)](https://hackmd.io/@liangchingyun/linux2025-homework5)
+
+
+## 期末專題
+c分。
+
+
+* [Linux 核心專題: 虛擬攝影裝置驅動程式](https://hackmd.io/@sysprog/r1xqIXO-lx)
+
+
+## 與授課教師的互動
+d分。
+* 第十一週：4/29、5/1
+    * [線上討論](https://docs.google.com/document/d/1eldG49e2c-HPpcfCrjBehkhV2k_1S5D2wMNbKbMjYZE/edit?usp=sharing)
+    * 問題 : 
+
+* 第十三週：5/13、5/15
+    * [線上討論](https://docs.google.com/document/d/1eldG49e2c-HPpcfCrjBehkhV2k_1S5D2wMNbKbMjYZE/edit?usp=sharing)
+
+* 第十七週：6/10、6/12
+    * [2025-06-10/17/24 問答簡記](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA#liangchingyun)
+    * 問題 : Priority inherence 要做在 Kernel space 還是 User space？
+    * 問題 : 如何實作 Priority inherence？
+
+## 所見所聞所感
+e分。
+
+* 回顧自身在本課程的投入狀況
+
+
+## 自我評量 (1 ~ 10)：
+$GEOMEAN = ( a \times b \times c \times d \times e )^{1/5} = 
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + f = s$
+
+
+
+
+
