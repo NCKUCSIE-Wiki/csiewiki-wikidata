@@ -30,7 +30,9 @@ categories: User
 
 [Linux 核心專題: 虛擬攝影裝置驅動程式](https://hackmd.io/@sysprog/r1xqIXO-lx)
 * [TODO: 重現去年實驗並確保在 Linux v6.11+ 運作](https://hackmd.io/PZ-Z80sWSQCPl2247sDkDQ?view#TODO-%E9%87%8D%E7%8F%BE%E5%8E%BB%E5%B9%B4%E5%AF%A6%E9%A9%97%E4%B8%A6%E7%A2%BA%E4%BF%9D%E5%9C%A8-Linux-v611-%E9%81%8B%E4%BD%9C)
+
 * [TODO: vcam 所需的背景知識回顧](https://hackmd.io/PZ-Z80sWSQCPl2247sDkDQ?view#TODO-vcam-%E6%89%80%E9%9C%80%E7%9A%84%E8%83%8C%E6%99%AF%E7%9F%A5%E8%AD%98%E5%9B%9E%E9%A1%A7)
+
 * [TODO: 支援 DMABUF](https://hackmd.io/PZ-Z80sWSQCPl2247sDkDQ?view#TODO-%E6%94%AF%E6%8F%B4-DMABUF)
 
 
@@ -41,11 +43,9 @@ categories: User
 * 第十一週：4/29、5/1
     * [線上討論](https://docs.google.com/document/d/1eldG49e2c-HPpcfCrjBehkhV2k_1S5D2wMNbKbMjYZE/edit?usp=sharing)
     * 發現對於先前教材的不熟悉，誠實面對自己
-
 * 第十三週：5/13、5/15
     * [線上討論](https://docs.google.com/document/d/1eldG49e2c-HPpcfCrjBehkhV2k_1S5D2wMNbKbMjYZE/edit?usp=sharing)
     * 重新理解[quiz2](https://hackmd.io/@sysprog/linux2025-quiz2)
-
 * 第十七週：6/10、6/12
     * [2025-06-10/17/24 問答簡記](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA#liangchingyun)
     * 問題 : Priority inherence 要做在 Kernel space 還是 User space？
