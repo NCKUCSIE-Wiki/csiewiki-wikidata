@@ -34,7 +34,7 @@ categories: User
 * 5/9 下午 5:00、5/15 上午 10:30 一對一討論 : [HackMD](https://hackmd.io/@clh/linux2025-homework5)
 * 6/10 課堂問答: [deadlock、dependency graph](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA#Hlunlun)
 
-老師問了與位元運算有關的問題：在 linux 核心中不用FPU實作 ［ldexpf］（https://hackmd.io/KjzKiTVJSl-J6CBDZFI9iQ###2_的冪乘法）、幾何平均，然後我完全不會，所以就從浮點數二進位編碼開始補起，並且了解到kernel 中
+老師問了與位元運算有關的問題：在 linux 核心中不用FPU實作 [ldexpf](https://hackmd.io/KjzKiTVJSl-J6CBDZFI9iQ?view#2-%E7%9A%84%E5%86%AA%E4%B9%98%E6%B3%95)、幾何平均，然後我完全不會，所以就從浮點數二進位編碼開始補起，並且了解到kernel 中
 
 10 分
 
