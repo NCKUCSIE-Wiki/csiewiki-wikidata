@@ -43,9 +43,9 @@ categories: User
 ## 期末專題
 10分。
 
-[Linux 核心專題: 虛擬無線網路裝置驅動程式](https://hackmd.io/@sysprog/HyUvvBm-ll)
-* [TODO: TODO: 可調整的 MCS](https://hackmd.io/@sysprog/HyUvvBm-ll)
-* 並附上講解影片
+*[Linux 核心專題: 虛擬無線網路裝置驅動程式](https://hackmd.io/@sysprog/HyUvvBm-ll)
+  * [TODO: TODO: 可調整的 MCS](https://hackmd.io/@sysprog/HyUvvBm-ll)
+  * 並附上講解影片
 
 
 一開始在理解如何執行此專案就花了不少時間，曾遇到錯誤想了一週如何 debug，後來才發現是自己執行的問題。最後有成功完成 TODO 事項並提交 pull request，學會如何正確的 commit, rebase。目前還欠缺完整的測試程式，會盡快將此部分完成。
@@ -65,6 +65,9 @@ categories: User
 * 第十七週：6/10、6/12
     * [2025-06-10/17/24 問答簡記](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA#liangchingyun)
     * 問題 : 何時暫時提升低優先權任務的優先權？再何時釋放提升的優先權 (還原回原本的低優先權) ？
+* 第十八周：6/22
+    * 討論與他人衝突的專題範圍與開啟 [vwifi專題 hackmd](https://hackmd.io/@sysprog/HyUvvBm-ll) 
+    * meeting 紀錄於發送助教信件
 
 ## 所見所聞所感
 10分。
