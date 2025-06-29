@@ -11,7 +11,7 @@ categories: User
 # 2025 Linux 核心設計/實作 春季班 自我評量
 
 ## 成果發表和貢獻
-在寫專題參考文件 [Linux 核心設計: Scheduler(4): PELT](https://hackmd.io/@sysprog/Hka7Kzeap/%2FBk4y_5o-9) 時，發現 `decay_load` 的數學部分解釋有誤，有留言提醒
+在寫專題參考文件 [Linux 核心設計: Scheduler(4): PELT](https://hackmd.io/@sysprog/Hka7Kzeap/%2FBk4y_5o-9) 時，發現 `decay_load` 的數學部分解釋有誤，並進行修改
 
 4 分
 
@@ -34,13 +34,15 @@ categories: User
 * 5/9 下午 5:00、5/15 上午 10:30 一對一討論 : [HackMD](https://hackmd.io/@clh/linux2025-homework5)
 * 6/10 課堂問答: [deadlock、dependency graph](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA#Hlunlun)
 
+老師問了與位元運算有關的問題：在 linux 核心中不用FPU實作 ［ldexpf］（https://hackmd.io/KjzKiTVJSl-J6CBDZFI9iQ###2_的冪乘法）、幾何平均，然後我完全不會，所以就從浮點數二進位編碼開始補起，並且了解到kernel 中
+
 10 分
 
 
 ## 所見所聞所感
 在專題過程中，了解到許多 Linux 核心中位元運算的數學意義，也深刻體會數學在其中的重要性，如再看 PELT 原始碼時，如果直接即使可以理解他的數學運算過程，卻無法知道這樣計算的原因，但如果先了解用於其中計算衰減方式的 EWMA，就能知道原來他是分成 ewma_sum(u) 與 ewma_sum(1) 來計算，也就是說找到一個關鍵的數學意義對於切入其實做的程式碼是非常重要的。
 
-在期末專題中也透過其他人的開發紀錄了解目前最新技術與開發過程遇到的問題，雖然我尚未有足夠的閱讀量來一窺整個 Linux 核心，但是在所有的公開教材、開發紀錄等多個學員的文字貢獻中，謝謝這門課總會有可以看懂並深入探討的角落，並試圖拉近我和這些原始碼的距離。
+在期末專題中也透過其他人的開發紀錄了解目前最新技術與開發過程遇到的問題，雖然我尚未有足夠的閱讀量來一窺整個 Linux 核心，但是在所有的公開教材、開發紀錄等多個學員的文字貢獻中，發現有自己可以修改的地方，並且手動修改
 
 10 分
 
