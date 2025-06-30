@@ -1,0 +1,87 @@
+---
+title: MikazukiHikari(傅約榮)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 電機工程學系碩士班 112 級 (2023 ~ 2025)
+* GitHub: [`MikazukiHikari`](https://github.com/MikazukiHikari)
+* HackMD: [`MikazukiHikari`](https://hackmd.io/@DboOgKS6RtOmMLCltFsBig)
+
+# 2025 Linux 核心設計 春季班 自我評量
+## 成果發表和貢獻
+
+7分。
+
+在和老師一對一討論時，被老師問到了教材 [從 √2 的存在談開平方根的快速運算](https://hackmd.io/HUzAPdVVSACpsnaj5Omvgw?utm_source=suggest-edit-card&utm_medium=icon#Digit-by-digit-Method) 的相關問題如下，我對其做出了回應，還有一系列的實驗及解釋並記錄於[整數開平方根](https://hackmd.io/@DboOgKS6RtOmMLCltFsBig/SkS4ZDUeeg)，我認為對於成果發表與貢獻而言，自認為還需努力，因此給予 7 分自評。
+* sqrti 的原理
+* 原本的 sqrti 的行為是 floor(sqrt(x))，我們想改為 ceil(sqrt(x))，該如何修改 sqrti 的程式碼？
+* 改寫程式碼，不使用 clz / clz64，達成 ceil_sqrti，不能用乘法或除法
+* 如何加速上述程式碼
+* 如何檢驗「加速」版本的 sqrti? i.e., corner/edge cases?
+
+
+
+
+## 作業/隨堂測驗
+9分。
+
+* [2025q1 Homework1 (lab0)](https://hackmd.io/@DboOgKS6RtOmMLCltFsBig/linux2025-homework1)
+* [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@DboOgKS6RtOmMLCltFsBig/linux2025-homework2)
+* [2025q1 Homework3 (kxo)](https://hackmd.io/@DboOgKS6RtOmMLCltFsBig/linux2025-homework3)
+* [2025q1 Homework4 (quiz3+4)](https://hackmd.io/@DboOgKS6RtOmMLCltFsBig/linux2025-homework4)
+* [2025q1 Homework5 (assessment)](https://hackmd.io/@DboOgKS6RtOmMLCltFsBig/linux2025-homework5)
+
+在進行作業的過程中，一開始我很不習慣留下詳細的開發紀錄，特別是在 lab-0 的實作過程中，總覺得與其拿時間撰寫開發紀錄不如推進更多實作進度，然而在多人實作中，詳盡且可追蹤的開發過程很重要，這牽涉到工程訓練的基本素養，不接受「突然冒出進度」這種事。此外有開發過程也能使別人更快速理解自己的想法並激發討論與交流，其實變相的也能幫助到實作進度，也能印證或改進自己的實作方向，利遠大於弊。於是到作業二開始基本上一定會邊做邊把自己完成的內容整理成開發紀錄，我很慶幸自己有養成留下詳細紀錄的習慣。事後發現，這不只是單純記錄步驟而已，更像是一種幫助自己釐清思緒的過程。
+
+此外這個過程我發現我常以為自己已經掌握了一個概念，但每當試圖用文字寫下來、條理清楚地表達時，才發現原來理解得並不深入。撰寫開發紀錄讓我必須重新梳理每個想法，用更嚴謹的方式組織內容，不能只停留在「大概懂了」的模糊認知。透過這樣的過程，我更深刻地體會到，唯有能夠清楚說明並寫出來，才是真正理解的表現。我幾乎每次作業都是蠻早就開始著手實作，並投入了很大的心力去完成，但第六次作業未能實作，因此無法給自己滿分。
+
+## 期末專題
+10分。
+
+*[Linux 核心專題: RISC-V 系統模擬與 VirtIO](https://hackmd.io/@sysprog/SkL_nUFWle)
+  * [TODO: 實作 virtio-fs](https://hackmd.io/@sysprog/SkL_nUFWle#TODO-%E5%AF%A6%E4%BD%9C-virtio-fs)
+  * 並附上程式碼與講解影片
+
+
+這一個月來，我投入了大量時間專注於寫程式，幾乎每天都在密集思考與實作中度過，甚至常因為反覆推敲細節而夜深難眠。這樣的高強度投入，讓我每天都能清楚感受到自己的成長——不只是技術上的提升，更包括面對挑戰時的心態轉變。從一開始完全看不懂 linux 中描述 File System Device 以及 FUSE 的規格書到思索如何解決 host 不支援 virtio-fs 功能，之後在建置一個能支援我們要的功能的 container 的過程中突然理解了虛擬化和容器化技術的含意，再到如何解決無法初始化 virtio-fs 裝置，且無法參考其他已實作的 virtio 功能，只能自己查閱資料去一個一個排除問題，然後終於成功讓系統偵測到 / 能掛載我的裝置，到現在能收到 guest 發出的 request ，最後實作對應的 response 就能完成不同的命令，並且在過程中也理解了一開始的 linux 規格書上表達的意思，這個過程實在是太漫長了，但我獲得了超乎想像的收穫。
+
+背負著碩士研究可能會延誤的風險，我依舊堅持選修本課程，並審慎依據事先規劃的目標，著重在上述的題目，尤其是這與我碩班口試的時間上完全重疊，但我仍努力做到自己認為的最好並投入了不亞於我碩論研究的時間，只因我做這些始終是在追求翻身的機會，並為此在 Linux 核心的基礎上不斷的進行自我突破。
+
+
+## 與授課教師的互動
+
+10分。
+
+* 第十一週：5/2
+    * [線上討論](https://docs.google.com/document/d/1nV6BP4nttrO0OgaycJRXjkScE1R6Jf1lwmqxQylr4N0/edit?pli=1&tab=t.0#heading=h.ux527w72951q)
+    * 發現對於先前教材整數開平方根的操作的不熟悉，誠實面對自己。
+    * 本來想做 ML 相關的專題，但發現這並不適合這堂課及台灣的環境
+* 第十二週：5/5
+    * [線上討論](https://docs.google.com/document/d/1nV6BP4nttrO0OgaycJRXjkScE1R6Jf1lwmqxQylr4N0/edit?pli=1&tab=t.0#heading=h.ux527w72951q)
+    * 討論期末專題題目，決定實作 RISC-V 相關之主題。
+    * 整數開平方根的相關實作。
+    * 和老師模擬面試。
+* 第十七週：6/10
+    * [2025-06-10/17/24 問答簡記](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA#MikazukiHikari)
+    * 問題 : DAG 是甚麼? 和離散數學中的圖 (graph) 差別最大的地方是？
+    * 問題 : DAG 在 linux kernel 哪裡會用到？
+    * 問題 : make 與 DAG 的關聯
+* 第十八週：6/17
+    * 問題 : 想讓 semu 支援 virtio-fs 透過 `make modules` 去獲得 `virtio_fs.ko` ，之後再將 `virtio_fs.ko` 安裝到`/lib/modules/$(uname -r)/kernel`，是對的嗎？或者其實根本不需要 `virtio_fs.ko` 就能執行 semu 的 `virtio-fs` 功能？
+    * 問題 : 全部編譯 linux kernel 的檔案這件事常見嗎？
+    * 問題 : 全部編譯真的很慢，我該如何加速？或者直接能告訴我可以只編譯哪裡就好？
+    * 只需在建置環境時額外添加參數即可讓 semu 的 linux kernel 內置 virtio-fs 。
+
+
+## 所見所聞所感
+10分。
+
+* 回顧自身在本課程的投入狀況
+
+
+## 自我評量 (1 ~ 10)：
+$GEOMEAN = ( 7 \times 9 \times 10 \times 10 \times 10 )^{1/5} = 9.117$
+
+方案 A ：$8 + floor(GEOMEAN) = 8 + 3 = 10$
+方案 B ：$1 + floor(GEOMEAN) = 1 + 9 = 10$ 選擇此方案。
