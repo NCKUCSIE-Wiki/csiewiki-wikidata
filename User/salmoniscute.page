@@ -38,7 +38,7 @@ categories: User
 
 [Linux 核心專題: CPU 排程器之理論基礎](https://hackmd.io/@sysprog/HyFtDjMfxg)
 
-有參與期末發表。
+有參與[期末發表](https://hackmd.io/29wzjTXtSgyu4oCaBJOwiQ)。
 
 越深入了解 CPU 排程器會發現自己不懂的知識越多，要填補的坑越來越大。我現階段對於此領域整體的掌握還不足以給自己滿分，時間有限許多代辦事項也還未完成，像是修訂《Demystifying the Linux CPU Scheduler》第二章的 issue 還有理解 CPU BWC 等等。
 
