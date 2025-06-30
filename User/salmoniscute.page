@@ -10,6 +10,29 @@ categories: User
 # 2025 Linux 核心設計/實作 春季班 自我評量
 
 ## 成果發表和貢獻
+9 分。
+
+### 《Demystifying the Linux CPU Scheduler》
+* [pr #265 ](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/265)
+* [pr #266](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/266)
+* [pr #267](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/267)
+* [pr #286](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/286)
+
+### 作業和教材
+* [lab0-c pr #282](https://github.com/sysprog21/lab0-c/pull/282)
+* [kxo pr #12](https://github.com/sysprog21/kxo/pull/12)
+* 修正[作業一教材](https://hackmd.io/@sysprog/linux2025-lab0/%2F%40sysprog%2Flinux2025-lab0-c) select 程式碼註解
+
+## 作業/隨堂測驗
+8 分。
+
+* [2025q1 Homework1 (lab0)](https://hackmd.io/@salmonii/linux2025-homework1)
+* [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@salmonii/linux2025-homework2)
+* [2025q1 Homework3 (kxo)](https://hackmd.io/@salmonii/linux2025-homework3)
+* [2025q1 Homework4 (quiz3+4)](https://hackmd.io/@salmonii/linux2025-homework4)
+* [2025q1 Homework5 (assessment)](https://hackmd.io/@salmonii/linux2025-homework5)
+
+第六次作業未能開始，因此無法給自己滿分。
 
 ## 期末專題
 
