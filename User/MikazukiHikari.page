@@ -84,5 +84,6 @@ categories: User
 ## 自我評量 (1 ~ 10)：
 $GEOMEAN = ( 7 \times 9 \times 10 \times 10 \times 10 )^{1/5} = 9.117$
 
-方案 A ：$8 + floor(GEOMEAN) = 8 + 3 = 10$
+方案 A ：$8 + floor(GEOMEAN) = 8 + 2 = 10$
+
 方案 B ：$1 + floor(GEOMEAN) = 1 + 9 = 10$ 選擇此方案。
