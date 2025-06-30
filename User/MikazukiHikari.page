@@ -11,8 +11,8 @@ categories: User
 # 2025 Linux 核心設計 春季班 自我評量
 ## 成果發表和貢獻
 
-?分。
-
+5分。
+在[類神經網路的 ReLU 及其常數時間實作](https://hackmd.io/@sysprog/constant-time-relu)，順手修正標點符號的錯誤，勿以善小而不為。
 
 
 
@@ -81,8 +81,8 @@ categories: User
 
 
 ## 自我評量 (1 ~ 10)：
-$GEOMEAN = ( 7 \times 9 \times 10 \times 10 \times 10 )^{1/5} = 9.117$
+$GEOMEAN = ( 5 \times 9 \times 10 \times 10 \times 10 )^{1/5} = 8.52$
 
-方案 A ：$8 + floor(GEOMEAN) = 8 + 2 = 10$
+方案 A ：$8 + floor(0.3 * GEOMEAN) = 8 + 2 = 10$
 
-方案 B ：$1 + floor(GEOMEAN) = 1 + 9 = 10$ 選擇此方案。
+方案 B ：$1 + floor(GEOMEAN) = 1 + 8 = 9$ 選擇此方案。
