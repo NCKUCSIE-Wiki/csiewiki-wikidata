@@ -12,16 +12,15 @@ categories: User
 ## 成果發表和貢獻
 9 分。
 
-### 《Demystifying the Linux CPU Scheduler》
-* [pr #265 ](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/265)
-* [pr #266](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/266)
-* [pr #267](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/267)
-* [pr #286](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/286)
-
-### 作業和教材
-* [lab0-c pr #282](https://github.com/sysprog21/lab0-c/pull/282)
-* [kxo pr #12](https://github.com/sysprog21/kxo/pull/12)
-* 修正[作業一教材](https://hackmd.io/@sysprog/linux2025-lab0/%2F%40sysprog%2Flinux2025-lab0-c) select 程式碼註解
+* 《Demystifying the Linux CPU Scheduler》
+    * [pr #265 ](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/265)
+    * [pr #266](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/266)
+    * [pr #267](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/267)
+    * [pr #286](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/286)
+* 作業和教材
+    * [lab0-c pr #282](https://github.com/sysprog21/lab0-c/pull/282)
+    * [kxo pr #12](https://github.com/sysprog21/kxo/pull/12)
+    * 修正[作業一教材](https://hackmd.io/@sysprog/linux2025-lab0/%2F%40sysprog%2Flinux2025-lab0-c) select 程式碼註解
 
 ## 作業/隨堂測驗
 8 分。
