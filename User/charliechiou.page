@@ -25,8 +25,6 @@ categories: User
 
     - 源來適你社群分享 : Building a Custom Linux CPU Scheduler with sched_ext
 
-    ![alt text](/sched_ext_poster.jpg)
-
 評分 : 這部份我給自己 `9` 分，對於每份課程教材皆在閱讀過程中尋找可以貢獻的機會。且實際去嘗試授課老師所提到的貢獻 Linux 核心程式碼的流程，並提交自己所發現的 Patch。 在進行期末專題時也透過台灣開源社群 - **源來適你** 分享 sched-ext 的內容，替開源社群盡一份心力。
 
 ## 作業/隨堂測驗
