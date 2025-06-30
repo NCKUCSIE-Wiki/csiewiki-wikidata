@@ -40,7 +40,7 @@ categories: User
 ## 期末專題
 10分。
 
-*[Linux 核心專題: RISC-V 系統模擬與 VirtIO](https://hackmd.io/@sysprog/SkL_nUFWle)
+* [Linux 核心專題: RISC-V 系統模擬與 VirtIO](https://hackmd.io/@sysprog/SkL_nUFWle)
 
   * [TODO: 實作 virtio-fs](https://hackmd.io/@sysprog/SkL_nUFWle#TODO-%E5%AF%A6%E4%BD%9C-virtio-fs)
   * 並附上程式碼與講解影片
