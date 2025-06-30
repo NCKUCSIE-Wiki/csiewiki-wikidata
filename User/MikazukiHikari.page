@@ -13,14 +13,7 @@ categories: User
 
 7分。
 
-在和老師一對一討論時，被老師問到了教材 [從 √2 的存在談開平方根的快速運算](https://hackmd.io/HUzAPdVVSACpsnaj5Omvgw?utm_source=suggest-edit-card&utm_medium=icon#Digit-by-digit-Method) 的相關問題如下，我對其做出了回應，還有一系列的實驗及解釋並記錄於[整數開平方根](https://hackmd.io/@DboOgKS6RtOmMLCltFsBig/SkS4ZDUeeg)，我認為對於成果發表與貢獻而言，自認為還需努力，因此給予 7 分自評。
 
-
-* sqrti 的原理
-* 原本的 sqrti 的行為是 floor(sqrt(x))，我們想改為 ceil(sqrt(x))，該如何修改 sqrti 的程式碼？
-* 改寫程式碼，不使用 clz / clz64，達成 ceil_sqrti，不能用乘法或除法
-* 如何加速上述程式碼
-* 如何檢驗「加速」版本的 sqrti？ i.e., corner/edge cases？
 
 
 
@@ -61,7 +54,7 @@ categories: User
 * 第十二週：5/5
     * [線上討論](https://docs.google.com/document/d/1nV6BP4nttrO0OgaycJRXjkScE1R6Jf1lwmqxQylr4N0/edit?pli=1&tab=t.0#heading=h.ux527w72951q)
     * 討論期末專題題目，決定實作 RISC-V 相關之主題。
-    * 整數開平方根的相關實作。
+    * 在和老師一對一討論時，被老師問到了教材 [從 √2 的存在談開平方根的快速運算](https://hackmd.io/HUzAPdVVSACpsnaj5Omvgw?utm_source=suggest-edit-card&utm_medium=icon#Digit-by-digit-Method) 的相關問題，我對其做出了回應，還有一系列的實驗及解釋並記錄於[整數開平方根](https://hackmd.io/@DboOgKS6RtOmMLCltFsBig/SkS4ZDUeeg)。
     * 和老師模擬面試。
 * 第十七週：6/10
     * [2025-06-10/17/24 問答簡記](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA#MikazukiHikari)
