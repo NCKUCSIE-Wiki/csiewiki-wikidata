@@ -26,7 +26,7 @@ categories: User
 評分: 9
 
 ## 4. 與授課教師「一對一討論」的時間
-* 2025q1 Homework1 (ideas): [HackMD](https://hackmd.io/@qM_cm68kRSyC_0lissRMNg/rk7CyB4iyl)
+* 2025q1 Homework5 (assessment): [HackMD](https://hackmd.io/@qM_cm68kRSyC_0lissRMNg/SJVN2q7AJx)
 
 評分: 8
 
@@ -50,7 +50,9 @@ categories: User
 
 雖然我知道心態是一時的事，不該讓自己因為這種事情停滯太久，但我不想單純靠『整理心情，趕緊加油，馬上再戰』的氣魄就結束這回合，這也是為什麼我先暫停在這，我想要花一點點時間去找原因，不想太快感受這位同學變化成樂觀的模樣，也許先繼續用很難受的心態去挑戰能讓我對現在發生的現實跟自己的錯誤有更深的印象。
 
+在這堂課中，我首次且無數次的快速快速閱讀程式碼，雖然依然要花較多的時間去了解，但也變得對大型專案不再畏懼了，我也學習到如perf、valgrind等分析工具的操作，甚至更多的學到
+
 評分: 10
 
 ## 自我評量(1 ~ 10)
-GEOMEAN: $1 + floor((5^2 + 7^2 + 9^2 + 8^2 + 10^2)^(1/5)) = 8$
+GEOMEAN: $1 + floor(\sqrt[n]{5^2 7^2 9^2 8^2 10^2}) = 8$
