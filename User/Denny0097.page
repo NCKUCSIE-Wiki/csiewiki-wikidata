@@ -53,4 +53,4 @@ categories: User
 評分: 10
 
 ## 自我評量(1 ~ 10)
-GEOMEAN: $1 + floor(\sqrt[n]{5^2 7^2 9^2 8^2 10^2}) = 8$
+GEOMEAN: $1 + floor(\sqrt[5]{5^2 7^2 9^2 8^2 10^2}) = 8$
