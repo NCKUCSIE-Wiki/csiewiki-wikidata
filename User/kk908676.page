@@ -12,16 +12,35 @@ categories: User
 # 2025 Linux 核心設計 春季班 自我評量
 
 ## 1. 成果發表和貢獻
-自評分數: 
+自評分數: 4
+在這個部份我沒有做出實際的貢獻，雖然我的期末專題還有待更進一步優化的空間，但是還是能提供對於stm32開發版系列運行Linux有基本的參考。
 
 ## 2. 作業/隨堂測驗
-自評分數: 
+自評分數: 7
+
+* lab0-c: [HackMD](https://hackmd.io/@yawu/linux2025-homework1)
+* 2025q1 Homework2 (quiz1+2): [HackMD](https://hackmd.io/@yawu/linux2025-homework2)
+* 2025q1 Homework3 (kxo): [HackMD](https://hackmd.io/@yawu/linux2025-homework3)
+* 2025q1 Homework4 (quiz3+4): [HackMD](https://hackmd.io/@yawu/linux2025-homework4)
+* 2025q1 Homework5 (assessment): [HackMD](https://hackmd.io/@yawu/linux2025-homework5)
+
+在修課的前期都有準時的繳交，但是因為我很早就有自己理想的專題方向(stm32)，花了較多的心思在那邊，因此沒有完成部分作業(kxo,ktcp)，所以給自己減去一些的分數。
 
 ## 3. 期末專題
-自評分數: 
+自評分數: 8
+
+* 針對 Arm Cortex-M4 的移植和客製化 : [HackMD](https://hackmd.io/@sysprog/H1jsdYYWgx)
+
+將 Linux v6.14.y 移植到 STM32F429i-Discovery 平台並客製化相關的軟體組成，包含探討 Arm Cortex-M4 開機流程、記憶體佈局、中斷處理機制、輕量級 boot loader、Linux 核心組態、rootfs 建構，和降低佔用的空間等客製化。
 
 ## 4. 與授課教師「一對一討論」的時間
 自評分數: 
+
+* 一對一討論：5月1日 週四 下午2:00
+    * 提問： Cortex-M 沒有 MMU、[中斷處理](https://developer.arm.com/documentation/100166/0001/Nested-Vectored-Interrupt-Controller/NVIC-functional-description/NVIC-interrupts)較精簡、Thumb2-only
+    * 測驗：[Optimize uClinux for ARM Cortex-M4](https://events.static.linuxfound.org/sites/events/files/slides/optimize-uclinux.pdf)    
+    * 測驗延伸：探討「為何afboot-stm32的[start_kernel.c](https://github.com/mcoquelin-stm32/afboot-stm32/blob/master/start_kernel.c)只靠一行 kernel(0, ~0UL, DTB_ADDR) 即可載入並執行 Linux 核心」
+
 
 ## 5. 修課心得
 自評分數: 
