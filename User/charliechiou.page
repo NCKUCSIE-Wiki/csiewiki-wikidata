@@ -14,16 +14,19 @@ categories: User
 
 - 貢獻
     - Linux 核心提出 PR : [`[PATCH] rbtree: Fix typo in header comment`](https://lore.kernel.org/lkml/20250415124928.14372-1-charlie910417@gmail.com/T/#u)
-    - LKMPG : [`Align version check #301`](https://github.com/sysprog21/lkmpg/pull/301)
-    - linux-kernel-scheduler-internals : `Refine sentence structure #277`,`Fix grammar mistakes and refine semantic consistency in CFS subsection #275`
-    - lab0-c : [`Fix missing Change-Id #269`](https://github.com/sysprog21/lab0-c/pull/269),[`Ensure proper footer sorting of footer #256`](https://github.com/sysprog21/lab0-c/pull/256),[`Ensure all trailers remain after Change-Id #251`](https://github.com/sysprog21/lab0-c/pull/251),[`Correct order of Co-authored-by in commit footer #249`](https://github.com/sysprog21/lab0-c/pull/249)
-    - kxo : [`Revise log format for consistency #6`](https://github.com/sysprog21/kxo/pull/6)
-    - concurrent-programs : [`Free task memory after completion #23`](https://github.com/sysprog21/concurrent-programs/pull/23)
-    - simrupt : [`Improve warning message for fast buffer overflow #5`](https://github.com/sysprog21/simrupt/pull/5)
+    - LKMPG : [`#301`](https://github.com/sysprog21/lkmpg/pull/301)
+    - linux-kernel-scheduler-internals : `#277`,`#275`
+    - lab0-c : [`#269`](https://github.com/sysprog21/lab0-c/pull/269),[`#256`](https://github.com/sysprog21/lab0-c/pull/256),[`#251`](https://github.com/sysprog21/lab0-c/pull/251),[`#249`](https://github.com/sysprog21/lab0-c/pull/249)
+    - kxo : [`#6`](https://github.com/sysprog21/kxo/pull/6)
+    - concurrent-programs : [`#23`](https://github.com/sysprog21/concurrent-programs/pull/23)
+    - simrupt : [`#5`](https://github.com/sysprog21/simrupt/pull/5)
 
 - Linux 核心相關公開演講 :
 
-    - 源來適你社群分享 : Building a Custom Linux CPU Scheduler with sched_ext
+    - [《Kafka 相關饅頭營》線上研討會]( https://www.facebook.com/share/p/1Hno2QwcTT/)。講題: 「[Building a Custom Linux CPU Scheduler with `sched_ext`](https://www.youtube.com/watch?v=wk-qzWtVzAg&t=12032s)」 & [Slides](https://www.slideshare.net/slideshow/building-a-custom-linux-cpu-scheduler-with-sched_ext-pdf/281093739)
+    - OSS-NA 2025: [Improve Load Balancing with Machine Learning Techniques based on `sched_ext` Framework - Jim Huang, National Cheng Kung University](https://ossna2025.sched.com/event/1zffn/improve-load-balancing-with-machine-learning-techniques-based-on-the-schedext-framework-jim-huang-national-cheng-kung-university) & [Slides](https://static.sched.com/hosted_files/ossna2025/d2/Improve-Load-Balancing-With-Machine-Learning-Techniques-based-on-sched_ext.pdf)
+    - [2025 年 Linux 核心設計課程期末展示](https://youtu.be/Ae0jVIDCycU?t=4716) & [Slides](https://www.slideshare.net/slideshow/2025-linux-sched_ext-pdf/281093837)
+    - 開源人年會 COSCUP 2025 講者。講題: 「[藉由 `sched_ext` 實作客製化 Linux CPU 排程器](https://pretalx.coscup.org/coscup-2025/talk/WN9RDZ/)」
 
 評分 : 這部份我給自己 `9` 分，對於每份課程教材皆在閱讀過程中尋找可以貢獻的機會。且實際去嘗試授課老師所提到的貢獻 Linux 核心程式碼的流程，並提交自己所發現的 Patch。 在進行期末專題時也透過台灣開源社群 - **源來適你** 分享 sched-ext 的內容，替開源社群盡一份心力。
 
@@ -45,11 +48,11 @@ categories: User
 
 這學期的期末專題目標為將 ML 引入 sched-ext 的排程器。
 
-在 Machine Learning 部份，由於實驗室所學便是 ML ,因此在學習 Rust 下的機器學習框架 - Candle 相對快速，應用到自己專業並成功導入專題中。
+在 Machine Learning 部份，實驗室所學便是 ML 因此對於這塊的上手較快,使用了 Rust 下的機器學習框架 - Candle，能夠應用自己的專業來結合其他領域的專業知識便是我升上碩班時期許自己能夠達成的，因此這部分我給自己 5/5。
 
-Sched-ext 部份，由於這是過去相對沒接觸過的內容，我們積極的和來自 Meta, NVIDIA 的社群開發者互動並提出 Pull Requests，參與 office hour 的會議來得知第一手的資訊並討論。最後，我們也於台灣開源社群 - 源來適你分享專案並報名 COSCUP 在八月的演講且已被接受，將 Sched-ext 推廣給更多人知道，期望能夠壯大社群。
+Sched-ext 部份，這是過去相對沒接觸過的內容，我們積極的和來自 Meta, NVIDIA 的社群開發者互動並提出 Pull Requests，參與 office hour 的會議來得知第一手的資訊並討論。另一方面，我們也於台灣開源社群 - 源來適你分享並報名 COSCUP 在八月的演講(已被接受)，將 Sched-ext 推廣給更多人知道，期望能夠壯大社群。而這也呼應到老師上課所提到的**他們以後可能都會是你的同事**，我們不只專注於完成專題的要求，更將自己的產出向他人介紹，因此這部分我也給自己 5/5 。
 
-評分 : 這部份我給自己 `10` 分
+評分 : Machine Learning 及 Sched-ext 兩者 5 + 5 ，這部份我給自己 `10` 分
 
 ## 與授課教師的互動
 
@@ -68,17 +71,20 @@ Sched-ext 部份，由於這是過去相對沒接觸過的內容，我們積極�
     - 2025/06/25
     - 2025/06/27
 
+
 評分 : 這部份我給自己 `8` 分。課堂回答部份，老師第一次向我詢問了基本的浮點數運算問題，第二次老師向我詢問搶佔相關問題，兩次的課堂問題都以類似面試的方式來進行，也讓我意識到許多過去學過得基本知識皆囫圇吞棗，在問答結束後我也詳細的紀錄了老師所提的問題（可參考筆記紀錄）並反思類似的場合如何適宜的應對。一對一討論部份，我們這組的題目為 sched-ext 相關，我們積極的和老師預約討論並推進進度，可參考一對一討論的預約時間。
 
 ## 所見所聞所感
 
-課程名稱為 **Linux 核心設計 (Linux Kernel Internals)** 但實際上這學期所學到的遠超出 Linux 核心程式碼。前六週課程授課老師很少提到核心相關程式碼，反而是著重於資訊科技領域開發所需要重視的事情。從 Git 的 commit message 開始，讓我了解到要以何種嚴謹的心態面對程式碼的開發，而非單純的程式碼會動即可。
+課程名稱為 **Linux 核心設計 (Linux Kernel Internals)** 但實際上這學期所學到的遠超出 Linux 核心程式碼的範疇。前六週課程授課老師鮮少提到核心相關程式碼，反而是著重於資訊科技領域開發所需要重視的事情。從 Git 的 commit message 的注重開始，我發現 Git 在使用上遠超過過去所認知的 git add, git commit 而已，學會了如何用 git rebase 或其他方式來將自己的分支整理乾淨以提升和他人合作的效率。
 
-`路見不平 拿 Patch 來填`是老師常掛在口邊的話，而我這學期也實際的對許多專案提出 Pull Request，也還記得第一次所提出的 PR 把作業的 change id 用壞導致同學在 fb 社群詢問，這時我真正意識到了老師所說的 `你的程式碼是幾百幾萬人要用` 的意思，也對於後面所提出的 PR 更加嚴謹。而後續所提出的 PR ，和開源社群的其他人討論的過程中也了解到如何正確的與他人合作完成程式碼。
+**路見不平 拿 Patch 來填**是老師常掛在口邊的話，而我這學期也實際的對許多專案提出 Pull Request，也還記得第一次所提出的 PR 把作業的 change id 用壞導致同學在 fb 社群詢問(接著從戶外趕回電腦前緊急修正錯誤)，讓我真正意識到了老師所說的 **你的程式碼是幾百幾萬人要用** 的意思，也對於後面所提出的 PR 更加謹慎。後續所提出的 PR ，和開源社群的其他人討論的過程中也了解到真正和他人協作程式碼的方法。觀摩 sched-ext 每次 office hour 的討論，了解到面對龐大且複雜的程式碼是如何依靠僅十幾人的會議來逐步提升，從丟出問題到討論，看見了大神們是如何共同協作的。
 
-若要我所說，這學期所學到最重要的東西是**如何學習**。從老師所說的`切勿舉燭` 到 `閱讀第一手材料` ，過去只要程式碼會動便認為是正確的，從沒想過背後的機制或可能導致的問題。而這點又在大型語言模型遍地開花的現在格外重要，要小心的查證來源，並理解背後的機制。此外，老師上課所提的許多問題往往是過去並未仔細思考的，這便是囫圇吞棗的結果，只將知識死記而非實際應用或實驗去了解，如何用現有的工具去了解並分析程式碼的行為也是修課後才真正理解到的。
+若要我所說，這學期所學到最重要的東西是**如何學習**。從老師所說的**切勿舉燭** 到 **閱讀第一手材料** ，過去只要程式碼會動便認為是正確的，從沒想過背後的機制或可能導致的問題。而這點又在大型語言模型遍地開花的現在格外重要，要小心的查證來源，並理解背後的機制。此外，老師上課所提的許多問題往往是過去並未仔細思考的，這便是囫圇吞棗的結果，只將知識死記而非實際應用或實驗去了解，如何用現有的工具去了解並分析程式碼的行為也是修課後才真正理解到的。
 
-最後，期末專題有幸的被老師指派 sched-ext 的開發，並和大公司第一線的開發人員有所互動。第一重要的便是看到大家是如何線上視訊討論，並透過 GitHub 來開發。此外，在參與討論時也聽聞到來自 NVIDIA 的 Andrea Righi 提到他們所用的設備 NUMA Node 的節點數，是遠遠超出我所想像的，更讓我了解到大公司在程式碼開發上的複雜程度及所面對的問題，這都是期末專題帶給我難能可貴的見識。
+最後，期末專題有幸的被老師指派 sched-ext 的開發，並和大公司第一線的開發人員有所互動。第一重要的便是看到大家是如何線上視訊討論，並透過 GitHub 來開發。此外，在參與討論時也聽聞到來自 NVIDIA 的 Andrea Righi 提到他們所用的設備 NUMA Node 的節點數，是遠遠超出我所想像的，更讓我了解到大公司在程式碼開發上的複雜程度及所面對的問題。
+
+另一方面，參與英文的會議也是過去所沒有體驗過的， sched-ext 的社群中有著來自各國的開發者，自然在會議中也會有各種口音。從第一週的會議難以跟上各種專有名詞及語速，再到最後可以聽懂他們所討論的內容並且分享自己目前進度，我認為這對於日後職場工作有極大的幫助，提前適應以英語為主的會議場合。
 
 評分 ：這部份我給自己 `10` 分。
 
