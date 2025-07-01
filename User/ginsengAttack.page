@@ -1,0 +1,77 @@
+---
+title: ginsengAttack(王國豪)
+categories: User
+...
+#  2025 Linux 核心設計 春季班 自我評量
+
+## 簡介
+* 國立成功大學 電機工程所 (2024~2026)
+* GitHub: [`ginsengAttack`](https://github.com/ginsengAttack)
+
+## 1. 成果發表和貢獻
+
+評分: 4
+
+## 2. 作業/隨堂測驗
+* lab0-c: [HackMD](https://hackmd.io/2Ug8ThcdSN-nfJ3N7P3_sA)
+* 2025q1 Homework1 (ideas): [HackMD](https://hackmd.io/3_RRi3-fR1yVuWUY_bqRtA)
+* 2025q1 Homework2 (quiz1+2): [HackMD](https://hackmd.io/7sZkAaOvQ2mS4-PCwGkwIw)
+* 2025q1 Homework3 (kxo): [HackMD](https://hackmd.io/ALRcjhzjRTWy3tDL-SzvGg)
+* 2025q1 Homework4 (quiz3+4): [HackMD](https://hackmd.io/GbD6nCDkQvixPyIBp5Tn-g)
+
+第一個作業讓我學到了資源的管理、失敗情況的考量，最終我獲得的分數是 95/100。
+
+KXO 是我的首個核心模組，我的成果為:
+1. 減少核心與使用者通訊成本 :原本的程式碼每次傳送一整個棋盤，我改為傳送單一步數，棋盤繪製由使用者進行，每次傳送僅需要4 bytes ，當某方勝利，由核心向使用者通知勝利訊息，使用者接著印出。
+2. 加入 coroutine 機制 :透過 coroutine 在使用者層級處理鍵盤事件與核心訊息。
+3. 透過 CMWQ 控制 kernel thread :在核心使用 CMWQ 實現多棋局並行。
+4. 未完成的部分 :用 select 監聽多個棋局的資料傳輸，以此進行 coroutine 排程。
+最終可以實現兩個棋盤在使用者層面同步輸出，並打好下一個作業的基礎。
+
+KTCP 是我的期末專題，詳見下方頁面。
+
+quiz :
+我對 quiz 的掌握不足，皆是淺嚐輒止，僅有重新回顧過解題流程，沒有真正完全理解其中的知識
+
+評分: 8
+
+## 3. 期末專題
+* 依循 ktcp 作業規範，進行開發，務必提交給進 khttpd 的 pull request 並接受 review。適度引入第 11 週測驗題提及的 kweb 設計，將 ktthpd 調整為高度並行設計，並排除開發過程遇到的缺失。: [HackMD](https://hackmd.io/XzkeT_hDSGGF27qb44zVpA?view)
+
+我的產出:
+1. 導入 Concurrency Managed Workqueue :導入 CMWQ 技術，讓請求處理效能提升 1.433 倍。
+2. 加入 directory listing 功能 :使用核心 api 走訪指定檔案目錄，並傳輸給客戶端。
+3. 用 picohttpparser 替換 http parser :更輕量化的解析器，提升 1.04 倍的效能，並降低專案大小與複雜度。
+4. 支援 HTTP 壓縮 :減小 3.6 倍的傳輸大小，降低傳輸開銷。
+5. 加入透過 sysfs 提供的控制介面 :無須卸載模組，就可以關閉伺服器運行。
+
+評分: 9
+
+## 4. 與授課教師「一對一討論」的時間
+* 2025q1 Homework5 (assessment): [HackMD](https://hackmd.io/J8nSa524R52WMX5CqhDpJw)
+老師在提問的時候，考我為何核心程式碼不使用浮點數，是因為浮點數需要額外的 context switch 成本。
+
+在回答出前面幾個問題後，我無法回答如何使用二項式定理求幾何平均。
+
+接著指派 KTCP 作為我的期末專題，探討高度並行設計與高效能 IO 處理。
+
+評分: 8
+
+## 5. 修課心得
+閱讀〈因為自動飲料機而延畢的那一年>
+好手好腳，我們應該要去解決真實世界的問題，但熱血不是萬靈藥，對細節的掌握才是關鍵。
+
+在進行核心模組的開發過程中， stack 的溢位、資源的管理，稍有池差就會使電腦崩潰，不能像在使用者空間開發程式一樣，輕易忽視除錯的成本，
+從第一次作業就可以發現，專案手動的控制資源分配的機率，讓我們必須考量諸如記憶體分配失誤等情況。
+這些問題一直存在，但是使用者層面的開發卻會讓人不知不覺忘記這些重要的議題。
+
+我的問題是，常常過於急躁忽視對細節的掌握，程式碼往往漏洞百出，能運行即可
+我在 assessment 中提過，不準備期末專題就來不急了，老師給出的回應是:
+> 你可也可選擇 ktcp 作為期末專題，關鍵是你能產出什麼、過程中學到什麼，而非題目是否「很厲害」
+解決問題的本事，才是我們要追求的
+
+
+評分: 10
+
+## 自我評量(1 ~ 10)
+GEOMEAN: $1 + floor((3^2 * 8^2 * 9^2 * 8^2 * 10^2)^(1/5)) = 8$
