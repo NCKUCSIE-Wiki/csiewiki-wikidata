@@ -34,13 +34,14 @@ categories: User
 將 Linux v6.14.y 移植到 STM32F429i-Discovery 平台並客製化相關的軟體組成，包含探討 Arm Cortex-M4 開機流程、記憶體佈局、中斷處理機制、輕量級 boot loader、Linux 核心組態、rootfs 建構，和降低佔用的空間等客製化。
 
 ## 4. 與授課教師「一對一討論」的時間
-自評分數: 
+自評分數: 8
 
 * 一對一討論：5月1日 週四 下午2:00
     * 提問： Cortex-M 沒有 MMU、[中斷處理](https://developer.arm.com/documentation/100166/0001/Nested-Vectored-Interrupt-Controller/NVIC-functional-description/NVIC-interrupts)較精簡、Thumb2-only
     * 測驗：[Optimize uClinux for ARM Cortex-M4](https://events.static.linuxfound.org/sites/events/files/slides/optimize-uclinux.pdf)    
     * 測驗延伸：探討「為何afboot-stm32的[start_kernel.c](https://github.com/mcoquelin-stm32/afboot-stm32/blob/master/start_kernel.c)只靠一行 kernel(0, ~0UL, DTB_ADDR) 即可載入並執行 Linux 核心」
 
+* 線上問答 : [youtube連結](https://www.youtube.com/watch?v=dGlUPbx-ORY)
 
 ## 5. 修課心得
 自評分數: 
