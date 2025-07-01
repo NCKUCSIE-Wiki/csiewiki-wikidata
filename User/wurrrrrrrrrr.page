@@ -42,6 +42,15 @@ categories: User
 * [Linux 核心專題: 探討電源管理休眠／回復流程](https://hackmd.io/@sysprog/BJaNz05Zle)
 
 
+觀摩其他學員的期末專題：
+
+* [探討 sched_ext 及機器學習](https://hackmd.io/@sysprog/BygEQ4dWxx)
+* [群組排程的考量因素和落實](https://hackmd.io/@sysprog/B14go-K-xx)
+* [虛擬攝影裝置驅動程式](https://hackmd.io/@sysprog/r1xqIXO-lx)
+* [bitops 相關測驗題](https://hackmd.io/@sysprog/B13UVSQWel)
+* [重作 kxo](https://hackmd.io/@sysprog/r1hGKNN4lx)
+
+
 ## 與授課教師的互動
 評分 : 我給自己 6 分。這次的一對一討論（5/1）準備得不夠充分，當下雖然有嘗試回答問題，但有些地方表達得不夠清楚，甚至出現一些概念上的模糊。老師點出來的問題讓我發現自己在某些基礎觀念上還有不足，例如對 workqueue 某些機制的運作理解其實還不夠完整。
 
