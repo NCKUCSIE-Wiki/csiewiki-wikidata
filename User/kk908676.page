@@ -42,10 +42,22 @@ categories: User
     * 測驗：[Optimize uClinux for ARM Cortex-M4](https://events.static.linuxfound.org/sites/events/files/slides/optimize-uclinux.pdf)    
     * 測驗延伸：探討「為何afboot-stm32的[start_kernel.c](https://github.com/mcoquelin-stm32/afboot-stm32/blob/master/start_kernel.c)只靠一行 kernel(0, ~0UL, DTB_ADDR) 即可載入並執行 Linux 核心」
 
-
 * 線上問答 : [youtube連結](https://www.youtube.com/watch?v=dGlUPbx-ORY)
+    * Arm Cortex-M 特性 (尤其和 A prorfile 相比)
+    * 在 Cortex-M 移植 Linux 的挑戰和潛在優勢 (如減少 MMU 的成本
+    * STM32/Linux-no-mmu 開機流程
+    * XIP 和相關記憶體佈局 (memory layout)
+
+透過這幾次跟老師的對談，我深深的體悟到往往研究一個議題時我會盲目的做，而不是先了解問題背後代表的意義。若是沒有這個對談的機會，我相信我也不會發現自己的問題所在。
 
 ## 5. 修課心得
 自評分數: 
+
+閱讀[〈因為自動飲料機而延畢的那一年>](https://www.opasschang.com/docs/the-story-of-auto-beverage-machine-1)後，
+    我最深刻的啟發是：實作與理論之間的落差，只有透過親手去做才能真正理解與克服。這不是一篇普通的專案紀錄，而是活生生地展現了「做中學」的精神。作者從一開始不熟機構與硬體，卻靠著不斷嘗試、測量、修正，最終做出一台能穩定運作的飲料機，這種靠意志力與工程思維支撐的歷程，對我來說非常震撼。
+
+    此外，我也學到如何在有限的時間與資源中，學會取捨與聚焦。像作者只保留加茶、加糖、加冰三項功能，就是一種「抓核心需求」的能力。這讓我明白，專案成功的關鍵不只是技術，還包含判斷力與決策能力。
+
+    最後，在團隊協作的層面我也受到啟發。每個人都在自己不熟的領域中學習、貢獻與支持彼此。這提醒我：一個好專案，往往來自一群願意互相補位、願意一起熬夜找答案的夥伴。
 
 ## 自我評量 (1 ~ 10)
