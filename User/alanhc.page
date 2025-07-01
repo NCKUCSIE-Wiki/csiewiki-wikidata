@@ -13,6 +13,7 @@ categories: User
 - [運用 Perf 分析程式效能並改善](https://hackmd.io/@sysprog/linux-perf) flamegraph補充
 - [Linux 核心設計: 記憶體管理](https://hackmd.io/@sysprog/linux-memory) HUGE Page補充
 - 第十七週提到的 在Github有 2.6k star 的 1000行寫一個 RISC-V OS，貢獻繁體中文的翻譯 [#8b116c7](https://github.com/nuta/operating-system-in-1000-lines/commit/8b116c7b58498cec373d5d34e99af15c0b778cc9)（已經merge）
+- coscup 2025 [gdb 除錯](https://pretalx.coscup.org/coscup-2025/talk/EXYUKY/)
 
 
 ## 期末專題
