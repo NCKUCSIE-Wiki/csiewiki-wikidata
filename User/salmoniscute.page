@@ -10,7 +10,7 @@ categories: User
 # 2025 Linux 核心設計/實作 春季班 自我評量
 
 ## 成果發表和貢獻
-9 分。
+8 分。
 
 * 《Demystifying the Linux CPU Scheduler》
     * [pr #265 ](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/265)
@@ -22,8 +22,10 @@ categories: User
     * [kxo pr #12](https://github.com/sysprog21/kxo/pull/12)
     * 修正[作業一教材](https://hackmd.io/@sysprog/linux2025-lab0/%2F%40sysprog%2Flinux2025-lab0-c) select 程式碼註解
 
+以上貢獻都是跟 typo、書本的段落語意相關的修正，雖然老師說勿以善小而不為，但是尚未有程式碼邏輯和行為的改動去解決真實世界的問題，因此計算為 8 分。
+
 ## 作業/隨堂測驗
-8 分。
+7 分。
 
 * [2025q1 Homework1 (lab0)](https://hackmd.io/@salmonii/linux2025-homework1)
 * [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@salmonii/linux2025-homework2)
@@ -31,7 +33,7 @@ categories: User
 * [2025q1 Homework4 (quiz3+4)](https://hackmd.io/@salmonii/linux2025-homework4)
 * [2025q1 Homework5 (assessment)](https://hackmd.io/@salmonii/linux2025-homework5)
 
-第六次作業未能開始，因此無法給自己滿分。
+在撰寫作業的過程中學習 C 語言的新知識和過去沒掌握的觀念，像是 dangling else、指標的指標和浮點數等等。第一次作業中我閱讀 《The cost distribution of queue-mergesort, optimal mergesorts, and power-of-two rules》論文，嘗試用論文中的 QM 演算法實作鏈結串列的合併。作業也讓我了解閱讀第一手資料的重要性 e.g. C99 規格書、man page，與其訴諸 google 搜尋不如直接去看書本的定義。第三次作業很可惜的是我初期花了大量時間舉燭和猜測程式碼的行為，但我應該要做的是直接去看像是 softirq 等教材和文件然後動手實作。
 
 ## 期末專題
 8 分。
@@ -44,7 +46,7 @@ categories: User
 
 但我還是想肯定自己當初在閱讀《Demystifying the Linux CPU Scheduler》時沒有無腦快速地看過去，而是另外參考了核心的原始碼和其他文件一起學習，即使要多花許多時間釐清和紀錄問題，後來這份堅持也幫助我確立專題的方向。
 
-在研讀 CPU 排程器的過程中也很幸運的可以觀摩其他兩組很厲害的學長，了解他們做實驗的方式、貢獻 `sched_ext` 開源專案還有對於他們各自對於排程器的理解。另外我也大量的參考老師撰寫的《Demystifying the Linux CPU Scheduler》還有 `Yiwei Lin` 學長整理的一系列 [CPU 排程器的筆記](https://hackmd.io/@sysprog/Hka7Kzeap/%2FHkyEtNkjA)，包含 EEVDF 的完整 patch series 分析等。若沒有這些前人和同儕的努力，我在投入這個新知識領域的初期會很迷惘。我很謝謝以上這些人，他們不僅讓我學習到他們的學習方式，也促使我繼續學習，在整理筆記時也想著要讓以後的人看懂，因此尤其是 [EEVDF 論文筆記](https://hackmd.io/@salmonii/eevdf_paper)以及期末的專題簡報是經過了反覆的重構調整。
+在研讀 CPU 排程器的過程中也很幸運的可以觀摩其他兩組很厲害的學長，了解他們做實驗的方式、貢獻 `sched_ext` 開源專案還有對於他們各自對於排程器的理解。另外我也大量的參考老師撰寫的《Demystifying the Linux CPU Scheduler》還有 `Yiwei Lin` 學長整理的一系列 [CPU 排程器的筆記](https://hackmd.io/@sysprog/Hka7Kzeap/%2FHkyEtNkjA)，包含 EEVDF 的完整 patch series 分析等。若沒有這些前人和同儕的努力，我在投入這個新知識領域的初期會很迷惘。以上這些人不僅讓我學習到他們的學習方式，也促使我繼續學習，在整理筆記時也想著要讓以後的人看懂，因此尤其是 [EEVDF 論文筆記](https://hackmd.io/@salmonii/eevdf_paper)以及期末的專題簡報是經過了反覆的重構調整。
 
 研讀論文：
 
@@ -52,8 +54,6 @@ categories: User
 * [《WF2Q : Worst-case Fair Weighted Fair Queueing》](https://www.cs.cmu.edu/~hzhang/papers/INFOCOM96.pdf)
 * [《Earliest eligible virtual deadline first: A flexible and accurate mechanism for proportional share resource allocation》](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=805acf7726282721504c8f00575d91ebfd750564)
 * [《CPU bandwidth control for CFS》](https://landley.net/kdocs/ols/2010/ols2010-pages-245-254.pdf)
-
-很可惜的是還沒去追溯到 `Lag` 這個概念的起源，也就是一篇撰寫於 1989 年的網路相關論文。
 
 研讀論文對我的幫助除了學習他人的思考脈絡，我覺得最有挑戰的是理解內化而不是單純瀏覽，因為論文很多地方都不會寫的非常清楚，比如說像是公式的完整證明，他會省略掉中間很多步驟，另外在不同的論文之間，即便在討論同一件事情，使用的數學符號會大不相同，所以需要比對整理。也要去觀察數學理論在真實世界的實踐，因為理論如果沒有實作出來也沒什麼意義，實際應用也一定會有難處讓理論和實作無法完全對齊，如同現今的 EEVDF 核心實作，全局虛擬時間改為由任務的虛擬執行時間去反推等等。對我來說，研讀論文和其他第一手資料是讓我知道實作設計的動機跟基礎，如果跳過這一步直接去看實作程式碼，對其舉燭猜測會很不踏實。
 
@@ -94,6 +94,6 @@ categories: User
     我最有感覺的是真實世界的問題，像是關於 CPU bandwidth control 運用在多租戶的雲端資源分配系統，以及從閱讀開發者之間的討論，了解到 CPU 排程器的漫長的演進其實跟 latency 和 throughput 之間的取捨息息相關，不同公司和開發者所在乎的指標大大不同，而這也讓 CPU 排程器的發展變得更為困難，要經過多次的實驗跟效能分析才能完成一次迭代。
 
 ## 自我評量 (1 ~ 10)：
-$GEOMEAN=(9×8×8×10×10)^{1/5}=8.955389854$
+$GEOMEAN=(8×7×8×10×10)^{1/5}=8.516391205$
 
 方案 B：$1+floor(GEOMEAN)=1+8=9$
