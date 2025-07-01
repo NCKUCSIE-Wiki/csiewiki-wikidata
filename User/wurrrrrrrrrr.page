@@ -68,6 +68,6 @@ categories: User
 這篇文章讓我意識到，改變自己的態度與思維，比逃避問題更重要。失敗並不可怕，可怕的是從未真正嘗試。我會繼續努力貢獻，從錯誤中成長，讓自己的每一份投入，都能成為這個「看起來理所當然」的世界背後小小的一塊基石。
 
 ## 自我評量 (1 ~ 10)
-* GEOMEAN = $\sqrt[5]{9+8+9+6+10} \approx 8.4$
-* 方案 A : 8 + floor(0.3 * GEOMEAN) = 8 + floor(0.3 * 8.4) = 10
-* 方案 B : 1 + floor(GEOMEAN) = 1 + floor(8.4) = 9
+* GEOMEAN = $\sqrt[5]{9+8+9+6+10} \approx 8.3$
+* 方案 A : 8 + floor(0.3 * GEOMEAN) = 8 + floor(0.3 * 8.3) = 10
+* 方案 B : 1 + floor(GEOMEAN) = 1 + floor(8.3) = 9
