@@ -11,13 +11,14 @@ categories: User
 ## 1. 成果發表和貢獻
 在這堂課中並沒有實際提出commit以及修改筆記，但雖然此次期末專題完成度還不足(會繼續更新)，依舊能夠給以後對 AIoT 專題有興趣的人一些比較方法或 quant 策略的參考。
 
-評分: 5
+評分: 4
 
 ## 2. 作業/隨堂測驗
 * lab0-c: [HackMD](https://hackmd.io/@qM_cm68kRSyC_0lissRMNg/S1e9o9E91g)
 * 2025q1 Homework2 (quiz1+2): [HackMD](https://hackmd.io/@qM_cm68kRSyC_0lissRMNg/H1jVlzwo1g)
 * 2025q1 Homework3 (kxo): [HackMD](https://hackmd.io/@qM_cm68kRSyC_0lissRMNg/BJiqrqGCkx)
 * 2025q1 Homework4 (quiz3+4): [HackMD](https://hackmd.io/@qM_cm68kRSyC_0lissRMNg/HyN5-FvTJl)
+* 2025q1 Homework5 (assessment): [HackMD](https://hackmd.io/@qM_cm68kRSyC_0lissRMNg/SJVN2q7AJx)
 
 前期的作業都有按時繳交，但因為期中開始有接近兩個月的時間無法完成部分作業(kxo,ktcp)，因此給自己減去1/3的分數。
 
@@ -26,7 +27,7 @@ categories: User
 ## 3. 期末專題
 * 嘗試運用 Linux 核心提供的效能分析工具，定位出 BitNet 運行時期的效能瓶頸，並善用 Transparent Hugepage Support、針對事件驅動的 I/O 模型 (如 io_uring)，和課程所及的手法，加速 BitNet: [HackMD](https://hackmd.io/@sysprog/r1q1lDtbel)
 
-評分: 9
+評分: 8
 
 ## 4. 與授課教師「一對一討論」的時間
 * 2025q1 Homework5 (assessment): [HackMD](https://hackmd.io/@qM_cm68kRSyC_0lissRMNg/SJVN2q7AJx)
@@ -55,4 +56,4 @@ categories: User
 評分: 10
 
 ## 自我評量(1 ~ 10)
-GEOMEAN: $1 + floor(\sqrt[5]{5^2 7^2 9^2 8^2 10^2}) = 8$
+GEOMEAN: $1 + floor(\sqrt[5]{4^2 7^2 8^2 8^2 10^2}) = 8$
