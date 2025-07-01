@@ -9,4 +9,12 @@ categories: User
 * HackMD: [`DX3906`](https://hackmd.io/@DX3906)
 
 # 2025 Linux 核心設計 春季班 自我評量
-## 成果發表和貢獻
+## 作業/隨堂測驗
+* lab0-c: [Github](https://github.com/I-Ying-Tsai/lab0-c) / [HackMD](https://hackmd.io/@DX3906/BJxX4xo5ye)
+* Homework2: [HackMD](https://hackmd.io/@DX3906/BJ1mVPTsye)
+* kxo: [Github](https://github.com/I-Ying-Tsai/kxo) / [HackMD](https://hackmd.io/@DX3906/B105-Dxa1e)
+* Homework5 (assessment): [HackMD](https://hackmd.io/@DX3906/BkMPRh6kxe)
+
+評分 : $7$ 分。
+
+學期初到學期中我花了許多時間去讀懂這些作業並試著完成老師的要求，一開始對於 bitwise 操作甚至是一些像是指標的指標操作是無法讀懂的，但在深入實做作業以及隨堂測驗後，目前我遇到一段完全不認識的程式碼（裡面可能包含了抽象的 bitwise 操作或是一些複雜的指標操作），雖然可能無法馬上讀懂，但只需要理解幾分鐘後，我就能掌握它們的思想，這也是我在學期前半段花最多時間以及獲得我認為同等回報的一部分。接著到學期中，我將時間花在了讀懂老師的 kxo 專案，因為在讀懂之前我沒有辦法對程式碼進行更動，裡面包括下棋的演算法中的數學推導以及實做方式、如何產生高品質的亂數、撰寫核心模組等等。接著我根據作業要求移植了一部分到 user space ，並改寫核心模組完成了與 kernel space 的溝通。但我許多細節其實並沒有寫好，僅提出想法但尚未實做，於是給自己三分的空間去將它們補上。
