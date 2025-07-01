@@ -42,10 +42,11 @@ categories: User
 
 ## 期末專題
 10分。
+
 * 觀摩與閱讀學長以前實作思考並評估改進方向。
 *[Linux 核心專題: 虛擬無線網路裝置驅動程式](https://hackmd.io/@sysprog/HyUvvBm-ll)
   * [TODO: TODO: 可調整的 MCS](https://hackmd.io/@sysprog/HyUvvBm-ll)
-  * 並附上講解影片
+  * 並附上講解影片 Dingsen-Greenhorn 解說影片 [可調整的 MCS](https://youtu.be/Z1twsLcdhi8)
 
 
 在專題實作剛開始時，我之所以選擇這個主題，是因為自己在該領域具備一定的基礎知識，能夠快速掌握背景概念，進而將更多精力投入在實作與驗證上。我原本預期，一個月左右的時間應該足以完成主要的開發工作。然而，回顧這段期間的過程與成果，我發現實際收穫遠遠超出我的預期。
