@@ -42,6 +42,7 @@ categories: User
     * 測驗：[Optimize uClinux for ARM Cortex-M4](https://events.static.linuxfound.org/sites/events/files/slides/optimize-uclinux.pdf)    
     * 測驗延伸：探討「為何afboot-stm32的[start_kernel.c](https://github.com/mcoquelin-stm32/afboot-stm32/blob/master/start_kernel.c)只靠一行 kernel(0, ~0UL, DTB_ADDR) 即可載入並執行 Linux 核心」
 
+
 * 線上問答 : [youtube連結](https://www.youtube.com/watch?v=dGlUPbx-ORY)
 
 ## 5. 修課心得
