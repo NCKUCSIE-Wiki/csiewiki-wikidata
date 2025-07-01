@@ -46,6 +46,17 @@ categories: User
 
 在研讀 CPU 排程器的過程中也很幸運的可以觀摩其他兩組很厲害的學長，了解他們做實驗的方式、貢獻 `sched_ext` 開源專案還有對於他們各自對於排程器的理解。另外我也大量的參考老師撰寫的《Demystifying the Linux CPU Scheduler》還有 `Yiwei Lin` 學長整理的一系列 [CPU 排程器的筆記](https://hackmd.io/@sysprog/Hka7Kzeap/%2FHkyEtNkjA)，包含 EEVDF 的完整 patch series 分析等。若沒有這些前人和同儕的努力，我在投入這個新知識領域的初期會很迷惘。我很謝謝以上這些人，他們不僅讓我學習到他們的學習方式，也促使我繼續學習，在整理筆記時也想著要讓以後的人看懂，因此尤其是 [EEVDF 論文筆記](https://hackmd.io/@salmonii/eevdf_paper)以及期末的專題簡報是經過了反覆的重構調整。
 
+研讀論文：
+
+* [《A Generalized Processor Sharing Approach to Flow Control in Integrated Services Networks: The Single-Node Case》](https://pbg.cs.illinois.edu/courses/cs598fa09/readings/pg93.pdf)
+* [《WF2Q : Worst-case Fair Weighted Fair Queueing》](https://www.cs.cmu.edu/~hzhang/papers/INFOCOM96.pdf)
+* [《Earliest eligible virtual deadline first: A flexible and accurate mechanism for proportional share resource allocation》](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=805acf7726282721504c8f00575d91ebfd750564)
+* [《CPU bandwidth control for CFS》](https://landley.net/kdocs/ols/2010/ols2010-pages-245-254.pdf)
+
+很可惜的是還沒去追溯到 `Lag` 這個概念的起源，也就是一篇撰寫於 1989 年的網路相關論文。
+
+研讀論文對我的幫助除了學習他人的思考脈絡，我覺得最有挑戰的是理解內化而不是單純瀏覽，因為論文很多地方都不會寫的非常清楚，比如說像是公式的完整證明，他會省略掉中間很多步驟，另外在不同的論文之間，即便在討論同一件事情，使用的數學符號會大不相同，所以需要比對整理。也要去觀察數學理論在真實世界的實踐，因為理論如果沒有實作出來也沒什麼意義，實際應用也一定會有難處讓理論和實作無法完全對齊，如同現今的 EEVDF 核心實作，全局虛擬時間改為由任務的虛擬執行時間去反推等等。對我來說，研讀論文和其他第一手資料是讓我知道實作設計的動機跟基礎，如果跳過這一步直接去看實作程式碼，對其舉燭猜測會很不踏實。
+
 觀摩其他學員的期末專題：
 
 * [群組排程的考量因素和落實](https://hackmd.io/@sysprog/B14go-K-xx)
