@@ -17,9 +17,30 @@ categories: User
 
 《Demystifying the Linux CPU Scheduler》
 
+已收錄之 pull requests: [#252](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/252), [#254](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/254), [#255](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/255), [#256](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/256), [#257](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/256), [#258](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/256), [#260](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/260), [#261](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/261), [#262](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/262), [#263](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/263), [#264](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/264), [#270](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/270), [#272](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/272), [#287](https://github.com/sysprog21/linux-kernel-scheduler-internals/pull/287#issuecomment-2994404999)，其中包含了文法錯字修正、實驗目錄路徑修正、外部參考專案版本更新。
+
 [jserv/ttt](https://github.com/jserv/ttt)
 
+- [ttt #42](https://github.com/jserv/ttt/pull/42)
+- [ttt #43](https://github.com/jserv/ttt/pull/43)
+
 [sysprog21/kxo](https://github.com/sysprog21/kxo)
+
+- [kxo #11](https://github.com/sysprog21/kxo/pull/11)
+- [kxo #20](https://github.com/sysprog21/kxo/pull/20)
+
+在寫作業的過程中，首先是發現註解與實際程式行為不符，於是著手修改。修改後我思考到了 locality 的議題，所以針對了井字遊戲的勝利判斷方式提出修改，使其以 row-major 優先掃描，並輔以實驗結果來說服專案維護者。
+
+經由我的修改，該專案在 5*5 的棋盤上約減少了 30% Cache misses 及 40% 的 Cache references
+
+這是我第一個非僅修改註解的貢獻，過程中我清楚了解到，為甚麼授課老師說溝通這麼重要。負責 reviewed 我這次提交的是 Linux 核心 min-heap 子系統的 maintainer，我見識到了其對於細節的要求，無論在實驗結果的報告或是 commit message 的撰寫都有收到寶貴的經驗，這對我未來投入其他大型專案的開發來說是很好的起始點。
+
+[sysprog21/lab0-c](https://github.com/sysprog21/lab0-c)
+
+- [PR #218](https://github.com/sysprog21/lab0-c/pull/218)
+- [PR #219](https://github.com/sysprog21/lab0-c/pull/219)
+
+我認為在這個環節我有充份的投入，這個項目我給自己的評分為 **10** 分。
 
 ### 2.作業/隨堂測驗：
 
@@ -31,44 +52,44 @@ categories: User
 
 一對一面談：
  
-2025 年 4 月 16 日
+1. 2025 年 4 月 16 日
 
-> 這是本學期第一次面談，主要討論了期末專題進行的方向。我在這次面談提出了我對排程器有興趣，經授課老師指示先閱讀其撰寫的排程器書籍《Demystifying the Linux CPU Scheduler》，因為一開始的我對排程器的基礎知識相當缺乏。
+    這是本學期第一次面談，主要討論了期末專題進行的方向。我在這次面談提出了我對排程器有興趣，經授課老師指示先閱讀其撰寫的排程器書籍《Demystifying the Linux CPU Scheduler》，因為一開始的我對排程器的基礎知識相當缺乏。
 
-2025 年 4 月 21 日
+2. 2025 年 4 月 21 日
 
-> 前期授課老師有指定我先閱讀特定章節，這次面談的時間點我閱讀到了第二章，我整理了閱讀過程所發現的問題，針對這些問題與授課老師討論。並且從這時候開始投入該書籍的
+    前期授課老師有指定我先閱讀特定章節，這次面談的時間點我閱讀到了第二章，我整理了閱讀過程所發現的問題，針對這些問題與授課老師討論。並且從這時候開始投入該書籍的
 維護。
 
-2025 年 5 月 2 日
+3. 2025 年 5 月 2 日
 
-> 在這個時期我開始追蹤較新版本的 Linux 核心程式碼，發現書中有些名詞說明已過時。這次面談主要討論了授課老師在最初撰寫這本書的時空背景。
+    在這個時期我開始追蹤較新版本的 Linux 核心程式碼，發現書中有些名詞說明已過時。這次面談主要討論了授課老師在最初撰寫這本書的時空背景。
 
-2025 年 5 月 9 日
+4. 2025 年 5 月 9 日
 
-> 在第一次面談時，原先老師有指示可以投入 sched_ext 相關專案，但隨後有另兩名同學投入相關主題，於是從這個時期開始，我的期末專題方向確定為群組排程相關。
+    在第一次面談時，原先老師有指示可以投入 sched_ext 相關專案，但隨後有另兩名同學投入相關主題，於是從這個時期開始，我的期末專題方向確定為群組排程相關。
 
-2025 年 5 月 16 日
+5. 2025 年 5 月 16 日
 
-2025 年 5 月 21 日
+6. 2025 年 5 月 21 日
 
-2025 年 5 月 28 日
+7. 2025 年 5 月 28 日
 
-> 開始投入群組排程的議題後，我經歷了好一陣子的碰壁期，上方三次面談主要就我所遇到的問題逐一討論，並開始追蹤最新版本的 Linux 核心程式碼。
+    開始投入群組排程的議題後，我經歷了好一陣子的碰壁期，上方三次面談主要就我所遇到的問題逐一討論，並開始追蹤最新版本的 Linux 核心程式碼。
 
-2025 年 6 月 6 日
+8. 2025 年 6 月 6 日
 
-> 過程中發現了許多議題值得投入，與授課老師討論是否有貢獻的空間，主要針對 cfs_rq 相關成員名稱的變革以及 Linux 核心文件對應的說明相當不足。
+    過程中發現了許多議題值得投入，與授課老師討論是否有貢獻的空間，主要針對 cfs_rq 相關成員名稱的變革以及 Linux 核心文件對應的說明相當不足。
 
-2025 年 6 月 15 日
+9. 2025 年 6 月 15 日
 
-> 授課老師預計在書籍中加入新的章節來展示群組排程的實驗，此次面談主要討論了實驗設計的細節。
+    授課老師預計在書籍中加入新的章節來展示群組排程的實驗，此次面談主要討論了實驗設計的細節。
 
-2025 年 6 月 26 日
+10. 2025 年 6 月 26 日
 
-> 被授課老師邀請參與期末專題線上發表，這次主要討論我進行實驗時發現了非預期的結果，授課老師指示可關閉超執行緒再次進行實驗，並嘗試找出是否僅在特定比例的行程數量下才出現非預期的結果。
+    授課老師邀請參與期末專題線上發表，這次主要討論我進行實驗時發現了非預期的結果，授課老師指示可關閉超執行緒再次進行實驗，並嘗試找出是否僅在特定比例的行程數量下才出現非預期的結果。
 
-
+我認為在這個環節我有充份的投入，每次面談都有解決當下的問題並持續進步，這個項目我給自己的評分為 **10** 分。
 
 
 
