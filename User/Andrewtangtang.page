@@ -62,6 +62,25 @@ categories: User
 * 5 分在於我成功重現先前研究，讓同學能更具體理解 `io_uring` 在應用層的實際優勢
 * 另外 5 分在於我對實驗中各項效能指標的觀察與分析，讓我具備以系統軟體的角度來解讀效能差異的能力，也提升了我對 kernel behavior 的掌握度。
 
+### 與授課教師的互動
+
+#### 一對一討論
+
+* **5/12**：與授課老師討論課業上遇到的問題，詳細紀錄於 [Homework5 (assessment)](https://hackmd.io/@Andrewyuntang/linux2025-homework5)。當時我向老師提問：`vruntime` 是否可能發生 overflow？老師則反問我：「為什麼 CFS（Completely Fair Scheduler）總是挑選 `vruntime` 最小的任務執行？」這讓我體認到，在探討一個問題前，應先釐清該機制設計的初衷與原理，唯有掌握動機與架構，才能進一步深入思考潛在風險與隱患。 
+
+* **6/10**：與老師討論為什麼 `io_uring` 能提升高效能網路伺服器的效能。我原先認為其效益主要來自「減少系統呼叫次數」，但老師指出其最大優勢其實在於其 lock-free 設計。這讓我重新思考在多核、高並行環境中，鎖的開銷與延遲不確定性對整體效能影響甚鉅。此外，老師也回覆了我之前關於 `vruntime` overflow 的問題：的確有可能發生，但發生機率極低，可透過 CFS 計算 vruntime 的行為建模方式統計評估，若此事件發生的時間遠超越實際場景，開發者便可視為可接受的風險。 
+
+* **6/30**：老師要求我實作 SPSC FIFO queue，並進一步思考 lock-free 與 lock-less 結構的設計差異，這促使我深入理解 Linux kernel 中 `io_uring` 的內部實作邏輯與資料結構。相關筆記詳見：[SPSC FIFO QUEUE](https://hackmd.io/@Andrewyuntang/spsc_fifo)。
+ 
+#### 課堂問答
+
+* **5/20**：與老師在課堂上討論 Redis 為什麼採用 skip-list 作為資料結構。我事後查閱相關論文與資料，深入理解 skip-list 在資料庫中的特性，包括其在插入、刪除與範圍查詢上的效率優勢與實作簡潔性。
+  詳細紀錄見：[課堂討論](https://hackmd.io/_W09IuAtQYWaGO72A5Y8IA#Andrewtangtang)
+
+* **6/17**：與老師探討 `semaphore` 與 `mutex_lock` 的差異，特別是 `mutex_lock` 具備 ownership 概念，因此若某執行緒長時間持有鎖不釋放，將造成系統阻塞的風險。這個問題引發我進一步研究  `pthread_mutex_timedlock`  的設計原理與使用情境，以避免鎖的 starvation 與 deadlock 狀況。 
+  詳細紀錄見：[課堂討論](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA#Andrewtangtang)
+
+綜合以上不論是課堂上的問答，還是一對一的討論，我給自己這部分  10 分。每次和老師的互動，不只是單純的發問，而是幫助我發現自己在系統軟體理解上的盲點。像是 `vruntime` 是否會 overflow、為什麼 `io_uring` 能帶來效能提升、或是 `semaphore` 和 `mutex` 的差異，這些問題都讓我事後回去查資料、看論文、做實驗，甚至寫成筆記。 我覺得這門課最讓我有收穫的，就是這種從「問題」出發，再透過閱讀、反思、討論來對題可以有更進一步的探討與理解，這讓我學習不只是從單一表面的角度思考，而是可以更全面的去理解問題的根本與其他議題的關聯。 
 
     
  
