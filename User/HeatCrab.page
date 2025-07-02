@@ -1,0 +1,122 @@
+---
+title: HeatCrab (張暐俊)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程學系 114 級 (2021 ~ 2025)
+* GitHub: [`HeatCrab`](https://github.com/HeatCrab)
+* HackMD: [`JimC`](https://hackmd.io/@HeatCrab)
+
+# 2025 Linux 核心設計 春季班 自我評量
+## 成果發表和貢獻
+10 分。
+
+對這門課程的貢獻第一個 PR ，也是我人生第一次繳交 PR ，過程中與老師 code review 的過程令我獲益良多。在這一次的貢獻中也讓我明白，只要願意，任何人都可以貢獻。但是在繳交 PR 的過程中，我學到最重要的是要針對自己的繳交貢獻，提出準確的論述與具體想法和原因，而非草草了事，假裝有解決問題，卻無法說明。自這一次繳交 PR 後，我也會自然地對我正在處理的功課繳交合理的 PR，並做出貢獻。
+
+* lab0-c
+
+    * 2025/03/30 : [Improve dudect test with memory leak fix](https://github.com/sysprog21/lab0-c/commit/00cd93ac61096eda8eaed75628fc469b20d980e5)
+        * 針對前一位同學繳交的新版 dudect test 的記憶體錯誤進行除錯
+    
+    * 2025/04/07 : [Enhance dictionary with HTML and CSS terms](https://github.com/sysprog21/lab0-c/commit/e4590618c9c0f7ec337612c309ecd8eadfc4df20)
+        * 新增被遺漏的前端（HTML、CSS）語言進入 aspell 辭典中，解決相關詞彙會被 fmtscan 判定非英文詞彙的錯誤。
+
+    * 2025/05/07 : [Introduce Warm-up Phase for Dudect Measurement](https://github.com/sysprog21/lab0-c/commit/a51c643d1880a6afc33de6583a09ed1ec62b4426)
+        * 依據 Reparaz et al.'s 發表的論文＜dude is my code constant time ?＞內容新增 warm-up 步驟至 lab0-c 的 dudect 測試的程式碼中，並藉由 perf 驗證此步驟的改善效果。
+
+* Linmo
+
+    * 2025/06/21：[Provide implementation hints for context switch](https://github.com/sysprog21/linmo-legacy/commit/a7a27c2cd5d4ec5c6a9e2f1598e6f3014c015228)
+        * 在老師的建議下，參考 linux 核心的 [CPU Scheduler implementation hints for architecture specific code](https://www.kernel.org/doc/html/latest/scheduler/sched-arch.html) 文件，撰寫了關於 Linmo 作業系統在 RISC-V (RV32I) 架構下的上下文切換與機器狀態管理。
+
+    * 2025/06/26：[Fix kernel panic in semaphore test](https://github.com/sysprog21/linmo/commit/551e0968a2bfb52ddc4f618b52fed955591aa5fd)
+        * 修復 semaphore 測試因為誤用函式導致測試結束未進入預期的 idle 行為。
+
+
+## 作業/隨堂測驗
+6 分。
+
+* [2025q1 Homework1 (lab0)](https://hackmd.io/@HeatCrab/H16K4lIj1x)
+    * 一開始根據教材與前人筆記，透過實作 [lab0-c/queue.c](https://github.com/HeatCrab/lab0-c/blob/master/queue.c) 重新學習如何寫 C 語言
+    * 理解 dudect test 的運作原理與細節內容，最後成功見到星之卡比
+    * 在 qtest 提供新的命令 shuffle 
+    * 測試網路伺服器，初步理解網路伺服器，並重新學習網路這塊領域。
+* [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@HeatCrab/ryskzt6iyg)
+    * 針對 quiz1 與 quiz2 的測驗題重新作答，並對所有測試中提及的程式碼進行理解，並說明。
+    * 回首來看，內容解釋的過程大多在舉燭，並未更深入的去關注與討論老師在測驗題內提級的議題。
+* [2025q1 Homework3 (kxo)](https://hackmd.io/@HeatCrab/Sy8KJWYaye)
+    * 針對作業說明中 Linux Load Average 公式與相關議題，提出看法，並在 2025-04-08 課程問答簡記中提問，與老師討論。
+    * 後續因為 1 對 1 討論的內容，回顧作業說明使用 bpftrace 去實驗核心調用 softirq 。
+    * 針對 kxo 則沒有更進一步的實作與研究。
+* [2025q1 Homework4 (quiz3+4)](https://hackmd.io/@HeatCrab/SJfW3KMAkg)
+    * 仍舊在舉燭。
+* [2025q1 Homework5 (assessment)](https://hackmd.io/@HeatCrab/B1_E3KG0Jl)
+    * 閱讀〈[因為自動飲料機而延畢的那一年]((https://www.opasschang.com/docs/the-story-of-auto-beverage-machine-1))〉並記錄所受啟發
+    * 紀錄參與課程的感想
+    * 閱讀 Demystifiying the Linux CPU Scheduler 並記錄問題，在後續與老師 1 對 1 討論時進行問答。
+* [2025q1 Homework6 (ktcp)]()
+    * 未繳交。
+
+
+## 期末專題
+9 分。
+
+* [Linux 核心專題: 作業系統的設計和開發](https://hackmd.io/@sysprog/HyIQvDYWll)
+
+    首先老師要求我去研讀〈[Operating System in 1,000 Lines](https://operating-system-in-1000-lines.vercel.app/en/) 〉教學文件，並去理解 RISC-V (以 RV32 為主) 如何從無到有建構作業系統核心。之後與老師在一對一問答我對於教學文件的理解時，我除了對於計時器與排程器在作業系統中的協作不是很清楚外，對於作業系統關於 MMU 相關的知識理論也遺忘的差不多。在一對一問答後，除了再次回顧與複習在一對一問答時被問倒的知識外，也開始跟隨老師投入 [Linmo](https://github.com/sysprog21/linmo) 專案的開發中。
+    
+    參與 [Linmo](https://github.com/sysprog21/linmo) 專案的開發讓我受到許多震撼，也讓我備感壓力。感謝老師會特意將一些 Issue 留下，並 assigned 給我，讓我藉由問題去回顧相關的程式碼，並做理解與吸收。但在整理與吸收的過程中，我不斷的想著要如何不去舉燭，苦惱許久。直到在期末展示報告的前一刻，老師為專題的開場白作說明，理論跟實作終究會有許多差別，很多事情是要去實作後才會理解與考量到的。我才明白我應該走的路是什麼，也是我未來要努力的目標，用知識理論去實作的同時，去思考為什麼要這麼做，為什麼該這麼做。此外，與同學們之間 review 的過程也讓我明白 review 的用意，許多自己沒考慮到的細節，或許在別人 review 後，就會意外給自己優良的建議。因為我的開發任務還沒有完成，所以我扣自己 1 分，期許自己在課程結束後，不僅僅是完成目前已經被 assigned 的開發任務就結束，而是繼續投入開發作業系統這個夢想中。
+
+* [參與期末展示(上)](https://hackmd.io/29wzjTXtSgyu4oCaBJOwiQ)
+* 觀摩其他同學 :
+    * [Linux 核心專題: 探討 sched_ext 及機器學習](https://hackmd.io/@sysprog/BygEQ4dWxx)
+    * [Linux 核心專題: 輕量級隔離運行環境](https://hackmd.io/@sysprog/H1mxn47-gx)
+    * [Linux 核心專題: rootkit 評估及應用](https://hackmd.io/@sysprog/r1l3i4_Zge)
+    * [Linux 核心專題: 輕量級容器實作和擴充](https://hackmd.io/@sysprog/H18ne9Y-gl)
+    * [Linux 核心專題: RISC-V 系統模擬與 VirtIO](https://hackmd.io/@sysprog/SkL_nUFWle)
+
+
+## 與授課教師的互動
+10分。
+
+* 第七週：4/01、4/03
+    * [在 lab0-c 繳交 PR](https://github.com/sysprog21/lab0-c/commit/00cd93ac61096eda8eaed75628fc469b20d980e5)
+      第一次跟老師在線上互動，印象很深刻，因為是在凌晨，儘管我漏洞百出，許多細節並未達到基本門檻，但是老師在 code review 的過程依然很有耐心地提出要改進之處。這個過程也讓我明白 code review 的用意也告誡我需要對每一次 PR 或 commit 用心，有理有據。
+
+* 第八週：4/08、4/10
+    * [課堂討論：2025-04-08 問答簡記](https://hackmd.io/@sysprog/ByFRLr-Cyx)
+      我針對[作業三 kxo 的作業說明](https://hackmd.io/@sysprog/linux2025-kxo/%2F%40sysprog%2Flinux2025-kxo-a#-Linux-%E6%A0%B8%E5%BF%83%E7%9A%84%E6%B5%AE%E9%BB%9E%E6%95%B8%E9%81%8B%E7%AE%97)在問答簡記中提出疑惑，並在觀看錄影紀錄後私訊 [Jserv 與他愉快的小夥伴](https://www.facebook.com/JservFans?locale=zh_TW) 討論後續議題，但也因為心態不對，被老師指正。後續除了了解與學習 PELT 的議題外，也藉此機會開始閱讀老師撰寫的  〈Demystifiying the Linux CPU Scheduler〉，並為未來的一對一問答做準備。
+
+* 第十一週：4/29、5/01
+    * 第一次一對一討論
+    主要圍繞於我閱讀〈Demystifiying the Linux CPU Scheduler〉後整理出來的筆記與問題。這邊老師在討論的一開始，看到我那簡陋至極的筆記後，就向我展示了他整理好，當遇到相關可以詢問之人時，就可以明確詢問他人的筆記內容。這讓我意識到機會是留給準備好的人，是什麼意思，也讓我明白自己對待事情要多上點心，很多時候，機會轉瞬即逝，如果自己的準備不充分，或是敷衍了事，就很容易會錯過。隨後老師也針對我的筆記，希望延伸在第九週[2025-04-15 問答簡記](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA)中討論有關中斷的議題，去探討與解釋 softirq 是否有 task_struct 。
+    
+* 第十二週：5/06、5/08
+    * 將整理好關於「解釋 softirq 是否有 task_struct」筆記發表至課程討論區
+    在整理完筆記後，我私訊老師。老師閱讀完後的第一個問題是，你有用 Ftrace 去追蹤 softirq 嗎？我誠實地回答了沒有。接著老師告訴我，我的用字遣詞與論述還有很大的改進空間，讓我發表至課程討論區與同學們討論與互動，藉此增進自己。但是在發表之前，我打開電腦，自己根據[作業三的作業說明](https://hackmd.io/@sysprog/linux2025-kxo/%2F%40sysprog%2Flinux2025-kxo-c#Linux-%E6%A0%B8%E5%BF%83%E7%9A%84%E4%B8%A6%E8%A1%8C%E8%99%95%E7%90%86)與[2025-04-15 問答簡記](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA)，操作了一次 Ftrace ，並將我整理的筆記中數據，調整為我的實驗結果版本後，才公開發表至課程討論區。
+    
+* 第十七週：6/10、6/12
+    * [與老師在線上一對一問答](https://www.youtube.com/watch?v=JvMowsPQ18E&t=4862s)
+    本次討論主要聚焦在我對於學習〈[Operating System in 1,000 Lines](https://operating-system-in-1000-lines.vercel.app/en/) 〉教學文件後的筆記，以 MMU 為主的相關知識展開，並延伸到[這幾週課程問答簡記](https://hackmd.io/@sysprog/SkIHGNSQxl)中聚焦的同步機制相關議題。最後我將未回答出來與不熟悉的相關知識一併整理於[期末專題的開發紀錄](https://hackmd.io/@sysprog/HyIQvDYWll#06-12-%E8%AA%B2%E7%A8%8B%E8%A8%8E%E8%AB%96%E7%AD%86%E8%A8%98)中。
+    
+* 一直到 06/28 期末專題發表前：
+    * 跟老師在開發紀錄（hackmd）上互動，主要是老師糾正我在表達上無法好好地將自己的論述表達且過度依賴生成式 AI ，以及對於用字遣詞上的不當與不精確。我在錯誤中學習，並且花更多心思去思考與對我的論述做更準確的表達。
+    
+## 所見所聞所感
+9 分。
+
+* 老師準備的教材
+    教材是我覺得這門課關鍵的第一環，老師為此課程準備了過量的教材，隨著深入課程，我也慢慢意識到這些教材並非我這種初出茅廬之人，可以在辦年內參悟的。但是教材內的知識之深之廣，也讓我十分感激，畢竟，並沒有什麼老師願意花大量時間去整理，準備這麼多相關的教材供學生在必要或是有空閒時去拜讀、查閱。錄影更是至關重要，跟教材達成相輔相成的效果。像是我在觀看[Linux 核心設計: 不只挑選任務的排程器](https://hackmd.io/@sysprog/linux-scheduler)時，透過課程錄影，我能更精確的明白之前在閱讀〈Demystifiying the Linux CPU Scheduler〉時不知甚解的部分。透過老師的講述，我能從不同的角度，再次釐清這些理論背後的涵義。 
+
+* 從老師身上獲得的啟發
+    接下來是我覺得這門課程的第二環，光是閱讀教材是不行的，還必須嘗試去跟老師互動。我覺得老師就是一塊大秘寶，等著學生自己去發掘，畢竟不是每個領域的大佬都願意下來教書，甚至罵你、指責你，告訴你錯誤在哪。在與老師的互動中，我也重新定義了我正在學習的科目。我發現，我一直以來都是在學習工程，也就是把事情完成，但對其中的理論與證明為何這樣做可行，完全沒有任何概念。在老師帶領下，我才意識到為何在國外，資訊工程學系會是屬於電腦科學。我印象很深刻，我繳交一份 PR 至 [lab0-c](https://github.com/sysprog21/lab0-c) ，內容是我新增了一個優化步驟到 dudect test 中。老師告訴我，我應該要提供相關數據，去證明我這個步驟是有必要性的存在。我很錯愕，因為這是我第一次感覺到電腦科學為何是科學，他跟物理化學一樣，需要實驗，需要數學證明，需要理論依據。我思考了許久，最終使用老師在學期初教授的工具 perf。透過 perf，我證明了我新增的步驟的確帶給 dudect test 些微的進步，最終這個 PR 成功被 merge 進 [lab0-c](https://github.com/sysprog21/lab0-c) 中。自這之後，我開始會去關注某些理論背後的數學依據，也明白有些 paper 為何都有許多的數學證明，也讓我對我未來繼續在這個領域繼續深入，開啟了全新的角度與視野。 
+
+* 回顧自身在本課程的投入狀況
+    最後是我覺得這門課最最最重要的一環，師父領進門，修行在個人。前面的教材閱讀以及與老師的互動，決定的是你在這門課能獲得的收穫的下限，自身的投入，則是上限。在這門課程中，我可以見到許多與＜[因為自動飲料機而延畢的那一年](https://www.opasschang.com/docs/the-story-of-auto-beverage-machine-1)＞作者一樣，充滿熱情的同學，他們會不斷的深入探索，與老師互動，花非常多的時間進行參與，從旁觀的角度也能感受到他們滿溢出的熱情，與對課程的投入與付出。相較之下，我覺得我投入的可以說是非常少，我更多的是專注在我在乎的事情上，或許這與我在選修這門課的目標一樣－修完。正在打自評的我，成功了，我不僅修完課，參與到了 Linmo 專案的開發過程，甚至被老師邀請至期末發表上進行報告，但是，透過自評，我確認我的投入量太少，我只是運氣好才開出了上限。但是一切都還沒結束，正如我還有繼續開發 Linmo 的任務一樣。接下來我先會調整好心態，並繼續投入到 Linmo 的開發之中。
+
+
+## 自我評量 (1 ~ 10)
+$GEOMEAN = ( 10 \times 6 \times 9 \times 10 \times 9 )^{1/5} = 8.6561994354$
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + 8 = 9$
