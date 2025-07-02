@@ -1,0 +1,45 @@
+# 簡介
+國立成功大學 電機工程所 (2024-2026)
+長庚大學 資訊管理學系 (2019-2023)
+
+# 2025 Linux 核心設計/實作 春季班 自我評量
+
+## 成果發表和貢獻
+目前沒有針對 linux 核心、相關專案進行貢獻，但透過這堂課讓我對此心態產生變化，以前總覺得對這些大型開源專案做出貢獻是遙不可及的，因為連程式碼都覺得會看不懂，而在修課這段期間有想探討 cppcheck false positive 的問題而去研究該專案程式碼，搭配 c 語言規格書並且透過直接修改來做測試，雖然最後判斷 cppcheck 沒有問題，但也讓我降低對大型開源專案的卻步。
+
+評分：6 分
+
+## 作業/隨堂測驗
+
+[Homework1 (lab0)](https://hackmd.io/@timsong1/rJZ2_Cd9Je)
+[Homework1 (ideas)](https://hackmd.io/@timsong1/Sy-r5Slo1x)
+[Homework2](https://hackmd.io/@timsong1/ByRAZfN3Je)
+[Homework3 (kxo)](https://hackmd.io/@timsong1/rkPrH3-pye)
+[Homework4 (quiz3+4)](https://hackmd.io/@timsong1/rkD-pU9T1g)
+[Homework5 (assessment)](https://hackmd.io/@timsong1/r1wJCU56kg)
+
+評分：8 分
+
+## 期末專題
+期末專題是針對 khttpd 進行效能改善，目前做了導入 Concurrency Managed Workqueue（CMWQ）並學習使用 ebpf、ftrace 測量效能
+由於進度很少，因此給自己 4 分
+
+評分：4 分
+
+## 與授課教師的互動
+相關紀錄都在 [Homework5 (assessment)](https://hackmd.io/@timsong1/r1wJCU56kg)
+[第一次討論 : 5月 3日 (星期六)·下午8:00 - 8:30]
+[第二次討論 : 5月 29日 (星期四)·上午11:30 - 下午12:00]
+
+第一次跟老師一對一討論是因為在寫作業三 [kxo](https://hackmd.io/@sysprog/linux2025-kxo/%2F%40sysprog%2Flinux2025-kxo-a) 時，修改其使用者程式的部分，使用 `setjmp()`和 `longjmp()` 使其任務排程採用 stackful coroutine 方式，但沒有通過 cppcheck 的靜態測試，顯示 `error: Memory leak`。因此想了解是程式流程設計問題還是 cppcheck 的 false positive 問題，之後老師也有問我怎麼對浮點數開根號，但我在當下沒有寫出來，所以讓我之後補完並作完整測試
+
+第二次討論是我自認完成並做好完整測試，才發現原來沒有我想的那麼簡單，我連考慮浮點數的精度、rouding 都沒有，驗證部分以為簡簡單單寫個測資、makefile 就算完成
+
+評分：9 分
+
+## 所見所聞所感
+閱讀〈因為自動飲料機而延畢的那一年〉[心得](https://hackmd.io/@timsong1/r1wJCU56kg#%E9%96%B1%E8%AE%80%E3%80%88%E5%9B%A0%E7%82%BA%E8%87%AA%E5%8B%95%E9%A3%B2%E6%96%99%E6%A9%9F%E8%80%8C%E5%BB%B6%E7%95%A2%E7%9A%84%E9%82%A3%E4%B8%80%E5%B9%B4%E3%80%89%E7%9A%84%E5%95%9F%E7%99%BC)
+
+「誠實面對自己」，是老師一直在講的，也是我修這堂課最大的心得，很多在之前學習過的理論，其實根本就沒有搞懂，像是浮點數和數值系統，學過離散數學和計算機組織，卻連二補數系統跟阿貝爾群有什麼關係也不知道，所以打好基本功是為自己殺出血路的唯一途徑
+
+評分：10 分
