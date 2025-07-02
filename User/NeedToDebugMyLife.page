@@ -10,7 +10,9 @@ categories: User
 
 ## 1. 成果發表和貢獻
 
-評分: 
+我在這堂課並沒有實質提出 commit 到 Linux 核心，也沒有修改筆記，期末專題的完成度也不足，但我撰寫的筆記仍然可以給之後修這堂課的同學一點幫助。
+
+評分: 4
 
 ## 2. 作業/隨堂測驗
 * lab0-c: [HackMD](https://hackmd.io/@Mike0430/linux2025-homework1)
@@ -19,8 +21,13 @@ categories: User
 * 2025q1 Homework4 (quiz3+4): [HackMD](https://hackmd.io/@Mike0430/linux2025-homework4)
 * 2025q1 Homework5 (assessment): [HackMD](https://hackmd.io/@Mike0430/linux2025-homework5)
 
+第一次作業是我完成度最高的作業，那時的我還沒這麼忙，所以花了不少時間來研究相關的文章。
+透過這次的作業，我重新學習了 pointer 的操作，以及 struct 的應用，
+雖然還有一部分內容還沒有完成，但我的 coding 能力仍然有很大的進步。
 
-評分: 
+之後的作業，因為忙於實驗室事務，所以沒有花太多時間在這之上，因此給自己扣了3分
+
+評分: *7*
 
 ## 3. 期末專題
 
