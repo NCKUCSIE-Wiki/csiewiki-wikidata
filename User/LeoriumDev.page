@@ -16,6 +16,7 @@ categories: User
   * [你所不知道的 C 語言: linked list 和非連續記憶體](https://hackmd.io/@sysprog/c-linked-list)
     * volitile $\to$ volatile
     * 用「龜兔賽跑」(Floyd's Cycle detection)來偵測是否有 cycle 產生。 $\to$ 用「龜兔賽跑」(Floyd's Cycle detection) 來偵測是否有 cycle 產生。
+    * 詳見The Linux Kernel API - List Management Functions $\to$ 詳見 The Linux Kernel API - List Management Functions
 
 ## 作業/隨堂測驗
 
