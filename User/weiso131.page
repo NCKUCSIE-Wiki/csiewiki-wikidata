@@ -10,6 +10,7 @@ categories: Usesr
 # 2025 Linux 核心設計 春季班 自我評量
 ## 成果發表與貢獻
 5 分。
+
 - Concurrency Primer
   - 2025/6/11 [Note -latomic needed when using -mcx16](https://github.com/sysprog21/concurrency-primer/commit/f35f10856741fd0d3168a970cbee91542385145f)
   - 2025/6/11 [Fix function name in book: thread_pool_destroy](https://github.com/sysprog21/concurrency-primer/commit/1a4d1f78c69855cdb622edebe1f180f55069c918)
