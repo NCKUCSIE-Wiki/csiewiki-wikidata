@@ -21,7 +21,9 @@ categories: Usesr
   - 並行程式設計: Atomics 操作
      - 2025/5/8 `arm64` 得機器 → `arm64` 得機器
      - 2025/5/8 進進行 → 進行
+
 ## 作業/隨堂測驗
+9 分。
 - [2025q1 Homework1 (lab0)](https://hackmd.io/@weiso131/linux2025-homework1)
 - [2025q1 Homework1 (ideas)](https://hackmd.io/@weiso131/linux2025-ideas)
 - [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@weiso131/linux2025-homework2)
@@ -29,13 +31,25 @@ categories: Usesr
 - [2025q1 Homework4 (quiz3+4)](https://hackmd.io/@weiso131/linux2025-homework4)
 - [2025q1 Homework5 (assessment)](https://hackmd.io/@weiso131/linux2025-homework5)
 
-作業回顧:
+作業重點回顧:
 - lab0
   - 理解 list_sort 程式實作
+    - 利用 perf 比較與自身實作的效能差異
+    - 理解 final_merge 會更快的原因為: 藉由減少節點存取來減少 cache miss
+    - 有趣的收穫 : 在 list_sort.c 發現 likely 可以控制分支預測，在計算機組織學到 control hazard 後理解其意義
+  - 參考 list_sort 最後再把鍊結串列恢復成雙向的方法，將原本的 q_merge 做改進，使其能夠支援任意長度佇列的合併
 - hw2
-  - 
+  - [實作自己的 memory allocator](https://github.com/weiso131/Customize_allocator)
+  - [理解整數開根號的實作原理](https://hackmd.io/p6i9MFQ3RiW3PxDsagfAWw#sqrti) 
+- hw3 的 kxo 
+  - 實現 ctrl + Q 顯示對亦歷史紀錄
+    - 利用鍊結串列儲存對亦資料
+    - 自訂 ioctl ，確保多個 terminal 都能正確的取得對亦紀錄
 ## 期末專題
+9 分。
+[Linux 核心專題: 改進 kxo]()
 
+改進 kxo 使其支援多使用者，
 
 ## 與授課教師的互動
 ## 所見所聞所感
