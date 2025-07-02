@@ -24,6 +24,7 @@ categories: Usesr
 
 ## 作業/隨堂測驗
 9 分。
+
 - [2025q1 Homework1 (lab0)](https://hackmd.io/@weiso131/linux2025-homework1)
 - [2025q1 Homework1 (ideas)](https://hackmd.io/@weiso131/linux2025-ideas)
 - [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@weiso131/linux2025-homework2)
@@ -32,6 +33,7 @@ categories: Usesr
 - [2025q1 Homework5 (assessment)](https://hackmd.io/@weiso131/linux2025-homework5)
 
 作業重點回顧:
+
 - lab0
   - 理解 list_sort 程式實作
     - 利用 perf 比較與自身實作的效能差異
@@ -51,6 +53,7 @@ categories: Usesr
 [Linux 核心專題: 改進 kxo](https://hackmd.io/XWDjMx0bTmmNIWvlNHsvKw?both)
 
 專題實現項目:
+
 - 允許核心模組切換多種演算法，並整合 ttt 的 reinforcement_learning
   - 利用過去學過的 Q learning 演算法相關知識，更快的理解 TD learning 的實作，並將 reinforcement_learning 整合到此專案
 - 縮減使用者和核心空間通訊的成本
@@ -68,6 +71,7 @@ categories: Usesr
   - 利用對 workqueue 的理解，使用 WQ_CPU_INTENSIVE 這個 flag ，確保 worker_pool 的其他工作不會被阻擋
 
 觀摩其他同學的專題:
+
 - [Linux 核心專題: 輕量級容器實作和擴充](https://hackmd.io/elX0ZH57S6CQIEdmsfGPBQ?view)
 - [Linux 核心專題: 雲端檔案系統設計和實作](https://hackmd.io/G-5gwxcGSuKYBOt5tiomJQ?view)
 - [Linux 核心專題: 重作 kxo (執行人: HeLunWu0317)](https://hackmd.io/@sysprog/r1hGKNN4lx)
@@ -77,6 +81,7 @@ categories: Usesr
 ## 與授課教師的互動
 9 分。
 課堂問答:
+
 - [2025-04-29 問答簡記](https://hackmd.io/Tcy6NPtnQiubDGyrRUnSdw#weiso131)
   - 討論 kxo
     - 課堂中發現 commit message 沒有提及如何重現，事後發現其實有寫在 commit message 中，只是 a keyboard event 似乎沒有 Ctrl + P 來的明確，之後使用 git rebase 修改 commit message
@@ -86,11 +91,13 @@ categories: Usesr
   探討如何利用 CAS 與 futex 機制實現簡單的 mutex_lock ，在課後實現了可行的 mutex_lock
 
 一對一討論:
+
 - 5/7
   考量我對核心模組的興趣，加上 [2025-04-29 問答簡記](https://hackmd.io/Tcy6NPtnQiubDGyrRUnSdw#weiso131) 對 kxo 支援多使用者的想法，老師將我的專題安排為改進 kxo ，並要求我把可能的改進項目列出來。
 
 ## 所見所聞所感
 9分。
+
 - 大二來修課，缺乏作業系統與計算機組織知識
   - 閱讀《Demystifying the Linux CPU Scheduler》補充作業系統的背景知識。 
   - 搭配教材內容，能與計算機組織剛學的內容相互印證，例如 memory barrier 負責處理指令重排的問題，當初還不能理解，學過 hazard 後才了解這是為了避免資料冒險而做的設計。
