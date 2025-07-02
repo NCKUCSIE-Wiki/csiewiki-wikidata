@@ -48,7 +48,7 @@
 
 真的從最基本的系統呼叫開始，自幹出容器的最小可行產品後，我也將 capabilities, namespace, seccomp, cgroups 等機制深深刻印在腦中了。但最終專案在 cgroups 設定上仍存在一些權限問題，我給自己 `9` 分。
 
-# 與授課教師的互動
+## 與授課教師的互動
 課堂問答：
 
 * 2025/04/22 [問答追蹤](https://hackmd.io/i6ZSoExATqOQMf1EvtNFoA#Andrushika-lumynou5)
