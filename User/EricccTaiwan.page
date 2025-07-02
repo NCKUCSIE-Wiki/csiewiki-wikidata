@@ -42,32 +42,33 @@ categories: User
 * [jserv/ttt](https://github.com/jserv/ttt) : [4 merged PR](https://github.com/jserv/ttt/pulls?q=is%3Apr+is%3Amerged+author%3AEricccTaiwan+)
 * [jserv/mazu-editor](https://github.com/jserv/mazu-editor) : [2 merged PR](https://github.com/jserv/mazu-editor/pulls?q=is%3Apr+is%3Amerged+author%3AEricccTaiwan+)
 
-評分 : $10$ 分。
+評分 : $8$ 分。
 
 整個學期以來，我始終秉持授課教師的叮嚀：「路見不平，拿 patch 來補」。我也始終相信「勿以善小而不為」，無論是修 bug 或補文件，只要發現問題就動手貢獻。截至目前，已有百餘個 PR 已陸續被合併，從 Linux kernel 到 `sched_ext`，再到各式開源專案都能看到 `EricccTaiwan` 的名字。能與頂尖開發者協作，讓 PR 被收錄，不但帶來成就感，更證明了我的努力與成長；這些成果，也算是對授課教師投入心力指導我的一份回饋。
 
-這學期的課程只是起點，我會持續參與並貢獻於各個專案，期許有一天能成為 Linux maintainer 。基於已累積的實質貢獻，給予自己 $10$ 分，作為對當前成果的肯定。
+這學期的課程只是起點，我會持續參與並貢獻各個專案，期許未來有朝一日能成為 Linux maintainer。基於目前累積的實質貢獻，給予自己 $8$ 分作為肯定。至於剩下的 $2$ 分，留待未來真正提出創新想法、實作關鍵功能時再補上。現在的貢獻仍以 debug 、 suppress warning 、 refactor 和補充文件為主，距離核心開發還有一段路。也正是透過與他人協作，才看清自己與頂尖開發者的差距，知道自己缺什麼，就補什麼。
 
 ## 作業/隨堂測驗
-* lab0-c: [Github](https://github.com/EricccTaiwan/lab0-c) / [HackMD](https://hackmd.io/@ericisgood/linux2025-homework1)
-* ideas: [HackMD](https://hackmd.io/@ericisgood/linux2025-ideas)
-* Homework2: [HackMD](https://hackmd.io/@ericisgood/linux2025-homework2)
-* lab0-c review: [HackMD](https://hackmd.io/@ericisgood/linux2025-review#lab0-c-review)
-* kxo: [HackMD](https://hackmd.io/@ericisgood/linux2025-homework3)
-* Homework4: [HackMD](https://hackmd.io/@ericisgood/linux2025-homework4)
-* Homework5 (assessment): [HackMD](https://hackmd.io/@ericisgood/linux2025-homework5)
+* [2025q1 Homework1 (lab0)](https://hackmd.io/@ericisgood/linux2025-homework1)
+* [2025q1 Homework1 (ideas)](https://hackmd.io/@ericisgood/linux2025-ideas)
+* [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@ericisgood/linux2025-homework2)
+* [2025q1 Homework3 (lab0 review)](https://hackmd.io/@ericisgood/linux2025-review#lab0-c-review)
+* [2025q1 Homework3 (kxo)](https://hackmd.io/@ericisgood/linux2025-homework3)
+* [2025q1 Homework4 (quiz 3+4)](https://hackmd.io/@ericisgood/linux2025-homework4)
+* [2025q1 Homework5 (assessment)](https://hackmd.io/@ericisgood/linux2025-homework5)
 
 評分 : $6$ 分。
 
-由於將心力投注於期末專題，在與授課教師討論和取得同意後，我選擇專注完成期末專題，未能兼顧課程後半段的作業。我認為專注把一件事做到最好，遠勝於好高騖遠、樣樣都想兼顧卻難以維持品質。
+透過作業，我重新學習 C 語言，並體會查閱第一手資料的重要性，例如翻閱 C99 規格書認識 [`##` 運算子](https://gcc.gnu.org/onlinedocs/cpp/Concatenation.html)、[Stringification](https://gcc.gnu.org/onlinedocs/gcc-4.8.5/cpp/Stringification.html) 需要兩層設計的原因、如何[客觀評估亂數「夠不夠亂」](https://hackmd.io/@ericisgood/linux2025-homework1#%E4%BA%82%E6%95%B8)，以及[深入分析 Linux 核心中 `lib/list_sort.c` 的設計原理](https://hackmd.io/@ericisgood/linux2025-homework1#Linux%E6%A0%B8%E5%BF%83-liblist_sortc)。
+
+由於將心力投注於期末專題，在與授課教師討論和取得同意後，我選擇專注完成期末專題，未能同時兼顧課程後半段的作業。我認為專注把一件事做到最好，遠勝於好高騖遠、樣樣都想兼顧卻難以維持品質。
 
 因為 kxo 、 Homework4 和 ktcp 未完成，且準時繳交作業是學生的責任，因此給自己 $6$ 分，作為對整體表現的提醒。
 
 ## 期末專題
-* 探討 `sched_ext` 及機器學習 : [HackMD](https://hackmd.io/@sysprog/BygEQ4dWxx)
-* 期末專題 review: [HackMD](https://hackmd.io/@ericisgood/linux2025-review#2025-projects-review)
+* [探討 `sched_ext` 及機器學習](https://hackmd.io/@cce-underdogs/scx_project)
 
-評分 : $8$ 分。
+評分 : $7$ 分。
 
 在 4/15 與授課教師進行課後討論，我便正式投入本學期的專題研究。我與柏穎 ([@charliechiou](https://wiki.csie.ncku.edu.tw/User/charliechiou)) 花費大量時間鑽研此題目：一方面，我們對於 CPU 排程器的認識僅止於恐龍書上的理論，對於 Linux 實際的運作情況完全不認識；另一方面，`sched_ext` 是 Linux 於 v6.12 才正式收錄的嶄新功能，而如何在 `sched_ext` 框架下導入 Machine Learning 更是一大考驗。
 
@@ -83,57 +84,69 @@ categories: User
 
 此外，在授課教師的協助下，我獲得了多次對外展示成果的機會（詳見上方「成果分享」）。雖然目前成果與原先目標尚有差距，我與柏穎將持續深耕此專案，期許自己成為 `sched_ext` 的核心開發者之一（目前只能說是熱心的 contributor ），並最終將我們設計的排程器 upstream！
 
-我透過閱讀與追蹤程式碼，理解 CFS 與 EEVDF 在行為與設計上的差異，也釐清了 `sched_ext` 出現的目的，以及如何在使用者空間實作客製化排程器。同時，我也在 Office hours 中積極向開發者請教，並成功嘗試將機器學習導入 `sched_ext` 。因此，給予自己 $8$ 分作為階段性的肯定，並保留那 $2$ 分作為對未來深化與完善的期許。
+我透過閱讀與追蹤程式碼，理解 CFS 與 EEVDF 在行為與設計上的差異，也釐清了 `sched_ext` 出現的目的，以及如何在使用者空間實作客製化排程器。同時，我也在 Office hours 中積極向開發者請教，並成功嘗試將機器學習導入 `sched_ext` 。因此，給予自己 $7$ 分作為階段性的肯定，並保留那 $3$ 分作為對未來深化與完善的期許。
+
+[期末專題觀摩](https://hackmd.io/@ericisgood/linux2025-review#2025-projects-review)：
+
+* [CPU 排程器之理論基礎](https://hackmd.io/@sysprog/HyFtDjMfxg#Reviewed-by-EricccTaiwan)
+* [群組排程的考量因素和落實](https://hackmd.io/@sysprog/B14go-K-xx#Reviewed-by-EricccTaiwan)
+* [作業系統的設計和開發](https://hackmd.io/@sysprog/HyIQvDYWll#Reviewed-by-EricccTaiwan)
+* [bitops 相關測驗題](https://hackmd.io/@sysprog/B13UVSQWel#Reviewed-by-EricccTaiwan)
+* [雲端檔案系統設計和實作](https://hackmd.io/@sysprog/BJH6UVXZle#Reviewed-by-EricccTaiwan)
 
 ## 與授課教師的互動
 
 * 一對一討論: 3/24, 4/7, 4/25, 5/1, 5/5, 5/12, 5/27, 6/12, 6/19, 6/22, 6/25
 * 課堂討論: [3/11](https://hackmd.io/AVg2YkX9RveH1W6SVWmNIw?view#EricccTaiwan), [3/18](https://hackmd.io/EFs_Nfs6TOmIA5ldA_tZsQ#EricccTaiwan), [4/2](https://www.youtube.com/watch?v=MIqd0sKj2Uo&t=3030s), [4/15](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA#EricccTaiwan), [4/25](https://hackmd.io/i6ZSoExATqOQMf1EvtNFoA#EricccTaiwan), [5/6](https://hackmd.io/8rwu2EOaQwW7AzjJOFK-gw?view#sched_ext-%E7%B0%A1%E7%A8%B1-scx), [6/3](https://hackmd.io/k-YGbvF3QPuQDuwUYwIipg?view#EricccTaiwan-63), [6/5](https://youtu.be/pYPe0mmi5TA?t=1519)
 
-評分 : $8$ 分。
+評分 : $7$ 分。
 
 本學期與授課教師的互動可以分為三個部份: 浮點數運算、中斷處理，以及期末專題討論。
 
 ### 定點數運算
-程式碼: [`fast_tanh/tanh.c`](https://github.com/EricccTaiwan/fast_tanh/blob/main/tanh.c)
-
 在第五周課程的 [quiz5-測驗題 `1`](https://hackmd.io/@sysprog/linux2025-quiz5#%E6%B8%AC%E9%A9%97-1) 中，授課教師測驗我們對定點數實作 `tanh` 函式的理解。課堂上，授課教師進一步問我三個延伸問題 ( [Q1](https://hackmd.io/EFs_Nfs6TOmIA5ldA_tZsQ#Q1) 、 [Q2](https://hackmd.io/EFs_Nfs6TOmIA5ldA_tZsQ#Q2) 和 [Q3](https://hackmd.io/EFs_Nfs6TOmIA5ldA_tZsQ#Q3) )。當時雖一時答不上來，卻不以為難；直到回家深入研究程式碼並嘗試解決時 (詳見 [fast_tanh 疑問](https://hackmd.io/@ericisgood/fast_tanh_problem))，真正意識到自己知識上的不足。
 
 經過數次與授課教師的一對一及課堂討論，我逐步釐清了以下重點：
 
-* Q1: 怎麼解釋 [quiz5-測驗題 `1`](https://hackmd.io/@sysprog/linux2025-quiz5#%E6%B8%AC%E9%A9%97-1) 輸出的小數點以下只有三位是精確的？
-* Q2: `fix16_tanh()` 如何更精確的表示小數點
-* Q3: 為何 `typedef int32_t fix16_t` 改成 `typedef int16_t fix16_t` 輸出會錯誤?
+* 怎麼解釋 [quiz5-測驗題 `1`](https://hackmd.io/@sysprog/linux2025-quiz5#%E6%B8%AC%E9%A9%97-1) 輸出的小數點以下只有三位是精確的？
+* `fix16_tanh()` 如何更精確的表示小數點
+* 為何 `typedef int32_t fix16_t` 改成 `typedef int16_t fix16_t` 輸出會錯誤?
 * 不使用浮點數運算的考量
 * 定點數運算的設計
 * [Q-notation](https://en.wikipedia.org/wiki/Q_(number_format)#) 的表示 (甚至有 TI 和 ARM 兩種版本)
-* 在可接受誤差範圍內 ($<0.001\%$) ，如何用定點數 (e.g., `Q16.16`) 計算 `tanh`
+* 在可接受誤差範圍內 ($< 0.001\%$) ，如何用定點數 (e.g., `Q16.16`) 計算 `tanh`
 
 上述討論詳見 [2025-03-18 問答簡記](https://hackmd.io/EFs_Nfs6TOmIA5ldA_tZsQ#EricccTaiwan) ，和程式碼實作 [`fast_tanh/tanh.c`](https://github.com/EricccTaiwan/fast_tanh/blob/main/tanh.c) 。
 
 ### 中斷處理
-詳見 [2025 年系統軟體系列課程討論區](https://www.facebook.com/share/p/1G144v7nGL/)、 [fb_0413](https://hackmd.io/nTVSi2hOS1-2U3DKsmX8aA?view)、 [2025-04-15 問答簡記](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA?view)。
-
 修課期間，我認識了邱繼寬同學 ([@devarajabc](https://wiki.csie.ncku.edu.tw/User/devarajabc))。他在研讀中斷處理時提出許多問題，促成我們一同深入討論。依照授課教師建議，我也在[課程討論區](https://www.facebook.com/share/p/1G144v7nGL/)向愉快小夥伴們請益，並於課堂中與授課教師討論。
 
 在查閱第一手資料的過程中，發現了微軟文件對於 [context switch](https://learn.microsoft.com/en-us/windows/win32/procthread/context-switches) 的部份敘述有誤，於是提交了修正 PR ([MicrosoftDocs/win32 PR#2010](https://github.com/MicrosoftDocs/win32/pull/2010))。同時，我和繼寬也修訂了 [linux-insides](https://0xax.gitbooks.io/linux-insides/content/index.html) 對 `tasklet` 的錯誤描述 ([PR #861](https://github.com/0xAX/linux-insides/pull/861))。
 
-但也被授課教師提醒，「[與其在字面意義『推敲』，不如運用 eBPF 分析](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA#%E8%88%87%E5%85%B6%E5%9C%A8%E5%AD%97%E9%9D%A2%E6%84%8F%E7%BE%A9%E3%80%8C%E6%8E%A8%E6%95%B2%E3%80%8D%EF%BC%8C%E4%B8%8D%E5%A6%82%E9%81%8B%E7%94%A8-eBPF-%E5%88%86%E6%9E%90)」，應設計實驗觀察實際行為。許多文件可能已過時 (e.g., 由 Robert Love 撰寫的《[Linux Kernel Development](https://dl.acm.org/doi/10.5555/1855096)》)，或是有錯誤，唯有持續追蹤 Linux upstream 程式碼，才能緊跟演進、避免「舉燭」。同時，也感謝繼寬送我的佳句「長期的投資才能帶來短期的效益」，扎實打好地基，才是累積實力、真正變強的關鍵。
+透過與授課教師和小夥伴的討論，我逐步釐清了以下重點：
+
+* Top half 與 bottom half 的功能差異 $\to$ 關鍵是否由 `ksoftirqd` 排程
+* `tasklet` 和 `workqueue` 的具體差異
+* Interrupt 、 atomic 與 process context 的不同處
+
+但也被授課教師提醒，「[與其在字面意義『推敲』，不如運用 eBPF 分析](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA#%E8%88%87%E5%85%B6%E5%9C%A8%E5%AD%97%E9%9D%A2%E6%84%8F%E7%BE%A9%E3%80%8C%E6%8E%A8%E6%95%B2%E3%80%8D%EF%BC%8C%E4%B8%8D%E5%A6%82%E9%81%8B%E7%94%A8-eBPF-%E5%88%86%E6%9E%90)」，應設計實驗觀察實際行為 (e.g., `workqueue` 排程行為、 `softirq` 與 `tasklet` 活動) 。許多文件可能已過時 (e.g., 由 Robert Love 撰寫的《[Linux Kernel Development](https://dl.acm.org/doi/10.5555/1855096)》)，或是有錯誤，唯有持續追蹤 Linux upstream 程式碼，才能緊跟演進、避免「舉燭」。同時，也感謝繼寬送我的佳句「長期的投資才能帶來短期的效益」，扎實打好地基，才是累積實力、真正變強的關鍵。
+
+上述討論詳見 [2025 年系統軟體系列課程討論區](https://www.facebook.com/share/p/1G144v7nGL/)、 [fb_0413](https://hackmd.io/nTVSi2hOS1-2U3DKsmX8aA?view)、 [2025-04-15 問答簡記](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA?view)。
 
 ### 期末專題討論
 詳見上方「期末專題」。
 
-本學期共與授課教師進行了 11 次一對一、8 次課堂交流及 1 次餐敘(亦在討論期末專題)，不僅回應問題，也主動提出疑問並追蹤後續議題。更重要的是，我學會了「誠實面對自己」，當不會的時候就坦承不會，沒有必要逞強裝懂。不過，如果同樣的問題出現在面試場合，那就應該能清楚、有條理地回答出來。授課教師每週都能見到，面試機會卻往往只有一次。
+本學期共與授課教師進行了 11 次一對一、8 次課堂交流及 1 次餐敘（亦在討論期末專題），不僅回應問題，也主動提出疑問並追蹤後續議題。這些互動帶來許多收穫，也讓我更加意識到自己在理解 Linux 核心方面仍有不少需要補足之處 (e.g., [`fork` 成功為何沒有回傳值](https://hackmd.io/i6ZSoExATqOQMf1EvtNFoA#EricccTaiwan)、 [`pthread_mutex_timedlock` 的用途](https://hackmd.io/i6ZSoExATqOQMf1EvtNFoA#EricccTaiwan)、[執行緒序列化問題](https://hackmd.io/k-YGbvF3QPuQDuwUYwIipg?view#EricccTaiwan-63)等)。特別是在期末專題準備階段，我對方向與細節時常仰賴授課教師協助，顯示我在獨立解決問題上的不足。我也逐漸學會「誠實面對自己」，當不會的時候就坦承不會，沒有必要逞強裝懂。不過，如果同樣的問題出現在面試場合，那就應該能清楚、有條理地回答出來。授課教師每週都能見到，面試機會卻往往只有一次。
 
-學習不只是理論知識的堆疊，更需要實作與反思，真正 “get your hands dirty” ，親自動手寫程式，解決真實世界的問題。因此，給自己 $8$ 分，作為對本學期投入與學習態度的肯定。至於剩下的 $2$ 分，等能真正的面試場合中，清楚、有條理地回答出授課教師曾問過的那些問題，再回頭幫自己補上。
+學習不只是理論知識的堆疊，更需要實作與反思，真正 “get your hands dirty” ，親自動手寫程式，解決真實世界的問題。因此，給自己 $7$ 分，作為對本學期投入與學習態度的肯定。至於剩下的 $3$ 分，等能在真正的面試場合中，清楚、有條理地回答出授課教師曾問過的那些問題，並展現更強的獨立解決能力時，再回頭幫自己補上。
 
 ## 所見所聞所感
 
 評分 : $9$ 分。
 
-學期初，授課教師便立下規定，「隨堂測驗佔學期總分的 20%...每位學員至少要進行課堂問答二次」，讓我一開始戰戰兢兢。一方面害怕上課時被點名，回答不出來問題；另一方面也不希望自己被當掉，即使這堂課對我來說並不算學分。到了 3 月 18 日，我第一次與授課教師進行課堂問答，也正是從那一刻開始，我學會了「誠實面對自己」。在與授課教師的討論中，我開始計算 `tanh` 、 `exp` 、泰勒級數等高中基礎數學，逐漸學習「注意細節」，例如定點數的誤差範圍計算，也開始更加謹慎地使用語言，例如不再說「應該」（是就是，不是就不是）、「理論上」（什麼理論？）、「我覺得」（改用「我認為」）、「大概率」（這是什麼話？你中學國文讀過嗎？），這類模糊且錯誤的詞語。這些看似簡單的能力，其實正是授課教師在前六週課程中不談 Linux 核心的原因。希望我們能先打下穩固的基礎，否則面對龐大的 Linux 原始碼，只會感到更加退縮。「這世界不會等你」，不會就問，不懂就學。
+學期初，授課教師便立下規定，「隨堂測驗佔學期總分的 20%...每位學員至少要進行課堂問答二次」，讓我一開始戰戰兢兢。一方面害怕上課時被點名，回答不出來問題；另一方面也不希望自己被當掉，即使這堂課對我來說並不算學分。到了 3/18，我第一次與授課教師進行課堂問答，也正是從那一刻開始，我學會了「誠實面對自己」。在與授課教師的討論中，我開始計算 `tanh` 、 `exp` 、泰勒級數等高中基礎數學，逐漸學習「注意細節」，例如定點數的誤差範圍計算，也開始更加謹慎地使用語言，例如不再說「應該」（是就是，不是就不是）、「理論上」（什麼理論？）、「我覺得」（改用「我認為」）、「大概率」（這是什麼話？你中學國文讀過嗎？）這類模糊且錯誤的詞語。這些看似簡單的能力，其實正是授課教師在前六週課程中不談 Linux 核心的原因。希望我們能先打下穩固的基礎，否則面對龐大的 Linux 原始碼，只會感到更加退縮。「這世界不會等你」，不會就問，不懂就學。
 
-閱讀〈因為自動飲料機而延畢的那一年〉，以及經歷這門課的洗禮後，我反覆接收到一個重要的觀念，「解決真實世界的問題」，這正是文章與課程一再強調的重點。在與授課教師進行第一次專題討論時，便被指派「探討 `sched_ext` 及機器學習」。`sched_ext` 並不是一群人自嗨的小團體，而是已經被正式納入 Linux 核心的功能，其主要維護者來自 Meta 、 NVIDIA 等國際知名企業。我和柏穎只是兩位毫無經驗的研究生，整個專題過程充滿挑戰。從表面上看，我在 GitHub 上提交了不少 PR，但多數只是基礎的除錯與清理，尚未帶來實質的新功能。不過，這些改動能夠順利完成，也正是因為有前六週課程打下的基礎，才讓我具備釐清問題和實作修正的能力。光是要將 Machine Learning 引進 `sched_ext`，我們就花了幾乎整個學期來理解 `sched_ext` 運作機制、善用工具觀察程式行為 (e.g., `Perfetto` 、 `schbench` 、 `ftrace`) 、學習如何描述問題 (e.g., 詢問授課教師及開發者們)、設計不同的實驗 (e.g., 關閉 E-core 測試、發現 CPU domain 平衡其實是 llc 平衡、用不同 workload 測試)，並在每週的 Office hours 不斷向開發者請教。雖然最終成果仍有落差，但這段經歷讓我真切體會到「解決真實世界的問題」的意義。Meta 願意投入資源開發 `sched_ext`，並不是為了寫論文，而是為了改善實際運行的工作負載。「你最大的問題在太害怕失敗了」，這句話我始終記在心中。即使貢獻有限，我們仍成功讓開發者記住我們的名字，也願意提供回應與協助，這是我始料未及的收穫。
+閱讀〈因為自動飲料機而延畢的那一年〉，以及經歷這門課的洗禮後，我反覆接收到一個重要的觀念，「解決真實世界的問題」，這正是文章與課程一再強調的重點。在與授課教師進行第一次專題討論時，便被指派「探討 `sched_ext` 及機器學習」。`sched_ext` 並不是一群人自嗨的小團體，而是已經被正式納入 Linux 核心的功能，其主要維護者來自 Meta 、 NVIDIA 等國際知名企業。我和柏穎只是兩位毫無經驗的研究生，整個專題過程充滿挑戰。從表面上看，我在 GitHub 上提交了不少 PR，但多數只是基礎的除錯與清理，尚未帶來實質的新功能。不過，這些改動能夠順利完成，也正是因為有前六週課程打下的基礎，才讓我具備釐清問題和實作修正的能力。光是要將 Machine Learning 引進 `sched_ext`，我們就花了幾乎整個學期。這段期間我們理解其運作機制、運用工具觀察程式行為 (e.g., `Perfetto` 、 `schbench` 、 `ftrace`) 、學習如何描述問題 (e.g., 詢問授課教師及開發者們)、設計不同的實驗 (e.g., 關閉 E-core 觀察排程行為、發現 CPU domain 平衡其實是 [LLC](https://en.wikichip.org/wiki/last_level_cache) 平衡、用不同 workload 測試)，並在每週二晚間 11 點的 Office hours 積極向開發者請教。雖然最終成果仍有落差，但這段經歷讓我真切體會到「解決真實世界的問題」的意義。Meta 願意投入資源開發 `sched_ext`，並不是為了寫論文，而是為了改善實際運行的工作負載。「你最大的問題在太害怕失敗了」，這句話我始終記在心中。即使貢獻有限，我們仍成功讓開發者記住我們的名字，也願意提供回應與協助，這是我始料未及的收穫。
 
 在碩二下，背負著碩士研究可能延誤的風險，我依舊選擇修習這門課，並審慎依循事前規劃的方向，專注投入於 CPU 排程器 (`sched_ext`) 與負載平衡（load balance）等主題，因為我期望未來能加入 Meta 或 NVIDIA，且為此在 Linux 核心的基礎上進行突破。回想去年暑假實習結束後沒拿到預聘、面試的多次失敗，以及論文一度卡關的低潮，這些困難我都撐過來了，既然連這些都能撐過去，還有什麼是我無法克服的？修課過程中，授課教師除了嚴格要求與反覆叮囑，也給予我許多鼓勵與實質幫助。他就像一位火車車長，許多小夥伴在學期初上車，期末下車，也有人中途因為拿到 offer 或選擇升學而離開。我對自己的期許，是不要急著抵達終點，而是學會欣賞沿途的風景。正如授課教師一再提醒我：「學習是一輩子的事情」，這句話也成為我持續前行的動力。
 
@@ -142,6 +155,6 @@ categories: User
 對於本學期的投入與努力，我給予自己高度肯定，這份過程是真實的、紮實的。不過，我知道自己離「學習是一輩子的事情」這句話的實踐，還有一段路要走。因此，給自己 $9$ 分，等到有一天我能真正學會放慢腳步、欣賞沿途風景時，再回頭幫自己補上那最後的 $1$ 分。
 
 ## 自我評量 (1 ~ 10)
-* $\text{GEOMEAN} = (10 \times 6 \times 8 \times 8 \times 9) ^ {1/5} \approx 8.1$
+* $\text{GEOMEAN} = (8 \times 6 \times 7 \times 7 \times 9) ^ {1/5} \approx 7.3$
 * 方案 A : $8 + \text{floor}(0.3 \times \text{GEOMEAN}) = 10$
-* 方案 B : $1 + \text{floor}(\text{GEOMEAN}) = 9$
+* 方案 B : $1 + \text{floor}(\text{GEOMEAN}) = 8$
