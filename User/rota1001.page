@@ -1,0 +1,116 @@
+---
+title: rota1001 (陳麒升)
+categories: User
+...
+# 簡介
+* 國立成功大學 資訊工程學系 116 級
+* CTF 玩家 / 競程選手
+* GitHub: [`rota1001`](https://github.com/rota1001)
+* Email: johnny1001s000602@gmail.com
+
+# 2025 Linux 核心設計 春季班 自我評量
+## 成果發表與貢獻
+7 分。
+
+- Demystifying the Linux CPU Scheduler
+    - 在 [2025-04-22 課堂討論](https://hackmd.io/i6ZSoExATqOQMf1EvtNFoA#rota1001) 中提出對於 pid hash 敘述的修正，並且提交的 PR（Correct the description of PID hash table）被併入 internal source tree
+- 對課程使用的專案貢獻
+    - 2025/04/07: [Enable Control+Q capture by setting input mode](https://github.com/sysprog21/kxo/pull/10)
+    - 2025/05/04: [Reject module insertion after kthread_run fail](https://github.com/sysprog21/kecho/pull/13)
+    - 2025/05/27: [Fix incorrect open count check in release function (in kxo)](https://github.com/sysprog21/kxo/pull/4)
+    - 2025/05/27: [Fix incorrect open count check in release function (in simrupt)](https://github.com/sysprog21/simrupt/pull/4)
+    - 2025/05/30: [Include <linux/vmalloc.h> explicitly on x86](https://github.com/sysprog21/kxo/pull/5)
+
+- 課程教材
+    - [kxo 的 fixed point log 數學證明](https://hackmd.io/@sysprog/linux2025-kxo/%2F%40sysprog%2Flinux2025-kxo-a#Fixed-point-log)
+
+## 作業/隨堂測驗
+10 分。
+
+- [2025q1 Homework1 (lab0)](https://hackmd.io/@rota1001/linux2025-homework1)
+- [2025q1 Homework1 (ideas)](https://hackmd.io/@rota1001/linux2025-ideas)
+- [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@rota1001/linux2025-homework2)
+- [2025q1 Homework3 (kxo)](https://hackmd.io/@rota1001/linux2025-homework3)
+- [2025q1 Homework4 (quiz3+4)](https://hackmd.io/@rota1001/linux2025-homework4)
+- [2025q1 Homework5 (assessment)](https://hackmd.io/@rota1001/linux2025-homework5)
+
+作業重點回顧：
+
+- [在 lab0 中引入 powersort](https://hackmd.io/@rota1001/linux2025-ideas#Powersort)
+- [使用 z3-solver 對 xoroshiro128+ 進行預測](https://hackmd.io/@rota1001/linux2025-ideas#xoroshiro128-%E7%9A%84%E5%AE%89%E5%85%A8%E6%80%A7%E6%80%9D%E8%80%83)
+- [實作自己的 custom-memory-allocator](https://github.com/rota1001/custom-memory-allocator)
+- [改良浮點數開平方根](https://hackmd.io/@rota1001/linux2025-homework2#%E6%B5%AE%E9%BB%9E%E6%95%B8%E9%96%8B%E5%B9%B3%E6%96%B9%E6%A0%B9)
+- [實作查表的整數平方根](https://hackmd.io/@rota1001/linux2025-homework2#%E8%97%89%E7%94%B1%E6%9F%A5%E8%A1%A8%E7%9A%84%E6%95%B4%E6%95%B8%E5%B9%B3%E6%96%B9%E6%A0%B9)
+- [利用多項式擬合改進定點數對數函數](https://hackmd.io/@rota1001/linux2025-homework3#Fixed-point-log-%E6%94%B9%E9%80%B2)
+
+## 期末專題
+10 分。
+
+- [Linux 核心專題: rootkit 評估及應用](https://hackmd.io/@sysprog/r1l3i4_Zge)
+
+現有的 kernel rootkit 多依賴於 kallsyms 或 kprobe 來尋找要控制的函式指標，而他們是可以在 kernel config 裡面關掉的，所以在特定的核心組態下，幾乎所有的現有 kernel rootkit 都是無法運作的。於是這個專題在不依賴於 kallsyms 與 kprobe 的前提下去實現了以下一些功能：
+
+- [控制 proc_ops 與 seq_operations](https://hackmd.io/@sysprog/r1l3i4_Zge#%E5%88%A9%E7%94%A8-proc_dir_entry-%E9%80%B2%E8%A1%8C%E8%B3%87%E8%A8%8A%E6%B4%A9%E6%BC%8F)
+- [控制 syscall](https://hackmd.io/@sysprog/r1l3i4_Zge#%E4%B8%8D%E4%BE%9D%E8%B3%B4-kallsyms-%E8%88%87-kprobe-%E7%9A%84-syscall-%E5%9C%B0%E5%9D%80%E6%B4%A9%E6%BC%8F)
+- [隱藏核心模組/檔案](https://hackmd.io/@sysprog/r1l3i4_Zge#%E5%9F%BA%E7%A4%8E%E5%8A%9F%E8%83%BD)
+- [隱藏網路連線](https://hackmd.io/@sysprog/r1l3i4_Zge#%E5%9F%BA%E7%A4%8E%E5%8A%9F%E8%83%BD)
+- [核心層級的行程隱藏](https://hackmd.io/@sysprog/r1l3i4_Zge#%E6%A0%B8%E5%BF%83%E5%B1%A4%E7%B4%9A%E7%9A%84%E8%A1%8C%E7%A8%8B%E9%9A%B1%E8%97%8F)
+- [基於 ELF injection 的核心模組永續注入](https://hackmd.io/@sysprog/r1l3i4_Zge#Persistence)
+- [remote shell](https://hackmd.io/@sysprog/r1l3i4_Zge#remote-shell)
+- [建立精簡的 Live USB](https://hackmd.io/@sysprog/r1l3i4_Zge#%E5%BB%BA%E7%AB%8B%E7%B2%BE%E7%B0%A1-Live-USB)
+
+另外是在過程中為了建立環境而學會了[使用 buildroot 編譯 Linux 核心](https://hackmd.io/@rota1001/buildroot)，還有[使用拿來開機的 bzImage 建立精簡實驗環境](https://hackmd.io/@sysprog/r1l3i4_Zge#%E4%BD%BF%E7%94%A8%E6%8B%BF%E4%BE%86%E9%96%8B%E6%A9%9F%E7%9A%84-bzImage-%E5%BB%BA%E7%AB%8B%E7%B2%BE%E7%B0%A1%E5%AF%A6%E9%A9%97%E7%92%B0%E5%A2%83)。
+
+下面是觀摩其他同學的專題：
+
+- [Linux 核心專題: 雲端檔案系統設計和實作](https://hackmd.io/G-5gwxcGSuKYBOt5tiomJQ?view#Reviewed-by-rota1001)
+- [Linux 核心專題: 統計學和資訊安全](https://hackmd.io/@sysprog/Skxv0AVEll#Reviewed-by-rota1001)
+- [Linux 核心專題: bitops 相關測驗題](https://hackmd.io/@sysprog/B13UVSQWel#Reviewed-by-rota1001)
+- [Linux 核心專題: dudect 研究和擴充](https://hackmd.io/D4ttKxk0SvmpAwO8IbgMrA?view#Reviewed-by-rota1001)
+- [Linux 核心專題: 作業系統的設計和開發](https://hackmd.io/d6m0WpZvQd6xfJqZFlWrXw?view#Reviewed-by-rota1001)
+- [Linux 核心專題: 位元運算](https://hackmd.io/HjRFCuIiTBa-xDiSnidUuw?view#Reviewed-by-rota1001)
+
+## 與授課教師的互動
+10 分。
+
+課堂問答：
+
+- [2025-03-04 課堂問答](https://hackmd.io/K4C5ofeqQg6LC8OEbdVcwg#rota1001)
+    
+    探討 `str_to_uint32` 的改進，後來發現藉由位元運算的特性可以將多個位數一起做
+- [2025-03-18 課堂問答](https://hackmd.io/EFs_Nfs6TOmIA5ldA_tZsQ#rota1001)
+    
+    探討 $e$ 的定義與 $\displaystyle \lim_ {n\to\infty} (1+\frac{1}{n})^{n}$  為何收斂到 $e$
+- [2025-03-25 課堂問答](https://hackmd.io/QISdbcjUShy1Be48NHVqaw#rota1001)
+
+    探討作業說明中 `fixed_sqrt` 實作方式的精度損失，與基於多項式擬合的 `fixed_log` 效率改進
+- [2025-04-22 課堂問答](https://hackmd.io/QISdbcjUShy1Be48NHVqaw#rota1001)
+
+    提出對於《Demystifying the Linux CPU Scheduler》中 pid hash 敘述的疑問，並於閱讀 Linux 核心程式碼後，更正敘述，貢獻成功被收錄。
+- [2025-04-29 課堂問答](https://hackmd.io/Tcy6NPtnQiubDGyrRUnSdw#rota1001)
+
+    探討 kxo 作業中，在多使用者情況下對於使用者身份的驗證。後來提出了一種方案，並藉由機率計算分析可行性。
+
+1 對 1 討論：
+
+- 4/28
+
+    這天討論首先是針對 Linux 核心的 pid hash 議題，在討論結束後提交了貢獻。另外是我表達出對於 Ring0 rootkit 的興趣，因為之前在 Windows 實作過 Ring3 的 rootkit。所以老師給我了 [awesome-linux-rootkits](https://github.com/milabs/awesome-linux-rootkits) 這個專案清單去閱讀，並且提出在新版本 Linux 上可以運作的 rootkit 手法。最後是我說在之後想要寫一個作業系統，想問架構與方向上的選擇。老師的回答是，單純寫一個可以動的作業系統其實蠻無聊的，所以要找一些目標去達成，可以找一些小型的案例去看看。另外是架構上的選擇，盡量選 arm 或 riscv，因為 x86 的包袱太大了，基於相容性的考量留著太多不必要的東西。討論後，我做的事情是去把 awesome-linux-rootkits 中的大部分手法在新版本中做[實現](https://hackmd.io/@sysprog/r1l3i4_Zge#rootkit-%E6%A1%88%E4%BE%8B%E9%96%B1%E8%AE%80)，並且提出[利用 PDE 控制 proccess operaton](https://hackmd.io/@sysprog/r1l3i4_Zge#%E5%88%A9%E7%94%A8-proc_dir_entry-%E9%80%B2%E8%A1%8C%E8%B3%87%E8%A8%8A%E6%B4%A9%E6%BC%8F) 的方式。
+
+- 5/12
+
+    接續著上次的討論，我概述了現有的 rootkit 手法與他們要做什麼改動才能相容於新版本，並且提出我用 PDE 控制 process operation 的方法，他的價值在於我們只要知道路徑就能控制 process operation。老師說這是個有趣的方法，但是需要找到他的應用場景。我本來想透過這樣的方式去獲得 kallsyms 相關函式來查 symbol，但老師說 kallsyms 這個東西不一定存在在核心裡面，如果有個方法可以不透過他來找到函式指標的話，那麼會蠻有用的。在這次討論之後，我以這個方向進行研究，找到了在沒有 kallsyms 的情況下找到 syscall 函式的方法，並且以此基礎下開發出 rootkit。
+
+## 所見所聞所感
+10 分。
+
+看完《因為自動飲料機而延畢的那一年》，我對於願意花一年的時間去解決一個實際的、有難度的問題的學生感到敬佩。我是一個喜歡造輪子的人，這堂課給了我很多各種軟體的小案例，讓我知道這些基礎的電腦科學元件是有辦法從零打造出來的。實際上，我來這門課不全然是為了學技術。去年暑假，我去寫了 [MIT 6.S081 的作業](https://hackmd.io/@rota1001/mit6s081)，是在 xv6 這個作業系統裡去填空，並在寒假的時候跟著 [OS in 1,000 Lines](https://operating-system-in-1000-lines.vercel.app/en/) 寫了一個小系統，然後在結合我的一些 binary explotation 的資安經驗，我覺得我已經可以寫出一個作業系統了。但是，我找不到我需要一個新的作業系統的理由，於是來這門課的其中的一個目的是想知道這個世界需要什麼，還有系統軟體面臨的挑戰是什麼。這學期，雖然說沒有把內容全讀完，但至少聽到一些大方向。因為我大二，Linux 核心設計是和計算機組織一起修的，之前對於電腦的運作原理完全沒有認識。在我原本的想像裡，一個作業系統的考量就是一堆演算法與資料結構的改良，所以身為一個打過競技程式設計的人，認為這就是換個地方在解決相同的問題而已。然而在這門課，我看到了更多的考量。評估一個程式的效能要考慮的東西更多，像是編譯器最佳化、cache miss，且在組合語言的層次也不是單純的數指令數字就能判斷一個程式的效率。另外是一些新學到的改良效率的位元運算技巧，我對這部份也蠻有興趣的，有針對測驗題的一些程式進行實作與改良（在上面有放連結）。另一個部份是排程器，這部份我只看了前面的部份，知道了 Linux 核心排程器中的結構體是怎麼定義的，process 和 thread 的關係是什麼，還有排程器的目標有哪些。這對於我後來的專題有些幫助，在做核心層級的行程隱藏的部份。
+
+然後是期末專題的部份。我在第一堂課的時候聽到老師說：「我們是要來解決真實世界的問題」，當時我是蠻受鼓舞的，自己裡下一個小目標是在期末專題要做到這件事。那我想我做到了，雖然說不是什麼非常厲害的技術，但確實的解決了一些現有的 rootkit 沒辦法解決的問題（依賴於 kallsyms 的問題）。除此以外，在這個專題中我也學到了如何編譯 Linux，如何用 qemu 把實驗環境跑起來。還有因為我要常常翻閱 Linux 核心程式碼來尋找可以利用的函式，所以在這方面的能力也有所提昇（其實這部份在之前打資安的逆向工程的時候吸取的經驗讓我蠻習慣做這件事的，只是現在更熟悉 Linux 的專案結構了）。
+
+最後，我想我透過這門課知道了系統軟體是蠻適合我的一個領域。我學的東西很雜，我喜歡數學，所以不排斥看數學證明，這讓我在各種地方點了一些奇怪技能，像是密碼學或數論。在一些機緣巧合下學了競程，所以學了演算法和資料結構。又為了滿足小時候的中二幻想，學了資安，然後也開始喜歡上了研究一個程式是怎麼運作起來的，且發現其中的漏洞。這門課讓我看到了這些知識的重要性，譬如說隨機數的生成在核心中的安全考量（像是 KASLR），判斷一個程式效率時用的統計學，還有不注重系統安全可能會造成的危害。所以，這讓我更有自信的去點這些技能樹了。
+
+## 自我評量 (1 ~ 10)：
+$GEOMEAN = ( 7 \times 10 \times 10 \times 10 \times 10 )^{1/5} = 9.31149915095$
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + 9 = 10$
