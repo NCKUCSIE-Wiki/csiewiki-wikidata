@@ -26,7 +26,7 @@
 
 ### 期末專題
 
-* `RPMsg , ADB 在 milkv-duo 實作` : [HackMD](https://hackmd.io/@Henry0922/linux2024-final)
+* `RPMsg , ADB 在 milkv-duo 實作` : [HackMD](https://hackmd.io/@sysprog/ryvE2tK8C)
 
 ### 修課心得
 
@@ -38,7 +38,7 @@ PS: 7/2 後補齊。
 
 首先是[作業](https://wiki.csie.ncku.edu.tw/User/HenryChaing#%E4%BD%9C%E6%A5%AD%E5%85%B1%E7%AD%86)的部份，雖然並未達成全部老師的要求，但是我認為不論是我投入的時間或是產出都有達到一定的要求，因此會在這點自評高分。再來是上課與老師的互動，主要是針對測驗題目以及期末專題進行討論，測驗檢討雖然上課當下一知半解，但是在經過與老師的互動下有了表現自己的機會（雖然還是不盡人意），最後課堂結束也有機會好好再研究題目，甚至將其改寫成不同版本但原理相同的程式, 也謝謝老師還有批改課後我所加上的紀錄。
 
-[期末專題](https://hackmd.io/@Henry0922/linux2024-final)，我認為我有很多需要檢討的地方，也就是產出有限的原因。我列了兩項我歸納出來的原因： 其一是我對這個專題內容欠缺熟稔度，我這兩個月有將近大半的時間是在摸索這個嵌入式領域的基礎知識，包括 交叉編譯、buildroot 以及 Linux 核心概念。其二是缺乏教材引導, 大部分能突破瓶頸的原因是因為有老師的引導，比如我投入了整整一個月的 ADB (android debug bridge) 建立，是最後一個禮拜我打掉重練並且在有老師予以協助的情況下才得以過關斬將完成這個里程碑，雖然也有前三個禮拜培養出的基礎知識助陣, 但是真正完成這項任務的原因是有老師引導方向, 不然再花上一個月或許也不意外。最後 ADB 我有整理成 HackMD [`文章`](https://hackmd.io/@Henry0922/milkv-adb)給各位參考。
+[期末專題](https://hackmd.io/@sysprog/ryvE2tK8C)，我認為我有很多需要檢討的地方，也就是產出有限的原因。我列了兩項我歸納出來的原因： 其一是我對這個專題內容欠缺熟稔度，我這兩個月有將近大半的時間是在摸索這個嵌入式領域的基礎知識，包括 交叉編譯、buildroot 以及 Linux 核心概念。其二是缺乏教材引導, 大部分能突破瓶頸的原因是因為有老師的引導，比如我投入了整整一個月的 ADB (android debug bridge) 建立，是最後一個禮拜我打掉重練並且在有老師予以協助的情況下才得以過關斬將完成這個里程碑，雖然也有前三個禮拜培養出的基礎知識助陣, 但是真正完成這項任務的原因是有老師引導方向, 不然再花上一個月或許也不意外。最後 ADB 我有整理成 HackMD [`文章`](https://hackmd.io/@Henry0922/milkv-adb)給各位參考。
 
 接著是描述所見所聞所感，在經過這個學期的磨練後，我從每週測驗發現到了我對 C 語言還有許多需要改進的地方，包含程式碼理解速度, 以及對底層 C 語言的缺乏接觸。但是如此還是從每次作業獲得了不少成就感，至少體會到了大學四年所學以及程式能力依舊具備，並且能產出有趣的作品。再來呼應到 〈因為自動飲料機而延畢的那一年〉，我認為有兩個課題值得我省思，首先是作者文章開頭提到的鋼之鍊金術師 「等價交換法則」，接著是產品實作的困難這個理念。
 
@@ -47,9 +47,27 @@ PS: 7/2 後補齊。
 
 
 
+## 2025 Linux 核心設計 春季班
 
+### 自我評量
 
+自我評價： 9 分
 
+#### **成果發表與貢獻**
+這次非常榮幸貢獻了 Open Source Summit 的議程內容，我的議程內容為搭配 Linux 以及 RTOS 建立在 RISC-V 架構上的異質多核機制。我貢獻了議程內容所有的程式碼，包含如下 repository : [Linux](https://github.com/HenryChaing/duo-buildroot-sdk-v2.git), [ThreadX](https://github.com/HenryChaing/ThreadX-to-RISC-V64.git), [Linux Application](https://github.com/HenryChaing/duo-examples.git) 。這次的議程源自於我去年以及今年的期末專題，詳細的貢獻內容可以參閱以上連結附上的 commit 以及[期末專題筆記](https://hackmd.io/3WOKFgGKSmCErQ_wp6jUqw)。
+
+#### **作業/隨堂測驗** 
+這次有充分投入的是第一次以及第三次作業。[第一次作業](https://hackmd.io/@Henry0922/linux2025-homework1)相比去年補足了網頁伺服器的實作缺失 (未運用 select) 以及使用 perf 去分析自己實作的合併排序以及 Linux /lib/list_sort.c 在效能以及硬體使用上的差別，針對後者還有去分析是哪個組合語言指令造成效能上的缺失。接著是[第三次作業](https://hackmd.io/@Henry0922/linux2025-homework3)，這次的突破在於能善用終端機命令調整 STDIN / STDOUT 的屬性，來達到算繪整個終端機畫面，接著還有降低 kxo 原先核心層級與使用者層級之間的通訊成本，關鍵在於我將傳輸的對象從字元陣列轉換成了無號整數，這使得快取的使用率變好了，因為快取分頁的大小正為 16 位元組，隨後我使用 perf 來觀察，發現到了 CPU 的使用率上升 2 成並且快取失誤發生次數降低了 2 倍。
+
+#### **期末專題** 
+我的[期末專題](https://hackmd.io/@sysprog/ryvE2tK8C)是實作 Linux 以及 RTOS 之間的通訊機制，採用的是 OpenAMP 所維護的 Remoteproc, RPMsg 函式庫，並且要將這些函式庫整合到 Milk-V 平台當中，過程中遇到的問題包含建置環境流程之熟悉 (官方沒有提供 buildroot-sdk 之手冊)，kernel-oops 之錯誤處理，ThreadX 之除錯方式 (從 OpenOCD 搭配 gdb 一直到 remoteproc 更換遠端執行檔) ，Virtqueue 機制之理解 (從 virtqueue_kick 到 vring 機制實作)，記憶體布局 (從記憶體對齊到快取與主記憶體資料之一致性)，交握之流程設計 (從中斷導致 kernel-oops 到使用者層級可見建立交握後所產生的裝置檔案)，使用者層級與核心層級之互動（從資訊匱乏的 Linux 手冊研究 API 到藉由系統呼叫產生新端點並建立對應用程式服務），ThreadX 機制之理解 （從配置 stack 大小到調整執行緒間的優先權），Linux 核心之機制理解 (從裝置驅動程式初始化順序到區別對裝置、共享記憶體、核心配置空間存取之差異最後再到熟悉核心 API) ，將這些問題逐一解決才有今天的專題結果。
+
+#### **與授課教師的互動** 
+最深刻印象的是 [2025/05/27](https://hackmd.io/L8NQsV0SRwmbKyXSayizWw#HenryChaing) 與老師在課堂討論到了 [vfork()](https://man7.org/linux/man-pages/man2/vfork.2.html) 這個系統呼叫，在我們一般的認知當中，可以建立行程的系統呼叫包含 fork() , clone() ，而 vfork() 的出現迫使我重新複習行程以及排程單元在 Linux 核心當中的描述。 vfork() 的重點在於它會與 caller 共享 Address Space ，因此任何對記憶體內容的改動皆會影響 caller 。這個系統呼叫成功時會使 caller 進入 TASK_UNINTERUPTABLE ，等到 callee 成功呼叫 execve() , _exit() 時 caller 才會被喚醒。這次互動也使我複習 Linux 的排程單元，以及行程與執行緒之間的差異，詳細請看[共筆](https://hackmd.io/L8NQsV0SRwmbKyXSayizWw#HenryChaing)。
+
+#### **所見所聞所感**
+
+這是我第二次修習 Linux 核心設計課程，這次修課我閱讀了《Demystifying the Linux CPU Scheduler》 教材，從中了解了 CPU 排程對於任務的觀點，比如任務的狀態、任務所屬的類別、任務所屬類別的排程策略、Linux 核心從第一版 CPU 排程器到 CFS 。任務在 Linux 核心當中屬於可以被排程的單位，任務可以是執行緒或是單一執行緒的行程。閱讀的第二個教材是 《Concurrency Primer》 ，
 
 
 
