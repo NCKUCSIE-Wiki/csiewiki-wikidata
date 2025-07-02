@@ -1,0 +1,73 @@
+---
+title: Chang Yun-Tang (張昀棠)
+categories: User
+...
+
+# 簡介
+- 資訊工程學系 115 級(2021~2025)
+
+- Github:[`Andrewtangtang`](https://github.com/Andrewtangtang)
+- Hackmd:[`Andrewyuntang`](https://hackmd.io/@Andrewyuntang)
+
+# 2025 Linux 核心設計 春季班 自我評量
+
+## 自我評分
+1.成果發表和貢獻： 6 分
+
+2.作業/隨堂測驗： 8 分
+
+3.期末專題： 10 分
+
+4.與授課教師的互動： 10 分
+
+5.所見所聞所感： 10 分
+
+總分：使用方案 B: 1 + floor(GEOMEAN) ＝ 
+
+### 成果發表和貢獻
+
+我曾參與教材內容的修訂，將 [I/O 模型演化：Linux 的 io\_uring](https://hackmd.io/@sysprog/iouring#io_uring-%E6%8E%92%E7%A8%8B%E5%B0%8F%E7%B5%90) 一文中的「排程小節」修改為「排程小結」。此外，我也主動向老師提出，是否應將「上下文切換」調整為「context switch」。雖然老師基於教材整體語言風格的考量，認為無需更動，只要能清楚傳達意思讓讀者理解內容即可，但這次討論讓我深刻體會到：在撰寫技術內容時，不僅需重視正確性，也要對用詞細節抱持高度的敏感與要求。 
+由於我參與的修改範圍主要集中於文字與措辭的微調，因此我給自己這部分 6 分。 
+
+### 作業／隨堂測驗
+
+* [Homework (lab0)](https://hackmd.io/@Andrewyuntang/linux2025-homework1)
+
+  * 學習 Linux 核心風格的 List 實作方式。Linux 將 `list` 結構嵌入其他資料結構中，搭配 [`list.h`](https://github.com/torvalds/linux/blob/master/include/linux/list.h) 所提供的 macro，可實現鏈結串列操作，並透過 `container_of` 取得原始結構體，這對我後續理解核心架構有很大幫助。
+  * 閱讀論文〈Dude, is my code constant time?〉後，學會如何判斷程式是否具備 constant-time 特性，並實作 `dudect` 工具來以統計方式分析程式碼執行時間是否與輸入無關，以抵抗時序攻擊。
+  * 理解 commit message 應說明 `what` 、`why` 與  `how`，這讓我寫程式時更注重版本控制與說明能力。 
+
+* [Homework2 (quiz1+2)](https://hackmd.io/@Andrewyuntang/linux2025-homework2)
+
+* [Homework3 (kxo)](https://hackmd.io/@Andrewyuntang/linux2025-homework3)
+
+  * 學習 Linux 核心中的中斷處理機制，了解 `softirq`、`tasklet` 與 `workqueue` 的差異與用途。
+  * 使用 `setjmp` 和 `longjmp` 實作 coroutine，體會有效利用 user-level thread 可在輕量級的任務場景中有效降低切換開銷。 
+  * 利用 `ftrace` 追蹤函式呼叫，測量核心與使用者空間間的通訊成本，加深我對核心系統開銷的理解。
+
+* [Homework5 (assessment)](https://hackmd.io/@Andrewyuntang/linux2025-homework5)
+
+  * 記錄我在閱讀教材〈Demystifying the Linux CPU Scheduler〉過程中的思考與問題。
+  * 撰寫〈自動販賣機而延畢的那一年〉的觀後心得，深刻體會到統計邏輯與對細節的重視，在軟體開發與創業思維中同樣重要。
+
+綜合上述內容，我認為這些作業確實幫助我深入理解 Linux 核心的重要機制，並養成更扎實的技術寫作與實作習慣。因此，我給自己這一部分 8 分。 
+
+### 期末專題
+
+[Linux 核心專題：Redis/Valkey + io\_uring](https://hackmd.io/@sysprog/SyxZhzFZlg)
+我的期末專題聚焦於理解 Linux 所提供的 asynchronous I/O 機制 `io_uring`，並探討其在真實應用中的效能表現。我不僅研究 `io_uring` 的基本原理與系統呼叫設計，也深入探索其進階功能，例如開啟 IOPOLL 模式（透過 Completion Queue 輪詢減少中斷延遲），並與傳統的 `mmap` 系統呼叫在 [1BRC](https://github.com/gunnarmorling/1brc) 大量資料處理場景中進行效能比較。我也重現了 [Anolis OS](https://openanolis.cn/sig/high-perf-storage/doc/218937424285597744) 團隊先前針對 Redis 將 `epoll` 替換為 `io_uring` 的研究，分析其在真實伺服器負載下的延遲與吞吐效能差異。過程中我學習使用 `perf` 和 `strace` 等工具觀察系統事件（如 syscall 數量、page fault、context switch），並從這些系統層級指標中解讀實驗結果。
+
+我認為我可以給自己這部分 10 分：
+
+* 5 分在於我成功重現先前研究，讓同學能更具體理解 `io_uring` 在應用層的實際優勢
+* 另外 5 分在於我對實驗中各項效能指標的觀察與分析，讓我具備以系統軟體的角度來解讀效能差異的能力，也提升了我對 kernel behavior 的掌握度。
+
+
+    
+ 
+ 
+
+
+
+
+
