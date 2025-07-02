@@ -73,6 +73,6 @@ categories: User
 感謝老師以及這門課開拓了我的視野，也感謝堅持到現在的自己，我給自己 10 分。
 
 ## 自我評量 (1 ~ 10)：
-$GEOMEAN = ( 7 \times 8 \times 8 \times 8 \times 10 )^{1/5} = =8.144672019$
+$GEOMEAN = ( 7 \times 8 \times 8 \times 8 \times 10 )^{1/5} = 8.144672019$
 
 方案 B ：$1 + floor(GEOMEAN) = 1 + 8 = 9$
