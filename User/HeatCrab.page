@@ -14,24 +14,29 @@ categories: User
 
 對這門課程的貢獻第一個 PR ，也是我人生第一次繳交 PR ，過程中與老師 code review 的過程令我獲益良多。在這一次的貢獻中也讓我明白，只要願意，任何人都可以貢獻。但是在繳交 PR 的過程中，我學到最重要的是要針對自己的繳交貢獻，提出準確的論述與具體想法和原因，而非草草了事，假裝有解決問題，卻無法說明。自這一次繳交 PR 後，我也會自然地對我正在處理的功課繳交合理的 PR，並做出貢獻。
 
-* lab0-c
+* [lab0-c](https://github.com/sysprog21/lab0-c)
 
     * 2025/03/30 : [Improve dudect test with memory leak fix](https://github.com/sysprog21/lab0-c/commit/00cd93ac61096eda8eaed75628fc469b20d980e5)
-        * 針對前一位同學繳交的新版 dudect test 的記憶體錯誤進行除錯
+      
+       針對前一位同學繳交的新版 dudect test 的記憶體錯誤進行除錯
     
     * 2025/04/07 : [Enhance dictionary with HTML and CSS terms](https://github.com/sysprog21/lab0-c/commit/e4590618c9c0f7ec337612c309ecd8eadfc4df20)
-        * 新增被遺漏的前端（HTML、CSS）語言進入 aspell 辭典中，解決相關詞彙會被 fmtscan 判定非英文詞彙的錯誤。
+      
+       新增被遺漏的前端（HTML、CSS）語言進入 aspell 辭典中，解決相關詞彙會被 fmtscan 判定非英文詞彙的錯誤。
 
     * 2025/05/07 : [Introduce Warm-up Phase for Dudect Measurement](https://github.com/sysprog21/lab0-c/commit/a51c643d1880a6afc33de6583a09ed1ec62b4426)
-        * 依據 Reparaz et al.'s 發表的論文＜dude is my code constant time ?＞內容新增 warm-up 步驟至 lab0-c 的 dudect 測試的程式碼中，並藉由 perf 驗證此步驟的改善效果。
+        
+       依據 Reparaz et al.'s 發表的論文＜dude is my code constant time ?＞內容新增 warm-up 步驟至 lab0-c 的 dudect 測試的程式碼中，並藉由 perf 驗證此步驟的改善效果。
 
-* Linmo
+* [Linmo](https://github.com/sysprog21/linmo)
 
     * 2025/06/21：[Provide implementation hints for context switch](https://github.com/sysprog21/linmo-legacy/commit/a7a27c2cd5d4ec5c6a9e2f1598e6f3014c015228)
-        * 在老師的建議下，參考 linux 核心的 [CPU Scheduler implementation hints for architecture specific code](https://www.kernel.org/doc/html/latest/scheduler/sched-arch.html) 文件，撰寫了關於 Linmo 作業系統在 RISC-V (RV32I) 架構下的上下文切換與機器狀態管理。
+       
+       在老師的建議下，參考 linux 核心的 [CPU Scheduler implementation hints for architecture specific code](https://www.kernel.org/doc/html/latest/scheduler/sched-arch.html) 文件，撰寫了關於 Linmo 作業系統在 RISC-V (RV32I) 架構下的上下文切換與機器狀態管理。
 
     * 2025/06/26：[Fix kernel panic in semaphore test](https://github.com/sysprog21/linmo/commit/551e0968a2bfb52ddc4f618b52fed955591aa5fd)
-        * 修復 semaphore 測試因為誤用函式導致測試結束未進入預期的 idle 行為。
+       
+       修復 semaphore 測試因為誤用函式導致測試結束未進入預期的 idle 行為。
 
 
 ## 作業/隨堂測驗
