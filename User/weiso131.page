@@ -1,0 +1,41 @@
+---
+title: weiso131 (許育瑋)
+categories: Usesr
+
+# 簡介
+- 國立成功大學 資訊工程學系 116 級
+- Github: [`weiso131`](https://github.com/weiso131)
+- HackMD: [`weiso131`](https://hackmd.io/@weiso131)
+
+# 2025 Linux 核心設計 春季班 自我評量
+## 成果發表與貢獻
+5 分。
+- Concurrency Primer
+  - 2025/6/11 [Note -latomic needed when using -mcx16](https://github.com/sysprog21/concurrency-primer/commit/f35f10856741fd0d3168a970cbee91542385145f)
+  - 2025/6/11 [Fix function name in book: thread_pool_destroy](https://github.com/sysprog21/concurrency-primer/commit/1a4d1f78c69855cdb622edebe1f180f55069c918)
+- 對課程使用的專案貢獻
+  - ksort
+    - 2025/3/23 [Fix uninitialized variable in error path](https://github.com/sysprog21/ksort/pull/6)
+- 課程教材
+  - 並行程式設計: Atomics 操作
+     - 2025/5/8 `arm64` 得機器 → `arm64` 得機器
+     - 2025/5/8 進進行 → 進行
+## 作業/隨堂測驗
+- [2025q1 Homework1 (lab0)](https://hackmd.io/@weiso131/linux2025-homework1)
+- [2025q1 Homework1 (ideas)](https://hackmd.io/@weiso131/linux2025-ideas)
+- [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@weiso131/linux2025-homework2)
+- [2025q1 Homework3 (kxo)](https://hackmd.io/@weiso131/linux2025-homework3)
+- [2025q1 Homework4 (quiz3+4)](https://hackmd.io/@weiso131/linux2025-homework4)
+- [2025q1 Homework5 (assessment)](https://hackmd.io/@weiso131/linux2025-homework5)
+
+作業回顧:
+- lab0
+  - 理解 list_sort 程式實作
+- hw2
+  - 
+## 期末專題
+
+
+## 與授課教師的互動
+## 所見所聞所感
+## 自我評量
