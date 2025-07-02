@@ -88,12 +88,12 @@ categories: Usesr
     - 探討如何讓一般使用者有權限執行 xo-user ，在專題藉由將 devnode 的 mode 設定為 0666 ，並移除對 sysfs 的依賴，實現了全域可讀可寫
     - 探討如何支援多使用者，在課堂簡記中提出簡單的想法，最後在專題中實現它
 - [2025-06-10/17/24 問答簡記](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA#weiso131)
-  探討如何利用 CAS 與 futex 機制實現簡單的 mutex_lock ，在課後實現了可行的 mutex_lock
+  - 探討如何利用 CAS 與 futex 機制實現簡單的 mutex_lock ，在課後實現了可行的 mutex_lock
 
 一對一討論:
 
 - 5/7
-  考量我對核心模組的興趣，加上 [2025-04-29 問答簡記](https://hackmd.io/Tcy6NPtnQiubDGyrRUnSdw#weiso131) 對 kxo 支援多使用者的想法，老師將我的專題安排為改進 kxo ，並要求我把可能的改進項目列出來。
+  - 考量我對核心模組的興趣，加上 [2025-04-29 問答簡記](https://hackmd.io/Tcy6NPtnQiubDGyrRUnSdw#weiso131) 對 kxo 支援多使用者的想法，老師將我的專題安排為改進 kxo ，並要求我把可能的改進項目列出來。
 
 ## 所見所聞所感
 9分。
