@@ -31,7 +31,7 @@ categories: Usesr
 - [2025q1 Homework4 (quiz3+4)](https://hackmd.io/@weiso131/linux2025-homework4)
 - [2025q1 Homework5 (assessment)](https://hackmd.io/@weiso131/linux2025-homework5)
 
-作業重點回顧:
+### 作業重點回顧
 - lab0
   - 理解 list_sort 程式實作
     - 利用 perf 比較與自身實作的效能差異
@@ -45,12 +45,34 @@ categories: Usesr
   - 實現 ctrl + Q 顯示對亦歷史紀錄
     - 利用鍊結串列儲存對亦資料
     - 自訂 ioctl ，確保多個 terminal 都能正確的取得對亦紀錄
+
 ## 期末專題
 9 分。
-[Linux 核心專題: 改進 kxo]()
+[Linux 核心專題: 改進 kxo](https://hackmd.io/XWDjMx0bTmmNIWvlNHsvKw?both)
 
-改進 kxo 使其支援多使用者，
+### 專題實現項目
+- 允許核心模組切換多種演算法，並整合 ttt 的 reinforcement_learning
+  - 利用過去學過的 Q learning 演算法相關知識，更快的理解 TD learning 的實作，並將 reinforcement_learning 整合到此專案
+- 縮減使用者和核心空間通訊的成本
+  - 探討各種可能實作所需傳遞的 bytes 數量大小，並討論壓縮空間所需要的額外維護工作是否值得
+- 改進棋盤展現的方式，並修訂核心通訊介面
+  - 實現 write 支援使用者端棋盤控制
+  - 實現 get_user_id 這個 ioctl 來在核心模組建立新的使用者並取得它在對應 tid 下的 user_id，此外，可藉由 bit_mask 指定使用的模式，實現使用者端切換 AI 演算法
+- 支援多使用者並強化安全機制
+  - 利用 current 這個 task_struct ，得知正在互動的執行緒的 id ，使其確保不同執行緒不會互相干擾
+  - 了解 workqueue, kfifo, tasklet, wait_queue 的機制與使用要求，將這些知識應用於多使用者相關資料結構、流程的設計
+- 理解何謂 lock-free
+  - 釐清 lock-free 與 lock-less 的差異
+  - 探討多使用者目前實作是否有可能在調整資料結構的使用後，達到 lock-free
+- 在不犧牲棋力的前提，降低 CPU 使用率
+  - 利用對 workqueue 的理解，使用 WQ_CPU_INTENSIVE 這個 flag ，確保 worker_pool 的其他工作不會被阻擋
+
+### 觀摩其他同學的專題
+- [Linux 核心專題: 輕量級容器實作和擴充](https://hackmd.io/elX0ZH57S6CQIEdmsfGPBQ?view)
 
 ## 與授課教師的互動
+
+課堂問答:
+
 ## 所見所聞所感
 ## 自我評量
