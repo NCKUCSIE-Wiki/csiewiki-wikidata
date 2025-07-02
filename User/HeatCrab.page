@@ -85,28 +85,29 @@ categories: User
 ## 與授課教師的互動
 10 分。
 
-* 第七週：4/01、4/03
-    * [在 lab0-c 繳交 PR](https://github.com/sysprog21/lab0-c/commit/00cd93ac61096eda8eaed75628fc469b20d980e5)
-      第一次跟老師在線上互動，印象很深刻，因為是在凌晨，儘管我漏洞百出，許多細節並未達到基本門檻，但是老師在 code review 的過程依然很有耐心地提出要改進之處。這個過程也讓我明白 code review 的用意也告誡我需要對每一次 PR 或 commit 用心，有理有據。
+* 第七週：4/01、4/03：[在 lab0-c 繳交 PR](https://github.com/sysprog21/lab0-c/commit/00cd93ac61096eda8eaed75628fc469b20d980e5)
+      
+  第一次跟老師在線上互動，印象很深刻，因為是在凌晨，儘管我漏洞百出，許多細節並未達到基本門檻，但是老師在 code review 的過程依然很有耐心地提出要改進之處。這個過程也讓我明白 code review 的用意也告誡我需要對每一次 PR 或 commit 用心，有理有據。
 
-* 第八週：4/08、4/10
-    * [課堂討論：2025-04-08 問答簡記](https://hackmd.io/@sysprog/ByFRLr-Cyx)
-      我針對[作業三 kxo 的作業說明](https://hackmd.io/@sysprog/linux2025-kxo/%2F%40sysprog%2Flinux2025-kxo-a#-Linux-%E6%A0%B8%E5%BF%83%E7%9A%84%E6%B5%AE%E9%BB%9E%E6%95%B8%E9%81%8B%E7%AE%97)在問答簡記中提出疑惑，並在觀看錄影紀錄後私訊 [Jserv 與他愉快的小夥伴](https://www.facebook.com/JservFans?locale=zh_TW) 討論後續議題，但也因為心態不對，被老師指正。後續除了了解與學習 PELT 的議題外，也藉此機會開始閱讀老師撰寫的  〈Demystifiying the Linux CPU Scheduler〉，並為未來的一對一問答做準備。
+* 第八週：4/08、4/10：[課堂討論：2025-04-08 問答簡記](https://hackmd.io/@sysprog/ByFRLr-Cyx)
+      
+  我針對[作業三 kxo 的作業說明](https://hackmd.io/@sysprog/linux2025-kxo/%2F%40sysprog%2Flinux2025-kxo-a#-Linux-%E6%A0%B8%E5%BF%83%E7%9A%84%E6%B5%AE%E9%BB%9E%E6%95%B8%E9%81%8B%E7%AE%97)在問答簡記中提出疑惑，並在觀看錄影紀錄後私訊 [Jserv 與他愉快的小夥伴](https://www.facebook.com/JservFans?locale=zh_TW) 討論後續議題，但也因為心態不對，被老師指正。後續除了了解與學習 PELT 的議題外，也藉此機會開始閱讀老師撰寫的  〈Demystifiying the Linux CPU Scheduler〉，並為未來的一對一問答做準備。
 
-* 第十一週：4/29、5/01
-    * 第一次一對一討論
-    主要圍繞於我閱讀〈Demystifiying the Linux CPU Scheduler〉後整理出來的筆記與問題。這邊老師在討論的一開始，看到我那簡陋至極的筆記後，就向我展示了他整理好，當遇到相關可以詢問之人時，就可以明確詢問他人的筆記內容。這讓我意識到機會是留給準備好的人，是什麼意思，也讓我明白自己對待事情要多上點心，很多時候，機會轉瞬即逝，如果自己的準備不充分，或是敷衍了事，就很容易會錯過。隨後老師也針對我的筆記，希望延伸在第九週[2025-04-15 問答簡記](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA)中討論有關中斷的議題，去探討與解釋 softirq 是否有 task_struct 。
+* 第十一週：4/29、5/01：第一次一對一討論
+  
+  主要圍繞於我閱讀〈Demystifiying the Linux CPU Scheduler〉後整理出來的筆記與問題。這邊老師在討論的一開始，看到我那簡陋至極的筆記後，就向我展示了他整理好，當遇到相關可以詢問之人時，就可以明確詢問他人的筆記內容。這讓我意識到機會是留給準備好的人，是什麼意思，也讓我明白自己對待事情要多上點心，很多時候，機會轉瞬即逝，如果自己的準備不充分，或是敷衍了事，就很容易會錯過。隨後老師也針對我的筆記，希望延伸在第九週[2025-04-15 問答簡記](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA)中討論有關中斷的議題，去探討與解釋 softirq 是否有 task_struct 。
     
-* 第十二週：5/06、5/08
-    * 將整理好關於「解釋 softirq 是否有 task_struct」筆記發表至課程討論區
-    在整理完筆記後，我私訊老師。老師閱讀完後的第一個問題是，你有用 Ftrace 去追蹤 softirq 嗎？我誠實地回答了沒有。接著老師告訴我，我的用字遣詞與論述還有很大的改進空間，讓我發表至課程討論區與同學們討論與互動，藉此增進自己。但是在發表之前，我打開電腦，自己根據[作業三的作業說明](https://hackmd.io/@sysprog/linux2025-kxo/%2F%40sysprog%2Flinux2025-kxo-c#Linux-%E6%A0%B8%E5%BF%83%E7%9A%84%E4%B8%A6%E8%A1%8C%E8%99%95%E7%90%86)與[2025-04-15 問答簡記](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA)，操作了一次 Ftrace ，並將我整理的筆記中數據，調整為我的實驗結果版本後，才公開發表至課程討論區。
+* 第十二週：5/06、5/08：將整理好關於「解釋 softirq 是否有 task_struct」筆記發表至課程討論區
     
-* 第十七週：6/10、6/12
-    * [與老師在線上一對一問答](https://www.youtube.com/watch?v=JvMowsPQ18E&t=4862s)
-    本次討論主要聚焦在我對於學習〈[Operating System in 1,000 Lines](https://operating-system-in-1000-lines.vercel.app/en/) 〉教學文件後的筆記，以 MMU 為主的相關知識展開，並延伸到[這幾週課程問答簡記](https://hackmd.io/@sysprog/SkIHGNSQxl)中聚焦的同步機制相關議題。最後我將未回答出來與不熟悉的相關知識一併整理於[期末專題的開發紀錄](https://hackmd.io/@sysprog/HyIQvDYWll#06-12-%E8%AA%B2%E7%A8%8B%E8%A8%8E%E8%AB%96%E7%AD%86%E8%A8%98)中。
+  在整理完筆記後，我私訊老師。老師閱讀完後的第一個問題是，你有用 Ftrace 去追蹤 softirq 嗎？我誠實地回答了沒有。接著老師告訴我，我的用字遣詞與論述還有很大的改進空間，讓我發表至課程討論區與同學們討論與互動，藉此增進自己。但是在發表之前，我打開電腦，自己根據[作業三的作業說明](https://hackmd.io/@sysprog/linux2025-kxo/%2F%40sysprog%2Flinux2025-kxo-c#Linux-%E6%A0%B8%E5%BF%83%E7%9A%84%E4%B8%A6%E8%A1%8C%E8%99%95%E7%90%86)與[2025-04-15 問答簡記](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA)，操作了一次 Ftrace ，並將我整理的筆記中數據，調整為我的實驗結果版本後，才公開發表至課程討論區。
+    
+* 第十七週：6/10、6/12：[與老師在線上一對一問答](https://www.youtube.com/watch?v=JvMowsPQ18E&t=4862s)
+    
+  本次討論主要聚焦在我對於學習〈[Operating System in 1,000 Lines](https://operating-system-in-1000-lines.vercel.app/en/) 〉教學文件後的筆記，以 MMU 為主的相關知識展開，並延伸到[這幾週課程問答簡記](https://hackmd.io/@sysprog/SkIHGNSQxl)中聚焦的同步機制相關議題。最後我將未回答出來與不熟悉的相關知識一併整理於[期末專題的開發紀錄](https://hackmd.io/@sysprog/HyIQvDYWll#06-12-%E8%AA%B2%E7%A8%8B%E8%A8%8E%E8%AB%96%E7%AD%86%E8%A8%98)中。
     
 * 一直到 06/28 期末專題發表前：
-    * 跟老師在開發紀錄（hackmd）上互動，主要是老師糾正我在表達上無法好好地將自己的論述表達且過度依賴生成式 AI ，以及對於用字遣詞上的不當與不精確。我在錯誤中學習，並且花更多心思去思考與對我的論述做更準確的表達。
+  
+  跟老師在開發紀錄（hackmd）上互動，主要是老師糾正我在表達上無法好好地將自己的論述表達且過度依賴生成式 AI ，以及對於用字遣詞上的不當與不精確。我在錯誤中學習，並且花更多心思去思考與對我的論述做更準確的表達。
     
 ## 所見所聞所感
 9 分。
