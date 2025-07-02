@@ -1,0 +1,85 @@
+---
+title: tsaiiuo(蔡旻桓)
+categories: User
+...
+
+## 簡介
+* 國立成功大學 電機工程所 碩一 (2024~2026)
+* GitHub: [`tsaiiuo`](https://github.com/tsaiiuo)
+
+#  2025 Linux 核心設計 春季班 自我評量
+
+## 1. 成果發表和貢獻
+對於老師的教材以及開源專案，並沒有特別突出的貢獻，但也有做一些教材修正以及 PR ，因此給予自己打一個 6 分，有相關的貢獻如下：
+
+* mt-redis: [Commit b225c49](https://github.com/jserv/mt-redis/commit/b225c49896a38523c2533e8a9a434bc41c16a331) 刪除重複的引入標題檔
+* 並行程式設計: Lock-Free Programming 中對原先 RecordMax 的例子提出疑問，老師也已改進相關說明，給予原先程式碼的修改版，且該如何修改成正確版本
+* Linux 核心設計: RCU 同步機制 中刪除多餘的字：記憶體利回收機制->記憶體回收機制
+* Linux 核心設計: RCU 同步機制 中統一簡寫順序：QSBR (Quiescent State-Based Reclamation) 和 Epoch-Based Reclamation (ERB) ->QSBR (Quiescent State-Based Reclamation) 和 EBR (Epoch-Based Reclamation)
+
+評分: **6**
+
+## 2. 作業/隨堂測驗
+* lab0-c: [HackMD](https://hackmd.io/@tsaiiuo/linux2025-homework1)
+* 2025q1 Homework2 (quiz1+2): [HackMD](https://hackmd.io/@tsaiiuo/linux2025-homework2)
+* 2025q1 Homework3 (kxo): [HackMD](https://hackmd.io/@tsaiiuo/linux2025-homework3)
+* 2025q1 Homework4 (quiz3+4): [HackMD](https://hackmd.io/@tsaiiuo/linux2025-homework4)
+* 2025q1 Homework5 (assessment): [HackMD](https://hackmd.io/@tsaiiuo/linux2025-homework5)
+
+每個作業我都有努力參與實作，也都有相關紀錄，但是還是有些地方可以在精進，像是 kxo, lab0-c 兩個專案並沒有發 PR 去改善現有程式碼，此外在 HW2 以及 HW3 中有些延伸問題依舊沒有寫出來，但整體該實作的功能我也都有試著去實作出來，無論是將 kernel space 的操作移致 user space 又或者真的去理解實作 RB-tree 的插入以及刪除，此外隨堂測驗的部分幾乎都有參與，雖然起初都是 0 分或是 20 分這種分數，但在後續研讀教材，對 C 語言以及各種 bitwise 操作較熟悉後，後續幾次的成績上有獲得比較好的分數，整體來說我想給自己一個 8 分，希望後續能改進現有專案。
+
+評分: **8**
+
+## 3. 期末專題
+* Linux 核心專題: 高度並行的 Valkey 實作 : [HackMD](https://hackmd.io/0IXT5cRMSouta_tZdX9FKg?view)
+
+在專題中跟共事的學姊分別針對 uruc flavor 、執行序數量、 thread-level cpu affinity 三種不同的實驗情境下去探討不同因素對於吞吐量以及操作延遲的影響，
+在此次專題中首先遇到的第一個問題是資料結構，因此我花了三天時間去了解 mt-redis 這個專案的架構是如何，也在閱讀時有發現一些程式碼的錯誤，像是[Commit b225c49](https://github.com/jserv/mt-redis/commit/b225c49896a38523c2533e8a9a434bc41c16a331)，也很感謝上次做這專題的同學有保留相關筆記。接下來就是一連串的引入 API 並且測試的一連串流程，我認為這次期末專題我的結果是不錯的，首先推翻了前一次同學的結論(2 個 threads 綁定 1 個 cpu 會有較好的效能)，在實驗可以發現這是會根據 uruc flavor 而產生變化的，像在 QSBR 上 1 個 threads 綁定 1 個 cpu 會有較好的效能，此外也去補齊去年對於 4 個 threads 以及 8 個 threads 在不同 flavor 下的影響，最後透過這次實驗也能發現不同的 cpu 上會有不同的結論，像是在學姊的設備下 bp 取得比較好的效果，而在我的設備下 memb 以及 qsbr 會取得比較好的效果，另外不同的讀寫比也會對不同的 flavor 有不同的影響，此外這個期末專題我也有Linux 核心設計課程期末展示 6/28 中進行演講，整體來說想給我自己 9 分，剩餘的一分就是希望能將實驗完善將統計的結果整理好後，發出 PR 去改進現有的效能。
+
+觀摩其他學員的期末專題並提問:
+
+* [Linux 核心專題: RISC-V 系統模擬與 VirtIO](https://hackmd.io/rS1KJQ81QOe3iytszOMw9g?view)
+* [Linux 核心專題: bitops 相關測驗題](https://hackmd.io/KjzKiTVJSl-J6CBDZFI9iQ?view)
+* [Linux 核心專題: 作業系統的設計和開發](https://hackmd.io/d6m0WpZvQd6xfJqZFlWrXw?view)
+* [Linux 核心專題: Redis/Valkey + io_uring](https://hackmd.io/NdvEFr4IQdCXUoIuq9jBPA?view)
+* [Linux 核心專題: 改進 kxo](https://hackmd.io/XWDjMx0bTmmNIWvlNHsvKw?view)
+
+評分: **9**
+
+## 4. 與授課教師「一對一討論」的時間
+
+* [2025-06-03 問答簡記](https://hackmd.io/k-YGbvF3QPuQDuwUYwIipg)
+* [2025-06-10/17/24 問答簡記](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA#tsaiiuo)
+* [2025年5月12日 (星期一) ⋅ 下午10點 – 下午10:30 (台北標準時間)](https://hackmd.io/dkJ5hX_-TCCy0tZySypuaA)
+* [2025年5月30日 (週五) 上午10:30 – 上午11點 (GMT+8)](https://hackmd.io/dkJ5hX_-TCCy0tZySypuaA)
+
+在第一次的一對一討論中與老師討論了許多 Lock-free 以及 Lock-less 的話題，並且老師也幫我解惑當初看 Demystifying the Linux CPU Scheduler 教材中
+有關於 nice 值的數學證明，而在第二次的一對一討論中就是針對期末專題下去探討，以及討論我遇到的問題，像是對於 RCU 的理解，以及 membarrier 系統呼叫，最後
+還有關於電腦設備對於 mt-redis 吞吐量以及延遲的影響，最後撇除上述的討論，老師也給了我許多價值觀的傳輸，反正學到最重要的就是「**誠實面對自己**」。
+在兩次的課堂討論中分別是針對 threads/process 會遇到哪些相互影響執行 (順序) 的機制，其中又針對 pthread_barrier 課題下去探討，老師在上課的當下
+也給予我一個作業是實作確保 all sub threads ready, go! 訊息總是最後面顯示，在課堂上我也有順利答出來，老師接著就要求考慮到 N + 1 個執行緒 (含 main thread)，要如何運用 pthread_barrier 達到特定順序？，這個 TODO 我也在回家後有更新至課堂討論中。
+
+而在第二次討論中主要是討論關於期末專題的進度，我們探討了 neco 這個專案的使用情境，以及他的排程機制，此外也有討論期末專案的效能瓶頸可能是 epoll 的延遲。
+這部分可以參考有一位同學的期末專題，就是在使用 io_uring 去取代 epoll 並且查看相對應的效能變化。
+整體來說我認為對於一對一的討論以及課堂參與皆有完整出席，想給自己 9 分。
+
+評分: **9**
+
+## 5. 修課心得
+「**誠實面對自己**」
+
+「**你該學習的不是看到事情要完蛋了就去避免失敗，而是應該學習如何處理與承受失敗，你才能變得比以前更強大**」
+
+我覺得上述兩句話可以概括我這學期的心得，因為先前並沒有接觸過 C 語言以及相關的領域，所以原先想修這堂課是想學習有關於系統軟體的知識，看看自己是否適合以及喜歡這個領域，同時也沒抱著多大的決心來參與這門課，更多的是一種嘗試心態，想著上完第一堂課若不喜歡退選即可，說真的在第一個作業出來的當下真的很想退選，那時的我隨堂小考都是 0 分，不理解指標的概念，也不熟悉 bitwise 的操作，甚至連 XOR 的規則都忘記了，但很慶幸我撐下來了，現在回過來看真的學習到很多東西，像是並行程式設計、bitwise、指標概念、IRQ、RCU等等，以及最重要的如何閱讀大型專案的程式碼，在隨堂小考以及作業的過程中，誠實面對自己就是一個很大的課題，基本上在作業起頭時哪裡都是問題，像是有關於 kxo 這個專案中，是第一次撰寫 Kernel 模組開發，就有很多問題，包含 workqueue 、 softirq 等等的一系列機制，更不用說還有程式碼本身需要讀懂，但在老師上課一次次的討論以及閱讀教材後，也漸漸對這些原先不認識的機制從 好像理解->發現根本理解錯誤->好像理解->發現根本理解錯誤->真的理解 ，基本上也很少是一聽就懂的，像是有關於 ISR 中的 top-half 以及 bottom-half ，就花了很多時間去理解，結論就是基本上整堂課都是在面對失敗，然後誠實面對自己學習。
+
+閱讀〈因為自動飲料機而延畢的那一年〉中，作者花了半年以上去做一件看似會沒有回報的事情，而每個章節的過程都遇到許許多多的困難，應該是說全是困難，但作者雖說有想過要放棄，中間老師也有去跟作者本人交談，並給予鼓勵，最終作者還是一一克服了中間遇到的種種困難，就算可能解決的方式跟它當初預先設想的有落差（冰塊機），但他最終還是成功做出一個自動飲料機，就算功能可能是最基本的，但最大的收穫其實是作者在面對一系列困難的過程中，所鍛鍊的處理問題的能力，看完之後其實情緒是複雜的，除了感動自外更多的是自我反思，最主要就是要有勇於討戰困難的勇氣和毅力，不要輕易放棄。
+
+最後想給堅持到最後的自己 9 分，雖然我在這門課雖然沒有能夠貢獻重要的 PR 到一些開源的大專案上，不論可能是 C 語言基本功不夠，所付出的心力不夠，面對困難時總是喜歡得過且過，但我認為我在這門課是真的成長了，尤其是在面對未知的困難，但當然不夠完美，期許未來的自己能夠不斷精進自我，並希望在實習結束後能與老師在聯繫討論 mt-redis 的後續，或其他開源專案能夠參與的方向，讓自己的程式碼能夠為社會做出貢獻。
+
+評分: **9**
+
+## 自我評量(1 ~ 10)
+
+$GEOMEAN = ( 6 \times 8 \times 9 \times 9 \times 9 )^{1/5} = =8.105760231$
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + 8 = 9$
