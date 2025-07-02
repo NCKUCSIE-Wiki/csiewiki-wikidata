@@ -8,68 +8,62 @@ categories: User
 
 * GitHub: [`eleanorLin`](https://github.com/eleanorLYJ)
 * HackMD: [`eleanorLin`](https://hackmd.io/@eleanorLin)
-
 ## 1. 成果發表和貢獻
-我給自己 6 分，認為自己沒有做足夠多貢獻，更多只是隨手之勞的改錯字與順勢學習 github Action 的使用。  
+我給自己 8 分
+2 月 18 日到 7 月 2 日被收錄的貢獻
+### kernel
+* 名為 [Introduce and use generic parity32/64 helper] patch series，其中有被收錄的 commit:
+    * [media: saa7115: Replace open-coded parity calculation with parity8()](https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/commit/?id=118f2834b27ffe06a1badcd74fa35bb14cf1d339)
+    * [media: media/test_drivers: Replace open-coded parity calculation with parity8()](https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/commit/?id=47e0452b40af6bf821a96e34d95fd5915fe4c7a6)
+    * [media: pci: cx18-av-vbi: Replace open-coded parity calculation with parity8()](https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/commit/?id=df698f3d10871a6ca8446d8edb87a89433e4029e)
+* [sctp: Fix undefined behavior in left shift operation](https://lore.kernel.org/lkml/20250525144650.2365704-1-eleanor15x@gmail.com/)
 
-### github 專案  
-* [sysprog21/concurrency-primer](https://github.com/sysprog21/concurrency-primer) / [Commit 86fb930](https://github.com/sysprog21/concurrency-primer/commit/86fb93046175f11ab6b62496850ae303436dd9a3)、[Commit 4915ddc](https://github.com/sysprog21/concurrency-primer/commit/4915ddceeea0ab4073fc2b21fed6b4357ebf4f85)   增加 使用 github Action 添增 CI，每有新的 commit 被推上，就會生成新的pdf，並放置 release 區域，供他人方便閱讀。  
-* [sysprog21/fiber]()[https://github.com/sysprog21/fiber] / [Commit 9c50274](https://github.com/sysprog21/fiber/commit/9c50274d1db0bc2cbdbec35a3f2da5d08be19e37) 修改錯字 : varialbles-> variable  
+### rv32emu
+* [Raise exception when RV32E instructions use x16-x31](https://github.com/sysprog21/rv32emu/pull/578)
 
-### 課程教材修訂
-* [Linux 核心設計: 作業系統術語及概念](https://hackmd.io/Hzl3DrqWRIyR7spRuNAVDA) 修改錯字: 活者 -> 活著  
+### lkmpg
+* [Clarify usage differences between spinlock functions](https://github.com/sysprog21/lkmpg/pull/294)
+* [Add explanation of mutexes and function variants]( 
+https://github.com/sysprog21/lkmpg/pull/309)
+* [Change title to 'Synchronization' for better alignment with content](https://github.com/sysprog21/lkmpg/pull/312)
 
 ## 2. 作業/隨堂測驗
 
-我給自己 7 分，我每次拿到作業後，會詳細的閱讀作業需求後，而在寫作業的過程中，對自己的能力、學習進度誠實，投入大量時間，然而自己覺得完成度大概 7 成。  
+我給自己 2 分，對此門課的作業/隨堂測驗投入時間還有完成度都不足。
 
-* lab0: [hackmd](https://hackmd.io/@eleanorLin/linux2024-homework1) / [Github](https://github.com/eleanorLYJ/lab0-c): 完成佇列操作的程式碼實作、另外學習使用 valgrind、GDB 測試程式，最後有實作 Fisher–Yates shuffle 演算法。
-* 2024q1 Homework2 (quiz1+2): [hackmd](https://hackmd.io/@eleanorLin/linux2024-homework2) /[Github](https://github.com/eleanorLYJ/lab2)
-* ttt: [hackmd](https://hackmd.io/@eleanorLin/linux2024-homework1) / [Github](https://github.com/eleanorLYJ/ttt): 引入 coroutine 與處理鍵盤事件。
-* hw4: [hackmd](https://hackmd.io/@eleanorLin/linux2024-homework4): bitwise 練習與數學推導。  
-* 2024q1 Homework5 (assessment): [hackmd](https://hackmd.io/@eleanorLin/linux2024-homework5): 對課程提問與心得。  
-* 2024q1 Homework6 (integration): [hackmd](https://hackmd.io/@eleanorLin/linux2024-homework6): 理解核心模組運作並首次掛載核心、其餘相關主題為 MODULE_LiCENSEC、CMWQ (Concurrency Managed Workqueue) 接著看 ksort 與 simrupt如何運用 CMWQ 達到並行目標。  
+* lab0: [hackmd](https://hackmd.io/@eleanorLin/linux2025-homework1) / [Github](https://github.com/eleanorLYJ/lab0-c): 完成佇列操作的程式碼實作、另外學習使用 valgrind、GDB 測試程式，最後有實作 Fisher–Yates shuffle 演算法。
+* 2025q1 Homework2 (quiz1+2) :[hackmd](https://hackmd.io/@eleanorLin/linux2025-homework2)
+* 2025q1 Homework5 (assessment) :[hackmd](https://hackmd.io/rOlNuORLQD-uPAn8ASKlKA)
 
 ## 3. 期末專題
-我給自己 9 分，對於測試部分的結果解讀還需要加強。  
+我給自己 6 分
 
 ### 本人專題: 
-開發紀錄: [Linux 核心專題: RCU 實作](https://hackmd.io/@sysprog/HkkWZ20B0) / [Github](https://github.com/eleanorLYJ/ctp)    
-探討 ctp 這似 RCU 的 thread-safe variable 在哪些情況適用，因此除了逐步探討 RCU 與 ctp程式碼 以外，比較 ctp 與 其他 userspace RCU 的 throughput、記憶體使用量等。  
+開發紀錄: [Linux 核心專題: 高度並行的 Valkey 實作](https://hackmd.io/0IXT5cRMSouta_tZdX9FKg) / [Github](https://github.com/eleanorLYJ/mt-redis)
+具體貢獻是成功完成在 mt-redis 的實驗。然而，關於 mt-redis 的理解，未能及時掌握其中其實現多執行緒的核心原理。起初，我過度專注於 valkey 的實作細節與原理，導致無法從高層次視角理解問題，進而無法將 valkey 從單執行緒轉為多執行緒。在期末專題的實作過程中，我時常陷入細節，未能跳脫狹隘的框架，缺乏對整體架構的把握。因此，我未能成功將 URCU 整合進 valkey 的實作中。
 
 ### 對他人專題的發問
-* [Linux 核心專題: Usperspace RCU 研究](https://hackmd.io/@sysprog/Byga7v9U0#%E4%BB%BB%E5%8B)    
-* [Linux 核心專題: POSIX Thread 相容實作](https://hackmd.io/@sysprog/H1_iu8CSA)  
-* [Linux 核心專題：排程器原理](https://hackmd.io/@sysprog/HyDijL0HR)  
-* [Linux 核心專題: 重作第 10 和第 12 週測驗題](https://hackmd.io/@sysprog/SJXN0y9UR#TODO-%E7%AC%AC-10-%E9%80%B1%E6%B8%AC%E9%A9%97%E7%9A%84%E7%AC%AC-1-%E9%A1%8C)  
-* [Linux 核心專題: 井字遊戲改進](https://hackmd.io/VpOFbwPLRCqQ5_i0ZOUtfQ?view)  
+*  [Linux 核心專題: bitops 相關測驗題](https://hackmd.io/@sysprog/B13UVSQWel) 
+*  [Linux 核心專題: 作業系統的設計和開發](https://hackmd.io/d6m0WpZvQd6xfJqZFlWrXw?view)
+-  [核心專題: 記憶體模型](https://hackmd.io/YYY1kFLTQEyqd-zyXwG8IQ?view)
+- [Linux 核心專題: 並行程式設計相關測驗題](https://hackmd.io/zobDB6-ORmCJ7pjtP20T4g?view)
 
 ## 4. 與授課教師的互動
-
-我給自己 8 分，扣的兩分為，我在與教師互動過程中，我總是無法順利回答問題。   
-* 5 月 9 日 (週四), 下午3:00 – 下午3:30，討論 vm_area_strcut 、fork 如何做 CoW (copy-on-write) 與期末專題主題的討論  
-* 7 月 3 日 (週三), 下午3:00 – 下午3:30，此次主要討論 [專題]((https://hackmd.io/@sysprog/HkkWZ20B0) 中測試結果，教師提供具體的方向，提出我的電腦處理器為 intel 12代，會區分 P-cores 與 E-cores 因此從此角度重新修正我的測試結果。  
+8分
+4/17 IRQ，為甚麼要區分 top half 與 bottom half? 還有 spinlock 與其他 lock 的差別?
+4/23 一對一討論
+5/20 uruc + valkey
 
 ## 5. 所見所聞所感
 我給自己 10 分  
-* 教師總是強調「誠實面對自己」。我將「誠實」態度當作我成長的重要指標。另外，想成為一名工程人員，就得注意細節和講話精確至關重要。如同教師總在我的作業中推薦的查詢詞彙的連結:[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary) 與 [詞彙對照表](https://hackmd.io/@l10n-tw/glossaries)。  
-* 閱讀 《因為自動飲料機而延畢的那一年》  時，發現我總對現實有不切實際的幻想，而當要理解自己與現實的差距時，將面對巨大挫折感。  
-* 因此此門課有教師有時幽默、有時嚴厲、循循善誘教學風格下，理解工業強度的現實是以多麼複雜的流程運作著。  
-* 具備足夠 9的內心，因為發現當我不仔細閱讀作業規範時，在寫作業時肯定為踩到坑，另外，在不完全理解就隨意的參考他人程式碼時，只會讓自己越混亂。  
-* 課程強調觀摩他人的做法並提出建議。而我發現，要提出深入的建議，就必須更加投入。  
-* 在閱讀 Linux kernel 程式碼的過程中，我看到了很多能夠從細節中發現錯誤並改進的人的例子，讓我敬佩這些人的細心與創意，也期待自己能夠成為這樣的人。  
-* 培養官方文件、可靠來源資訊的好習慣  
 
-## 6. 學習回顧的簡短內容
-我給自己 10 分
-* 二月份學習回顧: 3 月 4 日發送，學習主題為撰寫 lab0 時所需要的 C 語言技巧與 Git。  
-* 三月份學習回顧: 4 月 5 日發送，學習主題為 C 語言的程式技巧、撰寫排序與其測試檔，並且其中檢驗亂數是否達統計意義的夠亂。  
-* 四月份學習回顧: 5 月 6 日發送，學習主題為並行處理的議題、Linux 核心模組、device driver 的運作過程，其餘，還有 workqueue, tasklet,等程式碼，這些讓我得以細緻的控制 Linux 核心的諸多任務。最後還有，圍棋AI(蒙地卡羅樹搜尋與 minimax n的演算法)、與其專案中的協同式多工與搶佔式多工的實作。  
-* 五月份學習回顧: 6 月 5 日發送，學習主題主要為多執行緒程式設計，並開始撰寫期末專題。  
+* 教師總是強調「誠實面對自己」。我將「誠實」態度當作我成長的重要指標。另外，想成為一名工程人員，就得注意細節和講話精確至關重要。教授也一再提醒我，在描述時要進一步精進語句表達。我深知自己的敘述往往以自己的角度出發，而非假設以對我的內容一無所知的對象，因此常常會自動忽略一些關聯性。
+* 邱繼寬同學去 Open Source Summit North America 的分享，讓我意識到大佬通常都是充滿熱情，除了外在動力(如錢)，更是有強大的內在動力驅動他們去精進程式能力。
+* 閱讀 《因為自動飲料機而延畢的那一年》時，發現我對現實有不切實際的幻想，而當要理解自己與現實的差距時，將面對巨大挫折感。 
+* 因此此門課有教師有時幽默、有時嚴厲、循循善誘教學風格下，理解工業強度的現實是以多麼複雜的流程運作著。 
+* 課程強調觀摩他人的做法並提出建議。而我發現，要提出深入的建議，就必須更加投入。 
+* 在閱讀 Linux kernel 程式碼的過程中，我看到了很多能夠從細節中發現錯誤並改進的人的例子，讓我敬佩這些人的細心與創意，也期待自己能夠成為這樣的人。 
+* 培養官方文件、可靠來源資訊的好習慣 
 
 ## 分數
-採用方案 B 計算方式
-```python
-1 + math.floor(pow(6*7*9*8*10*10, 1/6)) = 9
-```
-我的分數為 9 分。
+採用方案 A 計算方式，我的分數為 9 分。
