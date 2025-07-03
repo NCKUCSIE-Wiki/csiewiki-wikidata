@@ -15,7 +15,7 @@ categories: User
 在準備實作第三份作業時，發現少了 `#include <linux/vmalloc.h>` ，會導致無法編譯程式，但發現已有同學提交相關 pull request ，所以未能實際做出貢獻。
 
 ## 作業/隨堂測驗
-7分。
+5分。
 
 * [2025q1 Homework1 (lab0)](https://hackmd.io/@alex-c1234/linux2025-homework1)
   * 如何撰寫 commit message ，確實記錄修改的 what, why, how
@@ -23,6 +23,8 @@ categories: User
   * 運用間接指標對鏈結串列進行操作
 * [2025q1 Homework5 (assessment)](https://hackmd.io/@alex-c1234/linux2025-homework5)
   *  紀錄〈因為自動飲料機而延畢的那一年〉的閱讀心得，以及學習上遇到的困難
+從第三次作業開始，我皆有作業要求，且嘗試理解程式碼，但無法完成實作。
+
 
 ## 期末專題
 8分。
@@ -38,7 +40,7 @@ categories: User
 * [Linux 核心專題: 重作 lab0](https://hackmd.io/KXO0S424Tnm7qFhPzebNCA?both#Reviewed-by-alexc-313)
 * [Linux 核心專題: 重作 lab0](https://hackmd.io/WJX0QWZfR4OVCoA94qCqmg?both=#Reviewed-by-alexc-313)
 * [Linux 核心專題: 並行程式設計相關測驗題](https://hackmd.io/vY7dlltsQPKywPxwJeYncA?both#Reviewed-by-alexc-313)
-
+* [Linux 核心專題: 重作 kxo](https://hackmd.io/unKuFrlmSy-KuXEy9cO_ag?both#Reviewed-by-alexc-313)
 
 
 ## 與授課教師的互動
@@ -50,12 +52,12 @@ categories: User
 老師採用類似面試的方式與我進行討論，並向我詢問了浮點數運算問題，特別是在不用到 FPU 的條件下該如何處理，這讓我意識到自己對浮點數及定點數僅有基礎的理解，於是再重新研讀相關教材與資料後，有將老師提出的問題補上。
 
 ## 所見所聞所感
-10分。
+9分。
 
 這門課是開給資訊系大三同學的選修課，但今年大一的我在學期開始前就下定決心要修這門課，因為我不想要等到快要踏入職場才接觸到能夠被實際運用的東西，想要及早參與並貢獻開源專案，所以即使從第一週就愈到許多困難及缺乏許多知識(因為還沒修過資料結構、演算法、計算機結構等)，我還是咬牙堅持到學期末。老師常說: 「缺什麼補什麼」，這學期我不斷用這句話鼓勵自己，所以學期間從最基礎的 git 開始，到精進 C 語言的能力及研讀 CS:APP ，從學期初要完成第一份作業都有困難，到學期末能夠寫出與效能能與 glibc 相比的程式，我認為我在這個領域有顯著的成長。在課堂上也看到許多能力比我強很多的學長、畢業學長的經驗分享，這些都給我很多啟發以及未來可以進步及還需努力的方向。
 
 ## 自我評量 (1 ~ 10)：
 
-$GEOMEAN = ( 4 \times 7 \times 8 \times 8 \times 10 )^{1/5} = 7.09$
+$GEOMEAN = ( 4 \times 5 \times 8 \times 8 \times 9 )^{1/5} = 6.49$
 
-方案 B ：$1 + floor(GEOMEAN) = 1 + 7 = 8$
+方案 B ：$1 + floor(GEOMEAN) = 1 + 6 = 7$
