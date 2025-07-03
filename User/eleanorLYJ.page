@@ -10,8 +10,9 @@ categories: User
 * HackMD: [`eleanorLin`](https://hackmd.io/@eleanorLin)
 
 ## 1. 成果發表和貢獻
-我給自己 8 分
+我給自己 10 分
 2 月 18 日到 7 月 2 日被收錄的貢獻
+
 ### kernel
 * 名為 [Introduce and use generic parity32/64 helper] patch series，其中有被收錄的 commit:
     * [media: saa7115: Replace open-coded parity calculation with parity8()](https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/commit/?id=118f2834b27ffe06a1badcd74fa35bb14cf1d339)
@@ -50,10 +51,12 @@ https://github.com/sysprog21/lkmpg/pull/309)
 - [Linux 核心專題: 並行程式設計相關測驗題](https://hackmd.io/zobDB6-ORmCJ7pjtP20T4g?view)
 
 ## 4. 與授課教師的互動
-8分
-4/17 IRQ，為甚麼要區分 top half 與 bottom half? 還有 spinlock 與其他 lock 的差別?
+我給自己 6 分
+4/17 討論主題為 IRQ，為甚麼要區分 top half 與 bottom half? 還有 spinlock 與其他 lock 的差別?
+
 4/23 一對一討論
-5/20 uruc + valkey
+
+5/20 uruc + valkey。為甚麼 redis 比一般資料庫更快? 並討論要將 redis 從改成並行困難點?
 
 ## 5. 所見所聞所感
 我給自己 10 分  
