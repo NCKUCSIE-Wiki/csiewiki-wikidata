@@ -59,7 +59,7 @@ categories: User
 課堂問答:
 
 * 5/27
-   * 討論 Linux 中 Thread 跟 Process 的差別。
+   * 討論 Linux 中 Thread 跟 Process 的差別。後續追蹤從 Linux 原始程式碼分析兩者運作的差別
 
 * 6/19
    * 討論期末專題的核心伺服器的運作
