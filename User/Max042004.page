@@ -92,5 +92,5 @@ categories: User
 評分: 9 分
 
 ## 自我評量 (1 ~ 10)
-$\text{GEOMEAN} = (2 \times 4 \times 5 \times 8 \times 9) ^ {1/5} \approx 4.9$
-方案 B : $1 + \text{floor}(\text{GEOMEAN}) = 5$
+* $\text{GEOMEAN} = (2 \times 4 \times 5 \times 8 \times 9) ^ {1/5} \approx 4.9$
+* 方案 B : $1 + \text{floor}(\text{GEOMEAN}) = 5$
