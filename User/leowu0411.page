@@ -81,7 +81,7 @@ categories: User
 5分。
 
 * [2025-05-13 問答簡記](https://hackmd.io/uiNwM35dQ6qeFQwfTypc_w#leowu0411)：當時在課堂上討論到 fork() 之後，如何安全地處理 socket 以及其他來自親代行程的檔案描述子。授課教師提到可以利用 dup() 系統呼叫來達成。由於當時認為這個系統呼叫無法避免父子行程同時操作同一個描述子的問題，因此在課間與教授討論，並將相關內容整理於此。
-* [2025-05-27 問答簡記](https://hackmd.io/L8NQsV0SRwmbKyXSayizWw?view#leowu0411)：探討 Nabla contianer 的實作考量，以及 KVM 搭配 VirtIO 時的執行時期成本以及資料複製次數
+* [2025-05-27 問答簡記](https://hackmd.io/L8NQsV0SRwmbKyXSayizWw?view#leowu0411)：探討 Nabla container 的實作考量，以及 KVM 搭配 VirtIO 時的執行時期成本以及資料複製次數；已整理後者於共筆，並與 Nabla Linux 進行比較。理解到 UML 以一般使用者行程直接在宿主上執行，完全不依賴 VT-x/SVM 等硬體虛擬化指令集，省去 VM exit/entry 的切換開銷。
 * 一對一討論：5/15
 
 ## 所見所聞所感
