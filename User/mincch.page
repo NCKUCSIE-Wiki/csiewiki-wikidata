@@ -1,0 +1,49 @@
+---
+title: mincch (胡旻鈞)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程研究所 
+* GitHub: [`mincch`](https://github.com/mincch)
+* HackMD: [`mincch`](https://hackmd.io/?nav=overview)
+
+# Linux 核心設計 自我評量
+## 成果發表和貢獻
+3 分
+
+
+## 作業/隨堂測驗
+7 分
+
+* [Homework 1](https://hackmd.io/@mincch/linux2025-homework1)
+* [Homework 2](https://hackmd.io/@mincch/SkGJuGk2ye)
+* [Homework 3](https://hackmd.io/@mincch/r1EVewB0Jl)
+* [Homework 5](https://hackmd.io/@mincch/HkSmlRMMlx)
+
+在作業中我學習到了 git 的實務應用，不只是基本的版本控制，也包括如何撰寫清楚有條理的 commit message，並透過 pre-commit hook 檢查排版與拼字錯誤，也學會了關於 Linux kernel API 的實作以及操作，和撰寫程式需要注意的風格細節等等。並且在實作 kernel linked list 時了解到關於使用各種巨集，例如 container_of...，並將其應用在實作 queue 操作或動態記憶體管理時。也學會了指標的指標（pointer to pointer）用法，了解到什麼才是有品味的程式。
+
+
+## 期末專題
+7 分
+
+[重作 kxo ](https://hackmd.io/@sysprog/SJUCTA4Vgl)
+
+
+## 與授課教師的互動
+6 分
+
+[與教師的互動](https://hackmd.io/@mincch/HkSmlRMMlx)
+
+5/30 與授課教師的一對一討論 : 
+
+## 所見所聞所感
+9 分
+
+
+
+## 自我評量
+
+$GEOMEAN = ( 3 \times 7 \times 7 \times 6 \times 9 )^{1/5} = 6.024794$
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + 6 = 7$ 
