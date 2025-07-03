@@ -49,6 +49,7 @@ categories: User
 
 * 2025/5/27 [課堂互動](https://hackmd.io/L8NQsV0SRwmbKyXSayizWw#alexc-313)
 * 2025/5/29 一對一討論
+* 2025/7/1  [課堂互動](https://hackmd.io/0wu7DqofQNyhYtIyxb0dBA?view#alexc-313)
 
 老師採用類似面試的方式與我進行討論，並向我詢問了浮點數運算問題，特別是在不用到 FPU 的條件下該如何處理，這讓我意識到自己對浮點數及定點數僅有基礎的理解，於是再重新研讀相關教材與資料後，有將老師提出的問題補上。
 
