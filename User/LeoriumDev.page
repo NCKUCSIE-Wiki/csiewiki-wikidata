@@ -6,11 +6,13 @@ categories: User
 # 簡介
 * 國立成功大學 資訊工程學系 117 級 (2024 ~ 2028)
 * GitHub: [`LeoriumDev`](https://github.com/LeoriumDev)
-* HackMD: [`LeoriumDev`](https://hackmd.io/@Leorium)
+* HackMD: [`Leorium`](https://hackmd.io/@Leorium)
 
 # 2025 Linux 核心設計/實作 春季班 自我評量
 
 ## 成果發表和貢獻
+
+3分
 
 * 教材
   * [你所不知道的 C 語言: linked list 和非連續記憶體](https://hackmd.io/@sysprog/c-linked-list)
@@ -20,10 +22,44 @@ categories: User
 
 ## 作業/隨堂測驗
 
+4 分
+
+* [2025q1 Homework1 (lab0)](https://hackmd.io/@Leorium/linux2025-homework1)
+* [2025q1 Homework5 (assessment)](https://hackmd.io/@Leorium/linux2025-homework5)
+
 ## 期末專題
+
+6 分
+
+[Linux 核心專題: 重作 lab0](https://hackmd.io/@sysprog/r1M03RVEee)
+
+重做 lab0 讓我誠實面對自己，在第一週時去看這些東西，會覺得很多看不懂，到了現在已經有一部份的詞彙能夠理解，且有些東西其實是看似難，但只是心煩意亂而無法靜下心，好好調整情緒，誠實面對自己，一個字慢慢理解。
 
 ## 與授課教師的互動
 
+6 分
+
+* 課堂問答
+  * 利用 SIMD 加速 memchr 函式
+  * 探討 CoW 的限制和適用場景
+
+* 一對一討論
+  * 2025/5/30 檢視學習狀況
+
+在一對一討論時，老師問了最基本的 merge sort，出自於第一次的教材，我卻回答不出來，彷如靜止畫面，這才讓我體會到了「誠實面對自己」的重要性。
+
 ## 所見所聞所感
 
+8 分
+
+在閱讀〈因為自動飲料機而延畢的那一年〉後，我對作者感到非常的欽佩，能不顧一切地去做一件事，無論結果失敗與否，希望自己在未來也能擁有作者百分之一的定性。
+回顧自己在這堂課的表現，我覺得我很不上進，原本預期可以更好的，結果還是回到以前的 rabbit hole。必須承認，我覺得自己爛但卻又不更多付出努力。直到最後才了解到第一週說的「不懂就說不懂，誠實面對自己。」
+
+至於看到其他人的表現，我認為大多數人都很認真，老師的提問能夠在短短幾分鐘內就有初步的回答，讓我非常驚艷。而之後邱學長的分享更是讓我有了一些願景，會讓自己也想成為那樣的人。
+
+修完這堂課，我帶走的是「誠實面對自己」、「缺什麼補什麼」、「我們是要來解決真實世界的問題」及對「細節」的重視。
+
 ## 自我評量 (1 ~ 10)
+$GEOMEAN = ( 3 \times 4 \times 6 \times 6 \times 8 )^{1/5} = 5.101698$
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + 5 = 6$
