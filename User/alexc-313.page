@@ -10,22 +10,27 @@ categories: User
 
 # 2025 Linux 核心設計/實作 春季班 自我評量
 ## 成果發表和貢獻
-
+4分。
 ## 作業/隨堂測驗
-
+7分。
 * [2025q1 Homework1 (lab0)](https://hackmd.io/@alex-c1234/linux2025-homework1)
 * [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@alex-c1234/linux2025-homework2)
 
 ## 期末專題
-
+8分。
 * [Linux 核心專題: 位元運算](https://hackmd.io/@sysprog/SyZPV1SNxe)
-
+重新了解 IEEE 754 規格以及定點數 Qn.m 的使用策略，探討不同開平方根的演算法，利用位元運算在不實際計算開平方根方法，與不利用 FPU 的條件下，計算單精度浮點數平方根，搭配 x86 內建的 clz 函數能夠達到與 glibc sqrtf 相等的精度及效能。
+由於未能在時間內完成 EWMA 的相關探討，故給自己8分。
 ## 與授課教師的互動
+8分。
+* 2025/5/27 [課堂互動](https://hackmd.io/L8NQsV0SRwmbKyXSayizWw#alexc-313)
 
 ## 所見所聞所感
+10分。
+
 
 ## 自我評量 (1 ~ 10)：
 
-$GEOMEAN = ( ? \times ? \times ? \times ? \times ? )^{1/5} = ?$
+$GEOMEAN = ( 4 \times 7 \times 8 \times 8 \times 10 )^{1/5} = 7.09$
 
-方案 B ：$1 + floor(GEOMEAN) = 1 + ? = ?$
+方案 B ：$1 + floor(GEOMEAN) = 1 + 7 = 8$
