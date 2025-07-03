@@ -16,6 +16,7 @@ categories: User
 ## 作業/隨堂測驗
 6分。
 在這次寫了lab0讓自己對linker list相關程式設計有進步不少，也是老師藉由這個專案讓我知道有好用到`list.h`，可以不用自己一直手刻程式碼，可以藉由函示庫裡面的fuction節省程式碼行數，也讓我知道原來我們所使用的亂數其實也不是真的隨機產生而是有規律的產生出來，在這次也讓我知道我的數學能力和程式設計能力還需要多多加強。
+
 * [2024q1 Homework1 (lab0)](https://hackmd.io/@WestminsterSorryMaker/SydXTIM0ye)
 
 * [linux2024-homework5](https://hackmd.io/@WestminsterSorryMaker/rJwX2HHQlg)
