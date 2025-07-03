@@ -3,10 +3,86 @@ title: otischung (鍾博丞)
 categories: User
 ...
 
-# 簡介
+## 簡介
 
 - 國立成功大學 資訊工程研究所 114 級
 
 - Github: [otischung](https://github.com/otischung)
 
 - HackMD: [otischung](https://hackmd.io/@otischung)
+
+## [2025 Linux 核心實作](https://wiki.csie.ncku.edu.tw/linux/schedule) 春季班 自我評量成績計算
+自評分數: **9** 分
+
+- 方案 B: 1 + floor(GEOMEAN)
+
+$GM = \sqrt[5]{x_1 \cdot x_2 \cdot x_3 \cdot x_4 \cdot x_5}$
+
+$score = 1 + \lfloor GM \rfloor = 1 + \lfloor 8.16 \rfloor = 9$
+
+## 成果發表與貢獻
+自評分數: 8 分
+
+- [kvm-host](https://github.com/otischung/kvm-host)
+  - commit [c4b325e](https://github.com/otischung/kvm-host/blob/c4b325e659e7cceebaed6b39b2eb3d6796b2f5e0/src/pci.c#L145-L156)/[PR#41](https://github.com/sysprog21/kvm-host/pull/41): 拓展 PCI 設定 Base Address Register (BAR) 的模式
+  - commit [ebeb284](https://github.com/otischung/kvm-host/commit/ebeb2847e2e9281eeef28a9059fa711991d0f4f7)/[PR#40](https://github.com/sysprog21/kvm-host/pull/40): 拓展 [kvm-host](https://github.com/sysprog21/kvm-host) 在 arm64/RPI5 上的支援
+
+## 作業/隨堂測驗
+自評分數: 7 分
+
+作業筆記:
+
+* [2025q1 Homework](https://hackmd.io/@otischung/linux2025-homework)
+
+我在進行第一份作業的時候，讓我印象深刻的有以下所列
+
+- Linux kernel 的 linked list 只有鏈結，沒有內容，包含內容的 list node 會包含 `struct list_head`，走訪到想要的節點後，再利用 `container_of` 這個 macro 得到包含內容的 list node。
+- 善用 pointer to pointer 的技巧。
+- Pre-commit hook 的檢查，包含：排版格式 (clang-format)、拼字檢查 (aspell) 等，排版格式不同一直是我以前與其他人協作困擾的地方，常常因為排版格式不一致導致不必要的 change logs。有了這項工具，即可大幅減少此類 change logs 的產生。
+
+接著，進行第三份作業時，正式接觸 Linux kernel module，在與授課老師第一次一對一討論之後，我確定了期末專題題目為改進 [kvm-host](https://github.com/sysprog21/kvm-host) 並且使其可以在 arm64 平台上運作，並且以完成期末專題為本學期之課堂主要目標。
+
+
+## 期末專題
+自評分數: 8 分
+
+我在開發 [kvm-host](https://github.com/otischung/kvm-host) 中，嘗試了解 PCI 設定方法的官方文件與實作的方法，在閱讀到設定 Base Address Register 的部分，發現原本的設定僅針對 MMIO 的方式實作，因此，在 commit [c4b325e](https://github.com/otischung/kvm-host/blob/c4b325e659e7cceebaed6b39b2eb3d6796b2f5e0/src/pci.c#L145-L156) 拓展其使用場景，使用者可以自行設定 MMIO 或 IO 模式，如果是 MMIO 模式，還可設定 32 或 64 位元模式，與是否 prefetchable，此項修正在 [PR#41](https://github.com/sysprog21/kvm-host/pull/41) 中提交。
+
+接著，我正確設定 VirtIO-NET 在 Arm Generic Interrupt Controller (GIC) 上的 Device Tree (DT)，成功使得該 Shared Peripheral Interrupt (SPI) 可以正確地被 Guest OS 使用。接著，在 Guest OS kernel image 的 `defconfig` 開啟網路相關的設定。最後，在 Host OS 中設定 bridge 使得 Host 的 TAP 裝置成功轉送封包 (Packet Forwarding)，達成期末專題的目標，此項功能在 [PR#40](https://github.com/sysprog21/kvm-host/pull/40) 中提交。
+
+此專案還有很多可以改進的空間，例如：設定 DHCP 使得 Guest OS 可以不再侷限於連接到 bridge 上的固定 IP，還有修正在程式碼裡面列出 `FIXME` 之處。也期許自己可以持續貢獻。
+
+- [Linux 核心專題: KVM 在 Arm64 的驗證和調整](https://hackmd.io/@sysprog/BkHQfVYWgg)
+- [HackMD 開發紀錄](https://hackmd.io/@otischung/kvm-host)
+
+## 與授課教師的互動
+自評分數: 9 分
+
+課堂問答日期：
+
+- 2025.06.17 (Tue.)
+
+- 2025.06.24 (Tue.)
+- [課堂問答簡記](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA?view)
+
+一對一討論日期：
+
+- 2025.04.17 (Thu.) 10:30 - 11:00
+
+- 2025.05.09 (Fri.) 16:00 - 16:30
+- [一對一討論簡記](https://hackmd.io/@otischung/linux2025-discuss)
+
+我在第一次一對一討論中確認了期末專題的題目：改進 [kvm-host](https://github.com/otischung/kvm-host) 使其可以在 RPI 等 arm64 的架構上運行，並確保網路裝置可以運作。並且發現我有很多之前學過的知識的片段記憶，但是缺少關聯性，於是第二次一對一討論中，了解到真實世界的複雜程度，這些教材與閱讀書目，真的沒有一個明確的閱讀先後順序。
+
+於是，我在閱讀教材的同時，閱讀 [KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm) 並且尋找理論與 [kvm-host](https://github.com/otischung/kvm-host) 實作上的關聯，從虛擬化技術開始，學習 x86-64 與 arm64 開機流程與設定的不同之處、[PCI](https://wiki.osdev.org/PCI) 是什麼、[Configuration Space Access Mechanism #1](https://wiki.osdev.org/PCI#Configuration_Space_Access_Mechanism_#1) 的實作細節、[TUN/TAP](https://docs.kernel.org/networking/tuntap.html) 的運用方式等。
+
+在兩次課堂問中，透過像面試一樣的互動，讓我了解到當我在研究這些細節的時候，我忽略了大方向，例如 Linux KVM 主要功能是什麼、[kvm-host](https://github.com/otischung/kvm-host) 主要功能是什麼、Linux KVM 與 [kvm-host](https://github.com/otischung/kvm-host) 是如何配合運作的、Guest OS 網路封包傳出去的流程等，讓我更加清楚整個 project 的脈絡，避免一直困在例如 PCI 如何設定這樣的細節上面，而忽略了大方向。
+
+最後，非常感謝老師願意花時間與同學一對一討論，及早提醒學生哪些部分不熟，需要補上。
+
+## 所見所聞所感
+自評分數: 9 分
+
+我覺得「解決真實世界的問題」是本課程讓我收穫最多的一句話，這不僅限於系統軟體設計，乃至於所有的產業，都是在解決問題，我意識到為什麼 Linux 對於 linked list 為什麼要把鏈結本身與所儲存的資料分開，其背後的核心思想；在[因為自動飲料機而延畢的那一年](https://www.opasschang.com/docs/the-story-of-auto-beverage-machine-1)，我意識到這個世界所謂的理所當然，是前人耗費無數心血的結晶，不用說解釋一隻手機為何能上網有多麽複雜，就是請我們自己做一支價值 10 元的原子筆都很難做到。
+
+從國小到研究所，學過的事物已不算少，大多數學過的理論知識，在學的當下像是一個獨立的知識點，直到之後的 project 需要用到的時候，記憶已模糊，只好再回去重新複習，我認為我們在學習知識的時候，也要一起思考這些知識可以用在哪裡，這樣不只是學以致用，更可以讓我們在學習的時候，以好奇心驅動學習新的事物，知識更活用且記得更久。
