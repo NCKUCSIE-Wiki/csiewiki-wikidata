@@ -38,7 +38,7 @@ lab0 是所有作業中花費最多時間的專案，從中學習到 git 相關�
 ## 期末專題
 4分
 
-* [重作 kxo] (https://hackmd.io/@sysprog/BJnYKkSVll)
+* [重作 kxo](https://hackmd.io/@sysprog/BJnYKkSVll)
 在跟老師探討完後，發現自己對於排程機制根本沒有聊解，也因此被指派回重作此專案。4 分在於2分的時間，2分的學習過程以及思考。學習過程包含研讀 <lkmpg> 一書，了解核心模組的基本規範以及相關命令啟動、研讀 user space 與 kernel space 如何做到後者向 kernel 註冊操作提供給前者使用。
 
 ## 與授課教師的互動
