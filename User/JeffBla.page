@@ -7,3 +7,61 @@ categories: User
 * 國立成功大學 資訊工程學系 114 級 (2022 ~ 2025)
 * GitHub: [`JeffBla`](https://github.com/JeffBla)
 * HackMD: [`JeffBla`](https://hackmd.io/@JeffBla)
+
+# 2025 Linux 核心設計 春季班 自我評量
+## 成果發表和貢獻
+### 成果發表和貢獻
+
+* 《Demystifying the Linux CPU Scheduler》 第 9 頁，第 1.2.4 節，原句：「Program execution is different in kernel/user space, just like the memory management we have seen in earlier.」，“in” 使用上有誤，將其刪除。
+
+* 教材
+    * [藉由 spinlock 的調整，改善多核處理器建立 TCP 連線效能](https://hackmd.io/fzLFYqT7RTeWVFMm61Oq2w)
+        * 為調整後的 inet_unhash 增加可以解決綁定處理器的 workqueue 例子，讓讀者能夠更懂「我們所能做的，僅是避免這種情況的發生，例如藉由外部的機制或者工具，對行程和處理器進行綁定，從而避免行程在多個處理器間來回」的意思。
+    * [從 CPU cache coherence 談 Linux spinlock 可擴展能力議題](https://hackmd.io/0WkZfkdtTfucKiV35wxRAA?view)
+        * 修正公式錯誤 - 連乘範圍修正
+    * [並行程式設計教材修訂](https://hackmd.io/@sysprog/H1dCuDxQR)
+        * 修正 arch_spin_lock 
+
+評分 : $7$ 分。
+
+這學期第一次修習 Linux 核心設計，面對排山倒海的教材加上並行程式設計教材有許多難懂的程式碼與論述，我開始紀錄遇到的問題與並與同儕、老師討論，其教材的修訂內容也是我研讀時所遇到的問題，我試著解釋、重新推到，並站在教師的角度試著讓下一位讀者能更深刻的吸收，才有了這些修訂。
+
+在之後的學習上，我會持續運用紀錄問題、探討並輸出的方法深刻學習並改善文本，期望透過這些知識能加強程式碼撰寫並貢獻專案。目前仍尚待累積，給予自己 $7$ 分。
+
+## 作業/隨堂測驗
+* lab0-c: [Github](https://github.com/JeffBla/lab0-c) / [HackMD](https://hackmd.io/@JeffBla/linux2025-homework1)
+* ideas: [HackMD](https://hackmd.io/@JeffBla/linux2025-ideas)
+* Homework2: [HackMD](https://hackmd.io/@JeffBla/linux2025-homework2)
+* kxo: [HackMD](https://hackmd.io/@JeffBla/linux2025-homework3)
+* Homework5 (assessment): [HackMD](https://hackmd.io/@JeffBla/linux2025-homework5)
+
+評分 : $6$ 分。
+
+作業有些尚未完成，在教材的學習與作業進度中權衡，儘管 kxo 的完成度不高，仍透過授課教師與同學的討論中學習到 kernel module 的撰寫、安裝與測試，後續因為利用 [virtme-ng](https://github.com/arighi/virtme-ng) 對 rbtree 進行實驗，了解到 rbtree 的測試 module - [test_rbtree](https://github.com/torvalds/linux/blob/master/lib/rbtree_test.c)，幫助我解讀與修改該 module 程式碼。因此雖然有諸多遺漏但在學習上仍不遺餘力，給 $6$ 分。
+
+## 期末專題
+* Linux 核心專題: 同步處理機制 : [HackMD](https://hackmd.io/4KtzDEbuRRS55S8nm_48Eg?view)
+
+
+評分 : $8$ 分。
+
+對於並行程式好奇與興趣，加上總是不能深刻了解其中實作細節，我與老師討論針對 scalability 進行專題，透過 [Non-scalable locks are dangerous](https://people.csail.mit.edu/nickolai/papers/boyd-wickizer-locks.pdf) 利用條件函數與排隊理論中的生滅過程，探討、程式模擬 MCS lock 與 qspinlock 的 scalability 情形，完成了我這段時間想達成的事情 - 基於數學的程式設計 - 透過機率研究問題的可行性。
+
+鑑於專題在排隊理論模型的搜尋與推導模擬，給予 $8$ 分。
+
+## 與授課教師的互動
+
+* 一對一討論: 4/30
+* 課堂討論: [3/11](https://hackmd.io/AVg2YkX9RveH1W6SVWmNIw#JeffBla)
+
+評分 : $4$ 分。
+
+## 所見所聞所感
+
+評分 : $9$ 分。
+
+
+
+## 自我評量 (1 ~ 10)
+* $\text{GEOMEAN} = (7 \times 6 \times 8 \times 4 \times 9) ^ {1/5} \approx 6.6$
+* 方案 B : $1 + \text{floor}(\text{GEOMEAN}) = 7$
