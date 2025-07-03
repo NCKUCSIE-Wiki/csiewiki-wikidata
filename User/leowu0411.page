@@ -37,14 +37,14 @@ categories: User
         * [實作 Fisher–Yates shuffle 演算法](https://hackmd.io/jbAneMqpTA6jhmcdi28-kg#實作-shuffle-命令)，對佇列進行隨機排序，並利用 Pearson’s chi-squared test 驗證亂度是否足夠
         * 研讀[〈Dude, is my code constant time?〉](https://hackmd.io/jbAneMqpTA6jhmcdi28-kg#dudect-缺陷) 利用 Welch’s t-test 驗證實作是否為常數時間，避免側通道攻擊
     * [tiny-web-server](https://hackmd.io/jbAneMqpTA6jhmcdi28-kg#整合網頁伺服器) : 理解如何利用 select() 系統呼叫達到 I/O 多工 (同時處理 socket 以及 stdin)
-    * 透過信號處理認識 setjump/lomgjump 對於後續理解 corotine 奠定基礎。
+    * 透過信號處理認識 setjump/lomgjump 對於後續理解 coroutine 奠定基礎。
     * 撰寫統一規範，以及基於 what, why, how 撰寫的 git commit message，實際應用於大三專題協作以及本身在進行的電子靶場專案，提供清楚的專案開發軌跡方可使成果能夠分享與交接。
 * [Homework (kxo)](https://hackmd.io/jbAneMqpTA6jhmcdi28-kg)
     * 閱讀 LKMPG 學習如何撰寫核心模組，透過核心模組如何註冊回呼函式深刻理解到 everything is a file 帶來的益處
     * 核心模組如何與使用者空間溝通傳遞資料
 * [Homework (assessment)](https://hackmd.io/18jXIMVNRIG4LUivC4kNHg)
     * [閱讀 cs:app 第二章](https://hackmd.io/@vgQx4fUyR2OD6Tg7KrDb0g/reading_note#Data-representation-and-processing)重新認識資料的表示以及處理，理解有號數無號數的運算行為。
-    * [認識 corotine](https://hackmd.io/@vgQx4fUyR2OD6Tg7KrDb0g/reading_note#About-coroutine)，單一執行緒多工，在此之前的認知，伺服器就是一個請求一個執行緒; 透過實際觀察 caldera 這個開放的自動化攻擊平台，其做法也是利用 corotine 單一執行緒，同時處理使用者請求、與後門程式溝通、發送資料等工作 (python eventloop)。
+    * [認識 coroutine](https://hackmd.io/@vgQx4fUyR2OD6Tg7KrDb0g/reading_note#About-coroutine)，單一執行緒多工，在此之前的認知，伺服器就是一個請求一個執行緒; 透過實際觀察 caldera 這個開放的自動化攻擊平台，其做法也是利用 coroutine 單一執行緒，同時處理使用者請求、與後門程式溝通、發送資料等工作 (python eventloop)。
 * [Homework (khttpd)](https://hackmd.io/@vgQx4fUyR2OD6Tg7KrDb0g/khpptd)
     * 閱讀 cs:app 第 11 章與 [kecho 的實作方式](https://hackmd.io/x54zyDwrQZqU4sQsid7hDA#kecho)，認識 socket programming，理解 bind(), accept(), ntohs()、htonl() 等函式以及其背後設計考量
     * 透過 [user-echo-server](https://hackmd.io/x54zyDwrQZqU4sQsid7hDA#user-echo-server) 認識 Reactor Pattern，利用 epoll 以及 non-blocking 的方式於單一執行緒運行伺服器
