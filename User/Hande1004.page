@@ -7,3 +7,23 @@ categories: User
 * 國立成功大學 電腦與通信工程研究所
 * GitHub: [`Hande1004`](https://github.com/Hande1004)
 * HackMD: [`李漢德`](https://hackmd.io/@UWJ20Zs9R7qA-6McbGBQBA)
+
+# 2025 Linux 核心設計/實作 春季班 自我評量
+## 成果發表和貢獻
+0分。
+
+在這堂課的期間，並沒有對 Linux 及指定的教材內容提供貢獻或改過修正，因此，我認為沒有拿到任何分數。
+
+## 作業/隨堂測驗
+8分。
+
+* [2025q1 Homework1 (lab0)](https://hackmd.io/@UWJ20Zs9R7qA-6McbGBQBA/B1XKO7VsJe)
+* [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@UWJ20Zs9R7qA-6McbGBQBA/ByRMjpAiJg)
+* [2025q1 Homework3 (kxo)](https://hackmd.io/@UWJ20Zs9R7qA-6McbGBQBA/ryaG9kT1gl)
+* [2025q1 Homework3 (assessment)](https://hackmd.io/@UWJ20Zs9R7qA-6McbGBQBA/BywWmcgMee)
+
+在作業 1 中學到 linux 風格的[鏈結串列](https://hackmd.io/@UWJ20Zs9R7qA-6McbGBQBA/B1XKO7VsJe#%E9%87%9D%E5%B0%8D%E4%BD%87%E5%88%97%E6%93%8D%E4%BD%9C%E7%9A%84%E7%A8%8B%E5%BC%8F%E7%A2%BC%E5%AF%A6%E4%BD%9C)，加強我對指標的理解，實際去閱讀 linux 上的程式碼 [lib/list_sort.c](https://hackmd.io/@UWJ20Zs9R7qA-6McbGBQBA/B1XKO7VsJe#%E9%87%9D%E5%B0%8D%E4%BD%87%E5%88%97%E6%93%8D%E4%BD%9C%E7%9A%84%E7%A8%8B%E5%BC%8F%E7%A2%BC%E5%AF%A6%E4%BD%9C)，並且也去了解 [統計學](https://hackmd.io/@UWJ20Zs9R7qA-6McbGBQBA/B1XKO7VsJe#%E7%B5%B1%E8%A8%88%E6%96%B9%E6%B3%95%E9%A9%97%E8%AD%89-shuffle)，[研讀論文〈 Dude, is my code constant time? 〉](https://hackmd.io/@UWJ20Zs9R7qA-6McbGBQBA/B1XKO7VsJe#%E7%A0%94%E8%AE%80%E8%AB%96%E6%96%87%E3%80%88Dude-is-my-code-constant-time%E3%80%89)，學到如何用 setjmp 、 longjmp 來完成 [coroutine](https://hackmd.io/@UWJ20Zs9R7qA-6McbGBQBA/ryaG9kT1gl#%E5%BC%95%E5%85%A5%E8%8B%A5%E5%B9%B2-coroutine) 的實作。
+
+比較美中不足的部分為有些作業中的小主題沒有完成，因此，我認為 8 分是十分合理的。
+
+
