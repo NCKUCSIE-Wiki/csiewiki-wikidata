@@ -11,13 +11,55 @@ categories: User
 # 2025 Linux 核心設計/實作 春季班 自我評量
 
 ## 成果發表和貢獻
+修改錯字 [並行程式設計: Ring buffer](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-ringbuffer) 當讀取端想要取出換緩衝區的資料時 -> 當讀取端想要取出緩衝區的資料時
+
+評分: 2 分
 
 ## 作業/隨堂測驗
+* [Homework1 (lab0-c)](https://hackmd.io/@Max042004/linux2025-homework1)
+** commit message 遵循規範，確保說明修改的 what, why, how
+** 閱讀論文〈Dude, is my code constant time?〉後，利用 dudect 工具以統計方法分析程式碼執行是否為常數時間，以防止時序攻擊
+** 以 Valgrind massif 工具追蹤佇列操作函式的記憶體開銷
+
+* [Homework2 (quiz1, 2)](https://hackmd.io/@Max042004/linux2025-homework2)
+** 以間接指標實作合併兩個已排序鏈結串列的函式
+* [Homework3 (kxo)](https://hackmd.io/@Max042004/linux2025-homework3)
+** 理解 Linux 模組中核心空間到使用者空間的 `kfifo_to_user()` 的通訊機制
+* [Homework5 (assessment)](https://hackmd.io/@Max042004/linux2025-homework5)
+** 紀錄有關 `task_struct` pid 機制的問題
+** 紀錄〈因為自動飲料機而延畢的那一年〉的閱讀心得，看見自己學習過程逃避困難的盲點
+
+評分: 4 分
 
 ## 期末專題
+[回顧課程裡並行程式設計相關測驗題](https://hackmd.io/@sysprog/SJOWVVXZgl)
+在期末專題我探討 Linux 核心空間的簡易事件驅動伺服器運作原理，以及提出用 release/acquire 記憶體屏障避免 SPSC ring buffer 生產者可能覆蓋資料的問題。
+
+我觀摩了:
+[Linux 核心專題: 位元運算](https://hackmd.io/@sysprog/SyZPV1SNxe)
+
+評分: 5 分
 
 ## 與授課教師的互動
+我這學期與老師進行三次一對一討論、兩次課堂問答。
+一對一討論:
+* 5/15
+** 誠實面對自己，重新專注回課程最基礎的部分如浮點數運算、atomic 操作
+* 6/14
+** [回顧上一次討論的問題](https://hackmd.io/@Max042004/HJ70RUmWlx)
+* 6/24
+** 討論進行期末專題過程碰到的問題，VFS 檔案系統
+
+課堂問答:
+* 5/27
+** 討論 Linux 中 Thread 跟 Process 的差別。
+
+* 6/19
+** 討論期末專題的核心伺服器的運作
+
+評分: 8 分
 
 ## 所見所聞所感
+
 
 ## 自我評量 (1 ~ 10)
