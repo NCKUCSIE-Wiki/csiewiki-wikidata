@@ -17,17 +17,19 @@ categories: User
 
 ## 作業/隨堂測驗
 * [Homework1 (lab0-c)](https://hackmd.io/@Max042004/linux2025-homework1)
-** commit message 遵循規範，確保說明修改的 what, why, how
-** 閱讀論文〈Dude, is my code constant time?〉後，利用 dudect 工具以統計方法分析程式碼執行是否為常數時間，以防止時序攻擊
-** 以 Valgrind massif 工具追蹤佇列操作函式的記憶體開銷
+  * commit message 遵循規範，確保說明修改的 what, why, how
+  * 閱讀論文〈Dude, is my code constant time?〉後，利用 dudect 工具以統計方法分析程式碼執行是否為常數時間，以防止時序攻擊
+  * 以 Valgrind massif 工具追蹤佇列操作函式的記憶體開銷
 
 * [Homework2 (quiz1, 2)](https://hackmd.io/@Max042004/linux2025-homework2)
-** 以間接指標實作合併兩個已排序鏈結串列的函式
+  * 以間接指標實作合併兩個已排序鏈結串列的函式
+
 * [Homework3 (kxo)](https://hackmd.io/@Max042004/linux2025-homework3)
-** 理解 Linux 模組中核心空間到使用者空間的 `kfifo_to_user()` 的通訊機制
+  * 理解 Linux 模組中核心空間到使用者空間的 `kfifo_to_user()` 的通訊機制
+
 * [Homework5 (assessment)](https://hackmd.io/@Max042004/linux2025-homework5)
-** 紀錄有關 `task_struct` pid 機制的問題
-** 紀錄〈因為自動飲料機而延畢的那一年〉的閱讀心得，看見自己學習過程逃避困難的盲點
+  * 紀錄有關 `task_struct` pid 機制的問題
+  * 紀錄〈因為自動飲料機而延畢的那一年〉的閱讀心得，看見自己學習過程逃避困難的盲點
 
 評分: 4 分
 
@@ -38,24 +40,32 @@ categories: User
 我觀摩了:
 [Linux 核心專題: 位元運算](https://hackmd.io/@sysprog/SyZPV1SNxe)
 
+
 評分: 5 分
 
 ## 與授課教師的互動
 我這學期與老師進行三次一對一討論、兩次課堂問答。
 一對一討論:
+
 * 5/15
-** 誠實面對自己，重新專注回課程最基礎的部分如浮點數運算、atomic 操作
+  * 誠實面對自己，重新專注回課程最基礎的部分如浮點數運算、atomic 操作
+
 * 6/14
-** [回顧上一次討論的問題](https://hackmd.io/@Max042004/HJ70RUmWlx)
+  * [回顧上一次討論的問題](https://hackmd.io/@Max042004/HJ70RUmWlx)
+
 * 6/24
-** 討論進行期末專題過程碰到的問題，VFS 檔案系統
+  * 討論進行期末專題過程碰到的問題，VFS 檔案系統
 
 課堂問答:
+
 * 5/27
-** 討論 Linux 中 Thread 跟 Process 的差別。
+   * 討論 Linux 中 Thread 跟 Process 的差別。
 
 * 6/19
-** 討論期末專題的核心伺服器的運作
+   * 討論期末專題的核心伺服器的運作
+
+我在學期初很害怕與老師互動，直到第一次一對一討論之後，我才知道跟老師互動是修這門課最重要的事情。老師一開始問我有什麼問題要討論，我當時腦海裡完全想不出任何問題，嘴巴卻不誠實地說出「很多」，後來老師接著問我讀了什麼教材，我自信的說浮點數，但當老師問我為什麼 Linux 核心不能使用浮點數、何時會發生 FPE 時，我卻完全答不出來。這時我才知道原來我根本沒掌握課程教材，導致問不出任何有意義的問題。
+在互動之後，我便放下之前一直倉促寫作業、不仔細閱讀教材的習慣。回到課程一開始的內容，先把浮點數、〈Concurrency Primer〉、並行程式設計一一的好好理解。
 
 評分: 8 分
 
