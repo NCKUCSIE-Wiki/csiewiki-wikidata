@@ -42,12 +42,34 @@ categories: User
     * [閱讀 cs:app 第二章](https://hackmd.io/@vgQx4fUyR2OD6Tg7KrDb0g/reading_note#Data-representation-and-processing)重新認識資料的表示以及處理，理解有號數無號數的運算行為。
     * [認識 corotine](https://hackmd.io/@vgQx4fUyR2OD6Tg7KrDb0g/reading_note#About-coroutine)，單一執行緒多工，在此之前的認知，伺服器就是一個請求一個執行緒; 透過實際觀察 caldera 這個開放的自動化攻擊平台，其做法也是利用 corotine 單一執行緒，同時處理使用者請求、與後門程式溝通、發送資料等工作 (python eventloop)。
 * [Homework (khttpd)](https://hackmd.io/@vgQx4fUyR2OD6Tg7KrDb0g/khpptd)
-    * 閱讀 cs:app ch11 認識 socket programming，認識 bind(), accept(), ntohs()、htonl() 等函式以及其背後設計考量
+    * 閱讀 cs:app 第 11 章與 [kecho 的實作方式](https://hackmd.io/x54zyDwrQZqU4sQsid7hDA#kecho)，認識 socket programming，理解 bind(), accept(), ntohs()、htonl() 等函式以及其背後設計考量
     * 透過 [user-echo-server](https://hackmd.io/x54zyDwrQZqU4sQsid7hDA#user-echo-server) 認識 Reactor Pattern，利用 epoll 以及 non-blocking 的方式於單一執行緒運行伺服器
     * [實際利用 CMWQ](https://hackmd.io/x54zyDwrQZqU4sQsid7hDA#khttpd)，替換伺服器 khttpd 原本使用 Kthread 服務連線的方式，藉由降低建立執行緒的成本帶來約 2.25 倍的吞吐量。
-## 期末專題
-* 
 
+## 期末專題
+[Linux 核心專題: 輕量級隔離運行環境](https://hackmd.io/@sysprog/H1mxn47-gx)
+
+* [整理與介紹 MicroVM, Unikernel, container](https://hackmd.io/@sysprog/H1mxn47-gx#Evolution-of-Virtualization-for-a-Safer-Cloud) 
+    * 介紹三種隔離方式對於宿主環境的安全性與設計考量
+    * 理解為何對於容器此種隔離方式，我們難以限縮其攻擊面，而透過 vmm 就能做到
+* [Nabla container](https://hackmd.io/@sysprog/H1mxn47-gx#Nabla-Container)：透過此專案理解限縮攻擊面的具體方式：限縮 VMM 以限縮 hypercall，精簡作業系統使客體行程只擁有最低限度的能力
+* [Nabla linux](https://hackmd.io/@sysprog/H1mxn47-gx#The-Most-Lightweight-Virtual-Machine-Monitor-Is-No-Monitor-at-All--nabla-linux)：整理 um-nommu 時為了理解 ptrace 為何帶來效能衝擊而重新閱讀 uml 的實作方式，進一步重新審視自己對於作業系統的認知
+    * 如何進行系統呼叫、信號處理： 
+        * 當執行到系統呼叫指令，作業系統如何切換至核心模式，保存暫存器，呼叫系統呼叫
+        * Linux/UNIX 信號處理機制，當行程收到信號，核心如何保存當前狀態並跳躍至使用者註冊的信號處理函式，任務完成後如何回到程式原本的執行位置
+    * 虛擬記憶體
+        * 閱讀 cs:app 第九章
+        * MMU 如何保護行程間與核心的記憶體不會被非法存取，uml 是透過何種手法允許客體核心操作其他定址空間，如何維護自己的分頁表，如何區別客體核心與客體使用者
+        * `mmap()` 的使用以及 uml 如何利用其作為虛擬「實體記憶體」
+        * 當客體發生非法記憶體存取，page fault 的處理程序，uml 如何導入自己的 page fault handler
+    * 為了不使用 `ptrace` 移除 MMU 的考量以及影響
+* [zpoline](https://hackmd.io/@sysprog/H1mxn47-gx#zpoline)
+    * 理解系統呼叫攔截的考量與不同做法的效能瓶頸
+    * 閱讀 cs:app 第七章，理解 ELF 執行檔 
+        * 如何被載入定址空間並填上指令的虛擬記憶體地址
+        * 多個 object file 是怎麼被鏈結起來的，linker 的工作內容
+        * 如何在程式執行時、運行時載入動態函式庫
+        * 理解 symbol；static 的作用、全域變數與 function symbol 為何與鏈結相關
 ## 與授課教師的互動
 
 ## 所見所聞所感
