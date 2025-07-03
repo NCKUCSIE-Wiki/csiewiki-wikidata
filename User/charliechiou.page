@@ -1,105 +1,149 @@
 ---
-title: charliechiou (邱柏穎)
+title: Andrushika (張宇承)
 categories: User
 ...
 
-# 簡介
-* 國立成功大學 電腦及通訊工程研究所
-* Github: [`charliechiou`](https://github.com/charliechiou)
-* HackMD: [`Charlie Chiou`](https://hackmd.io/@charliechiu)
-* LinkedIn: [Po-Ying Chiu ](https://www.linkedin.com/in/po-ying-chiu-399468352/)
-
 # 2025 Linux 核心設計 春季班 自我評量
-## 成果發表和貢獻
+## 簡介
+* 國立成功大學 資訊工程系 115 級
+* Github: [Andrushika](https://github.com/Andrushika)
+* HackMD: [andrewchang](https://hackmd.io/@andrewchang)
 
-- 貢獻
-    - Linux 核心提出 PR : [`[PATCH] rbtree: Fix typo in header comment`](https://lore.kernel.org/lkml/20250415124928.14372-1-charlie910417@gmail.com/T/#u)
-    - LKMPG : [`#301`](https://github.com/sysprog21/lkmpg/pull/301)
-    - linux-kernel-scheduler-internals : `#277`,`#275`
-    - lab0-c : [`#269`](https://github.com/sysprog21/lab0-c/pull/269),[`#256`](https://github.com/sysprog21/lab0-c/pull/256),[`#251`](https://github.com/sysprog21/lab0-c/pull/251),[`#249`](https://github.com/sysprog21/lab0-c/pull/249)
-    - kxo : [`#6`](https://github.com/sysprog21/kxo/pull/6)
-    - concurrent-programs : [`#23`](https://github.com/sysprog21/concurrent-programs/pull/23)
-    - simrupt : [`#5`](https://github.com/sysprog21/simrupt/pull/5)
+## 成果發表與貢獻
+貢獻：
 
-- Linux 核心相關公開演講 :
+* barco: [`docs: Fix small typo in user_namespace_prepare_mappings() comment #8`](https://github.com/lucavallin/barco/pull/8)
+* lab0-c: Reviewed PR [`Improve dudect test with cropped time analysis #283`](https://github.com/sysprog21/lab0-c/pull/283)
+* kxo
+    * [`Fix incorrect file name in README.md #3`](https://github.com/sysprog21/kxo/pull/3)
+    * 作業說明 kxo(A) - 加上數學式遺漏的右括號
+    * 作業說明連結失效時，提醒老師修改文件權限
+* khttpd: 修正作業說明拼字 khpptd -> khttpd
 
-    - [《Kafka 相關饅頭營》線上研討會]( https://www.facebook.com/share/p/1Hno2QwcTT/)。講題: 「[Building a Custom Linux CPU Scheduler with `sched_ext`](https://www.youtube.com/watch?v=wk-qzWtVzAg&t=12032s)」 & [Slides](https://www.slideshare.net/slideshow/building-a-custom-linux-cpu-scheduler-with-sched_ext-pdf/281093739)
-    - OSS-NA 2025: [Improve Load Balancing with Machine Learning Techniques based on `sched_ext` Framework - Jim Huang, National Cheng Kung University](https://ossna2025.sched.com/event/1zffn/improve-load-balancing-with-machine-learning-techniques-based-on-the-schedext-framework-jim-huang-national-cheng-kung-university) & [Slides](https://static.sched.com/hosted_files/ossna2025/d2/Improve-Load-Balancing-With-Machine-Learning-Techniques-based-on-sched_ext.pdf)
-    - [2025 年 Linux 核心設計課程期末展示](https://youtu.be/Ae0jVIDCycU?t=4716) & [Slides](https://www.slideshare.net/slideshow/2025-linux-sched_ext-pdf/281093837)
-    - 開源人年會 COSCUP 2025 講者。講題: 「[藉由 `sched_ext` 實作客製化 Linux CPU 排程器](https://pretalx.coscup.org/coscup-2025/talk/WN9RDZ/)」
+我給自己 `7` 分。
+每當發現缺漏時，我總是相當興奮，因為這代表新的機會；一想到自己的名字會出現在大家都在使用的文件或程式專案的貢獻列表中，就覺得很有成就感。尤其是發 patch 到 barco 的經驗，也是我人生第一次對超過 1000 個 stars 的專案貢獻。但回顧這學期的貢獻經歷，幾乎都是修改錯字之類的小貢獻，這是我覺得自己不足的地方。
 
-評分 : 這部份我給自己 `9` 分，對於每份課程教材皆在閱讀過程中尋找可以貢獻的機會。且實際去嘗試授課老師所提到的貢獻 Linux 核心程式碼的流程，並提交自己所發現的 Patch。 在進行期末專題時也透過台灣開源社群 - **源來適你** 分享 sched-ext 的內容，替開源社群盡一份心力。
+## 作業 / 隨堂測驗
+* [2025q1 Homework1 (lab0)](https://hackmd.io/@andrewchang/linux2025-homework1#2025q1-Homework1-lab0)
+    * 確實 Reviewed 五位同學的程式碼並給出建議: `yy214123`, `chensheep`, `Eric-0522`, `zinsei`, `dainel40911`
+    * Linux 核心的 `list_head` 結構、相關 macro 使用方式（list_entry() 等）
+    * 用快慢指標在鏈結串列找中點
+    * pointer of pointer 簡化指標處理
+    * 以實驗比較自己的實作與 `list_sort.c` 中的排序演算法效率差異
+    * 使用 `select()` 驅動事件迴圈
+    * 用 chi-square test 檢測隨機數函式是否「夠亂」
+    * 研讀論文〈Dude, is my code constant time?〉，認識 side channel attack 、以假設檢定監測函式是否為 $O(1)$
+    * 協助 review 貢獻到 lab0-c 中的 `percentile()` 實作
+* [2025q1 Homework1 (ideas)](https://hackmd.io/knzS9BozTl-dnWA5cRnoTA)
+    * 初步認識 CFS, EEVDF，nice 值表示執行緒的禮讓程度
+    * CPU affinity 會影響 cache miss rate，在決策是否 migration 時也要考慮進去
+    * 認識 hypervisor 的不同種類
+* [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@andrewchang/linux2025-homework2)
+    * 熟悉 linux kernel list API
+    * 認識以 bitwise operation 實作 count leading zero 的方式
+    * 以數學還原、說明整數開平方根快速運算實作原理（參考維基百科）
+    * 將整數開根號函式擴充為 `ceil(sqrt(x))` 版本
+    * 認識 `hlist_head` 結構，並進一步尋找 Linux 核心中其他使用本程式碼的地方
+* [2025q1 Homework3 (kxo)](https://hackmd.io/@andrewchang/linux2025-homework3)
+    * 閱讀 LKMPG 前 16 章節，認識 kernel module 的運作機制：`/proc` filesystem、character device、Interrupt 等等
+    * 將 kxo 專案中繪製棋盤的工作移至 user space
+    * 開發記錄下棋歷史的機制
+    * 認識 top half、bottom half interrupt，以及其 linux kernel 中實作的相關 API（tasklet, softirq, workqueue）
+    * 以 `dmesg` 查看 kernel log
+    * 人生第一次體驗「程式沒寫好會搞垮電腦運作」，在撰寫 kxo 時一邊播放音樂，結果音樂變得像恐怖電影配樂
+* [2025q1 Homework4 (quiz3+4)](https://hackmd.io/@andrewchang/linux2025-homework4)
+    * 用 size-1 array 來模擬物件導向風格程式、簡化記憶體操作
+    * 認識 multi-precision integer 及其動態記憶體配置機制（enlarge）
+    * 分析以 SWAR 檢測 null bytes 的 macro 實作原理
+    * 了解 ADSR 機制
+    * 了解聲音背後的取樣頻率和 phase 的關係
+* [2025q1 Homework5 (assessment)](https://hackmd.io/@andrewchang/linux2025-homework5)
+* [2025q1 homework6](https://hackmd.io/@andrewchang/S1NTI7Gbxg)
+    * 理解 RCU 的寬限期機制及 linux 核心中的 RCU 函式 
+    * 實際操作 ftrace 追蹤效能瓶頸
+    * 將 khttpd 改進為使用 CMWQ
 
-## 作業/隨堂測驗
+前一兩週的作業，我總是很急著想要看見成果、急著把每一件作業要求裡的要求完成並交差了事，因為我很討厭「事情沒做完，又有更多事情出現」的感覺。而這般速戰速決的結果是，我學到的東西很淺薄，做完一份作業後也說不出來有什麼領悟。
 
-- [2025q1 Homework1(lab0)](/RYT_zF1ATF27y2WE0Ahmvw)
-- [2025q1 Homework2 (quiz1+2)](/yEbDE5OISIW7C74hgofpbw)
-- [2025q1 Homerwork3](/BOnJ9UUvT8mBhIZV9oPwDA)
-- [2025q1 Homework4 (quiz3+4)](/jR81StiUQ3y7aqB60rmD8A)
-- [2025q1 Homework5 (assessment)](/blg-5EKVQkqD3y3GrflteA)
+後來去讀了 `yy214123` 同學的 lab0-c 筆記，發現他對細節格外著墨：例如佇列操作的函式，除了實作程式碼以外，還會透過實驗去分析多種實作方法的效能優劣差異。看到他的作業，我覺得落差感很大，而且有種醍醐灌頂的感覺：這才是正確的學習方式吧！
+所以在後面幾次的作業中，我開始放慢腳步，把教材、作業的內容讀懂。印象最深的是 Homework 2 的 Week 2 Q2，我面對了一直以來對數學的恐懼，將整數開根號實作的數學推導讀懂，並記錄在該次作業的 HackMD 上。雖然花的時間超級長，但我好好的面對了。
 
-評分 : 這部份我給自己 `6` 分。Homework 1 作業有達成老師要求來完成 lab0 中各項功能，並對於作業教材中 git-hook 的問題提出 PR 修正。而後續作業僅完成至程式碼理解，並未有完成作業的對應要求，但仍然對於自己發現的錯誤提出 PR 修正。整體而言有很大的進步空間，因此給自己 6 分，應在理解作業後有相對應的實驗觀察或修改。
+另外，我覺得課堂出的測驗題都很生動，因為都是從實際應用的專案中擷取下來，且據說都是在企業面試會出現的程式碼，一次就是數百行。印象最深的是 Homework 4 的 week 4 Q2，是一個用核心模組播放音樂的專案，我也藉此了解到濾波器、ADSR、取樣等實作中出現的知識。
+
+雖然我認為自己在寫作業的過程中收穫豐富，但以結果論來說，我還是沒有達成所有老師所給出的作業要求（尤其針對 hw3 kxo 和 hw6 ktcp 兩項作業）所以我給自己 `7` 分。
 
 ## 期末專題
 
-- [Sched-ext 專案貢獻 - Pull Request](https://github.com/sched-ext/scx/pulls?q=is%3Apr+is%3Aclosed+author%3Acharliechiou)
-- [開發紀錄](https://hackmd.io/@cce-underdogs/scx_project/%2FZhzEtqp_RF-nDgvNXzVEBA)
-- [相關演講筆記](https://hackmd.io/pWe3g01DQ02PVCB8W3r40A)
+* [開發紀錄](https://hackmd.io/elX0ZH57S6CQIEdmsfGPBQ)
+* [Github](https://github.com/Andrushika/light-container)
+* [解說錄影](https://youtu.be/OSU4qUK90v4?si=6iFZll5D4Rx6u7qP)
 
-這學期的期末專題目標為將 ML 引入 sched-ext 的排程器。
+學習到的內容客觀事實：
 
-在 Machine Learning 部份，實驗室所學便是 ML 因此對於這塊的上手較快,使用了 Rust 下的機器學習框架 - Candle，能夠應用自己的專業來結合其他領域的專業知識便是我升上碩班時期許自己能夠達成的，因此這部分我給自己 5/5。
+* 認識 namespace 等運作機制，light-container 中引入 `newuidmap` 幫助在 rootless 情況下寫入 uid/gid map
+* 理解 capabilities 於執行 execve() 後的重計算模型的設計哲學、演化的歷史
+* 學習 cgroups v2 的 delegation 機制、cgroups v1 需要改善的原因，並嘗試實作於 light-container 中
+* 參閱 docker 官方的 seccomp profile，基於 barco 之上新增更多針對系統呼叫的限制
+* 對 barco 提出貢獻（修拼字 paenrt -> parent）
+* 理解容器相較於 type 1, type 2 hypervisor 的優勢（不須依賴硬體虛擬化指令集、可重用作業系統機制）
+* 以 `argtable3` 開源套件解析命令
+* 加入 `rxi` log 套件，幫助 light-container 開發過程中的除錯
+* 執行 cgroups 限額設定時，遇到權限問題。原先認為是 capabilities 問題，後來以 log 和使用 `strace` 定位，並讀了 Linux Security Module 和 SELinux 的相關資料，最終發現是被 AppArmor 擋住
+* 引入 `slirp4netns` 使容器具備網路連線功能
 
-Sched-ext 部份，這是過去相對沒接觸過的內容，我們積極的和來自 Meta, NVIDIA 的社群開發者互動並提出 Pull Requests，參與 office hour 的會議來得知第一手的資訊並討論。另一方面，我們也於台灣開源社群 - 源來適你分享並報名 COSCUP 在八月的演講(已被接受)，將 Sched-ext 推廣給更多人知道，期望能夠壯大社群。而這也呼應到老師上課所提到的**他們以後可能都會是你的同事**，我們不只專注於完成專題的要求，更將自己的產出向他人介紹，因此這部分我也給自己 5/5 。
 
-評分 : Machine Learning 及 Sched-ext 兩者 5 + 5 ，這部份我給自己 `10` 分
+專題的題目為「輕量級容器實作」。一開始和老師討論定題時，被問了很多問題，但我都回答不出來。我因此察覺到自己學習方式一定出了問題，老師也建議我不要急著貢獻，專注細節、搞懂機制才是最重要的。
+我一直將這句話惦記在心中；印象深刻的是，我當時正在研究 user namespace 的 pid/uid map 的權限問題，因為我想盡快解決問題，後來問 AI 無果；直到靜下心來把 user namespace 的 man page 仔細看過一遍後，才發現文件中早已精準註明使用的限制。此次事件後降低了我對 AI 及第二手文件（CSDN）的依賴程度。
+
+真的從最基本的系統呼叫開始，自幹出容器的最小可行產品後，我也將 capabilities, namespace, seccomp, cgroups 等機制深深刻印在腦中了。但最終專案在 cgroups 設定上仍存在一些權限問題，我給自己 `9` 分。
 
 ## 與授課教師的互動
+課堂問答：
 
-- 2025/3/4 : 課堂互動 / [筆記紀錄](https://hackmd.io/K4C5ofeqQg6LC8OEbdVcwg)
-- 2025/6/24 : 課堂互動 / [筆記紀錄](https://hackmd.io/K4C5ofeqQg6LC8OEbdVcwg)
-- 一對一討論
-    - 2025/04/21
-    - 2025/04/25
-    - 2025/05/01
-    - 2025/05/05
-    - 2025/05/12
-    - 2025/05/27
-    - 2025/06/12
-    - 2025/06/17
-    - 2025/06/19
-    - 2025/06/25
-    - 2025/06/27
+* 2025/04/22 [問答追蹤](https://hackmd.io/i6ZSoExATqOQMf1EvtNFoA#Andrushika-lumynou5)
+    * 回答關於同步 / 非同步機制的相異處問題
+    * 回答快速排序的時間複雜度、worst case 時的資料分佈
+    * 理解殭屍行程與孤兒行程的差異
+    * 理解 PID 1 reaper (init, systemd) 的行為
+* 2025/05/06 [問答追蹤](https://hackmd.io/8rwu2EOaQwW7AzjJOFK-gw#Andrushika)
+    * 理解 PELT 所扮演的角色及背後的數學
+    * 探討 Linux 核心用定點數實作 EWMA 的方式、精度選擇上的考量（和排程 nice 值的 1024 息息相關）
+    * 探討 EWMA 的衰變因子選擇原因
+* 2025/05/13 [問答追蹤](https://hackmd.io/uiNwM35dQ6qeFQwfTypc_w#Andrushika)
+    * 回顧統計學中的常態近似手法，將離散分佈轉換為連續形式，並理解公式中 continuity correction 的必要性
+    * 研究 fork 後親代行程和子代行程 page 的相異之處
 
+一對一討論時間：2025/05/22
 
-評分 : 這部份我給自己 `8` 分。課堂回答部份，老師第一次向我詢問了基本的浮點數運算問題，第二次老師向我詢問搶佔相關問題，兩次的課堂問題都以類似面試的方式來進行，也讓我意識到許多過去學過得基本知識皆囫圇吞棗，在問答結束後我也詳細的紀錄了老師所提的問題（可參考筆記紀錄）並反思類似的場合如何適宜的應對。一對一討論部份，我們這組的題目為 sched-ext 相關，我們積極的和老師預約討論並推進進度，可參考一對一討論的預約時間。
+第一次的問答，老師問了我一些關於同步 / 非同步、快速排序、殭屍行程的問題，因為是在線上進行，所以沒有那麼緊張。而後面的兩次都是現場授課：老師問了 PELT、EWMA 及一些延伸問題，而我對內容本身不熟悉以外，加上老師直接站在座位旁那股 look in my eyes 的威壓，使我的腦袋中一片空白。
+這讓我有些擔心又有些慶幸，擔心的是未來面試的自己是否也會是這副模樣，慶幸的是提早面對了現實，所以有充分的時間可以去改善。
+可惜的是，在課程的 20 週裡，和老師一對一互動的時間比較少，再修一次的話，我會希望維持最少兩周討論一次的頻率。
+而每次課堂結束的問答，我總是深入完成議題追蹤。我給自己 `8` 分。
+
 
 ## 所見所聞所感
 
-課程名稱為 **Linux 核心設計 (Linux Kernel Internals)** 但實際上這學期所學到的遠超出 Linux 核心程式碼的範疇。前六週課程授課老師鮮少提到核心相關程式碼，反而是著重於資訊科技領域開發所需要重視的事情。從 Git 的 commit message 的注重開始，我發現 Git 在使用上遠超過過去所認知的 git add, git commit 而已，學會了如何用 git rebase 或其他方式來將自己的分支整理乾淨以提升和他人合作的效率。
+* [因為自動飲料機延畢的那一年 - 心得](https://hackmd.io/@andrewchang/linux2025-homework5)
 
-**路見不平 拿 Patch 來填**是老師常掛在口邊的話，而我這學期也實際的對許多專案提出 Pull Request，也還記得第一次所提出的 PR 把作業的 change id 用壞導致同學在 fb 社群詢問(接著從戶外趕回電腦前緊急修正錯誤)，讓我真正意識到了老師所說的 **你的程式碼是幾百幾萬人要用** 的意思，也對於後面所提出的 PR 更加謹慎。後續所提出的 PR ，和開源社群的其他人討論的過程中也了解到真正和他人協作程式碼的方法。觀摩 sched-ext 每次 office hour 的討論，了解到面對龐大且複雜的程式碼是如何依靠僅十幾人的會議來逐步提升，從丟出問題到討論，看見了大神們是如何共同協作的。
+我覺得這門課對我而言最大的意義是，學會「放慢腳步」。
+這學期我開始深深反思自己，而我發現自己是相當重視結果的人：我重視「考試考得好不好」大於「過程中學到了什麼」、我重視「羽球比賽贏了沒有」大過於「和隊友一同拼搏的快樂」、我重視「有沒有被人看見」大於「我真正懂什麼」。
+所以我在短時間內發表成果的情境中（考試、報告等），都可以表現得不錯；但面對需要長期鑽研的議題，我好像缺乏一份靜下心來的韌性。面對需要短時間內看不到成果、嚐不到甜頭且需要高度自律的事情，我很容易放棄（學吉他、學語言等）
 
-若要我所說，這學期所學到最重要的東西是**如何學習**。從老師所說的**切勿舉燭** 到 **閱讀第一手材料** ，過去只要程式碼會動便認為是正確的，從沒想過背後的機制或可能導致的問題。而這點又在大型語言模型遍地開花的現在格外重要，要小心的查證來源，並理解背後的機制。此外，老師上課所提的許多問題往往是過去並未仔細思考的，這便是囫圇吞棗的結果，只將知識死記而非實際應用或實驗去了解，如何用現有的工具去了解並分析程式碼的行為也是修課後才真正理解到的。
+回顧前半個學期的我，會很急著想變得和厲害的同學、學長姐一樣，去貢獻、投入大型專案開發，去找有哪些缺失的地方可以改善；但後來發現這就是「還不會走路就想學跑步」的心態。老師要我先不要急，先掌握好細節、想懂課程教材的內容、搞懂機制才是最重要的。其實一開始我並沒有聽進去，這件事我到了做專題的過程中才有所領悟。
 
-最後，期末專題有幸的被老師指派 sched-ext 的開發，並和大公司第一線的開發人員有所互動。第一重要的便是看到大家是如何線上視訊討論，並透過 GitHub 來開發。此外，在參與討論時也聽聞到來自 NVIDIA 的 Andrea Righi 提到他們所用的設備 NUMA Node 的節點數，是遠遠超出我所想像的，更讓我了解到大公司在程式碼開發上的複雜程度及所面對的問題。
+學期初聽到 `visitorckw` 學長的分享覺得很震撼，到底要怎麼在 Linux 如此大型的專案中，發現可改善之處？後來做專題的時候，發現只要靜下心來，把一個問題研究得夠深入，問題就會在思考的間隙間自己跑出來。（例如，當初研究 slirp4netns 時，在思考 rootless container 是否能在無法建立 veth 的狀況下處理 inbound connection？）
 
-另一方面，參與英文的會議也是過去所沒有體驗過的， sched-ext 的社群中有著來自各國的開發者，自然在會議中也會有各種口音。從第一週的會議難以跟上各種專有名詞及語速，再到最後可以聽懂他們所討論的內容並且分享自己目前進度，我認為這對於日後職場工作有極大的幫助，提前適應以英語為主的會議場合。
+包含先前所提到的寫作業過程的心態轉變、「期末專題」章節中所述經驗等，讓我意識到太急著看見結果不是好事。縱使美麗的果實可能成為短時間內前進的動力，但也很容易因為看不見盡頭就將這份動力燃燒殆盡。對我而言，最好的心態就是放慢腳步。先把成果放一邊，才能夠專注眼下應該全心投入的議題、專注於細節。
 
-評分 ：這部份我給自己 `10` 分。
+另外，我覺得這門課很難能可貴的是「客製化」的程度很高，老師並不是用統一的衡量標準去衡量大家的付出；而且和見過社會殘酷的老師一對一討論後，也確實幫助我定位到自己的問題。這是在微積分、線性代數、演算法等課程裡面不可能發生的，因其衡量標準是齊頭式平等（考試）而非實質平等；大家願意多花時間寫考古題，也不願意正視自己不理解的地方、放慢腳步好好理解（其實包含我自己在內）。
 
+經過這 20 週，這份「放慢腳步」的習慣已經慢慢養成了，也將會繼續影響我未來的學習方式。畢竟投入工程並不是要成為一隻急於展現自己的孔雀，而是要用專業改善生活。（還有要賺很多錢，可能這才是主要目的）
+
+我給自己 `10` 分。
 
 ## 自我評量 (1 ~ 10)
-* GEOMEAN = $\sqrt[5]{9+6+10+8+10} \approx 8.45$
-* 方案 A : 8 + floor(0.3 * GEOMEAN) = 8 + floor(0.3 * 8.45) = 10
-* 方案 B : 1 + floor(GEOMEAN) = 1 + floor(8.45) = 9
-
-
-
-
-
-
-
+* GEOMEAN = $\sqrt[5]{7*7*9*8*10} \approx 8.12$
+* 方案 B : 1 + floor(GEOMEAN) = 1 + floor(8.12) = 9
 
 
 
