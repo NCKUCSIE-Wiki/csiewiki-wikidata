@@ -37,8 +37,13 @@ categories: User
 [回顧課程裡並行程式設計相關測驗題](https://hackmd.io/@sysprog/SJOWVVXZgl)
 在期末專題我探討 Linux 核心空間的簡易事件驅動伺服器運作原理，學習 socket 的程式設計，提出用 release/acquire 記憶體屏障避免 SPSC ring buffer 生產者可能覆蓋資料的問題。
 
-我觀摩了:
-[Linux 核心專題: 位元運算](https://hackmd.io/@sysprog/SyZPV1SNxe)
+我觀摩了以下同學的專題，並提出建議與問題:
+* [Linux 核心專題: 位元運算](https://hackmd.io/@sysprog/SyZPV1SNxe)
+* [Linux 核心專題: 高度並行的核心模式網頁伺服器](https://hackmd.io/@sysprog/SJYvYX_Wxl)
+* [Linux 核心專題: 核心模式的網頁伺服器](https://hackmd.io/@sysprog/SJQXPJBEex) by JimmyChongz
+* [Linux 核心專題: 核心模式的網頁伺服器](https://hackmd.io/@sysprog/Hkneo1S4lx) by ginsengAttack
+
+
 
 
 評分: 5 分
