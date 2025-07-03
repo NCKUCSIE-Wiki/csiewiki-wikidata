@@ -1,0 +1,98 @@
+---
+title: Ian-Yen (顏奕安)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程學系 116 級 (2023 ~ 2027)
+* GitHub: [`Ian-Yen`](https://github.com/Ian-Yen)
+* HackMD: [`顏奕安`](https://hackmd.io/@yenluoking)
+
+# 2025 Linux 核心設計 春季班 自我評量
+## 成果發表和貢獻
+
+我在這堂課並沒有實質提出 commit 到 Linux 核心，也沒有修改筆記，在嘗試貢獻教授的Demystifying the Linux CPU Scheduler，找了很久送出後，發現都已經在四月被修正過了，所以沒成功，就不給自己及格了。
+
+5 分。
+
+## 作業/隨堂測驗
+
+* [2025q1 Homework1 (lab0)](https://hackmd.io/@yenluoking/linux2025-homework1)
+* [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@yenluoking/linux2025-homework2)
+* [2025q1 Homework3 (kxo)](https://hackmd.io/@ericisgood/linux2025-homework3)
+* [2025q1 Homework5 (assessment)](https://hackmd.io/@yenluoking/linux2025-homework5)
+
+作業重點回顧：
+* lab0
+    * 看懂 list_sort 是怎麼實做出來的
+    * 第一次做效能分析，使用到的是 `perf`
+    * 第一次看論文，作業中的 `Dude, is my code constant time?` 發現到自己英文能力不足
+    * 複習卡方檢定
+* hw2
+    * 熟練 Linux kernel list API 應用
+    * 理解 binary tree 配置器與搜尋邏輯
+* hw3 的 kxo
+    * 實作按 ctrl + Q 停止的同時顯示紀錄
+    * 在每次 print 的時候顯示時間
+    * 自訂 ioctl ，用來與核心溝通
+
+8 分。
+
+## 期末專題
+[Linux 核心專題: 改進 kxo](https://hackmd.io/@sysprog/SkRDH8tZxg)
+
+專題實現項目:
+* 通訊壓縮設計
+    * 設計以 1 byte 傳遞單步棋資訊（位置、玩家、控制訊號），減少 user/kernel 間傳輸資料量。
+
+* 棋盤顯示模組
+    * 將棋盤顯示邏輯從核心轉移至使用者端，實作 display_board()，將位元編碼的棋盤狀態以可視化方式呈現，提升使用者體驗並降低核心負擔。
+
+* 歷史紀錄模組（history）
+    * 撰寫 history_update()、history_new_table() 等函式，紀錄每一步棋至 history linked list，支援多局資料與 undo、redo 功能的擴充性。
+
+* Negamax 多使用者與重構實作
+    * 原本 Negamax 演算法在核心中使用全域變數，不支援同時多執行緒運作。我負責將其改寫為可重入形式，改以 ctx 結構封裝搜尋狀態與資料，確保每個使用者都能在獨立的上下文下執行搜尋，避免 race condition。
+
+
+### 觀摩其他同學專題
+* [Linux 核心專題: 探討 sched_ext 及機器學習](https://hackmd.io/@sysprog/BygEQ4dWxx)
+* [Linux 核心專題: 並行程式設計相關測驗題](https://hackmd.io/@sysprog/SJOWVVXZgl)
+* [Linux 核心專題: 輕量級容器實作和擴充](https://hackmd.io/@sysprog/H18ne9Y-gl)
+* [Linux 核心專題: bitops 相關測驗題](https://hackmd.io/@sysprog/B13UVSQWel)
+* [Linux 核心專題: 位元運算](https://hackmd.io/@sysprog/SyZPV1SNxe)
+
+7 分。
+
+## 與授課教師的互動
+課堂問答：
+[2025-06-10 課堂問答](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA?view=&stext=21120%3A7%3A0%3A1751503099%3A7PlFaK)
+`futex` 與 `mutex` 比快在哪裡？
+[2025-03-17 課堂問答](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA?stext=44470%3A5%3A0%3A1751503039%3A6QKqRT&both=)
+補完教授當週給的程式碼([mymalloc.h](https://gist.github.com/jserv/ab3a2450238d05547673901dad61869a))，並指出會產生記憶體碎片化。
+要怎麼改，並提出解決方法。
+
+
+1 對 1 討論：
+
+- 5/29
+當時因為不懂裝懂與教授稍微互動了一下。後來實作了無分支的一些 `bitwise` 操作，與不使用運算符計算平均。
+
+7 分。
+## 所見所聞所感
+
+大二來修這堂課，第一次在大學課程中感受到了極大的實力不足，在能夠加選的最後一刻，被朋友一起推過來修這堂課，彷彿已經是一年前的事了，這學期過的真的非常慢長。
+
+從 lab0 開始，我就發現自己的能力其實比想像中還要糟糕很多。那種「我好像什麼都不懂」的感覺非常強烈，原本對自己的能力還有一點點信心，結果光是搞懂 `linux 風格的 list_sort ` 和 `queue` 本身的操作，就花了好幾天卡關，最後也是去參考了學長姊以前的作業，才成功寫出來。讓我慢慢理解教授所說的：「誠實面對自己」和「想好再寫」的真正意義。特別是在 kxo 實作裡，每一次 kernel crash 都要重開機，才能深刻體會「不注意細節會付出什麼代價」。
+
+當我看完《因為自動飲料機而延畢的那一年》，我覺得能付出一整年時間去做一件事的人，都是令我非常敬佩的。那不只是單純的「做出一台機器」，而是一整年不斷地選擇、碰壁、修正、再試的堅持與決心。這種精神跟我在這堂 Linux 核心課裡的體驗有一點像：一開始滿懷熱情地進入，但越深入就越發現自己的不足，每一個小問題都可能卡很久，每次卡住都很煩躁，甚至會懷疑自己到底能不能撐下去。但回頭看才發現，其實真正重要的是「撐住過程」就會有進步，而不是結果多漂亮。
+
+看完這系列文章也讓我想更誠實地面對自己：有時候我會貪快、會逃避、會想著「差不多就好」，但其實做出來的東西會直接反映你的態度。《飲料機》這系列，就是作者用一年交出的答案。我希望我未來也能寫出一篇像這樣，講得出過程、也講得出成長的東西。
+
+最後，很喜歡教授的課，會講很多笑話，好很笑~
+
+9 分。
+## 自我評量 (1 ~ 10)：
+$GEOMEAN = ( 5 \times 8 \times 7 \times 7 \times 9 )^{1/5} = 7.1$
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + 7 = 8$
