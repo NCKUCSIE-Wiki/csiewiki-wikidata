@@ -10,7 +10,9 @@ categories: User
 
 # 2025 Linux 核心設計/實作 春季班 自我評量
 ## 成果發表和貢獻
-針對以下教材格式以及拼字做出校正，在對如下進行改正前，對貢獻的看法總有些畏手畏腳，總認為依照目前的實力還沒到做出貢獻的時候，但引用授課教師於自我評量的回顧，即使改正錯字也算得上貢獻，故選擇以下幾篇對期末專題有極大助益之教材進行修正 -- **不論處在什麼時期，都應該找出自己能夠貢獻的方式**
+5 分。
+
+針對以下教材格式以及拼字做出校正，在對如下進行修改前，對貢獻的看法總有些畏手畏腳，認為依照目前的實力還沒到做出貢獻的時候，但引用授課教師於自我評量的回顧，即使改正錯字也算得上貢獻，故嘗試對以下幾篇期末專題反覆閱讀之教材進行修正 -- **不論處在什麼時期，都應該找出自己能夠貢獻的方式**
 
 * [KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm)
     * virtual machine(VM) -> virtual machine (VM)
@@ -25,6 +27,8 @@ categories: User
     * be waked up -> be woken up
 
 ## 作業/隨堂測驗
+8 分。
+
 * [Homework (lab0)](https://hackmd.io/jbAneMqpTA6jhmcdi28-kg)
     * [撰寫 Linux 核心風格的鏈結串列](https://hackmd.io/jbAneMqpTA6jhmcdi28-kg#針對佇列操作的程式碼實作) 
         * 學會使用 container_of 巨集
@@ -34,7 +38,7 @@ categories: User
         * 研讀[〈Dude, is my code constant time?〉](https://hackmd.io/jbAneMqpTA6jhmcdi28-kg#dudect-缺陷) 利用 Welch’s t-test 驗證實作是否為常數時間，避免側通道攻擊
     * [tiny-web-server](https://hackmd.io/jbAneMqpTA6jhmcdi28-kg#整合網頁伺服器) : 理解如何利用 select() 系統呼叫達到 I/O 多工 (同時處理 socket 以及 stdin)
     * 透過信號處理認識 setjump/lomgjump 對於後續理解 corotine 奠定基礎。
-    * 撰寫統一規範，清楚簡潔的 git commit message，實際應用於大三專題協作以及本身在進行的電子靶場專案，提供清楚的專案開發軌跡方可使成果得已分享以及交接。
+    * 撰寫統一規範，以及基於 what, why, how 撰寫的 git commit message，實際應用於大三專題協作以及本身在進行的電子靶場專案，提供清楚的專案開發軌跡方可使成果能夠分享與交接。
 * [Homework (kxo)](https://hackmd.io/jbAneMqpTA6jhmcdi28-kg)
     * 閱讀 LKMPG 學習如何撰寫核心模組，透過核心模組如何註冊回呼函式深刻理解到 everything is a file 帶來的益處
     * 核心模組如何與使用者空間溝通傳遞資料
@@ -47,6 +51,8 @@ categories: User
     * [實際利用 CMWQ](https://hackmd.io/x54zyDwrQZqU4sQsid7hDA#khttpd)，替換伺服器 khttpd 原本使用 Kthread 服務連線的方式，藉由降低建立執行緒的成本帶來約 2.25 倍的吞吐量。
 
 ## 期末專題
+9分。
+
 [Linux 核心專題: 輕量級隔離運行環境](https://hackmd.io/@sysprog/H1mxn47-gx)
 
 * [整理與介紹 MicroVM, Unikernel, container](https://hackmd.io/@sysprog/H1mxn47-gx#Evolution-of-Virtualization-for-a-Safer-Cloud) 
@@ -65,12 +71,32 @@ categories: User
     * 為了不使用 `ptrace` 移除 MMU 的考量以及影響
 * [zpoline](https://hackmd.io/@sysprog/H1mxn47-gx#zpoline)
     * 理解系統呼叫攔截的考量與不同做法的效能瓶頸
-    * 閱讀 cs:app 第七章，理解 ELF 執行檔 
-        * 如何被載入定址空間並填上指令的虛擬記憶體地址
-        * 多個 object file 是怎麼被鏈結起來的，linker 的工作內容
+    * 閱讀 cs:app 第七章
+        * 程式如何被載入定址空間，如何重定位符號引用，loader 的工作內容
+        * 多個目標檔（object file）如何被鏈結成可執行檔，linker 的工作內容
         * 如何在程式執行時、運行時載入動態函式庫
-        * 理解 symbol；static 的作用、全域變數與 function symbol 為何與鏈結相關
+        * 瞭解符號（symbol）的角色，static 的作用，以及全域變數與函式符號為何會影響鏈結
+
 ## 與授課教師的互動
+5分。
+
+* [2025-05-13 問答簡記](https://hackmd.io/uiNwM35dQ6qeFQwfTypc_w#leowu0411)：當時在課堂上討論到 fork() 之後，如何安全地處理 socket 以及其他來自親代行程的檔案描述子。授課教師提到可以利用 dup() 系統呼叫來達成。由於當時認為這個系統呼叫無法避免父子行程同時操作同一個描述子的問題，因此在課間與教授討論，並將相關內容整理於此。
+* [2025-05-27 問答簡記](https://hackmd.io/L8NQsV0SRwmbKyXSayizWw?view#leowu0411)：探討 Nabla contianer 的實作考量，以及 KVM 搭配 VirtIO 時的執行時期成本以及資料複製次數
+* 一對一討論：5/15
 
 ## 所見所聞所感
+10分。
+
+誠實面對自己究竟有多難? 至少在選修這堂課之前，我是一點也沒做到。在學校的考試或課程中，多數情況下只要考前幾天背一下、刷個考古題，就能取得高分。或多或少，之前的自己也隱約察覺過：難道這樣的積累就足以在實際世界中做出貢獻嗎？但每當真正面對堆積如山的難題，總是能很有效率地讓我再次把眼睛矇住、選擇視而不見。
+
+這學期在實作與閱讀教材的過程中，這些過去的逃避也被毫不留情地攤開。對於才剛選修過作業系統的我，竟無法解釋「程式如何被鏈結而後載入到定址空間」，也無法清楚說明「中斷發生時 CPU 與作業系統的行為」。不只是這門課，其餘的學科也有相同的問題。面對這些不足時，逃避可以說是最省力的選擇，但就像授課老師說的：「身為一個工程師能做到的事，只有做出為世界所應用的貢獻。」在如今軟體工程如此龐大且複雜的情況下，若持續逃避自己的不足，只會讓自己離真正的貢獻越來越遠。
+
+對於細節的重視：在選修本門課時，不論是資訊詞彙的使用還是 commit message 的撰寫，授課教師都嚴格要求規範。當我在閱讀期末專題的材料與文件時，才真正體會到落實這些細節的重要性。對工程學來說，最珍貴的價值就在於成果能被全世界共享，得意於此，科技才能以指數型的速度成長。期末專題所參考的專案與技術文章，正是因為具備完善且清晰的紀錄，才能讓更多人願意協作、提出 PR，甚至進一步衍生出更完整、更優秀的應用。這讓我深刻理解到，注重細節同樣是做出貢獻時不可或缺的一步。
+
+數學與實驗：課程中看到了許多例子，讓我理解到數學與實驗對工程師的重要性。像是如何在離散的世界中計算連續的數值、如何處理自然對數等問題，都需要透過數學推導的協助才能解決。而實驗則讓工程師能客觀描述問題與成因，例如 khttpd 的案例中，不只是停留在「cmwq 因為省去建立執行緒的成本，所以在高吞吐情況下優於 kthread」這種直覺，而是實際透過 ftrace 追蹤分析真正的成本。在期末專題，透過實際觀察作者如何設計實驗、並親自動手操作，非常大的幫助我理解到專案的瓶頸所在。
+
+## 自我評量 (1 ~ 10)：
+$GEOMEAN = ( 5 \times 8 \times 9 \times 5 \times 10 )^{1/5} = 7.0966682076 $
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + 7 = 8$
 
