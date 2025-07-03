@@ -22,7 +22,7 @@ categories: User
 * [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@alex-c1234/linux2025-homework2)
   * 運用間接指標對鏈結串列進行操作
 * [2025q1 Homework5 (assessment)](https://hackmd.io/@alex-c1234/linux2025-homework5)
-
+  *  紀錄〈因為自動飲料機而延畢的那一年〉的閱讀心得，以及學習上遇到的困難
 
 ## 期末專題
 8分。
@@ -30,7 +30,13 @@ categories: User
 * [Linux 核心專題: 位元運算](https://hackmd.io/@sysprog/SyZPV1SNxe)
 
 重新了解 IEEE 754 規格以及定點數 Qn.m 的使用策略，探討不同開平方根的演算法，利用位元運算在不實際計算開平方根方法，與不利用 FPU 的條件下，計算單精度浮點數平方根，搭配 x86 內建的 clz 函數能夠達到與 glibc sqrtf 相等的精度及效能。
+
 由於未能在時間內完成 EWMA 的相關探討，故給自己8分。
+
+觀摩其他同學 : 
+
+* [Linux 核心專題: 重作 lab0](https://hackmd.io/KXO0S424Tnm7qFhPzebNCA?both#Reviewed-by-alexc-313)
+* [Linux 核心專題: 重作 lab0](https://hackmd.io/WJX0QWZfR4OVCoA94qCqmg?both=#Reviewed-by-alexc-313)
 
 ## 與授課教師的互動
 8分。
