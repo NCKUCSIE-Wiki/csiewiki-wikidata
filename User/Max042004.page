@@ -17,7 +17,7 @@ categories: User
 
 ## 作業/隨堂測驗
 * [Homework1 (lab0-c)](https://hackmd.io/@Max042004/linux2025-homework1)
-  * commit message 遵循規範，確保說明修改的 what, why, how
+  * commit message 遵循規範，說明每次修改的 what, why, how
   * 閱讀論文〈Dude, is my code constant time?〉後，利用 dudect 工具以統計方法分析程式碼執行是否為常數時間，以防止時序攻擊
   * 以 Valgrind massif 工具追蹤佇列操作函式的記憶體開銷
 
