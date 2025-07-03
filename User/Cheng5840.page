@@ -24,12 +24,6 @@ Github: [Cheng5840](https://github.com/Cheng5840)
 ## 期末專題
 分數: 8 分
 [Linux 核心專題: 透過 Netfilter 自動過濾廣告](https://hackmd.io/@sysprog/HJGg_XKbll)
-以下是參考你提供的 HackMD 連結與風格，為你撰寫的 **Linux 核心專題心得**草稿，內容以你過去與我提到的 `kxo` 專案（Linux kernel 下的井字棋遊戲核心模組）為基礎，強調系統性改進與學習反思：
-
----
-
-[Linux 核心專題：eBPF + Netfilter 整合型廣告阻擋機制](https://hackmd.io/@sysprog/HJGg_XKbll)
-專題實現項目：
 
 * 整合 eBPF 與 Netfilter，實作 TLS 封包應用層特徵檢測與阻擋
 
