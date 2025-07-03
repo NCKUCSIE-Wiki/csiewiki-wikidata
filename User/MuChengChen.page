@@ -1,0 +1,58 @@
+---
+title: MuChengChen (陳慕丞)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 工程科學所 113 級 
+* GitHub: [`MuChengChen`](https://github.com/MuChengChen)
+* HackMD: [`oscarchen`](https://hackmd.io/@oscarchen)
+
+# 2025 Linux 核心設計 春季班 自我評量
+## 成果發表和貢獻
+1分
+
+並未對教材進行貢獻。
+
+## 作業/隨堂測驗
+4分
+
+[Homework1 (lab0)](https://hackmd.io/t1S7hRtHSmC9_0fY7XULFA?view)
+
+* 實作雙向佇列的操作，如 insert,merge,sort 等等
+
+* 理解並實作 Fisher–Yates shuffle 演算法
+
+* 研讀〈Dude, is my code constant time?〉
+
+## 期末專題
+5分
+
+[Linux 核心專題 : 錯誤更正碼 (Error Correcting Code) 介紹](https://hackmd.io/@sysprog/rkLtxINElx)
+
+* 理解 ECC 的基本原理並且探討 Single–Error Correcting (SEC) Code 中的 Hamming (7, 4) Code 、漢明距離與漢明權重、代數中基本的群、環、體， 對於 Reed–Solomon error correcting code 重要的有限體以及 Reed–Solomon error correcting code 編碼與解碼運算的概念 
+
+* 理解 Linux 核心中 NAND Error-correction Code 的程式如何使用 Hamming Code 進行糾錯的實例
+
+## 與授課教師的互動
+3分
+
+2025/6/9 一對一討論後續議題追蹤 : [2025q1 Homework5 (assessment)](https://hackmd.io/@oscarchen/linux2025-homework5)
+
+* 理解 Linux 中有 User stack 、 Kernel stack 並且探討它們之間的關係與個別 stack 空間的大小與是否會動態調整
+
+* 實作不依賴分支的 bitcount 與了解資訊科技中哪些領域會用到 bitcount
+
+* 探討 DRAM 出錯的原因
+
+## 所見所聞所感
+5分
+
+〈因為自動飲料機而延畢的那一年〉 心得 : [2025q1 Homework5 (assessment)](https://hackmd.io/@oscarchen/linux2025-homework5) 
+
+在這堂課中，我在老師寫的教材、作業、以及上課過程中都看到老師重視細節的態度，也看到在資訊產業中數學的重要性。然而在閱讀教材時，或是考隨堂測驗時常常不能理解其中的內容或是快速精準的答出正確答案，因此上到後來越來越迷茫，作業也寫得越來越無力。在與老師一對一討論後開始專注在理解 ECC 的原理時才發覺老師和〈因為自動飲料機而延畢的那一年〉的作者所堅持的重視細節的真正用意，若不真正詳細的理解 Hamming (7, 4) Code 如何一步一步編碼與解碼，我恐怕連奇偶校驗碼的真正用意都不知道，若不理解代數中的群、環、體的定義，我恐怕連 Reed–Solomon error correcting code 中最基礎的有限體的概念都不能理解。在寫專題時也體會到老師所講的缺什麼補什麼，若缺乏數學的相關知識，就誠實面對自己，一點一滴補齊相關知識。
+
+## 自我評量 (1 ~ 10)：
+$GEOMEAN = ( 1 \times 4 \times 5 \times 3 \times 5)^{1/5} = 3.1291346445318980387324449897269$
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + 3 = 4$
