@@ -10,10 +10,15 @@ Github: [Cheng5840](https://github.com/Cheng5840)
 
 ## 作業/隨堂測驗
 分數: 8 分
+
 [linux2025-homework1](https://hackmd.io/@buobao/linux2025-homework1)
+
 [linux2025-homework2](https://hackmd.io/@buobao/linux2025-homework2)
+
 [linux2025-homework3](https://hackmd.io/@buobao/linux2025-homework3)
+
 [linux2025-homework4](https://hackmd.io/@buobao/linux2025-homework4)
+
 [linux2025-homework5](https://hackmd.io/@buobao/linux2025-homework5)
 
 ## 期末專題
@@ -23,7 +28,7 @@ Github: [Cheng5840](https://github.com/Cheng5840)
 
 ---
 
-[Linux 核心專題：eBPF + Netfilter 整合型廣告阻擋機制](https://hackmd.io/...)
+[Linux 核心專題：eBPF + Netfilter 整合型廣告阻擋機制](https://hackmd.io/@sysprog/HJGg_XKbll)
 專題實現項目：
 
 * 整合 eBPF 與 Netfilter，實作 TLS 封包應用層特徵檢測與阻擋
