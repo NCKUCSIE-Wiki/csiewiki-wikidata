@@ -65,7 +65,7 @@ categories: User
 課堂問答:
 
 * 5/27
-   * 討論 Linux 中 Thread 跟 Process 的差別。後續追蹤從 Linux 原始程式碼及 Clone 系統呼叫的實作分析兩者運作的差別
+   * 討論 Linux 中 Thread 跟 Process 的差別。後續問題追蹤從 Linux 原始程式碼及 Clone 系統呼叫的實作以分析 Process 和 Thread 運作的差別
 
 * 6/19
    * 討論期末專題核心伺服器的運作
