@@ -1,0 +1,52 @@
+# 簡介
+- 法定姓名：徐崇智
+- GitHub：[JimmyChongz](https://github.com/JimmyChongz)
+
+# 成果發表和貢獻
+分數：7 分
+
+- 改進 [kecho](https://github.com/sysprog21/kecho) 專案的記憶體管理的缺失
+    - PR: [Add workqueue allocation error handling](https://github.com/sysprog21/kecho/pull/14)
+
+- 改進 [khttpd]() 專案，確保 socket 連線有正確關閉
+    - PR: [Shutdown socket before release](https://github.com/sysprog21/khttpd/pull/16)
+    - Note: [HackMD](https://hackmd.io/dFYFWebPS8iem0aNoy5hKw?both#Memory-Management)
+
+# 作業/隨堂測驗
+分數：8 分
+
+- [作業一](https://hackmd.io/@Jimmy-Xu/linux2025-homework1)：完成 queue.c 所有的 API、實作 Fisher-Yates 演算法、理解 select(2) 機制、參考論文提供的 [dudect](https://github.com/oreparaz/dudect) 實現 constant time 測試。
+
+- [作業二](https://hackmd.io/@Jimmy-Xu/linux2025-homework2)：學習指標的指標在 list_insert_before 運作原理，並撰寫合併排序操作。
+
+- [作業五](https://hackmd.io/@Jimmy-Xu/linux2025-homework5)：記錄閱讀〈[因為自動飲料機而延畢的那一年](https://blog.opasschang.com/the-story-of-auto-beverage-machine-1)〉的啟發，以及一對一問答。
+
+- [作業六](https://hackmd.io/@Jimmy-Xu/linux2025-homework6)：導入 CMWQ 至 khttpd 專案，並完成 directory listing 實作。
+
+# 期末專題
+分數：7 分
+[Linux 核心專題: 核心模式的網頁伺服器](https://hackmd.io/dFYFWebPS8iem0aNoy5hKw?both) （含錄影解說）
+
+依循 [ktcp](https://hackmd.io/@sysprog/linux2025-ktcp/) 作業規範進行作業，導入 CMWQ 至 khttpd 專案，以及完成 directory listing 實作，並提交改進 khttpd 的 [pull request](https://github.com/sysprog21/khttpd/pull/16)。
+
+# 與授課教師的互動
+分數：7 分
+
+- [課堂問答](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA#JimmyChongz)
+    - Q1: workqueue 的存在必要性?
+    - Q2: 如何得知有效的 kernel thread 總量？ (i.e., 可建立多少 kernel thread)
+
+- 一對一討論 (5/14、5/28)
+    - [問題紀錄與回答](https://hackmd.io/FvYyXKLlQWas8dbwy-VTQw?view)
+
+# 所見所聞所感
+分數：7 分
+
+在閱讀〈[因為自動飲料機而延畢的那一年](https://blog.opasschang.com/the-story-of-auto-beverage-machine-1)〉後，我體會到「不輕易放棄」有多難，當困難接踵而至時，選擇放棄很簡單，但我會因為放棄而失去解決問題與累積經驗的機會。
+
+回顧過去，無論是在與老師一對一討論還是撰寫作業時，我多次被提醒用詞不夠精確，例如：「抽象」一詞，應直接使用「難以理解」，以避免語意混淆；又如在討論鏈結串列時，經常使用的「遍歷」一詞，其實應使用「走訪」更為合適，這些細節讓我意識到精確表達的重要性。
+
+另外，我也感受到老師對實驗精神的重視，強調避免「舉燭」，而應以程式實作來驗證，例如：我在回答與老師一對一的問題時，曾引用 Google 搜尋的資料說明：「若接手的程序未執行到 FPU 指令，則 FPU 暫存器的內容仍維持上一個程序的 context 的狀態，反之，一但後來的程序一執行到 FPU 指令時，就會因為 CR0.TS bit 為 1 而觸發 trap（Device not Available exception 即 #NM）進入 kernel mode」老師則要求我用程式碼搭配 Linux 核心模組來展示這個現象。然而，經過實驗，我發現並未出現文中所描述的情況。這個過程讓我體會到，面對資訊時不能全盤接受，而要具備驗證資訊正確性的能力。
+
+# 自我評分
+採方案 B: 1 + floor(7.2) = 8
