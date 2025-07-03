@@ -20,7 +20,7 @@ categories: User
     * [從 CPU cache coherence 談 Linux spinlock 可擴展能力議題](https://hackmd.io/0WkZfkdtTfucKiV35wxRAA?view)
         * 修正公式錯誤 - 連乘範圍修正
     * [並行程式設計教材修訂](https://hackmd.io/@sysprog/H1dCuDxQR)
-        * 修正 arch_spin_lock 
+        * 修正 arch_spin_lock
 
 評分 : $7$ 分。
 
@@ -54,7 +54,9 @@ categories: User
 * 一對一討論: 4/30
 * 課堂討論: [3/11](https://hackmd.io/AVg2YkX9RveH1W6SVWmNIw#JeffBla)
 
-評分 : $4$ 分。
+評分 : $5$ 分。
+
+在 4/30 的一對一討論中，針對 elf 在 kernel 中的實際運行與 CPU out-of-order execution 在範例程式碼實驗不出來，在與老師討論後學習到透過工具如 bpftrace、litmus、strace 等可以找到很多解答並了解 kernel 實際運作，我也針對前兩項議題進行了追蹤紀錄 [How ELF work](https://hackmd.io/pJM-pR92SJ2aQIdO_0DYbA)、[4/30 一對一討論](https://hackmd.io/U10ofMHJQFaNJ3GWf9a9Xw)，其中老師提出的「cache 讀取快但寫入慢。但為什麼？」讓我對硬體有近一步的認識，「原來並行也和硬體有這麼細緻的關係。」，在後續研究中，透過分析 SRAM Cell 中得兩個 CMOS inverters 與 amplifier 學到電位差造成的讀取寫入延遲。
 
 ## 所見所聞所感
 
