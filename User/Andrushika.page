@@ -1,3 +1,8 @@
+---
+title: Andrushika (張宇承)
+categories: User
+...
+
 # 2025 Linux 核心設計 春季班 自我評量
 ## 簡介
 * 國立成功大學 資訊工程系 115 級
@@ -21,12 +26,42 @@
 ## 作業 / 隨堂測驗
 * [2025q1 Homework1 (lab0)](https://hackmd.io/@andrewchang/linux2025-homework1#2025q1-Homework1-lab0)
     * 確實 Reviewed 五位同學的程式碼並給出建議: `yy214123`, `chensheep`, `Eric-0522`, `zinsei`, `dainel40911`
+    * Linux 核心的 `list_head` 結構、相關 macro 使用方式（list_entry() 等）
+    * 用快慢指標在鏈結串列找中點
+    * pointer of pointer 簡化指標處理
+    * 以實驗比較自己的實作與 `list_sort.c` 中的排序演算法效率差異
+    * 使用 `select()` 驅動事件迴圈
+    * 用 chi-square test 檢測隨機數函式是否「夠亂」
+    * 研讀論文〈Dude, is my code constant time?〉，認識 side channel attack 、以假設檢定監測函式是否為 $O(1)$
+    * 協助 review 貢獻到 lab0-c 中的 `percentile()` 實作
 * [2025q1 Homework1 (ideas)](https://hackmd.io/knzS9BozTl-dnWA5cRnoTA)
+    * 初步認識 CFS, EEVDF，nice 值表示執行緒的禮讓程度
+    * CPU affinity 會影響 cache miss rate，在決策是否 migration 時也要考慮進去
+    * 認識 hypervisor 的不同種類
 * [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@andrewchang/linux2025-homework2)
+    * 熟悉 linux kernel list API
+    * 認識以 bitwise operation 實作 count leading zero 的方式
+    * 以數學還原、說明整數開平方根快速運算實作原理（參考維基百科）
+    * 將整數開根號函式擴充為 `ceil(sqrt(x))` 版本
+    * 認識 `hlist_head` 結構，並進一步尋找 Linux 核心中其他使用本程式碼的地方
 * [2025q1 Homework3 (kxo)](https://hackmd.io/@andrewchang/linux2025-homework3)
+    * 閱讀 LKMPG 前 16 章節，認識 kernel module 的運作機制：`/proc` filesystem、character device、Interrupt 等等
+    * 將 kxo 專案中繪製棋盤的工作移至 user space
+    * 開發記錄下棋歷史的機制
+    * 認識 top half、bottom half interrupt，以及其 linux kernel 中實作的相關 API（tasklet, softirq, workqueue）
+    * 以 `dmesg` 查看 kernel log
+    * 人生第一次體驗「程式沒寫好會搞垮電腦運作」，在撰寫 kxo 時一邊播放音樂，結果音樂變得像恐怖電影配樂
 * [2025q1 Homework4 (quiz3+4)](https://hackmd.io/@andrewchang/linux2025-homework4)
+    * 用 size-1 array 來模擬物件導向風格程式、簡化記憶體操作
+    * 認識 multi-precision integer 及其動態記憶體配置機制（enlarge）
+    * 分析以 SWAR 檢測 null bytes 的 macro 實作原理
+    * 了解 ADSR 機制
+    * 了解聲音背後的取樣頻率和 phase 的關係
 * [2025q1 Homework5 (assessment)](https://hackmd.io/@andrewchang/linux2025-homework5)
 * [2025q1 homework6](https://hackmd.io/@andrewchang/S1NTI7Gbxg)
+    * 理解 RCU 的寬限期機制及 linux 核心中的 RCU 函式 
+    * 實際操作 ftrace 追蹤效能瓶頸
+    * 將 khttpd 改進為使用 CMWQ
 
 前一兩週的作業，我總是很急著想要看見成果、急著把每一件作業要求裡的要求完成並交差了事，因為我很討厭「事情沒做完，又有更多事情出現」的感覺。而這般速戰速決的結果是，我學到的東西很淺薄，做完一份作業後也說不出來有什麼領悟。
 
@@ -43,6 +78,20 @@
 * [Github](https://github.com/Andrushika/light-container)
 * [解說錄影](https://youtu.be/OSU4qUK90v4?si=6iFZll5D4Rx6u7qP)
 
+學習到的內容客觀事實：
+
+* 認識 namespace 等運作機制，light-container 中引入 `newuidmap` 幫助在 rootless 情況下寫入 uid/gid map
+* 理解 capabilities 於執行 execve() 後的重計算模型的設計哲學、演化的歷史
+* 學習 cgroups v2 的 delegation 機制、cgroups v1 需要改善的原因，並嘗試實作於 light-container 中
+* 參閱 docker 官方的 seccomp profile，基於 barco 之上新增更多針對系統呼叫的限制
+* 對 barco 提出貢獻（修拼字 paenrt -> parent）
+* 理解容器相較於 type 1, type 2 hypervisor 的優勢（不須依賴硬體虛擬化指令集、可重用作業系統機制）
+* 以 `argtable3` 開源套件解析命令
+* 加入 `rxi` log 套件，幫助 light-container 開發過程中的除錯
+* 執行 cgroups 限額設定時，遇到權限問題。原先認為是 capabilities 問題，後來以 log 和使用 `strace` 定位，並讀了 Linux Security Module 和 SELinux 的相關資料，最終發現是被 AppArmor 擋住
+* 引入 `slirp4netns` 使容器具備網路連線功能
+
+
 專題的題目為「輕量級容器實作」。一開始和老師討論定題時，被問了很多問題，但我都回答不出來。我因此察覺到自己學習方式一定出了問題，老師也建議我不要急著貢獻，專注細節、搞懂機制才是最重要的。
 我一直將這句話惦記在心中；印象深刻的是，我當時正在研究 user namespace 的 pid/uid map 的權限問題，因為我想盡快解決問題，後來問 AI 無果；直到靜下心來把 user namespace 的 man page 仔細看過一遍後，才發現文件中早已精準註明使用的限制。此次事件後降低了我對 AI 及第二手文件（CSDN）的依賴程度。
 
@@ -52,8 +101,17 @@
 課堂問答：
 
 * 2025/04/22 [問答追蹤](https://hackmd.io/i6ZSoExATqOQMf1EvtNFoA#Andrushika-lumynou5)
+    * 回答關於同步 / 非同步機制的相異處問題
+    * 回答快速排序的時間複雜度、worst case 時的資料分佈
+    * 理解殭屍行程與孤兒行程的差異
+    * 理解 PID 1 reaper (init, systemd) 的行為
 * 2025/05/06 [問答追蹤](https://hackmd.io/8rwu2EOaQwW7AzjJOFK-gw#Andrushika)
+    * 理解 PELT 所扮演的角色及背後的數學
+    * 探討 Linux 核心用定點數實作 EWMA 的方式、精度選擇上的考量（和排程 nice 值的 1024 息息相關）
+    * 探討 EWMA 的衰變因子選擇原因
 * 2025/05/13 [問答追蹤](https://hackmd.io/uiNwM35dQ6qeFQwfTypc_w#Andrushika)
+    * 回顧統計學中的常態近似手法，將離散分佈轉換為連續形式，並理解公式中 continuity correction 的必要性
+    * 研究 fork 後親代行程和子代行程 page 的相異之處
 
 一對一討論時間：2025/05/22
 
