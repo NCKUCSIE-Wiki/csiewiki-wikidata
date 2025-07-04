@@ -20,10 +20,10 @@ categories: User
 ### 一、貢獻至 Linux 核心相關專案
 我針對 sysprog21/lab0-c 專案共完成兩筆經合併的實質貢獻：
 
-1. 修正 cppcheck 靜態分析的誤報（#240 PR）
+1. 修正 cppcheck 靜態分析的誤報（[#240 PR](https://github.com/sysprog21/lab0-c/pull/240)）
 由於 cppcheck 在分析過程中無法取得預定義的編譯器巨集，導致錯誤地判定某些路徑，例如 list 巨集中出現未使用標籤等 false positives。我實作了 get_compiler_macros 函式，能自動偵測系統上使用的 C 編譯器（gcc 或 clang）及其對應標準版本，並補上必要的巨集（-D__GNUC__=1 等），成功改善靜態分析環境模擬的準確性。
 
-2. 改進 Git hooks 的 fork 驗證機制（#268 PR）
+2. 改進 Git hooks 的 fork 驗證機制（[#268 PR](https://github.com/sysprog21/lab0-c/pull/268)）
 針對課程作業倉庫的 Git hooks 安裝機制，我提出改進建議，讓系統能夠更正確地驗證學生是否 fork 自正確的主倉庫（sysprog21/lab0-c），並確保遠端倉庫名稱為 lab0-c。
 我實作以下幾項變更：
  - 動態取得帳號名稱與倉庫名稱，取代硬編碼；
