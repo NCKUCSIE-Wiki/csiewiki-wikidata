@@ -21,20 +21,22 @@ $$n\log_2 n - Kn + O(1)$$
 其中，以下 merge sort 的變形 (variants)，領導係數 (leading coefficient) 皆為 $\log_2(n!)$，探討的著重點在於一次項係數 $K$。
 
 但領導係數的意思應該是主導項的係數 是$n\log_2 n$ 中的 1 而不是 $\log_2(n!)$ ， $\log_2(n!)$是在排序時所需的最低次數 
-他相當於
-$$n\log_2 n - 1.4427n + O(1)$$
+他相當於 $n\log_2 n - 1.4427n + O(1)$
+
 ## 作業/隨堂測驗
 3分
+
 作業一: [lab0](https://hackmd.io/@xQLwtYFkS--ic322bUMJGQ/BJH78h8sJe)
  
 
 ## 期末專題
 3分
+
 * [Linux 核心專題: 重作 lab0](https://hackmd.io/@sysprog/r1_-hnKVxl)
 
-我先去閱讀 [Commit b5c56e0](https://github.com/torvalds/linux/commit/b5c56e0cdd62979dd538e5363b06be5bdf735a09) 看作者針對了哪個部分去做優化，同時如何去維持 list_sort.c 原本就有的優點，還有他是怎麼去時做出他的想法
+我先去閱讀 [Commit b5c56e0](https://github.com/torvalds/linux/commit/b5c56e0cdd62979dd538e5363b06be5bdf735a09) 看作者針對了哪個部分去做優化，同時如何去維持 list_sort.c 原本就有的優點，還有他是怎麼去實作出他的想法
 
-當中作者提到了一些重要的數據和演算法，他的數據來源是幾篇論文，我接著去看論文了解那些數據和演算法和 list sort 的效能關聯
+我接著去看論文了解其中的的演算法和 list sort 的效能關聯 ， 有哪些重要的數據值得關注
 
 最後去做測試驗證不同演算法的差異
 
