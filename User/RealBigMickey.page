@@ -13,6 +13,7 @@ categories: User
 # 2025 Linux 核心設計 春季班 自我評量
 ## 成果發表和貢獻
 `我會給自己 6 分`
+
 成果發表與貢獻，是我這學期最大的遺憾。雖然沒能提交 patch，也未在 open source 社群留下痕跡，但這不代表我毫無貢獻。
 
 - 本學期的期末專案可視為我去年打造之專案的「重生」。在正式開始前，我花了一週時間系統性檢討過去設計錯誤，撰寫成一份 [HackMD 紀錄](https://hackmd.io/a8-1pGhKRn2ZxPF8Vout7Q)，為新版 DISFS 架構打下基礎，整合 PostgreSQL 與 Discord API，善用 SQL 、write-back local cache、stateless HTTP 等設計
