@@ -14,6 +14,13 @@ categories: User
 ## 2025 Linux 核心設計 自我評量 
 
 ### 1.成果發表和貢獻：
+我認為自己在本課程中最主要的成果與貢獻，來自於期末專題中對 lock-free thread pool 架構的實作與分析。並行程式設計涉及的知識面向極廣，從最初的 lock-based 設計出發，就需要理解 mutex、condition variable、atomic operation 以及 thread pool 的整體運作邏輯。在此基礎上，若要進一步實作 lock-free 的版本，必須對效能瓶頸進行具體分析與定位，特別是在任務分配與多個執行緒同時操作同一個共享佇列時，會因爭用 queue 的 head/tail 指標導致執行緒頻繁等待、atomic operation 失敗重試，進而造成整體效率下降。
+
+在本專題中，我從分析 thread pool 的 work queue 設計著手，意識到 lock contention 與任務分配不均是造成效能瓶頸的主因之一。因此，我採用了以 ring buffer 為基礎的 lock-free work queue 設計，並結合 semaphore 與 spin-wait 的兩段式等待策略，以降低 busy-wait 帶來的資源浪費。然而，僅靠 ring buffer 雖可降低 contention，但無法完全解決任務分配不均的問題。為此，我進一步設計了 batch-based work stealing 機制，透過每個執行緒在任務不足時主動嘗試從其他佇列中偷取多筆任務，以改善負載平衡並提升 thread utilization。
+
+本專題最終呈現出一個可實際執行、效能優於傳統 lock-based 設計的 lock-free thread pool 平行矩陣乘法系統，並針對其中的結構設計與效能數據進行紀錄與驗證。我相信這份開發紀錄與實作成果，可作為後續學習者的參考基礎，有助於他人更快速掌握並行系統中的關鍵設計挑戰與對應解法。
+
+評分 : 2 分
 
 ### 2.作業/隨堂測驗：
 [HW1](https://hackmd.io/@TonyLinX/linux2025-homework1)
