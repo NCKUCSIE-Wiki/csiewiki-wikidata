@@ -1,0 +1,76 @@
+---
+title: JUTUSVMOS (侯廷錡)
+categories: User
+...
+
+## 2025 Linux 核心設計 春季班 自我評量
+
+* 簡介：國立成功大學 人工智慧機器人 114 級 (2023 ~ 2025)
+* GitHub: [JUSTUSVMOS](https://github.com/JUSTUSVMOS)
+* HackMD: [Carpenter666](https://hackmd.io/@Carpenter666)
+
+### 貢獻
+自評分數：9分
+
+課程教材修訂
+
+* [現代處理器設計](https://hackmd.io/@sysprog/cpu-basics): 更新 [淺談 memory cache] 筆記連結
+
+* [現代處理器設計](https://hackmd.io/@sysprog/cpu-basics): 更新 [Introduction to VLIW] 影片連結
+
+* [現代處理器設計](https://hackmd.io/@sysprog/cpu-basics): 更新教材 [Introduction to High Performance Scientific Computing] 連結
+
+* [現代處理器設計](https://hackmd.io/@sysprog/cpu-basics): 得益於 8  位元處理能力 > 刪除多於空格 
+
+* [現代處理器設計](https://hackmd.io/@sysprog/cpu-basics): cache 的原理是利用一小塊高速記憶體來存放最近使用過的的  -> 刪除重複字[的的]
+
+* [Linux 核心設計: RCU 同步機制](https://hackmd.io/@sysprog/linux-rcu): 當所有執行緒都都離開 CS 時 ->「刪除重複字都都」
+
+### 作業與隨堂測驗
+
+自評分數：７分
+
+- [2025q1 Homework1 (lab0)](https://hackmd.io/@Carpenter666/linux2025-homework1)
+- [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@Carpenter666/linux2025-homework2)
+- [2025q1 Homerwork3 (kxo)](https://hackmd.io/@Carpenter666/linux2025-homework3)
+- [2025q1 Homework4 (quiz3+4)](https://hackmd.io/@JCarpenter666/linux2025-homework4)
+- [2025q1 Homework5 (assessment)](https://hackmd.io/@Carpenter666/linux2025-homework5)
+
+
+### 期末專題
+自評分數：８分
+
+Pub/Sub模擬: [HackMD](https://hackmd.io/@sysprog/B1Q1e1bDR)
+
+我改進第 15 週測驗題程式碼，設計 RCU 效能評測工具，並將其應用於 Valkey 實作以評估與優化高並行效能（改進方案還沒做）。
+
+### 與授課教師的互動
+自評分數：8分
+
+一對一討論：6月18日 (星期三)⋅下午 3:30 - 4:00
+
+* CFS 如何確保 fairness?
+
+
+* Hyperthreading: 在單一 processor core 上同時執行多個 (hardware) thread，但是共用 ALU、FPU，於是一個 core 有幾組 pipeline？
+
+
+### 修課心得
+
+自評分數：7分
+
+第一週上課開始，我就有明顯感受到自己的「腦發育」──例如使用 git 的時候，能利用 git hook 來統一 commit 訊息的格式，必須遵循相同的規範，不但提升了專案管理的效率，也讓未來回溯或審查程式碼時更有條理。這不只是技術層面的學習，更讓我意識到規範與自動化在團隊合作中的價值。
+
+我是在課堂測驗中第一次接觸到 RCU，了解到 lockless 設計帶來的效能優勢，於是決定在期末專題中動手實作。過程中，查資料最讓我卡關的就是 quiescent state，花了很多時間才勉強理清楚這個機制到底在做什麼。另外，像 memory order 和 atomic 操作，原本沒特別注意，沒想到它們在 RCU 中竟然有這麼大的作用。直到我實際開始寫程式，反覆 debug、遇到各種意想不到的同步問題，才真的意識到這些底層細節的重要性。這次經驗讓我體會到，光靠查資料和想像很多時候還是霧煞煞，唯有親自實作、遇到真實問題，才能真正掌握這些抽象的理論，讓它們轉化為自己的能力。
+
+閱讀〈因為自動飲料機而延畢的那一年〉這篇文章，讓我對系統軟體開發者所需要具備的態度有了更深刻的體會。文中描述作者從一個小小的自動飲料機專題，一路跌跌撞撞到因延畢而自省，不僅面對了技術層面的挑戰，更經歷了態度、細節和責任感的考驗。這些心得，正好呼應了課堂上老師反覆強調的三個重點：「誠實面對自己」、「理論與實務結合」、以及「細節決定成敗」。
+
+在與老師面談的過程中，我提出了自己反覆思考許久的問題。沒想到老師很直接地點出：我對 CPU 的理解其實還遠遠不夠，而這些答案早已記載在算盤書中。這才讓我發現，原來自己以為懂的，其實還有許多細節被忽略了；很多時候，不是我真的懂了，只是自己在裝懂。這讓我深刻反思，開發者必須保持誠實、謙虛，並且時時提醒自己不要忽略細節，也唯有這樣才能真正成長。
+
+最後，老師講的笑話很好笑，請打加一定要來上課。
+
+### 自我評量總分
+
+$(9 \times 6 \times 8 \times 7 \times 7 ) ^ {1/5} = 7.33$ 
+
+使用方案 B 計分：$1 + floor(7.33) = 8$
