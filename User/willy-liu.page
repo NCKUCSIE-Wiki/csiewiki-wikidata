@@ -33,7 +33,21 @@ categories: User
 
 
 ## 作業/隨堂測驗
-自評分數：分
+自評分數：4分
+
+我完成的內容比較少，只有hw1, hw2, hw5的部分問題
+
+1. [hw1](https://hackmd.io/@willy-liu/linux2025-homework1) - lab0-c
+這次經歷讓我深刻認知到自身的許多不足，包括：
+程式碼風格 (Coding Style)：過去習慣的寫法在 Linux Kernel 風格下顯得冗餘且不夠規範。
+邊界條件優化 (Code Smell)：處理鏈結串列的頭尾等邊界情況時，我發現自己常會寫出特殊的判斷邏輯，導致程式碼不夠通用和優雅。
+基礎演算法掌握度：即便是像鏈結串列的基本操作，以及相對複雜的 merge sort，我都發現自己寫得不夠好，缺乏效率和精煉度。
+2. [hw2](https://hackmd.io/@willy-liu/linux2025-homework2) - 2025q1 第 1 週和第 2 週測驗題回顧
+在 hw2 我學會了，即使沒有大量動手寫程式，光是深入理解測驗題目的設計原理，也能帶來非常深刻的收穫。我重新理解了「指標的指標」(**p和pprev) 的巧妙之處，消除了處理鏈結串列頭部節點時的「邊界條件特例」寫法。
+
+
+3. [hw5](https://hackmd.io/@willy-liu/linux2025-homework5) - 2025q1 Homework5 (assessment)
+
 
 
 ## 期末專題
