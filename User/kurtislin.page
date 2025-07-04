@@ -14,33 +14,48 @@ categories: User
 
 修正[ Linux 核心的鏈結串列排序](https://hackmd.io/@sysprog/linux2025-lab0/%2F%40sysprog%2Flinux2025-lab0-e)對於 merge sort variants 的領導係數的描述
 
+原本的內容是:
 
+>對於比較次數的探討，我們可寫成以下形式：
+$$n\log_2 n - Kn + O(1)$$
+其中，以下 merge sort 的變形 (variants)，領導係數 (leading coefficient) 皆為 $\log_2(n!)$，探討的著重點在於一次項係數 $K$。
 
+但領導係數的意思應該是主導項的係數 是$n\log_2 n$ 中的 1 而不是 $\log_2(n!)$ ， $\log_2(n!)$是在排序時所需的最低次數 
+他相當於
+$$n\log_2 n - 1.4427n + O(1)$$
 ## 作業/隨堂測驗
 3分
-我只有去做 [lab0](https://hackmd.io/@xQLwtYFkS--ic322bUMJGQ/BJH78h8sJe)
+作業一: [lab0](https://hackmd.io/@xQLwtYFkS--ic322bUMJGQ/BJH78h8sJe)
+ 
 
 ## 期末專題
 3分
 * [Linux 核心專題: 重作 lab0](https://hackmd.io/@sysprog/r1_-hnKVxl)
 
-做這個專題讓我第一次去看論文，我體會到就算是在論文中可能還是會有誤的地方，而且裡面的有些內容背後包含了很多知識，但在論文裡面會省略掉，所以要去吸收其他知識去理解，缺什麼補什麼
-在設計實驗的部份要考慮的東西有很多，要排除干擾因素，還有要用什麼測試資料去測試 等等的東西
+我先去閱讀 [Commit b5c56e0](https://github.com/torvalds/linux/commit/b5c56e0cdd62979dd538e5363b06be5bdf735a09) 看作者針對了哪個部分去做優化，同時如何去維持 list_sort.c 原本就有的優點，還有他是怎麼去時做出他的想法
+
+當中作者提到了一些重要的數據和演算法，他的數據來源是幾篇論文，我接著去看論文了解那些數據和演算法和 list sort 的效能關聯
+
+最後去做測試驗證不同演算法的差異
 
 ## 與授課教師的互動
 3分
 
 * 一對一討論 (2025/6/24)
+
 在一對一討論我和老師去討論在剩餘的十天可以做出來什麼東西，我和老師說我正在去閱讀 linux list sort 的 [Commit b5c56e0](https://github.com/torvalds/linux/commit/b5c56e0cdd62979dd538e5363b06be5bdf735a09)
 
 老師接著就問我為什麼 linux list sort 要採用bottom up ， 我當時的回答在扯什麼因為他們的比較次數會有週期性的變化，但老師提醒我說以後在面試的場合千萬不能這樣回覆，要清楚的回答我自己的理解且有效的回覆問題，我應該要講說為什麼不能採取 top down ， 用他的話會有什麼風險
+
 * [課程問答](https://hackmd.io/L8NQsV0SRwmbKyXSayizWw?view#kurtislin)
 
 ## 所見所聞所感
 
 3分
 
-這次
+在研究 [Commit b5c56e0](https://github.com/torvalds/linux/commit/b5c56e0cdd62979dd538e5363b06be5bdf735a09) 時，體會到這個看似簡單的 commit 竟然包含了許多細節，而且考慮了很多東西，讓我了解到要成為優秀的工程師需要去擁有深度的技術理解能力、系統性能考量，以及將理論轉化為實務的核心素養
+
+而且做這個專題讓我第一次去看論文，我體會到就算是在論文中可能還是會有誤的地方，而且裡面的有些內容背後包含了很多知識，但在論文裡面會省略掉，所以要去吸收其他知識去理解，缺什麼補什麼 在設計實驗的部份要考慮的東西有很多，要排除干擾因素，還有要用什麼測試資料去測試 等等的東西
 
 
 
