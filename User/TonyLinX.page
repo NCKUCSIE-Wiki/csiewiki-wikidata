@@ -14,6 +14,8 @@ categories: User
 ## 2025 Linux 核心設計 自我評量 
 
 ### 1.成果發表和貢獻：
+[Linux 核心專題: 並行程式設計相關測驗題](https://hackmd.io/@sysprog/r1DpeNNVex)
+
 我認為自己在本課程中最主要的成果與貢獻，來自於期末專題中對 lock-free thread pool 架構的實作與分析。並行程式設計涉及的知識面向極廣，從最初的 lock-based 設計出發，就需要理解 mutex、condition variable、atomic operation 以及 thread pool 的整體運作邏輯。在此基礎上，若要進一步實作 lock-free 的版本，必須對效能瓶頸進行具體分析與定位，特別是在任務分配與多個執行緒同時操作同一個共享佇列時，會因爭用 queue 的 head/tail 指標導致執行緒頻繁等待、atomic operation 失敗重試，進而造成整體效率下降。
 
 在本專題中，我從分析 thread pool 的 work queue 設計著手，意識到 lock contention 與任務分配不均是造成效能瓶頸的主因之一。因此，我採用了以 ring buffer 為基礎的 lock-free work queue 設計，並結合 semaphore 與 spin-wait 的兩段式等待策略，以降低 busy-wait 帶來的資源浪費。然而，僅靠 ring buffer 雖可降低 contention，但無法完全解決任務分配不均的問題。為此，我進一步設計了 batch-based work stealing 機制，透過每個執行緒在任務不足時主動嘗試從其他佇列中偷取多筆任務，以改善負載平衡並提升 thread utilization。
@@ -28,14 +30,14 @@ categories: User
 [HW5](https://hackmd.io/@TonyLinX/linux2025-homework5)
 
 * 透過第一個作業，我重新學習 C 語言，從完全忘記 linklist 怎麼寫，到實作出 linux 風格的 linklist。
-* 透過第二個作業，我學習到，單向鏈結到 BST、Quicksort、bit 算法、hash table。
+* 透過第二個作業，我學習到，linklist 到 BST、Quicksort、bit 算法、hash table。
 
 評分 : 1 分
 
 ### 3.期末專題
 [Linux 核心專題: 並行程式設計相關測驗題](https://hackmd.io/@sysprog/r1DpeNNVex)
 
-從這次的矩陣運算多執行緒實作過程中，我深刻體會到高效能運算背後的系統設計與調度技巧。在一開始，我只具備基本的 C 語言能力，對 thread pool、work stealing、thread affinity 等概念幾乎是陌生的，但透過實作這個專題，我不只是完成了平行化矩陣乘法，還一步步將系統從 naïve 的單執行緒版本，優化成具備 lock-free 結構與 batch stealing 策略的高效 thread pool。這中間我學會了如何使用 ring buffer 來實作每個 worker 的工作佇列；也學到如何在無鎖情況下透過原子操作（atomic operations）達成安全的工作共享與分配，進而提升整體執行效率。除此之外，我也親自體會到從 busy-wait 到 semaphore 的設計轉變，如何在 spin 與 sleep 之間取得效能與資源利用的平衡。整體而言，這次的專題不僅強化了我對平行程式設計的實作能力，也讓我在除錯、效能分析、系統資源分配上建立了更扎實的理解，讓我從一開始幾乎不了解 thread pool，到能夠自己設計一套具有 work stealing 的平行任務排程系統，是一次很具成長性的經驗。
+從這次的矩陣運算多執行緒實作過程中，我深刻體會到高效能運算背後的系統設計與調度技巧。在一開始，我只具備基本的 C 語言能力，對 thread pool、work stealing、thread affinity 等概念幾乎是陌生的，但透過實作這個專題，我不只是完成了平行化矩陣乘法，還一步步將系統從 naïve 的單執行緒版本，優化成具備 lock-free 結構與 batch stealing 策略的高效 thread pool。這中間我學會了如何使用 ring buffer 來實作每個 worker 的工作佇列；也學到如何在無鎖情況下透過 atomic operations 達成安全的工作共享與分配，進而提升整體執行效率。除此之外，我也親自體會到從 busy-wait 到 semaphore 的設計轉變，如何在 spin 與 sleep 之間取得效能與資源利用的平衡。整體而言，這次的專題不僅強化了我對平行程式設計的實作能力，也讓我在除錯、效能分析、系統資源分配上建立了更扎實的理解，讓我從一開始幾乎不了解 thread pool，到能夠自己設計一套具有 work stealing 的平行任務排程系統，是一次很具成長性的經驗。
 
 評分 : 2 分
 
