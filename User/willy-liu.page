@@ -52,8 +52,9 @@ categories: User
 ## 期末專題
 自評分數：4分
 
-*[Linux 核心專題: 分析 BitNet 的系統效能表現](https://hackmd.io/AMfZACnXSaSxOvhWf_85Aw?view)
-*[Tiled Matrix Multiplication 筆記](https://hackmd.io/@willy-liu/ryh9rcJree)
+[Linux 核心專題: 分析 BitNet 的系統效能表現](https://hackmd.io/AMfZACnXSaSxOvhWf_85Aw?view)
+
+[Tiled Matrix Multiplication 筆記](https://hackmd.io/@willy-liu/ryh9rcJree)
 
 
 這次專題主要在分析 BitNet b1.58 在 CPU 上推論的效能問題，過程中我花了不少時間學習怎麼用 Linux 的 perf 和 uftrace 這些工具來找出瓶頸。實際跑完分析後，我發現大部分時間都花在矩陣內積運算上（像 ggml_vec_dot_i2_i8_s 這種），還有不少時間浪費在執行緒同步（例如 ggml_barrier）。我有試著用 Huge Page 跟 CPU affinity 來優化，確實有一點點幫助，推論時間從 16 秒縮到 15 秒左右，IPC 也提高了，但 cache miss ratio 還是偏高。
@@ -77,8 +78,9 @@ categories: User
 
 雖然第一次面對老師提問時表現得不夠沉穩，但我認真記下問題，回去後查資料、實作測試，還發表在 Facebook 的社群中，得到了他人的回饋。
 
-*[5/30 一對一討論 問題回答](https://hackmd.io/@willy-liu/0530discuss)
-*[2025 年系統軟體系列課程討論區](https://www.facebook.com/share/p/1JQnkV6J9U/)
+[5/30 一對一討論 問題回答](https://hackmd.io/@willy-liu/0530discuss)
+
+[2025 年系統軟體系列課程討論區](https://www.facebook.com/share/p/1JQnkV6J9U/)
 
 ## 所見所聞所感
 自評分數：分
