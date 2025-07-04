@@ -10,9 +10,9 @@ categories: User
 
 # 2025 Linux 核心設計/實作 春季班 自我評量
 ## 成果發表和貢獻
-0分。
+3分。
 
-在這堂課的期間，並沒有對 Linux 及指定的教材內容提供貢獻或改過修正，因此，我認為沒有拿到任何分數。
+對於 kxo 的作業說明 [A](https://hackmd.io/@sysprog/linux2025-kxo/%2F%40sysprog%2Flinux2025-kxo-a) 把定點數 0.`005` 改成 `0.005`。
 
 ## 作業/隨堂測驗
 8分。
@@ -26,4 +26,23 @@ categories: User
 
 比較美中不足的部分為有些作業中的小主題沒有完成，因此，我認為 8 分是十分合理的。
 
+## 期末專題
+9分。
 
+對於與老師討論後的期末專題 [重作kxo](https://hackmd.io/@sysprog/BkUeXjIVxl)有完成老師所說需加強的部份，以及針對其他觀看者的評論皆有進行回覆，也有對其他的 5名學員提供 review。
+
+## 所見所聞所感
+9分。
+
+有確實閱讀完〈因為自動飲料機而延畢的那一年〉，回顧這堂課，從這堂課開始寫程式，到後面可以完成老師所指派的作業以及專題，其中的作業包括了統計學 [2025q1 Homework1 (lab0)](https://hackmd.io/@UWJ20Zs9R7qA-6McbGBQBA/B1XKO7VsJe)，專題上的實驗設計何數學分析，跟透過 [2025q1 Homework3 (kxo)](https://hackmd.io/@UWJ20Zs9R7qA-6McbGBQBA/ryaG9kT1gl) 學習到的 Top half 、 Bottom half 的作業系統的知識，我認為對於這堂課的投入是可見的。 
+
+## 與授課教師的互動
+8分。
+
+有在第九周的課程問答與老師互動，於 4/15 課堂上問的問題為測驗題中的數據經過 schedsort 後是怎麼顯示的，對於這個問題有繼續後續的[更新](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA?view#Hande1004)，與老師做一對一討論時(時間為2025/06/06)，針對老師所提的問題單精度浮點數開根號的問題也有確實作答。
+
+## 自我評量 (1 ~ 10)：
+
+$GEOMEAN = ( 3 \times 8 \times 9 \times 9 \times 8 )^{1/5} = 6.150977$
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + 6 = 7$
