@@ -60,7 +60,7 @@ categories: User
   * [回顧上一次討論的問題](https://hackmd.io/@Max042004/HJ70RUmWlx)
   * 使用定點數與泰勒展開式計算 $e^x$
   * 探討 Linux 不使用 FPU 的原因
-  * 以 atomic RMW 實作 concureent linked list
+  * 以 atomic RMW 實作 concurrent linked list
 
 * 6/24
   * 討論進行期末專題過程碰到的問題，討論核心空間沒有 VFS 介面在開發上的區別
