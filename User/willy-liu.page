@@ -10,3 +10,38 @@ categories: User
 * [GitHub](https://github.com/willy-liu)
 
 * [HackMD](https://hackmd.io/@willy-liu)
+
+# 2025 Linux 核心實作 春季班 自我評量
+## 成果發表和貢獻
+自評分數：5分
+
+在本學期「Linux 核心與系統程式設計」課程中，我積極參與了與 Linux 核心相關的實作與貢獻工作，期間從 2 月 18 日至 7 月 2 日，主要完成以下幾項具體成果：
+
+### 一、貢獻至 Linux 核心相關專案
+我針對 sysprog21/lab0-c 專案共完成兩筆經合併的實質貢獻：
+
+1. 修正 cppcheck 靜態分析的誤報（#240 PR）
+由於 cppcheck 在分析過程中無法取得預定義的編譯器巨集，導致錯誤地判定某些路徑，例如 list 巨集中出現未使用標籤等 false positives。我實作了 get_compiler_macros 函式，能自動偵測系統上使用的 C 編譯器（gcc 或 clang）及其對應標準版本，並補上必要的巨集（-D__GNUC__=1 等），成功改善靜態分析環境模擬的準確性。
+
+2. 改進 Git hooks 的 fork 驗證機制（#268 PR）
+針對課程作業倉庫的 Git hooks 安裝機制，我提出改進建議，讓系統能夠更正確地驗證學生是否 fork 自正確的主倉庫（sysprog21/lab0-c），並確保遠端倉庫名稱為 lab0-c。
+我實作以下幾項變更：
+ - 動態取得帳號名稱與倉庫名稱，取代硬編碼；
+ - 改用 awk 及 Git 指令解析 repo URL，避免使用 jq，提高相容性；
+ - 驗證 GitHub API 回傳是否為 fork，並確認 parent.full_name 為預期主倉庫；
+ - 加入 API 回傳為空的錯誤檢查機制；
+
+
+## 作業/隨堂測驗
+自評分數：分
+
+
+## 期末專題
+自評分數：分
+
+## 與授課教師的互動
+自評分數：分
+
+
+## 修課心得
+自評分數：分
