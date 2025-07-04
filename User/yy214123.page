@@ -142,6 +142,7 @@ Linux 系統提供多種排程類別，而本次期末專題將著重探討其�
 * $\text{GEOMEAN} = (9 \times 5 \times 10 \times 10 \times 8) ^ {1/5} \approx 8.3$
 * 方案 A : $8 + \text{floor}(0.3 \times \text{GEOMEAN}) = 10$
 * 方案 B : $1 + \text{floor}(\text{GEOMEAN}) = 9$
+
 ___
 
 ## 2024 Linux 核心實作 春季班 自我評量
