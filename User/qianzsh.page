@@ -17,7 +17,7 @@ categories: User
 ## 作業/隨堂測驗
 自評分數：7分
 
-我在 lab0-c 和 assessment 的作業上完成度較高，在
+我在 lab0-c 和 assessment 的作業上完成度較高，在 lab0-c 的作業中，我使用 linux 自己的 linked list 針對佇列進行不同的操作，在 assessment 的作業，我對 log2 的演算法進行兩種改寫，一種是使用 tail recursion 的方式改寫，另一種我使用定點數改寫，並探討誤差的來源。  
 
 * lab0-c: [GitHub](https://github.com/qianzsh/lab0-c) / [HackMD](https://hackmd.io/@qianzsh/linux2025-homework1)
 * assessment: [HackMD](https://hackmd.io/@qianzsh/linux2025-homework5)
