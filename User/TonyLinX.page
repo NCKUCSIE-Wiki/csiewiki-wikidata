@@ -30,7 +30,7 @@ categories: User
 [HW5](https://hackmd.io/@TonyLinX/linux2025-homework5)
 
 * 透過第一個作業，我重新學習 C 語言，從完全忘記 linklist 怎麼寫，到實作出 linux 風格的 linklist。
-* 透過第二個作業，我學習到，linklist 到 BST、Quicksort、bit 算法、hash table。
+* 透過第二個作業，我學習到，linklist 到 BST、Quicksort、bit-wise 操作、hash table。
 
 評分 : 1 分
 
