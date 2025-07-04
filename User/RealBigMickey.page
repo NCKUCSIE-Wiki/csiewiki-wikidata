@@ -13,17 +13,18 @@ categories: User
 # 2025 Linux 核心設計 春季班 自我評量
 ## 成果發表和貢獻
 `我會給自己 6 分`
+成果發表與貢獻，是我這學期最大的遺憾。雖然沒能提交 patch，也未在 open source 社群留下痕跡，但這不代表我毫無貢獻。
 
-成果發表與貢獻，是我這學期最大的遺憾。雖然沒能提交 patch，但並不代表毫無貢獻。
+- 本學期的期末專案可視為我去年打造之專案的「重生」。在正式開始前，我花了一週時間系統性檢討過去設計錯誤，撰寫成一份 [HackMD 紀錄](https://hackmd.io/a8-1pGhKRn2ZxPF8Vout7Q)，為新版 DISFS 架構打下基礎，整合 PostgreSQL 與 Discord API，善用 SQL 、write-back local cache、stateless HTTP 等設計
+- 作業三 kxo 中，將 AI 與繪圖任務分離於核心與使用者曾，使用 `workqueue` 達成並行執行，同步進行顯著降低 keyboard handler 對 rendering 的阻塞，提升互動性
+- 一對一面談中，實作無不依賴 libc 與 FPU 計算 `e^x - 1` 的單精度 float 計算，自己爬文、研究怎麼實作，從 Linux kernel 使用定點數為靈感，利用泰勒展開與 Minimax polynomial 達成接近原生 `expm1f()` 的準確度（最大誤差約 0.05 %），並以 benchmark 驗證精度與效能，詳細紀錄見 [HackMD](https://hackmd.io/@BigMickey/LKD2025_one_on_one)
+- 《Demystifying the Linux CPU Scheduler》其中第七章 30 頁的內容進行詳細校閱，包括文法錯誤、語病與句構重組等。雖然後來老師表示這些修改大多已在我提出前修正，但我仍相信其中有不少內容在教材更新過程中可能被遺漏。我仍認為這段努力具有實質貢獻價值，特別是在理解與釐清內容上。
 
-- 本學期的期末專案可視為我去年打造之專案的「重生」。在正式開始前，我額外花了一整週重新檢討過去設計中的所有可能錯誤，並系統性地整理、列出，撰寫成一份 [HackMD 紀錄](https://hackmd.io/a8-1pGhKRn2ZxPF8Vout7Q) 作為改版依據。
-- 期末專案中有不少同學提出有趣的問題，像是快取的改進面或是引進 partial read write 等，我積極回應同學們提出的想法與問題，深入研究，目前也正在陸續實作到系統中。
-- 詳讀 《Demystifying the Linux CPU Scheduler》第七章 30 頁的內容進行詳細校閱，包括文法錯誤、語病與句構重組等。雖然後來老師表示這些修改大多已在我提出前修正，但我仍相信其中有不少內容在教材更新過程中可能被遺漏。我仍認為這段努力具有實質貢獻價值，特別是在理解與釐清內容上。
 
 （以下與評分項目無關）
-老實說，我在學期一開始就沒把「短期內做出貢獻」視為首要目標。比起抓些文法錯誤，我更希望能夠扎實建立起自己的基礎，讓未來的貢獻能夠站得穩、走得遠。與其貿然提交 patch，不如先確認自己真的理解系統的脈絡與設計哲學——會走路之後，再學飛也不遲。
+我確實錯過學期間對外貢獻的機會，學期一開始的我沒把「短期內做出貢獻」視為首要目標。比起抓些文法錯誤，我更希望能夠扎實建立起自己的基礎，讓未來的貢獻能夠站得穩、走得遠。與其貿然提交 patch，不如先確認自己真的理解系統的脈絡與設計哲學——會走路之後，再學飛也不遲。
 
-目前我已報名下一屆的「RISC-V 晶心杯」，並正在研究我特別感興趣的領域，藏是 sched_ext 可插拔排程器框架，以及正在發展中的 Linux Switch 2 鍵值切換機制。我相信這些將會是我未來可以實際貢獻的方向。
+目前我已報名下一屆的「RISC-V 晶心杯」，並正在研究我特別感興趣的領域，藏是 sched_ext 可插拔排程器框架，以及正在發展中的 Linux Switch 2 鍵值切換機制。期末專案中有不少同學提出有趣的問題，像是快取的改進面或是引進 partial read write 等，我積極回應同學們提出的想法與問題，深入研究，目前也正在陸續實作到系統中。
 
 
 ## 作業/隨堂測驗
@@ -31,31 +32,53 @@ categories: User
 
 第一週開始前就略略看過課程教材，心中抱有期待參加這門課。從第一週起就把自己所有多餘的時間貢獻給 Linux 核心設計，每週平均預計至少30小時做作業或是閱讀教材，除了期中與期末少數幾週外從未鬆懈過。
 - [2025q1 Homework1 (lab0)](https://hackmd.io/@BigMickey/linux2025-homework1)
+    - Linux 核心中的鏈結串列、自製亂數產生器、Valgrind 分析記憶體問題
 - [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@BigMickey/linux2025-homework2)
+    - 研究並實作 quiz1+2 延伸問題
 - [2025q1 Homerwork3 (kxo)](https://hackmd.io/@BigMickey/linux2025-homework3)
+    - 核心與使用者層級分工與通訊、AI 對峙圈圈叉叉、引入 coroutine 與排程器完成多遊戲並行、畫面顯示系統 load 與當下時間
 - [2025q1 Homework4 (quiz3+4)](https://hackmd.io/@BigMickey/linux2025-homework4)
+    - 研究並實作 quiz3+4 延伸問題
 - [2025q1 Homework5 (assessment)](https://hackmd.io/@BigMickey/linux2024-homework5)
+    - 檢討當前課程進度
 
-其中，作業一是進步空間最大的一份，但因為是第一次嘗試許多從未接觸過的東西，我認為最後做到的成果，沒有對不起當時的努力。後續作業一次比一次進步且漸漸完整，作業三也有受到助教的稱讚，自己也滿意。最後與老師商量後決定放下 homework6 ，轉而投入開發期末專案。
+其中，作業一是進步空間最大的一份，但因為是第一次嘗試許多從未接觸過的東西，我認為最後做到的成果，沒有對不起當時的努力。後續作業一次比一次進步且漸漸完整，作業三也有受到助教的正面回饋，自己也滿意。最後與老師商量後決定放下 homework6 ，轉而投入開發期末專案。
 
 
-## 期末專題
+## 期末專題  
 `我會給自己 10 分`
 
-- [Linux 核心專題: 雲端檔案系統設計和實作](https://hackmd.io/@sysprog/BJH6UVXZle)
+- [HackMD 專案報告](https://hackmd.io/@sysprog/BJH6UVXZle)  
 - [GitHub repository](https://github.com/RealBigMickey/DisFS)
 
-DISFS 是我目前短暫的程式生涯中最大的專案。與傳統的 Linux 核心專案不同，DISFS 並非解決現有的問題，而是一個從無到有、帶有實驗性與創造性的設計與實做。它將檔案系統與看似毫無相關的 Discord 社交平台連結在一起，透過 FUSE (Filesystem in Userspace)、PostgreSQL 資料庫、http 與 Discord api，構建出一套完整的雲端檔案系統。
+這學期我將 2024 年原型「Discord Clouding」徹底重構，打造一個完整的雲端檔案系統 DISFS（DISFS Is a Service File System）。此專案以 Discord 作為儲存後端、FUSE 實作 user-space 檔案系統介面，搭配 Python + PostgreSQL 架設的 stateless HTTP 伺服器，總計實作超過 2000 行程式碼，橫跨 kernel syscall 介接、網路 API 操作與資料庫設計，是目前我技術跨度最大、也最具完整性的系統專案。
 
-過程中學習各不同檔案系統(ext4, NTFS)，理解了 FUSE 在 kernel space 與 user space 間的橋接角色，並實際操作多項系統呼叫與 VFS 介面，包括 cat, mv, ls, echo 等常用指令背後所對應的一連串操作流程、參數約定與錯誤處理機制。
+DISFS 將 POSIX 操作（如 `open`, `read`, `write`, `mkdir`, `rename` 等）轉換為 HTTP 請求，並將檔案分割為 chunks 上傳至 Discord，後端以 closure table 表示檔案階層結構，支援 O(1) 子樹查詢與快速路徑解析。系統具備登入機制（透過 pseudo-file `.ping/{username}` 實現）、快取設計（local write-back + partial cache）、stateless 傳輸協定（每筆請求含完整參數，如 user_id、path、chunk_index）以及錯誤容忍的上傳下載流程。
 
+**技術亮點與挑戰：**
 
-最有趣的地方莫過於本地快取的限制與利用：如何在減少 Discord API 呼叫次數的同時，仍維持檔案系統的即時性與使用者體驗？如何在快取一致性與載入延遲之間取得平衡？我開始理解「系統設計」並非只是寫程式，更是關於資源管理、效能優化與行為預期的深度思考。
+- **平台限制對應設計**：
+  - Discord 附件大小限制（10MiB）→ chunked read/write 實作
+  - 上傳速度與冷啟延遲 → write-back cache 提高互動性
+  - 快取設計平衡效能與一致性 → cold path 需數秒、warm path 幾乎即時
 
+- **資料結構選型**：
+  - Closure table 相較 adjacency list 更適合高效率遞迴查詢，便於實作 `rm -r`、`mv`、`ls -R` 等操作，也為垃圾桶與版本控制打下基礎。
 
-目前總共約 2000 行程式碼，完成的操作如下：
+- **協定與通訊設計**：
+  - 所有 HTTP request 為 stateless，明確參數化，方便未來擴展為 REST-style API（尚未完全符合 RESTful 定義）
+  - login/auth 透過 shell 命令實作，我稱之「登陸即檔案」，簡潔直觀不需外部介面登入
+
+- **未完成部分與後續規劃**：
+  - 因背景上傳、非同步寫入與 API 限速等特性，尚未完成正式效能 benchmark，但已規劃測試方法，包含 cache-hit/miss 延遲、tree traversal latency、cold vs warm 啟動延遲等。
+  - chunk 傳輸若改為由 client 直取 Discord attachments，將有效減少 server-side 壓力與提升速度
+  - 預期將整合登入 session、擴展 partial write 支援、加入使用者 session 與多工處理等功能
+
+這個專案的價值不在於性能極限，而在於從 0 到 1 構築一套具備真實接口與實驗精神的雲端檔案系統。我完整參與了從 kernel FUSE handler、cache policy、user/kernel IPC、後端儲存、資料庫 schema 設計，到網路協定與限制處理等各層面。這份成果也公開發表，並獲得多位同學實測與回饋（weiso131、rota1001、EricccTaiwan 等），簡報與影片亦公開發表。
+
+完成的操作如下：
 `{ .getattr .readdir .read .mkdir .open .release .create .write .truncate .unlink .rmdir .rename }`
-我認為專案很有趣且概念不會很難理解，若有興趣建議看共筆中提供的介紹影片。
+我認為專案算有趣且概念不會很難理解，若有興趣建議看共筆中提供的介紹影片。
 
 
 ## 與授課教師的互動
