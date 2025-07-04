@@ -40,7 +40,7 @@ categories: User
 ### 期末專題
 自評分數：８分
 
-Pub/Sub模擬: [HackMD](https://hackmd.io/@sysprog/B1Q1e1bDR)
+RCU 研究和實作: [HackMD](https://hackmd.io/@sysprog/ryxrbjGEel)
 
 我改進第 15 週測驗題程式碼，設計 RCU 效能評測工具，並將其應用於 Valkey 實作以評估與優化高並行效能（改進方案還沒做）。
 
