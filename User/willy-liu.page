@@ -93,5 +93,5 @@ categories: User
 雖然這門課過得有點辛苦，但也因此更願意面對自己不會的東西，然後一個一個補起來。
 
 ## 自我評量
-* GEOMEAN：$\sqrt[6]{5 \times 4 \times 4 \times 4 \times 8 \times 8} \approx 5.02$
-* 方案 B：$1 + \lfloor 5.02 \rfloor = 6$
+* GEOMEAN：$\sqrt[5]{5 \times 4 \times 4 \times 8 \times 8} \approx 5.52$
+* 方案 B：$1 + \lfloor 5.52 \rfloor = 6$
