@@ -1,0 +1,49 @@
+---
+title: kurtislin (林建寬)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程系 115 級
+* GitHub: [`kurtislin`](https://github.com/kurtislin)
+* HackMD: [`林建寬`](https://hackmd.io/@xQLwtYFkS--ic322bUMJGQ)
+
+# 2025 Linux 核心設計/實作 春季班 自我評量
+## 成果發表和貢獻
+2分
+
+修正[ Linux 核心的鏈結串列排序](https://hackmd.io/@sysprog/linux2025-lab0/%2F%40sysprog%2Flinux2025-lab0-e)對於 merge sort variants 的領導係數的描述
+
+
+
+## 作業/隨堂測驗
+3分
+我只有去做 [lab0](https://hackmd.io/@xQLwtYFkS--ic322bUMJGQ/BJH78h8sJe)
+
+## 期末專題
+3分
+* [Linux 核心專題: 重作 lab0](https://hackmd.io/@sysprog/r1_-hnKVxl)
+
+做這個專題讓我第一次去看論文，我體會到就算是在論文中可能還是會有誤的地方，而且裡面的有些內容背後包含了很多知識，但在論文裡面會省略掉，所以要去吸收其他知識去理解，缺什麼補什麼
+在設計實驗的部份要考慮的東西有很多，要排除干擾因素，還有要用什麼測試資料去測試 等等的東西
+
+## 與授課教師的互動
+3分
+
+* 一對一討論 (2025/6/24)
+在一對一討論我和老師去討論在剩餘的十天可以做出來什麼東西，我和老師說我正在去閱讀 linux list sort 的 [Commit b5c56e0](https://github.com/torvalds/linux/commit/b5c56e0cdd62979dd538e5363b06be5bdf735a09)
+
+老師接著就問我為什麼 linux list sort 要採用bottom up ， 我當時的回答在扯什麼因為他們的比較次數會有週期性的變化，但老師提醒我說以後在面試的場合千萬不能這樣回覆，要清楚的回答我自己的理解且有效的回覆問題，我應該要講說為什麼不能採取 top down ， 用他的話會有什麼風險
+* [課程問答](https://hackmd.io/L8NQsV0SRwmbKyXSayizWw?view#kurtislin)
+
+## 所見所聞所感
+
+3分
+
+這次
+
+
+
+## 自我評量
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + floor(2.766) = 3$
