@@ -49,11 +49,24 @@ categories: User
 3. [hw5](https://hackmd.io/@willy-liu/linux2025-homework5) - 2025q1 Homework5 (assessment)
 
 
-
 ## 期末專題
-自評分數：分
+自評分數：4分
+
+[Linux 核心專題: 分析 BitNet 的系統效能表現](https://hackmd.io/AMfZACnXSaSxOvhWf_85Aw?view)
+[Tiled Matrix Multiplication 筆記](https://hackmd.io/@willy-liu/ryh9rcJree)
+
+
+這次專題主要在分析 BitNet b1.58 在 CPU 上推論的效能問題，過程中我花了不少時間學習怎麼用 Linux 的 perf 和 uftrace 這些工具來找出瓶頸。實際跑完分析後，我發現大部分時間都花在矩陣內積運算上（像 ggml_vec_dot_i2_i8_s 這種），還有不少時間浪費在執行緒同步（例如 ggml_barrier）。我有試著用 Huge Page 跟 CPU affinity 來優化，確實有一點點幫助，推論時間從 16 秒縮到 15 秒左右，IPC 也提高了，但 cache miss ratio 還是偏高。
+
+我原本以為調整 chunk size 會有比較明顯的效能差異，結果觀察 ggml_compute_forward_mul_mat 時發現幾乎沒差，感覺可能是 GGML 裡面本來就做了不少優化，所以外面調參數反而動不了什麼東西。後來我決定自己來寫 tiled matrix multiplication，打算實驗不同 tile size 對 cache 使用的影響，只是這部分還沒來得及做完。
+
+整體來說，這次專題讓我蠻有感的是：很多效能問題不是只看一兩個數據就能下結論，必須要從工具抓到的函式、CPU 訊號、快取、執行緒等層層去拆。然後也發現工具很好用沒錯，但有時候還是要自己動手實作，才真的能觀察出細節。這種從底層摸出來的理解，對我來說比單純 benchmark 模型還要有趣也有收穫。未來如果有時間，我會想把 tiled mul 的部分補完，看看能不能靠自己寫的版本，真的觀察出一些 cache 命中率的變化。
+
 
 ## 與授課教師的互動
+自評分數：分
+
+## 所見所聞所感
 自評分數：分
 
 
