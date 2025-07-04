@@ -25,7 +25,7 @@ categories: User
 ## 期末專題
 自評分數：9分
 
-
+我的期末專題是重作 kxo ，目前我用位元遮罩改寫原先 O(N²) 的迴圈判勝以及將棋盤繪製的工作從 kernel 移植到 user 端，接下來要做實驗觀察效能改善的情況以及更新重寫的程式碼到 github ，之後會引入並行程式設計的概念，新增 coroutine 到我的期末專題。
 
 * kxo: [HackMD](https://hackmd.io/iPckvwpsRHS7BhtKj8uC-A?both)
 
