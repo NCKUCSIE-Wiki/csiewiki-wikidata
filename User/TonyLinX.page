@@ -37,7 +37,14 @@ categories: User
 ### 3.期末專題
 [Linux 核心專題: 並行程式設計相關測驗題](https://hackmd.io/@sysprog/r1DpeNNVex)
 
-從這次的矩陣運算多執行緒實作過程中，我深刻體會到高效能運算背後的系統設計與調度技巧。在一開始，我只具備基本的 C 語言能力，對 thread pool、work stealing、thread affinity 等概念幾乎是陌生的，但透過實作這個專題，我不只是完成了平行化矩陣乘法，還一步步將系統從 naïve 的單執行緒版本，優化成具備 lock-free 結構與 batch stealing 策略的高效 thread pool。這中間我學會了如何使用 ring buffer 來實作每個 worker 的工作佇列；也學到如何在無鎖情況下透過 atomic operations 達成安全的工作共享與分配，進而提升整體執行效率。除此之外，我也親自體會到從 busy-wait 到 semaphore 的設計轉變，如何在 spin 與 sleep 之間取得效能與資源利用的平衡。整體而言，這次的專題不僅強化了我對平行程式設計的實作能力，也讓我在除錯、效能分析、系統資源分配上建立了更扎實的理解，讓我從一開始幾乎不了解 thread pool，到能夠自己設計一套具有 work stealing 的平行任務排程系統，是一次很具成長性的經驗。
+我的期末專題是設計一個高效能的 CPU-based 矩陣乘法系統，目標是從並行程式設計的角度深入理解矩陣乘法的效能瓶頸與優化策略。老師提供了 baseline 實作，包括單執行緒版本與多執行緒的 lock-based thread pool。我主要負責分析其效能問題並進行優化改進。
+我首先觀察到，在原本的 lock-based thread pool 架構中，所有 worker threads 共享同一個任務佇列（queue），造成明顯的 contention（爭用）：每次任務的 enqueue/dequeue 都必須競爭同一把鎖，導致效能瓶頸與擴展性不佳。
+為了解決這個問題，我設計並實作了一個 lock-free 的 thread pool 架構，採用 per-thread ring buffer，每個 worker 維護自己的 queue，避免共享鎖競爭與頻繁的同步延遲。我也結合了 semaphore 與 busy spin 的機制，讓 thread 在等待任務時先短暫 spin，若持續無任務再進入休眠，兼顧反應速度與資源效率。
+不過這樣的設計仍可能出現負載不均問題，例如 round-robin 分派會導致某些 thread 忙碌、其他閒置。為此，我進一步導入 work stealing 技術，讓閒置 thread 能主動從其他 worker 的 ring buffer 偷取任務，達到動態負載平衡，提升整體 CPU 利用率。
+在 thread 數從 1 到 16 的測試中，與原本的 lock-based 架構相比，lock-free + work stealing 設計平均提升約 6% 整體效能。雖然提升幅度不大，但這段過程讓我深入理解了 thread pool 架構、鎖競爭對效能的影響，以及實作 lock-free 結構時所需面對的記憶體一致性與 atomic 操作等問題。
+除了 thread pool 架構優化外，我也針對矩陣乘法核心的每個 tile 進行 SIMD 向量化優化。原始實作將大矩陣切分為 64×64 的 tile，再切成 8×8 的 micro tile 進行乘加運算，但計算是以巢狀迴圈逐筆處理，無法充分利用現代 CPU 的 SIMD 能力。
+因此我改用 AVX2 256-bit 向量指令集，將 8 個 float 載入 __m256 暫存器，並以 _mm256_fmadd_ps 執行 fused multiply-add（FMA）運算，一次完成 8 筆乘加操作。進一步地，我手動展開迴圈（loop unrolling），將原本一次處理一列的流程改為一次處理 8 列，同時計算 64 筆浮點數，加強了暫存器與 pipeline 的使用效率。
+在整體實驗中，這個 SIMD + loop unrolling 優化版本，結合前述的 lock-free 架構，在同樣硬體下比原始 lock-based 多執行緒實作提升約 50% 的矩陣乘法效能。
 
 評分 : 2 分
 
