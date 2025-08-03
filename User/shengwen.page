@@ -16,11 +16,9 @@ categories: User
 專長
 ====
 
-- 機器人系統
-- 無人飛行/地面載具
-- 嵌入式系統/即時作業系統設計
-- 電腦視覺
-- 數值模擬
+- 機器人系統/無人機/無人載具
+- 自動控制/最佳化理論/數值模擬
+- 嵌入式系統/即時系統/電腦視覺
 
 工作經驗
 =======
@@ -40,6 +38,7 @@ categories: User
 
 - [旋轉矩陣及四元數的空間轉換](https://hackmd.io/@shengwen/rotation-matrix)
 - [MAVLink 原理及開發指南](https://hackmd.io/@shengwen/mavlink)
+- [Pendulum Control Playground](https://hackmd.io/@shengwen/pendulum-control)
 
 主要作品
 =======
@@ -90,10 +89,6 @@ COSCUP:
 - [打造 Linux 風格的即時作業系統應用於四軸飛行器控制](https://coscup.org/2024/zh-TW/session/AVPXW9): [[簡報]](https://drive.google.com/file/d/16S8ZRC-lhT15CXwWIy-RIIWXl5Ertqo5/view) - 2024
 - [Tenok: 打造用於機器人控制的微型即時作業系統](https://coscup.org/2023/zh-TW/session/XA9XJC): [[簡報]](https://drive.google.com/file/d/1p8YJVPVwFAEknMXPbXzjj0y0p5qcqT2T/view) - 2023
 
-MOPCON:
-
-- [Trends in Machine Learning for Unmanned Aerial Vehicle Applications](https://mopcon.org/2024/speaker/?id=2024018): [[簡報]](https://drive.google.com/file/d/1UmSeU8Y63s4cASBFNWM_zi5ll2J9EIJx/view?fbclid=IwY2xjawGLSe9leHRuA2FlbQIxMAABHX9AjWq_vX6WXNQYPfsQp-BUFIM44uh6MBCdLFP4OAEdUsAF8zQptxDcdQ_aem_uvY1jloybOcTQEWV687_BA) - 2024
-
 研討會論文:
 
 - [Robust State-Feedback H-infinity Control of Quadrotor](https://drive.google.com/file/d/1pyCTHr3tJHJxISqiStX4P4KPzDvA_4z1/view?usp=share_link)
@@ -102,7 +97,7 @@ Vehicles](https://drive.google.com/file/d/1Tsl13TjKVyGPcj0bG6tjt6iCVC8NbiQE/view
 
 Invited Talk
 ====
-
+- MOPCON 2024 Keynote Speech: [Trends in Machine Learning for Unmanned Aerial Vehicle Applications](https://mopcon.org/2024/speaker/?id=2024018): [[簡報]](https://drive.google.com/file/d/1UmSeU8Y63s4cASBFNWM_zi5ll2J9EIJx/view?fbclid=IwY2xjawGLSe9leHRuA2FlbQIxMAABHX9AjWq_vX6WXNQYPfsQp-BUFIM44uh6MBCdLFP4OAEdUsAF8zQptxDcdQ_aem_uvY1jloybOcTQEWV687_BA)
 - 2024/12/19 @ 和碩科技 (Pegatron): Trends and lessons learned in deep learning and generative AI applications for UAV
 
 獎項
