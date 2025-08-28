@@ -1,93 +1,130 @@
----
-title: 成功大學資工系(所) Wiki 系統
-toc: no
-categories: 系統頁面
-...
-
-這是成大資工的 wiki 系統，您可自由地在此編撰與閱讀學習筆記。
-注意：**Wiki 不等同於 Wikipedia (維基百科)**。
-Wiki 泛指提供多人協同編撰的平台，而 [Wikipedia](http://www.wikipedia.org/) 是藉由 wiki 系統建立的百科全書 (encyclopedia)。
-
-Linux 核心設計/實作 (2019-2025)
-================================
-![](/0-tux-small.jpg)
-
-- [課程進度表](/linux/schedule)
-
-Computer Architecture (2019-2024)
-============================
-![](/mips-arch-small.png)
-
-- [Schedule](/arch/schedule)
-
-* 「[資訊科技產業專案設計](https://hackmd.io/@sysprog/info2024)」課程
-
-系統軟體系列課程 (2016-2020)
-================================
-![](/sysprog-small.png)
-
-- [課程進度表](/sysprog/schedule)
-- 冬季和夏季課程
-    * [2021年暑期](https://hackmd.io/@sysprog/linux2021-summer)
-    * [2018年暑期](https://hackmd.io/s/rkJfYQLvX)
-    * [2017年暑期](https://hackmd.io/s/BJRtkreHW)
-    * [2017年冬季](https://hackmd.io/s/H1KTTZP8l)
-    * [2016年暑期](https://hackmd.io/s/SJppVSp2)
-
-ACM-ICPC 培訓隊課程
-================================
-
- - [課程主題重點整理](acm/course)
-
-嵌入式系統系列課程 (2012-2016)
-================================
-![](/embedded/logo-2012-small.png)
-
-- [課程進度表](embedded/schedule)
-- [課堂測驗與解答](embedded/quiz)
-- 分組報告
-    - [FreeRTOS](/embedded/freertos), [rtenv+](/embedded/rtenv), [FreeRTOS (MMU)](/embedded/freertos-mmu), [RT-Thread](/embedded/rt-thread)
-    - [Linux](/embedded/arm-linux), [Xenomai](/embedded/xenomai), [uClinux](/embedded/uclinux)
-    - [Xvisor](/embedded/xvisor)  ( [ARMv8](/embedded/ARMv8) ), [F9 microkernel](/embedded/f9-kernel)
-- 分組報告 (針對 STM32 週邊): [GPIO](/embedded/GPIO), [USART](/embedded/USART), [ADC](/embedded/ADC), [I2C](/embedded/I2C), [PWM](/embedded/PWM), [USB](/embedded/USB), [SPI](/embedded/SPI), [Flash](/embedded/Flash), [CAN](/embedded/CAN)
-- [線上資源](embedded/resources)
-- 期末專題
-    - [2015年秋季](/embedded/team2015)
-    - [2014年秋季](/embedded/team2014) / [2014年春季](/embedded/os-team2014)
-    - [2013年秋季](/embedded/team2013)
-    - [2012年秋季](/embedded/team2012)
-- 冬季和夏季課程
-    - [2015年暑期](embedded/summer2015)
-    - [2014年暑期](/embedded/summer2014) / [2014年冬季](/embedded/winter2014)
-    - [2013年暑期](embedded/summer2013)
-
---------
-
-
-使用方式
-=======
-
-瀏覽
-----
-你可以點選連結到特定的頁面，在左方點選「隨機頁面」即可連到一頁隨機的頁面，或是在「搜尋」中輸入想要尋找的關鍵字。
-你也可以直接在網址列後方輸入頁面名稱，即可連結到特定頁面。
-若該頁面尚未被建立 (不存在)，你可以進行編輯，分享給大家知道！
-
-編輯
-----
-編輯頁面需要擁有帳號，畫面右上方可申請新帳號，登入後就擁有 wiki 的編輯權限。
-點選已存在的頁面上方的「edit」即可編輯頁面，或是跟著不存在的頁面的指示，就可以開始編輯頁面。
-編輯 wiki 時要用一種稱為 reStructuredText 的語法撰寫。編輯時，左方就有範例可以參考。
-放心，這比維基百科的語法簡單多了....歡迎來討論！
-
-你可以在編輯時建立連到其他 wiki 頁面的超連結，[說明文件 ](Help#wiki-links)中有詳細的說明。
-如果該頁面不存在，也可以透過這個連結建立新頁面。
-
-如何開始
-=======
-這裡有一些實用的頁面，可以先看看：
-
-- [Sandbox ](sandbox) 可用來測試 wiki 語法，可自由寫作運用。此外，編輯時有「Preview」按鈕可預覽結果，避免出錯。
-- [錯誤回報 ]()是用來回報錯誤的，如果你發現系統有錯誤，請到上面回報，管理員會儘量處理。回報前請先看看這個問題是不是已經被別人提過了。
-
-說明文件可在側欄中的「說明」取得，更多相關資訊可參考 [Gitit User's Guide ](Gitit User's Guide)。
+Nguyễn Tiến Tài, CEO của Vua88, là một doanh nhân trẻ đầy nhiệt huyết và tầm nhìn chiến lược. Với hơn 10 năm kinh nghiệm trong lĩnh vực công nghệ và giải trí số, ông đã xây dựng Vua88 trở thành nền tảng cá cược uy tín, hiện đại, luôn đặt trải nghiệm người dùng và sự minh bạch lên hàng đầu.
+Thông tin liên hệ :
+Địa chỉ : 83 Đ. Bình Thới, Phường 11, Quận 11, Hồ Chí Minh, Vietnam
+Phone : 0865677369
+Email : hotro@vua88.meme
+Hashtags : #vua88 #vua88meme #bancavua88 #dagavua88 #thethaovua88 #xosovua88
+Website : 
+https://vua88.meme/ceo-vua88/
+https://ceovua88.hashnode.dev/ceovua88
+https://www.siye.co.uk/siye/viewuser.php?uid=240310
+https://www.myxwiki.org/xwiki/bin/view/XWiki/ceovua88?category=profile
+https://www.blockdit.com/users/68b0040105ea02058213c1c6
+https://securityheaders.com/?q=https%3A%2F%2Fvua88.meme%2Fceo-vua88%2F&followRedirects=on
+https://jump.5ch.net/?https://vua88.meme/ceo-vua88/
+https://www.producthunt.com/@ceovua88
+https://www.elephantjournal.com/profile/ceovua88/
+https://zumvu.com/ceovua88/
+https://tuvan.bestmua.vn/dwqa-question/ceovua88
+https://www.diigo.com/profile/ceovua88
+http://divinedirectory.com/author/ceovua88-35241/
+https://www.iglinks.io/lythanhbinh037-dli?preview=true
+https://hangoutshelp.net/user/ceovua88
+https://my.bio/ceovua88
+https://www.asklent.com/user/ceovua88#gsc.tab=0
+https://www.pozible.com/profile/nguyen-tien-tai
+https://etextpad.com/k7emolvufe
+https://epiphonetalk.com/members/ceovua88.59637/#about
+http://web.symbol.rs/forum/member.php?action=profile&uid=1175144
+https://kitsu.app/users/ceovua88
+www.clickasnap.com/profile/ceovua88
+https://sarah30.com/users/ceovua88
+https://userstyles.world/user/ceovua88
+https://lib39.ru/forum/index.php?PAGE_NAME=profile_view&UID=81616
+https://musikersuche.musicstore.de/profil/ceovua88/
+https://biolinku.co/ceovua88
+https://www.dday.it/profilo/ceovua88
+https://www.tripline.net/ceovua88/
+http://users.atw.hu/animalsexforum/profile.php?mode=viewprofile&u=19832
+http://ixawiki.com/index.php?ceovua88
+https://matters.town/a/0ytkgfgopfjg
+http://www.truck-business.cz/profile/ceovua88/blog/18305-ceovua88.html
+https://www.fundable.com/nguyen-tien-tai
+https://www.bandlab.com/ceovua88
+https://uno-en-ligne.com/profile.php?user=400236
+https://advego.com/profile/ceovua88/
+https://library.zortrax.com/members/nguyen-tien-tai/
+https://www.plurk.com/ceovua88
+https://teletype.in/@ceovua88
+https://www.vevioz.com/ceovua88
+https://phijkchu.com/a/ceovua88/video-channels
+https://dongnairaovat.com/members/ceovua88.47525.html
+https://zzb.bz/l2dB53
+https://vimeo.com/user246011415
+https://acomics.ru/-ceovua88
+https://tap.bio/@ceovua88
+https://findaspring.org/members/ceovua88/
+https://community.fabric.microsoft.com/t5/user/viewprofilepage/user-id/1344832
+https://jii.li/ceovua88
+https://commoncause.optiontradingspeak.com/index.php/community/profile/ceovua88/
+https://meetinchat.com/profile/61e2b7a0-198d-46cc-a850-0e53b4bd8e70
+https://eatradingacademy.com/forums/users/ceovua88/
+https://joy.gallery/ceovua88
+https://3dwarehouse.sketchup.com/user/b6331770-9cf4-4bfe-a815-6a1c795d2792
+https://gitconnected.com/ceovua88
+https://menta.work/user/201965
+https://confengine.com/user/ceovua88
+https://www.ameba.jp/profile/general/ceovua88
+https://www.hogwartsishere.com/1758587/
+https://pouet.chapril.org/@ceovua88
+https://www.klynt.net/members/ceovua88/
+https://www.roton.com/forums/users/lythanhbinh037/
+https://theomnibuzz.com/author/ceovua88
+https://gravesales.com/author/ceovua88/
+https://buckeyescoop.com/community/members/brass-marvelous-pixie.41479/#about
+https://www.portalnet.cl/usuarios/ceovua88.1170465/
+https://www.theyeshivaworld.com/coffeeroom/users/ceovua88
+https://xiaomi.eu/community/members/ceovua88.390018/#about
+https://motionentrance.edu.np/profile/ceovua88/
+https://forum.allporncomix.com/members/ceovua88.48795/about
+http://julia4tied.de/member.php?action=profile&uid=197320
+https://foros.proyectomila.net/member.php?action=profile&uid=220961
+https://congdonganchoi.com/members/ceovua88.6391/#about
+https://caodaivn.com/members/ceovua88.45080/#about
+https://forum.applefix.vn/members/ceovua88.9909/#about
+https://forums.planetdestiny.com/members/ceovua88.75515/about
+https://crypto4me.net/members/ceovua88.17457/#about
+https://forum.mineland.net/members/ceovua88.5872/#about
+https://www.snowmobile.se/forum/members/ceovua88.40023/about
+https://thaicpe.com/members/ceovua88.10509/#about
+https://thuysan247.net/members/ceovua88.14054/#about
+https://shemaleleaks.com/forum/members/ceovua88.216854/#about
+https://www.nursingportal.ca/author/ceovua88/
+https://remoteai.io/talent/profile/@ceovua88
+https://theworshipcollective.com/members/ceovua88/
+https://board.playzo.de/index.php/User/7235-ceovua88/?editOnInit=true#about
+https://refchat.co.uk/members/ceovua88.15558/about
+https://friendspace.org/members/ceovua88/info/
+https://lucidowners.com/members/ceovua88.14046/about
+https://community.ecodesignhive.com/member/RiZXDovfPU
+https://www.civictr.com/members/ceovua88.71625/about
+https://forum.seabank.com.vn/members/ceovua88.1700/#about
+https://community.herbalentrepreneur.com/member/lGTv8qLBqd
+https://tlcworld.it/forum/members/ceovua88.32510/#about
+http://raredirectory.com/author/ceovua88-19068/
+https://demo5651.asly.nl/index.php/author/ceovua88/
+https://kotob4all.com/profile/ceovua88
+https://comicvine.gamespot.com/profile/ceovua88/
+https://galgame.dev/user/ceovua88
+https://canadianstampnews.com/forums/users/ceovua88/
+https://mycomplianceresource.com/forums/users/ceovua88/
+https://app.udao.org/en/profile/learner/c0b01d5e-85ea-42d8-a2a8-a1668b3e99ae
+https://pmrepublic.com/profile/ceovua88
+https://thuthuataccess.com/forum/user-25067.html
+https://app.nft.nyc/profile/ceovua88
+https://www.green-collar.com/forums/users/ceovua88/
+https://approachanxiety.com/forums/users/ceovua88/
+https://www.11plus.co.uk/users/lythanhbinh037/
+https://forum.youcanbuy.ru/userid7329/?tab=field_core_pfield_11
+https://thetradersblog.co.uk/profile/ceovua88
+http://magicbay.co.uk/author/ceovua88/
+https://reactos.org/forum/memberlist.php?mode=viewprofile&u=159117
+https://tuservermu.com.ve/index.php?action=profile;area=summary;u=79727
+https://onlinevetjobs.com/author/ceovua88/
+https://www.cems-sc.org/user-profile/userid/28001
+https://leakedmodels.com/forum/members/ceovua88.641505/#about
+https://wiki.3cdr.ru/wiki/index.php/%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA:Ceovua88
+https://articlement.com/author/ceovua88-8986/
+https://pad.stuve.uni-ulm.de/s/lFpd3ZP8w
+https://forums.servethehome.com/index.php?members/ceovua88.189624/about
+https://www.casualgamerevolution.com/user/ceovua88
