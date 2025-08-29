@@ -154,7 +154,7 @@ ex:假設資料位元(message polynomial)為10101010，generator polynomial為x^
 
 * FORM ERROR
 
-CRC,ACK Field 都有delimiter，甚至EOF本身就是Data Frame的delimiter，這些bit都預設為recessive(1)，如果在這些bit上讀到dominant(0)，那從下一個bit開始就傳送Error Frame。 
+CRC,ACK Field 都有delimiter，甚至EOF本身就是Data Frame的delimiter，這些bit都預設為recessive(1)，如果在這些bit上讀到dominant(0)，那從下一個bit開始就傳送Error Frame。 (CAN2.0 spec doesn't express which fields should be checked against FORM ERROR, so does the delimiter of ERROR FRAME or OVERLOAD FRAME should be checked against FROM ERROR?)
 
 ![](/embedded/CAN_form_error.png)
 
