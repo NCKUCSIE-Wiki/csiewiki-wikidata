@@ -4,18 +4,18 @@ toc: no
 ...
 
 - Instructor: [Jim Huang](/User/jserv) (黃敬群) `<jserv.tw@gmail.com>`
-- Facebook Group: [https://www.facebook.com/groups/system.software2024/](https://www.facebook.com/groups/system.software2024)
+- Facebook Group: [https://www.facebook.com/groups/system.software2025/](https://www.facebook.com/groups/system.software2025)
 - Policy
     * Follow the classes: [CS 61C at UC Berkeley](https://cs61c.org/), [CMU 18-447: Introduction to Computer Architecture](https://users.ece.cmu.edu/~jhoe/doku/doku.php?id=18-447_course_schedule_spring_2024)
 - Course grading
     * Quiz (30%), Homework (30%), Final/Term Project (40%)
 - **Schedule is tentative and subject to change!**
 
-Computer Architecture (Fall 2024)
+Computer Architecture (Fall 2025)
 ------------------------------------------------------
-* Week 1 (Sep 10): Introduction
+* Week 1 (Sep 9): Introduction
     - Announcement
-        * Despite September 17th being a national holiday for Mid-Autumn Festival, our class will continue as scheduled, and students are required to complete an online quiz. For information on how to participate and access the remote class, please refer to this website.
+        * Next week, we will have a quiz.
     - **[Course Introduction](https://docs.google.com/presentation/d/19nSmimXfaZ9JyViZSgmWdsmNlWXjKUxx3c3Ptw7x0UM/edit?usp=sharing)**
     - [David Patterson](https://en.wikipedia.org/wiki/David_Patterson_(computer_scientist)): [A New Golden Age for Computer Architecture: History, Challenges and Opportunities](https://content.riscv.org/wp-content/uploads/2018/12/A-New-Golden-Age-for-Computer-Architecture-History-Challenges-and-Opportunities-David-Patterson-.pdf) / [video](https://youtu.be/uyc_pDBJotI)
         * [Article](https://cacm.acm.org/magazines/2019/2/234352-a-new-golden-age-for-computer-architecture/fulltext), [note](https://github.com/cristiean/notes/blob/4c4ceb291ba68c55659ab0d4571385c8cccacd21/a-new-golden-age-for-computer-architecture.md)
@@ -26,12 +26,12 @@ Computer Architecture (Fall 2024)
     - [C Memory Management](https://docs.google.com/presentation/d/1WLn7-SNW7QtSMQO_Zz4K1M4e1oChb0jiy8OVDcqap5k/edit?usp=sharing) / [video](https://youtu.be/njNpPYlRXuM)
     - [RISC-V Instructions](https://docs.google.com/presentation/d/1qNVK8ULddo6luq0Rrjj_bmOShhcx9hlESN36AK91n6I/edit?usp=sharing)
 
-* Week 2 (Sep 17): Quiz
+* Week 2 (Sep 16): Quiz
     - Announcement
         * The first assignment, consisting of RISC-V assembly programming, will be given next week.
     - [Quiz1](https://hackmd.io/@sysprog/arch2024-quiz1): C programming, bit-wise operations, number representation, floating-point / [Solutions](https://hackmd.io/@sysprog/arch2024-quiz1-sol)
 
-* Week 3 (Sep 24): RISC-V
+* Week 3 (Sep 23): RISC-V
     - Announcement:
         + Quiz2 is scheduled on Oct 1: Due to the possibility that the classroom capacity may not accommodate the number of enrolled students, additional classrooms may be arranged as test venues. Please make sure to check this page on the evening of September 30th for related announcements.
             * [2023 Quiz2](https://hackmd.io/@sysprog/arch2023-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2023-quiz2-sol)
@@ -50,7 +50,7 @@ Computer Architecture (Fall 2024)
     - [Lab1: RV32I Assembly](https://hackmd.io/@sysprog/H1TpVYMdB)
     - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2024-arch-homework1) (Due: Oct 14, 2024)
 
-* Week 4 (Oct 1): Quiz + RISC-V
+* Week 4 (Sep 30): Quiz + RISC-V
     - Announcement
         * Due to the impact of Typhoon Krathon, Quiz 2 will be conducted online instead of in-person. Please refresh this web page to obtain the latest information on how to participate in the online quiz and attend the course remotely.
         * Access the live-streamed course on [YouTube](https://youtube.com/live/pVjSV5l6aNA). Watch the live stream carefully: Quiz 2 participation instructions will be provided during the broadcast.
@@ -59,7 +59,7 @@ Computer Architecture (Fall 2024)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1pXcXcBjmUCXFJNFi4DpFLtpyDKsol5SaKfVce1hKdXE/edit?usp=sharing) / [video](https://youtu.be/VqzPnKPjcj8)
     - RISC-V Instruction Formats [Part II](https://docs.google.com/presentation/d/1rYJeuDUPezDdk01M8ib3XTo15IGLdsMJclzD4Vv9XGQ/edit?usp=sharing) / [video](https://youtu.be/6L5EeJl7T9w)
 
-* Week 5 (Oct 8): RV32I + Code Review
+* Week 5 (Oct 7): RV32I + Code Review
     - Review: [RISC-V Architecture Instruction Encoding](https://youtu.be/NmxhoMCeH8I)
         * Revisit the RV32I specification and instruction encoding, as they serve as the foundation for implementing RISC-V processor cores in HDL.
         * The system instructions: `ecall`, `ebreak`, and `csr*`.
@@ -67,7 +67,7 @@ Computer Architecture (Fall 2024)
     - [Recursion as a Problem-Solving Technique](https://hackmd.io/@sysprog/SyTFEhxyJe)
     - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2024-arch-homework1)
 
-* Week 6 (Oct 15): Toolchain + Digital Systems
+* Week 6 (Oct 14): Toolchain + Digital Systems
     - Announcement
         - Quiz 3 is scheduled for Oct 22 and will cover RISC-V assembly programming, software optimizations, instruction encoding, sequential logic, and combinational logic.
             - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3) / [solution](https://hackmd.io/@sysprog/arch2020-quiz3-sol)
@@ -86,10 +86,10 @@ Computer Architecture (Fall 2024)
     - [SDS State](https://docs.google.com/presentation/d/1qXyH6xN_1QxII2YjoyuF5DUIst-A7pB1JG1PKdwKkgE/edit?usp=sharing) / [video](https://youtu.be/wOohQuD9wAg)
     - [Combinational Logic Blocks](https://docs.google.com/presentation/d/1JahtX4WzKs2JGx_qYfjkdJE5pQwBfXBX46w4NnQOV_E/edit?usp=sharing) / [video](https://youtu.be/S6TNo2jSu9A)
 
-* Week 7 (Oct 22): Quiz
+* Week 7 (Oct 21): Quiz
     - [Quiz3](https://hackmd.io/@sysprog/arch2024-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2024-quiz3-sol)
 
-* Week 8 (Oct 29): Review + Datapath and Control
+* Week 8 (Oct 28): Review + Datapath and Control
     - Announcement:
        - [Homework 2](https://hackmd.io/@sysprog/2024-arch-homework2) is undergoing significant revisions. Please keep an eye on your email for updates.
        - The instructor has been grappling with the LLM for several weeks though.
@@ -99,7 +99,7 @@ Computer Architecture (Fall 2024)
         * [World's Fastest Square Root: Newton's Method](https://youtu.be/FpOEx6zFf1o)
     - [RISC-V Datapath I](https://docs.google.com/presentation/d/1kYFjJROF0OVFPPXCrPXBnlY7d9lP2rwcLxNJvI6DuAE/edit?usp=sharing) / [video](https://youtu.be/hPJXX91kurw)
 
-* Week 9 (Nov 5): Datapath and Control + Pipeline
+* Week 9 (Nov 4): Datapath and Control + Pipeline
     - Announcement:
        - [Homework 2](https://hackmd.io/@sysprog/2024-arch-homework2) is out. Deadline: Nov 18, 2024
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
@@ -114,7 +114,7 @@ Computer Architecture (Fall 2024)
     - MIT 6.191 [L15: Introduction to Pipelining](https://youtu.be/5NQkhqZe8_8), [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA)
         * [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
 
-* Week 10 (Nov 12): Pipelined Processors
+* Week 10 (Nov 11): Pipelined Processors
     - Announcement:
         + Next week, we will continue reviewing all the assignments.
         + Quiz 4 is scheduled next week.
@@ -129,11 +129,11 @@ Computer Architecture (Fall 2024)
     - [RISC-V 5-Stage Pipeline](https://docs.google.com/presentation/d/1v-Squx8lK-oOrflFOwBZh-ue94seVHZudqDOgJmFf5Q/edit?usp=sharing) / [video-1](https://youtu.be/LJt737KqWzI), [video-2](https://youtu.be/UxMLmMdFzTI), [video-3](https://youtu.be/oPmRV9MzuIU)
     - [Lab3: Construct a single-cycle CPU with Chisel](https://hackmd.io/@sysprog/r1mlr3I7p)
 
-* Week 11 (Nov 19): Quiz + Homework Review
+* Week 11 (Nov 18): Quiz + Homework Review
     - [Quiz4](https://hackmd.io/@sysprog/arch2024-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2024-quiz4-sol)
     - [Homework1](https://hackmd.io/@sysprog/2024-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2024-arch-homework2)
 
-* Week 12 (Nov 26): Cache
+* Week 12 (Nov 25): Cache
     * Announcement
         * Moved to self-study, no in-class session today!
     * [Cache (1)](https://docs.google.com/presentation/d/1dv9zkRV5mS2heGojIPm00Ms0fAqKDQ2D7yE26P4MgJI/edit?usp=sharing) / [video](https://youtu.be/nsdIU-S0pp4)
@@ -144,7 +144,7 @@ Computer Architecture (Fall 2024)
         * [The next big tech war front: RISC-V](https://asiatimes.com/2023/11/the-next-big-tech-war-front-risc-v/)
         * [Designing in 2023: 10 Problems to Solve](https://youtu.be/o70yKYWgtVI) - Jim Keller, [Tenstorrent](https://tenstorrent.com/)
             - [Oral History of Jim Keller](https://youtu.be/Xh8nhK7WS80)
-* Week13 (Dec 3): Virtual Memory + Operating System + Vector Extension
+* Week13 (Dec 2): Virtual Memory + Operating System + Vector Extension
     - Announcement:
         * Quiz 5 is scheduled on Dec 10
             - [2023-Quiz5](https://hackmd.io/@sysprog/arch2023-quiz5) / [solution](https://hackmd.io/@sysprog/arch2023-quiz5-sol) / [annotated](https://hackmd.io/@c3WNnG7RRK2J17ifSiezZA/Bk1mQfKuT)
@@ -172,7 +172,7 @@ Computer Architecture (Fall 2024)
         * [The RISC-V Vector ISA Tutorial](https://riscv.org/wp-content/uploads/2018/05/15.20-15.55-18.05.06.VEXT-bcn-v1.pdf)
         * [RISC-V "V" Vector Extension](https://github.com/riscvarchive/riscv-v-spec/blob/master/v-spec.adoc)
 
-* Week14 (Dec 10): Quiz + Synchronization
+* Week14 (Dec 9): Quiz + Synchronization
     - Announcement:
         * Regarding the final project, students may form groups of 1 to 3 members (the project's difficulty will depend on the group size and members' backgrounds). Please refer to last year’s projects for reference and send an email to `jserv.tw@gmail.com`, specifying your group members and proposed project topics (you may suggest multiple topics, with the final decision made by the instructor).
         * Check the listing of [final/term projects in 2023](https://hackmd.io/@sysprog/arch2023-projects) for reference.
@@ -181,7 +181,7 @@ Computer Architecture (Fall 2024)
     - [Synchronization](https://youtu.be/r8H_af_dCF0)
         + Please check your operating system textbook for such topic.
 
-* Week15 (Dec 17): Operating System, Multithreading
+* Week15 (Dec 16): Operating System, Multithreading
     - Announcement:
         * Quiz6 is scheduled on Dec 24
             - [2023-Quiz6](https://hackmd.io/@sysprog/arch2023-quiz6) / [solution](https://hackmd.io/@sysprog/arch2023-quiz6-sol)
@@ -200,7 +200,7 @@ Computer Architecture (Fall 2024)
         + RISC-V AMOSWAP instruction
         + [RISC-V spec references the word 'hart' - what does 'hart' mean?](https://stackoverflow.com/questions/42676827/risc-v-spec-references-the-word-hart-what-does-hart-mean)
  
-* Week16 (Dec 24): Quiz + Memory Model, I/O
+* Week16 (Dec 23): Quiz + Memory Model, I/O
     - Announcement:
         * The class will be held online next week. (Happy New Year!) Please check this page for updates.
         * Quiz7 is scheduled on Jan 7, 2025.
@@ -211,7 +211,7 @@ Computer Architecture (Fall 2024)
         * Traps/Interrupts/Exceptions
         * Trap Handling in 5-Stage Pipeline
 
-* Week17 (Dec 31): Modern Processors | [online via YouTube](https://youtube.com/live/OnW1YjgTew8) start at 09:15AM
+* Week17 (Dec 30): Modern Processors | [online via YouTube](https://youtube.com/live/OnW1YjgTew8) start at 09:15AM
     - Announcements
         * Quiz7 is scheduled on Jan 7, 2025
         * Update [term projects](https://hackmd.io/@sysprog/arch2024-projects) and contact the instructor if you didn't receive the confirmation letter
@@ -226,6 +226,6 @@ Computer Architecture (Fall 2024)
     - [RISC vs. CISC](https://yarchive.net/comp/risc_definition.html) by [John Mashey](https://en.wikipedia.org/wiki/John_Mashey), one of the founders of the Standard Performance Evaluation Corporation (SPEC) benchmarking group.
         * [HackerNews](https://news.ycombinator.com/item?id=34196370)
 
-* Week 18 (Jan 7): Review
+* Week 18 (Jan 6): Review
     - [Quiz7](https://hackmd.io/@sysprog/arch2024-quiz7) / [solution](https://hackmd.io/@sysprog/arch2024-quiz7-sol)
     - Review [term projects](https://hackmd.io/@sysprog/arch2024-projects)
