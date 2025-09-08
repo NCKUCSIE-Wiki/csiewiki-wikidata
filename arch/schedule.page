@@ -9,6 +9,7 @@ toc: no
     * Follow the classes: [CS 61C at UC Berkeley](https://cs61c.org/), [CMU 18-447: Introduction to Computer Architecture](https://users.ece.cmu.edu/~jhoe/doku/doku.php?id=18-447_course_schedule_spring_2024)
 - Course grading
     * Quiz (30%), Homework (30%), Final/Term Project (40%)
+    * NOTICE: You must participate in at least one post-quiz or homework oral discussion in person before December 30, 2025; otherwise, no credit will be awarded for quizzes.
 - **Schedule is tentative and subject to change!**
 
 Computer Architecture (Fall 2025)
@@ -24,12 +25,12 @@ Computer Architecture (Fall 2025)
     - [Number Representation](https://docs.google.com/presentation/d/16Cb__TYt97kCZ87WTg8VFWcYGsaiC4CmDNJTWpoM_ZI/edit?usp=sharing) / [video](https://www.youtube.com/watch?v=DWmHvlFFfLI&list=PLDoI-XvXO0aqgoMQvogzmf7CKiSMSUS3M&index=4)
     - [Understanding Floating Point Struggles](https://youtu.be/8RvnnUuoHTA) / [Floating Point](https://docs.google.com/presentation/d/1aGP15qHuOsLi_K4xiWhTZD36-D_eECox2LWxbP3Rvgk/edit?usp=sharing) ([video](https://youtu.be/RWj8ZmzeHNw))
     - [C Memory Management](https://docs.google.com/presentation/d/1WLn7-SNW7QtSMQO_Zz4K1M4e1oChb0jiy8OVDcqap5k/edit?usp=sharing) / [video](https://youtu.be/njNpPYlRXuM)
-    - [RISC-V Instructions](https://docs.google.com/presentation/d/1qNVK8ULddo6luq0Rrjj_bmOShhcx9hlESN36AK91n6I/edit?usp=sharing)
 
 * Week 2 (Sep 16): Quiz
     - Announcement
         * The first assignment, consisting of RISC-V assembly programming, will be given next week.
     - [Quiz1](https://hackmd.io/@sysprog/arch2024-quiz1): C programming, bit-wise operations, number representation, floating-point / [Solutions](https://hackmd.io/@sysprog/arch2024-quiz1-sol)
+    - [RISC-V Instructions](https://docs.google.com/presentation/d/1qNVK8ULddo6luq0Rrjj_bmOShhcx9hlESN36AK91n6I/edit?usp=sharing)
 
 * Week 3 (Sep 23): RISC-V
     - Announcement:
