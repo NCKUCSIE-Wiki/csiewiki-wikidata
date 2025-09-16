@@ -27,8 +27,12 @@ Computer Architecture (Fall 2025)
 
 * Week 2 (Sep 16): Quiz
     - Announcement
-        * The first assignment, which involves RISC-V assembly programming, will be given this week.
+        * The first assignment, which involves RISC-V assembly programming, will be given on Sep 18.
     - [Quiz1](https://hackmd.io/@sysprog/arch2025-quiz1): C programming, bit-wise operations, number representation, floating-point / [Solutions](https://hackmd.io/@sysprog/arch2025-quiz1-sol)
+    - [Principles of this course](https://docs.google.com/presentation/d/1V_X3jKMotcwaiNIXhUbS7t2gWb0s7okWhYXbZeDc3jM/edit?usp=sharing)
+    - [Intro to RISC-V](https://docs.google.com/presentation/d/1PeBOPGgaBSbqng00PM_NaqddFOoz-5__N8lLAk2MKho/edit?usp=sharing) / [video](https://youtu.be/xdma5w1_iVI)
+        * [RISC-V Assembly Programmer's Manual](https://github.com/riscv-non-isa/riscv-asm-manual/blob/main/src/asm-manual.adoc)
+        * [The RISC-V Instruction Set Manual: Volume I: Unprivileged ISA](https://content.riscv.org/wp-content/uploads/2019/06/riscv-spec.pdf)
     - [RISC-V Instructions](https://docs.google.com/presentation/d/1qNVK8ULddo6luq0Rrjj_bmOShhcx9hlESN36AK91n6I/edit?usp=sharing)
 
 * Week 3 (Sep 23): RISC-V
@@ -39,10 +43,6 @@ Computer Architecture (Fall 2025)
             * [2021 Quiz2](https://hackmd.io/@sysprog/arch2021-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2021-quiz2-sol)
         + [Homework 1](https://hackmd.io/@sysprog/2024-arch-homework1) is out.
         + Code Review for [Homework 1](https://hackmd.io/@sysprog/2024-arch-homework1) on Oct 8
-    - [Principles of this course](https://docs.google.com/presentation/d/1V_X3jKMotcwaiNIXhUbS7t2gWb0s7okWhYXbZeDc3jM/edit?usp=sharing)
-    - [Intro to RISC-V](https://docs.google.com/presentation/d/1PeBOPGgaBSbqng00PM_NaqddFOoz-5__N8lLAk2MKho/edit?usp=sharing) / [video](https://youtu.be/xdma5w1_iVI)
-        * [RISC-V Assembly Programmer's Manual](https://github.com/riscv-non-isa/riscv-asm-manual/blob/main/src/asm-manual.adoc)
-        * [The RISC-V Instruction Set Manual: Volume I: Unprivileged ISA](https://content.riscv.org/wp-content/uploads/2019/06/riscv-spec.pdf)
     - [RISC-V Data Transfer](https://docs.google.com/presentation/d/1N1ZyPLwJDN2hEqKT59nDunYWbXnVZsVDq5rg32Vckv8/edit?usp=sharing) / [video](https://youtu.be/-i6BmbdyftI)
     - [RISC-V Decision Making and Logical Operations](https://docs.google.com/presentation/d/1-vTyUiY8LeQZ1yD2x1EVsu85iXfJ0iSYiyWvLQ9QzLI/edit?usp=sharing) / [video](https://youtu.be/_qIYRafGUUs)
     - [RISC-V Procedures](https://docs.google.com/presentation/d/18F1vHY5Mv5E6WU6BvktXzkVbZrTZ3jQUbkWOjEPGE4I/edit?usp=sharing) / [video](https://youtu.be/slyeHO64sWg)
