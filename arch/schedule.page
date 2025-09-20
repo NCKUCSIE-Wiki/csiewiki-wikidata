@@ -27,7 +27,7 @@ Computer Architecture (Fall 2025)
 
 * Week 2 (Sep 16): Quiz
     - Announcement
-        * The first assignment, which involves RISC-V assembly programming, will be given on Sep 19.
+        * The first assignment, which involves RISC-V assembly programming, will be given on Sep 21.
     - [Quiz1](https://hackmd.io/@sysprog/arch2025-quiz1): C programming, bit-wise operations, number representation, floating-point / [Solutions](https://hackmd.io/@sysprog/arch2025-quiz1-sol)
     - [Principles of this course](https://docs.google.com/presentation/d/1V_X3jKMotcwaiNIXhUbS7t2gWb0s7okWhYXbZeDc3jM/edit?usp=sharing)
     - [Intro to RISC-V](https://docs.google.com/presentation/d/1PeBOPGgaBSbqng00PM_NaqddFOoz-5__N8lLAk2MKho/edit?usp=sharing) / [video](https://youtu.be/xdma5w1_iVI)
