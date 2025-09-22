@@ -10,6 +10,7 @@ toc: no
 - Course grading
     * Quiz (30%), Homework (30%), Final/Term Project (40%)
     * NOTICE: You must participate in at least one post-quiz or homework oral discussion in person before December 30, 2025; otherwise, no credit will be awarded for quizzes.
+- [Guidelines for Student Use of AI Tools](https://hackmd.io/@sysprog/arch2025-ai-guidelines)
 - **Schedule is tentative and subject to change!**
 
 Computer Architecture (Fall 2025)
@@ -35,6 +36,7 @@ Computer Architecture (Fall 2025)
 
 * Week 3 (Sep 23): RISC-V
     - Announcement:
+        + [Guidelines for Student Use of AI Tools](https://hackmd.io/@sysprog/arch2025-ai-guidelines)
         + Quiz2 is scheduled on Sep 30: Due to the possibility that the classroom capacity may not accommodate the number of enrolled students, additional classrooms may be arranged as test venues. Please make sure to check this page on the evening of September 29th for related announcements.
             * [2023 Quiz2](https://hackmd.io/@sysprog/arch2023-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2023-quiz2-sol)
             * [2022 Quiz2](https://hackmd.io/@sysprog/arch2022-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2022-quiz2-sol)
