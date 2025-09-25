@@ -37,7 +37,7 @@ Computer Architecture (Fall 2025)
 * Week 3 (Sep 23): RISC-V
     - Announcement:
         + [Guidelines for Student Use of AI Tools](https://hackmd.io/@sysprog/arch2025-ai-guidelines)
-        + Quiz2 is scheduled on Sep 30: Due to the possibility that the classroom capacity may not accommodate the number of enrolled students, additional classrooms may be arranged as test venues. Please make sure to check this page on the evening of September 29th for related announcements.
+        + Quiz2 is scheduled on Sep 30.
             * [2024 Quiz2](https://hackmd.io/@sysprog/arch2024-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2024-quiz2-sol)
             * [2023 Quiz2](https://hackmd.io/@sysprog/arch2023-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2023-quiz2-sol)
             * [2022 Quiz2](https://hackmd.io/@sysprog/arch2022-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2022-quiz2-sol)
@@ -54,9 +54,7 @@ Computer Architecture (Fall 2025)
 
 * Week 4 (Sep 30): Quiz + RISC-V
     - Announcement
-        * Due to the impact of Typhoon Krathon, Quiz 2 will be conducted online instead of in-person. Please refresh this web page to obtain the latest information on how to participate in the online quiz and attend the course remotely.
-        * Access the live-streamed course on [YouTube](https://youtube.com/live/pVjSV5l6aNA). Watch the live stream carefully: Quiz 2 participation instructions will be provided during the broadcast.
-    - [Quiz2](https://hackmd.io/@sysprog/arch2024-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2024-quiz2-sol)
+    - [Quiz2](https://hackmd.io/@sysprog/arch2025-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2025-quiz2-sol)
     - [Fixed-point Arithmetic](https://hackmd.io/@maromaSamsa/HkjefPbFs)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1pXcXcBjmUCXFJNFi4DpFLtpyDKsol5SaKfVce1hKdXE/edit?usp=sharing) / [video](https://youtu.be/VqzPnKPjcj8)
     - RISC-V Instruction Formats [Part II](https://docs.google.com/presentation/d/1rYJeuDUPezDdk01M8ib3XTo15IGLdsMJclzD4Vv9XGQ/edit?usp=sharing) / [video](https://youtu.be/6L5EeJl7T9w)
