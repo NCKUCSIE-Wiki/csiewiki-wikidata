@@ -54,7 +54,9 @@ Computer Architecture (Fall 2025)
 
 * Week 4 (Sep 30): Quiz + RISC-V
     - Announcement
+        + Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2025-arch-homework1) next week
     - [Quiz2](https://hackmd.io/@sysprog/arch2025-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2025-quiz2-sol)
+    - [Recursion as a Problem-Solving Technique](https://hackmd.io/@sysprog/SyTFEhxyJe)
     - [Fixed-point Arithmetic](https://hackmd.io/@maromaSamsa/HkjefPbFs)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1pXcXcBjmUCXFJNFi4DpFLtpyDKsol5SaKfVce1hKdXE/edit?usp=sharing) / [video](https://youtu.be/VqzPnKPjcj8)
     - RISC-V Instruction Formats [Part II](https://docs.google.com/presentation/d/1rYJeuDUPezDdk01M8ib3XTo15IGLdsMJclzD4Vv9XGQ/edit?usp=sharing) / [video](https://youtu.be/6L5EeJl7T9w)
@@ -64,8 +66,7 @@ Computer Architecture (Fall 2025)
         * Revisit the RV32I specification and instruction encoding, as they serve as the foundation for implementing RISC-V processor cores in HDL.
         * The system instructions: `ecall`, `ebreak`, and `csr*`.
         * [online tool for RISC-V Instruction Encoder/Decoder](https://luplab.gitlab.io/rvcodecjs/) / [source code](https://gitlab.com/luplab/rvcodecjs)
-    - [Recursion as a Problem-Solving Technique](https://hackmd.io/@sysprog/SyTFEhxyJe)
-    - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2024-arch-homework1)
+    - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2025-arch-homework1)
 
 * Week 6 (Oct 14): Toolchain + Digital Systems
     - Announcement
