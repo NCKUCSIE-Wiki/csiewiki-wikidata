@@ -62,6 +62,9 @@ Computer Architecture (Fall 2025)
     - RISC-V Instruction Formats [Part II](https://docs.google.com/presentation/d/1rYJeuDUPezDdk01M8ib3XTo15IGLdsMJclzD4Vv9XGQ/edit?usp=sharing) / [video](https://youtu.be/6L5EeJl7T9w)
 
 * Week 5 (Oct 7): RV32I + Code Review
+    - Announcement
+        * In today’s class, we will discuss the progress of [Homework 1](https://hackmd.io/@sysprog/2025-arch-homework1) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should paste the link to your HackMD notes for [Homework 1](https://hackmd.io/@sysprog/2025-arch-homework1) here. $\to$ [2025-10-07](https://hackmd.io/AG3wlG02QuKPnjj5Y6p1Iw)
+        * Quiz 3 is scheduled for Oct 21. Be sure to carefully review past quizzes, understand their level of difficulty, and practice thoroughly.
     - Review: [RISC-V Architecture Instruction Encoding](https://youtu.be/NmxhoMCeH8I)
         * Revisit the RV32I specification and instruction encoding, as they serve as the foundation for implementing RISC-V processor cores in HDL.
         * The system instructions: `ecall`, `ebreak`, and `csr*`.
@@ -70,12 +73,13 @@ Computer Architecture (Fall 2025)
 
 * Week 6 (Oct 14): Toolchain + Digital Systems
     - Announcement
-        - Quiz 3 is scheduled for Oct 22 and will cover RISC-V assembly programming, software optimizations, instruction encoding, sequential logic, and combinational logic.
+        - Quiz 3 is scheduled for Oct 21 and will cover RISC-V assembly programming, software optimizations, instruction encoding, sequential logic, and combinational logic.
             - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3) / [solution](https://hackmd.io/@sysprog/arch2020-quiz3-sol)
             - [2021-Quiz3](https://hackmd.io/@sysprog/arch2021-quiz3) / [solution](https://hackmd.io/@sysprog/arch2021-quiz3-sol)
             - [2021-Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4) / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
             - [2022-Quiz3](https://hackmd.io/@sysprog/arch2022-quiz3) / [solution](https://hackmd.io/@sysprog/arch2022-quiz3-sol)
             - [2023-Quiz3](https://hackmd.io/@sysprog/arch2023-quiz3) / [solution](https://hackmd.io/@sysprog/arch2023-quiz3-sol)
+            - [2024-Quiz3](https://hackmd.io/@sysprog/arch2024-quiz3) / [solution](https://hackmd.io/@sysprog/arch2024-quiz3-sol)
     - [Compiling, Assembling, Linking, and Loading](https://docs.google.com/presentation/d/1uAURy-tL-K9oMtUP1gY9034gsOrxbhhDL9MnoTm1NKM/edit?usp=sharing) / [video-1](https://youtu.be/oeRTvGGLRZI) + [video-2](https://youtu.be/Y8d6igTajtQ)
     * [Lab2: RISC-V + VENUS](https://cs61c.org/fa24/labs/lab03/) / [slides](https://docs.google.com/presentation/d/1vsXYoqsyJtZTE1_z2wtnXgsnbZaVFHGLjQdJsckxFIc/edit?usp=sharing)
     * [Binary marble adding machine](https://woodgears.ca/marbleadd/) / [video](https://youtu.be/GcDshWmhF4A)
