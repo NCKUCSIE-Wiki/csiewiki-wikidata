@@ -57,6 +57,7 @@ Computer Architecture (Fall 2025)
     - Announcement
         + Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2025-arch-homework1) next week
     - [Quiz2](https://hackmd.io/@sysprog/arch2025-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2025-quiz2-sol)
+       * Follow-ups: [LED matrix](https://hackmd.io/@zYoyoYv7SiG-PRNw39_9xQ/BytwOti3gl), [Tower of Hanoi](https://hackmd.io/@vicLin/Hy3CeSzagg)
     - [Recursion as a Problem-Solving Technique](https://hackmd.io/@sysprog/SyTFEhxyJe)
     - [Fixed-point Arithmetic](https://hackmd.io/@maromaSamsa/HkjefPbFs)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1pXcXcBjmUCXFJNFi4DpFLtpyDKsol5SaKfVce1hKdXE/edit?usp=sharing) / [video](https://youtu.be/VqzPnKPjcj8)
