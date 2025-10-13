@@ -82,6 +82,8 @@ Computer Architecture (Fall 2025)
             - [2022-Quiz3](https://hackmd.io/@sysprog/arch2022-quiz3) / [solution](https://hackmd.io/@sysprog/arch2022-quiz3-sol)
             - [2023-Quiz3](https://hackmd.io/@sysprog/arch2023-quiz3) / [solution](https://hackmd.io/@sysprog/arch2023-quiz3-sol)
             - [2024-Quiz3](https://hackmd.io/@sysprog/arch2024-quiz3) / [solution](https://hackmd.io/@sysprog/arch2024-quiz3-sol)
+        - The follow-ups for Quizzes 1 and 2, including lecture discussions and further improvements, have been updated in the syllabus. Please review them carefully.
+        - Homework 2 will be assigned next week, focusing on bare-metal programming, an essential skill for embedded system engineers. Search [bare-metal](https://www.google.com/about/careers/applications/jobs/results/?q=bare-metal) via Google Career.
     - [Compiling, Assembling, Linking, and Loading](https://docs.google.com/presentation/d/1uAURy-tL-K9oMtUP1gY9034gsOrxbhhDL9MnoTm1NKM/edit?usp=sharing) / [video-1](https://youtu.be/oeRTvGGLRZI) + [video-2](https://youtu.be/Y8d6igTajtQ)
     - [Freestanding RISC-V Programs](https://youtu.be/iml0DBo5yqo)
         + [bare metal](https://en.wikipedia.org/wiki/Bare_machine)
