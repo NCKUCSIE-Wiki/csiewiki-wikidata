@@ -96,12 +96,11 @@ Computer Architecture (Fall 2025)
     - [Combinational Logic Blocks](https://docs.google.com/presentation/d/1JahtX4WzKs2JGx_qYfjkdJE5pQwBfXBX46w4NnQOV_E/edit?usp=sharing) / [video](https://youtu.be/S6TNo2jSu9A)
 
 * Week 7 (Oct 21): Quiz
-    - [Quiz3](https://hackmd.io/@sysprog/arch2024-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2024-quiz3-sol)
+    - Announcement:
+       - [Homework 2](https://hackmd.io/@sysprog/2024-arch-homework2) is out. Deadline: Nov 12, 2025
+    - [Quiz3](https://hackmd.io/@sysprog/arch2025-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2025-quiz3-sol)
 
 * Week 8 (Oct 28): Review + Datapath and Control
-    - Announcement:
-       - [Homework 2](https://hackmd.io/@sysprog/2024-arch-homework2) is undergoing significant revisions. Please keep an eye on your email for updates.
-       - The instructor has been grappling with the LLM for several weeks though.
     - "What I cannot create, I do not understand." - On Richard Feynman's blackboard at the time of his death in 1988 / [Build Your Own X](https://build-your-own-x.vercel.app/)
     - Revisit [Quiz 3](https://hackmd.io/@sysprog/arch2024-quiz3-sol)
         * [RISC-V Architecture Instruction Encoding](https://youtu.be/NmxhoMCeH8I)
@@ -109,8 +108,6 @@ Computer Architecture (Fall 2025)
     - [RISC-V Datapath I](https://docs.google.com/presentation/d/1kYFjJROF0OVFPPXCrPXBnlY7d9lP2rwcLxNJvI6DuAE/edit?usp=sharing) / [video](https://youtu.be/hPJXX91kurw)
 
 * Week 9 (Nov 4): Datapath and Control + Pipeline
-    - Announcement:
-       - [Homework 2](https://hackmd.io/@sysprog/2024-arch-homework2) is out. Deadline: Nov 18, 2024
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
     - video: [Circuits recap](https://youtu.be/N36wWh0DriA)
     - [RISC-V Datapath II](https://docs.google.com/presentation/d/1nJknDrB402GuriZuqeYOVpoJv9bvYoZeFRSPKzqjdqw/edit?usp=sharing) / [video](https://youtu.be/wQC7mjjfJDw)
