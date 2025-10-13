@@ -86,6 +86,8 @@ Computer Architecture (Fall 2025)
     - [Freestanding RISC-V Programs](https://youtu.be/iml0DBo5yqo)
         + [bare metal](https://en.wikipedia.org/wiki/Bare_machine)
     * [Lab2: RISC-V](https://hackmd.io/@sysprog/Sko2Ja5pel) for RV32I bare-metal programming
+    - Revisit [Quiz 1](https://hackmd.io/@sysprog/arch2025-quiz1-sol)
+        * [World's Fastest Square Root: Newton's Method](https://youtu.be/FpOEx6zFf1o) (The subject line is somewhat misleading; we can improve it further.)
     * [Binary marble adding machine](https://woodgears.ca/marbleadd/) / [video](https://youtu.be/GcDshWmhF4A)
         - Yes, you can implement a few logic-like elements without electricity.
         - Logic gates are primarily implemented using diodes or transistors acting as electronic switches, but can also be constructed using vacuum tubes, electromagnetic relays (relay logic), fluidic logic, pneumatic logic, optics, molecules, or even mechanical elements. Now, most logic gates are made from MOSFETs (metal–oxide–semiconductor field-effect transistors).
@@ -102,9 +104,6 @@ Computer Architecture (Fall 2025)
 
 * Week 8 (Oct 28): Review + Datapath and Control
     - "What I cannot create, I do not understand." - On Richard Feynman's blackboard at the time of his death in 1988 / [Build Your Own X](https://build-your-own-x.vercel.app/)
-    - Revisit [Quiz 3](https://hackmd.io/@sysprog/arch2024-quiz3-sol)
-        * [RISC-V Architecture Instruction Encoding](https://youtu.be/NmxhoMCeH8I)
-        * [World's Fastest Square Root: Newton's Method](https://youtu.be/FpOEx6zFf1o)
     - [RISC-V Datapath I](https://docs.google.com/presentation/d/1kYFjJROF0OVFPPXCrPXBnlY7d9lP2rwcLxNJvI6DuAE/edit?usp=sharing) / [video](https://youtu.be/hPJXX91kurw)
 
 * Week 9 (Nov 4): Datapath and Control + Pipeline
