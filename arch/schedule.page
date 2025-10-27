@@ -125,6 +125,7 @@ Computer Architecture (Fall 2025)
             + Please run the cell blocks by either pressing SHIFT+ENTER on your keyboard
     - MIT 6.191 [L15: Introduction to Pipelining](https://youtu.be/5NQkhqZe8_8), [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA)
         * [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
+    - [Lab3: Construct a single-cycle CPU with Chisel](https://hackmd.io/@sysprog/r1mlr3I7p)
 
 * Week 10 (Nov 11): Pipelined Processors
     - Announcement:
@@ -138,9 +139,8 @@ Computer Architecture (Fall 2025)
             - [2024 Quiz4](https://hackmd.io/@sysprog/arch2024-quiz4) / [solution](https://hackmd.io/@sysprog/arch2024-quiz4-sol)
         + The next homework assignment will be given out next week, along with Quiz 4.
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p)
-    - [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
+    - [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [RISC-V 5-Stage Pipeline](https://docs.google.com/presentation/d/1v-Squx8lK-oOrflFOwBZh-ue94seVHZudqDOgJmFf5Q/edit?usp=sharing) / [video-1](https://youtu.be/LJt737KqWzI), [video-2](https://youtu.be/UxMLmMdFzTI), [video-3](https://youtu.be/oPmRV9MzuIU)
-    - [Lab3: Construct a single-cycle CPU with Chisel](https://hackmd.io/@sysprog/r1mlr3I7p)
 
 * Week 11 (Nov 18): Quiz + Homework Review
     - [Quiz4](https://hackmd.io/@sysprog/arch2024-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2024-quiz4-sol)
