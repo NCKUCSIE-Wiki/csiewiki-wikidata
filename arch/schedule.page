@@ -116,6 +116,11 @@ Computer Architecture (Fall 2025)
 * Week 9 (Nov 4): Datapath and Control + Pipeline
     - Announcement:
         + Quiz 4 is scheduled for Nov 18
+            - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4) / [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
+            - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5) / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol) / [annotated with Ripes](https://hackmd.io/@wIVnCcUaTouAktrkMVLEMA/rkm8OkOjF)
+            - [2022 Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4) / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/SJxvlqOds)
+            - [2023 Quiz4](https://hackmd.io/@sysprog/arch2023-quiz4) / [solution](https://hackmd.io/@sysprog/arch2023-quiz4-sol) / [annotated](https://hackmd.io/@c3WNnG7RRK2J17ifSiezZA/Bk1mQfKuT)
+            - [2024 Quiz4](https://hackmd.io/@sysprog/arch2024-quiz4) / [solution](https://hackmd.io/@sysprog/arch2024-quiz4-sol)
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
     - [RISC-V Processor Design Control](https://docs.google.com/presentation/d/1EoTcGYgOlqO7ytnzHmQi_2JB1g-fyXpyYp7AV7dvwMs/edit?usp=sharing) / [video](https://youtu.be/bTM2t0uiv6I)
     - Constructing Hardware in a Scala Embedded Language ([Chisel](https://github.com/chipsalliance/chisel)) is an open-source hardware description language (HDL) used to describe digital electronics and circuits at the register-transfer level that facilitates advanced circuit generation and design reuse for both ASIC and FPGA digital logic designs.
@@ -131,12 +136,6 @@ Computer Architecture (Fall 2025)
     - Announcement:
         + Moved to self-study, no in-class session today!
         + Next week, we will review all the assignments.
-        + Quiz 4 is scheduled next week.
-            - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4) / [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
-            - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5) / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol) / [annotated with Ripes](https://hackmd.io/@wIVnCcUaTouAktrkMVLEMA/rkm8OkOjF)
-            - [2022 Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4) / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/SJxvlqOds)
-            - [2023 Quiz4](https://hackmd.io/@sysprog/arch2023-quiz4) / [solution](https://hackmd.io/@sysprog/arch2023-quiz4-sol) / [annotated](https://hackmd.io/@c3WNnG7RRK2J17ifSiezZA/Bk1mQfKuT)
-            - [2024 Quiz4](https://hackmd.io/@sysprog/arch2024-quiz4) / [solution](https://hackmd.io/@sysprog/arch2024-quiz4-sol)
         + The next homework assignment will be given out next week, along with Quiz 4.
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p)
     - [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
