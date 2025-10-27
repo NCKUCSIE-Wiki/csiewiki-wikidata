@@ -109,12 +109,14 @@ Computer Architecture (Fall 2025)
         * The textual description of Problem D in [Quiz3](https://hackmd.io/@sysprog/arch2025-quiz3) is correct, but the accompanying image is incorrect. As compensation, all participants of Quiz 3 will receive a 15-point increase.
         * If you voluntarily participate in the class discussions for [Quiz3](https://hackmd.io/@sysprog/arch2025-quiz3), please email the instructor afterward, including your responses to the instructor's questions and any follow-up contributions. You will receive an additional 10 points for Quiz 3. $\to$ [2025-10-28](https://hackmd.io/khvJlLnRRa2WqyUZk_Bdlw)
     - "What I cannot create, I do not understand." - On Richard Feynman's blackboard at the time of his death in 1988 / [Build Your Own X](https://build-your-own-x.vercel.app/)
+    - video: [Circuits recap](https://youtu.be/N36wWh0DriA)
     - [RISC-V Datapath I](https://docs.google.com/presentation/d/1kYFjJROF0OVFPPXCrPXBnlY7d9lP2rwcLxNJvI6DuAE/edit?usp=sharing) / [video](https://youtu.be/hPJXX91kurw)
     - [RISC-V Datapath II](https://docs.google.com/presentation/d/1nJknDrB402GuriZuqeYOVpoJv9bvYoZeFRSPKzqjdqw/edit?usp=sharing) / [video](https://youtu.be/wQC7mjjfJDw)
 
 * Week 9 (Nov 4): Datapath and Control + Pipeline
+    - Announcement:
+        + Quiz 4 is scheduled for Nov 18
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
-    - video: [Circuits recap](https://youtu.be/N36wWh0DriA)
     - [RISC-V Processor Design Control](https://docs.google.com/presentation/d/1EoTcGYgOlqO7ytnzHmQi_2JB1g-fyXpyYp7AV7dvwMs/edit?usp=sharing) / [video](https://youtu.be/bTM2t0uiv6I)
     - Constructing Hardware in a Scala Embedded Language ([Chisel](https://github.com/chipsalliance/chisel)) is an open-source hardware description language (HDL) used to describe digital electronics and circuits at the register-transfer level that facilitates advanced circuit generation and design reuse for both ASIC and FPGA digital logic designs.
         * [slides](https://docs.google.com/presentation/d/1gMtABxBEDFbCFXN_-dPyvycNAyFROZKwk-HMcnxfTnU/edit#slide=id.p)
@@ -126,14 +128,15 @@ Computer Architecture (Fall 2025)
 
 * Week 10 (Nov 11): Pipelined Processors
     - Announcement:
-        + Next week, we will continue reviewing all the assignments.
+        + Moved to self-study, no in-class session today!
+        + Next week, we will review all the assignments.
         + Quiz 4 is scheduled next week.
             - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4) / [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
             - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5) / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol) / [annotated with Ripes](https://hackmd.io/@wIVnCcUaTouAktrkMVLEMA/rkm8OkOjF)
             - [2022 Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4) / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/SJxvlqOds)
             - [2023 Quiz4](https://hackmd.io/@sysprog/arch2023-quiz4) / [solution](https://hackmd.io/@sysprog/arch2023-quiz4-sol) / [annotated](https://hackmd.io/@c3WNnG7RRK2J17ifSiezZA/Bk1mQfKuT)
-        + The next homework assignment will be given out next week, along with Quiz 4. Please review [last year's homework](https://hackmd.io/@sysprog/2023-arch-homework3) to get familiar with the procedure and expectations.
-    - [rv32emu](https://github.com/sysprog21/rv32emu) development, [capable of running Linux kernel smoothly](https://www.facebook.com/groups/system.software2024/posts/1722546388523252/) ([#508](https://github.com/sysprog21/rv32emu/pull/508))
+            - [2024 Quiz4](https://hackmd.io/@sysprog/arch2024-quiz4) / [solution](https://hackmd.io/@sysprog/arch2024-quiz4-sol
+        + The next homework assignment will be given out next week, along with Quiz 4.
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p)
     - [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA), [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [RISC-V 5-Stage Pipeline](https://docs.google.com/presentation/d/1v-Squx8lK-oOrflFOwBZh-ue94seVHZudqDOgJmFf5Q/edit?usp=sharing) / [video-1](https://youtu.be/LJt737KqWzI), [video-2](https://youtu.be/UxMLmMdFzTI), [video-3](https://youtu.be/oPmRV9MzuIU)
@@ -141,7 +144,7 @@ Computer Architecture (Fall 2025)
 
 * Week 11 (Nov 18): Quiz + Homework Review
     - [Quiz4](https://hackmd.io/@sysprog/arch2024-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2024-quiz4-sol)
-    - [Homework1](https://hackmd.io/@sysprog/2024-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2024-arch-homework2)
+    - [Homework1](https://hackmd.io/@sysprog/2025-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2025-arch-homework2)
 
 * Week 12 (Nov 25): Cache
     * Announcement
