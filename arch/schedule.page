@@ -107,7 +107,7 @@ Computer Architecture (Fall 2025)
 * Week 8 (Oct 28): Review + Datapath and Control
     - Announcement:
         * The textual description of Problem D in [Quiz3](https://hackmd.io/@sysprog/arch2025-quiz3) is correct, but the accompanying image is incorrect. As compensation, all participants of Quiz 3 will receive a 15-point increase.
-        * If you voluntarily participate in the class discussions for [Quiz3](https://hackmd.io/@sysprog/arch2025-quiz3), please email the instructor afterward, including your responses to the instructor's questions and any follow-up contributions. You will receive an additional 10 points for Quiz 3. $\to$ [2025-10-28](https://hackmd.io/khvJlLnRRa2WqyUZk_Bdlw)
+        * If you voluntarily participate in the class discussions for [Quiz3](https://hackmd.io/@sysprog/arch2025-quiz3), please email the instructor afterward, including your responses to the instructor's questions and any follow-up contributions. You will receive an additional 10 points for Quiz 3.
     - "What I cannot create, I do not understand." - On Richard Feynman's blackboard at the time of his death in 1988 / [Build Your Own X](https://build-your-own-x.vercel.app/)
     - video: [Circuits recap](https://youtu.be/N36wWh0DriA)
     - [RISC-V Datapath I](https://docs.google.com/presentation/d/1kYFjJROF0OVFPPXCrPXBnlY7d9lP2rwcLxNJvI6DuAE/edit?usp=sharing) / [video](https://youtu.be/hPJXX91kurw)
@@ -121,6 +121,9 @@ Computer Architecture (Fall 2025)
             - [2022 Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4) / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/SJxvlqOds)
             - [2023 Quiz4](https://hackmd.io/@sysprog/arch2023-quiz4) / [solution](https://hackmd.io/@sysprog/arch2023-quiz4-sol) / [annotated](https://hackmd.io/@c3WNnG7RRK2J17ifSiezZA/Bk1mQfKuT)
             - [2024 Quiz4](https://hackmd.io/@sysprog/arch2024-quiz4) / [solution](https://hackmd.io/@sysprog/arch2024-quiz4-sol)
+    - [Easy RISC-V](https://dramforever.github.io/easyriscv/)
+        * an interactive tutorial created by dramforever that introduces the fundamentals of RISC-V assembly programming through hands-on experimentation. Inspired by Easy 6502, it uses a browser-based simulator to let learners observe every step of program execution — from instruction decoding to register and memory state changes — without requiring any software installation or toolchain setup.
+        * The tutorial focuses on the minimalist yet complete RV32I + Zicsr instruction set, guiding readers from their first simple instruction sequence (addi, ebreak) to more complex topics such as arithmetic and logic operations, branches, jumps, memory access, stack management, function calls, control and status registers (CSRs), privilege levels, exceptions, and even the construction of a bare-bones operating system.
     - video: [Are Computers Still Getting Faster?](https://youtu.be/IuLxX07isNg)
     - [RISC-V Processor Design Control](https://docs.google.com/presentation/d/1EoTcGYgOlqO7ytnzHmQi_2JB1g-fyXpyYp7AV7dvwMs/edit?usp=sharing) / [video](https://youtu.be/bTM2t0uiv6I)
     - Constructing Hardware in a Scala Embedded Language ([Chisel](https://github.com/chipsalliance/chisel)) is an open-source hardware description language (HDL) used to describe digital electronics and circuits at the register-transfer level that facilitates advanced circuit generation and design reuse for both ASIC and FPGA digital logic designs.
