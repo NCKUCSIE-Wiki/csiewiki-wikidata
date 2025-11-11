@@ -141,7 +141,7 @@ Computer Architecture (Fall 2025)
     - Announcement:
         + Moved to self-study, no in-class session today!
         + Next week, we will review all the assignments.
-        + The next homework assignment will be given out next week, along with Quiz 4.
+        + [Homework 3](https://hackmd.io/@sysprog/2025-arch-homework3) is out. Deadline: Dec 10, 2025
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p)
     - [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [RISC-V 5-Stage Pipeline](https://docs.google.com/presentation/d/1v-Squx8lK-oOrflFOwBZh-ue94seVHZudqDOgJmFf5Q/edit?usp=sharing) / [video-1](https://youtu.be/LJt737KqWzI), [video-2](https://youtu.be/UxMLmMdFzTI), [video-3](https://youtu.be/oPmRV9MzuIU)
