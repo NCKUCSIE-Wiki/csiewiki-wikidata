@@ -147,7 +147,7 @@ Computer Architecture (Fall 2025)
     - [RISC-V 5-Stage Pipeline](https://docs.google.com/presentation/d/1v-Squx8lK-oOrflFOwBZh-ue94seVHZudqDOgJmFf5Q/edit?usp=sharing) / [video-1](https://youtu.be/LJt737KqWzI), [video-2](https://youtu.be/UxMLmMdFzTI), [video-3](https://youtu.be/oPmRV9MzuIU)
 
 * Week 11 (Nov 18): Quiz + Homework Review
-    - [Quiz4](https://hackmd.io/@sysprog/arch2024-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2024-quiz4-sol)
+    - [Quiz4](https://hackmd.io/@sysprog/arch2025-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2025-quiz4-sol)
     - [Homework1](https://hackmd.io/@sysprog/2025-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2025-arch-homework2)
 
 * Week 12 (Nov 25): Cache
