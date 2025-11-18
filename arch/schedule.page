@@ -147,6 +147,8 @@ Computer Architecture (Fall 2025)
     - [RISC-V 5-Stage Pipeline](https://docs.google.com/presentation/d/1v-Squx8lK-oOrflFOwBZh-ue94seVHZudqDOgJmFf5Q/edit?usp=sharing) / [video-1](https://youtu.be/LJt737KqWzI), [video-2](https://youtu.be/UxMLmMdFzTI), [video-3](https://youtu.be/oPmRV9MzuIU)
 
 * Week 11 (Nov 18): Quiz + Homework Review
+    - Announcement
+        * In today’s class, we will discuss the progress of [Homework 1](https://hackmd.io/@sysprog/2025-arch-homework1) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should paste the link to your HackMD notes for [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) here. $\to$ [2025-11-18](https://hackmd.io/QERe1qMbSra0UqdfEPUhMw)
     - [Quiz4](https://hackmd.io/@sysprog/arch2025-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2025-quiz4-sol)
     - [Homework1](https://hackmd.io/@sysprog/2025-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2025-arch-homework2)
 
