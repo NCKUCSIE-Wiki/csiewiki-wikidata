@@ -1,69 +1,7 @@
----
-title: 許士杰(許元杰)
-categories: User
-...
+<a href="https://win55kyc.com/">WIN55 KYC</a> là hệ sinh thái giải trí trực tuyến hiện đại, nơi người chơi tận hưởng cảm giác cá cược chân thực, tốc độ và đẳng cấp với giao diện sang trọng, bảo mật tối ưu và xử lý siêu nhanh. Nền tảng cung cấp đa dạng trò chơi từ thể thao, casino, slot, bắn cá đến xổ số, tất cả đều tỷ lệ thưởng cao, nạp rút tức thì chỉ trong vài giây. Cùng với đội ngũ hỗ trợ 24/7 chuyên nghiệp, WIN55 mang đến trải nghiệm giải trí an toàn, trọn vẹn và khác biệt.
 
-簡介
-==
-- 成功大學電腦與通信工程(甲) 碩1
-- 成功大學工程科學系104級
-- [Github](https://github.com/Jayjack0116)
-
-
- 嵌入式作業系統設計與實作(Spring 2015) 作業及筆記
-=============================================
-- week1&2 : [GitHub](https://github.com/Jayjack0116/arm-lecture), [Hackpad](https://embedded2015.hackpad.com/Fiif0IZOBiO)
-- week3 : [GitHub](https://github.com/Jayjack0116/freertos-basic), [Hackpad](https://embedded2015.hackpad.com/-Week-3-Lab39-QPGeogUZPYH)
-- week4 : [GitHub](https://github.com/Jayjack0116/visualizer), [Hackpad](https://embedded2015.hackpad.com/-2015-Week-4-Lab40-R7yMskhsW3B)
-- week5&6 : [Hackpad](https://embedded2015.hackpad.com/-Week-5-Lab41-dmHSY8aToOy)
-- week7&8 : [GitHub](https://github.com/Jayjack0116/mini-arm-os), [Hackpad](https://embedded2015.hackpad.com/-Week-7-Qn1ur96Sg72)
-
-
-進階嵌入式系統設計與實作 (Fall 2015) 作業及筆記
-=====================================
-- week1 : [GitHub](https://github.com/Jayjack0116/compute_pi), [Hackpad](https://embedded2015.hackpad.com/-Ext1-Week-1-5rm31U3BOmh)
-- week2 : [GitHub](https://github.com/Jayjack0116/phonebook), [Hackpad](https://embedded2015.hackpad.com/-Week-2-JkClwroqkc2)
-- week3 : [GitHub](https://github.com/Jayjack0116/quiz), [Hackpad](https://embedded2015.hackpad.com/-Homework-3-6MkQJyNXevo)
-- week4 : [GitHub](https://github.com/Jayjack0116/jit-construct), [Hackpad](https://hackpad.com/-Week-4-XdWRvlaO45F#:h=Brainf*ck)
-- week5 : [GitHub](https://github.com/Jayjack0116/phonebook), [Hackpad](https://embedded2015.hackpad.com/-Week-5-g9TMQkNrJHl)
-- week6 : [Hackpad](https://embedded2015.hackpad.com/Homework-6-P2NaU9xQom6)
-- week7 : [GitHub(A)](https://github.com/Jayjack0116/mini-arm-os/tree/master/07-Threads), [GitHub(B)](https://github.com/Jayjack0116/prefetcher), [Hackpad](https://embedded2015.hackpad.com/-Homework-7-8-XZe3c94XjUh)
-
-
-
-FreeRTOS(MMU) 報告與筆記
-====================
-- CSIE Wiki: [FreeRTOS (MMU)](http://wiki.csie.ncku.edu.tw/embedded/freertos-mmu)
-- 負責部分: 研讀與在Beagle Bone Black上開啟設定 MMU 功能
-- 筆記: [Hackpad](https://hackpad.com/FreeRTOS-MMU-7T05PYBOFIy)
-- FreeRTOS 8.2.1 for Beagle Bone Black: [Github](https://github.com/dani4310/BBBFreeRTOS_shell_MMU)
-
-uClinux 報告與筆記
-====================
-- CSIE Wiki: [Team #3期末專題: uClinux](http://wiki.csie.ncku.edu.tw/embedded/team2015-3)
-- 負責部分: 設定STM32F429的LCD上顯示console、研究USB之driver設定
-- 筆記: [Hackpad](https://uclinux2015.hackpad.com/uClinux-gHOyduF1HpK)
-- uClinux: [Github](https://github.com/Jayjack0116/uclinux)
-
-心得感想
-======
-- 早在我大三的時候，我就聽說這門課能學到很多東西可是非常硬，基於興趣我還是想修這門課，而由於衝堂以及參加一些校外比賽，才讓我在這學期修到這門課，我第一次走進這個教室就是超過4個小時的考試(因為我沒有 follow 到前一周要上課ORZ)，完全沒有準備的我簡直嚇呆了，但為了學的扎實，我靠意志力撐下來了(幸虧沒有考太糟....)。
-- 一開始上課寫作業讓我非常的不適應，雖然以前修過 OS、計組、計結、程設，但早就還給老師了，更何況第一堂課就開始寫組語，我自認我的學習速度很慢，課程和作業有時會搞不清楚狀況，但我覺得我不能放棄，放棄豈不就跟大一到大三的狀況一樣嗎?老師上課灌輸給我們很多觀念，外頭的世界是很現實的，我們身為國立大學，用了這麼多納稅人的錢換得我們舒服的坐在課堂上聽課，應該負起更多的責任，成為一名菁英，我也覺得我不應該把時間白白浪費掉，畢竟我已經浪費了3年之多...。
-- 我覺得我很幸運能來上這門課，這門課讓我覺得除了充實外還是充實，也讓我見識到自己在這個世界上是多麼的渺小，我擁有的知識只是沙漠裡的一粒沙，在這堂課讓我見識到我從未看過的東西，也讓我好好複習了大學時期該學會的知識，我學到了很多，謝謝 JServ 老師提供這麼多資源以及不倦怠的鞭策我，希望我總有一天也能成為像老師一樣優秀的工程師!
-
-
-自我評量分數(1到10級分)-(Spring 2015)
-===================================
-- 我給自己 9 級分。
-- 原因: 在整學期中，我認為我真的達到了自己的極限奉獻給這堂課，全心全意的念有關於老師叫我研讀 MMU 的相關資料，我自認我的理解力比較差些，但我覺得我很努力去搞懂他，儘管他只是板子中的一小部分。我猜你會想問盡全力了為什麼不給自己10級分呢?我的回答是:我覺得我還有進步的空間，我要把那1級分留給未來的我，為了得到更多有關嵌入式的知識，我得繼續努力加油!
-
-
-自我評量分數(1到10級分)-(Fall 2015)
-===================================
-- 我給自己 10 級分。
-- 原因: 在這學期中，我很認真的面對每一個作業的問題，並透過作業提升自身的 coding 能力，但比較慚愧的是在期末由於實驗室負責之計畫負擔較重，而最後在uClinux專題的部分沒有達到預期的目標，但整體來說，我認為我在整學期是非常投入在這堂課的，故我給自己10分。希望在未來我能更熟悉嵌入式系統，並且對這學期所提到編譯器有更深的了解。
-
-
-聯絡資訊
-======
-- email: ``opudding7654321@gmail.com``
+Trang chủ mới: <a href="https://win55kyc.com/">https://win55kyc.com/</a>
+Phone: 0823723555
+Gmail: win55kyccom@gmail.com
+Địa chỉ: Tầng 2, 415 Lê Trọng Tấn, Sơn Kỳ, Tân Phú, Thành phố Hồ Chí Minh, Vietnam
+Hashtag: #win55 #linkwin55 #win55kyccom #nha_cai_win55
