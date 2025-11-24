@@ -155,6 +155,12 @@ Computer Architecture (Fall 2025)
 * Week 12 (Nov 25): Cache
     - Announcement
         * In today’s class, we will discuss the progress of [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) and [Homework 3](https://hackmd.io/@sysprog/2025-arch-homework3) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should paste the link to your HackMD notes for [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) here. $\to$ [2025-11-18](https://hackmd.io/QERe1qMbSra0UqdfEPUhMw)
+        * Quiz 5 is scheduled on Dec 9
+            - [2024-Quiz5](https://hackmd.io/@sysprog/arch2024-quiz5) / [solution](https://hackmd.io/@sysprog/arch2024-quiz5-sol)
+            - [2023-Quiz5](https://hackmd.io/@sysprog/arch2023-quiz5) / [solution](https://hackmd.io/@sysprog/arch2023-quiz5-sol) / [annotated](https://hackmd.io/@c3WNnG7RRK2J17ifSiezZA/Bk1mQfKuT)
+            - [2022-Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5) / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/ry3j69OOo)
+            - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol) / [with Ripes simulation](https://hackmd.io/@arthur-chang/SyLa2qb3Y)
+            - [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
     * [Cache (1)](https://docs.google.com/presentation/d/1dv9zkRV5mS2heGojIPm00Ms0fAqKDQ2D7yE26P4MgJI/edit?usp=sharing) / [video](https://youtu.be/nsdIU-S0pp4)
     * [Cache (2)](https://docs.google.com/presentation/d/1rmFD2GZBMjCSsNuHikNiFiDgoDWORYT9anz52l7bgzc/edit?usp=sharing) / [video](https://youtu.be/APK4_rEDT_U)
     * [Cache (3)](https://docs.google.com/presentation/d/1dN876ETDdJATOV0JYQJzvHadBcXAgA03NqG311es7QU/edit?usp=sharing) / [video](https://youtu.be/pQkplfQtIfM)
@@ -165,11 +171,6 @@ Computer Architecture (Fall 2025)
             - [Oral History of Jim Keller](https://youtu.be/Xh8nhK7WS80)
 * Week13 (Dec 2): Virtual Memory + Operating System + Vector Extension
     - Announcement:
-        * Quiz 5 is scheduled on Dec 10
-            - [2023-Quiz5](https://hackmd.io/@sysprog/arch2023-quiz5) / [solution](https://hackmd.io/@sysprog/arch2023-quiz5-sol) / [annotated](https://hackmd.io/@c3WNnG7RRK2J17ifSiezZA/Bk1mQfKuT)
-            - [2022-Quiz5](https://hackmd.io/@sysprog/arch2022-quiz5) / [solution](https://hackmd.io/@sysprog/arch2022-quiz5-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/ry3j69OOo)
-            - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol) / [with Ripes simulation](https://hackmd.io/@arthur-chang/SyLa2qb3Y)
-            - [2020-Quiz5](https://hackmd.io/@sysprog/arch2020-quiz5) / [solution](https://hackmd.io/@sysprog/arch2020-quiz5-sol)
         * This semester, we will conduct 7 quizzes. Out of these, the best 4 will be selected for grading purposes.
         * The instructor will submit the grades on the school's designated deadline ([Jan 24, 2025](https://www.ncku.edu.tw/p/412-1000-6149.php?Lang=zh-tw)) for grade registration. This means that students will have ample time to dedicate to the final project assigned in this course.
         + Term projects will be listed on Dec 5. [Term projects of 2023](https://hackmd.io/@sysprog/arch2023-projects)
