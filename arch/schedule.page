@@ -156,7 +156,11 @@ Computer Architecture (Fall 2025)
     - Announcement
         * In today’s class, we will discuss the progress of [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) and [Homework 3](https://hackmd.io/@sysprog/2025-arch-homework3) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should paste the link to your HackMD notes for [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) here. $\to$ [2025-11-18](https://hackmd.io/QERe1qMbSra0UqdfEPUhMw)
         * This semester, we will conduct 7 quizzes. Out of these, the best 4 will be selected for grading purposes.
-        * [Term projects](https://hackmd.io/@sysprog/arch2025-projects): Contact the instructor as early as possible
+        * The instructor will submit the grades on the school’s [designated deadline](https://web.ncku.edu.tw/p/412-1000-6149.php?Lang=zh-tw) (Jan 23, 2026) for grade registration. This means that students will have ample time to dedicate to the final project assigned in this course.
+        * [Term projects](https://hackmd.io/@sysprog/arch2025-projects): Contact the instructor as early as possible. You must provide the materials and demonstrate to the instructor before Jan 20, 2026. Deliverables
+            - A development log and accompanying report
+            - Complete source code sufficient for full reproduction
+            - An illustrated video of at least 15 minutes.
         * Quiz 5 is scheduled on Dec 9
             - [2024-Quiz5](https://hackmd.io/@sysprog/arch2024-quiz5) / [solution](https://hackmd.io/@sysprog/arch2024-quiz5-sol)
             - [2023-Quiz5](https://hackmd.io/@sysprog/arch2023-quiz5) / [solution](https://hackmd.io/@sysprog/arch2023-quiz5-sol) / [annotated](https://hackmd.io/@c3WNnG7RRK2J17ifSiezZA/Bk1mQfKuT)
