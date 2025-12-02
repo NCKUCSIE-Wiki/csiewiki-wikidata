@@ -176,9 +176,9 @@ Computer Architecture (Fall 2025)
         * [Designing in 2023: 10 Problems to Solve](https://youtu.be/o70yKYWgtVI) - Jim Keller, [Tenstorrent](https://tenstorrent.com/)
             - [Oral History of Jim Keller](https://youtu.be/Xh8nhK7WS80)
 * Week13 (Dec 2): Virtual Memory + Operating System + Vector Extension
-    - Announcement:
-        + Term projects will be listed on Dec 5.
-    * News: [Intel Announces Retirement of CEO Pat Gelsinger](https://www.intel.com/content/www/us/en/newsroom/news/intel-ceo-news-dec-2024.html) - Early last month, Intel was removed from the Dow Jones Industrial Average, which comprises 30 leading U.S. stocks, to make room for Nvidia as the index shifts toward AI pioneers. / [What Is the Dow Jones Industrial Average?](https://youtu.be/Q7Jj20OrdiM)
+    - Announcement
+        * In today’s class, we will discuss the progress of [Homework 3](https://hackmd.io/@sysprog/2025-arch-homework3) and [Term project](https://hackmd.io/@sysprog/arch2025-projects) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should update HackMD note here. $\to$ [2025-12-02](https://hackmd.io/@sysprog/SJsiu3ib-l)
+        * Quiz 5 next week
     * [Virtual Memory](https://youtu.be/TsxZlXOrt8U)
         - UCB: [Virtual Memory I](https://docs.google.com/presentation/d/1_KtUjyxALrATgiT9JsiK8GKQXNw5M0BAllsdz78Lm74/edit?usp=sharing) / [video](https://youtu.be/lU0MDQHmGxA)
         - UCB: [Virtual Memory II](https://docs.google.com/presentation/d/1KB2HKnvqsKq65udERzMw9imTMtV8KREMWmKc7w8XOfk/edit?usp=sharing) / [video](https://youtu.be/YtBlu56U3Lw)
@@ -193,9 +193,6 @@ Computer Architecture (Fall 2025)
         * [RISC-V "V" Vector Extension](https://github.com/riscvarchive/riscv-v-spec/blob/master/v-spec.adoc)
 
 * Week14 (Dec 9): Quiz + Synchronization
-    - Announcement:
-        * Regarding the final project, students may form groups of 1 to 3 members (the project's difficulty will depend on the group size and members' backgrounds). Please refer to last year’s projects for reference and send an email to `jserv.tw@gmail.com`, specifying your group members and proposed project topics (you may suggest multiple topics, with the final decision made by the instructor).
-        * Check the listing of [final/term projects in 2023](https://hackmd.io/@sysprog/arch2023-projects) for reference.
     - [Quiz5](https://hackmd.io/@sysprog/arch2024-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2024-quiz5-sol)
     - [Debunking CISC vs RISC code density](https://www.bitsnbites.eu/cisc-vs-risc-code-density/)
     - [Synchronization](https://youtu.be/r8H_af_dCF0)
