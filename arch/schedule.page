@@ -193,7 +193,9 @@ Computer Architecture (Fall 2025)
         * [RISC-V "V" Vector Extension](https://github.com/riscvarchive/riscv-v-spec/blob/master/v-spec.adoc)
 
 * Week14 (Dec 9): Quiz + Synchronization
-    - [Quiz5](https://hackmd.io/@sysprog/arch2024-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2024-quiz5-sol)
+    - Announcement
+        * In today’s class, we will discuss the progress of [Term project](https://hackmd.io/@sysprog/arch2025-projects) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should update HackMD note here. $\to$ [2025-12-02](https://hackmd.io/@sysprog/SJsiu3ib-l)
+    - [Quiz5](https://hackmd.io/@sysprog/arch2025-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2025-quiz5-sol)
     - [Debunking CISC vs RISC code density](https://www.bitsnbites.eu/cisc-vs-risc-code-density/)
     - [Synchronization](https://youtu.be/r8H_af_dCF0)
         + Please check your operating system textbook for such topic.
