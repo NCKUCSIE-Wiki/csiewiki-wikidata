@@ -196,19 +196,20 @@ Computer Architecture (Fall 2025)
     - Announcement
         * In today’s class, we will discuss the progress of [Term project](https://hackmd.io/@sysprog/arch2025-projects) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should update HackMD note here. $\to$ [2025-12-02](https://hackmd.io/@sysprog/SJsiu3ib-l)
     - [Quiz5](https://hackmd.io/@sysprog/arch2025-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2025-quiz5-sol)
-    - [Debunking CISC vs RISC code density](https://www.bitsnbites.eu/cisc-vs-risc-code-density/)
-    - [Synchronization](https://youtu.be/r8H_af_dCF0)
-        + Please check your operating system textbook for such topic.
 
 * Week15 (Dec 16): Operating System, Multithreading
     - Announcement:
-        * Quiz6 is scheduled on Dec 24
+        * Quiz6 is scheduled for Dec 23
+            - [2024-Quiz6](https://hackmd.io/@sysprog/arch2024-quiz6) / [solution](https://hackmd.io/@sysprog/arch2024-quiz6-sol)
             - [2023-Quiz6](https://hackmd.io/@sysprog/arch2023-quiz6) / [solution](https://hackmd.io/@sysprog/arch2023-quiz6-sol)
             - [2022-Quiz6](https://hackmd.io/@sysprog/arch2022-quiz6) / [solution](https://hackmd.io/@sysprog/arch2022-quiz6-sol)
             - [2021-Quiz7](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz7-sol)
             - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol)
             - [2020-Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6) / [solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
-        * [Term Projects](https://hackmd.io/@sysprog/arch2024-projects): You must provide the materials and demonstrate to the lecturer before **Jan 23, 2025**
+        * [Term Projects](https://hackmd.io/@sysprog/arch2025-projects): You must provide the materials and demonstrate to the lecturer before **Jan 20, 2025**
+    - [Debunking CISC vs RISC code density](https://www.bitsnbites.eu/cisc-vs-risc-code-density/)
+    - [Synchronization](https://youtu.be/r8H_af_dCF0)
+        + Please check your operating system textbook for such topic.
     - [Synchronization](https://youtu.be/r8H_af_dCF0)
         + Please check your operating system textbook for such topic.
     - [Multithreading Issues + Cache Coherency](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqgj_8Og51XoE7iyAu5yEWZ)
