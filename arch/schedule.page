@@ -192,7 +192,7 @@ Computer Architecture (Fall 2025)
         * [The RISC-V Vector ISA Tutorial](https://riscv.org/wp-content/uploads/2018/05/15.20-15.55-18.05.06.VEXT-bcn-v1.pdf)
         * [RISC-V "V" Vector Extension](https://github.com/riscvarchive/riscv-v-spec/blob/master/v-spec.adoc)
 
-* Week14 (Dec 9): Quiz + Synchronization
+* Week14 (Dec 9): Quiz
     - Announcement
         * In today’s class, we will discuss the progress of [Term project](https://hackmd.io/@sysprog/arch2025-projects) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should update HackMD note here. $\to$ [2025-12-02](https://hackmd.io/@sysprog/SJsiu3ib-l)
     - [Quiz5](https://hackmd.io/@sysprog/arch2025-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2025-quiz5-sol)
@@ -207,6 +207,10 @@ Computer Architecture (Fall 2025)
             - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol)
             - [2020-Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6) / [solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
         * [Term Projects](https://hackmd.io/@sysprog/arch2025-projects): You must provide the materials and demonstrate to the lecturer before **Jan 20, 2025**
+    - [RISC-V Oral History Panel](https://youtu.be/lbMIuX28d18)
+        +  Ecosystem: Software is King
+        + Compiler First: The founders emphasized that an architecture is useless without a working C compiler. Early efforts focused heavily on porting GCC, LLVM, and Linux to ensure the hardware was actually usable.
+        + Community Power: By embracing open source, they allowed global developers to fix bugs and optimize performance, moving much faster than a single proprietary team could.
     - [Debunking CISC vs RISC code density](https://www.bitsnbites.eu/cisc-vs-risc-code-density/)
     - [Synchronization](https://youtu.be/r8H_af_dCF0)
         + Please check your operating system textbook for such topic.
