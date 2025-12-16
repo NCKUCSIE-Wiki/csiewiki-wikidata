@@ -207,13 +207,12 @@ Computer Architecture (Fall 2025)
             - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol)
             - [2020-Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6) / [solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
         * [Term Projects](https://hackmd.io/@sysprog/arch2025-projects): You must provide the materials and demonstrate to the lecturer before **Jan 20, 2025**
+        * The instructor sent an email on December 15 with the subject line "Re: CompArch: Term Project Assigned — Read Carefully and Start Logging Early", outlining important guidelines and requirements for the term project. Students are required to read the email carefully and respond thoughtfully in accordance with the instructions provided.
     - [RISC-V Oral History Panel](https://youtu.be/lbMIuX28d18)
         +  Ecosystem: Software is King
         + Compiler First: The founders emphasized that an architecture is useless without a working C compiler. Early efforts focused heavily on porting GCC, LLVM, and Linux to ensure the hardware was actually usable.
         + Community Power: By embracing open source, they allowed global developers to fix bugs and optimize performance, moving much faster than a single proprietary team could.
     - [Debunking CISC vs RISC code density](https://www.bitsnbites.eu/cisc-vs-risc-code-density/)
-    - [Synchronization](https://youtu.be/r8H_af_dCF0)
-        + Please check your operating system textbook for such topic.
     - [Synchronization](https://youtu.be/r8H_af_dCF0)
         + Please check your operating system textbook for such topic.
     - [Multithreading Issues + Cache Coherency](https://www.youtube.com/playlist?list=PLDoI-XvXO0aqgj_8Og51XoE7iyAu5yEWZ)
