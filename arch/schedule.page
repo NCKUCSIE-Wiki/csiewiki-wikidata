@@ -227,13 +227,13 @@ Computer Architecture (Fall 2025)
     - Announcement:
         * Quiz7 is scheduled for Jan 6, 2026.
         * [The term projects](https://hackmd.io/@sysprog/arch2025-projects) will be reviewed on Jan 6.
-    - [Quiz6](https://hackmd.io/@sysprog/arch2024-quiz6) / [solution](https://hackmd.io/@sysprog/arch2024-quiz6-sol)
+    - [Quiz6](https://hackmd.io/@sysprog/arch2025-quiz6) / [solution](https://hackmd.io/@sysprog/arch2025-quiz6-sol)
     - [Memory Model](https://youtu.be/QkbWgCSAEoo) / [slides](https://riscv.org/wp-content/uploads/2018/05/14.25-15.00-RISCVMemoryModelTutorial.pdf)
     - [I/O: Devices, Polling, Interrupts](https://drive.google.com/drive/folders/1NRoyYSbAyarMhmPD5LiY6YEqYpLoZx_s) / [video](https://youtu.be/0dyqcFC_q2Q?t=1247)
         * Traps/Interrupts/Exceptions
         * Trap Handling in 5-Stage Pipeline
 
-* Week17 (Dec 30): Modern Processors | [online via YouTube](https://youtube.com/live/OnW1YjgTew8) start at 09:15AM
+* Week17 (Dec 30): Modern Processors
     - Announcements
         * Quiz7 is scheduled on Jan 6, 2026
         * Update [term projects](https://hackmd.io/@sysprog/arch2024-projects) and contact the instructor if you didn't receive the confirmation letter
