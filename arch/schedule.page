@@ -226,6 +226,9 @@ Computer Architecture (Fall 2025)
 * Week16 (Dec 23): Quiz + Memory Model, I/O
     - Announcement:
         * Quiz7 is scheduled for Jan 6, 2026.
+            - [2024-Quiz7](https://hackmd.io/@sysprog/arch2024-quiz7) / [solution](https://hackmd.io/@sysprog/arch2024-quiz7-sol)
+            - [2023-Quiz7](https://hackmd.io/@sysprog/arch2023-quiz7) / [solution](https://hackmd.io/@sysprog/arch2023-quiz7-sol)
+            - [2022-Quiz7](https://hackmd.io/@sysprog/arch2022-quiz7) / [solution](https://hackmd.io/@sysprog/arch2022-quiz7-sol)
         * [The term projects](https://hackmd.io/@sysprog/arch2025-projects) will be reviewed on Jan 6.
     - [Quiz6](https://hackmd.io/@sysprog/arch2025-quiz6) / [solution](https://hackmd.io/@sysprog/arch2025-quiz6-sol)
     - [Memory Model](https://youtu.be/QkbWgCSAEoo) / [slides](https://riscv.org/wp-content/uploads/2018/05/14.25-15.00-RISCVMemoryModelTutorial.pdf)
