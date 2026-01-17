@@ -78,6 +78,15 @@ categories: User
 - [Minimum-snap trajectory generation](https://github.com/shengwen-tw/minimum-snap-traj-matlab): 最小化位置四次微分以達到平滑軌跡規劃
 - [Rapidly-Exploring Random Tree (RRT)](https://github.com/shengwen-tw/rrt-matlab): 給定起始點和終點，規劃一條避開所有障礙物到達終點的路徑
 
+論文發表
+=======
+
+- [Data-Driven Estimation of Quadrotor Motor Efficiency via Residual Minimization](https://arxiv.org/abs/2510.11388)
+- [A Computationally Efficient GNSS/INS Design of Multirotor based on Error-state Kalman Filter](https://ieeexplore.ieee.org/abstract/document/10354209)
+- [Robust State-Feedback H-infinity Control of Quadrotor](https://ieeexplore.ieee.org/document/9969787)
+- [Puyuma: Linux-based RTOS Experimental Platform for Constructing Self-Driving Miniature
+Vehicles](https://link.springer.com/chapter/10.1007/978-3-030-01174-1_75)
+
 公開演講
 =======
 
@@ -94,17 +103,8 @@ COSCUP:
 - [打造 Linux 風格的即時作業系統應用於四軸飛行器控制](https://coscup.org/2024/zh-TW/session/AVPXW9): [[簡報]](https://drive.google.com/file/d/16S8ZRC-lhT15CXwWIy-RIIWXl5Ertqo5/view) - 2024
 - [Tenok: 打造用於機器人控制的微型即時作業系統](https://coscup.org/2023/zh-TW/session/XA9XJC): [[簡報]](https://drive.google.com/file/d/1p8YJVPVwFAEknMXPbXzjj0y0p5qcqT2T/view) - 2023
 
-研討會論文
-========
-
-- [Data-Driven Estimation of Quadrotor Motor Efficiency via Residual Minimization](https://arxiv.org/abs/2510.11388)
-- [A Computationally Efficient GNSS/INS Design of Multirotor based on Error-state Kalman Filter](https://ieeexplore.ieee.org/abstract/document/10354209)
-- [Robust State-Feedback H-infinity Control of Quadrotor](https://ieeexplore.ieee.org/document/9969787)
-- [Puyuma: Linux-based RTOS Experimental Platform for Constructing Self-Driving Miniature
-Vehicles](https://link.springer.com/chapter/10.1007/978-3-030-01174-1_75)
-
-Invited Talk
-====
+受邀演講
+=======
 - MOPCON 2024 Keynote Speech: [Trends in Machine Learning for Unmanned Aerial Vehicle Applications](https://mopcon.org/2024/speaker/?id=2024018): [[簡報]](https://drive.google.com/file/d/1UmSeU8Y63s4cASBFNWM_zi5ll2J9EIJx/view?fbclid=IwY2xjawGLSe9leHRuA2FlbQIxMAABHX9AjWq_vX6WXNQYPfsQp-BUFIM44uh6MBCdLFP4OAEdUsAF8zQptxDcdQ_aem_uvY1jloybOcTQEWV687_BA)
 - 2024/12/19 @ 和碩科技 (Pegatron): Trends and lessons learned in deep learning and generative AI applications for UAV
 
