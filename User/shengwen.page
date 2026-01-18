@@ -69,7 +69,7 @@ categories: User
 
 - [quadrotor-sim-py](https://github.com/shengwen-tw/quadrotor-sim-py): 基於 Python 開發的四軸飛行器模擬器。預計結合 CasADi, PyTorch 開發模型預測控制器 (MPC) 和強化學習 (RL) 演算法。
 - [四軸飛行器幾何追蹤控制](https://github.com/shengwen-tw/qaudrotor_geometry_ctrl_simulator): 一個基於非線性動力學模型、可達到敏捷飛行的控制器模擬 [[簡報]](https://drive.google.com/file/d/1ZyqSpjSTDKI8-ypz8bvnjUU6N7ipMHDt/view?usp=sharing)
-- [四軸飛行器 LQR 控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): 一個經典的最佳控制設計，使用收斂速度極快的-保結構雙重演算法 [[技術報告]](https://drive.google.com/file/d/1u0T5Wb_mH0NUBVetOBdvIHdeCOP8Wde6/view?usp=sharing)
+- [四軸飛行器 LQR 控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): 一個經典的最佳控制設計，使用速度極快的-保結構加倍收斂法 [[技術報告]](https://drive.google.com/file/d/1u0T5Wb_mH0NUBVetOBdvIHdeCOP8Wde6/view?usp=sharing)
 - [四軸飛行器 H∞ 強健控制](https://github.com/shengwen-tw/quadrotor-h-infty-ctrl-simulator): 一個將擾動輸入對輸出之增益做最小化的最佳控制設計 [[簡報]](https://drive.google.com/file/d/1573Td07_vohtVan2gHrCwDmQyY9ihr_w/view?usp=drivesdk)
 
 馬達控制 / 電子變速器:
