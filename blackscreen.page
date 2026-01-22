@@ -1,0 +1,4 @@
+If you’re seeing odd patches of brightness or strange shadows on your display while reviewing code, diagrams, or slides, it’s worth checking whether the issue is actually with your monitor rather than your software settings. A good starting point is to display a uniform solid color or plain dark background — that can make small inconsistencies, smudges, or light reflections far easier to spot than when you’re staring at complex content.
+
+For a fast and simple check, you can <a href="https://blackscreen.space">BlackScreen</a>
+ to bring up a clean dark screen in your browser. That makes it easy to spot glare, uneven backlighting, or surface dust before you spend time adjusting other settings. It’s a quick way to rule out display problems and focus on the real task at hand.
