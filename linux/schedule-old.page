@@ -8,6 +8,444 @@ toc: no
     * [Facebook 粉絲專頁](https://www.facebook.com/JservFans) (不要擔心提了笨問題，這專門用來和學生互動，可預約一對一討論)
 - 課程信箱: `<embedded.master2015@gmail.com>`
 
+Linux 核心設計 (Spring 2025) 課程進度表暨線上資源
+------------------------------------------------------
+* 第 1 週 (Feb 18, 20): 誠實面對自己
+    - [課程簡介和注意須知](https://bit.ly/linux2025-intro) / [課程簡介解說錄影](https://youtu.be/7Rij1IZqazM)`*`
+        * 每週均安排隨堂測驗，採計其中最高分的 12 次
+        * 學期評分方式: 隨堂測驗 (20%) + 個人作業+報告及專題 (30%) + 自我評分 (50%)
+        * 留意[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)
+    - [部分教材解說](https://youtu.be/ptbJQUAv2ro)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    - 歷屆修課學生心得: [葉惟欣](/User/weihsinyeh), [向景亘](/User/OscarShiang), [張家榮](/User/JaredCJR), [方鈺學](/User/JulianATA)
+    - 佳句偶得：「大部分的人一輩子洞察力不彰，原因之一是怕講錯被笑。想了一點點就不敢繼續也沒記錄或分享，時間都花在讀書查資料看別人怎麼想。看完就真的沒有自己的洞察了」([出處](https://www.facebook.com/chtsai/posts/pfbid0Sw9Bv8GN8houyS6A6Mvg5gtWXShKFgguhTHuNFsDDGn9XZQE7C64pBy5atB9gXtJl))
+    - 分組報告示範: [ARM-Linux](/embedded/arm-linux), [Xvisor](/embedded/xvisor) / [2024 年課程期末展示](https://hackmd.io/@sysprog/linux2024-showcase)`*`
+    - [GNU/Linux 開發工具共筆](https://hackmd.io/@sysprog/gnu-linux-dev/)`*`: 務必 *自主* 學習 Linux 操作, Git, HackMD, LaTeX 語法 (特別是數學式), GNU make, perf, gnuplot
+        * 確認 Ubuntu Linux 24.04-LTS 已順利安裝到你的電腦中
+    - [透過 Computer Systems: A Programmer’s Perspective 學習系統軟體](https://hackmd.io/@sysprog/CSAPP)`*`: 本課程指定的教科書 (請及早購買: [天瓏書店](https://www.tenlong.com.tw/products/9787111544937))
+    - [軟體缺失導致的危害](https://hackmd.io/@sysprog/software-failure)
+        * 1970 年代推出的首款廣體民航客機波音 747 軟體由大約 40 萬行程式碼構成，而 2011 年引進的波音 787 的軟體規模則是波音 747 的 16 倍，約 650 萬行程式碼。換言之，你我的性命緊繫於一系列極為複雜的軟體系統之中，能不花點時間了解嗎？
+        * 軟體開發的安全性設計和測試驗證應獲得更高的重視
+    - [The adoption of Rust in Business (2022)](https://rustmagazine.org/issue-1/2022-review-the-adoption-of-rust-in-business/)
+        * 搭配觀看短片: [Rust in 100 Seconds](https://youtu.be/5C_HPTJg5ek)
+    - [解讀計算機編碼](https://hackmd.io/@sysprog/binary-representation)
+        * 人們對數學的加減運算可輕易在腦中辨識符號並理解其結果，但電腦做任何事都受限於實體資料儲存及操作方式，換言之，電腦硬體實際只認得 0 和 1，卻不知道符號 + 和 - 在數學及應用場域的意義，於是工程人員引入「補數」以表達人們認知上的正負數
+        * 您有沒有想過，為何「二補數」(2’s complement) 被電腦廣泛採用呢？背後的設計考量是什麼？本文嘗試從數學觀點去解讀編碼背後的原理
+    - [你所不知道的 C 語言：指標篇](https://hackmd.io/@sysprog/c-pointer)`*`
+    - [linked list 和非連續記憶體操作](https://hackmd.io/@sysprog/c-linked-list)`*`
+        * 安排 linked list 作為第一份作業及隨堂測驗的考量點:
+            + 檢驗學員對於 C 語言指標操作的熟悉程度 (附帶思考：對於 Java 程式語言來說，該如何實作 linked list 呢？)
+            + linked list 本質上就是對非連續記憶體的操作，乍看僅是一種單純的資料結構，但對應的演算法變化多端，像是「如何偵測 linked list 是否存在環狀結構？」和「如何對 linked list 排序並確保空間複雜度為 O(1) 呢？」
+            + linked list 的操作，例如走訪 (traverse) 所有節點，反映出 Locality of reference (cache 用語) 的表現和記憶體階層架構 (memory hierarchy) 高度相關，學員很容易從實驗得知系統的行為，從而思考其衝擊和效能改進方案
+            + 無論是作業系統核心、C 語言函式庫內部、應用程式框架，到應用程式，都不難見到 linked list 的身影，包含多種針對效能和安全議題所做的 linked list 變形，又還要考慮到應用程式的泛用性 (generic programming)，是很好的進階題材
+        * [題目 1 + 分析](https://hackmd.io/@sysprog/linked-list-quiz)`*`
+        * [題目 2](https://hackmd.io/@sysprog/linux2020-quiz1) / [參考題解1](https://hackmd.io/@Ryspon/HJVH8B0XU), [參考題解2](https://hackmd.io/@chses9440611/Sy5gwE37I)
+        * [題目 3](https://hackmd.io/@sysprog/sysprog2020-quiz1) / [參考題解](https://hackmd.io/@RinHizakura/BysgszHNw)
+        * [題目 4](https://hackmd.io/@sysprog/linux2021-quiz1) / [參考題解](https://hackmd.io/@linD026/2021q1_quiz1)
+        * [題目 5](https://hackmd.io/@sysprog/linux2022-quiz1) / [參考題解](https://hackmd.io/@qwe661234/linux2022-quiz1)
+        * [題目 6](https://hackmd.io/@sysprog/linux2023-quiz1) / [參考題解](https://hackmd.io/@yanjiew/linux2023q1-quiz1)
+        * [題目 7](https://hackmd.io/@sysprog/linux2024-quiz1) / [參考題解](https://hackmd.io/@weihsinyeh/ry2RWmNTT)
+    * Linus Torvalds: [Nothing better than C](https://twitter.com/nixcraft/status/1371787200455528450) 
+    * [Linux: 作業系統術語及概念](https://hackmd.io/@sysprog/linux-concepts)`*`
+    - [作業](https://hackmd.io/@sysprog/linux2025-homework1): 截止繳交日: Mar 11, 2025
+        * [lab0](https://hackmd.io/@sysprog/linux2025-lab0)`*`
+        * [ideas](https://hackmd.io/@sysprog/linux2025-ideas)`*`
+    - 第 1 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz1) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/2jXewm-kQBSDHwWVEZBg2w)
+
+* 第 2 週 (Feb 25, 27): C 語言程式設計
+    * 公告
+        - 第一份及第二份作業均已指派，務必及早進行
+        - 隨堂測驗佔學期總分的 20%，其登錄分數的先決條件是，截至 6 月 19 日前，每位學員至少要進行課堂問答二次，並完成後續議題追蹤，彙整於當週的「課堂問答簡記」。若不滿足這條件，則隨堂測驗分數不予採計
+        - 個人作業 + 報告及專題佔學期總分的 30%，其登錄分數的先決條件是，截至 6 月 7 日前，每位學員至少要跟授課教師進行一對一討論 (第六週公告相關辦法並起算) 並完成後續議題追蹤，彙整於指定的作業筆記中。若不滿足這條件，則個人作業分數不採計
+    * [部分教材解說](https://youtu.be/YawpeXUiN1k)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * video: [engineer 詞源](https://youtu.be/j6O-fWIEu5c)
+    * 校友經驗分享: [Google](https://medium.com/@jhan1998/summer-2024-intern-summary-b6ab14d0c253), [Apple](https://ztex.medium.com/2024-summer-internship-review-5f109c6d37f3)
+    * [系統軟體開發思維](https://hackmd.io/@sysprog/concepts)
+    * [分析「快慢指標」](https://hackmd.io/@sysprog/ry8NwAMvT)
+    - [C 語言: 數值系統](https://hackmd.io/@sysprog/c-numerics)`*`
+        - 儘管數值系統並非 C 語言所特有，但在 Linux 核心大量存在 u8/u16/u32/u64 這樣透過 typedef 所定義的型態，伴隨著各式 alignment 存取，若學員對數值系統的認知不夠充分，可能立即就被阻擋在探索 Linux 核心之外 —— 畢竟你完全搞不清楚，為何在 Linux 核心存取特定資料需要繞一大圈。
+    - [C 語言: Bitwise 操作](https://hackmd.io/@sysprog/c-bitwise)`*`
+        - Linux 核心原始程式碼存在大量 bit(-wise) operations (簡稱 bitops)，頗多乍看像是魔法的 C 程式碼就是 bitops 的組合
+        - [類神經網路的 ReLU 及其常數時間實作](https://hackmd.io/@sysprog/constant-time-relu)
+        - [從 √2 的存在談開平方根的快速運算](https://hackmd.io/@sysprog/sqrt)
+        - [Linux 核心原始程式碼的整數除法](https://hackmd.io/@sysprog/linux-intdiv)
+    * [Linux 核心的 hash table 實作](https://hackmd.io/@sysprog/linux-hashtable)
+    * [為什麼要深入學習 C 語言？](https://hackmd.io/@sysprog/c-standards)`*`
+        - C 語言發明者 Dennis M. Ritchie 說：「C 很彆扭又缺陷重重，卻異常成功。固然有歷史的巧合推波助瀾，可也的確是因為它能滿足於系統軟體實作的程式語言期待：既有相當的效率來取代組合語言，又可充分達到抽象且流暢，能用於描述在多樣環境的演算法。」
+        - Linux 核心作為世界上最成功的開放原始碼計畫，也是 C 語言在工程領域的瑰寶，裡頭充斥各式「藝術」，往往會嚇到初次接觸的人們，但總是能夠用 C 語言標準和開發工具提供的擴展 (主要來自 gcc 的 GNU extensions) 來解釋。
+    * [基於 C 語言標準研究與系統程式安全議題](https://hackmd.io/@sysprog/c-std-security)
+        - 藉由研讀漏洞程式碼及 C 語言標準，討論系統程式的安全議題
+        - 透過除錯器追蹤程式碼實際運行的狀況，了解其運作原理;
+        - 取材自 dangling pointer, CWE-416 Use After Free, CVE-2017-16943 以及 integer overflow 的議題;
+    * [C 語言：記憶體管理、對齊及硬體特性](https://hackmd.io/@sysprog/c-memory)`*`
+        * 搭配閱讀: [The Lost Art of Structure Packing](http://www.catb.org/esr/structure-packing/)
+        * 從虛擬記憶體談起，歸納出現代銀行和虛擬記憶體兩者高度相似: malloc 給出 valid pointer 不要太高興，等你要開始用的時候搞不好作業系統給個 OOM ——簡單來說就是一張支票，能不能拿來開等到兌現才知道。
+        * 探討 heap (動態配置產生，系統會存放在另外一塊空間)、data alignment，和 malloc 實作機制等議題。這些都是理解 Linux 核心運作的關鍵概念。
+    * [C 語言: bit-field](https://hackmd.io/@sysprog/c-bitfield)
+        - bit field 是 C 語言一個很被忽略的特徵，但在 Linux 和 gcc 這類系統軟體很常出現，不僅是精準規範每個 bit 的作用，甚至用來「擴充」C 語言
+    - [參考題目](https://hackmd.io/@sysprog/linux2024-quiz2) / [參考題目](https://hackmd.io/@sysprog/linux2023-quiz2) / [參考題目](https://hackmd.io/@sysprog/linux2022-quiz2) / [參考題目](https://hackmd.io/@sysprog/linux2021-quiz2)`*` / [參考題解 1](https://hackmd.io/@93i7xo2/sysprog2021q1-hw2-quiz2), [參考題解 2](https://hackmd.io/@hankluo6/2021q1quiz2), [參考題解 3](https://hackmd.io/@bakudr18/SkS-Y_lX_), [參考題解 3](https://hackmd.io/@weihsinyeh/ry2RWmNTT)
+    - [作業](https://hackmd.io/@sysprog/linux2025-homework2): 截止繳交日 Mar 17
+        - [quiz1+2](https://hackmd.io/@sysprog/rkqqXa55yl)
+    - 第 2 週隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz2) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/l4--gpsZQBiEI5LKS1lDvg)
+
+* 第 3 週 (Mar 4, 6): 數值系統和 C 語言程式設計
+    * 公告
+        - 3 月 9 日將公告第 3 份作業，當日也會解說作業內容，與 bitops、數值系統、浮點數運算，及 Linux 核心考量因素相關
+    * [教材解說](https://youtu.be/7efdpMCx-ak)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [Linux: 發展動態回顧](https://hackmd.io/@sysprog/linux-dev-review)`*`
+    * [最大公因數特性和實作考量](https://hackmd.io/@sysprog/gcd-impl)
+    * [從 Revolution OS 看作業系統生態變化](https://hackmd.io/@sysprog/revolution-os-note)`*`
+    * [浮點數運算](https://hackmd.io/@sysprog/c-floating-point)`*`: 工程領域往往是一系列的取捨結果，浮點數更是如此，在軟體發開發有太多失誤案例源自工程人員對浮點數運算的掌握不足，本議程希望藉由探討真實世界的血淋淋案例，帶著學員思考 IEEE 754 規格和相關軟硬體考量點，最後也會探討在深度學習領域為了改善資料處理效率，而引入的 [BFloat16](https://en.wikipedia.org/wiki/Bfloat16_floating-point_format) 這樣的新標準 / [留意浮點數運算的陷阱](https://hackmd.io/@sysprog/floating-point)
+        - [float16 vs. bfloat16](https://twitter.com/rasbt/status/1631679894219284480)
+    * [並行程式設計: 排程器原理](https://hackmd.io/@sysprog/concurrency-sched)`*`
+    * [C 語言: 函式呼叫](https://hackmd.io/@sysprog/c-function)`*`
+        - 著重在計算機架構對應的支援和行為分析
+    * [C 語言: 遞迴呼叫](https://hackmd.io/@sysprog/c-recursion)`*`
+        - 或許跟你想像中不同，Linux 核心的原始程式碼裡頭也用到遞迴函式呼叫，特別在較複雜的實作，例如檔案系統，善用遞迴可大幅縮減程式碼，但這也導致追蹤程式運作的難度大增
+    * [C 語言: 前置處理器應用](https://hackmd.io/@sysprog/c-preprocessor)`*`
+        - C 語言之所以不需要時常發佈新的語言特徵又可以保持活力，前置處理器 (preprocessor) 是很重要的因素，有心者可逕行「擴充」C 語言
+    * [C 語言: goto 和流程控制](https://hackmd.io/@sysprog/c-control-flow)`*`
+        - goto 在 C 語言被某些人看做是妖魔般的存在，不過實在不用這樣看待，至少在 Linux 核心原始程式碼中，goto 是大量存在 (跟你想像中不同吧)。有時不用 goto 會寫出更可怕的程式碼
+    * [C 語言程式設計技巧](https://hackmd.io/@sysprog/c-trick)`*`
+    * [作業](https://hackmd.io/@sysprog/linux2025-homework3): 截止繳交日: Apr 11
+        - [review](https://hackmd.io/@sysprog/linux2025-review)`*`, [kxo](https://hackmd.io/@sysprog/linux2025-kxo)`*`
+    * Week3 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz3) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/K4C5ofeqQg6LC8OEbdVcwg)
+
+* 第 4 週 (Mar 11, 13): 數值系統 + 編譯器
+    - 公告
+        + 本週安排邱冠維分享 Linux 核心貢獻的第一手資訊，課堂「舉手」討論並追蹤後續，視為有效的問答
+        + 第 2 份作業的作答表單已開放，第 3 份作業已指派
+        + 第 5 週檢討第一份作業，務必做好準備
+    - [教材解說](https://youtu.be/cjq0OuUeepA)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * 貢獻程式碼到 Linux 核心
+        - [第一次給 Linux Kernel 發 patch](https://hackmd.io/@rhythm/BkjJeugOv)
+        - [提交第一份 Patch 到 Linux Kernel](https://hackmd.io/@steven1lung/submitting-patches)
+        - [第一次發 patch 到 LKML](https://hackmd.io/@Risheng/ry5futJF9)
+        - [Linux patch 心得](https://hackmd.io/@zoanana990/first-linux-patch)
+    * [追求神乎其技的程式設計之道](https://vgod.medium.com/7cccc3c68f1e)
+        - 「可以看出抄襲風氣在台灣並不只是小時候在學校抄抄作業而已；媒體工作者在報導中任意抄襲及轉載是種不尊重自己專業的表現，不但隱含著一種應付了事的心態，更代表著這些人對於自己的工作沒有熱情，更沒有著一點堅持。如果要說我在美國看到這邊和台灣有什麼最大的不同，我想關鍵的差異就在對自己的工作有沒有熱情和堅持而已了。」
+        - 「程式藝術家也不過是在『簡潔』、『彈性』、『效率』這三大目標上進行一連串的取捨 (trade-off) 和最佳化。」
+    * [Linux 核心的紅黑樹](https://hackmd.io/@sysprog/linux-rbtree)
+    * [CS:APP 第 2 章重點提示和練習](https://hackmd.io/@sysprog/CSAPP-ch2)`*`
+    * 核心開發者當然要熟悉編譯器行為
+        - [Linus Torvalds 教你分析 gcc 行為](https://lkml.org/lkml/2019/2/25/1092)
+        - [Pointers are more abstract than you might expect in C](https://pvs-studio.com/en/blog/posts/cpp/0576/) / [HackerNews 討論](https://news.ycombinator.com/item?id=17439467)
+    * [C 編譯器原理和案例分析](https://hackmd.io/@sysprog/c-compiler-construction)`*`
+    * [C 語言: 未定義行為](https://hackmd.io/@sysprog/c-undefined-behavior)`*`: C 語言最初為了開發 UNIX 和系統軟體而生，本質是低階的程式語言，在語言規範層級存在 undefined behavior，可允許編譯器引入更多最佳化
+    * [C 語言: 編譯器和最佳化原理](https://hackmd.io/@sysprog/c-compiler-optimization)`*`
+    * [錯誤更正碼 (ECC) 介紹和實作考量](https://hackmd.io/@sysprog/r1wrjOp6a)
+    * [作業](https://hackmd.io/@sysprog/linux2025-homework4): 截止繳交日: Apr 15
+        - [quiz3+4](https://hackmd.io/@sysprog/HkXPOqI31l)
+    * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz4) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/AVg2YkX9RveH1W6SVWmNIw)
+
+* 第 5 週 (Mar 18, 20): Code Review
+    - 公告
+        + [第四次作業](https://hackmd.io/@sysprog/HkXPOqI31l)已指派，內容是第三週和第四週測驗題
+        + 留意 [review](https://hackmd.io/@sysprog/linux2025-review) 及 [kxo](https://hackmd.io/@sysprog/linux2025-kxo) 要求的變更
+        + 若你想討論作業，更新在[課堂問答簡記](https://hackmd.io/EFs_Nfs6TOmIA5ldA_tZsQ)最下方
+    * 回顧學員的參與狀況
+    * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz5) (內含作答表單)
+    * [課堂問答簡記](https://hackmd.io/EFs_Nfs6TOmIA5ldA_tZsQ)
+
+* 第 6 週 (Mar 25, 27): C runtime/linker 及 fork/exec 系統呼叫
+    * 公告
+        - 4 月 1 日實體授課，4 月 3 日晚間依舊授課 (線上，備有錄影)，4 月 8 日改為線上授課，務必查閱課程行事曆。當然也安排隨堂測驗。
+        - 下週正式探討 Linux 核心
+    - [教材解說-1](https://youtu.be/f-SprmkcOI0)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [從模除偏差談亂數分布](https://hackmd.io/@sysprog/BkSydKkaJg)
+    * [以統計觀點看電腦網路傳輸品質](https://hackmd.io/@sysprog/network-quality)
+    * [C 語言: 動態連結器](https://hackmd.io/@sysprog/c-dynamic-linkage)`*`
+    * [C 語言: 連結器和執行檔資訊](https://hackmd.io/@sysprog/c-linker-loader)`*`
+    * [C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/@sysprog/c-runtime)`*`
+    - [教材解說-2](https://youtu.be/zW_MAMy7DBE)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [「一切皆為檔案」的理念與解讀](https://hackmd.io/@sysprog/io-universality)
+    * [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)
+    * Week6 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz6) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/QISdbcjUShy1Be48NHVqaw)
+    * [作業](https://hackmd.io/@sysprog/linux2025-homework5): 截止繳交日: Apr 23
+        - [assessment](https://hackmd.io/@sysprog/linux2025-assessment)
+
+* 第 7 週 (Apr 1, 3): Process 和 CPU 排程
+    * 公告:
+        - 留意[第五份作業](https://hackmd.io/@sysprog/linux2025-assessment)的規範
+        - 第三、四、五份作業對應的表單均已開放填寫
+        - 4 月 3 日晚間依舊授課 (線上，備有錄影)，4 月 8 日改為線上授課，4 月 15 日改在資訊系「舊館」4203 教室
+        - 凡是「選課」且「成功繳交第一份作業」的學員，在 4 月 1 日下午會收到授課教師撰寫、尚未出版的《Demystifying the Linux
+CPU Scheduler》電子書，請留意電子郵件信箱
+        - (任何形式的) 旁聽的學員亦可向授課教師索取書稿，前提是已充分投入第一份和第二份作業，去信 `<jserv.tw@gmail.com>` 附上繳交作業的證明 (需要在作業區正確收錄) 和個人簡介
+        - 開放預約「一對一」討論，請留意[相關辦法](https://hackmd.io/@sysprog/HkNNMsjaJl)。期末自我評量要反映出「專業的成長」，見[範例](https://wiki.csie.ncku.edu.tw/User/weihsinyeh)
+    * [歐拉數：描述連續變化的基石](https://hackmd.io/@sysprog/S1lBrHrp1e)
+    * [Linux: 不只挑選任務的排程器](https://hackmd.io/@sysprog/linux-scheduler)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革，需要留意的是，排程的難度不在於挑選下一個可執行的行程 (process)，而是讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
+    * [Linux: 不僅是個執行單元的 Process](https://hackmd.io/@sysprog/linux-process)`*`: Linux 核心對於 UNIX Process 的實作相當複雜，不僅蘊含歷史意義 (幾乎每個欄位都值得講古)，更是反映出資訊科技產業的變遷，核心程式碼的 `task_struct` 結構體更是一絕，廣泛涵蓋 process 狀態、處理器、檔案系統、signal 處理、底層追蹤機制等等資訊，更甚者，還很曖昧地保存著 thread 的必要欄位，好似這兩者天生就脫不了干係
+        - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
+    * [利用 lkm 來變更特定 Linux 行程的內部狀態](https://hackmd.io/@cwl0429/linux2022-quiz8-3)
+    * [Linux: 賦予應用程式生命的系統呼叫](https://hackmd.io/@sysprog/linux-syscall)`*`
+    * [vDSO: 快速的 Linux 系統呼叫機制](https://hackmd.io/@sysprog/linux-vdso)
+    * 《Demystifying the Linux CPU Scheduler》第 1 章
+    * [測試 Linux 核心的虛擬化環境](https://hackmd.io/@sysprog/linux-virtme)
+    * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
+    - [課堂問答簡記](https://hackmd.io/6LwE3wF5SUO9NZY5KiRUpg)
+
+* 第 8 週 (Apr 8, 10): 並行程式設計, Linux 同步機制
+    * [並行程式設計](https://hackmd.io/@sysprog/concurrency): 概念, 執行順序, Atomics 操作
+    * [〈Concurrency Primer〉導讀](https://hackmd.io/@sysprog/concurrency-primer)
+    * CS:APP 第 12 章
+        - [Concurrency](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/22-concprog.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0be3c53f-5d35-40f0-a5ab-55897a2c91a5)`*`
+        - [Synchronization: Basic](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/23-sync-basic.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aae5ff94-1551-42b6-8981-7d19157afa0c)`*`
+        - [Synchronization: Advanced](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/24-sync-advanced.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=06892ab8-1a16-46de-8910-537dab546828)`*`
+        - [Thread-Level Parallelism](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/25-parallelism.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9ba08262-5318-45f2-a7e1-475e33a98e53)`*`
+    * [Linux: 淺談同步機制](https://hackmd.io/@sysprog/linux-sync)`*`
+    * 《Demystifying the Linux CPU Scheduler》: 2.1 Introduction, 2.2.1 Early Linux Scheduler, 2.2.2 O(n) Scheduler
+    * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz8) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/WrnjVMbeQ1aXjRdvPAL9LA)
+
+* 第 9 週 (Apr 15, 17): futex, 伺服器開發與 Linux 核心對應的系統呼叫
+    * 公告:
+        - 學員應及早跟授課教師預約一對一線上討論，請參照[課程行事曆](https://bit.ly/sysprog-calendar)裡頭標注 "Office hour" 的時段，發訊息到 [Facebook 粉絲專頁](https://www.facebook.com/JservFans/)，簡述你的學習狀況並選定偏好的時段 (建議是 30 分鐘)
+        - 本 Wiki 系統近期承受大量的 spam 攻擊，系統管理員正在規劃抵禦方案，有可能因此暫停服務，請留意電子郵件
+        - 本週將指派新作業，4 月 18 日晚間安排對應解說 (事後有錄影)
+        - 第 10 和第 11 週安排作業回顧，請學員及早準備 (寫作業和調適心情以應付課堂的「互動」)
+        - 4 月 22 日改回新館 65304 電腦教室。4 月 24 日改用 Google Meet 進行，請留意課程行事曆
+    * Twitter/X 上面的笑話: index 的複數寫作 indices, complex 的複數寫作 complices, 那 mutex 的複數是什麼？答 "deadlock" -- [出處](https://x.com/jfbastien/status/1408440373408460803)
+    * [〈Concurrency Primer〉導讀](https://hackmd.io/@sysprog/concurrency-primer)
+    * [A Deep dive into (implicit) Thread Local Storage](https://chao-tic.github.io/blog/2018/12/25/tls)
+        - 允許執行緒擁有私自的資料。對於每個執行緒來說，TLS 是獨一無二，不會相互影響。案例: 全域變數 `errno` 可能在多執行緒並行執行時錯誤，透過 TLS 處理 `errno` 是個解決方案
+        - `__thread`, 在 POSIX Thread 稱為 thread-specific data，可見 [pthread_key_create](https://linux.die.net/man/3/pthread_key_create), [pthread_setspecific](https://linux.die.net/man/3/pthread_setspecific)
+        - 在 x86/x86_64 Linux，[fs segment 用以表示 TLS 的起始位置](https://www.kernel.org/doc/html/latest/x86/x86_64/fsgs.html)，讓執行緒知道該用的空間位於何處
+    * [建立相容於 POSIX Thread 的實作](https://hackmd.io/@sysprog/concurrency-thread-package)
+    * [Linux 核心設計: 針對事件驅動的 I/O 模型演化](https://hackmd.io/@sysprog/linux-io-model)`*`
+    * [精通數位邏輯對 coding 有什麼幫助？](https://www.ptt.cc/bbs/Soft_Job/M.1587694288.A.3B5.html)
+    * [RCU 同步機制](https://hackmd.io/@sysprog/linux-rcu)`*`
+    * [Linux: 透過 eBPF 觀察作業系統行為](https://hackmd.io/@sysprog/linux-ebpf)`*`: 動態追蹤技術（dynamic tracing）是現代軟體的進階除錯和追蹤機制，讓工程師以非常低的成本，在非常短的時間內，克服一些不是顯而易見的問題。它興起和繁榮的一個大背景是，我們正處在一個快速增長的網路互連異質運算環境，工程人員面臨著兩大方面的挑戰：
+        - 規模：無論是使用者規模還是機房的規模、機器的數量都處於快速增長的時代;
+        - 複雜度：業務邏輯越來越複雜，運作的軟體也變得越來越複雜，我們知道它會分成很多很多層次，包括作業系統核心和其上各種系統軟體，像資料庫和網頁伺服器，再往上有腳本語言或者其他高階語言的虛擬機器或執行環境，更上面是應用層面的各種業務邏輯的抽象層次和很多複雜的程式邏輯。
+    * Week9 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz9) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA)
+    * 作業: 截止繳交日: May 16
+        - [ktcp](https://hackmd.io/@sysprog/linux2025-ktcp)
+
+* 第 10 週 (Apr 22, 24): 現代微處理器
+    * 公告:
+        - 學員應及早跟授課教師預約一對一線上討論，請參照[課程行事曆](https://bit.ly/sysprog-calendar)裡頭標注 "Office hour" 的時段，發訊息到 [Facebook 粉絲專頁](https://www.facebook.com/JservFans/)，簡述你的學習狀況並選定偏好的時段 (建議是 30 分鐘)
+    * [The C11 and C++11 Concurrency Model](https://docs.google.com/presentation/d/1IndzU1LDyHcm1blE0FecDyY1QpCfysUm95q_D2Cj-_U/edit?usp=sharing)
+        - [Time to move to C11 atomics?](https://lwn.net/Articles/691128/)
+        - [C11 atomic variables and the kernel](https://lwn.net/Articles/586838/)
+        - [C11 atomics part 2: "consume" semantics](https://lwn.net/Articles/588300/)
+        - [An introduction to lockless algorithms](https://lwn.net/Articles/844224/)
+    * 產業動態
+        + [Embedded Open Source Summit 2024 會後紀錄](https://hackmd.io/@shengwen/EOSS2024)
+        + [Introducing Google Axion Processors, our new Arm-based CPUs](https://cloud.google.com/blog/products/compute/introducing-googles-new-arm-based-cpu/): 因為這個專案，Google 台灣增加許多職缺
+        + [我在 SiFive 處理器架構部門四年的經歷](https://furuame.blogspot.com/2024/04/four-years-at-sifive.html)
+    * [Cautionary Tales on Implementing the Software That People Want](https://multicore.world/speakers/paul-mckenney/)`*` (RCU 原始作者的精闢演講，必看！)
+        - [slides](https://2019multicoreworld.files.wordpress.com/2023/02/mckenney-paul-23.pdf)
+        - 1990: Queueing Problem: Stochastic Fair Queueing: Hash
+        - 2004: Real-Time Linux
+        - 2004: Dawn of Multicore Embedded
+        - Formal Verification is Heavily Used
+        - Natural Selection: Bugs are Software!
+        - People don’t know what they want. But for software developers, this is no excuse. 
+    * [現代處理器設計：原理和關鍵特徵](https://hackmd.io/@sysprog/cpu-basics)`*`
+    * [Linux: 中斷處理和現代架構考量](https://hackmd.io/@sysprog/linux-interrupt)`*`
+    * [Linux: 多核處理器和 spinlock](https://hackmd.io/@sysprog/multicore-locks)`*`
+    * Week10 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz10) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/i6ZSoExATqOQMf1EvtNFoA)
+
+* 第 11 週 (Apr 29, May 1): 作業回顧 + 期末專題
+    * 公告
+        - 課程規劃在 6 月 28 日舉辦成果發表，預計採用線上直播的模式
+        - 學員應及早跟授課教師預約一對一線上討論，請參照[課程行事曆](https://bit.ly/sysprog-calendar)裡頭標注 "Office hour" 的時段，發訊息到 [Facebook 粉絲專頁](https://www.facebook.com/JservFans/)，簡述你的學習狀況並選定偏好的時段 (建議是 30 分鐘)
+        - 期末專題可由單人或二人進行，但後者會有更高的難度，且需要授課教師充分溝通
+        - 自第 12 週起，改於資訊系「新館」二樓 65203 電腦教室授課
+    - [2024 年 Linux 核心設計/實作課程期末專題](https://hackmd.io/@sysprog/linux2024-projects)
+    - [2025 年 Linux 核心設計專題想法](https://hackmd.io/@sysprog/S18kgVDJex)
+    * Week11 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz11) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/Tcy6NPtnQiubDGyrRUnSdw)
+
+* 第 12 週 (May 6, 8): 現代微處理器 + 記憶體管理
+    * [課程期末專題](https://hackmd.io/@sysprog/linux2025-projects)
+    * [教材解說](https://youtu.be/JWuw8M6Q-_k)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [並行和多執行緒程式設計](https://hackmd.io/@sysprog/concurrency)講座:
+        - [實作輕量級的 Mutex Lock](https://hackmd.io/@sysprog/concurrency-mutex) / 搭配看 [Priority Inversion on Mars](https://wiki.csie.ncku.edu.tw/embedded/priority-inversion-on-Mars.pdf)
+        - [案例: Reference Count](https://hackmd.io/@sysprog/concurrency-reference-count)
+    * 《Demystifying the Linux CPU Scheduler》
+        + 2.4 Multiprocessing
+        + 3.2 Time keeping
+        + 3.4 Per-Entity Load Tracking
+        + 4.1 Group scheduling and cgroups: Introduction
+        + 4.2 Group scheduling and CPU bandwidth
+    * [CS:APP 第 6 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch6)`*`
+    * [CPU caches](https://lwn.net/Articles/252125/) by Ulrich Drepper
+        - 進行中的繁體中文翻譯: 《[每位程式開發者都該有的記憶體知識](https://sysprog21.github.io/cpumemory-zhtw/)》
+        - 本文解釋用於現代電腦硬體的記憶體子系統的結構、闡述 CPU 快取發展的考量、它們如何運作，以及程式該如何針對記憶體操作調整，從而達到最佳的效能。
+    * [CS:APP 第 9 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch9)`*`
+    * Week12 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz12) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/8rwu2EOaQwW7AzjJOFK-gw)
+
+* 第 13 週 (May 13, 15): 記憶體管理 + 裝置驅動程式
+    * 公告:
+        - [課程期末專題](https://hackmd.io/@sysprog/linux2025-projects) 由一人或二人執行，若要二人為一組，請向授課教師確認
+    * [教材解說-1](https://youtu.be/jOY159H0Iyo)`*`, [教材解說-2](https://youtu.be/eplQPz1Qegc)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [Introduction to Memory Management in Linux](https://youtu.be/7aONIVSXiJ8)`*`
+    * [The Linux Virtual Memory System](https://people.redhat.com/pladd/NUMA_Linux_VM_NYRHUG.pdf)
+    * [Linux: 記憶體管理](https://hackmd.io/@sysprog/linux-memory)`*`: 記憶體管理是 Linux 核心裡頭最複雜的部分，涉及到對計算機結構、slob/slab/slub 記憶體配置器、行程和執行檔樣貌、虛擬記憶體對應的例外處理、記憶體映射, UMA vs. NUMA 等等議題。
+    * [POSIX Shared Memory](http://logan.tw/posts/2018/01/07/posix-shared-memory/): 在 Linux 中要實作出共享記憶體 (shared memory) 的機制很多，例如: 1) SysV shared memory; POSIX shared memory; 3) 以 `mmap` 對檔案進行記憶體映射; 4) 以 `memfd_create` 實作跨越行程存取; 本文章探討 POSIX shared memory 的使用，並提供完整應用案例，最後探討相關的同步議題。
+    * [解析 Linux 共享記憶體機制](https://hackmd.io/@sysprog/linux-shared-memory)
+    * [Linux 核心的 /dev/mem 裝置](https://hackmd.io/@sysprog/linux-mem-device)
+    * [C 語言: 物件導向程式設計](https://hackmd.io/@sysprog/c-oop)`*`
+    * [Object-oriented design patterns in the kernel, part 1](https://lwn.net/Articles/444910/) / [Object-oriented design patterns in the kernel, part 2](https://lwn.net/Articles/446317/)
+        + 對照《Demystifying the Linux CPU Scheduler》 `3.1 Structs and their role: sched class`
+    * [C 語言: Stream I/O, EOF 和例外處理](https://hackmd.io/@sysprog/c-stream-io)`*`
+    * [CS:APP 第 10 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch10)`*`
+    * [Linux: 裝置驅動程式介面和模型](https://github.com/gregkh/presentation-driver-model) / [錄影](https://youtu.be/AdPxeGHIZ74)`*` by [Greg Kroah-Hartman](https://github.com/gregkh)
+        + 針對 Linux v5.x 的素材請見《[The Linux Kernel Module Programming Guide](https://sysprog21.github.io/lkmpg/)》
+    * [How to avoid writing device drivers for embedded Linux](http://2net.co.uk/slides/ew2016-userspace-drivers-slides.pdf) / [錄影](https://youtu.be/QIO2pJqMxjE)`*`
+    * [Debugging Embedded Devices using GDB](https://elinux.org/images/0/01/Debugging-with-gdb-csimmonds-elce-2020.pdf) / [錄影](https://youtu.be/JGhAgd2a_Ck)`*`
+    * [Linux: Device Tree](https://events.static.linuxfound.org/sites/events/files/slides/petazzoni-device-tree-dummies.pdf) / [錄影](https://youtu.be/m_NyYEBxfn8)`*`
+    * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/linux-timer)`*`
+    * [Linux: Scalability 議題](https://hackmd.io/@sysprog/linux-scalability)`*`
+    * [An Introduction to Cache-Oblivious Data Structures](https://rcoh.me/posts/cache-oblivious-datastructures/)
+        - 「自動快取資料結構」，特性是無視硬體特定的快取大小，可能達到接近最優化快取的效能;
+        - 在現代 CPU 多層多種大小的快取架構下，它的理論宣稱其能自動優化在所有層的快取的存取效率。傳統上電腦科學做偏理論的人不重視實作的效能表現，而實作或硬體優化的從業人員往往不重視理論分析。這個學門卻是橫跨相當理論的演算法分析（需要相當多的進階數學工具），及相當低階的硬體效能理解;
+        - 影片: [Memory Hierarchy Models](https://youtu.be/V3omVLzI0WE)
+        - Google Research 強者的心得: [關於變強這檔事（九）](https://medium.com/@fchern/3fd36c986313), [設計高效 Hash Table (一)](https://medium.com/@fchern/303d9713abab), [設計高效 Hash Table (二)](https://medium.com/@fchern/9b5dc744219f)
+        - [Skip List](http://en.wikipedia.org/wiki/Skip_list): 置放大量數字並進行排序的資料結構。不用樹狀結構，而改用高度不同的 List 來連接資料。資料結構在概念上可以表示成 Left Child-Right Sibling Binary Tree 的模式。是 Cache-oblivious Algorithm 的經典範例，時間複雜度與空間複雜度與 Binary Search Tree 皆相同，但精心調整的實作可超越 Binary Search Tree。
+        - Linux 核心: [A kernel skiplist implementation (Part 1)](https://lwn.net/Articles/551896/), [Skiplists II: API and benchmarks](https://lwn.net/Articles/553047/)
+    * Linux: linked list, Queues, Maps, Binary Trees: [錄影](https://youtu.be/7ZQNb7Fu_A4)`*` / [共筆](https://docs.google.com/document/d/1n31QMPyvdAkS2uxM5AyKu_DD3uRu6-zoRukAitDwPvA/edit#)
+    - [課堂問答簡記](https://hackmd.io/uiNwM35dQ6qeFQwfTypc_w)
+
+* 第 14 週 (May 20, 22): 虛擬記憶體管理、記憶體模型、虛擬化技術
+    * 公告
+        - 隨堂測驗佔學期總分的 20%，其登錄分數的先決條件是，截至 6 月 19 日前，每位學員至少要進行課堂問答二次，並完成後續議題追蹤，彙整於當週的「課堂問答簡記」。若不滿足這條件，則隨堂測驗分數不予採計
+        - 個人作業 + 報告及專題佔學期總分的 30%，其登錄分數的先決條件是，截至 6 月 7 日前，每位學員至少要跟授課教師進行一對一討論 (第六週公告相關辦法並起算) 並完成後續議題追蹤，彙整於指定的作業筆記中。若不滿足這條件，則個人作業分數不採計
+        - 佔學期總成績 50% 的自我評量，請在 7 月 3 日中午前完成 (自 6 月 20 日開放填寫，注意：只受理 6 月 20 日到 7 月 3 日中午前的內容，不要過早填寫)。範例: [User/weihsinyeh](https://wiki.csie.ncku.edu.tw/User/weihsinyeh)
+        - 自我評量的網址**必須**符合 `/User/你的GitHub帳號名稱` 格式 (區分大小寫)，請不要打錯字。「不能」用「上傳檔案」的功能，使用文字編輯
+        - 填寫你的法定姓名和 GitHub 帳號名稱
+        - 自我評分項目 (都要有對應的狀況說明、超連結、延伸資訊，和用客觀事實佐證，每項不少於 70 個 Unicode 字元，用流暢清晰的漢語書寫，採用指定的[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)，你日後的同事和主管可能會看到你的評量)，務必詳細閱讀「[課程自我評量](https://hackmd.io/@sysprog/linux2024-assessment)」(含錄影)
+            1. 成果發表和貢獻: 與 Linux 核心相關的公開演講、貢獻到 Linux 核心和相關專案 (應標註對應的公開 commits/patches)、貢獻本課程的教材和使用的專案，包含授課教師編撰/翻譯的書籍 (即《Demystifying the Linux CPU Scheduler》, 《Concurrency Primer》, 《Linux Kernel Module Programming Guide》, 〈每位程式開發者都該有的記憶體知識〉)，必須要獲得採納才算，即便只是修正錯字，也可列入貢獻。有效採計區間為 2 月 18 日到 7 月 2 日
+            2. 作業/隨堂測驗: 你的開發紀錄，人在做，Google 在看
+            3. 期末專題: 開發紀錄、評量成果和產出，以及觀摩其他學員的期末專題並提問 (要有對應的公開軌跡)，且至少要涵蓋 5 項列於[課程期末展示](https://hackmd.io/@sysprog/linux2025-projects)的專案。注意：你有義務回覆其他學員 (和授課教師) 對你期末專題的提問，並在 7 月 4 日中午前做出回應且更新更新在期末專題頁面
+            4. 與授課教師的互動: 標注與授課教師「一對一討論」的時間，並列出你針對授課教師的問答、測驗和後續討論及啟發。課堂問答也可列入
+            5. 所見所聞所感，務必提及閱讀〈因為自動飲料機而延畢的那一年〉和回顧自身在本課程的投入狀況，尤其是重視細節、數學、[謹慎用詞](https://hackmd.io/@sysprog/it-vocabulary)、實驗設計等
+            6. 上述 (1) 到 (5) 各項都該有對應的評分，皆為介於 1 到 10 之間的「整數」(不要自作主張寫 `8.7` 這樣的數值) 並要能充分反映上述評分項目，附上對應的「公開」證明，如 commit log 和 pull requests
+            6. 計算方式 (GEOMEAN 即針對上述 (1) 到 (5) 各項的[幾何平均](https://en.wikipedia.org/wiki/Geometric_mean)，沒有加權。若有計算錯誤，整個自我評量不計分) 如下，若超過 10，則取 10
+                - 方案 A (針對已對 Linux, glibc, gcc, llvm, rv32emu 等專案做出超過 3 項 non-trivial 貢獻 [僅修正錯字或沒有改變程式行為的修改視為 trivial] 並獲得開發者採納): 8 + floor(0.3 * GEOMEAN)
+                - 方案 B: 1 + floor(GEOMEAN)
+    * [Memory Model](https://mes0903.github.io/memory/memory_model/)
+    * [Linux 核心 Copy On Write 實作機制](https://hackmd.io/@linD026/Linux-kernel-COW-content)
+    * [Embedded Virtualization applied in Mobile Devices](https://www.slideshare.net/jserv/mobile-virtualization) / [info](https://www.iis.sinica.edu.tw/zh/page/Events/data/DJ120045.html)
+    * [KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm)`*`
+    * [LKL: 重用 Linux 核心的成果](https://hackmd.io/@sysprog/linux-lkl)
+    * [課堂問答簡記](https://hackmd.io/_W09IuAtQYWaGO72A5Y8IA)
+
+* 第 15 週 (May 27, 29): 網路封包處理 + 多核處理器架構
+    * 公告
+        - [課程期末專題](https://hackmd.io/@sysprog/linux2025-projects)
+    * [slab 記憶體配置器](https://hackmd.io/@sysprog/linux-slab)
+    * [教材解說-1](https://youtu.be/HfXYAQRLfko)`*`, [教材解說-2](https://youtu.be/WwyifIQIYdY)`*`, [教材解說-3](https://youtu.be/CkgL2dVAaag)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [Linux 核心網路](https://hackmd.io/@rickywu0421/BJxD_3989)
+        - [socket 的譯法](https://hackmd.io/@sysprog/it-vocabulary)
+    * [semu: 精簡 RISC-V 系統模擬器](https://hackmd.io/@sysprog/Skuw3dJB3): 支援 TAP/TUN 以存取電腦網路
+    * [Memory Externalization With userfaultfd](http://ftp.ntu.edu.tw/pub/linux/kernel/people/andrea/userfaultfd/userfaultfd-LSFMM-2015.pdf) / [錄影](https://youtu.be/pC8cWWRVSPw)`*` / [kernel documentation: userfaults](https://www.kernel.org/doc/html/latest/admin-guide/mm/userfaultfd.html)
+    * [How Linux Processes Your Network Packet](https://www.slideshare.net/DevopsCon/how-linux-processes-your-network-packet-elazar-leibovich) / [錄影](https://youtu.be/3Ij0aZRsw9w)`*`
+    * [Kernel packet capture technologies](https://www.slideshare.net/ennael/kernel-recipes-2015-kernel-packet-capture-technologies) / [錄影](https://youtu.be/5gEWyCW-qx8)`*`
+    * [PACKET_MMAP](https://www.kernel.org/doc/Documentation/networking/packet_mmap.txt)
+        - `PACKET_MMAP` 在核心空間內配置一塊核心緩衝區，一旦使用者層級的應用程式呼叫 mmap 將前述緩衝區映射到使用者層級時，接收到的 skb 會直接在該核心緩衝區，從而讓應用程式得以直接捕捉封包
+        - 若沒有啟用 `PACKET_MMAP`，就只能使用低效率的 `AF_PACKET`，不但有緩衝區空間的限制，而且每次捕捉封包就要一次系統呼叫。反之，`PACKET_MMAP` 多數時候不需要呼叫系統呼叫，也能實作出 zero-copy
+        - [圖解 Linux tcpdump](https://jgsun.github.io/2019/01/21/linux-tcpdump/)
+    * [Multi-Core in Linux](https://youtu.be/UNI6Mbqryv0)`*`
+    * [Multiprocessor OS](/11-smp_os.pdf)
+        - [Arm 處理器筆記](https://wiki.csie.ncku.edu.tw/embedded/arm-smp-note.pdf)
+    * [從 CPU cache coherence 談 Linux spinlock 可擴展能力議題](https://hackmd.io/@sysprog/linux-spinlock-scalability)
+    * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz15) (內含作答表單)
+    * [課堂問答簡記](https://hackmd.io/L8NQsV0SRwmbKyXSayizWw)
+
+* 第 16 週 (Jun 3, 5): 程式碼最佳化概念 + 多核處理器架構
+    * 公告
+        - [課程期末專題](https://hackmd.io/@sysprog/linux2025-projects)成果展示 (線上直播) 的規範，請保留 6 月 28 日作為成果發表
+        - 善用[行事曆](https://bit.ly/sysprog-calendar)的 office hour，向授課教師預約一對一討論和補考
+    * [教材解說](https://youtu.be/ICRzw5Ye2sM)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [Multiprocessor OS](/11-smp_os.pdf)
+        - [Arm 處理器筆記](https://wiki.csie.ncku.edu.tw/embedded/arm-smp-note.pdf)
+    * 《Demystifying the Linux CPU Scheduler》
+        - 2.4 Multiprocessing
+        - 2.5 Energy-Aware Scheduling (EAS)
+        - 3.4 Per-Entity Load Tracking
+        - 4.2 Group scheduling and CPU bandwidth
+        - 4.3 Control Groups
+        - 4.4 Core scheduling
+    * [現代硬體架構上的演算法: 以 Binary Search 為例](https://hackmd.io/@RinHizakura/BJ-Zjjw43)
+        - [Beautiful Binary Search in D](https://muscar.eu/shar-binary-search-meta.html)
+        - [binary_search.c](https://gist.github.com/jserv/6023c2fc2d4477fca9038b05f293a543)
+    * [CS:APP 第 5 章重點提示和練習](https://hackmd.io/s/SyL8m4Lnm)`*`
+    * [CS:APP Assign 5.18](https://hackmd.io/s/rkdzvWJTX)`*`
+    * [Linux: Scalability 議題](https://hackmd.io/@sysprog/linux-scalability)`*`
+    * [Linux-Kernel Memory Ordering: Help Arrives At Last!](http://www.rdrop.com/users/paulmck/scalability/paper/LinuxMM.2017.04.08b.Barcamp.pdf) / [video](https://www.youtube.com/watch?v=ULFytshTvIY)`*`
+        - [Memory barriers in C](https://mariadb.org/wp-content/uploads/2017/11/2017-11-Memory-barriers.pdf)
+    * [課堂問答簡記](https://hackmd.io/k-YGbvF3QPuQDuwUYwIipg)
+ 
+* 第 17 週 (Jun 10, 12): 即時 Linux 的基礎建設
+    * [教材解說](https://youtu.be/4kfRe8TQY9g)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [Re: [問卦] 精通作業系統對Coding有什麼幫助？](https://disp.cc/b/163-cidY)
+    * [Linux: Timer 及其管理機制](https://hackmd.io/@sysprog/linux-timer)
+    * [The End of Time 19 years to go (2038)](https://events19.linuxfoundation.org/wp-content/uploads/2017/12/The-End-of-Time-19-Years-to-Go-Arnd-Bergmann-Linaro-Ltd.pdf)
+    * [Real-Time Scheduling on Linux](https://eci.intel.com/docs/3.2/development/performance/rt_scheduling.html)
+    * [PREEMPT_RT 作為邁向硬即時作業系統的機制](https://hackmd.io/@sysprog/preempt-rt)
+    * [Linux 核心搶佔](https://hackmd.io/@sysprog/linux-preempt)
+    * [Towards PREEMPT_RT for the Full Task Isolation](https://ossna2022.sched.com/event/11NtQ)
+    * [Linux and Zephyr “talking” to each other in the same SoC](https://events19.linuxfoundation.org/wp-content/uploads/2017/12/Linux-and-Zephyr-%E2%80%9CTalking%E2%80%9D-to-Each-Other-in-the-Same-SoC-Diego-Sueiro-Sepura-Embarcados.pdf)
+    * Week17 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz17) (內含作答表單)
+    * [課堂問答簡記](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA)
+
+* 第 18 週 (Jun 17, 19): 多核處理器 + Rust
+    * [教材解說](https://youtu.be/VFgRAHemG0Q)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * 公告
+        - 及早進行[期末專題](https://hackmd.io/@sysprog/linux2025-projects)
+        - 準備自我評量 (佔學期總分的 50%)
+        - 6 月 17 日[使用 Google Meet](https://meet.google.com/vzw-kgeu-kch) 授課，請尚未與授課教師互動的學員，把握最後的機會 (截至 6 月 19 日前，每位學員至少要進行課堂問答二次，並完成後續議題追蹤，彙整於當週的「課堂問答簡記」。若不滿足這條件，則隨堂測驗分數不予採計)
+    * [Linux 核心搶佔](https://hackmd.io/@sysprog/linux-preempt)
+    * [Customize Real-Time Linux for Rocket Flight Control System](https://osseu19.sched.com/speaker/georgekang03)
+    * [RTMux: A Thin Multiplexer To Provide Hard Realtime
+Applications For Linux](https://elinux.org/images/a/a4/Huang--rtmux_a_thin_multiplexer_to_provide_hard_realtime_applications_for_linux.pdf) / [EVL](https://evlproject.org/)
+    * Memory Barrier
+        - [Memory Barriers in the Linux Kernel: Semantics and Practices](https://elinux.org/images/a/ab/Bueso.pdf)
+        - [From Weak to Weedy: Effective Use of Memory Barriers in the ARM Linux Kernel](https://elinux.org/images/7/73/Deacon-weak-to-weedy.pdf) / [video](https://youtu.be/6ORn6_35kKo)`*` / [Cortex-A9 MPcore](https://wiki.csie.ncku.edu.tw/embedded/arm-smp-note.pdf)
+    * Rust 程式語言
+        - 現況: [已被 Google Android 團隊選為開發系統軟體的另一個程式語言，與 C 和 C++ 並列](https://www.phoronix.com/scan.php?page=news_item&px=Rust-For-Android-OS-System-Work); [自 2017 年 Facebook 內部採納 Rust 程式語言的專案增加，像是加密貨幣 Diem (前身為 Libra) 就將 Rust 作為主要程式語言並對外發布](https://engineering.fb.com/2021/04/29/developer-tools/rust/), 
+        - [撰寫 LKMPG 的 Rust 核心模組](https://hackmd.io/@sysprog/Sk8IMQ9S2)
+    * [課堂問答簡記](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA)
+
+* 第 19 週 (Jun 24): Rust, Linux 核心除錯
+    * 公告
+        - 6 月 24 日課程採用 Google Meet 進行，授課教師本週在美國參加研討會，請尚未進行課程互動的學員把握本次補救機會
+        - 自我評量務必在 7 月 3 日中午前完成
+        - [2025 年 Linux 核心設計/實作課程期末展示](https://hackmd.io/@sysprog/linux2025-showcase)`*`
+        - 7 月 1 日是本學期最後一次授課，改為 19:30 進行 (事後提供錄影)，涉及期末專題和自我評量的檢討，所有學員務必參加。
+    * [Linux kernel panic 排除](/kernel-debugging.pdf)
+    * [教材解說-1](https://youtu.be/vS8U23bhidg)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    * [Rust for Linux 研究](https://hackmd.io/@hank20010209/SJmVNPMQ2)
+    * [撰寫 LKMPG 的 Rust 核心模組](https://hackmd.io/@sysprog/Sk8IMQ9S2)
+    * Rust 程式語言
+        - Steve Klabnik 與 Carol Nichols，及 Rust 社群的協同撰寫的《The Rust Programming Language》線上書籍，由台灣的 Rust 社群提供[繁體中文翻譯](https://rust-lang.tw/book-tw/)
+        - [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
+        - [C vs. Rust](http://www-verimag.imag.fr/~mounier/Enseignement/Software_Security/19RustVsC.pdf)
+        - [Unsigned Integers Are Dangerous](https://jacobegner.blogspot.com/2019/11/unsigned-integers-are-dangerous.html)
+        - [constant vs. immutable](https://hackmd.io/@jserv/By5307tsV)
+    * Week19 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2024-quiz19) (內含作答表單)
+    * [課堂問答簡記](https://hackmd.io/4UVPLWFgQ92AlG3N76dFKA)
+
+* 第 20 週 (Jul 1): 回顧和檢討
+    * 注意事項
+        - 7 月 2 日中午前，挑出至少 5 個由其他學員進行的題目，觀看其解說錄影、開發紀錄、程式碼和成果進行批評，紀錄於下方對應專案的開發紀錄中，針對個別題目，至少提出 1 個問題或建議。注意：比照[第三次作業](https://hackmd.io/@sysprog/linux2025-review)的風格，在 (自己以外) 學員的開發紀錄上留言。
+        -  針對其他學員 (含授課教師和社會人士) 在你的開發紀錄頁面提出的問題或建議，務必在 7 月 4 日中午前予以回應和改進。
+    * [課程自我評量](https://hackmd.io/@sysprog/linux2024-assessment)`*`
+    * [透過 Linux 核心重新認識數位化世界](https://bit.ly/linux2024-short): 藉由 Dominic Walliman 製作的〈[Map of Computer Science](https://youtu.be/SzJ46YA_RaA)〉短片，探討電腦科學的多個面向，諸如電腦網路、圖形處理、抽象機器及理論 (如Turing machine)、NP-Complete 問題、計算機架構、排序演算法、資料壓縮、現代密碼學、形式化方法、作業系統排程、異質多核運算、編譯器，和程式語言，來回顧今日的 Linux 核心 ── 電腦科學的子學科幾乎都可反映在 Linux 核心中。
+    * [課程期末展示](https://hackmd.io/@sysprog/linux2025-showcase)`*`
+    * [期末專題](https://hackmd.io/@sysprog/linux2025-projects)檢討
+    * [課堂問答簡記](https://hackmd.io/0wu7DqofQNyhYtIyxb0dBA)
+
 Linux 核心設計/實作 (Spring 2024) 課程進度表暨線上資源
 ------------------------------------------------------
 * 第 1 週 (Feb 20, 23): 誠實面對自己
