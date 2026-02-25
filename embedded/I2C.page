@@ -31,8 +31,43 @@ Definition of I2C-bus terminology
  - Synchronization : procedure to synchronize the clock signals of two or more devices
 
 
-I²C Speed
-...................
+Master & Slave node :
+
+ - Master node — node that generates the clock and initiates communication with slaves
+ - Slave node — node that receives the clock and responds when addressed by the master
+ - Each device connected to the bus is software addressable by a unique address and simple master/slave relationships exist at all times; masters can operate as master-transmitters or as master-receivers.
+ - It is a true multi-master bus including collision detection and arbitration to prevent data corruption if two or more masters simultaneously initiate data transfer.
+ - Serial, 8-bit oriented, bidirectional data transfers can be made at up to 100 kbit/s in the Standard-mode, up to 400 kbit/s in the Fast-mode, up to 1 Mbit/s in Fast-mode Plus, or up to 3.4 Mbit/s in the High-speed mode.
+
+I²C data mode :
+
+ - master transmit — master node is sending data to a slave
+ - master receive — master node is receiving data from a slave
+ - slave transmit — slave node is sending data to the master
+ - slave receive — slave node is receiving data from the master
+
+![](/embedded/i2c_data_transmit.png)
+
+I²C data Transmit :
+
+ - Data Transfer is initiated with a START bit (S) signaled by SDA being pulled low while SCL stays high.
+ - SDA sets the 1st data bit level while keeping SCL low (during blue bar time.)
+ - The data is sampled (received) when SCL rises (green) for the first bit (B1).
+ - This process repeats, SDA transitioning while SCL is low, and the data being read while SCL is high (B2, Bn).
+ - A STOP bit (P) is signaled when SDA is pulled high while SCL is high.
+
+## I²C arbitration
+
+![](/embedded/i2c_arbitration.png)
+
+I²C 的仲裁
+
+ - 避免同時間有 2個以上的master (不同資料) 控制 i2c
+ - 利用 bus wired-AND 的機制，若 Master 1 欲將 SDA logic 拉高，最後卻 SDA logic 為低，代表仲裁輸了，該 master 立即停止動作。
+ - 輸掉的 master 寧可先放棄 (Back Off) 等候，到看見停止狀態的出現才開始傳送。 
+
+## I²C Speed
+
 一開始的I2C bus 操作的速度被限制在100kbit/s，不過隨著時代的演進，新增了一些模式，所以現在的規範分成五種操作速度:
 
 * 雙向
