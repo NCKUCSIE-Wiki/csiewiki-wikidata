@@ -19,12 +19,12 @@ categories: User
 專長
 ====
 
-- 機器人系統/無人飛行載具/無人地面載具
-- 動態系統及控制/最佳化理論/數值計算方法
-- 嵌入式系統/即時系統/機器視覺
+- 機器人系統 / 無人飛行載具 / 無人地面載具
+- 動態系統及控制 / 最佳化理論 / 數值計算方法
+- 嵌入式系統 / 即時系統 / 機器視覺
 
-近期主要方向
-==========
+近期研究
+=======
 
 - 四旋翼飛行器的非線性控制, 最佳控制 (LQR, NMPC), 強健控制 (H∞ control), 及強化學習 (RL) 的系統性分析
 - RISC-V 32-bit 系統模擬器上的 GPU 虛擬化 (VirtIO)
@@ -32,9 +32,9 @@ categories: User
 工作經驗
 =======
 
-- [NVIDIA](https://www.nvidia.com/zh-tw/)
-- [新馳科技](https://www.gallopwave.com/)
-- [奧榮科技](https://www.avilon.co/?lang=zh)
+- [NVIDIA](https://www.nvidia.com/zh-tw/) (2024-Now)
+- [新馳科技](https://www.gallopwave.com/) (2023-2024)
+- [奧榮科技](https://www.avilon.co/?lang=zh) (2018-2021)
 
 主要作品
 =======
@@ -64,11 +64,11 @@ categories: User
 - [四軸飛行器 LQR 控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): 一個經典的最佳控制設計，使用速度極快的-保結構加倍收斂法 [[技術報告]](https://drive.google.com/file/d/1u0T5Wb_mH0NUBVetOBdvIHdeCOP8Wde6/view?usp=sharing)
 - [四軸飛行器 H∞ 強健控制](https://github.com/shengwen-tw/quadrotor-h-infty-ctrl-simulator): 一個將擾動輸入對輸出之增益做最小化的最佳控制設計 [[簡報]](https://drive.google.com/file/d/1573Td07_vohtVan2gHrCwDmQyY9ihr_w/view?usp=drivesdk)
 
-馬達控制 / 電子變速器:
+馬達控制:
 
 - [三相馬達速度控制](https://github.com/shengwen-tw/bldc-control-simulator): 用於研究 Field-Oriented Control 和傳統方波控制差異
 
-路徑規劃演算法:
+路徑規劃:
 
 - [Minimum-snap trajectory generation](https://github.com/shengwen-tw/minimum-snap-traj-matlab): 最小化位置四次微分以達到平滑軌跡規劃
 - [Rapidly-Exploring Random Tree (RRT)](https://github.com/shengwen-tw/rrt-matlab): 給定起始點和終點，規劃一條避開所有障礙物到達終點的路徑
@@ -85,39 +85,18 @@ Vehicles](https://link.springer.com/chapter/10.1007/978-3-030-01174-1_75)
 公開演講
 =======
 
-EOSS:
-
-- [Crafting a Vision-Aided Software Stack for UAV](https://eoss24.sched.com/event/1aBF7): [[簡報]](https://static.sched.com/hosted_files/eoss24/df/Crafting%20a%20Vision-Aided%20Software%20Stack%20for%20UAV.pdf) - 2024
-
-OpenTechConf:
-
-- [Building a Quadrotor Simulator with Python - Modeling, Simulation, and Control](https://drive.google.com/file/d/1Oc-OfTaBOS4-Ut4LMXkFd4vc9sJBr5s8/view?fbclid=IwY2xjawM0sS9leHRuA2FlbQIxMABicmlkETFQS240alZ0d0pCS0hXRXN3AR4c9Y9pQykGagwCiAT0a84OlyRuoPozOFF2ng8ZyYwwvKGd4m7W91oPA3xw9A_aem_5FYP7iKGktVP1OJBBpa-mA) - 2025
-
-COSCUP:
-
-- [打造 Linux 風格的即時作業系統應用於四軸飛行器控制](https://coscup.org/2024/zh-TW/session/AVPXW9): [[簡報]](https://drive.google.com/file/d/16S8ZRC-lhT15CXwWIy-RIIWXl5Ertqo5/view) - 2024
-- [Tenok: 打造用於機器人控制的微型即時作業系統](https://coscup.org/2023/zh-TW/session/XA9XJC): [[簡報]](https://drive.google.com/file/d/1p8YJVPVwFAEknMXPbXzjj0y0p5qcqT2T/view) - 2023
+- Embedded Open Source Summit (EOSS) 2026: ["Crafting a Vision-Aided Software Stack for UAV"](https://eoss24.sched.com/event/1aBF7) [[簡報]](https://static.sched.com/hosted_files/eoss24/df/Crafting%20a%20Vision-Aided%20Software%20Stack%20for%20UAV.pdf)
+- OpenTechConf 2025: ["Building a Quadrotor Simulator with Python - Modeling, Simulation, and Control"](https://drive.google.com/file/d/1Oc-OfTaBOS4-Ut4LMXkFd4vc9sJBr5s8/view?fbclid=IwY2xjawM0sS9leHRuA2FlbQIxMABicmlkETFQS240alZ0d0pCS0hXRXN3AR4c9Y9pQykGagwCiAT0a84OlyRuoPozOFF2ng8ZyYwwvKGd4m7W91oPA3xw9A_aem_5FYP7iKGktVP1OJBBpa-mA)
+- COSCUP 2024: ["打造 Linux 風格的即時作業系統應用於四軸飛行器控制"](https://coscup.org/2024/zh-TW/session/AVPXW9) [[簡報]](https://drive.google.com/file/d/16S8ZRC-lhT15CXwWIy-RIIWXl5Ertqo5/view)
+- COSCUP 2023: ["Tenok: 打造用於機器人控制的微型即時作業系統"](https://coscup.org/2023/zh-TW/session/XA9XJC) [[簡報]](https://drive.google.com/file/d/1p8YJVPVwFAEknMXPbXzjj0y0p5qcqT2T/view)
 
 受邀演講
 =======
-- MOPCON 2024 Keynote Speech: [Trends in Machine Learning for Unmanned Aerial Vehicle Applications](https://mopcon.org/2024/speaker/?id=2024018): [[簡報]](https://drive.google.com/file/d/1UmSeU8Y63s4cASBFNWM_zi5ll2J9EIJx/view?fbclid=IwY2xjawGLSe9leHRuA2FlbQIxMAABHX9AjWq_vX6WXNQYPfsQp-BUFIM44uh6MBCdLFP4OAEdUsAF8zQptxDcdQ_aem_uvY1jloybOcTQEWV687_BA)
-- 2024/12/19 @ 和碩科技 (Pegatron): Trends and lessons learned in deep learning and generative AI applications for UAV
+- MOPCON 2024 Keynote Speech: ["Trends in Machine Learning for Unmanned Aerial Vehicle Applications"](https://mopcon.org/2024/speaker/?id=2024018) [[簡報]](https://drive.google.com/file/d/1UmSeU8Y63s4cASBFNWM_zi5ll2J9EIJx/view?fbclid=IwY2xjawGLSe9leHRuA2FlbQIxMAABHX9AjWq_vX6WXNQYPfsQp-BUFIM44uh6MBCdLFP4OAEdUsAF8zQptxDcdQ_aem_uvY1jloybOcTQEWV687_BA)
+- 和碩科技 (2024): "Trends and lessons learned in deep learning and generative AI applications for UAV"
 
 競賽經歷
 =======
 
-- 放視大賞 - 銀獎 (2018)
-- 軟體創作達人暑期成長營 - 特優 (2014)
-
-2013年進階嵌入式統開發與實做 (秋季班)
-================================
-
-我目前只是一個高二學生(16歲)。
-
-初次到成大資工參與黃敬群老師的課程是今年暑假, 除了開始摸索一些開發環境、工具的使用外也逐漸了解嵌入式系統的領域。
-
-由於我個人住在台中, 無法實際到成大與組員們討論, 因此貢獻相對較少 (上台報告一類), 但仍希望能夠透過這難得的機會與大學生、研究生們合作及學習。
-
-2013年秋季課程結束後, 我想只要有機會我仍會繼續透過網路旁聽學習。若不嫌棄我, 歡迎任何人找我一起製作專題或合作, 盡些綿薄之力。
-
-期末專題成果: [第7組 (四軸飛高高 (Quadrotor))](http://wiki.csie.ncku.edu.tw/embedded/team2013-7)
+- 2018 放視大賞 - 銀獎
+- 2014 軟體創作達人暑期成長營 - 特優
