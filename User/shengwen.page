@@ -8,14 +8,13 @@ categories: User
 <img src="https://shengwen-tw.github.io/profile.png"
      style="float:right; width:15%;">
 
-- 國立陽明交通大學機器人碩士學程 (2021畢) ([網路控制機器人實驗室](https://ncrl.lab.nycu.edu.tw/))
-- 靜宜大學資訊工程系 (2019畢)
-- 2013年至2018年期間廣泛參與 **成大航太/資工/工科** 之課程/專題/論文研究
+- 德克薩斯大學奧斯汀分校 - 電腦科學碩士 (2025-2027)
+- 國立臺灣大學 - 電機所博士生 (2022-2024)
+- 國立陽明交通大學 - 機器人碩士 (2019-2021)
+- 靜宜大學 - 資訊工程系 (2015-2019)
 - 個人網頁: [shengwen-tw.github.io](https://shengwen-tw.github.io/)
-- E-mail: ``shengwen1997.tw[at]gmail.com``
-- GitHub: [shengwen-tw](https://github.com/shengwen-tw)
-- 履歷: [HackMD (英文)](http://hackmd.io/@shengwen/cv)
-- [學習清單](https://hackmd.io/@shengwen/my-ocw-list)
+
+2013-2018 期間於成大航太/資工/工科參與課程/專題/論文研究
 
 專長
 ====
@@ -24,25 +23,18 @@ categories: User
 - 動態系統及控制/最佳化理論/數值計算方法
 - 嵌入式系統/即時系統/機器視覺
 
+近期主要方向
+==========
+
+- 四旋翼飛行器的非線性控制, 最佳控制 (LQR, NMPC), 強健控制 (H∞ control), 及強化學習 (RL) 的系統性分析
+- RISC-V 32-bit 系統模擬器上的 GPU 虛擬化 (VirtIO)
+
 工作經驗
 =======
 
 - [NVIDIA](https://www.nvidia.com/zh-tw/)
 - [新馳科技](https://www.gallopwave.com/)
 - [奧榮科技](https://www.avilon.co/?lang=zh)
-
-影片
-====
-
-- [STM32F4 教學 (共十一講)](https://www.youtube.com/playlist?list=PLe8KWt_uj6-MP0VAuhI_jwjfT6QTO4jBG)
-- [陽明交大 - 機器人學：多軸旋翼機 - Git 與 ROS 介紹](https://www.youtube.com/watch?v=wT4gGYgomU4)
-
-文章
-===
-
-- [旋轉矩陣及四元數的空間轉換](https://hackmd.io/@shengwen/rotation-matrix)
-- [MAVLink 原理及開發指南](https://hackmd.io/@shengwen/mavlink)
-- [Pendulum Control Playground](https://hackmd.io/@shengwen/pendulum-control)
 
 主要作品
 =======
@@ -111,15 +103,14 @@ COSCUP:
 - MOPCON 2024 Keynote Speech: [Trends in Machine Learning for Unmanned Aerial Vehicle Applications](https://mopcon.org/2024/speaker/?id=2024018): [[簡報]](https://drive.google.com/file/d/1UmSeU8Y63s4cASBFNWM_zi5ll2J9EIJx/view?fbclid=IwY2xjawGLSe9leHRuA2FlbQIxMAABHX9AjWq_vX6WXNQYPfsQp-BUFIM44uh6MBCdLFP4OAEdUsAF8zQptxDcdQ_aem_uvY1jloybOcTQEWV687_BA)
 - 2024/12/19 @ 和碩科技 (Pegatron): Trends and lessons learned in deep learning and generative AI applications for UAV
 
-獎項
-====
+競賽經歷
+=======
 
 - 放視大賞 - 銀獎 (2018)
-- 資工系畢業專題競賽 - 特優 (2017)
 - 軟體創作達人暑期成長營 - 特優 (2014)
 
-2013年進階嵌入式統開發與實做(秋季班)心得
-===================================
+2013年進階嵌入式統開發與實做 (秋季班)
+================================
 
 我目前只是一個高二學生(16歲)。
 
