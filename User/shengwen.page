@@ -8,7 +8,7 @@ categories: User
 <img src="https://shengwen-tw.github.io/profile.png"
      style="float:right; width:15%;">
 
-- 德克薩斯大學奧斯汀分校 - 電腦科學碩士 (2025-2027)
+- 德州大學奧斯汀分校 - 電腦科學碩士 (2025-2027)
 - 國立臺灣大學 - 電機所博士生 (2022-2024)
 - 國立陽明交通大學 - 機器人碩士 (2019-2021)
 - 靜宜大學 - 資訊工程系 (2015-2019)
@@ -59,14 +59,14 @@ categories: User
 
 四軸飛行器:
 
-- [quadrotor-sim-py](https://github.com/shengwen-tw/quadrotor-sim-py): 基於 Python 開發的四軸飛行器模擬器。預計結合 CasADi, PyTorch 開發模型預測控制器 (MPC) 和強化學習 (RL) 演算法。
-- [四軸飛行器幾何追蹤控制](https://github.com/shengwen-tw/qaudrotor_geometry_ctrl_simulator): 一個基於非線性動力學模型、可達到敏捷飛行的控制器模擬 [[簡報]](https://drive.google.com/file/d/1ZyqSpjSTDKI8-ypz8bvnjUU6N7ipMHDt/view?usp=sharing)
-- [四軸飛行器 LQR 控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): 一個經典的最佳控制設計，使用速度極快的-保結構加倍收斂法 [[技術報告]](https://drive.google.com/file/d/1u0T5Wb_mH0NUBVetOBdvIHdeCOP8Wde6/view?usp=sharing)
-- [四軸飛行器 H∞ 強健控制](https://github.com/shengwen-tw/quadrotor-h-infty-ctrl-simulator): 一個將擾動輸入對輸出之增益做最小化的最佳控制設計 [[簡報]](https://drive.google.com/file/d/1573Td07_vohtVan2gHrCwDmQyY9ihr_w/view?usp=drivesdk)
+- [rotor-bench](https://github.com/shengwen-tw/rotor-bench): 基於 Python 開發可利用 GPU 平行化加速的多旋翼無人機模擬器。用於系統性驗證無人機的先進控制演算法如非線性控制、最佳控制、強健控制, 及強化學習
+- [四軸飛行器幾何追蹤控制](https://github.com/shengwen-tw/qaudrotor_geometry_ctrl_simulator): 一個基於非線性動力學模型, 可達到敏捷飛行的控制器模擬 [[簡報]](https://drive.google.com/file/d/1ZyqSpjSTDKI8-ypz8bvnjUU6N7ipMHDt/view?usp=sharing)
+- [四軸飛行器 LQR 控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): 一個經典的最佳控制設計，使用優於 MATLAB 工具包的保結構加倍收斂法，收斂速度為平方收斂 [[技術報告]](https://drive.google.com/file/d/1u0T5Wb_mH0NUBVetOBdvIHdeCOP8Wde6/view?usp=sharing)
+- [四軸飛行器 H∞ 強健控制](https://github.com/shengwen-tw/quadrotor-h-infty-ctrl-simulator): 一個將擾動輸入對輸出之增益做最小化的最佳控制設計，基於二分法結合保結構加倍收斂法 [[簡報]](https://drive.google.com/file/d/1573Td07_vohtVan2gHrCwDmQyY9ihr_w/view?usp=drivesdk)
 
 馬達控制:
 
-- [三相馬達速度控制](https://github.com/shengwen-tw/bldc-control-simulator): 用於研究 Field-Oriented Control 和傳統方波控制差異
+- [三相馬達速度控制](https://github.com/shengwen-tw/bldc-control-simulator): 用於研究 Field-Oriented Control 和方波控制
 
 路徑規劃:
 
@@ -87,8 +87,8 @@ Vehicles](https://link.springer.com/chapter/10.1007/978-3-030-01174-1_75)
 
 - Embedded Open Source Summit (EOSS) 2026: ["Crafting a Vision-Aided Software Stack for UAV"](https://eoss24.sched.com/event/1aBF7) [[簡報]](https://static.sched.com/hosted_files/eoss24/df/Crafting%20a%20Vision-Aided%20Software%20Stack%20for%20UAV.pdf)
 - OpenTechConf 2025: ["Building a Quadrotor Simulator with Python - Modeling, Simulation, and Control"](https://drive.google.com/file/d/1Oc-OfTaBOS4-Ut4LMXkFd4vc9sJBr5s8/view?fbclid=IwY2xjawM0sS9leHRuA2FlbQIxMABicmlkETFQS240alZ0d0pCS0hXRXN3AR4c9Y9pQykGagwCiAT0a84OlyRuoPozOFF2ng8ZyYwwvKGd4m7W91oPA3xw9A_aem_5FYP7iKGktVP1OJBBpa-mA)
-- COSCUP 2024: ["打造 Linux 風格的即時作業系統應用於四軸飛行器控制"](https://coscup.org/2024/zh-TW/session/AVPXW9) [[簡報]](https://drive.google.com/file/d/16S8ZRC-lhT15CXwWIy-RIIWXl5Ertqo5/view)
-- COSCUP 2023: ["Tenok: 打造用於機器人控制的微型即時作業系統"](https://coscup.org/2023/zh-TW/session/XA9XJC) [[簡報]](https://drive.google.com/file/d/1p8YJVPVwFAEknMXPbXzjj0y0p5qcqT2T/view)
+- COSCUP 2024: ["Creating a Linux-like real-time operating system for quadrotor drones"](https://coscup.org/2024/zh-TW/session/AVPXW9) [[簡報]](https://drive.google.com/file/d/16S8ZRC-lhT15CXwWIy-RIIWXl5Ertqo5/view)
+- COSCUP 2023: ["Tenok: Build a real-time operating system for Robotics"](https://coscup.org/2023/zh-TW/session/XA9XJC) [[簡報]](https://drive.google.com/file/d/1p8YJVPVwFAEknMXPbXzjj0y0p5qcqT2T/view)
 
 受邀演講
 =======
