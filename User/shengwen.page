@@ -8,95 +8,91 @@ categories: User
 <img src="https://shengwen-tw.github.io/profile.png"
      style="float:right; width:15%;">
 
-- 德州大學奧斯汀分校 - 電腦科學碩士 (2025-2027)
-- 國立臺灣大學 - 電機所博士生 (2022-2024)
-- 國立陽明交通大學 - 機器人碩士 (2019-2021)
-- 靜宜大學 - 資訊工程系 (2015-2019)
+- 2025-2027 德州大學奧斯汀分校 電腦科學碩士
+- 2022-2024 國立臺灣大學 電機所博士生
+- 2019-2021 陽明交通大學 機器人碩士
+- 2015-2019 靜宜大學 資訊工程學系
+- 2013-2018 參與成大航太系、資工系與工科系之課程、專題與論文研究
 - 個人網頁: [shengwen-tw.github.io](https://shengwen-tw.github.io/)
-
-2013-2018 期間於成大航太/資工/工科參與課程/專題/論文研究
-
-專長
-====
-
-- 機器人系統 / 無人飛行載具 / 無人地面載具
-- 動態系統及控制 / 最佳化理論 / 數值計算方法
-- 嵌入式系統 / 即時系統 / 機器視覺
 
 近期研究
 =======
 
-- 四旋翼飛行器的非線性控制, 最佳控制 (LQR, NMPC), 強健控制 (H∞ control), 及強化學習 (RL) 的系統性分析
-- RISC-V 32-bit 系統模擬器上的 GPU 虛擬化 (VirtIO)
+- 四旋翼飛行器之非線性控制、最佳控制（LQR、NMPC）、強健控制（H∞ control）與強化學習（RL）的系統性分析
+- RISC-V 32-bit 系統模擬器上的 GPU 虛擬化（VirtIO）
+
+專長
+====
+
+- 機器人系統、無人飛行載具、無人地面載具
+- 動態系統與控制、最佳化理論、數值計算
+- 嵌入式系統、即時系統、機器視覺
 
 工作經驗
 =======
 
-- [NVIDIA](https://www.nvidia.com/zh-tw/) (2024-Now)
-- [新馳科技](https://www.gallopwave.com/) (2023-2024)
-- [奧榮科技](https://www.avilon.co/?lang=zh) (2018-2021)
+- 2024-Now  [NVIDIA](https://www.nvidia.com/zh-tw/)
+- 2023-2024 [新馳科技](https://www.gallopwave.com/)
+- 2018-2021 [奧榮科技](https://www.avilon.co/?lang=zh)
 
 主要作品
 =======
 
-- [多旋翼飛控全系統設計](https://www.youtube.com/watch?v=hBBe1Kj82B4): 碩班期間成果，包含非線性控制、多感測器慣性導航、即時定位與地圖建構 (SLAM)、及最佳軌跡規劃等。曾經學術合作計畫授權予[國家太空中心 (TASA)](https://www.tasa.org.tw/)
-- [UrsusPilot](https://www.youtube.com/watch?v=_DsNQWP7UXo): 2013-2015年期間參與之四軸飛行器專案 (由成大航太-林清一教授之研究生主導)。原為開放原始碼專案，目前已轉為非公開
-- [Tenok](https://github.com/tenok-rtos/tenok): 一個 Linux 風格、適用於機器人及物聯網應用的即時作業系統 [[共筆]](https://hackmd.io/@shengwen/tenok) [[影片]](https://www.youtube.com/watch?v=byWihWcMP00)
-- [Puyuma](https://github.com/Puyuma/puyuma-core): 基於 Linux 和電腦視覺、透過 Xenomai 達到 Real-time 的微型自駕車實驗系統 [[技術報告]](https://drive.google.com/file/d/1rKgdAhpr7M2tiiu-zpXKDYbxuNX_QqWz/view?usp=share_link) [[簡報]](https://drive.google.com/file/d/1D9Cp7_kDHw4EDSdKVgKMuRb3Ri0mA4bN/view?usp=sharing)
-- [PU-01](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 包含機構設計、參數規劃、穩定性分析的雙尾桿後推式定翼機設計 [[簡報]](https://drive.google.com/file/d/1hEJ8q8cbePwxY358UeMr3Z0nmIqtdnKo/view)
+- [多旋翼飛控全系統設計](https://www.youtube.com/watch?v=hBBe1Kj82B4): 交大期間成果，包含非線性控制、多感測器慣性導航、即時定位與地圖建構（SLAM）及最佳軌跡規劃。曾於學術合作計畫中授權予[國家太空中心 (TASA)](https://www.tasa.org.tw/)
+- [UrsusPilot](https://www.youtube.com/watch?v=_DsNQWP7UXo): 2013–2015 年期間參與之四軸飛行器專案（由成大航太林清一教授研究生主導）。原為開放原始碼專案，目前已轉為非公開
+- [Tenok](https://github.com/tenok-rtos/tenok): Linux 風格的即時作業系統，適用於機器人與物聯網應用 [[共筆]](https://hackmd.io/@shengwen/tenok) [[影片]](https://www.youtube.com/watch?v=byWihWcMP00)
+- [Puyuma](https://github.com/Puyuma/puyuma-core): 基於 Linux 與電腦視覺、透過 Xenomai 達成即時性的微型自駕車實驗系統  [[技術報告]](https://drive.google.com/file/d/1rKgdAhpr7M2tiiu-zpXKDYbxuNX_QqWz/view?usp=share_link) [[簡報]](https://drive.google.com/file/d/1D9Cp7_kDHw4EDSdKVgKMuRb3Ri0mA4bN/view?usp=sharing)
+- [PU-01](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 雙尾桿後推式定翼機設計 [[簡報]](https://drive.google.com/file/d/1hEJ8q8cbePwxY358UeMr3Z0nmIqtdnKo/view)
 
 開放原始碼參與
 =============
 
-- [semu](https://github.com/sysprog21/semu): 輕量級 RV32IMA 虛擬機，可執行 Linux。貢獻 virtio-blk、virtio-gpu、virtio-input、virtio-rng 等虛擬化基礎建設。
-- [DirectFB2](https://github.com/directfb2/DirectFB2): 輕量級的 Linux/Nuttx 視窗系統，修正 RV32 及 DRM 相關問題。
-- [Mado](https://github.com/sysprog21/mado): 用於資源受限硬體的視窗系統，貢獻 Linux framebuffer device 實做。
-- [linenoise](https://github.com/antirez/linenoise): 小型列編輯函式庫 (line editing library), 改進按鍵處理之程式架構。
-- [Rust 程式語言電子書](https://rust-lang.tw/book-tw/): 修正錯別字。
+- [semu](https://github.com/sysprog21/semu): RV32IMA 系統模擬器，實作 VirtIO 虛擬化（GPU、Keyboard、Mouse、RNG、Block device）
+- [DirectFB2](https://github.com/directfb2/DirectFB2): 修正 RV32 與 DRM 相關問題
+- [Mado](https://github.com/sysprog21/mado): 加入 Linux framebuffer device 的支援
+- [linenoise](https://github.com/antirez/linenoise): 改進鍵盤輸入處理架構
+- [Rust 程式語言電子書](https://rust-lang.tw/book-tw/): 內容校對修正
 
 數值模擬專案
 ===========
 
 四軸飛行器:
 
-- [rotor-bench](https://github.com/shengwen-tw/rotor-bench): 基於 Python 開發可利用 GPU 平行化加速的多旋翼無人機模擬器。用於系統性驗證無人機的先進控制演算法如非線性控制、最佳控制、強健控制, 及強化學習
-- [四軸飛行器幾何追蹤控制](https://github.com/shengwen-tw/qaudrotor_geometry_ctrl_simulator): 一個基於非線性動力學模型, 可達到敏捷飛行的控制器模擬 [[簡報]](https://drive.google.com/file/d/1ZyqSpjSTDKI8-ypz8bvnjUU6N7ipMHDt/view?usp=sharing)
-- [四軸飛行器 LQR 控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): 一個經典的最佳控制設計，使用優於 MATLAB 工具包的保結構加倍收斂法，收斂速度為平方收斂 [[技術報告]](https://drive.google.com/file/d/1u0T5Wb_mH0NUBVetOBdvIHdeCOP8Wde6/view?usp=sharing)
-- [四軸飛行器 H∞ 強健控制](https://github.com/shengwen-tw/quadrotor-h-infty-ctrl-simulator): 一個將擾動輸入對輸出之增益做最小化的最佳控制設計，基於二分法結合保結構加倍收斂法 [[簡報]](https://drive.google.com/file/d/1573Td07_vohtVan2gHrCwDmQyY9ihr_w/view?usp=drivesdk)
+- [rotor-bench](https://github.com/shengwen-tw/rotor-bench): 基於 Python 開發、可利用 GPU 平行化加速的多旋翼無人機模擬器，用於系統性驗證先進控制演算法，如幾何控制、最佳控制、強健控制及強化學習
+- [四軸飛行器幾何控制](https://github.com/shengwen-tw/qaudrotor_geometry_ctrl_simulator): 基於非線性動力學模型的控制器模擬，可實現敏捷飛行 [[簡報]](https://drive.google.com/file/d/1ZyqSpjSTDKI8-ypz8bvnjUU6N7ipMHDt/view?usp=sharing)
+- [四軸飛行器 LQR 控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): 經典最佳控制設計，使用保結構加倍收斂法求解 Riccati 方程，相較 MATLAB 工具包具有平方收斂速度 [[技術報告]](https://drive.google.com/file/d/1u0T5Wb_mH0NUBVetOBdvIHdeCOP8Wde6/view?usp=sharing)
+- [四軸飛行器 H∞ 強健控制](https://github.com/shengwen-tw/quadrotor-h-infty-ctrl-simulator): 強健最佳控制，透過最小化擾動輸入至輸出增益，並以二分法結合保結構加倍收斂法求解 [[簡報]](https://drive.google.com/file/d/1573Td07_vohtVan2gHrCwDmQyY9ihr_w/view?usp=drivesdk)
 
 馬達控制:
 
-- [三相馬達速度控制](https://github.com/shengwen-tw/bldc-control-simulator): 用於研究 Field-Oriented Control 和方波控制
+- [三相馬達速度控制](https://github.com/shengwen-tw/bldc-control-simulator): 三相 BLDC 馬達速度控制模擬，包含 Field-Oriented Control（FOC）與方波控制
 
 路徑規劃:
 
-- [Minimum-snap trajectory generation](https://github.com/shengwen-tw/minimum-snap-traj-matlab): 最小化位置四次微分以達到平滑軌跡規劃
-- [Rapidly-Exploring Random Tree (RRT)](https://github.com/shengwen-tw/rrt-matlab): 給定起始點和終點，規劃一條避開所有障礙物到達終點的路徑
+- [Minimum-snap trajectory generation](https://github.com/shengwen-tw/minimum-snap-traj-matlab): 透過最小化位置四階導數（snap）產生平滑軌跡
+- [Rapidly-Exploring Random Tree (RRT)](https://github.com/shengwen-tw/rrt-matlab): 基於隨機樹搜尋的路徑規劃演算法，用於避開環境中的障礙物
 
 論文發表
 =======
 
-- [Data-Driven Estimation of Quadrotor Motor Efficiency via Residual Minimization](https://arxiv.org/abs/2510.11388)
-- [A Computationally Efficient GNSS/INS Design of Multirotor based on Error-state Kalman Filter](https://ieeexplore.ieee.org/abstract/document/10354209)
-- [Robust State-Feedback H-infinity Control of Quadrotor](https://ieeexplore.ieee.org/document/9969787)
-- [Puyuma: Linux-based RTOS Experimental Platform for Constructing Self-Driving Miniature
+- 2026 - [Data-Driven Estimation of Quadrotor Motor Efficiency via Residual Minimization](https://arxiv.org/abs/2510.11388)
+- 2023 - [A Computationally Efficient GNSS/INS Design of Multirotor based on Error-state Kalman Filter](https://ieeexplore.ieee.org/abstract/document/10354209)
+- 2022 - [Robust State-Feedback H-infinity Control of Quadrotor](https://ieeexplore.ieee.org/document/9969787)
+- 2018 - [Puyuma: Linux-based RTOS Experimental Platform for Constructing Self-Driving Miniature
 Vehicles](https://link.springer.com/chapter/10.1007/978-3-030-01174-1_75)
 
-公開演講
+會議演講
 =======
 
-- Embedded Open Source Summit (EOSS) 2024: [Crafting a Vision-Aided Software Stack for UAV](https://static.sched.com/hosted_files/eoss24/df/Crafting%20a%20Vision-Aided%20Software%20Stack%20for%20UAV.pdf)
 - OpenTechConf 2025: [Building a Quadrotor Simulator with Python - Modeling, Simulation, and Control](https://drive.google.com/file/d/1Oc-OfTaBOS4-Ut4LMXkFd4vc9sJBr5s8/view?fbclid=IwY2xjawM0sS9leHRuA2FlbQIxMABicmlkETFQS240alZ0d0pCS0hXRXN3AR4c9Y9pQykGagwCiAT0a84OlyRuoPozOFF2ng8ZyYwwvKGd4m7W91oPA3xw9A_aem_5FYP7iKGktVP1OJBBpa-mA)
+- MOPCON 2024 Keynote: [Trends in Machine Learning for Unmanned Aerial Vehicle Applications](https://drive.google.com/file/d/1UmSeU8Y63s4cASBFNWM_zi5ll2J9EIJx/view?fbclid=IwY2xjawGLSe9leHRuA2FlbQIxMAABHX9AjWq_vX6WXNQYPfsQp-BUFIM44uh6MBCdLFP4OAEdUsAF8zQptxDcdQ_aem_uvY1jloybOcTQEWV687_BA)
+- Embedded Open Source Summit 2024 (Linux Foundation): [Crafting a Vision-Aided Software Stack for UAV](https://static.sched.com/hosted_files/eoss24/df/Crafting%20a%20Vision-Aided%20Software%20Stack%20for%20UAV.pdf)
 - COSCUP 2024: [Creating a Linux-like real-time operating system for quadrotor drones](https://drive.google.com/file/d/16S8ZRC-lhT15CXwWIy-RIIWXl5Ertqo5/view)
 - COSCUP 2023: [Tenok: Build a real-time operating system for Robotics](https://drive.google.com/file/d/1p8YJVPVwFAEknMXPbXzjj0y0p5qcqT2T/view)
 
-受邀演講
-=======
-- MOPCON 2024 Keynote Speech: [Trends in Machine Learning for Unmanned Aerial Vehicle Applications](https://drive.google.com/file/d/1UmSeU8Y63s4cASBFNWM_zi5ll2J9EIJx/view?fbclid=IwY2xjawGLSe9leHRuA2FlbQIxMAABHX9AjWq_vX6WXNQYPfsQp-BUFIM44uh6MBCdLFP4OAEdUsAF8zQptxDcdQ_aem_uvY1jloybOcTQEWV687_BA)
-- 和碩科技 (2024): Trends and lessons learned in deep learning and generative AI applications for UAV
 
 競賽經歷
 =======
 
-- 2018 放視大賞 - 銀獎
-- 2014 軟體創作達人暑期成長營 - 特優
+- 2018 放視大賞 銀獎
+- 2014 軟體創作達人暑期成長營 特優
