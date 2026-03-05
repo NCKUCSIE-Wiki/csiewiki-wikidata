@@ -3,6 +3,8 @@ title: Linux 效能分析工具: Perf
 categories: performance, linux, pmu
 ...
 
+本頁面內容已過時，請移駕到〈[運用 Perf 分析程式效能並改善](https://hackmd.io/@sysprog/linux-perf)〉，以得知最新版本。
+
 ## 簡介
 [Perf](https://perf.wiki.kernel.org/index.php/Main_Page) 全名是 Performance Event，是在 Linux 2.6.31 以後內建的系統效能分析工具，它隨著核心一併釋出。藉由 perf，應用程式可以利用 PMU (Performance Monitoring Unit), tracepoint 和核心內部的特殊計數器 (counter) 來進行統計，另外還能同時分析運行中的核心程式碼，從而更全面了解應用程式中的效能瓶頸。
 
