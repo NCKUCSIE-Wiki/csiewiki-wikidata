@@ -13,11 +13,17 @@ categories: User
 * LKML 對話紀錄 [Nick (Yaode) Huang](https://lore.kernel.org/all/?q=sef1548@gmail.com)
 * Linux kernel 貢獻紀錄 [Nick (Yaode) Huang](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/?qt=author&q=Nick+Huang)
 
+
 工作經歷
 =======
 - [網際威信](https://www.hitrust.com.tw/)
 - [Rybit](https://rybit.io/us)
 
+修課的經歷
+=======
+
+我還記得在 2017/9/8 的下午，曾經和老師討論過要如何學習作業系統。當時我剛高中畢業，沒有去讀大學，所以特地去請教老師應該怎麼學。不過老師當時把我罵得很慘，他說：「你應該帶著技術問題來問我，而不是問我要怎麼學習。」
+雖然那時候覺得很挫折，但現在回頭看其實非常感謝老師的那一番話。一直到我後來開始工作、擔任 Linux embedded engineer，並且開始嘗試貢獻 Linux kernel 之後，才真正理解老師當時想表達的意思。
 
 
 
