@@ -105,6 +105,9 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
 * 第 3 週 (Mar 10, 12): 數值系統和 C 語言程式設計
     * 公告
         - 3 月 10 日 15:20 安排期初測驗，採線上作答 + 實體問答的方式
+        - 配合[第二次作業](https://hackmd.io/@sysprog/linux2026-stdc)，課程助教已透過電子郵件聯繫學員，若 3 月 13 日尚未收到信件，務必來信告知
+        - 你所不知道的 C 語言「函式呼叫篇」講座於 3 月 15 日晚間重新講解 (事後有錄影)
+        - 3 月 16 日指派第三份作業
     * [教材解說](https://youtu.be/7efdpMCx-ak)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux: 發展動態回顧](https://hackmd.io/@sysprog/linux-dev-review)`*`
     * [最大公因數特性和實作考量](https://hackmd.io/@sysprog/gcd-impl)
@@ -119,7 +122,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
     * [C 語言: 前置處理器應用](https://hackmd.io/@sysprog/c-preprocessor)`*`
         - C 語言之所以不需要時常發佈新的語言特徵又可以保持活力，前置處理器 (preprocessor) 是很重要的因素，有心者可逕行「擴充」C 語言
     * [C 語言: goto 和流程控制](https://hackmd.io/@sysprog/c-control-flow)`*`
-        - goto 在 C 語言被某些人看做是妖魔般的存在，不過實在不用這樣看待，至少在 Linux 核心原始程式碼中，goto 是大量存在 (跟你想像中不同吧)。有時不用 goto 會寫出更可怕的程式碼
+        - goto 在 C 語言被某些人看做是妖魔般的存在，不過實在不用這樣看待，至少在 Linux 核心原始程式碼中，goto 是大量存在 (不同於你所想像)。有時不用 goto 會寫出更可怕的程式碼
     * [C 語言程式設計技巧](https://hackmd.io/@sysprog/c-trick)`*`
     * 期初測驗: [題目](https://hackmd.io/@sysprog/linux2026-quiz3) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/p87SQ6WpT-ehlVhXglXk9w)
