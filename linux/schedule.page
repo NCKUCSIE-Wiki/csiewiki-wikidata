@@ -27,7 +27,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
         * 測驗期間可使用下列資源: 1) 透過網際網路瀏覽課程相關教材與公開技術文件; 2) 使用搜尋引擎（如 Google）查詢一般技術資料; 3) 於本機撰寫與執行程式，以驗證概念或測試實作結果。嚴格禁止事項: 1) 使用任何大語言模型（LLM）相關工具或服務，包含但不限於 ChatGPT、Claude、Gemini、Copilot 等; 2) 使用任何可自動產生、改寫、補全或推論答案之 AI 系統; 3) 將題目內容以任何形式（文字、截圖、拍照、錄影、轉錄等）上傳至外部系統或第三方服務; 4) 使用自動化工具擷取、傳送或轉錄試題內容。凡在測驗期間，將試題內容外流至外部 AI 或自動推論系統，即構成違規，凡提交內容經判定為由 AI 工具產生或重大依賴其推論，也構成違規
         * 凡涉違規情事，授課教師有權進行事實調查並作成後續處置；情節重大者，得依相關法規辦理，並諮詢或委由授課教師聘請之法律顧問處理
         * 資訊系「新館」65304 和 65203 教室都可入座，務必找合適的座位
-    - [部分教材解說](https://youtu.be/ptbJQUAv2ro)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
+    - [部分教材解說](https://youtu.be/7PDirLNEZHA)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     - 歷屆修課學生心得: [陳麒升](/User/rota1001), [葉惟欣](/User/weihsinyeh), [向景亘](/User/OscarShiang), [張家榮](/User/JaredCJR), [方鈺學](/User/JulianATA)
     - 佳句偶得：「大部分的人一輩子洞察力不彰，原因之一是怕講錯被笑。想了一點點就不敢繼續也沒記錄或分享，時間都花在讀書查資料看別人怎麼想。看完就真的沒有自己的洞察了」([出處](https://www.facebook.com/chtsai/posts/pfbid0Sw9Bv8GN8houyS6A6Mvg5gtWXShKFgguhTHuNFsDDGn9XZQE7C64pBy5atB9gXtJl))
     - 分組報告示範: [ARM-Linux](/embedded/arm-linux), [Xvisor](/embedded/xvisor) / [2025 年課程期末展示](https://hackmd.io/@sysprog/linux2025-showcase)`*`
@@ -106,8 +106,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
     * 公告
         - 3 月 10 日 15:20 安排期初測驗，採線上作答 + 實體問答的方式
         - 配合[第二次作業](https://hackmd.io/@sysprog/linux2026-stdc)，課程助教已透過電子郵件聯繫學員
-        - 你所不知道的 C 語言「函式呼叫篇」講座於 3 月 15 日晚間重新講解 (事後有錄影)
-        - 3 月 16 日指派第三份作業
+        - 你所不知道的 C 語言「[函式呼叫篇](https://hackmd.io/@sysprog/c-function)」講座於 3 月 15 日晚間重新講解
     * [教材解說](https://youtu.be/7efdpMCx-ak)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux: 發展動態回顧](https://hackmd.io/@sysprog/linux-dev-review)`*`
     * [有限體算術與 2^k 索引：Linux 核心對數學封閉性與硬體成本的權衡](https://hackmd.io/@sysprog/BJ7DvyPtWg)
@@ -128,6 +127,8 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
     - [課堂問答簡記](https://hackmd.io/p87SQ6WpT-ehlVhXglXk9w)
 
 * 第 4 週 (Mar 17, 19): 數值系統 + 編譯器
+    * 公告
+        - 3 月 24 日攜帶《Computer Systems: A Programmer's Perspective》書本到課堂，若購買電子書，務必出示購買證明
     - [教材解說](https://youtu.be/cjq0OuUeepA)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 貢獻程式碼到 Linux 核心
         - [第一次給 Linux Kernel 發 patch](https://hackmd.io/@rhythm/BkjJeugOv)
@@ -178,7 +179,6 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
 
 * 第 7 週 (Apr 7, 9): Process 和 CPU 排程
     * 公告:
-        - 留意[第五份作業](https://hackmd.io/@sysprog/linux2025-assessment)的規範
         - 第三、四、五份作業對應的表單均已開放填寫
         - 4 月 7 日改為線上授課
         - 凡是「選課」且「成功繳交第一份作業」的學員，在 4 月 7 日下午會收到授課教師撰寫、尚未出版的《Demystifying the Linux
