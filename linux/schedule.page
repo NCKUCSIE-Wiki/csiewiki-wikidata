@@ -129,6 +129,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
 * 第 4 週 (Mar 17, 19): 數值系統 + 編譯器
     * 公告
         - 3 月 24 日攜帶《Computer Systems: A Programmer's Perspective》書本到課堂，若購買電子書，務必出示購買證明
+        - 課程助教會在 3 月 20 日統計學員的期初測驗表現，並逐一用電子郵件告知，連同補救措施。第二和第三週參與課堂問答的學員，務必在 3 月 19 日前，依據規範，用電子郵件通知授課教師，否則不採計相關表現
     - [教材解說](https://youtu.be/cjq0OuUeepA)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * 貢獻程式碼到 Linux 核心
         - [第一次給 Linux Kernel 發 patch](https://hackmd.io/@rhythm/BkjJeugOv)
