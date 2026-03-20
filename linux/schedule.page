@@ -99,7 +99,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
     * [C 語言: bit-field](https://hackmd.io/@sysprog/c-bitfield)
         - bit field 是 C 語言一個很被忽略的特徵，但在 Linux 和 gcc 這類系統軟體很常出現，不僅是精準規範每個 bit 的作用，甚至用來「擴充」C 語言
     - [參考題目](https://hackmd.io/@sysprog/linux2025-quiz2) / [參考題目](https://hackmd.io/@sysprog/linux2024-quiz2) / [參考題目](https://hackmd.io/@sysprog/linux2023-quiz2) / [參考題目](https://hackmd.io/@sysprog/linux2022-quiz2) / [參考題目](https://hackmd.io/@sysprog/linux2021-quiz2)`*` / [參考題解 1](https://hackmd.io/@93i7xo2/sysprog2021q1-hw2-quiz2), [參考題解 2](https://hackmd.io/@hankluo6/2021q1quiz2), [參考題解 3](https://hackmd.io/@bakudr18/SkS-Y_lX_), [參考題解 4](https://hackmd.io/@weihsinyeh/ry2RWmNTT), [參考題解 5](https://hackmd.io/@sysprog/B13UVSQWel)
-    * 作業: [stdc](https://hackmd.io/@sysprog/linux2026-stdc): 截止繳交日 Mar 22
+    * 作業: [stdc](https://hackmd.io/@sysprog/linux2026-stdc): 截止繳交日 Mar 24
     - [課堂問答簡記](https://hackmd.io/p87SQ6WpT-ehlVhXglXk9w)
 
 * 第 3 週 (Mar 10, 12): 數值系統和 C 語言程式設計
