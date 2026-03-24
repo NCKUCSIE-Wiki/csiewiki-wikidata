@@ -156,14 +156,12 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
     * Week4 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2026-quiz4) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/mGN8I_tJQcW3A92ZIbYbHw)
 
-* 第 5 週 (Mar 24, 26): Code Review
+* 第 5 週 (Mar 24, 26): 課程回顧
     - 公告
-        + [第四次作業](https://hackmd.io/@sysprog/HkXPOqI31l)已指派，內容是第三週和第四週測驗題
-        + 留意 [review](https://hackmd.io/@sysprog/linux2025-review) 及 [kxo](https://hackmd.io/@sysprog/linux2025-kxo) 要求的變更
-        + 若你想討論作業，更新在[課堂問答簡記](https://hackmd.io/EFs_Nfs6TOmIA5ldA_tZsQ)最下方
-    * 回顧學員的參與狀況
-    * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz5) (內含作答表單)
-    * [課堂問答簡記](https://hackmd.io/EFs_Nfs6TOmIA5ldA_tZsQ)
+        * 3 月 26 日指派第三份作業
+        * 凡[第三週測驗題](https://hackmd.io/@sysprog/linux2026-quiz3)超過 40 分的學員，請參閱 [kbox](https://github.com/sysprog21/kbox) 專案 (搭配 [LKL: 重用 Linux 核心的成果](https://hackmd.io/@sysprog/linux-lkl)閱讀) 並發信件 ([依循指定格式]
+    * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2026-quiz5) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/mGN8I_tJQcW3A92ZIbYbHw)
 
 * 第 6 週 (Mar 31, Feb 2): C runtime/linker 及 fork/exec 系統呼叫
     - [教材解說-1](https://youtu.be/f-SprmkcOI0)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
