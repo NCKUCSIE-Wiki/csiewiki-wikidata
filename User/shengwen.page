@@ -10,7 +10,7 @@ categories: User
 
 - 2025-2027 德州大學奧斯汀分校 電腦科學碩士
 - 2022-2024 國立臺灣大學 電機所博士生
-- 2019-2021 陽明交通大學 機器人碩士
+- 2019-2021 國立陽明交通大學 機器人碩士
 - 2015-2019 靜宜大學 資訊工程學系
 - 2013-2018 參與成大航太系、資工系與工科系之課程、專題與論文研究
 - 個人網頁: [shengwen-tw.github.io](https://shengwen-tw.github.io/)
@@ -84,9 +84,15 @@ Vehicles](https://link.springer.com/chapter/10.1007/978-3-030-01174-1_75)
 會議演講
 =======
 
+國際會議:
+
+- Open Source Summit North America 2026: [Demystifying VirtIO-GPU: Building a Graphics Virtualization Bridge from Scratch](https://osselcna2026.sched.com/event/2JQrw?fbclid=IwY2xjawQwdRlleHRuA2FlbQIxMABicmlkETFmMUhlSUdFWHJMMkc1TmdPc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHoUlvXLBtUd4yALsr0xK-GXrMdikjN4z-xYAb6aOeQ4xLDfChkMGAWPbsUsT_aem_D5jjzd_PcbErdv7cCjhBXw)
+- Embedded Open Source Summit 2024: [Crafting a Vision-Aided Software Stack for UAV](https://static.sched.com/hosted_files/eoss24/df/Crafting%20a%20Vision-Aided%20Software%20Stack%20for%20UAV.pdf)
+
+一般會議:
+
 - OpenTechConf 2025: [Building a Quadrotor Simulator with Python - Modeling, Simulation, and Control](https://drive.google.com/file/d/1Oc-OfTaBOS4-Ut4LMXkFd4vc9sJBr5s8/view?fbclid=IwY2xjawM0sS9leHRuA2FlbQIxMABicmlkETFQS240alZ0d0pCS0hXRXN3AR4c9Y9pQykGagwCiAT0a84OlyRuoPozOFF2ng8ZyYwwvKGd4m7W91oPA3xw9A_aem_5FYP7iKGktVP1OJBBpa-mA)
 - MOPCON 2024 Keynote: [Trends in Machine Learning for Unmanned Aerial Vehicle Applications](https://drive.google.com/file/d/1UmSeU8Y63s4cASBFNWM_zi5ll2J9EIJx/view?fbclid=IwY2xjawGLSe9leHRuA2FlbQIxMAABHX9AjWq_vX6WXNQYPfsQp-BUFIM44uh6MBCdLFP4OAEdUsAF8zQptxDcdQ_aem_uvY1jloybOcTQEWV687_BA)
-- Embedded Open Source Summit 2024 (Linux Foundation): [Crafting a Vision-Aided Software Stack for UAV](https://static.sched.com/hosted_files/eoss24/df/Crafting%20a%20Vision-Aided%20Software%20Stack%20for%20UAV.pdf)
 - COSCUP 2024: [Creating a Linux-like real-time operating system for quadrotor drones](https://drive.google.com/file/d/16S8ZRC-lhT15CXwWIy-RIIWXl5Ertqo5/view)
 - COSCUP 2023: [Tenok: Build a real-time operating system for Robotics](https://drive.google.com/file/d/1p8YJVPVwFAEknMXPbXzjj0y0p5qcqT2T/view)
 
