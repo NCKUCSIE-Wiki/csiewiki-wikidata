@@ -196,7 +196,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
     * 《Demystifying the Linux CPU Scheduler》第 1 章
     * [測試 Linux 核心的虛擬化環境](https://hackmd.io/@sysprog/linux-virtme)
     * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
-    * Week7 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2026-quiz6) (內含作答表單)
+    * Week7 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2026-quiz7) (內含作答表單)
 
 * 第 8 週 (Apr 14, 16): 並行程式設計, Linux 同步機制
     * [並行程式設計](https://hackmd.io/@sysprog/concurrency): 概念, 執行順序, Atomics 操作
