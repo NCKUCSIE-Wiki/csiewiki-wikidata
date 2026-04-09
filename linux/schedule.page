@@ -193,7 +193,6 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
     * [利用 lkm 來變更特定 Linux 行程的內部狀態](https://hackmd.io/@cwl0429/linux2022-quiz8-3)
     * [Linux: 賦予應用程式生命的系統呼叫](https://hackmd.io/@sysprog/linux-syscall)`*`
     * [vDSO: 快速的 Linux 系統呼叫機制](https://hackmd.io/@sysprog/linux-vdso)
-    * 《Demystifying the Linux CPU Scheduler》第 1 章
     * [測試 Linux 核心的虛擬化環境](https://hackmd.io/@sysprog/linux-virtme)
     * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
     * Week7 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2026-quiz7) (內含作答表單)
@@ -207,6 +206,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
         - [Synchronization: Advanced](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/24-sync-advanced.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=06892ab8-1a16-46de-8910-537dab546828)`*`
         - [Thread-Level Parallelism](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f23/www/lectures/25-parallelism.pdf) / [錄影](https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9ba08262-5318-45f2-a7e1-475e33a98e53)`*`
     * [Linux: 淺談同步機制](https://hackmd.io/@sysprog/linux-sync)`*`
+    * 《Demystifying the Linux CPU Scheduler》第 1 章
     * 《Demystifying the Linux CPU Scheduler》: 2.1 Introduction, 2.2.1 Early Linux Scheduler, 2.2.2 O(n) Scheduler
     * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz8) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/WrnjVMbeQ1aXjRdvPAL9LA)
