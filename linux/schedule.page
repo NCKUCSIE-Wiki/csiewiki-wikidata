@@ -187,6 +187,9 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
     * 公告:
         - 4 月 7 日改為線上授課，15:30 到 23:30 安排在家測驗，當日務必留意電子郵件
         - 授課教師近期支援公部門專案，工作時間大受影響，推遲作業指派和繳交時限，預計在 4 月 10 日中午公告，請留意電子郵件
+    * [Fuzzing Linux Kernel in Userspace with LKL](https://androidoffsec.withgoogle.com/slides/art_lkl_geekcon.pdf)
+        - [Kernel Fuzzing in Userspace with LKL](https://www.mobilehackinglab.com/blog/kernel-fuzzing-in-userspace-with-lkl?srsltid=AfmBOopD8s8CEGw5y-qqK5rMLF_1AQ2LKYH97f2PRhtRh5n5PUcYkoI1)
+        - [Binder Fuzzing](https://androidoffsec.withgoogle.com/posts/binder-fuzzing/)
     * [歐拉數：描述連續變化的基石](https://hackmd.io/@sysprog/S1lBrHrp1e)
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/@sysprog/linux-scheduler)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革
    * [Linux v6.6+ 引入的 EEVDF 的理論基礎](https://hackmd.io/@sysprog/HyFtDjMfxg)
@@ -196,6 +199,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
     * [測試 Linux 核心的虛擬化環境](https://hackmd.io/@sysprog/linux-virtme)
     * [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)`*`
     * Week7 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2026-quiz7) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/T9exGh0eRuuoVWkomO25wA)
 
 * 第 8 週 (Apr 14, 16): 並行程式設計, Linux 同步機制
     * [並行程式設計](https://hackmd.io/@sysprog/concurrency): 概念, 執行順序, Atomics 操作
