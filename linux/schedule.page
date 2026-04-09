@@ -192,7 +192,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
         - [Binder Fuzzing](https://androidoffsec.withgoogle.com/posts/binder-fuzzing/)
     * [歐拉數：描述連續變化的基石](https://hackmd.io/@sysprog/S1lBrHrp1e)
     * [Linux: 不只挑選任務的排程器](https://hackmd.io/@sysprog/linux-scheduler)`*`: 排程器 (scheduler) 是任何一個多工作業系統核心都具備的機制，但彼此落差極大，考量點不僅是演算法，還有當應用規模提昇時 (所謂的 scalability) 和涉及即時處理之際，會招致不可預知的狀況 (non-determinism)，不僅即時系統在意，任何建構在 Linux 核心之上的大型服務都會深受衝擊。是此，Linux 核心的排程器經歷多次變革
-   * [Linux v6.6+ 引入的 EEVDF 的理論基礎](https://hackmd.io/@sysprog/HyFtDjMfxg)
+   * [Linux v6.6+ 引入的 EEVDF 的理論基礎](https://hackmd.io/@sysprog/HyFtDjMfxg)`*`
    * [利用 lkm 來變更特定 Linux 行程的內部狀態](https://hackmd.io/@cwl0429/linux2022-quiz8-3)
     * [Linux: 賦予應用程式生命的系統呼叫](https://hackmd.io/@sysprog/linux-syscall)`*`
     * [vDSO: 快速的 Linux 系統呼叫機制](https://hackmd.io/@sysprog/linux-vdso)
