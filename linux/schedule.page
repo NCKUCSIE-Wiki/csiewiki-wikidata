@@ -161,7 +161,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
         * [第三份作業](https://hackmd.io/@sysprog/linux2026-basics)已指派，4 月 13 日前繳交，注意難度又比之前提升
         * 3 月 31 日攜帶《Computer Systems: A Programmer's Perspective》書本到課堂，若購買電子書，務必出示購買證明
         * 凡[第三週測驗題](https://hackmd.io/@sysprog/linux2026-quiz3)超過 40 分的學員，請參閱 [kbox](https://github.com/sysprog21/kbox) 專案 (搭配 [LKL: 重用 Linux 核心的成果](https://hackmd.io/@sysprog/linux-lkl)閱讀) 並發信件 ([依循指定格式]
-    * [教材解說](https://youtu.be/Pdp0mNtKfME)`*`
+    * [教材解說](https://youtu.be/Pdp0mNtKfME)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * Week5 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2026-quiz5) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/mGN8I_tJQcW3A92ZIbYbHw)
 
@@ -186,7 +186,8 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
 * 第 7 週 (Apr 7, 9): Process 和 CPU 排程
     * 公告:
         - 4 月 7 日改為線上授課，15:30 到 23:30 安排在家測驗，當日務必留意電子郵件
-        - 授課教師近期支援公部門專案，工作時間大受影響，推遲作業指派和繳交時限，預計在 4 月 10 日中午公告，請留意電子郵件
+        - 授課教師近期支援公部門專案，工作時間大受影響，推遲作業指派和繳交時限，預計在 4 月 12 日中午公告，請留意電子郵件
+    * [教材解說](https://youtu.be/PaF2q4MYarc)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Fuzzing Linux Kernel in Userspace with LKL](https://androidoffsec.withgoogle.com/slides/art_lkl_geekcon.pdf)
         - [Kernel Fuzzing in Userspace with LKL](https://www.mobilehackinglab.com/blog/kernel-fuzzing-in-userspace-with-lkl?srsltid=AfmBOopD8s8CEGw5y-qqK5rMLF_1AQ2LKYH97f2PRhtRh5n5PUcYkoI1)
         - [Binder Fuzzing](https://androidoffsec.withgoogle.com/posts/binder-fuzzing/)
