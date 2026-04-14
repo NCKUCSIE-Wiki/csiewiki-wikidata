@@ -220,8 +220,8 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
         - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
     * 《Demystifying the Linux CPU Scheduler》第 1 章
     * 《Demystifying the Linux CPU Scheduler》: 2.1 Introduction, 2.2.1 Early Linux Scheduler, 2.2.2 O(n) Scheduler
-    * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz8) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/WrnjVMbeQ1aXjRdvPAL9LA)
+    * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2026-quiz8) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/u5zg5DS8RoaKI52ZxLgkQg)
 
 * 第 9 週 (Apr 21, 23): futex, 伺服器開發與 Linux 核心對應的系統呼叫
     * 公告:
