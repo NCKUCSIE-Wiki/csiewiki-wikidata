@@ -186,7 +186,6 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
 * 第 7 週 (Apr 7, 9): Process 和 CPU 排程
     * 公告:
         - 4 月 7 日改為線上授課，15:30 到 23:30 安排在家測驗，當日務必留意電子郵件
-        - 授課教師近期支援公部門專案，工作時間大受影響，推遲作業指派和繳交時限，預計在 4 月 12 日中午公告，請留意電子郵件
     * [教材解說](https://youtu.be/PaF2q4MYarc)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Fuzzing Linux Kernel in Userspace with LKL](https://androidoffsec.withgoogle.com/slides/art_lkl_geekcon.pdf)
         - [Kernel Fuzzing in Userspace with LKL](https://www.mobilehackinglab.com/blog/kernel-fuzzing-in-userspace-with-lkl?srsltid=AfmBOopD8s8CEGw5y-qqK5rMLF_1AQ2LKYH97f2PRhtRh5n5PUcYkoI1)
@@ -205,6 +204,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
 * 第 8 週 (Apr 14, 16): 並行程式設計, Linux 同步機制
     * 公告
         - [第三份作業](https://hackmd.io/@sysprog/linux2026-basics)截止繳交時間改為 4 月 18 日 23:59
+        - [第四份作業](https://hackmd.io/@sysprog/linux2026-introspect)規範已變更，務必詳閱，4 月 27 日截止繳交
         - 4 月 21 日下午改在資訊系新館四樓 65405 教室，4 月 28 日恢復在 65203 教室
     * [並行程式設計](https://hackmd.io/@sysprog/concurrency): 概念, 執行順序, Atomics 操作
     * [〈Concurrency Primer〉導讀](https://hackmd.io/@sysprog/concurrency-primer)
