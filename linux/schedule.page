@@ -205,6 +205,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
 * 第 8 週 (Apr 14, 16): 並行程式設計, Linux 同步機制
     * 公告
         - [第三份作業](https://hackmd.io/@sysprog/linux2026-basics)截止繳交時間改為 4 月 18 日 23:59
+        - 4 月 21 日下午改在資訊系新館四樓 65405 教室，4 月 28 日恢復在 65203 教室
     * [並行程式設計](https://hackmd.io/@sysprog/concurrency): 概念, 執行順序, Atomics 操作
     * [〈Concurrency Primer〉導讀](https://hackmd.io/@sysprog/concurrency-primer)
     * CS:APP 第 12 章
