@@ -208,6 +208,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
         - 4 月 21 日下午改在資訊系新館四樓 65405 教室，由 Linux 核心維護人、成大資訊系校友、Google 軟體工程師邱冠維分享 Linux 核心開發經驗
         - 4 月 28 日恢復在 65203 教室
         - 4 月 23 日晚間不使用 YouTube 直播，而是改用 Google Meet 跟學員討論 (視作隨堂測驗)，若前 7 週測驗狀況不理想，務必把握問答
+        - 從第 9 週起，週四晚間課程以問答為主，沒有直播，也沒有公開錄影
     * [並行程式設計](https://hackmd.io/@sysprog/concurrency): 概念, 執行順序, Atomics 操作
     * [〈Concurrency Primer〉導讀](https://hackmd.io/@sysprog/concurrency-primer)
     * CS:APP 第 12 章
