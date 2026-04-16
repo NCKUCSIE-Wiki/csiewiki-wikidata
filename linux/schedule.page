@@ -207,6 +207,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
         - [第四份作業](https://hackmd.io/@sysprog/linux2026-introspect)規範已變更，務必詳閱，4 月 27 日截止繳交
         - 4 月 21 日下午改在資訊系新館四樓 65405 教室，由 Linux 核心維護人、成大資訊系校友、Google 軟體工程師邱冠維分享 Linux 核心開發經驗
         - 4 月 28 日恢復在 65203 教室
+        - 4 月 23 日晚間不使用 YouTube 直播，而是改用 Google Meet 跟學員討論 (視作隨堂測驗)，若前 7 週測驗狀況不理想，務必把握問答
     * [並行程式設計](https://hackmd.io/@sysprog/concurrency): 概念, 執行順序, Atomics 操作
     * [〈Concurrency Primer〉導讀](https://hackmd.io/@sysprog/concurrency-primer)
     * CS:APP 第 12 章
@@ -218,8 +219,6 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
 讓執行完的行程得以安插到合適的位置，使得 runqueue 依然依據符合預期的順序。
     * [Linux: 不僅是個執行單元的 Process](https://hackmd.io/@sysprog/linux-process)`*`: Linux 核心對於 UNIX Process 的實作相當複雜，不僅蘊含歷史意義 (幾乎每個欄位都值得講古)，更是反映出資訊科技產業的變遷，核心程式碼的 `task_struct` 結構體更是一絕，廣泛涵蓋 process 狀態、處理器、檔案系統、signal 處理、底層追蹤機制等等資訊，更甚者，還很曖昧地保存著 thread 的必要欄位，好似這兩者天生就脫不了干係
         - 探討 Linux 核心設計的特有思維，像是如何透過 LWP 和 NPTL 實作執行緒，又如何透過行程建立記憶體管理的一種抽象層，再者回顧行程間的 context switch 及排程機制，搭配 signal 處理
-    * 《Demystifying the Linux CPU Scheduler》第 1 章
-    * 《Demystifying the Linux CPU Scheduler》: 2.1 Introduction, 2.2.1 Early Linux Scheduler, 2.2.2 O(n) Scheduler
     * Week8 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2026-quiz8) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/u5zg5DS8RoaKI52ZxLgkQg)
 
@@ -245,6 +244,8 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
         - 複雜度：業務邏輯越來越複雜，運作的軟體也變得越來越複雜，我們知道它會分成很多很多層次，包括作業系統核心和其上各種系統軟體，像資料庫和網頁伺服器，再往上有腳本語言或者其他高階語言的虛擬機器或執行環境，更上面是應用層面的各種業務邏輯的抽象層次和很多複雜的程式邏輯。
     * Week9 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz9) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA)
+    * 《Demystifying the Linux CPU Scheduler》第 1 章
+    * 《Demystifying the Linux CPU Scheduler》: 2.1 Introduction, 2.2.1 Early Linux Scheduler, 2.2.2 O(n) Scheduler
     * 作業: 截止繳交日: May 16
         - [ktcp](https://hackmd.io/@sysprog/linux2025-ktcp)
 
