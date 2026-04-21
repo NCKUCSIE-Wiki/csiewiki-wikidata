@@ -244,11 +244,9 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
         - 規模：無論是使用者規模還是機房的規模、機器的數量都處於快速增長的時代;
         - 複雜度：業務邏輯越來越複雜，運作的軟體也變得越來越複雜，我們知道它會分成很多很多層次，包括作業系統核心和其上各種系統軟體，像資料庫和網頁伺服器，再往上有腳本語言或者其他高階語言的虛擬機器或執行環境，更上面是應用層面的各種業務邏輯的抽象層次和很多複雜的程式邏輯。
     * Week9 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz9) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/V7bD2XjnQuCZqDMt4ZizGA)
+    - [課堂問答簡記](https://hackmd.io/gdgKXMGYRdaNUgsEBKaypg)
     * 《Demystifying the Linux CPU Scheduler》第 1 章
     * 《Demystifying the Linux CPU Scheduler》: 2.1 Introduction, 2.2.1 Early Linux Scheduler, 2.2.2 O(n) Scheduler
-    * 作業: 截止繳交日: May 16
-        - [ktcp](https://hackmd.io/@sysprog/linux2025-ktcp)
 
 * 第 10 週 (Apr 28, 30): 現代微處理器
     * 公告:
