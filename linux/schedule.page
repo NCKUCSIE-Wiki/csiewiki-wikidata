@@ -230,6 +230,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
         - 4 月 28 日恢復在 65203 教室
         - 4 月 23 日晚間起，不使用 YouTube 直播，而是改用 Google Meet 跟學員討論 (視作隨堂測驗)，若前 8 週測驗狀況不理想的學員，務必把握問答並在下方問答簡記登記
         - 學員應及早跟授課教師預約一對一線上討論，請參照[課程行事曆](https://bit.ly/sysprog-calendar)裡頭標注 "Office hour" 的時段，發訊息到 [Facebook 粉絲專頁](https://www.facebook.com/JservFans/)，簡述你的學習狀況並選定偏好的時段 (建議是 30 分鐘)
+        - [期末專題進行中！](https://hackmd.io/@sysprog/linux2026-projects)
     * Twitter/X 上面的笑話: index 的複數寫作 indices, complex 的複數寫作 complices, 那 mutex 的複數是什麼？答 "deadlock" -- [出處](https://x.com/jfbastien/status/1408440373408460803)
     * [〈Concurrency Primer〉導讀](https://hackmd.io/@sysprog/concurrency-primer)
     * [A Deep dive into (implicit) Thread Local Storage](https://chao-tic.github.io/blog/2018/12/25/tls)
