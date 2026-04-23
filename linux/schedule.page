@@ -244,7 +244,7 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
     * [Linux: 透過 eBPF 觀察作業系統行為](https://hackmd.io/@sysprog/linux-ebpf)`*`: 動態追蹤技術（dynamic tracing）是現代軟體的進階除錯和追蹤機制，讓工程師以非常低的成本，在非常短的時間內，克服一些不是顯而易見的問題。它興起和繁榮的一個大背景是，我們正處在一個快速增長的網路互連異質運算環境，工程人員面臨著兩大方面的挑戰：
         - 規模：無論是使用者規模還是機房的規模、機器的數量都處於快速增長的時代;
         - 複雜度：業務邏輯越來越複雜，運作的軟體也變得越來越複雜，我們知道它會分成很多很多層次，包括作業系統核心和其上各種系統軟體，像資料庫和網頁伺服器，再往上有腳本語言或者其他高階語言的虛擬機器或執行環境，更上面是應用層面的各種業務邏輯的抽象層次和很多複雜的程式邏輯。
-    * Week9 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz9) (內含作答表單)
+    * Week9 隨堂測驗: 採用線上問答
     - [課堂問答簡記](https://hackmd.io/gdgKXMGYRdaNUgsEBKaypg)
     * 《Demystifying the Linux CPU Scheduler》第 1 章
     * 《Demystifying the Linux CPU Scheduler》: 2.1 Introduction, 2.2.1 Early Linux Scheduler, 2.2.2 O(n) Scheduler
