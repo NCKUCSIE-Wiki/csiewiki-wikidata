@@ -280,14 +280,11 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
 
 * 第 11 週 (May 5, 7): 作業回顧 + 期末專題
     * 公告
-        - 課程規劃在 6 月 28 日舉辦成果發表，預計採用線上直播的模式
+        - 課程規劃在 6 月 27 日舉辦成果發表，預計採用線上直播的模式
         - 學員應及早跟授課教師預約一對一線上討論，請參照[課程行事曆](https://bit.ly/sysprog-calendar)裡頭標注 "Office hour" 的時段，發訊息到 [Facebook 粉絲專頁](https://www.facebook.com/JservFans/)，簡述你的學習狀況並選定偏好的時段 (建議是 30 分鐘)
         - 期末專題可由單人或二人進行，但後者會有更高的難度，且需要授課教師充分溝通
-        - 自第 12 週起，改於資訊系「新館」二樓 65203 電腦教室授課
-    - [2024 年 Linux 核心設計/實作課程期末專題](https://hackmd.io/@sysprog/linux2024-projects)
-    - [2025 年 Linux 核心設計專題想法](https://hackmd.io/@sysprog/S18kgVDJex)
-    * Week11 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz11) (內含作答表單)
-    - [課堂問答簡記](https://hackmd.io/Tcy6NPtnQiubDGyrRUnSdw)
+    * Week11 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2026-quiz11) (內含作答表單)
+    - [課堂問答簡記](https://hackmd.io/fkFn7pWwR0i3E4Eo2-epuw)
 
 * 第 12 週 (May 12, 14): 現代微處理器 + 記憶體管理
     * [課程期末專題](https://hackmd.io/@sysprog/linux2025-projects)
