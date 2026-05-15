@@ -302,12 +302,11 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
         - 進行中的繁體中文翻譯: 《[每位程式開發者都該有的記憶體知識](https://sysprog21.github.io/cpumemory-zhtw/)》
         - 本文解釋用於現代電腦硬體的記憶體子系統的結構、闡述 CPU 快取發展的考量、它們如何運作，以及程式該如何針對記憶體操作調整，從而達到最佳的效能。
     * [CS:APP 第 9 章重點提示](https://hackmd.io/@sysprog/CSAPP-ch9)`*`
-    * Week12 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2026-quiz12) (內含作答表單)
     - [課堂問答簡記](https://hackmd.io/s7WxGv_KQ_G-Iw9H9SjJ_w)
 
-* 第 13 週 (May 19, 21): 記憶體管理 + 裝置驅動程式
+* 第 13 週 (May 21): 記憶體管理 + 裝置驅動程式
     * 公告:
-        - [課程期末專題](https://hackmd.io/@sysprog/linux2025-projects) 由一人或二人執行，若要二人為一組，請向授課教師確認
+        - 授課教師本週在美國參加 Open Source Summit North America，原定 5 月 19 日下午的課程，改為 5 月 21 日 19:30 於線上會議的方式進行，安排隨堂測驗
     * [教材解說-1](https://youtu.be/jOY159H0Iyo)`*`, [教材解說-2](https://youtu.be/eplQPz1Qegc)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Introduction to Memory Management in Linux](https://youtu.be/7aONIVSXiJ8)`*`
     * [The Linux Virtual Memory System](https://people.redhat.com/pladd/NUMA_Linux_VM_NYRHUG.pdf)
