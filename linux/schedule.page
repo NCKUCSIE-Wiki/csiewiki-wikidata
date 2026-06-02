@@ -381,8 +381,8 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
     * [Multiprocessor OS](/11-smp_os.pdf)
         - [Arm 處理器筆記](https://wiki.csie.ncku.edu.tw/embedded/arm-smp-note.pdf)
     * [從 CPU cache coherence 談 Linux spinlock 可擴展能力議題](https://hackmd.io/@sysprog/linux-spinlock-scalability)
-    * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2025-quiz15) (內含作答表單)
-    * [課堂問答簡記](https://hackmd.io/L8NQsV0SRwmbKyXSayizWw)
+    * Week15 隨堂測驗: [題目](https://hackmd.io/@sysprog/linux2026-quiz15) (內含作答表單)
+    * [課堂問答簡記](https://hackmd.io/CZEAQrigR0KL2MHBbK8qnw)
 
 * 第 16 週 (Jun 9, 11): 程式碼最佳化概念 + 多核處理器架構
     * 公告
