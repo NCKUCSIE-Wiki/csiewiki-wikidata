@@ -364,7 +364,8 @@ Linux 核心設計 (Spring 2026) 課程進度表暨線上資源
 
 * 第 15 週 (Jun 2, 4): 網路封包處理 + 多核處理器架構
     * 公告
-        - [課程期末專題](https://hackmd.io/@sysprog/linux2025-projects)
+        - 6 月 4 日晚間，授課教師因支援外部計畫，取消授課，留意之後的補課時間
+        - [課程期末專題](https://hackmd.io/@sysprog/linux2026-projects)
     * [slab 記憶體配置器](https://hackmd.io/@sysprog/linux-slab)
     * [教材解說-1](https://youtu.be/HfXYAQRLfko)`*`, [教材解說-2](https://youtu.be/WwyifIQIYdY)`*`, [教材解說-3](https://youtu.be/CkgL2dVAaag)`*` (僅止於概況，請詳閱下方教材及個別的對應解說錄影)
     * [Linux 核心網路](https://hackmd.io/@rickywu0421/BJxD_3989)
