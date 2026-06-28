@@ -125,7 +125,7 @@ pkg_info 用於檢視套件資訊：
 .. code-block:: pretty-print
 
     $ pkg_info
-    johnroyer@bsd:~$ pkg_info
+    user@bsd:~$ pkg_info
     ImageMagick-nox11-6.7.9.4 Image processing tools
     apache22-2.2.23_2   Version 2.2.x of Apache web server with prefork MPM.
     autoconf-2.69       Automatically configure source code on many Un*x platforms
