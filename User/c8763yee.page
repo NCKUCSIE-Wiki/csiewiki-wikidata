@@ -4,42 +4,76 @@ categories: User
 ...
 
 # 簡介
+
 - 國立中正大學 資訊工程研究所 (2025/09 ~)
 - GitHub: [`c8763yee`](https://github.com/c8763yee)
 - HackMD: [`c8763yee`](https://hackmd.io/@c8763yee-)
 - Linkedin: [`徐彥翔`](https://www.linkedin.com/in/%E5%BD%A5%E7%BF%94-%E5%BE%90-11792a212/)
 
 # 2026 Linux 核心設計 春季班 自我評量
+
 ## 成果發表和貢獻
-? 分
 
+> 9 分
 
+### Kernel patch (Trivial)
+
+- [perf/x86/amd/ibs: Fix comment typo in ibs_op_data](https://lore.kernel.org/lkml/20260113141830.3204114-1-rrrrr4413@gmail.com/)
+
+### 教材修改
+- [形式化驗證 (Formal Verification)](https://hackmd.io/@sysprog/formal-verification)
+    1. [更新失效連結](https://hackmd.io/-oIc-o9IS4OMOMEkbMyn9w?revisionAfter=1774597254536#)
+- [Linux 核心設計: 記憶體管理](https://hackmd.io/@sysprog/linux-memory)
+    1. [預設的 slab allocator -> 唯一的 slab allocator](https://hackmd.io/t_SzlKdqQKGk7VFYnZ2NKQ?view=&revisionAfter=1776772216974&revisionAuthorPath=c8763yee-#)
+
+		> RIP SLOB allocator (2006 - 2023, removed at 6630e950d532)
+
+		> RIP SLAB allocator (1996 - 2024, removed at 16a1d968358a)
+
+    2. [更新失效連結](https://hackmd.io/t_SzlKdqQKGk7VFYnZ2NKQ?view=&revisionAfter=1776834615980&revisionAuthorPath=c8763yee-#)
+    3. [補充 Ftrace 資訊](https://hackmd.io/t_SzlKdqQKGk7VFYnZ2NKQ?view=&revisionAfter=1778728520600&revisionAuthorPath=c8763yee-#)
+        
+		> Before 4.1, all ftrace tracing control files were within the debugfs file system, which is typically located at /sys/kernel/debug/tracing.
+    4. [優化 -> 改善](https://hackmd.io/t_SzlKdqQKGk7VFYnZ2NKQ?view=&revisionAfter=1780282222518&revisionAuthorPath=c8763yee-#)
+
+- [你所不知道的 C 語言：編譯器和最佳化原理篇](https://hackmd.io/@sysprog/c-compiler-optimization)
+    1. [更新維基百科連結 Elf(Myth) -> Executable_and_Linkable_Format](https://hackmd.io/VerfJi2ZSIO0RbgeL2ppGQ?both=&revisionAfter=1776324622194&revisionAuthorPath=c8763yee-#)
+
+- [Linux 核心設計: 透過 eBPF 觀察作業系統行為](https://hackmd.io/@sysprog/linux-ebpf)
+    1. [補充在 x86-64 與 arm 下 `read` system call 具體變更的符號名稱](https://hackmd.io/CJb5S2gxTCiX-__krLUFpg?revisionAfter=1777201814451&revisionAuthorPath=c8763yee-#)
+
+- [並行程式設計: 執行順序](https://hackmd.io/@sysprog/concurrency-ordering)
+    1. [修改公式顯示格式](https://hackmd.io/1ibD9_jeSR6HW72YtKpdrg?revisionAfter=1778650820370#)
+
+### 公開演講
+- 2026/08/09 — COSCUP 2026 System Software 講題[「從個人電腦到資料中心：Linux 記憶體管理的演化」](https://pretalx.coscup.org/coscup-2026/talk/review/SEA79ZSNPYE9ZDXUEB9BSW3LSVKHFYLC)
 
 ## 作業/隨堂測驗
+
 ? 分
 
-[Homework1 (warmup)](https://hackmd.io/@c8763yee-/linux2026-warmup)
+- [Homework1 (warmup)](https://hackmd.io/@c8763yee-/linux2026-warmup)
 
+- [Homework2 (stdc)](https://hackmd.io/@c8763yee-/linux2026-stdc)
 
-[Homework2 (stdc)](https://hackmd.io/@c8763yee-/linux2026-stdc)
-
-
-[Homework3 (basics)](https://hackmd.io/@c8763yee-/linux2026-basics)
-
+- [Homework3 (basics)](https://hackmd.io/@c8763yee-/linux2026-basics)
 
 ## 期末專題
+
 ? 分
 
-
 ## 與授課教師的互動
+
 ? 分
 
 ## 所見所聞所感
+
 ? 分
 
 〈因為自動飲料機而延畢的那一年〉 心得 :
 
 ## 自我評量 (1 ~ 10)：
-$GEOMEAN = ( ? \times ? \times ? \times ? \times ?)^{1/5} = ?$
+
+$GEOMEAN = ( 9 \times ? \times ? \times ? \times ?)^{1/5} = ?$
 
 方案 B ：$1 + floor(GEOMEAN) = 1 + ? = ?$
