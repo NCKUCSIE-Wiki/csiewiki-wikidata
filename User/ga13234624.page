@@ -1,0 +1,79 @@
+---
+title: ga13234624(王俐婷)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程所
+
+* GitHub: [`ga13234624`](https://github.com/ga13234624)
+* HackMD: [`ga13234624`](https://hackmd.io/@ga13234624)
+
+# 2026 Linux 核心設計/實作 自我評量
+
+同步更新於 [`hackmd`](https://hackmd.io/@ga13234624/ga13234624)
+
+## 第一項、成果發表和貢獻
+評分: 6
+
+學期內對 lkmpg、vwifi 專案累計 4 件 PR (等待審核中)。
+### lkmpg
+- 2026/06/30 — sysprog21/lkmpg 第 10 章< Talking To Device > 提到 "The ioctl number encodes the major device number, the type of the ioctl, the command, and the type of the parameter." 應為 "The ioctl number encodes **the direction of data transfer**, the type of the ioctl, the command, and the type of the parameter."
+
+### vwifi 專案
+- 2026/07/02 — `vwifi_virtio_mgmt_rx_connect_request()` 跟 `vwifi_connect_routine()` 裡面都用到 `sinfo = kmalloc(sizeof(struct station_info), GFP_KERNEL);` 並且在後續呼叫 cfg80211_new_sta，因為 cfg80211 是依靠 ->filled 來判斷要讀取哪些欄位，不定期會發生**讀到垃圾資料而引發 kernel panic**，故修改為 kzalloc 來確保所有欄位初始值為 0。
+
+- 2026/07/03 — `vwifi_get_station` 是 non-virtio 與 virtio 模式在查看 station 資訊時都會觸發的函式。在 virtio 模式下，STA 端執行時發生 kernel NULL pointer dereference。原因在於：此函式填 bss_param 時透過 vif->ap->beacon_int 讀取本機 AP 物件，但此僅適用於 non-virtio，在 virtio 模式下 AP 位於另一台 VM，STA 的 vif->ap 為 NULL 是合理的，故未先判斷 vif->ap 是否為 NULL 而直接呼叫`mutex_lock_interruptible(&vif->ap->lock)`引發了 **kernel NULL pointer dereference**。
+
+- 2026/07/04 — `vwifi_ndo_start_xmit` 在進入時會先判斷是否為 virtio 模式，若是則直接 `return vwifi_virtio_tx(vif, skb)`，提早離開函式。non-virtio 路徑分別在呼叫的`__vwifi_ndo_start_xmit` 與函式尾端更新統計數據（tx_packets、tx_bytes、tx_dropped），**virtio 路徑完全沒有更新到統計數據**，修正方式為在 vwifi_virtio_tx 內補上統計更新。
+
+
+## 第二項、作業/隨堂測驗
+評分: 7
+
+作業1: [2026q1 Homework1 (warmup)](https://hackmd.io/f74TqZW4SC2sTq2PJwwGZw)
+
+作業2: [2026q1 Homework2 (stdc)](https://hackmd.io/4Vs6WK0AR1afTm49h6vUoA)
+
+作業3: [2026q1 Homework3 (basics)](https://hackmd.io/JeHy2jVwRrm698nys3CxOQ)
+
+作業4: 選擇第一種路線--即刻投入期末專題(如下)
+
+
+
+## 第三項、期末專題
+評分: 9
+
+- 專題將 vwifi 擴充為能模擬真實無線環境的版本，讓原本零丟包的虛擬網路，能依照訊號強弱產生封包丟失、延遲。實作上採用雙模組架構，並在封包傳遞路徑上進行攔截，套用一套 RSSI 到丟包率、延遲時間計算的物理模型，同時支援原專案既有的單機與跨 VM 兩種情境，並透過 generic netlink 打造可動態調整物理環境表。
+- [開發紀錄](https://hackmd.io/@sysprog/Skgx7Kl0Wl) 及 [解說錄影](https://youtu.be/Sx1PLjljHzo)
+
+## 第四項、與授課教師的互動
+評分: 5
+
+- 2026/04/28 下課時間與老師討論專題方向改為 vwifi
+- 2026/06/02 與助教及老師進行模擬面試，並於 6/22 12:28 信件回覆模擬面試相關問題
+- 2026/06/23 與助教進行模擬面試，並於 7/3 15:22 信件回覆模擬面試相關問題
+- 2026/06/24 與老師進行一對一討論 [紀錄](https://docs.google.com/document/d/15OxsXOUDu2jLTdqe_HQG89BH29j7OdEyo8LcPMlp6mY/edit?tab=t.0#heading=h.gygow0mqfq5u)
+
+
+
+## 第五項、 所見所聞所感
+評分: 10
+
+### 關於〈因為自動飲料機而延畢的那一年〉
+我很佩服學長這種為了達成某個目標，哪怕最終的結果對自己未必有實質的好處，仍然願意不計代價地付出所有的時間與精力的人。這讓我想到老師今年去支援的那個"極度忙碌"的專案，有次老師提到他為此甚至連續30多個小時沒有闔眼，而且這個專案實際上也無法給予他多豐厚的酬勞，但他依然選擇投入，老師與學長完全是憑藉著個人的信念與堅持在支撐。
+
+回顧這篇文章，在這種漫長、不斷卡關、反覆修復問題的過程中，人的耐心很容易被消磨殆盡，很容易會產生想放棄的念頭，或是明明已經察覺到了一些潛在的小問題，卻可能會因為疲憊而選擇囫圇吞棗、得過且過地帶過。然而，工程的世界是極度真實且殘酷的，在系統與工程實作上，即便只是一些微小的細節差異或瑕疵，都可能導致整套系統崩潰、讓整台機器無法順利運行。在這個領域裡並沒有所謂的「部份給分」，一切的邏輯與架構都必須是嚴謹且確定的。如同老師時常耳提面命的：「做大事 or nothing」，套用到這個情境其實是完全一樣的道理。以製作這台飲料機為例，你要馬就是徹頭徹尾地完成一台功能完全正確、能順暢運作的機器；只要當中壞了一部分，哪怕只是一個不起眼的微小零件，它都不能再被視為一台「可用」的飲料機。這種不妥協、追求完整與極致的精神，正是我們在面對每一次工程挑戰時，最需要銘記在心的態度。
+
+
+### 關於實驗
+我在做專題時，第一步就先去讀專案程式碼並動手修改功能，直到要測試時，才開始完整啟動整個專案。但我當時並沒有意識到，原專案在我的電腦上可能因為版本不同等因素，有些功能本來就無法運行，甚至可能原本就存在 Bug。過往的經驗讓我直覺地認為「專案本身一定沒問題」，於是直接進入開發與測試；也因為以前沒有參與過開源專案的開發，從來沒有仔細閱讀 README 並按照其指引去逐步進行實驗。這種「先入為主」的假設，讓我繞了很大的彎。這也是我這次專題實作中，學到最重要也最基本的一件事：在動手修改前，先確保原始專案能成功運行，才是嚴謹的實驗第一步。
+
+### 關於自身投入的回顧
+關於這學期的時間投入，我每週平均大約花 20 ~ 25 小時在這門課上，但遇到期末考前一週，投入時間就會掉到大約 10 小時左右。說實話，我自己心裡很清楚，以我的基礎，即便每週花 25 小時也是完全不夠的。我大多數的時間都花在了 vwifi 這個專案的摸索上，因為我對網路相關的知識幾乎是0，所以大部份時間都是在學習網路的基礎常識，教材的部份大多沒跟上進度，頂多是上課前擠出1~2小時臨時抱佛腳。
+
+## 自我總評量得分
+自我總評量得分為 **8** 分。
+
+* GEOMEAN : $\sqrt[5]{6*7*9*5*10} = 7.166$  
+* 方案 B：$1+\lfloor 7.166 \rfloor=8$
