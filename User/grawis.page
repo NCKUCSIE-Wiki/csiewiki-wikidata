@@ -32,7 +32,7 @@
 * 補上 capture buffer 的 sequence number
          
 ## 與授課教師的互動
-### 課堂問答：
+課堂問答：
 
 * 3/17
 課堂與老師討論關於merge sort程式碼品味與設計策略問題，問答紀錄於[3/10問答簡記](https://hackmd.io/@sysprog/H1_QqYmtbl)
@@ -42,7 +42,7 @@
 * 5/26
 課堂被老師問到 homogeneous 定義的相關問題，問答紀錄於[5/26問答簡記](https://hackmd.io/@sysprog/BJmF8oGgzg)
 
-### 一對一討論：
+一對一討論：
 * 6/9 
 和老師一對一詢問關於 vcam 目前的改進方向，老師建議直接提交 issue 與 pr
 * 6/23 
