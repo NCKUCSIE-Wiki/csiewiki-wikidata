@@ -50,13 +50,19 @@ categories: User
 
 ## 作業/隨堂測驗
 
-? 分
+> 6 分
+
+一開始因為就學期間忽略數學的重要性，導致光是做「探討〈解讀計算機編碼〉」題組在補充缺失的數學知識就花了 3 天。而後面因為 Deadline 接近，因此後面只能針對程式語言的題目進行作答並繼續把之前沒學好的數學重新學習，這樣的結果是在第三次作業時只能先紀錄閱讀教材時的發現與問題。
+
+不過在撰寫作業期間我開始注重使用的詞彙以及對於 C 語言規格書的使用，並且在閱讀課程教材期間也會主動注意教材使用的詞彙並修正。
 
 * [Homework1 (warmup)](https://hackmd.io/@c8763yee-/linux2026-warmup)
 
 * [Homework2 (stdc)](https://hackmd.io/@c8763yee-/linux2026-stdc)
 
 * [Homework3 (basics)](https://hackmd.io/@c8763yee-/linux2026-basics)
+
+
 
 ## 期末專題
 
@@ -74,6 +80,6 @@ categories: User
 
 ## 自我評量 (1 ~ 10)：
 
-$GEOMEAN = ( 9 \times ? \times ? \times ? \times ?)^{1/5} = ?$
+$GEOMEAN = ( 9 \times 5 \times ? \times ? \times ?)^{1/5} = ?$
 
 方案 B ：$1 + floor(GEOMEAN) = 1 + ? = ?$
