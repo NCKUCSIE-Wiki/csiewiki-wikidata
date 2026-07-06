@@ -1,7 +1,7 @@
 ---
 title: c8763yee (徐彥翔)
 categories: User
-...
+---
 
 # 簡介
 
@@ -70,7 +70,12 @@ categories: User
 
 未完成期末專題
 
-預定題目: 針對 MGLRU 的 reclaim loop 統計(PID Controller) 根據 Generation 存活時間衰減權重。
+原題目: 針對 MGLRU 的 reclaim loop 統計(PID Controller) 根據 Generation 存活時間衰減歷史權重。
+
+$$\begin{aligned}S_{new} = \frac{S_{old}}{\Delta t}+\frac{\Delta t-1}{\Delta t}x_t\\
+\Delta t = jiffies-lrugen_{ts}[min_{seq}]\end{aligned}$$
+
+
 
 ## 與授課教師的互動
 
