@@ -28,6 +28,7 @@ GitHub 帳號：`Bigtooth123`
 [專題連結](https://hackmd.io/@sysprog/SyC5lS3gMg)
 
 本期末專題著重於從硬體微架構與快取一致性（Cache Coherence）的視角，分析、建模並量化 Linux 中的同步機制。專案中我完成了下列幾項工作：
+
 * 建構馬可夫鏈模型：建立基於 $M/M/c$ 的排隊模型，推導出 Ticket Spinlock 與 MCS Spinlock 在不同排隊人數下的微觀狀態機率分佈（$P_k$）與期望吞吐量公式。
 * Userspace 競爭模擬與低開銷量化：使用 C11 原子操作在使用者空間實作 Ticket Lock 與 MCS Lock。為避免全域計數器破壞 MCS 的區域自旋優勢，透過 64-byte 快取行對齊（Padding）消除偽共享（False Sharing），並設計低頻率抽樣機制（SAMPLE_RATE = 1000）進行動態量化。
 * 帶入微觀物理時間常數驗證模型：在模型中帶入與硬體環境對齊的物理參數（臨界區時間 $E = 10\text{ ns}$ 對應 50 次空迴圈、快取交接成本 $c = 50\text{ ns}$、包含 x86 LOCK XCHG 原子指令開銷的到達時間 $T_{\text{arrive}} = 50\text{ ns}$），使理論吞吐量與狀態分佈曲線與實測趨勢高度吻合。
