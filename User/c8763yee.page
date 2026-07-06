@@ -66,7 +66,11 @@ categories: User
 
 ## 期末專題
 
-? 分
+> 4 分
+
+未完成期末專題
+
+預定題目: 針對 MGLRU 的 reclaim loop 統計(PID Controller) 根據 Generation 存活時間衰減權重。
 
 ## 與授課教師的互動
 
@@ -80,6 +84,6 @@ categories: User
 
 ## 自我評量 (1 ~ 10)：
 
-$GEOMEAN = ( 9 \times 5 \times ? \times ? \times ?)^{1/5} = ?$
+$GEOMEAN = ( 9 \times 6 \times 4 \times ? \times ?)^{1/5} = ?$
 
 方案 B ：$1 + floor(GEOMEAN) = 1 + ? = ?$
