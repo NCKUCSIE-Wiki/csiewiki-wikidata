@@ -20,6 +20,18 @@ categories: User
 
 * [perf/x86/amd/ibs: Fix comment typo in ibs_op_data](https://lore.kernel.org/lkml/20260113141830.3204114-1-rrrrr4413@gmail.com/)
 
+我在閱讀 AMD IBS 相關程式碼時發現其 bit-field 註解中 bit 範圍標示錯誤 (正確的範圍應該是 16-31)，考慮到可能有人像我一樣被註解誤導 bit-field 範圍，因此「路見不平，拿 Patch 來補」，發送了我個人的第一個 Linux kernel patch。即使只是修了一行，但畢竟「勿以善小而不為」。
+
+```diff=77
+struct {
+    __u64	comp_to_ret_ctr:16,	/* 0-15: op completion to retire count */
+-    tag_to_ret_ctr:16,	/* 15-31: op tag to retire count */
++    tag_to_ret_ctr:16,	/* 16-31: op tag to retire count */
+    reserved1:2,		/* 32-33: reserved */
+    op_return:1,		/* 34: return op */
+    op_brn_taken:1,		/* 35: taken branch op */
+```
+
 ### 教材修改
 * [形式化驗證 (Formal Verification)](https://hackmd.io/@sysprog/formal-verification)
     1. [更新失效連結](https://hackmd.io/-oIc-o9IS4OMOMEkbMyn9w?revisionAfter=1774597254536#)
@@ -72,14 +84,17 @@ categories: User
 
 原題目: 針對 MGLRU 的 reclaim loop 統計(PID Controller) 根據 Generation 存活時間衰減歷史權重。
 
-$$\begin{aligned}S_{new} = \frac{S_{old}}{\Delta t}+\frac{\Delta t-1}{\Delta t}x_t\\
-\Delta t = jiffies-lrugen_{ts}[min_{seq}]\end{aligned}$$
+$$S_{new} = \frac{S_{old}}{\Delta t}+\frac{\Delta t-1}{\Delta t}x_t$$
+$\Delta t = jiffies-lrugen_{ts}[min_{seq}]$
 
 
 
 ## 與授課教師的互動
 
-? 分
+> ? 分
+
+
+
 
 ## 所見所聞所感
 
