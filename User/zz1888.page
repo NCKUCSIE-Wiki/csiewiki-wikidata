@@ -23,7 +23,7 @@ categories: User
 * [2026q1 Homework2 (basics)](https://hackmd.io/@zzhackmd/linux2026-basics)
 
 評分:   
-我為自己打 9 分，在作業上投入了相當程度的時間，每個問題都有詳細的閱讀教材，雖然不是完整的達到作業要求，但是在每個作業當中都有學到東西。
+我為自己打 8 分，在作業上投入了相當程度的時間，每個問題都有詳細的閱讀教材，雖然不是完整的達到作業要求，但是在每個作業當中都有學到東西。
 
 ## 第三項、期末專題
 
@@ -45,7 +45,7 @@ Linux 專題: 效能分析和改進案例探討 [HackMD](https://hackmd.io/@sysp
 LeetCode 21. Merge Two Sorted Lists延伸至k lists。
 從兩條 linked list 的合併，到 k 條 linked list 的合併，可以進一步思考逐一合併、divide and conquer 與 min heap 等方法在時間複雜度與空間複雜度上的差異。最後選擇 divide and conquer，最後我認為較適合選擇 divide and conquer 的方式，因為它可以將 k 條 linked lists 兩兩合併，重複利用merge two sorted lists 的概念，並將整體時間複雜度降低到 O(N log k)。因為被問了這個問題讓我去看教材並且對linked list 有更深的了解，也理解了一些演算法邏輯，就算不是這個領域全部的理解，起碼因為這次的問答進步了一點。
 
-一對一紀錄 [HackMD](https://hackmd.io/xMDwfal8QJi0TWhH3wnJyw)
+一對一紀錄：6/2模擬面試, 後續檢討：[HackMD](https://hackmd.io/xMDwfal8QJi0TWhH3wnJyw)
 在這個學期初有學習作業系統的相關知識，直到被問到的時候才發現自己有很多漏洞，沒有很熟悉，希望在未來可以補齊這個部分，也可以在與公司面試時更有能力回應。
 
 與授課教師「一對一討論」的時間為 2026年5月26日 (週二) 19:30~20:00。[HackMD](https://hackmd.io/@zzhackmd/S1gy2fmgze)
@@ -67,11 +67,12 @@ LeetCode 21. Merge Two Sorted Lists延伸至k lists。
 
 回顧自身在本課程的投入狀況:
 這個學期除了觀看教材，還有上網學習作業系統的網路課程，每週也一定程度的時間在做作業，有遇到不懂的地方也會積極與同學、助教討論，但回顧學習的過程覺得很沒效率，體感上花了大量的時間但好像什麼都記不住，所以一直在調整自身的學習方法，認知自己的不足，在未來還要持續精進自己。
+
 評分: 
 我為自己打 10 分，當初抱持著挑戰者的心情修了這堂課，最大的收穫是認知與世界的差距，讓自己有學習的動力，很感謝教授的這門課，除了知識還帶給我們心靈的成長。雖然沒辦法對這堂課要傳達給我的知識全面的理解，但回顧這學期，哪怕只有一點點知識的累積，都是進步了。
 
 ## 自我總評量得分
 自我總評量得分為 **8** 分。
 
-* GEOMEAN : $\sqrt[5]{3*9*9*9*10} = 7.37$  
-* 方案 B：$1+\lfloor 7.37 \rfloor=8$
+* GEOMEAN : $\sqrt[5]{3*8*9*9*10} = 7.20$  
+* 方案 B：$1+\lfloor 7.20 \rfloor=8$
