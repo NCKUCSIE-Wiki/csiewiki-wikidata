@@ -17,6 +17,7 @@ categories: User
 評分: 6
 
 學期內對 lkmpg、vwifi 專案累計 4 件 PR (等待審核中)。
+
 ### lkmpg
 - 2026/06/30 — sysprog21/lkmpg 第 10 章< Talking To Device > 提到 "The ioctl number encodes the major device number, the type of the ioctl, the command, and the type of the parameter." 應為 "The ioctl number encodes **the direction of data transfer**, the type of the ioctl, the command, and the type of the parameter."
 
