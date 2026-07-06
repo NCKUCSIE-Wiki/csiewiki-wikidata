@@ -33,6 +33,8 @@ Linux 專題: 效能分析和改進案例探討 [HackMD](https://hackmd.io/@sysp
 1.[Linux 核心專題: Bloom Filter 分析](https://hackmd.io/@sysprog/rk28fdH-ze)
 2.[Linux 核心設計專題：Transparent Huge Pages](https://hackmd.io/@sysprog/S1v3bpa6Wg)
 3.[Linux 核心設計專題: 數值分析案例探討](https://hackmd.io/@sysprog/rkP0B-Offl)
+4.[Linux 核心設計專題: 強化 kxo](https://hackmd.io/@sysprog/HJv7vqR0bg)
+5.[Linux 核心設計專題: 異質多核通訊機制](https://hackmd.io/@sysprog/HkFikIgkzl)
 
 評分:
 我為自己打 9 分。這次期末專題是根據老師分配的題目，重現 CS Assign5.18 中多項式求值的效能分析，並進一步探討不同最佳化方式對執行效率的影響。剛開始我對這個題目的背景與效能分析工具並不熟悉，因此花了不少時間閱讀老師提供的教材與相關程式架構，實作的過程中用了更多split、unroll組合發現學長實作的已經達到組合的甜蜜點，所以我進一步嘗試 Estrin’s Scheme 多項式求值策略。實驗結果顯示，在較大的 degree 下，Estrin B=16 相較於原本的 split+unroll 方法能穩定降低 CPE，約有 3–5% 的改善。
