@@ -1,0 +1,47 @@
+## 簡介
+* 國立成功大學 醫學資訊研究所
+* Github: [grwis](https://github.com/grawis)
+
+## 成果發表與貢獻
+* 教材
+    * warm-up作業
+        * 2026/03/06 : 與老師討論題意修正(信件)
+         為何 $x \mod 2^n \equiv x \mod (2^n - 1)$ 僅對 unsigned 或非負整數安全？->為何 $x \mod 2^n \equiv x \& (2^n - 1)$ 僅對 unsigned 或非負整數安全？
+         
+## 作業/隨堂測驗
+* [2026q1 Homework1 (warmup)](https://hackmd.io/@grawis0331/B1mX_dZt-l)
+* [2026q1 Homework2 (stdc)](https://hackmd.io/@grawis0331/ryn98Y7sZg)
+* [2026q1 Homework3 (basics)](https://hackmd.io/@grawis0331/HJdRdZR3Wl)
+
+作業重點回顧：
+* [C語言指標篇](https://hackmd.io/Os7SNz4nSh2uhDPNpQ_TwA#4-%E6%8E%A2%E8%A8%8E%E3%80%88%E4%BD%A0%E6%89%80%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84C%E8%AA%9E%E8%A8%80%EF%BC%9A%E6%8C%87%E6%A8%99%E7%AF%87%E3%80%89) 從複習C語言的指標操作，延伸到老師課堂提及的演算法與實際硬體友善程度分析
+* [分析快慢指標](https://hackmd.io/JvWQso3PT4CKSYnDuAhAzg?view#%E4%B8%80%E3%80%81%E6%80%9D%E7%B4%A2%E3%80%88%E5%88%86%E6%9E%90%E3%80%8C%E5%BF%AB%E6%85%A2%E6%8C%87%E6%A8%99%E3%80%8D%E3%80%89) 學習利用 perf 工具，設計實驗並實際觀察 cache 行為
+* [Branchless 計算、min()/max() 巨集與 SIMD 分析](https://hackmd.io/JvWQso3PT4CKSYnDuAhAzg?view#Q2%EF%BC%9ABranchless-%E8%A8%88%E7%AE%97%E3%80%81minmax-%E5%B7%A8%E9%9B%86%E8%88%87-SIMD-%E5%88%86%E6%9E%90) 設計實驗並深入分析不同實作方法的優劣與應用
+
+
+## 期末專題
+
+* [Linux 核心設計專題: 改進 vcam](https://hackmd.io/@sysprog/Sk3hOzw0Ze)
+
+目前已完成貢獻摘要：
+* 修正 V4L2 capture frame interval 的計算與回報
+* 建立自動化 V4L2 測試流程
+* 防止 buffer 已配置或使用中時變更影像格式
+* 補上 capture buffer 的 sequence number
+         
+## 與授課教師的互動
+### 課堂問答：
+
+* 3/17
+課堂與老師討論關於merge sort程式碼品味與設計策略問題，問答紀錄於[3/10問答簡記](https://hackmd.io/@sysprog/H1_QqYmtbl)
+
+* 3/24 
+課堂與老師討論關於quick sort 與 merge sort 在 linked list 上的優劣，問答紀錄於[3/17, 3/24問答簡記](https://hackmd.io/@sysprog/HkJlR7LcZl)
+* 5/26
+課堂被老師問到 homogeneous 定義的相關問題，問答紀錄於[5/26問答簡記](https://hackmd.io/@sysprog/BJmF8oGgzg)
+
+### 一對一討論：
+* 6/9 
+和老師一對一詢問關於 vcam 目前的改進方向，老師建議直接提交 issue 與 pr
+* 6/23 
+和老師一對一詢問關於 vcam 目前的改進方向，老師說關於之前的 pr 未來會再審閱。然後也提及目前 linux kernel 在未來會逐步棄置 frame buffer 的方向，可往替代方案的實作欲完善發展（如改善 dma buffer 的行爲，不再依賴 frame buffer），也在後續補上了這個方向的任務於專題紀錄中。
