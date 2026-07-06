@@ -1,0 +1,64 @@
+---
+title: rrrchii(陳麒為)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 電腦與通信工程研究所
+
+* GitHub: [`rrrchii`](https://github.com/rrrchii)
+* HackMD: [`rrrchii`](https://hackmd.io/rrrchii)
+
+# 2025 Linux 核心設計/實作 春季班 自我評量
+## 第一項、成果發表和貢獻
+無。
+評分: 
+
+
+## 第二項、作業/隨堂測驗
+
+* [2025q1 Homework1 (warmup)](https://hackmd.io/@rrrchii/linux2026-warmup) 
+* [2025q1 Homework2 (stdc)](https://hackmd.io/@rrrchii/linux2026-stdc) 
+* [2025q1 Homework3 (basic)](https://hackmd.io/@rrrchii/linux2026-basic)
+
+評分:   
+我為自己打 9 分，每份作業我都有去觀看作業上給的教材與撰寫程式碼，都有盡力去寫，儘管不是每份作業都有完成到每個要求，但我認為我在每個作業當中都有學到東西，也投入了相當程度的時間。
+
+Homework1 : 這份作業讓我印象最深刻的，是重新思考大學期間一直都有接觸，卻從未深入探討的基礎概念。過去對於二補數、Overflow、Unsigned Integer 等內容，大多停留在知道他是什麼的層面，而這次透過教材，我第一次從 Group Theory 、模運算與有限域等數學觀點去理解本質，例如為何固定長度位元的加法等價於模的加法、為何允許 Overflow 能夠維持代數結構的封閉性，以及 Linux Kernel 為何將 unsigned overflow 視為 defined behavior。這些內容與大學課程中的計算機概論都有關聯，但教材將這些分散的知識串連起來，也讓我真正理解 Linux Kernel 中許多底層設計並非經驗法則，而是建立在嚴謹的數學基礎之上。
+
+Homework2 : 這次作業我覺得我的出發點是就算做不完也要完整理解整個題目的所有細節，因為把我做過的題目完整理解，比我粗糙的把所有題目做完重要，所以我仍希望能夠真正理解每一個問題背後的原理，而不是因為時間不足就直接放棄。在完成第一題的過程中，我第一次深入接觸 Linked List，了解它在記憶體配置上的特性、適用場景，以及與陣列不同的設計思維，這也是我過去在大學課程中較少接觸的內容。
+除了資料結構本身之外，最大的收穫是學會如何利用 perf 分析程式效能。我嘗試設計實驗，比較不同 Linked List 演算法的 cache 行為，並使用 perf stat 與 perf record 觀察 cache miss、cycles、instructions 等效能指標。在分析結果時，我發現量測數據與預期不符，因此重新檢視整個實驗流程，最後發現大量的 cache miss 並非來自演算法本身，而是在建立與打亂 Linked List 時就已經產生。為了排除這項干擾，我重新設計量測流程，改為在串列建立完成後才開始附加 perf 進行量測，使結果更能反映演算法本身的效能差異。
+透過這份作業，我不僅學會使用 perf 進行效能分析，更重要的是理解到實驗設計的重要性。當量測結果與預期不同時，不應直接接受數據，而是要主動分析造成差異的原因，並修正實驗方法，這樣得到的結論才具有可信度。而 perf 的使用經驗，也直接延續到我的期末專題，成為分析 Linux Kernel 效能的重要工具。
+
+Homework3 : 未完成
+
+## 第三項、期末專題
+
+Linux 核心專題: Bloom分析 [HackMD](https://hackmd.io/@sysprog/rk28fdH-ze)/[GitHub](https://github.com/rrrchii/linux_2026_bloom)
+
+評分:
+
+
+## 第四項、與授課教師的互動
+
+一對一紀錄 [HackMD](https://hackmd.io/LL0u7iNLSFWdpmmkJwuKYQ)
+
+與授課教師「一對一討論」的時間為 20260526 21:30-22:00。
+
+問答1 : 
+
+問答2 : 
+
+評分: 
+
+
+## 第五項、 所見所聞所感
+
+評分: 
+ 
+
+## 自我總評量得分
+自我總評量得分為 **** 分。
+
+* GEOMEAN : $\sqrt[5]{****} = $  
+* 方案 B：$1+\lfloor  \rfloor=$
