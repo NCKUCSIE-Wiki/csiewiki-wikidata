@@ -1,0 +1,23 @@
+
+# 4. 與授課教師的互動
+
+10分
+
+* **一對一討論次數**
+
+  * 3次
+  * 日期：5/5 19:30~20:00 [https://hackmd.io/@sysprog/S1v3bpa6Wg?stext=2468%3A18%3A0%3A1783269731%3AwlRrD9] 裡的 perf state perf record,(4/22 16:30~17:00) [https://hackmd.io/@lp1vJCVPRgi2AW4c2c7QQw/0422_final_project_meeting_note/edit], 5/13 17:00~17:30[https://hackmd.io/@sysprog/S1v3bpa6Wg?stext=2468%3A18%3A0%3A1783269731%3AwlRrD9] 裡的記憶體研究文獻整理
+
+ 1.第一次開會確認資料集跟可行性，回去做了小型的 thp 實驗測試。
+ 2.第二次開會說要建立可重現性的實驗，我申請了器材，會後回去找 minimap2 相關的記憶體研究文獻
+ 3.第三次開會講實驗環境的測試與建置。
+ 4. 5/25 下課找老師討論對 baseline 的 perf state, perf record 測試結果，回去新增腳本增加測量樣本：cycles, instructions. stall_backend, stall_frontend, dTLB-loads, dTLB-load-misses, context-switches, cpu-migrations, page-faults, minor-faults, major-faults
+ 5. 6/9 下課去找老師，燒說要考慮從 I/O 層優化，順序存取，或使用 mmap ，會後回去研究，但 minimap2 原版沒有使用 mmap ，讀取方式不一樣我沒有採用 MADV_SEQUENTIAL 改用 posix_fadvise(POSIX_FADV_SEQUENTIAL)。
+ 6. 6/23 下課找老師討論如何詳細測量 L2D refill 的變化，還有 要做 THP 實驗對照組，已都重新實驗測量，在期末專題更新完成。
+
+
+* **課堂問答次數**
+
+  * 哪一週：第 3 周  [https://hackmd.io/@sysprog/H1_QqYmtbl] 跟第 18 周(模擬面試) 用寄信的。
+
+---
