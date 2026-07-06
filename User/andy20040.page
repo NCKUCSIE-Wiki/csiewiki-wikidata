@@ -1,0 +1,116 @@
+# 2026 年 Linux 核心設計課程自我評量
+姓名:陳彥宇
+GitHub 帳號:[andy20040](https://github.com/andy20040)
+本份自我評量遵循課程[自我評量指引](https://hackmd.io/@sysprog/linux2024-assessment) 的書寫規範，避免「期許自己」、「已盡最大努力」等空泛承諾,所有產出皆附對應的公開軌跡 (Linux 上游 patch、GitHub PR、HackMD 開發紀錄、會議錄影)。各項自評分數皆為 1 到 10 的整數，最末以幾何平均計算總分並適用方案 B。 
+
+## 成果發表與貢獻
+> 8 分
+
+### **課程教材**
+*  2026/07/01 — 修改教材 [並行程式設計: 概念](https://hackmd.io/_lnMkJLxTSWzU46IT8R7nw?both=#)導讀中對於 mutex 與 semaphore 差別的描述不夠精確，文中對於 **process 要不擔任 producer，要不充當 consumer 的角色，不能同時兼任兩者**過於武斷，將其修正為在 process 使用 semaphore 作為事件與狀態同步時，並且補充說明。
+* 2026/05/01 — 修正教材 [第五次作業 kxo ](https://hackmd.io/@sysprog/linux2026-kxo/%2F%40sysprog%2Flinux2026-kxo-d) 對弈核心模組章節中的文字缺漏。
+* 2026/03/26 — 修正與補充教材 [Linux 核心原始程式碼的整數除法](https://hackmd.io/z9tbSyjPT0OMIj_UKp3dkA?both=#) 中對於 `DIV_ROUND_CLOSEST` 的描述
+
+## 作業與隨堂測驗
+> 9 分 
+
+### 主作業時間軸
+* 2026/03/13 — `2026q1 Homework1 (warmup)` 基於 C99 規格書  重新梳理 object lifetime、storage duration 與 array decay 的嚴格定義。針對 pointer arithmetic 與 strict aliasing 問題，剖析將 double 強制轉型為 int 指標在 ARMv5 / RISC-V 架構下因 Little Endian 造成的非預期行為。從硬體 prefetcher 視角解釋 linked list 不連續記憶體存取圖形導致 L1 Cache miss 上升的原因，並對照 Linux 核心 Git log 中移除` __builtin_prefetch` 的設計考量。推導 Merge Sort 的 worst-case comparison 次數上限  $\sum_{j=1}^{\log_2 n} \frac{n}{2^j} \times (2^j - 1)$，說明延遲合併 (Delayed Merge) 策略相較 fully-eager bottom-up mergesort 能有效減少不平衡合併造成的額外比較次數與 Cache thrashing。
+* 2026/03/26 ~ 2026/03/28 — `2026q1 Homework2 (stdc)` 利用 perf stat 實測發現，快慢指標相較單一指標在走訪時引發額外 ~600 次 L1-dcache-load-misses (耗時增加 ~0.06ms)。透過 perf report 確認採樣偏差 (Sample Skid)，精確定位出 Cache Miss 集中於 Fast 指標的第二段 mov (%rax), %rax 取值指令，驗證了 temporal locality 在非連續記憶體走訪時的效能瓶頸。
+* 2026/03/26 ~ 2026/03/28 — `2026q1 Homework2 (stdc)`  以 IEEE 754 規格證明 0.1 導致的截斷誤差，並探討浮點數結合律失效的底層原因。深入分析 Linux 核心 `timekeeping_cycles_to_ns`，解構其利用 `(delta * mult) >> shift` 取代浮點運算的定點數設計，並探討`delta & ~(mask >> 1)` 如何巧妙利用 MSB 檢查機制，在微秒級別攔截 CPU 計時器誤差導致的整數溢位。
+* 2026/03/26 ~ 2026/03/28 — `2026q1 Homework2 (stdc)`  基於 C99  釐清有號整數算術右移的 Implementation-defined 行為，並以`i - sizeof(char) >= 0` 導致的無窮迴圈案例，論證無號整數提升 (size_t) 的危險性。從硬體視角探討 Linux 核心的 branchless 設計：分析 minheap.h 中 `i -= size & -(i & lsbit)` 取代除法與分支的機制。以 fast_abs 為例，對照 x86 機器碼證明其能徹底消除 cmp 與 jmp 指令，並搭配 Linux 核心的 git log 來說明 branchless 的優勢。
+* 2026/04/08 — `2026q1 Homework2 (basics)` 
+追蹤 Linux VFS、TTY 與 Network 子系統移除 BKL 的關鍵 commit，並建立 Cache-line Bouncing 數學模型。推導出 Global Lock 在多核競爭下的 $O(N)$ 期望等待時間（$E[T_{wait}] = \frac{N-1}{2}(W + T_c)$）。為驗證理論，設計 C 語言多執行緒實驗，對照 `__sync_fetch_and_add` 全域原子操作與利用 64-byte padding 避免 False Sharing 的 Per-CPU 計數器。透過 perf stat 實測證實 Per-CPU 設計能將 IPC 從 0.02 大幅提升至 4.08，並將執行時間由隨執行緒數量線性成長的 $O(N)$ 降至水平常數 $O(1)$。
+*  2026/04/08 — `2026q1 Homework2 (basics)` 深入剖析 io_uring/io_uring.c 實作，釐清 `io_uring_enter` 如何透過僅持有一次 `uring_lock`，並以` io_submit_sqes` 在核心收割多個 SQE，消除了傳統 AIO 反覆獲取鎖的 $O(N)$ 開銷。使用 fio 對 NVMe 裝置進行 4K 隨機讀取實測，量化 Batching 效益。
+*  2026/04/27 — `linux2026-introspect` 建立 MOESDIF 快取一致性之馬可夫鏈模型與 False Sharing 實證。基於 MOESDIF 協定，針對多核環境下的快取震盪建立有限狀態機（FSM），並利用馬可夫鏈將其收斂為 $M \leftrightarrow I$ 二狀態穩態模型。推導出 $\pi_I = \frac{\delta}{w + \delta}$。為驗證理論，設計 C 語言 Pthreads 實驗對比 8-byte packed (node_unaligned) 與 64-byte aligned 的節點佈局。透過 perf 擷取底層 PMU 事件，並對結果進行分析。
+
+## 期末專題
+> 10 分
+
+題目: Linux 核心設計專題: 以 Weak AVL Tree 取代 rbtree
+原始碼: 公開於本人  [GitHub 帳號 andy20040](https://github.com/andy20040) 下,完整紀錄索引於 [課程期末展示頁](https://hackmd.io/@sysprog/linux2026-projects)。
+
+### 專題內容
+* 將 `__rb_parent_color` 中原本用於 color 的低位元改為儲存 WAVL rank diff 的 parity 
+* 重寫內部 rebalancing 機制更改為 WAVL Tree 的版本
+* 驗證 WAVL Tree property 的正確性
+* 分析比較 WAVL Tree 和紅黑樹在不同情境下， Rotation 和 Rebalancing Path 的差異。
+* 分析比較 WAVL Tree 和紅黑樹在不同情境下， Branch Miss 和 Cache Miss 的差異。
+* ABI/API 相容： 完整實作並支援 Linux 核心現有介面，包含 `rb_root_cached` 的 leftmost 指標維護，以及 Augmented Interval Tree 的 Callback 傳遞機制。
+* Kernel Module 與事件驅動控制： 撰寫 `wavl_tree_mod.ko`，透過 `proc_create()` 於 `/proc/wavl_cmd` 建立使用者空間與核心空間的通訊橋樑，實作 sequential/reverse/random 與 Fisher-Yates shuffle 等多種動態測試情境。
+* eBPF 非侵入式動態追蹤： 規避了 rb_insert_color 因 inline 或 notrace 導致無法掛載 kprobe 的限制。改以 bpftrace 掛載 `tracepoint:timer:hrtimer_start` 與 cancel 擷取真實系統排程 (CFS) 與計時器 (Timer) 操作軌跡，將 Trace Data 匯入核心模組測試
+
+### 觀摩同儕專題並提問
+本年度同儕專題索引於 [linux2026-projects](https://hackmd.io/@sysprog/linux2026-projects), 留下提問軌跡如下:
+
+1. Bigtooth123 — 
+  qspinlock 量化分析 : 詢問若遇到 Critical Section 非常長（也就是 E  >> c）的情況，Ticket Lock 和 MCS Lock 的吞吐量差距。
+2. illdoCc — RCU : 
+   提問作者的 TODO 是否可能是 RCU kthread 的 Wakeup Latency 與 C-state 造成的？
+3. rrrchii — Bloom Filter 分析 : 
+   提問將  k × N 次 `test_bit` 改為對一整個 Word 進行 Bitwise OR，合併成一個 Word 後，再去測試那 k 個 bit 是否比較好
+4. yhsindev — 雜湊函數之數學基礎與資訊安全議題 : 
+    提問如果要將 OVS 遷移到 hsiphash，是不是可以直接把 table seed 當成 hsiphash 的 key 的一部分？這樣就能把 `find_bucket()` 裡面的 jhash_1word 完全拔掉，直接用 bitwise-AND 或是 modulo 來取 bucket index ?
+5. CharlieZhangXY — 回顧作業 : 
+    提問使用Kahan Summation 是否會降低指令平行化空間?在甚麼情況下你認為可以犧牲效能來換取更高的精度?
+
+
+
+## 與授課教師的互動
+> 9分
+
+一對一討論共 3 次、課堂問答 2 次
+
+### 一對一討論 (時間順序)
+* 2026/05/25  與授課教師討論為何函式呼叫使用 stack frame 而不是 linked list ，以及  geomean 的程式撰寫，並且依據授課教師的建議去進一步的論文中查看有關於 WAVL 退化的條件。
+* 2026/06/03 授課教師建議我先去察看別人的 WAVL Tree 實作先去確認我自己的實作是正確的，不用先急著去做實驗。
+* 2026/06/11 授課教師建議我可以使用 sysfs 將 cfs 和 timer 等對於紅黑樹的操作記錄下來用於測試，並提供 tracepoint ， bpftrace 等資料參考。
+
+### 課堂問答軌跡
+* 第十週 : 回答 stack 和 heap的差別。
+* 第十六週 : 回答 MPSC bounded buffer problem 為什麼是 bounded buffer 而不是無限大 ，以及 多個生產者和單個生產者的差別。
+
+## 所見所聞所感
+> 10 分
+
+### 關於〈[因為自動飲料機而延畢的那一年](https://www.opasschang.com/docs/the-story-of-auto-beverage-machine-1)〉
+讀完這篇學長的文章之後，看到自動飲料機故事中寫道：「為什麼會出問題呢？因為這裡是他媽的真實世界啊。」 我對於這句話頗有共鳴。
+飲料機的落杯器因為 3D 印表機幾毫米的「公差」而卡死；而在系統軟體的世界裡，我們同樣面臨著看不見的「公差」，只是它的單位變成了 nanosecond 、 Cache Line 與 Pipeline。
+在演算法的理論世界裡，WAVL Tree 是如此優美。數學模型向我保證：它的搜尋路徑比紅黑樹短，且刪除時最壞情況絕對不超過 2 次旋轉。這就像是在 CAD 軟體裡畫出的落杯器，完美無瑕、邏輯嚴密，在白板上推演時，一切都看似能輕易碾壓現有的紅黑樹。於是我愉快地把程式碼寫進 Kernel Module，掛上 eBPF 開始量測，期待它按照我想像的完美運作。接著，悲劇就出現了。 Latency 降不下來。現實世界確實很殘酷，充滿了各種實作上的公差。但也正是因為經歷了那些看著效能數據發呆、反覆推敲底層行為的痛苦過程，最後產出的量測數據與 Trade-off 分析，才具有真正屬於「工程師」的價值。
+
+### 關於數學與謹慎用詞
+在實體回答課堂問答的時候，我常常說 「東西」，授課教師回覆說「東西」這個詞太過於模糊，身為理工人用詞要精準，讓我意識到使用「東西」這個詞並不有助於雙方的溝通。另外我也常常說「以我的觀點來說」或是「快很多」等用詞，這些贅字以及模糊的用詞不應該使用。
+
+### 關於實驗設計
+在專題初期，我急於投入 WAVL Tree 的核心模組開發與效能量測，卻忽略了系統工程中最關鍵的奠基工作：理論驗證與設計脈絡的探討。我起初並未深入思考 Linux 核心為何在眾多資料結構中獨鍾紅黑樹，也未針對 WAVL Tree 在極端負載下退化為紅黑樹的邊界條件進行數學驗證。
+與授課教師討論後我才深刻意識到：如果沒有先建立嚴謹的 Property Invariant 驗證框架，無法在數學與邏輯上確保實作的絕對正確性，那麼後續跑出的任何 Benchmark 數據都毫無意義。這次的經驗讓我學會了，在改寫任何底層基礎設施之前，必須先具備『先懂為什麼，再談怎麼做』的工程紀律。
+
+### 關於自身投入的回顧
+學期 18 週中，每週平均投入 20 小時以上（包含作業、HackMD 撰寫、專題開發與教材閱讀），達到 JaredCJR 提出的每週 20 小時投入基準。其中大部分時間投入於專題研究，從閱讀 Linux Kernel rbtree 原始碼開始，逐步實作並比較利用 `__rb_parent_color` 最低兩個位元儲存 rank mod 4 的方法，進一步改良為論文所建議的 1-bit rank difference parity 實作，並完成兩種方法的設計與分析。此外，也完成兩次課堂問答、三次一對一討論，並透過專題實驗驗證不同實作方式在 Linux Kernel 中的可行性。
+
+## 分數計算
+| 項次 | 名稱 |	分數 |
+| -------- | -------- | -------- |
+| 1     | 成果發表與貢獻   | 8|
+| 2 | 	作業與隨堂測驗 | 9 |
+|3 | 期末專題 | 10 |
+| 4     | 與授課教師的互動    | 9     |
+| 5     | 所見所聞所感|10   |
+
+幾何平均 (GEOMEAN) 計算
+$\text{GEOMEAN} = \sqrt[5]{8 \times 9 \times 10 \times 9 \times 10} = \sqrt[5]{64800} \approx 9.168$
+方案選擇
+
+* 方案 B:
+ 1 + floor(GEOMEAN)
+* 採方案 B: 
+$1 + floor(9.168) = 1 + 9 = 10$
+
+自我評量總分: 10 / 10
+
+
+
+
+
+
+
