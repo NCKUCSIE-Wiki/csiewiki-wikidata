@@ -1,0 +1,51 @@
+# User/marcelin127
+
+
+---
+
+## 簡介
+* **國立成功大學 電機工程研究所**
+* **GitHub:** `marceline127`
+* **HackMD:** `shirley66691`
+
+## 2026 Linux 核心實作 春季班 自我評量
+
+## 成果發表和貢獻
+**自評分數: 6 分**
+
+修正教材 〈從 √2 的存在談開平方根的快速運算〉 錯誤 (檢查 x 值在落在左右哪一個區間內 -> 檢查 x 值落在左右哪一個區間內)。
+
+## 作業/隨堂測驗
+**自評分數: 8 分**
+
+* **Homework1：** [HackMD](https://hackmd.io/@shirley66691/linux2026-warmup)
+* **Homework2：** [HackMD](https://hackmd.io/@shirley66691/linux2026-stdc)
+* **Homework3：** [HackMD](https://hackmd.io/@shirley66691/linux2026-basics)
+
+
+
+## 期末專題
+**自評分數: 7 分**
+[透過核心模組縮減電腦視覺處理延遲](https://hackmd.io/@sysprog/BJXCxhKC-l)
+
+
+
+## 與授課教師的互動
+**自評分數: 8 分**
+
+進行了兩次課堂問答，分別是
+第 8 週 — 口頭提問邱冠維學長有沒有甚麼trace code的技巧。學長回答通常要認真看的不會超過千行，還是要一步步追 code 才可以理解程式怎麼跑的，沒有捷徑。
+第 18 週 — 授課教師用 spsc.c 介紹了 C 語言中的 atomic 和 memory order 並讓我回去研讀相關資料並回答記在問答檢記中
+
+但因為自身
+
+
+## 所見所聞所感
+**自評分數: 10 分**
+
+
+## 分數計算
+
+$$GEOMEAN = (6 \times 8 \times 8 \times 8 \times 8 \times 10)^{\frac{1}{6}} \approx 8.001504826$$
+
+**方案 B：** $1 + \lfloor GEOMEAN \rfloor = 1 + 8 = 9$
