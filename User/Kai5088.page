@@ -1,0 +1,155 @@
+# 2026 年 Linux 核心設計課程自我評量
+
+姓名: 楊竣凱
+GitHub 帳號: [Kai5088](https://github.com/Kai5088)
+
+本份自我評量遵循[課程自我評量指引](https://hackmd.io/@sysprog/linux2024-assessment) 的書寫規範,避免「期許自己」、「已盡最大努力」等空泛承諾,所有產出皆附對應的公開軌跡 (GitHub commit/PR、HackMD 開發紀錄等)。各項自評分數皆為 1 到 10 的整數,最末以幾何平均計算總分並適用方案 B。
+
+## 成果發表與貢獻
+> 3 分
+
+### sysprog21 專案
+- 2026/06/25 — 擴展 [kbox](https://github.com/sysprog21/kbox) 的除錯和系統分析,具體產出:
+    - 新增 `scripts/gdb/kbox-events.py` 條件停點框架:以 GDB Python API 的 `gdb.Breakpoint.stop()` 回呼實作事件過濾,提供 `kbox-break-pid`(特定 PID 進入指定核心函式才中斷)與 `kbox-break-openat`(開檔路徑過濾)二個指令,並可由使用者複製類別改寫 `stop()` 擴充自訂事件,解決核心事件每秒上萬次、人工 `continue` 過濾不可行的問題。
+    - 新增 supervisor 端 ftrace 匯出機制(`src/ftrace.c` + `include/kbox/ftrace.h`):把 LKL 的 tracefs 掛載到 `/.kbox-tracing`,新增 `--ftrace-events` / `--ftrace-outdir` 命令列旗標,不需 root、不需 guest 配合、不需重建 LKL 即可匯出核心事件,銜接 [trace-graph](https://github.com/RinHizakura/trace-graph) 轉為 Perfetto 時間軸(實測 91 筆事件:softirq 81、sched_switch 11、cpu_idle 4)。
+    - 新增 drgn 探查腳本 `scripts/drgn/kbox_tasks.py`,驗證與 `lx-ps` 的 task 集合一致,並釐清二者走訪法則差異(`for_each_task` 走 PID idr 不含 PID 0 `swapper`;`lx-ps` 走 `init_task` 串列)。
+    - 文件勘誤二處(除錯過程實測發現):其一,[docs/gdb-workflow.md](https://github.com/sysprog21/kbox/blob/main/docs/gdb-workflow.md) 的 `kbox-break-syscall` 停點設在 `kbox_dispatch_syscall`,但 seccomp 模式實際派發路徑為 `supervise_loop → kbox_dispatch_request → forward_*`,原停點永遠不會命中;其二,文件多處 CLI 範例寫 `./kbox image -S ...`,但現行 CLI 無 `image` 子命令,`image` 會被當成參數吃掉導致啟動失敗。
+
+## 作業與隨堂測驗
+> 9 分
+
+進行 3 次主作業，完成 1 次主作業與 10 次隨堂測驗的書面解答,所有開發紀錄公開於 HackMD。週投入時數平均 20 小時。
+
+### 主作業時間軸
+
+- 2026/03/10 — `2026q1 Homework1 (warmup)` - `warmup` 作業完成 ([開發紀錄](https://hackmd.io/@Kai5088/linux2026-warmup))。逐題回應〈資訊科技詞彙翻譯〉、〈解讀計算機編碼〉、〈你所不知道的 C 語言:指標篇〉、〈linked list 和非連續記憶體〉、〈Linux: 作業系統術語及概念〉等教材的延伸問題。推導包含:從 $\mathbb{Z}/2^k\mathbb{Z}$ 環結構證明固定位元加法的封閉性、$(\mathbb{Z}/2^k\mathbb{Z},+)$ 為阿貝爾群而乘法非群,以及 sign extension 是「跨圓環」保值的補項 $2^m - 2^k$;以 C99 storage duration 與 lifetime 術語分析懸空指標、use-after-free 與 strict aliasing;推導 Linux `list_sort` 延遲合併的最差比較次數上界 $N\log_2 N + 0.37N$;證明 EEVDF 的 lag 有界性 $-q_i \le Lag_i(t) \le \max_{j\ne i} q_j$ 與流體模型下 $\sum_i Lag_i(t) = 0$;以 M/G/1 P-K 公式推導 $E[W_q]$ 在 $\rho \to 1$ 時以 $O(1/(1-\rho))$ 發散,並以 bigram 熵率(而非單次熵)區分 ping-pong 負載與 thundering herd 的排程事件序列。期初考題部分對照 `kernel/sched/pelt.c` 的 `period_contrib` 碎片補償設計,撰寫 userspace C 程式模擬 10⁶ 次非對齊事件下「直接 `>> 10` 截斷」與「保留碎片」的跨週期計數差距,說明截斷造成系統性低估的統計成因。
+- 2026/03/23 — `2026q1 Homework2 (stdc)` - `stdc` 作業 ([開發紀錄](https://hackmd.io/@Kai5088/linux2026-stdc)):完成題目研讀與範圍規劃,查詢相關內容讀完[你所不知道的 C 語言：數值系統篇](https://hackmd.io/@sysprog/c-numerics)和[類神經網路的 ReLU 及其常數時間實作](https://hackmd.io/@sysprog/constant-time-relu)。
+- 2026/04/14 — `2026q1 Homework3 (basics)` - `stdc` 作業 ([開發紀錄](https://hackmd.io/@Kai5088/linux2026-basics)):完成題目研讀，讀完[LKL: 重用 Linux 核心的成果](https://hackmd.io/@sysprog/linux-lkl)。
+
+### 隨堂測驗軌跡
+
+含期初測驗 2 次(第 1、3 週)一併列出,其餘 8 次為隨堂測驗:
+
+* 第 1 週([期初測驗](https://hackmd.io/@sysprog/linux2026-quiz1)):若不保存 `period_contrib`,證明長期誤差界為 O(n)
+* 第 3 週([期初測驗](https://hackmd.io/@sysprog/linux2026-quiz3),C 語言指標與記憶體佈局):CFS vruntime 與 prio_to_weight
+* 第 4 週([定點數值系統與位元操作](https://hackmd.io/@sysprog/linux2026-quiz4)):二元算術編碼器的區間分割與 `range *= 256` 重正規化
+* 第 5 週([位元操作與數值系統](https://hackmd.io/@sysprog/linux2026-quiz5)):不用 FPU,直接以位元操作實作 `float_half` / `float_quarter`(除以 2、4)
+* 第 6 週([TurboQuant 向量量化](https://hackmd.io/@sysprog/linux2026-quiz6)):FP32 → FP16 轉換的 denormalized 捨入(exponent 重新 bias、round-to-even)
+* 第 7 週([排程器,在家測驗](https://hackmd.io/@sysprog/linux2026-quiz7)):每個工作被執行時,其 vruntime 就會增加;排程器永遠選擇 vruntime 最小的工作來執行
+* 第 8 週([EWMA 定點數與核心演算法](https://hackmd.io/@sysprog/linux2026-quiz8)):EWMA 遞迴公式 $S_t = \alpha x_t + (1-\alpha)S_{t-1}$ 的定點數位移實作
+* 第 10 週([並行程式設計](https://hackmd.io/@sysprog/linux2026-quiz10)):共享變數的指令交錯分析(load-add-store 三步在何種交錯下丟失更新)
+* 第 15 週([C11 記憶體模型](https://hackmd.io/@sysprog/linux2026-quiz15)):六種 memory_order 的語意與 acquire-release 配對如何建立 happens-before
+* 第 16 週([C11 Atomics 的 lock-free SPSC](https://hackmd.io/@sysprog/linux2026-quiz16)):head/tail 索引的 acquire/release 配對、為何不需要鎖、如何驗證 lock-free 特性
+
+## 期末專題
+> 10 分
+
+題目: [擴展kbox的除錯和系統分析](https://hackmd.io/l_rM8MbJTfKcI1bu69KrOg?view) — 整合 GDB、[drgn](https://github.com/osandov/drgn) 與 [trace-graph](https://github.com/RinHizakura/trace-graph),讓開發者跳過 kdb/kgdb 的複雜設定,直接對 LKL 內的 Linux 核心設定條件停點、程式化探查,並動態改寫核心行為
+開發紀錄: 公開於 [HackMD](https://hackmd.io/l_rM8MbJTfKcI1bu69KrOg),Github:[程式碼](https://github.com/Kai5088/kbox-debugging-and-system-analysis/tree/debug-analysis)
+
+### 設計與實作
+
+- 條件停點框架 `scripts/gdb/kbox-events.py`:以 GDB Python API 的 `gdb.Breakpoint.stop()` 回呼實作事件過濾,提供 `kbox-break-pid`(只在特定 PID 進入指定核心函式時中斷,如 `__schedule` 內比對 `prev->pid`)與 `kbox-break-openat`(路徑字串過濾),解決「核心同一動作每秒上萬次、人工 `continue` 過濾不可行」的問題;框架可擴充,複製類別改寫 `stop()` 即可新增自訂事件
+- supervisor 端 ftrace 機制 (`src/ftrace.c` + `include/kbox/ftrace.h`):把 LKL 的 tracefs 掛到 `/.kbox-tracing`,新增 `--ftrace-events` / `--ftrace-outdir` 旗標,不需 root、不需 guest 配合、不需重建 LKL 即可匯出核心事件,再經 trace-graph parser 轉為 Perfetto 時間軸
+- drgn 整合 `scripts/drgn/kbox_tasks.py`:因 kbox 把 LKL 靜態鏈結進自身、DWARF 含完整核心型別,`drgn -p` 以使用者空間模式即可探查 `init_task` 與 task 串列;驗證 drgn `for_each_task` 與 `lx-ps` 的 kthread 集合一致,並釐清唯一差異的成因——前者走 PID idr(不含 PID 0 `swapper`),後者走 `init_task` 串列
+- 動態改寫核心行為:線上調整 EEVDF 的 `sysctl_sched_base_slice`(750000 → 5000000 ns);對單一 task 以 `call set_user_nice()` 經核心 API 改寫優先權,使 `static_prio` / `prio` / `se.load.weight` 三者連動一致
+
+### 關鍵推導與除錯發現
+
+- 追出 seccomp 模式的實際派發路徑:`supervise_loop` → `kbox_dispatch_request` → `forward_*` → `kbox_lkl_*` → `lkl_syscall6` → `lkl_syscall`,指出原文件的 `kbox_dispatch_syscall` 停點在 seccomp 模式永遠不會命中
+- syscall 編號在 `lkl_syscall` 邊界會轉譯:guest/seccomp 邊界用 x86_64 ABI(`openat` = 257),進 LKL 後為 asm-generic ABI(`openat` = 56),條件斷點寫錯編號會靜默失效
+- supervisor 與 LKL 同行程同執行緒,但核心 syscall 跑在自己的 kernel stack 上,單次 `bt` 無法從 `do_sys_openat2` 爬回 `main`(GDB 顯示 `corrupt stack?` 屬正常),須在 `lkl_syscall` 與核心函式兩處分別取得雙層 backtrace
+- raw poke 的危險性實證:直接 `set variable $t->static_prio = 100` 後權重不連動;隨後 `call set_user_nice($t, -20)` 竟為 no-op——因 `set_user_nice` 的冪等檢查 `if (task_nice(p) == nice) return;` 是從 `static_prio` 反推,手動製造的不一致反過來讓信任該欄位的核心 API 拒絕動作,把不一致鎖死。改用不同 nice 值(5)使檢查放行後三欄位恢復一致
+
+### 量測方法與結果
+
+- 環境:同一台主機,kbox / UML (`ARCH=um`) / virtme-ng (QEMU) 三方核心同源自同一份 LKL 樹 (v6.12.0+),跑同一情境(`schedule` 斷點 → `lx-ps`)
+- 增量重建(改一行):kbox supervisor relink **6.7 s**、UML **37.5 s**、virtme-ng **2m23s**;首次全量建置:UML 3m41s、virtme-ng 14m1s
+- 附掛成本:kbox 與 UML 本機 GDB 近乎即時;virtme-ng 需 VM 開機 + 遠端 gdbstub + `nokaslr` + `hbreak`
+- ftrace 實測:三個並發 `find` 負載下收 91 筆事件(softirq 81、sched_switch 11、cpu_idle 4)→ 4146 B 的 `trace.pftrace`,於 Perfetto 呈現 softirq 主導的時序全景
+- 誠實補充:kbox 的迭代優勢主要在改 supervisor 碼時;改 LKL 核心碼仍需重建 LKL(量級 ≈ UML 增量),優勢收斂為「免去開機」一項
+
+### 觀摩同儕專題並提問 (課程要求至少 5 項)
+本年度同儕專題索引於 [linux2026-projects](https://hackmd.io/@sysprog/linux2026-projects), 留下提問軌跡如下:
+1. brian049 — Linux 核心設計專題: virtio-gpu 的設計和實作: 
+[我的提問](https://hackmd.io/QN2dswdeQCao-I2aS6h6KA?comment=81c2b010-b279-44f2-846f-2e805ec67511&utm_source=comment-card&utm_medium=icon):目前 `virtio_gpu_cmd_undefined_handler()` 收到不支援的指令後,是否仍有依 virtio spec 的要求在 controlq 回覆 response(例如 `VIRTIO_GPU_RESP_ERR_UNSPEC`)?
+2. kezhenx666 — Linux 核心設計專案: pKVM:
+[我的提問](https://hackmd.io/EQGCO3GhSYmrjeZDZZs7FQ?comment=eab38e3d-5eee-45da-adc3-3fb632acd938&utm_source=comment-card&utm_medium=icon): Cuttlefish 實驗是在 x86_64 host (Ubuntu 24.04) 上執行,而 pKVM 的保護機制建立在 ARMv8 的 EL2 與 Stage-2 page table 之上——x86 上的 Cuttlefish 應該走的是一般 KVM (VMX) 路徑。這個實驗平台實際上觀察得到 pKVM 的行為嗎(例如 protected VM 的記憶體對 host 不可見)?
+3. Charlie-Tsai1123 — Linux 核心設計專題: rv32emu 的 Virtio 強化:
+[我的提問](https://hackmd.io/xBHchwANS7aE_RmXfT1vGg?comment=148b8d59-7de6-460c-b697-63bd059bca2d&utm_source=comment-card&utm_medium=icon): virtio-net 的 ping 測試中,三個封包 RTT 分別是 3.8 ms、**1001 ms**、1.4 ms——中間這筆幾乎剛好 1 秒,看起來不像網路抖動,比較像 RX 路徑的通知機制漏了一拍、靠某個約 1 秒的輪詢或 timeout 撿回來。想確認:rv32emu 的主迴圈是用什麼方式發現 TAP 有封包進來?
+4. chuang0720 — Linux 核心設計專題: 核心搶佔模型與 PREEMPT_RT 對即時延遲的影響:
+[我的提問](https://hackmd.io/E0pBdgJhTFeUOWOkabCC9A?comment=f741ee0c-d0ba-4412-992a-c0a24f9c7639&utm_source=comment-card&utm_medium=icon): 關於 `rt/iperf3-tcp` 的 KNOWN_FAIL_REBOOT:dmesg 顯示 `mtk-wdt` 硬體 watchdog 觸發重開,而固定化設定中有一項是 `sched_rt_runtime_us=-1`(關閉 RT throttling)。在 PREEMPT_RT 下網路 RX path 走 threaded IRQ / NAPI thread,滿速 TCP RX 時這些執行緒的負載極高——關掉 throttling 後,是否可能是「餵 watchdog 的行程(或 kworker)被 RT 優先權的網路執行緒長期餓死」導致 watchdog 逾時,而不是核心真的 panic?
+5. jieling3313 — Linux 核心設計專題: 即時處理案例探討:
+[我的提問](https://hackmd.io/_P0vOIpWRImxjrS_9eHVNg?comment=2b6aeabf-9d78-4ac5-8995-7a140e27508b&utm_source=comment-card&utm_medium=icon): 關於手動解的 `bcm2835-dma.c` 衝突(加入 `is_base_irq_handler()` / `running_oob()` / `IRQ_FORWARD` 的 oob 分流):這段合併等於是替 EVL 官方沒有支援的驅動版本自行做了 out-of-band 改造。想請教你如何驗證這個合併的正確性
+
+### 回應提問
+
+未收到提問、已於 7/8 中午前更新於專題頁面
+
+## 與授課教師的互動
+> 8 分
+
+一對一討論共 1 次、課堂問答 2 次。
+
+### 一對一討論 (時間順序)
+- 2026/04/28 (Tue, 18:30 - 18:50) — 期末專題範圍確認。原構想為 kbox 的 Host-Guest 檔案共享(整合 virtio-fs:開啟 CONFIG_VIRTIO_FS,將 host 工作目錄掛載至 guest);授課教師建議改為自動化核心除錯環境,整合 kbox、drgn 與 trace-graph,即最終定案的題目。
+
+
+### 課堂問答軌跡
+- 第 9 週 2026/04/21 — 向邱冠維學長提問現在 Google 做的工作內容是之前在成大或碩班就有做過的嗎？還是進去才開始學的呢？
+- 第 13 週 2026/05/21 — 授課教師提問是否存在 UB? pthread_join，依據 man7.org 敘述這個函式會等待由 thread 參數所指定的執行緒終止。 寫程式觀察pthread_join和detach的行為。
+
+## 所見所聞所感
+> 10 分
+
+### 關於〈[因為自動飲料機而延畢的那一年](https://www.youtube.com/watch?v=enRSXZyZjy8)〉
+
+讀完林子翔學長的紀錄,最有共鳴的是他願意為「這顆螺絲為什麼鎖不上」花一整週拆解力學與公差——工程的真相是,擋住你的往往不是大架構,而是一個沒人告訴你的細節。這學期在 kbox 專題我遇到完全同構的事:照官方文件對 `kbox_dispatch_syscall` 設斷點,程式跑得好好的、斷點卻永遠不命中,也沒有任何錯誤訊息。追了實際的轉發路徑才發現 seccomp 模式的派發器叫 `kbox_dispatch_request`;接著又發現 syscall 編號在 `lkl_syscall` 邊界會從 x86_64 ABI 的 257 轉譯成 asm-generic 的 56,條件斷點寫 `no == 257` 同樣永遠不中、同樣靜默失效。兩個「一個名字、一個數字」的細節,若不肯蹲下來追,整個條件停點系統就是空中樓閣。這讓我理解學長說的:把螺絲鎖上不是瑣事,它就是工程本體。
+
+### 關於數學
+
+第一份作業寫 EEVDF 的 lag 有界性時,我原以為「排程器大致公平」是個工程直覺,動手推導才發現它是可以嚴格陳述的命題:在流體模型下 $\sum_i Lag_i(t) = 0$,離散 slice 下 $-q_i \le Lag_i(t) \le \max_{j \neq i} q_j$,誤差界限與 slice 大小呈嚴格線性。同一份作業裡,M/G/1 的 P-K 公式讓我看到平均服務時間相同的兩個分佈(lognormal 與 $\alpha = 2$ 的 Pareto),排隊延遲可以一個有限、一個發散——「平均值一樣」在數學上什麼都保證不了。這改變了我看系統數據的方式:單次熵看不出 ping-pong 負載與 thundering herd 的差別,熵率才可以;percentile 與 max 講的是兩個不同的故事。數學不是課程的裝飾,是讓直覺可以被否證的語言。
+
+### 關於謹慎用詞
+
+作業第一題是考據〈資訊科技詞彙翻譯〉,當時覺得是暖身,後來才體會這是本課程的核心訓練。追 render 的詞源、分辨 constant 與 immutable(前者約束識別碼、後者約束資料實體)、區分 task/process/thread/job 在核心中的實作層次,做的都是同一件事:名詞用錯,推理就會在看不見的地方歪掉。這學期我試著把「比較快」這類模糊敘述改成可檢驗的句子——專題對照實驗不寫「kbox 迭代比較快」,而寫「增量重建 kbox 6.7 s、UML 37.5 s、virtme-ng 2m23s,且 kbox 的優勢主要在改 supervisor 碼時,改 LKL 核心碼則收斂為免去開機一項」。後半句的誠實限定,是我以前不會寫、現在認為不能不寫的部分。
+
+### 關於實驗設計
+
+專題的三方虛擬化對照讓我上了一課:要比較 kbox / UML / virtme-ng,前提是三方核心源自同一份 LKL 樹的同一個 commit,否則量出來的差異無法歸因。過程中也遇到「gcore 在 ASAN build 下卡住」,只能誠實改走 live 附掛並在紀錄中標注嚴謹性的損失,而不是假裝兩種方法等價。觀摩同儕專題時,我把同樣的標準用在讀別人的數據上:在 [rv32emu VirtIO 專題](https://hackmd.io/@sysprog/H1uRyjC0bx)看到 ping RTT 出現幾乎剛好 1001 ms 的離群值,在 [Xenomai/EVL 專題](https://hackmd.io/@sysprog/rkPcocAAbg)看到物理上不可能的負延遲(-2.159 µs),兩者都指向量測機制本身的問題(輪詢間隔、timer gravity 校準)。這學期最大的收穫之一是:沒看到事件與事件不存在是兩回事。
+
+### 關於課程同儕的觀察
+
+觀摩五份期末專題並留下公開提問軌跡:
+[virtio-gpu](https://hackmd.io/@sysprog/ryE8UsWJMe)(undefined handler 是否漏回 response、能否以 num_capsets=0 在協商階段退回 2D)
+[pKVM](https://hackmd.io/@sysprog/SyPTRwgyzl)(x86 Cuttlefish 實驗平台與 ARM EL2 研究對象的落差)
+[rv32emu VirtIO](https://hackmd.io/@sysprog/H1uRyjC0bx)(RX 通知機制與統一裝置註冊表)
+[PREEMPT_RT 量測](https://hackmd.io/@sysprog/HkFFx5Nkzx)(關閉 RT throttling 與 watchdog 重開的關聯、跳過 newidle balance 後 throughput 反升的驗證)
+[Xenomai/EVL](https://hackmd.io/@sysprog/rkPcocAbg)(負延遲與 CPU 隔離)。提問的過程比想像中收穫大:要問出對方能回答、且回答了會推動專題前進的問題,必須先把對方的紀錄讀到能複述其因果鏈的程度——這其實是最扎實的閱讀訓練。
+
+### 關於自身投入的回顧
+學期 18 週中, 每週平均投入 20 小時。這段時間的客觀產出:與授課教師一對一討論 1 次、課堂問答 2 次並完成後續議題追蹤、隨堂測驗 10 次、作業 3 份,以及期末專題「[擴展 kbox 的除錯和系統分析](https://hackmd.io/l_rM8MbJTfKcI1bu69KrOg)」——含五項子任務、kbox / UML / virtme-ng 三方量測對照,與兩個動態改寫核心行為的實證案例,另有觀摩同儕專題的公開提問 5 筆。
+
+
+## 分數計算
+
+各項自評分數如下:
+
+1. 成果發表與貢獻:3 分
+2. 作業與隨堂測驗:9 分
+3. 期末專題:10 分
+4. 與授課教師的互動:8 分
+5. 所見所聞所感:10 分
+
+幾何平均 (GEOMEAN) 計算
+
+$$
+\text{GEOMEAN} = \sqrt[5]{3 \times 9 \times 10 \times 8 \times 10} = \sqrt[5]{21600} \approx 7.3602
+$$
+
+驗算: $7.3602^5 \approx 21600$,且 $7^5 = 16807 < 21600 < 8^5 = 32768$,故 $\lfloor \text{GEOMEAN} \rfloor = 7$,符合定義。
+
+方案選擇
+- 方案 B: $1 + \lfloor \text{GEOMEAN} \rfloor = 1 + \lfloor 7.3602 \rfloor = 1 + 7 = 8$
+
+自我評量總分: 8 / 10
