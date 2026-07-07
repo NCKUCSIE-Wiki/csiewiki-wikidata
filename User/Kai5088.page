@@ -9,7 +9,7 @@ GitHub 帳號: [Kai5088](https://github.com/Kai5088)
 > 3 分
 
 ### sysprog21 專案
-- 2026/06/25 — 擴展 [kbox](https://github.com/sysprog21/kbox) 的除錯和系統分析,具體產出:
+- 2026/07/07 — 擴展 [kbox](https://github.com/sysprog21/kbox) 的除錯和系統分析,具體產出:
     - 新增 `scripts/gdb/kbox-events.py` 條件停點框架:以 GDB Python API 的 `gdb.Breakpoint.stop()` 回呼實作事件過濾,提供 `kbox-break-pid`(特定 PID 進入指定核心函式才中斷)與 `kbox-break-openat`(開檔路徑過濾)二個指令,並可由使用者複製類別改寫 `stop()` 擴充自訂事件,解決核心事件每秒上萬次、人工 `continue` 過濾不可行的問題。
     - 新增 supervisor 端 ftrace 匯出機制(`src/ftrace.c` + `include/kbox/ftrace.h`):把 LKL 的 tracefs 掛載到 `/.kbox-tracing`,新增 `--ftrace-events` / `--ftrace-outdir` 命令列旗標,不需 root、不需 guest 配合、不需重建 LKL 即可匯出核心事件,銜接 [trace-graph](https://github.com/RinHizakura/trace-graph) 轉為 Perfetto 時間軸(實測 91 筆事件:softirq 81、sched_switch 11、cpu_idle 4)。
     - 新增 drgn 探查腳本 `scripts/drgn/kbox_tasks.py`,驗證與 `lx-ps` 的 task 集合一致,並釐清二者走訪法則差異(`for_each_task` 走 PID idr 不含 PID 0 `swapper`;`lx-ps` 走 `init_task` 串列)。
@@ -83,7 +83,7 @@ GitHub 帳號: [Kai5088](https://github.com/Kai5088)
 
 ### 回應提問
 
-未收到提問、已於 7/8 中午前更新於專題頁面
+未收到提問
 
 ## 與授課教師的互動
 > 8 分
