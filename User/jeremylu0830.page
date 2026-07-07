@@ -69,14 +69,13 @@ categories: User
 * [Redis/Valkey + io_uring](https://hackmd.io/@sysprog/SyxZhzFZlg)
 
 ## 與授課教師的互動
-10 分。
+7 分。
 
-* 3/4 [課堂討論](https://hackmd.io/K4C5ofeqQg6LC8OEbdVcwg)：如何利用「逼近」的方式來取代乘法。
-* 3/11 [課堂討論](https://hackmd.io/AVg2YkX9RveH1W6SVWmNIw)：老師提問大數運算可以怎麼做。我回家研讀 bignum 程式碼。
-* 4/29 課前討論：老師說覺得目前書本中對於 CPU 排程器的理論知識太少，叫我去看 GPS 的論文。
-* 4/30 一對一討論：問老師書本問題，確定期末專題的題目。老師也有解釋為什麼會想要寫 《Demystifying the Linux CPU Scheduler》 這本書，是因為他覺得許多其他關於 CPU 排程器的文本都忽略了很重要的一件事：忽略了排程本身的成本，排程本身也會消耗資源，並不是旁觀的。
-* 5/27 一對一討論：問老師關於 [EEVDF 理論跟實作差異](https://hackmd.io/@salmonii/ryRHMZgMlg)的問題。
-* 6/10 一對一討論：問老師要怎麼在 patch 海跟 mailing list 海裡面快速找到對應關鍵的的開發者討論，老師說不要急，這種重要的第一手資料怎麼可以求快。發現自己對 [target latency](https://hackmd.io/@salmonii/SJGiekyVgg) 了解不全，於是決定乖乖去追 CPU 排程器歷史。也因此發現《Demystifying the Linux CPU Scheduler》目前 EEVDF 章節與我的認知的矛盾之處，像是為什麼書中要如此的著重說明 `latency-nice` 而非從 EEVDF 理論基礎上強調 request length? 這是我認為書本的 EEVDF 章節可以再調整的部分。
+* 4/14 [課堂討論](https://hackmd.io/u5zg5DS8RoaKI52ZxLgkQg)：探討 process vs thread 在 linux 的本質差異在哪。
+* 5/12 課後討論 : 討論異質多核專題，先去重現去年實驗，了解整體的架構，理解其中原理，不用到當學校老師，但至少要會統整當補習班老師的程度。
+* 5/26 [課堂討論](https://hackmd.io/CZEAQrigR0KL2MHBbK8qnw)：探討異質多核的重要性以及 RPMsg 和 VirtIO 相關問題，包含 頻率跟功耗的關係、為何異質多核需要通訊以及為何需要有異核的架構。
+* 6/23 課後討論：與老師分析我目前 benchmark 的不足，我假定大核往小核的通訊成本等於小核往大核，這是錯誤的想法，並與老師討論可能的原因，以及去測試不同payload 對通訊成本的負擔。
+* 6/2 [模擬面試]( https://drive.google.com/file/d/1UeUM1CMDeZCOXisb-Xd-bG6d9bxKkJG0/view?usp=drive_link):與助教和老師討論 ，Process 與 Thread 的本質差異、Stack 與 Heap 的設計考量、使用 POSIX Thread 控制執行順序、Futex 的設計與排程器的互動，但都答不出來，有在後續檢討以及追蹤(回信的方式)  
 
 ## 所見所聞所感
 10 分。
