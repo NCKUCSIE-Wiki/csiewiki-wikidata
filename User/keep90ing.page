@@ -1,0 +1,40 @@
+---
+title: keep90ing (曾偉誠)
+categories: User
+---
+
+# 簡介
+
+* 國立中正大學 資訊工程研究所 (2025/09 ~)
+* GitHub: [`keep90ing`](https://github.com/keep90ing)
+* HackMD: [`cheng`](https://hackmd.io/@V_OEP3KMRkCh1JWY3s7yWA)
+
+# 2026 Linux 核心設計 春季班 自我評量
+
+## 成果發表和貢獻
+* 課程教材
+    * [Linux 核心設計: Scheduler(2): 概述 CFS Scheduler](https://hackmd.io/@sysprog/linux-scheduler/%2F%40sysprog%2Flinux-scheduler-2)：nice value 每增加 1，weight 就乘上 1.25 倍 -> 因此 nice value 每增加 1，weight 就變為原本的 1/1.25
+    * [你所不知道的 C 語言：linked list 和非連續記憶體](https://hackmd.io/@sysprog/c-linked-list#Modern-method)：typo（前題 -> 前提）
+    * [運用 Perf 分析程式效能並改善](https://hackmd.io/p6CKCtaZQBe3GJyiLEjbJg?view=#%E5%8F%96%E6%A8%A3%E6%B8%AC%E9%87%8F)：typo（取樣頻率頻率的高低 -> 取樣頻率的高低）
+    * [你所不知道的 C 語言：數值系統](https://hackmd.io/@sysprog/c-numerics#%E7%9C%81%E5%8E%BB%E8%BF%B4%E5%9C%88)：文中程式的輸出會將位元反轉的結果去掉 32 bits 前置的 0，使輸出沒有對齊 32 bits ，這不但會影響閱讀，也無法完整表示二補數，bit reverse 與 signed/unsigned 的對應關係。 
+    * [slab 記憶體配置器](https://hackmd.io/5Fn8N3HeRkGIO7cZu7chIw?view)：較新的 Linux 核心版本已棄置 slob 和 slab -> 較新的 Linux 核心版本已棄置 SLOB 和 SLAB。 
+* Kernel patch (Trivial)
+    * typo patch：[[PATCH] mm/slub: fix typo in sheaves comment](https://lore.kernel.org/all/20260516164033.1566208-1-cheng20011202@gmail.com/)
+* 與 Linux 核心相關的公開演講
+    * COSCUP-帶您讀源碼：[分層剖析 Linux Kernel 如何觀測記憶體存取行為並推論 Working Set](https://pretalx.coscup.org/coscup-2026/talk/DRAXDG/)
+
+## 作業/隨堂測驗
+回顧這三次的作業，我發現自己常常閱讀教材後就急著回答作業中的問題，沒有停下來反思並紀錄教材內容、實作考量、題目背後的問題。同時在面對數學推導相關題目時，我意識到自身數學能力之缺乏，而需要花費許多時間補足相關知識，最後發現仍準備不足而選擇完成其他題目。
+
+* [2026q1 Homework1 (warmup)](https://hackmd.io/@V_OEP3KMRkCh1JWY3s7yWA/linux2026-warmup)
+* [2026q1 Homework2 (stdc)](https://hackmd.io/@V_OEP3KMRkCh1JWY3s7yWA/linux2026-stdc)
+* [2026q1 Homework3 (basics)](https://hackmd.io/@V_OEP3KMRkCh1JWY3s7yWA/linux2026-basics)
+
+## 期末專題
+* [Linux 核心設計專題: SLUB_TINY 分析和改進](https://hackmd.io/@sysprog/BJoKriLR-x)
+
+## 與授課教師的互動
+
+## 所見所聞所感
+
+## 自我評分
