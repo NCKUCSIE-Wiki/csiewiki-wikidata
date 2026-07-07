@@ -38,10 +38,10 @@
 
 目前已完成貢獻摘要：
 
-* 修正 V4L2 capture frame interval 的計算與回報〔PR #50〕
-* 建立自動化 V4L2 測試流程〔PR #51〕
-* 防止 buffer 已配置或使用中時變更影像格式〔PR #53〕
-* 補上 capture buffer 的 sequence number〔PR #55〕
+* 修正 V4L2 capture frame interval 的計算與回報[〔PR #50〕](https://github.com/sysprog21/vcam/pull/50)
+* 建立自動化 V4L2 測試流程[〔PR #51〕](https://github.com/sysprog21/vcam/pull/51)
+* 防止 buffer 已配置或使用中時變更影像格式[〔PR #53〕](https://github.com/sysprog21/vcam/pull/53)
+* 補上 capture buffer 的 sequence number[〔PR #55〕](https://github.com/sysprog21/vcam/pull/55)
 
 
 研讀過去相關專案貢獻
