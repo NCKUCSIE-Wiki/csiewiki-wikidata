@@ -1,0 +1,160 @@
+# 2026 年 Linux 核心設計課程自我評量
+
+姓名: 蔡承佑
+GitHub 帳號: [Charlie-Tsai1123](https://github.com/Charlie-Tsai1123)
+
+本份自我評量遵循[課程自我評量指引](https://hackmd.io/@sysprog/linux2024-assessment) 的書寫規範，避免「期許自己」、「已盡最大努力」等空泛承諾,所有產出皆附對應的公開軌跡 (Linux 上游 patch、GitHub PR、HackMD 開發紀錄、會議錄影)。各項自評分數皆為 1 到 10 的整數，最末以幾何平均計算總分並適用方案 B。
+
+## 成果發表與貢獻
+> 8 分
+
+學期內對 rv32emu, concurrent-programs 累積 3 個 PR (1 件已合併、2 件審查中)
+
+### rv32emu
+- 2026/5/26 - [Migrate virtio-rng from semu](https://github.com/sysprog21/rv32emu/pull/747) 
+
+移植 semu 既有 virtio-rng ，並依照 rv32emu 既有 virtio-blk 架構完成 VirtIO-MMIO 裝置整合。此 PR 加入 MMIO_VIRTIORNG routing、PLIC interrupt integration、動態產生 device tree 中的 virtio,mmio node，以及 -x vrng 執行選項。Guest Linux config 也同步啟用 virtio-rng driver，使 guest 端可透過 /dev/hwrng 取得硬體亂數。PR 已合併至 sysprog21/rv32emu master。此外發現 virtio-blk 的 attr->vblk_mmio_max_hi 要 -1 否則後續 virtio mmio 會重疊，更改後結果可以同時辨識 virtio_rng 與 virtio_blk。
+
+- 2026/07/01 — [migrate virtio-net from semu](https://github.com/sysprog21/rv32emu/pull/748)
+
+移植 semu 既有 virtio-net，目標是在 system emulation mode 中加入 TAP-backed virtio-net 裝置。此 PR 新增 TAP backend helper，讓 host 端可透過 TAP 介面與 guest 網路封包互通；並加入 `-x vnet:<tap>` 執行選項、動態產生 virtio,mmio DTB node，且確保 virtio-net 可與既有 virtio-blk、virtio-rng 共存而不重複使用 MMIO base 或 IRQ。測試中以 `-x vblk -x vrng -x vnet:tap` 同時啟動，guest 端成功綁定 virtio_net driver、設定 eth0 位址，並可對 host TAP 位址 192.168.100.1 完成 3 次 ping，0% packet loss。目前 PR 仍在 review 階段。
+
+### concurrent-programs
+- 2026/07/06 —  [use sa_sigaction for SA_SIGINFO](https://github.com/sysprog21/concurrent-programs/pull/27)
+
+修正 concurrent-programs 中 preempt_sched 範例的 SIGALRM handler 註冊方式。原程式在 sa_flags 指定 SA_SIGINFO 時，仍透過 sa_handler 註冊三參數形式的 timer_handler()，並以 function pointer cast 將其轉成一參數 handler 型別。根據 Linux sigaction(2) 文件，當 SA_SIGINFO 被指定時，signal handler 應透過 sa_sigaction 設定，而不是 sa_handler。此 PR 將 handler 註冊改為 sa_sigaction，移除不相容的 function pointer cast，使程式符合 documented API 與型別語意。此修正不改變 preemptive user-level scheduler 的執行行為。目前 PR 仍在 review 階段。
+
+## 作業與隨堂測驗
+> 8 分
+
+所有開發紀錄公開於 HackMD, 並通過[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary) 用語檢核。週投入時數平均 20 小時, 與 [JaredCJR 提到的 20 小時基準](https://wiki.csie.ncku.edu.tw/User/JaredCJR)相同。
+
+### 主作業時間軸
+- [2026q1 Homework1 (warmup)](https://hackmd.io/@Charlie1123/linux2026-warmup)
+ 
+首先分析 computer graphics 中 render 一詞並進一步查閱 Linux DRM 文件，理解 render node 在 Linux graphics stack 中的角色。接著整理 constant 與 immutable 的差異。在計算機編碼部分，將固定 k 位元加法對應到 ($\mathbb{Z}/2^k\mathbb{Z}$) 上的模加法，說明硬體溢位如何自然形成 modulo 行為，並從群論角度分析若不允許溢位，會破壞封閉性、結合律與反元素等代數結構；同時延伸探討質數模數下 ($a^{-1} \equiv a^{p-2} \pmod p$) 的來源，連結 Euler theorem、Fermat's little theorem 與 Linux 核心實作中必須檢查輸入是否為單位元素的原因。也看了 linux 核心中 `linux/crypto/ecc.c` vli_mod_inv 函式知道如何用二進位輾轉相除法取得模反元素。此外也用 GDB 分析了 pointer 跟 linked list，也學習了 Address Sanitizer 的 shadow memory 機制。
+
+- [2026q1 Homework2 (stdc)](https://hackmd.io/@Charlie1123/linux2026-stdc)
+
+理解 malloc 以 chunk 為單位的分配機制，並用 perf 分析快慢指標與走訪兩次的 cache miss。對[Linux 核心原始程式碼的整數除法](https://hackmd.io/@sysprog/linux-intdiv) 中的 `divmod_10` 提出不同的解讀，認為是將 $\frac{1}{10}$ 做拆分成 $\frac{3}{4} \times \frac{17}{16} \times \frac{256}{255} \times \frac{1}{8}$ 並用無窮等比級數方式逼近 $\frac{256}{255}$
+
+- [2026q1 Homework2 (basics)](https://hackmd.io/@Charlie1123/linux2026-basics)
+
+聚焦於 sysprog21/concurrent-programs 中，先了解的 coro 如何實做 non-preemptive 的 scheduler，再去了解 preemp-sched 如何變成搶佔式，並根據 Linux sigaction(2) 對程式做修改。
+
+## 期末專題
+> 9 分
+
+題目：[Linux 核心設計專題: rv32emu 的 Virtio 強化](https://hackmd.io/@sysprog/H1uRyjC0bx)
+
+原始碼貢獻：
+
+- virtio-rng 已合併：[Migrate virtio-rng from semu #747](https://github.com/sysprog21/rv32emu/pull/747)
+
+- virtio-net 審查中：[Migrate virtio-net from semu #748](https://github.com/sysprog21/rv32emu/pull/748)
+
+- virtio-snd 問題修正中：[Commit b7863f6](https://github.com/Charlie-Tsai1123/rv32emu/commit/b7863f6d8c0b5e25f1acedc1a58d868383c33155)(已經可以成功播放音訊，測試結合 vblk 可以播放 .wav 檔案)
+
+- virtio-gpu 及 virtio-input 撰寫中
+
+原始碼: 公開於本人 [GitHub 帳號 Charlie-Tsai1123](https://github.com/Charlie-Tsai1123) 下,完整紀錄索引於[課程期末展示頁](https://hackmd.io/@sysprog/linux2026-projects)
+
+### virtio-rng
+
+- 已完成 `virtio-rng` 從 semu 到 rv32emu 的移植。
+- 新增 `-x vrng` 啟動選項，讓 rv32emu 可選擇性啟用 virtio-rng device。
+- 完成 virtio-rng 的 MMIO register 處理、virtqueue 操作、used ring 更新與 interrupt 通知。
+- 完成 DTB node 動態產生，使 guest Linux 可透過 virtio-mmio 偵測到 virtio-rng device。
+- 修改 Linux kernel config，啟用 `CONFIG_HW_RANDOM` 與 `CONFIG_HW_RANDOM_VIRTIO`。
+- guest 端已成功偵測 `/dev/hwrng`，並可透過 `hexdump` / `dd` 從 virtio-rng 讀取亂數。
+- 已修正 virtio-rng 與 virtio-blk 同時啟用時的 MMIO range 判斷錯誤。
+
+### virtio-net
+
+- 已完成 `virtio-net` 從 semu 到 rv32emu 的主要移植工作。
+- 新增 TAP backend，透過 `/dev/net/tun` 建立 host 與 guest 之間的 Layer 2 網路通道。
+- 完成 virtio-net RX / TX queue 的基本處理流程。
+- 已理解並實作 descriptor chain 轉換為 `iovec`，讓封包可透過 `readv()` / `writev()` 在 guest buffer 與 host TAP 之間傳遞。
+- 完成基本 virtio-net header 處理，TX path 略過 header，RX path 補上 header。
+- guest Linux 已可偵測 virtio-net device 並綁定 `virtio_net` driver。
+- guest 端已成功建立 `eth0`，並可透過 TAP 與 host 互相 ping 通。
+- 目前仍需進一步整理 virtio-net feature negotiation、header 欄位語意，以及多 VirtIO device 的 MMIO / IRQ / DTB 分配邏輯。
+
+### virtio-snd
+
+- 已完成 `virtio-snd` 從 semu 到 rv32emu 的初步移植與測試。
+- 新增 `-x vsnd` 啟動選項，使 rv32emu 可建立 virtio-snd device。
+- 修改 Linux kernel config，啟用 ALSA 與 `virtio_snd` driver。
+- guest Linux 已可偵測 virtio-snd device，並成功產生 `/dev/snd/*` 裝置節點。
+- `/proc/asound/cards`、`/proc/asound/devices`、`/proc/asound/pcm` 已可看到 virtio sound card 與 PCM device。
+- 已加入 ALSA userspace tools，例如 `aplay` 與 `speaker-test`。
+- 已成功透過 `aplay` 播放 `.wav` 音檔，確認 virtio-snd 的基本 playback path 可正常運作。
+- 目前仍需進一步理解 ALSA `period-size`、`buffer-size` 與 virtio-snd ring buffer / callback timing 的關係。
+
+### virtio-gpu & virtio-input
+
+- 目前進入 `virtio-gpu` 與 `virtio-input` 的前期理解與規劃階段。
+- 已開始閱讀 semu 中 virtio-gpu / virtio-input 的相關實作與開發紀錄。
+- 已整理 virtio-gpu 的基本概念：
+  - control queue
+  - cursor queue
+  - resource
+  - backing pages
+  - scanout
+  - framebuffer
+  - cursor update
+- 已開始理解 Linux graphics stack 與 virtio-gpu 的關係，包括 DRM、KMS、GEM buffer object、framebuffer、plane 與 scanout。
+- 已理解 virtio-gpu 2D path 的大致流程：guest 建立 resource、attach backing、set scanout、transfer to host、flush，最後由 host 顯示畫面。
+- 已開始整理 virtio-input 的基本角色，包含 keyboard / mouse event 如何透過 virtqueue 傳遞給 guest。
+- 後續目標是先完成 virtio-input 與 virtio-gpu 2D path 的可行性分析，再移植到 rv32emu。
+
+### 觀摩同儕專題並提問 (公開軌跡, 共 5 件 ≥ 課程要求 5 件)
+1. `JOJOTOOL` : 提問因為新的封包路徑會多經過 syscall dispatch、LKL TCP/IP stack、virtio-net、TAP，所以我好奇改成這種架構後是否有和原本路徑做效能比較？例如傳送封包是否會有延遲，延遲多少是可以接受的。
+2. `illdoCc` : 提問文章提到 RCU 和 seqlock 的差異：seqlock reader 看到 writer 更新時可能需要重讀，而 RCU reader 可以繼續讀舊版本。想請問在什麼條件下應該選 RCU，而不是 seqlock？可以舉一些情境案例嗎？
+3. `brian049` : 提問實做後端有哪些功能是必須的，哪些功能實做完後端就可以正確執行？或者 feature negotiation 中 virtio-gpu 3D 哪些功能一定要協商？
+4. `rrrchii` : 提問看到 shared bitmap 在多核 insert 時，2 threads 甚至比 1 thread 慢，而 8 threads 也只有 1.15× speedup。文章推測主要原因是多核同時 set_bit() 寫同一份 bitmap，導致 LOCK; bts 和 cache line bouncing。想問是否有用 perf counters 進一步驗證，例如量測 cache-to-cache transfer 觀察哪些 bitmap cache line 在 CPU 間反覆 bouncing？
+5. `codin-noob` : 提問為什麼 kxo 的 AI 強化會考慮 MCTS？MCTS 通常需要大量 rollout 和隨機模擬，但在 kernel module 裡又有 CPU quota、不能使用浮點數、不能長時間阻塞等限制。相比 Negamax / alpha-beta pruning，MCTS 在這個專題中最大的優勢是什麼？
+
+
+## 與授課教師的互動
+> 8 分
+
+一對一討論 1 次、課堂問答 2 次
+
+### 課堂問答
+- [2026/3/24](https://hackmd.io/mGN8I_tJQcW3A92ZIbYbHw?view#Charlie-Tsai1123) : 看各型別再 C99 定義的大小，並了解 GENMASK 的功能
+- [2026/6/23](https://hackmd.io/nDxo5HxWSbqqWrQ9FpJQMg#Charlie-Tsai1123) : 
+理解 [spsc.c](https://github.com/Charlie-Tsai1123/linux2026_hw/blob/main/SPSC_MPMC/spsc.c) 並把所有 memory order 改成 `memory_order_relaxed` 查看 data race 情況，修改的檔案為 [spsc_all_relaxed.c](https://github.com/Charlie-Tsai1123/linux2026_hw/blob/main/SPSC_MPMC/spsc_all_relaxed.c)，後續透過 `-fsanitize` 分析後，再用 mutex lock 寫了 [mpmc.c](https://github.com/Charlie-Tsai1123/linux2026_hw/blob/main/SPSC_MPMC/mpmc.c) 實做多生產者及多消費者的程式。
+
+
+### 一對一討論
+- 2026/6/3 (Wed, 22:30 ~ 23:00) 討論 Linux CMA 機制，理解 kernel thread 的 guard pages 是否佔實體記憶體;理解 hardware thread 跟 software thread 差別;給 Open Source Summit 了解 virtio-gpu 流程
+
+## 所見所聞所感
+> 10 分
+
+### 因為自動飲料機而延畢的那一年
+看完後，對於第四篇提到的「資工系的學生不會寫程式，機械系的學生不會做機械」很有感覺，覺的自從有 AI 就很少自己從頭到尾實做，而在專題中讓我了解到寫程式，不單單只有寫還要閱讀很多的文件，像是要理解 Virtio Specification 裡面定義的各個 virtio 實做。對於細節的把控更是重要，從 Open Source Summit 看到當初在實做 virtio-gpu 遇到 cursor 的問題還要理解 gpu 在 linux driver 中是怎麼運作的，很多細節。
+
+### 回顧自身在本課程的投入狀況
+我覺的修這堂課學到最多得是自己與現在的科技差距有多大，從前幾周不斷討論數值系統，就發現以前缺失了很多，像是在第一份作業閱讀 linux 核心中 linux/crypto/ecc.c vli_mod_inv 函式，從來沒想過錯誤檢查也要用到輾轉相除法，也沒有想過簡單的除 10 為了效能需要數學推導。到專題研究 virtio 時，發現從做中學可以快速知道自己不足的點，像是原本沒有 dtb、mmio、plic 這些概念，在閱讀 rv32emu 以及上網看資料後也了解這些是如何運作的。
+
+## 分數計算
+
+
+| 項次 | 名稱 | 分數 |
+| -------- | -------- | -------- |
+| 1  | 成果發表與貢獻  | 8  |
+| 2 | 作業與隨堂測驗 | 8  |
+| 3  | 期末專題  | 9 |
+| 4  | 與授課教師的互動  | 8 |
+| 5 | 所見所聞所感 | 10 |
+
+幾何平均 (GEOMEAN) 計算 
+$$ GEOMEAN \ = \sqrt[5]{8 \times 8 \times 9 \times 8 \times 10} \ = 8.564509$$
+
+方案選擇:
+- 方案 B: 1 + floor(GEOMEAN)
+- 1 + floor(8.564509) = 1 + 8 = 9
+
+自我評量總分: 9 / 10
