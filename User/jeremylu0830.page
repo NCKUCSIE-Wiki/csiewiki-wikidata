@@ -1,15 +1,15 @@
-ail---
+---
 title: jeremylu0830(魯倫愷)
 categories: User
 ...
 # 簡介
 * 國立成功大學 資訊工程學所 116 級 
-* GitHub: [`salmoniscute`](https://github.com/jeremylu0830)
+* GitHub: [`jeremylu0830`](https://github.com/jeremylu0830)
 
 # 2026 Linux 核心設計/實作 春季班 自我評量
 
 ## 成果發表和貢獻
-8 分。
+9 分。
 
 * 第19周教材 : [Rust for Linux 研究](https://hackmd.io/4X3MKltPRaOoBwMMf0QtLg?view)
     * garbade collector => garbage collector
@@ -17,11 +17,16 @@ categories: User
     * 直關上的作法為使用 use std::ffi::CStr;，但是在核心模組開發中我們不能使用 std 相關函式庫 => 直觀上
 * 第 10 週教材 : [Linux 核心設計: 多核處理器和 spinlock](https://hackmd.io/qhuhCqvpSUeT2Pz0BtvPMA?both)
     * enabled interrupts (sti) => Enable interrupts (sti)
-*第 14 週教材 : [Linux 核心 Copy On Write 實作機制](https://hackmd.io/@linD026/Linux-kernel-COW-content/https%3A%2F%2Fhackmd.io%2F%40linD026%2FLinux-kernel-COW-Copy-on-Write)
-    * [kxo pr #12](https://github.com/sysprog21/kxo/pull/12)
-    * 修正[作業一教材](https://hackmd.io/@sysprog/linux2025-lab0/%2F%40sysprog%2Flinux2025-lab0-c) select 程式碼註解
+* 第 14 週教材 : [Linux 核心 Copy On Write 實作機制](https://hackmd.io/@linD026/Linux-kernel-COW-content/https%3A%2F%2Fhackmd.io%2F%40linD026%2FLinux-kernel-COW-Copy-on-Write)
+    * 處裡 process 記憶體之間的干擾 => 處理
+    * 讓就的資料有更好的 locality => 讓舊的資料
+    * 找不到想要的 page fault 就會出發 page fault exception => 觸發 page 
+    * 隨時開起 pfn_to_page 、page_to_pfn => 開啟 pfn_to_page
+* 第 14 週教材 : KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm)
+    * 裡面包含 Bus 初始化、 serial device 初始化、 PCI Bus 初始化，遇有對 GICv3 的初始化 => 還有對 GICv3
+    * device_feature_select 用來選擇呈現的 Feature 是高 32 位還是低 32位 => 位 改成 精確的位元
 
-以上貢獻都是跟 typo、書本的段落語意相關的修正，雖然老師說勿以善小而不為，但是尚未有程式碼邏輯和行為的改動去解決真實世界的問題，因此計算為 8 分。
+以上貢獻都是跟 typo、英語文法以及相關用詞的修正，但老師說勿以善小而不為，但是尚未有程式碼邏輯和行為的改動去解決真實世界的問題，因此計算為 9 分。
 
 ## 作業/隨堂測驗
 7 分。
