@@ -10,9 +10,12 @@ categories: User
 
 # 2026 Linux 核心設計/實作 自我評量
 ## 第一項、成果發表和貢獻
+1. 7/5 修改錯字 
+Linux 核心的 hash table 實作： key 值得範圍 -> key 值「的」範圍
+2. 7/5 刪除冗餘字 
+Linux 核心的 hash table 實作： hash value 的值 -> 雜湊值
 
-
-評分: 
+評分: 3 分，這些修改屬於小型文件維護，貢獻有限，因此只給低分。
 
 
 ## 第二項、作業/隨堂測驗
@@ -21,43 +24,75 @@ categories: User
 * [2026q1 Homework2 (stdc)](https://hackmd.io/@tavy/linux2026-stdc)
 * [2026q1 Homework3 (basics)](https://hackmd.io/@tavy/linux2026-basics)
 * [2026q1 Homework4 (introspect)](https://hackmd.io/@tavy/linux2026-introspect)
-評分:   
 
+**作業一** 探討了系統設計於 $\mathbb{Z}/2^{64}$ 上，若以奈秒為精度的系統極限為數百年，我也閱讀了 Y2K(千禧年)危機與 2038 年問題的資料，後續老師在 17 週教材也有提到，特別講舊的軟體對於 timer 的不可靠問題，這讓我覺得前後呼應，讀教材奠定基礎對於學習 kernel 真的很重要。
+
+**作業二** 中 IEEE 754 表示 `0.1` 的精度限制十進位 `0.1 = 1/10` 在二進位中會展開為無限循環小數，因此浮點數格式只能保存經過截斷與捨入後的近似值，而非精確值。
+
+我用 Graphviz 整理 `0.1f = 0x3dcccccd` 的 sign、exponent、fraction 欄位，sign 與 exponent 只負責符號和大小，誤差來自 fraction 欄位無法容納完整的循環 significand。單精度只能保存 23 個 fraction bits，`0.1f` 的實際值約為 `0.10000000149`，倍精度有 52 個 fraction bits，誤差較小，但實際值仍是 `0.10000000000000000555...`，不是精確的 `0.1`。這題讓我把 `0.1 + 0.2 != 0.3` 從浮點數、有效位數與 rounding error、數值系統整合起來學習。
+
+**作業三** 我讀了前幾次一直出現在隨堂考題裡的〈C 語言：未定義行為〉，做實驗去看`__builtin_unreachable()` 與 `restrict` 對編譯器最佳化的影響。無 `restrict` 的版本保留了執行期檢查與多條路徑，有 `restrict` 的版本則被 GCC 轉成 `memcpy()` 呼叫，表示「指標不重疊」會成為編譯器可利用的語意假設，因此，閱讀 kernel 程式時除了 C 語言規範，也要留意語意差異如何影響編譯後的 machine code。
+
+**作業四** 是從前兩份作業的 hash 題目延伸成主題報告，分析 hash table 教材中提出的討論（乘法雜湊與黃金比例常數的關係），以及傳統 hash 到 siphash 的 git log 遷移脈絡，並延伸出期末專題的題目。
+
+本來以為若只是做實驗分析效能和安全性的取捨，沒有開發出新工具或針對 kernel patch 不能算好的期末專題，但老師說去量測出 siphash 有多慢，會對效能有什麼影響，能建立清楚的量化模型也會是貢獻，這讓我修正過去狹隘的想法。
+ 
+隨堂測驗需要在短時間內閱讀題幹、教材與延伸資料，找出關鍵資訊並作答。課程初期，我不熟悉這種密集查證的形式，常花太多時間在搜尋資料，卻無法快速判斷題目真正要問的概念。後來我將 C99 規格書存成 PDF，並養成查閱 Linux man-pages 的習慣，逐漸能把題目中的關鍵字連到規格、系統呼叫語意或 Linux 相關文件。
+
+其中印象較深的是 quiz 6 的 TurboQuant 題目。這題討論如何在不明顯犧牲模型準確度的情況下，降低大型語言模型 KV cache 的記憶體需求，剛好我這學期有修 AI Accelerator，授課教師也提到，單純從硬體層面改良並不容易，軟體與演算法層面的設計是新的賽道，讓我發覺 Linux 核心課程的測驗並不只是在考單一技術細節，也會連到現行業界在面對的問題，因此，修讀這兩門課讓我的學習前後呼應，並讓我更有方向強化 AI Accelerator 領域的學習。
+
+評分: 7 分
 
 ## 第三項、期末專題
-
 Linux 核心設計專題: 雜湊函數之數學基礎與資訊安全議題 [HackMD](https://hackmd.io/rNkcgtZ1SEaHLYn2JpaDkg?view)/[GitHub](https://github.com/yhsindev/kernel-hash)
 
 觀摩同學的期末專題並提問：
-1.[Linux 核心設計專題: ]()
-2.[Linux 核心設計專題: ]()
-3.[Linux 核心設計專題: ]()
-4.[Linux 核心設計專題: ]()
-5.[Linux 核心設計專題: ]()
+1. [Linux 核心專題: RCU](https://hackmd.io/ggVQ6mO1RBKaPp44IWtGrA?view)
+2. [Linux 核心專題: EWMA 分析和應用案例](https://hackmd.io/okzCxJv3RGmrmN3goWocjQ?view)
+3. [Linux 核心設計專題: MDP-based memory tiering](https://hackmd.io/@sysprog/SkrJ5TICbg)
+4. [Linux 核心設計專題: 圖形函式庫的效能改進](https://hackmd.io/4_nS7VDFQ7GgM2vZ0QcAEw?view)
+5. [Linux 核心專題: qspinlock 量化分析](https://hackmd.io/FFQ59lxpRWaXIP0hYPrx5A?view)
 
-評分:
+（待補上專題開發過程）
+
+評分: 8 分
 
 
 ## 第四項、與授課教師的互動
+一對一討論: [5/14: yhsindev](https://docs.google.com/document/d/1P7sse-kOMyaQuAJZzlqDXAX2Wu_zVG91MxyqK1yw4M4/edit?tab=t.0)
+課堂問答: [5/26 晚間課堂問答](https://hackmd.io/@sysprog/BJmF8oGgzg), [6/2 模擬面試](https://hackmd.io/@tavy/mock_interview)
 
+5/14 一對一討論中，探討了幾何平均數的程式碼撰寫與期末專題
 
+在 5/26 晚間課堂問答中，我被問到 Linux 排程器從 O(1)、CFS 到 EEVDF 的演進，以及 lag、vruntime、virtual deadline、virtual eligible time、scheduler latency 等概念，當時我未能回答 EEVDF 中 lag、eligible task 與 virtual deadline 的關係。
 
-評分: 
+後續我閱讀教材第二章，並查閱 EEVDF 原始論文，了解到CFS 以 vruntime 描述任務已取得的加權 CPU 時間，目標是長期比例公平，EEVDF 則以 lag 判斷任務是否落後於公平份額，再於 eligible tasks 中選擇 virtual deadline 最早者執行。我也進一步釐清，EEVDF 的數學公平性是指 proportional-share allocation 下的 service lag 有界，而不是保證 worst-case execution time，後者屬於 real-time scheduling 的範疇。
 
+在追查過程中，我針對教材中「EEVDF provides mathematically provable fairness」的表述提出修改建議，建議補充 one-quantum service-lag bound 的前提，以及原始論文中 steady system 與 maximum request size 對 bound 的影響。
+
+這次問答也改變我閱讀教材的方式。過去面對排程器這類內容時，我常因為教材難度高而延後細讀，並把「排程器太困難、短時間內學不起來」當成理由騙自己。課堂問答使我意識到，真正的問題不是主題本身無法理解，而是我沒有耐心從定義、公式與前提條件開始拆解。後續重讀教材時，我改以較具體的方式整理問題，先釐清基本定義，再回到原始論文確認細節推導，最後去研究如何對應到 Linux scheduler 的實作。這個過程讓我學到，困難教材不能只靠快速瀏覽或記憶結論，必須把困惑記錄下來，逐一透過教材、原始論文、隨堂測驗與課堂問答紀錄排除。本次互動最直接的收穫是面對艱難技術內容時，應先建立可追蹤的閱讀方法，而不是先替自己設定「學不起來」的限制。
+
+6/2 模擬面試同屬課堂問答，授課教師要求以公司面試標準應對。題目涵蓋 futex、kernel stack、workqueue、process/thread 在 scheduler 角度的差異，以及 POSIX thread 的 A→B→C 同步設計。當場回答時，我無法說明 futex、stack/heap 題目停留在資料結構層次，未切入 kernel memory、workqueue 與 scheduler runqueue 混淆、semaphore 題目也沒有先建立 A→B、B→C 兩段同步關係，因此無法提出可執行設計。
+
+事後我逐題重整答案，補上 kernel stack 小尺寸與 kernel memory 消耗、連續頁面配置、碎片化風險的關係，也釐清 workqueue 是延後執行 work item 的 kernel 機制，最終由 worker thread 作為 task 接受 scheduler 排程。後續準備面試題時，我會將每個概念整理成「定義、用途、kernel 實作關聯、限制」四個層次，並練習用完整句子回答，減少停頓與語助詞造成的表達斷裂。
+
+評分: 6 分
 
 ## 第五項、 所見所聞所感
 
-閱讀〈因為自動飲料機而延畢的那一年〉
+讀〈因為自動飲料機而延畢的那一年〉時，我受到衝擊的不是作者一開始就很順利，而是他在資源有限、過程不斷卡關的情況下，仍然沒有把困難當成停止的理由，也讓我反省自己在本課程前期常因為基礎不夠就先退縮，教材看過了，卻很少透過實作把它變成自己的理解。說到底，教材份量從來不是重點，我真正缺的是「耐心地去補強自己不足之處」，也就是老師說的，不會沒關係，缺什麼就補什麼。
 
+到了期末專題，這個弱點就藏不住了。我的題目是雜湊函式的數學基礎與資訊議題，比較 `jhash2`、`hsiphash`、`siphash` 的效能與安全性差異：`jhash2` 是 32-bit 雜湊，可以構造完整 32-bit collision 做出攻擊樣本；`siphash` 帶 128-bit 金鑰，攻擊者無法離線預測碰撞，安全性較高，但每次雜湊的成本也較貴。為了讓比較夠紮實，我用 3 種雜湊函式、每種量 5 次的 `perf` 流程，觀察 `masked_flow_lookup` 與雜湊相關 symbol 的 cycle 佔比，也固定 CPU governor 避免環境干擾。這讓我體會到，效能分析不能只講「比較慢、比較安全」，得說得出慢在哪、慢多少，例如 `siphash` 的 per-hash 成本約為 `jhash2` 的 1.53 倍。
 
-回顧自身在本課程的投入狀況:
+專題也補回我前期沒打穩的地方。一開始我其實很抗拒讀 kernel 的 C style code，但實驗結果常不如預期，只能回頭查 C 語言規格、bitwise 操作、資料對齊、暫存器用法，還有 kernel module 的實作。C 語言未定義行為、雜湊函式、效能量測、kernel module 與 `perf`，這些原本散在教材各處的東西，是在專題裡被串起來之後，我才真正明白它們為什麼重要。
 
+六月面試科技公司時，Linux kernel 這份專題馬上派上用場。以前我大概只會說「我做過某某某專題」，這次能具體講出改了哪些程式、用量化的方式描述貢獻，為什麼 `siphash` 較安全但較貴，以及怎麼用 `perf` 分析 data，最後也拿到韌體暑期實習。另外，在面試中提問業界主管好奇的是問題的通用性、為什麼值得解決、能不能在別的情境重現，而不只是我改出了什麼。也因此，之後若要延伸雜湊相關的研究，就不該只停在 OVS，也該看看 file system 或其他 kernel path 的雜湊使用情境，去看效能與安全性的 trade-off 有沒有更廣的意義。
 
-評分: 
+評分: 8 分
 
 
 ## 自我總評量得分
-自我總評量得分為 **** 分。
+自我總評量得分為 **7** 分。
 
-* GEOMEAN : $\sqrt[5]{} = $  
-* 方案 B：$1+\lfloor  \rfloor=$
+* GEOMEAN : $\sqrt[5]{3 × 7 × 8 × 6 × 8} = 6.04$  
+* 方案 B：$1+\lfloor 6.04 \rfloor= 7$
