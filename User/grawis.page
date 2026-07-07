@@ -5,12 +5,16 @@
 # 2026 Linux 核心設計/實作 春季班 自我評量
 
 ## 成果發表與貢獻
+8分
+
 * 教材
     * warm-up作業
         * 2026/03/06 : 與老師討論題意修正(信件)
          為何 $x \mod 2^n \equiv x \mod (2^n - 1)$ 僅對 unsigned 或非負整數安全？->為何 $x \mod 2^n \equiv x \& (2^n - 1)$ 僅對 unsigned 或非負整數安全？
          
 ## 作業/隨堂測驗
+7分
+
 * [2026q1 Homework1 (warmup)](https://hackmd.io/@grawis0331/B1mX_dZt-l)
 * [2026q1 Homework2 (stdc)](https://hackmd.io/@grawis0331/ryn98Y7sZg)
 * [2026q1 Homework3 (basics)](https://hackmd.io/@grawis0331/HJdRdZR3Wl)
@@ -28,17 +32,34 @@
 在第一次作業中，我第一次學習了查閱第一手資料，如 C99 規格書、 linux kernel 原始碼、專案的 commit message 、書本對於觀念和程式碼行為的定義。而在第二次作業後，我開始接觸了在 linux 環境中撰寫測試程式與精準觀察各程式的行為，並學習了 git 版本控制方法。
 
 ## 期末專題
+8分
 
 * [Linux 核心設計專題: 改進 vcam](https://hackmd.io/@sysprog/Sk3hOzw0Ze)
 
 目前已完成貢獻摘要：
 
-* 修正 V4L2 capture frame interval 的計算與回報
-* 建立自動化 V4L2 測試流程
-* 防止 buffer 已配置或使用中時變更影像格式
-* 補上 capture buffer 的 sequence number
+* 修正 V4L2 capture frame interval 的計算與回報〔PR #50〕
+* 建立自動化 V4L2 測試流程〔PR #51〕
+* 防止 buffer 已配置或使用中時變更影像格式〔PR #53〕
+* 補上 capture buffer 的 sequence number〔PR #55〕
+
+
+研讀過去相關專案貢獻
+
+* liangchingyun：[Linux 核心專題: 虛擬攝影裝置驅動程式](https://hackmd.io/@sysprog/r1xqIXO-lx)
+* hungyuhang：[Linux 核心專題: 虛擬攝影機裝置](https://hackmd.io/@sysprog/HJBxRsRr0)
+
+深入了解虛擬攝影機驅動程式後，發現其涉及的知識領域非常廣大，即使 vcam 還只算是小型模組，但光是 driver 運作流程、 frame buffer 與 不同 buffer 運作行為、控制介面、與 V4L2 API 就有非常多需要理解並進一步完善的部分。而關於基礎影像知識與擴充支援格式等代辦事項也尚未完成。
+
+我目前對專案的整體貢獻聚焦於提升 vcam 對 V4L2 規範的正確性、可測試性與 streaming 行為穩定性，並為後續改良 framebuffer input 與擴充現代影像來源建立基礎。
+
+實際分析並驗證 raw frame 由 /dev/fbX 輸入、經 driver buffer 處理後從 /dev/videoX 以 V4L2 camera 形式輸出的完整流程，並理解 V4L2 format negotiation、videobuf2 buffer queue、streaming 與 frame timing 的運作。過程中完成自動化 V4L2 測試流程、集中 RGB24／YUYV 格式與 bytesperline、sizeimage 計算、修正 frame interval 回報與實際輸出速度不一致問題、避免 buffer 配置後任意變更格式，並補足 capture buffer sequence number 與 tracepoint 觀察。
+
+觀摩其他學員的期末專題：
          
 ## 與授課教師的互動
+9分
+
 課堂問答：
 
 * 3/17
@@ -59,6 +80,6 @@
 10分
 
 ## 自我評量 (1 ~ 10)
-$GEOMEAN=(8×7×8×10×10)^{1/5}=8.33881$
+$GEOMEAN=(8×7×8×9×10)^{1/5}=8.33881$
 
 方案 B：$1+floor(GEOMEAN)=1+8=9$
