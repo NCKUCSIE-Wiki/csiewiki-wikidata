@@ -67,7 +67,6 @@ GitHub 帳號: [Kai5088](https://github.com/Kai5088)
 - 增量重建(改一行):kbox supervisor relink **6.7 s**、UML **37.5 s**、virtme-ng **2m23s**;首次全量建置:UML 3m41s、virtme-ng 14m1s
 - 附掛成本:kbox 與 UML 本機 GDB 近乎即時;virtme-ng 需 VM 開機 + 遠端 gdbstub + `nokaslr` + `hbreak`
 - ftrace 實測:三個並發 `find` 負載下收 91 筆事件(softirq 81、sched_switch 11、cpu_idle 4)→ 4146 B 的 `trace.pftrace`,於 Perfetto 呈現 softirq 主導的時序全景
-- 誠實補充:kbox 的迭代優勢主要在改 supervisor 碼時;改 LKL 核心碼仍需重建 LKL(量級 ≈ UML 增量),優勢收斂為「免去開機」一項
 
 ### 觀摩同儕專題並提問 (課程要求至少 5 項)
 本年度同儕專題索引於 [linux2026-projects](https://hackmd.io/@sysprog/linux2026-projects), 留下提問軌跡如下:
@@ -112,11 +111,11 @@ GitHub 帳號: [Kai5088](https://github.com/Kai5088)
 
 ### 關於謹慎用詞
 
-作業第一題是考據〈資訊科技詞彙翻譯〉,當時覺得是暖身,後來才體會這是本課程的核心訓練。追 render 的詞源、分辨 constant 與 immutable(前者約束識別碼、後者約束資料實體)、區分 task/process/thread/job 在核心中的實作層次,做的都是同一件事:名詞用錯,推理就會在看不見的地方歪掉。這學期我試著把「比較快」這類模糊敘述改成可檢驗的句子——專題對照實驗不寫「kbox 迭代比較快」,而寫「增量重建 kbox 6.7 s、UML 37.5 s、virtme-ng 2m23s,且 kbox 的優勢主要在改 supervisor 碼時,改 LKL 核心碼則收斂為免去開機一項」。後半句的誠實限定,是我以前不會寫、現在認為不能不寫的部分。
+作業第一題是考據〈資訊科技詞彙翻譯〉,當時覺得是暖身,後來才體會這是本課程的核心訓練。追 render 的詞源、分辨 constant 與 immutable(前者約束識別碼、後者約束資料實體)、區分 task/process/thread/job 在核心中的實作層次,做的都是同一件事:名詞用錯,推理就會在看不見的地方歪掉。這學期我試著把「比較快」這類模糊敘述改成可檢驗的句子——專題對照實驗不寫「kbox 迭代比較快」,而寫「增量重建 kbox 6.7 s、UML 37.5 s、virtme-ng 2m23s,且 kbox 的優勢主要在改 supervisor 碼時,改 LKL 核心碼則收斂為免去開機一項」。是我以前不會寫、現在認為不能不寫的部分。
 
 ### 關於實驗設計
 
-專題的三方虛擬化對照讓我上了一課:要比較 kbox / UML / virtme-ng,前提是三方核心源自同一份 LKL 樹的同一個 commit,否則量出來的差異無法歸因。過程中也遇到「gcore 在 ASAN build 下卡住」,只能誠實改走 live 附掛並在紀錄中標注嚴謹性的損失,而不是假裝兩種方法等價。觀摩同儕專題時,我把同樣的標準用在讀別人的數據上:在 [rv32emu VirtIO 專題](https://hackmd.io/@sysprog/H1uRyjC0bx)看到 ping RTT 出現幾乎剛好 1001 ms 的離群值,在 [Xenomai/EVL 專題](https://hackmd.io/@sysprog/rkPcocAAbg)看到物理上不可能的負延遲(-2.159 µs),兩者都指向量測機制本身的問題(輪詢間隔、timer gravity 校準)。這學期最大的收穫之一是:沒看到事件與事件不存在是兩回事。
+專題的三方虛擬化對照讓我上了一課:要比較 kbox / UML / virtme-ng,前提是三方核心源自同一份 LKL 樹的同一個 commit,否則量出來的差異無法歸因。過程中也遇到「gcore 在 ASAN build 下卡住」,只能改走 live 附掛並在紀錄中標注嚴謹性的損失,而不是假裝兩種方法等價。觀摩同儕專題時,我把同樣的標準用在讀別人的數據上:在 [rv32emu VirtIO 專題](https://hackmd.io/@sysprog/H1uRyjC0bx)看到 ping RTT 出現幾乎剛好 1001 ms 的離群值,在 [Xenomai/EVL 專題](https://hackmd.io/@sysprog/rkPcocAAbg)看到物理上不可能的負延遲(-2.159 µs),兩者都指向量測機制本身的問題(輪詢間隔、timer gravity 校準)。這學期最大的收穫之一是:沒看到事件與事件不存在是兩回事。
 
 ### 關於課程同儕的觀察
 
