@@ -10,7 +10,7 @@ GitHub 帳號：`Bigtooth123`
 在[從 CPU cache coherence 談 Linux spinlock 可擴展能力議題](https://hackmd.io/@sysprog/linux-spinlock-scalability)當中修正分號問題
 
 ## 作業
-> 10
+> 9
 
 * [Homework1](https://hackmd.io/@jason917/linux2026-warmup)
 * [Homework2](https://hackmd.io/@jason917/linux2026-stdc)
@@ -39,6 +39,12 @@ GitHub 帳號：`Bigtooth123`
 
 ## 觀摩同儕專題並提問
 
+* andy20040: [Linux 核心設計專題: 以 Weak AVL Tree 取代 rbtree](https://hackmd.io/@sysprog/H14PtSe1Gl)
+* CharlieZhangXY: [回顧作業](https://hackmd.io/@sysprog/HJ_dStrZGx)
+* illdoCc: [Linux 核心專題: RCU](https://hackmd.io/@sysprog/H12QuDn6Zg)
+* jeremylu0830: [Linux 核心設計專題: 異質多核通訊機制](https://hackmd.io/@sysprog/HkFikIgkzl)
+* Stanley0915: [Linux 核心設計專題: 測量系統資源開銷並改善](https://hackmd.io/@sysprog/B1ImJFdRbe)
+
 ## 與授課教師的互動
 > 8
 
@@ -51,7 +57,7 @@ GitHub 帳號：`Bigtooth123`
     * 誠實面對自己
 
 ## 所見所聞所感
-> 9
+> 10
 
 在選修 Linux 核心設計之前，就曾耳聞這堂課內容極多極廣，需要花費非常多的時間，因此在我大三的時候不敢選修這堂課，一直到了大四最後一學期，我才下定決心為了自己拼一把。
 
@@ -64,6 +70,6 @@ GitHub 帳號：`Bigtooth123`
 最後，在看了〈因為自動飲料機而延畢的那一年〉後，我對作者說的一句話深有感觸：「但這是他媽的真實的人生，熱血毫無用武之地」，我在寫作業跟專題的時候，常常沒有做好規劃，就投入到實做當中，急迫的想要趕快看到結果，但是往往會因為流程或模型沒有想清楚，導致又要整個實驗重作。這讓我深刻體會到，真實世界的工程開發靠的不是一時的衝動與熱血，唯有周全的實驗設計、嚴謹的邏輯推演與耐心的除錯，才能確保實作走在正確的軌道上。
 
 ## 分數計算
-$GEOMEAN=(6 \times 10 \times 8 \times 8 \times 9)^{1/5}=8.085$
+$GEOMEAN=(6 \times 9 \times 8 \times 8 \times 10)^{1/5}=8.085$
 
 選擇方案 B ：$1+floor(GEOMEAN)=1+8=9$
