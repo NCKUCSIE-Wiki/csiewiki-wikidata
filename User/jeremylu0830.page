@@ -9,7 +9,7 @@ categories: User
 # 2026 Linux 核心設計/實作 春季班 自我評量
 
 ## 成果發表和貢獻
-9 分。
+8 分。
 
 * 第19周教材 : [Rust for Linux 研究](https://hackmd.io/4X3MKltPRaOoBwMMf0QtLg?view)
     * garbade collector => garbage collector
@@ -22,22 +22,21 @@ categories: User
     * 讓就的資料有更好的 locality => 讓舊的資料
     * 找不到想要的 page fault 就會出發 page fault exception => 觸發 page 
     * 隨時開起 pfn_to_page 、page_to_pfn => 開啟 pfn_to_page
-* 第 14 週教材 : KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm)
+* 第 14 週教材 : [KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm)
     * 裡面包含 Bus 初始化、 serial device 初始化、 PCI Bus 初始化，遇有對 GICv3 的初始化 => 還有對 GICv3
     * device_feature_select 用來選擇呈現的 Feature 是高 32 位還是低 32位 => 位 改成 精確的位元
 
-以上貢獻都是跟 typo、英語文法以及相關用詞的修正，但老師說勿以善小而不為，但是尚未有程式碼邏輯和行為的改動去解決真實世界的問題，因此計算為 9 分。
+以上貢獻都是跟 typo、英語文法以及相關用詞的修正，但老師說勿以善小而不為，但是尚未有程式碼邏輯和行為的改動去解決真實世界的問題，因此計算為 8 分。
 
 ## 作業/隨堂測驗
 7 分。
 
-* [2025q1 Homework1 (lab0)](https://hackmd.io/@salmonii/linux2025-homework1)
-* [2025q1 Homework2 (quiz1+2)](https://hackmd.io/@salmonii/linux2025-homework2)
-* [2025q1 Homework3 (kxo)](https://hackmd.io/@salmonii/linux2025-homework3)
-* [2025q1 Homework4 (quiz3+4)](https://hackmd.io/@salmonii/linux2025-homework4)
-* [2025q1 Homework5 (assessment)](https://hackmd.io/@salmonii/linux2025-homework5)
+* [2026q1 Homework1 (warmup)](https://hackmd.io/-Kg_ukRkQmywtj5gve8S0g?view)
+* [2026q1 Homework2 (stdc)](https://hackmd.io/G2aAIpZQSs-BiBCXrcXDbA)
+* [2026q1 Homework3 (basics)](https://hackmd.io/dg0ItH2wQbGhynb3nxIZ3Q)
 
-在撰寫作業的過程中學習 C 語言的新知識和過去沒掌握的觀念，像是 dangling else、指標的指標和浮點數等等。第一次作業中我閱讀 《The cost distribution of queue-mergesort, optimal mergesorts, and power-of-two rules》論文，嘗試用論文中的 QM 演算法實作鏈結串列的合併。作業也讓我了解閱讀第一手資料的重要性 e.g. C99 規格書、man page，與其訴諸 google 搜尋不如直接去看書本的定義。第三次作業很可惜的是我初期花了大量時間舉燭和猜測程式碼的行為，但我應該要做的是直接去看像是 softirq 等教材和文件然後動手實作。
+在寫作業的時候，學習了許多以往沒有注意到的細節，以及被草草帶過的觀念，這次的作業所需要培養的能力包含找資料、驗證資料、推導原理以及理解並付諸實現，這過程中也意識到數學在資訊產業的重要性。同時，作業促使我體會到閱讀第一手資料的重要性。與其盲目訴諸搜尋引擎，不如直接查閱 C99 規格書或 man page 等官方文件，從最根本的定義去理解問題。第三次作業由於自身規劃不佳，沒有能夠動筆。隨堂測驗的部分，總計只缺席了一次，這種即席的測驗很好的訓練我如何在有限的資源以及時間，盡可能地回答問題，遇到不會的題目也能夠推理出可能的答案，讓我能夠在後須專題閱讀規格書時快速找到重點。我給自己7分。
+
 
 ## 期末專題
 8 分。
