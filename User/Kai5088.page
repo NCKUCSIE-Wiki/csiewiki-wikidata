@@ -70,15 +70,15 @@ GitHub 帳號: [Kai5088](https://github.com/Kai5088)
 
 ### 觀摩同儕專題並提問 (課程要求至少 5 項)
 本年度同儕專題索引於 [linux2026-projects](https://hackmd.io/@sysprog/linux2026-projects), 留下提問軌跡如下:
-1. brian049 — Linux 核心設計專題: virtio-gpu 的設計和實作: 
+* 1. brian049 — Linux 核心設計專題: virtio-gpu 的設計和實作: 
 [我的提問](https://hackmd.io/QN2dswdeQCao-I2aS6h6KA?comment=81c2b010-b279-44f2-846f-2e805ec67511&utm_source=comment-card&utm_medium=icon):目前 `virtio_gpu_cmd_undefined_handler()` 收到不支援的指令後,是否仍有依 virtio spec 的要求在 controlq 回覆 response(例如 `VIRTIO_GPU_RESP_ERR_UNSPEC`)?
-2. kezhenx666 — Linux 核心設計專案: pKVM:
+* 2. kezhenx666 — Linux 核心設計專案: pKVM:
 [我的提問](https://hackmd.io/EQGCO3GhSYmrjeZDZZs7FQ?comment=eab38e3d-5eee-45da-adc3-3fb632acd938&utm_source=comment-card&utm_medium=icon): Cuttlefish 實驗是在 x86_64 host (Ubuntu 24.04) 上執行,而 pKVM 的保護機制建立在 ARMv8 的 EL2 與 Stage-2 page table 之上——x86 上的 Cuttlefish 應該走的是一般 KVM (VMX) 路徑。這個實驗平台實際上觀察得到 pKVM 的行為嗎(例如 protected VM 的記憶體對 host 不可見)?
-3. Charlie-Tsai1123 — Linux 核心設計專題: rv32emu 的 Virtio 強化:
+* 3. Charlie-Tsai1123 — Linux 核心設計專題: rv32emu 的 Virtio 強化:
 [我的提問](https://hackmd.io/xBHchwANS7aE_RmXfT1vGg?comment=148b8d59-7de6-460c-b697-63bd059bca2d&utm_source=comment-card&utm_medium=icon): virtio-net 的 ping 測試中,三個封包 RTT 分別是 3.8 ms、**1001 ms**、1.4 ms——中間這筆幾乎剛好 1 秒,看起來不像網路抖動,比較像 RX 路徑的通知機制漏了一拍、靠某個約 1 秒的輪詢或 timeout 撿回來。想確認:rv32emu 的主迴圈是用什麼方式發現 TAP 有封包進來?
-4. chuang0720 — Linux 核心設計專題: 核心搶佔模型與 PREEMPT_RT 對即時延遲的影響:
+* 4. chuang0720 — Linux 核心設計專題: 核心搶佔模型與 PREEMPT_RT 對即時延遲的影響:
 [我的提問](https://hackmd.io/E0pBdgJhTFeUOWOkabCC9A?comment=f741ee0c-d0ba-4412-992a-c0a24f9c7639&utm_source=comment-card&utm_medium=icon): 關於 `rt/iperf3-tcp` 的 KNOWN_FAIL_REBOOT:dmesg 顯示 `mtk-wdt` 硬體 watchdog 觸發重開,而固定化設定中有一項是 `sched_rt_runtime_us=-1`(關閉 RT throttling)。在 PREEMPT_RT 下網路 RX path 走 threaded IRQ / NAPI thread,滿速 TCP RX 時這些執行緒的負載極高——關掉 throttling 後,是否可能是「餵 watchdog 的行程(或 kworker)被 RT 優先權的網路執行緒長期餓死」導致 watchdog 逾時,而不是核心真的 panic?
-5. jieling3313 — Linux 核心設計專題: 即時處理案例探討:
+* 5. jieling3313 — Linux 核心設計專題: 即時處理案例探討:
 [我的提問](https://hackmd.io/_P0vOIpWRImxjrS_9eHVNg?comment=2b6aeabf-9d78-4ac5-8995-7a140e27508b&utm_source=comment-card&utm_medium=icon): 關於手動解的 `bcm2835-dma.c` 衝突(加入 `is_base_irq_handler()` / `running_oob()` / `IRQ_FORWARD` 的 oob 分流):這段合併等於是替 EVL 官方沒有支援的驅動版本自行做了 out-of-band 改造。想請教你如何驗證這個合併的正確性
 
 ### 回應提問
