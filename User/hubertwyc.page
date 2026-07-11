@@ -9,34 +9,88 @@ categories: User
 
 # 2026 年 Linux 核心設計課程自我評量
 ## 成果發表與貢獻
+評分：10分
+
 ### 課程教材
-- 2026/05/02 — kxo作業說明修改
-- 2026/07/03 — 動態連結器教材修改
-- 2026/07/04 — Error-Correcting Codes (ECC) 教材修改
-- 2026/07/05 — Linux 核心設計: Scheduler(10): PREEMPT_RT 教材修改
-- 2026/07/06 — 並行程式設計: UNIX 作業系統 fork/exec 系統呼叫的前世今生教材修改
-- 2026/07/06 — 並行程式設計: 排程器原理教材修改
+- 2026/05/02 —〈[2026 年 Linux 核心設計課程作業 —— kxo (A)](https://hackmd.io/@sysprog/linux2026-kxo)〉作業說明修改
+原本作業說明針對計算定點數乘冪的函式 `fixed_power_int` 寫到：
+    >`x += 1UL << (frac_bits - 1)` 會讓 `x` 進行無條件進位
+
+    我一開始看不懂為什麼是無條件進位？後來我發現要結合 `x >>= frac_bits` 一起看，事實上這裡是在對 `x >>= frac_bits` 的結果做四捨五入。因此我寫了 [數學推論](https://hackmd.io/@hubertwyc/fixed-point-int) 證明這個觀點，在 2026/05/03 經過授課教師修改之後，更新至作業說明。
+
+- 2026/07/03 —〈[你所不知道的 C 語言：動態連結器篇](https://hackmd.io/@sysprog/c-dynamic-linkage)〉修改錯字
+原 `rip-relative` 改 `RIP-relative` 。
+- 2026/07/04 —〈[錯誤更正碼 (ECC) 介紹和實作考量](https://hackmd.io/@sysprog/linux-ecc)〉修改錯字
+原 `呈上` 改 `承上` ， `bitmsk` 改 `bitmask` 。
+
+- 2026/07/05 —〈[Linux 核心設計: Scheduler(10): PREEMPT_RT](https://hackmd.io/@sysprog/linux-scheduler-10)〉修改錯字
+修正多處 `preempt` 拼錯。
+
+- 2026/07/06 —〈[並行程式設計: UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/@sysprog/unix-fork-exec)〉修改錯字
+原 `commmand` 改 `command` 。
+
+- 2026/07/06 —〈[並行程式設計: 排程器原理](https://hackmd.io/@sysprog/concurrency-sched)〉修改幾處贅字
+
+
+- 2026/07/07 —〈[你所不知道的 C 語言：函式呼叫篇](https://hackmd.io/@sysprog/c-function)〉修改錯字
+原 `programner` 改 `programmer` 。
+
+- 2026/07/07 —〈[你所不知道的 C 語言：編譯器和最佳化原理篇](https://hackmd.io/@sysprog/c-compiler-optimization)〉修改錯字
+ 原 `或著` 改 `或者`，還有多處 `vender` 改 `vendor`。
+ 
+- 2026/07/08 —〈[並行程式設計: 執行順序](https://hackmd.io/@sysprog/concurrency-ordering)〉修改錯字
+原 `Architechture` 改 `Architecture` 。
+
+- 2026/07/09 —〈[並行程式設計: Atomics 操作](https://hackmd.io/@sysprog/concurrency-atomics)〉修改錯字
+原 `subsriber` 改 `subscriber` 。
 
 ## 作業與隨堂測驗
+評分：5分
+
+- 作業1: [2026q1 Homework1 (warmup)](https://hackmd.io/@hubertwyc/linux2026-warmup)
 - 2026/06/23 — 課堂模擬面試
 
 ## 期末專題
+評分：5分
 
+- [開發紀錄](https://hackmd.io/@sysprog/BJzaBgv0Zl)
 
 ## 與授課教師的互動
+評分：7分
+
 ### 課堂問答
-- 2026/04/14
-- 2026/06/23
+- [2026/04/14](https://hackmd.io/u5zg5DS8RoaKI52ZxLgkQg) — 授課教師詢問 context switch, coroutine 相關問題 
+- [2026/06/23](https://hackmd.io/nDxo5HxWSbqqWrQ9FpJQMg) — 授課教師詢問 NaN, SIGFPE 相關問題
 
 ### 一對一討論
-- 2026/06/24
+- 2026/06/24 — 授課教師詢問 ECC, ld-linux.so 相關問題
 
 ## 所見所聞所感
+評分：10分
 
+### 關於〈[因為自動飲料機而延畢的那一年](https://www.opasschang.com/docs/the-story-of-auto-beverage-machine-1)〉
+這篇我在上學期修 [資訊科技產業專案設計](https://hackmd.io/@sysprog/info2025) 時，就已經閱讀過，那時是以開發小白的角度去看，那時我看到的是關於學長不屈不撓的精神。這學期修了本堂課之後，我覺得對於學長的這段經歷更有帶入感了。
+
+### 關於數學
+閱讀 kxo 作業說明時，我利用數學推導證明說明有誤。內容不難，主要是透過歐幾里得演算法證明。我在考研時就已經將這個演算法的相關證明練得滾瓜爛熟，但過去我學習數學，都是運用在考試上，這是我第一次用數學來佐證我的觀點。這讓我想起 [AI 會取代多少員工？關鍵不在預言，而在企業的約束條件](https://william-yeh.net/post/2026/03/genai-replacement-ratio/)，這是本堂課第 4 周的教材，內容主要是台大葉丙成教授使用數學模型來闡述 AI 會取代多少員工。老師說過：「身為理工人就要用理工人的方式來表達。」這篇文章便是這句話一個很好的示範。
+
+### 關於說話
+進行課堂問答和一對一問答時，授課教師會問一些問題檢視我的學習狀況，我真正去說話的時候發現比想像中還難。我遇到的困難是即便該教材我有學習過，但真正要說明的時候不能很快講到重點，老師說過：「十五秒內要講到重點。」
+
+### 關於課程同儕的觀察
+- 閱讀 [周呈陽](https://wiki.csie.ncku.edu.tw/User/EricccTaiwan) 同學的期末自評，他跟我一樣是研究生，又是非本科，卻照樣能對 Linux Kernel 和其他專案做出大量貢獻，這讓我體會到不是研究生不行，是我不行。因此我需要調整自己，其中我看到可以學習的點是文中提到的：
+    >與其在字面意義『推敲』，不如運用 eBPF 分析
+    
+    在他身上我看到我的問題是在教材的文字鑽研，我用的是以前準備考研的讀書方式，但其實我應該善用課堂提到的工具著手去分析，即便這個需要多花時間，那也比我看完教材後卻沒有注意細節，而且講不出重點還好。
+
+- 閱讀 [李熙堃](https://hackmd.io/@JoshuaLee0321/Joshua_Lee_Self_Intro) 學長的求學過程，以及之前修本堂課的期末自評。我認為自己的經歷和學長相似，都是技職體系出身，而且都是非本科。閱讀完後，我鼓起勇氣加了學長的 Linkedin，並且問了準備找工作的事，和 Linux 的學習方式，很感謝學長非常熱心地為我解答問題。
+
+### 關於自身投入的回顧
+藉由本堂課，我接觸了真實世界的問題，包含排程器和並行程式設計，以前學習排程器不外乎就是把恐龍本的排程策略看熟。直到接觸 Linux 的 CFS 和 EEVDF，我才可以說是第一次看到真的排程器，藉由閱讀 Linux 排程器的演化，我才知道真實世界的考量是什麼。還有並行程式設計，原來真實世界看似可以運行的程式，在現今滿是多核的環境可能都會出錯。看了這些真實世界的問題，加上校友對談時，得知學長們正在進行的專案都遠比這些複雜，我可以了解我們未來要面對的處境有多艱難，但是我願意接受挑戰！我明白自己還有很多不足，包含用數學證明自己的觀點可以更游刃有餘，要練習在 15 秒內講到重點，要繼續進行專題，還有補足所有這堂課的所有內容。寫完這些，我認為用自我評量來評估自己的學習狀況還滿有用，往後持續投入學習應該要每個月或每兩個禮拜寫一次自我評量來回顧學習內容。
 
 ## 分數計算
 
-自我總評量得分為 **2** 分。
+自我總評量得分為 **8** 分。
 
-- GEOMEAN : $\sqrt[5]{1*1*1*1*1} = 1$  
-- 方案 B：$1+\lfloor 1 \rfloor=2$
+- GEOMEAN : $\sqrt[5]{10*5*5*7*10} = 7.05..$  
+- 方案 B：$1+\lfloor 7.05.. \rfloor=8$
