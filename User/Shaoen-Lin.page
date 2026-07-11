@@ -1,0 +1,106 @@
+# 2026 年 Linux 核心設計課程自我評量
+
+>* 林劭恩
+>* Github：[Shaoen-Lin](https://github.com/Shaoen-Lin?tab=repositories)
+
+## 成果發表與貢獻
+
+9 分
+
+* 在進行期末專題 [vcam](https://github.com/sysprog21/vcam) 的過程中，我發現潛在原始碼存在一些問題後，會先設計可重現的實驗來確認問題所在，將修正整理為 PR，並依照 review 意見調整 commit message、coding style 和測試說明。(包含 4 件 PR 成功 merged，另有 1 件 PR 正在 pending review。)
+
+* [vcam](https://github.com/sysprog21/vcam) patch：
+    * 2026/06/02: [Fix read length handling](https://github.com/sysprog21/vcam/pull/45)
+        * 修正 `control_read()` 讀取長度與 file offset 處理不當的問題，改用 `simple_read_from_buffer()` 確保讀取安全且能正確到達 EOF。
+    * 2026/06/02: [Fix vcam_device type in memset](https://github.com/sysprog21/vcam/pull/47/changes)
+        * 修正 `memset()` 使用錯誤型別的問題，使記憶體配置語意一致。
+    * 2026/06/05: [Fix device removal locking](https://github.com/sysprog21/vcam/pull/46)
+        * 修正裝置移除流程中的陣列搬移條件，將迴圈條件改為 `for (i = dev_spec->idx; i + 1 < (ctldev->vcam_device_count); i++)`，避免在搬移過程中發生 out-of-bounds access。
+    * 2026/06/05: [Fix device removal locking](https://github.com/sysprog21/vcam/pull/46)
+        * 修正裝置移除流程中的 locking 問題，將 index 檢查與 device pointer 存取納入同一個 critical section，避免 race condition。
+    * 2026/07/XX: [Improve device handling robustness](https://github.com/sysprog21/vcam/pull/56)（pending）
+        * 修正裝置處理流程中同步機制與資源生命週期管理不當的問題，避免在多執行緒情境下出現 race condition 或存取已失效的 device pointer。
+
+## 作業與隨堂測驗
+
+7 分
+
+* 作業：
+    * [2026q1 Homework1 (warmup)](https://hackmd.io/@Shaoen/linux2026-warmup)
+    * [2026q1 Homework2 (stdc)](https://hackmd.io/@Shaoen/linux2026-stdc)
+    * [2026q1 Homework3 (basics)](https://hackmd.io/@Shaoen/linux2026-basics)
+    * [06-09 Linux Kernels 模擬面試檢討](https://hackmd.io/@Shaoen/SyuRzGpWfg)
+* 作業重點回顧：
+    * 從 C 語言規格書理解「未定義行為」
+        * 在 [Homework1](https://hackmd.io/@Shaoen/linux2026-warmup#Q280) 與 [Homework2](https://hackmd.io/@Shaoen/linux2026-stdc#Q286) 中，我分析指標操作（如 `struct ListNode **indir`）與 object lifetime，學習到為何某些操作在標準中屬於 undefined behavior。延伸到 pointer provenance 與 strict aliasing，理解了編譯器如何根據指標的合法與型別互斥假設來判定記憶體相依性。
+    * 設計實驗分析效能
+        * 在 [Homework2](https://hackmd.io/@Shaoen/linux2026-stdc#%E6%80%9D%E7%B4%A2%E3%80%88%E5%88%86%E6%9E%90%E3%80%8C%E5%BF%AB%E6%85%A2%E6%8C%87%E6%A8%99%E3%80%8D%E3%80%89) 中，我設計實驗比較不同 linked list 演算法，並使用 `perf` 觀察 cache 與執行時間差異，我學到效能分析不能只看 Big-O，還需要考慮記憶體存取與硬體行為。
+    * 解構 Linux 核心機制與驅動框架
+        * 在 [Homework2](https://hackmd.io/@Shaoen/linux2026-stdc#Q3) 中，我透過繪製記憶體佈局圖與研究編譯器內建函式，解釋 `container_of` 巨集的指標算術與型別檢查。
+    * 理解控制流程
+        * 在 [Homework3](https://hackmd.io/@Shaoen/linux2026-basics#%E7%B4%B0%E8%AE%80%E3%80%88%E4%B8%A6%E8%A1%8C%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88-%E6%8E%92%E7%A8%8B%E5%99%A8%E5%8E%9F%E7%90%86%E3%80%89) 中，使用規格書與實驗比較 `setjmp()` / `longjmp()` 與 `switch_to()`，理解 context switch 的實際需求。
+
+
+## 期末專題
+
+8 分
+
+* [Linux 核心設計專題: 改進 vcam](https://hackmd.io/@sysprog/SkpVnyQkze)
+    * 本次期末專題以 vcam 為主題，目標是改善既有 virtual camera driver 原本依賴 fbdev 的輸入路徑逐步轉向符合現代 Linux 圖形架構的 DRM/GEM buffer。
+* 專題重點整理如下：
+    * [建立 DRM 與 vcam 背景知識](https://hackmd.io/@sysprog/SkpVnyQkze#01-%E5%BB%BA%E7%AB%8B%E8%83%8C%E6%99%AF%E7%9F%A5%E8%AD%98--DRM)
+        * 整理 DRM、libdrm、KMS 與 GEM 的角色，理解 DRM 是 Linux 中管理 GPU 與 buffer 的核心子系統。此專題最終聚焦於使用 DRM GEM dumb buffer 作為輸入來源，而非實作 KMS 顯示管線。
+    * [分析 vcam 原本的資料流](https://hackmd.io/@sysprog/SkpVnyQkze#02-%E5%BB%BA%E7%AB%8B%E8%83%8C%E6%99%AF%E7%9F%A5%E8%AD%98--vcam)
+        * 整理 module 載入流程與 `/dev/vcamctl`、`/dev/videoX` 的建立，並分析 character device 與 V4L2 device 的初始化流程。也說明 framebuffer input queue 到 V4L2 output queue 的資料傳遞機制。
+    * [使用 kmemleak 與 bpf-memleak 檢查記憶體問題](https://hackmd.io/_zdFuvtETAKq9l56aUcS8A?view#2-Memory-Detection)
+        * 使用 kmemleak 檢查 kernel memory leak，且使用 `bpf-memleak` 進行 allocation / free 行為追蹤，並進行雙重驗證。
+    * [新增 DRM/GEM 輸入路徑](https://hackmd.io/_zdFuvtETAKq9l56aUcS8A?view#3-%E5%8A%A0%E5%85%A5-GEM-%E5%8F%96%E4%BB%A3-framebuffer)
+        * 在原本 vcam 依賴 framebuffer 作為輸入來源的架構上，新增 DRM/GEM-based input path，讓 userspace 可以透過 GEM dumb buffer 與 `mmap()` 寫入影像資料，再由 kernel 將該 buffer 接到既有的 V4L2 output 流程。
+        * 這個修改包含建立 virtual DRM device、提供提交 buffer 的 ioctl、將使用者寫入的影像格式轉換後放入 vcam 的 input queue，以及調整 submitter thread 的判斷邏輯，使 vcam 不再只能依賴 fbdev 輸入。同時也將 framebuffer 相關功能改成 optional，讓原本的 fbdev path 可以保留，但也能選擇使用新的 DRM/GEM path，降低修改對既有功能的影響。
+    * [完成功能與回歸測試](https://hackmd.io/_zdFuvtETAKq9l56aUcS8A?view#4-Final-Validation)
+        * 編譯 kernel module 與 userspace 工具。
+        * 使用 v4l2-compliance、VLC 與自製測試程式驗證功能。
+        * 進行 kmemleak、bpf-memleak 與壓力測試。
+* 下面是觀摩其他同學的專題：
+    * [Linux 核心設計專題: 以 Weak AVL Tree 取代 rbtree ](https://hackmd.io/9kDa7kBYQ_a8N2Gc9ALUZg?view)
+    * [Linux 核心設計專題: 改進 vcam](https://hackmd.io/@sysprog/Sk3hOzw0Ze)
+    * [Linux 核心設計專題: 圖形函式庫的效能改進](https://hackmd.io/@sysprog/HJwI6OgkGe)
+    * [Linux 核心設計專題: 數值分析案例探討](https://hackmd.io/@sysprog/rkP0B-Offl)
+    * [Linux 核心設計專題: 雜湊函數之數學基礎與資訊安全議題](https://hackmd.io/rNkcgtZ1SEaHLYn2JpaDkg?both)
+
+## 與授課教師的互動
+
+8 分
+
+* 課堂問答：
+    * [2026/3/10 課堂問答](https://hackmd.io/p87SQ6WpT-ehlVhXglXk9w)
+        * 討論 `void *` 的設計背景與語意，以及 GCC extension 的行為。我補充了 C99 規格與實驗，說明 null pointer 存取會造成 segmentation fault。
+    * [2026/3/17 課堂問答](https://hackmd.io/mGN8I_tJQcW3A92ZIbYbHw)
+        * 討論 JPEG 壓縮中的 DCT 與量化，說明高壓縮率下高頻資訊被捨棄，導致區塊化與模糊。
+    * [2026/4/14 課堂問答](https://hackmd.io/gdgKXMGYRdaNUgsEBKaypg)
+        * 向講者詢問有關職涯選擇的議題。
+    * [2026/6/16 課堂模擬面試](https://hackmd.io/@Shaoen/SyuRzGpWfg)
+* 1 對 1 討論：
+    * 2026/5/6：
+        * 這次討論原本預計聚焦在期末專題主題，但由於授課教師尚未掌握我在課堂中的學習狀況，因此一開始採取模擬面試的方式，要求我說明並實作 $e^{x-1}$ 的函式。
+        * 在討論過程中，我向老師表達對 vcam 專題的興趣。老師提醒我這次討論後要回去閱讀前幾年學長姐的 vcam 專題，找出其中寫錯、未完成或仍可改善的地方。
+        * 老師也要求我實際執行 vcam，找出可以協助分析問題的工具，並記錄專題中涉及數學模型的部分。
+    * 2026/5/14：
+        * 這次討論延續上次的 `expm1f(float x)`。我向老師展示一週後完成的實作，老師指出後續重點不應只放在「函式能否算出結果」，而應進一步研究如何比較自己的函式和標準函式庫在精度上的差異，並思考誤差來源。
+        * 接著，我和老師討論期末專題。我提到在閱讀過去的 vcam 專題時，觀察到可能存在 memory leak 問題，並規劃使用 kmemleak 進行調查。老師進一步建議我加入 bpf-memleak 作為第二種驗證工具。此外，也建議我將 framebuffer 改成 DRM 實作，作為本次專題的主要方向之一。
+
+## 所見所聞所感
+
+8 分。
+
+* 這學期修 Linux 核心設計，一開始其實沒有很適應。原本以為上過計算機組織，對硬體底層機制會比較熟，但實際上課後才發現自己的學習方法是有問題的。以前遇到不會的東西，我比較常用「先讓程式跑起來」的方式來學習，但這門課很快讓我發現，能跑不代表真的懂。像 `void *`、`futex`、`expm1f(float x)` 等觀念，真的到跟老師上課一對一討論時，就會顯得原形畢露。
+
+* 老師上課也常講一句話：「要做大事，不然就是 nothing。」一開始聽到覺得有點壓力，但後來慢慢理解，這門課其實是在逼我們不要只停在表面，而是要真的把一件事情做完整、做透徹，並且要「誠實面對自己」。
+
+* 作業的部分也是類似的感覺。Homework 1～3 雖然是不同主題，但其實老師都在訓練同學同一件事：不要只看表面，而是要回到規格書、權威資料，並且用實驗證明。像 Homework 2，我用 perf stat 比較不同 linked list traversal 方法的效能，並且刻意打亂節點順序，避免 `malloc()` 造成過好的 spatial locality，讓實驗更接近實際 pointer chasing 的情況。結果發現，即使兩種方法在 instruction count 和 cache miss rate 上差異不大，實際執行時間還是不同，這也讓我開始意識到，效能分析不能只看 Big-O，也要考慮 cache、CPU pipeline 和記憶體配置方式。
+
+* 期末專題則是改進 vcam。其中一項任務是將原本的 fbdev 輸入改為 DRM/GEM，所以在實作之前，我花了較多時間把 control device、V4L2 device 和 input queue 的流程整理清楚，才知道可以從哪裡修改。雖然目前只做了小範圍的修改，但已經可以把新的輸入接到原本的 V4L2 流程，並通過測試。另外，在了解期末專題背景時做 code review 的過程中，讓我在 vcam 專題也提了一些 PR，也讓我比較理解開源貢獻。雖然主要是修正小問題和整理程式碼，但過程中學習到需要把問題描述清楚，並寫好 commit message，讓其他人可以理解修改的內容與重要性。這也再次印證了老師要我們把事情做深入，而不是只停留在完成表面的要求。
+
+## 分數計算：
+* $GEOMEAN = (8*8*8*8*8)^{1/5} = 8$
+* 方案B：$1+floor(GEOMEAN)=1+8=9$
