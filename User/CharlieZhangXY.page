@@ -1,1 +1,117 @@
-# CharlieZhangXY（張翔義）
+---
+title: Charlie(張翔義)
+categories: User
+...
+# 簡介
+* 國立成功大學 資訊工程學所 116 級 
+* GitHub: [`CharlieZhangXY`](https://github.com/CharlieZhangXY)
+
+# 2026 Linux 核心設計/實作 春季班 自我評量
+
+## 成果發表和貢獻 
+8 分。
+
+* 第 19 週教材 : [Rust for Linux 研究](https://hackmd.io/4X3MKltPRaOoBwMMf0QtLg?view)
+    * 分配記憶體間 => 分配記憶體空間
+    * 如果程式對於即時 (real time) 有所要求 => real-time
+    * 實做 => 實作
+    * 如果在 Rust 中進行以下行為，都應需要使用 unsafe 進行標注 => 標註
+    * 如 libc 或是一些系統函式庫等等，用於函式庫與程式語言之間的鏈接 => 連結
+* 第 17 週教材 : [Linux 核心設計: PREEMPT_RT 作為邁向硬即時作業系統的機制](https://hackmd.io/lFkcVOPeQwip6Jr4X_IKAQ?view)
+    * Siemens AGapplications => Siemens AG applications
+    * resource (CPU) servation mechanism => reservation
+    * under discussing => under discussion
+* 第 17 週教材 : [Linux 核心搶佔](https://hackmd.io/y0Dm-euEQDWNlrxlMgW0ng?both)
+    * 只要先看出「發生喚醒發生，但未必立刻在核心內搶佔」 => 喚醒事件發生
+* 第 15 週教材 : [Linux 核心網路：第一章 Above protocol stack (socket layer)](https://hackmd.io/FxrqqncFQ7OlYfaPBrsWnQ?view)
+    * 詳細的協定總類請參閱 socket(2)。 => 種類
+    * 核心的系統呼叫層有對應的函示負責處理 => 函式
+    * 為了與達成與目標行程或主機... => 為了達成與目標行程或主機...
+    * 物件導向的概念在大量出現在網路程式... => 物件導向的概念大量出現在...
+    * `int	       (*listen)    (struct socket *sock, int len);
+                                    struct socket *sock2);` => `int	       (*listen)    (struct socket *sock, int len, 
+                                    struct socket *sock2);`
+
+以上貢獻都是跟用字遣詞、英語文法、病句的修正以及部分程式碼錯誤。由於沒有程式碼邏輯或行為嚴重錯誤的修正，因此我給自己 8 分。
+
+## 作業/隨堂測驗 
+7 分。
+
+* [2026q1 Homework1 (warmup)](https://hackmd.io/@7U_BzX7mR8m29dYrWPd5Mw/linux2026-warmup)
+* [2026q1 Homework2 (stdc)](https://hackmd.io/@7U_BzX7mR8m29dYrWPd5Mw/linux2026-stdc)
+* [2026q1 Homework3 (basics)](https://hackmd.io/@7U_BzX7mR8m29dYrWPd5Mw/linux2026-basics)
+
+在寫作業時，我發現並重新學習到了以前沒有深入想過的知識和問題，有些以前 OS、資料結構和演算法的課程所提到的概念都又再次出現。並且不像以往只是草草帶過課本的觀念，作業中有許多案例可以進行說明並且以 Linux 原始碼作為佐證，讓我可以注意到過往未曾發現的細節和更深刻的認識到為什麼開發者要使用這種演算法。
+
+在做作業的過程中我需要從規格書、原始碼、官方文件等來源找資料，並且動手計算數學證明以推導背後的原理並找出應用場景以實現它。做作業也使我學習到資料來源的重要性，相較於網路上部落格或其他教學影片，直接從官方文件下手更能從根本原因去理解。
+
+隨堂測驗有 2 次缺席，課堂上即時的考試能讓我感受面試時突然被要求要我現場讀文本並在有限時間內作回答，根據題目上下文與關鍵字能讓我盡可能的推理出答案。我在作業/隨堂測驗部分給自己 7 分。
+
+
+## 期末專題
+7 分。
+
+[Linux 核心設計: 定點數、低位碎片與誤差補償](https://hackmd.io/@sysprog/HJ_dStrZGx)
+
+
+本專題從期初測驗中的補償問題出發，分析 Linux 核心在 PELT、timekeeping，以及 IEEE 754 / Kahan summation 中如何處理「有限精度下低位資訊遺失」的問題。這些看似分散的題目有一個共同的分析框架：當系統使用右移、整數除法、定點數或浮點捨入時，若每次都直接丟掉低位碎片，誤差會在高頻事件下形成系統性累積；而 Linux 核心中的多個設計，正是透過保存這些碎片來維持長期穩定性。
+
+我對照 cpubook、Linux 核心原始碼、Linux 核心文件、GCC/glibc 文件去理解分析設計原因，並撰寫 userspace C 程式模擬碎片補償。在 100 萬次非 1024ns 整數倍的事件中，實驗顯示若直接丟掉碎片，period 計數會明顯低估；若只保存 `period_contrib`，仍然會因為 `delta >>= 10` 時丟掉 sub-1024ns 碎片而低估；只有同時保留 ns 層級與 PELT period 層級的碎片，結果才會接近理想值。
+
+### 觀摩同儕專題並提問 (課程要求至少 5 項)：
+
+* [V4L2 Pipeline](https://hackmd.io/@sysprog/SkEydfekGx)：你用 `/dev/vpipe-meta` 記錄每一張 frame 的時間資訊，但它的 ring buffer 只有 256 筆。想請問如果測試時 frame 太多、reader 來不及讀，導致舊 metadata 被覆蓋，這次 benchmark 會怎麼處理？會直接判定失敗，還是只在結果裡標記？(如果真的發生 `VPIPE_META_F_OVERRUN`，benchmark 要怎麼判定這次結果)
+* [qspinlock 量化分析](https://hackmd.io/@sysprog/SyC5lS3gMg)：你的 userspace benchmark 有統計整體吞吐量，但 ticket lock 和 MCS lock 都強調公平性。想請問你有沒有觀察每個 thread 各自完成的 `local_ops 數量？如果某些核心完成次數明顯比較多或比較少，可能會影響你對吞吐量結果的解讀。
+* [改進 vwifi](https://hackmd.io/@sysprog/Bk3TgGw0Zx)：你目前支援用 `iw dev <iface> set bitrates ht-mcs-2.4 ...` 設定 STA 的 MCS，並讓 station dump 顯示對應 bitrate。想請問這個設定在 STA disconnect 後重新 connect 時會保留，還是會回到預設的 MCS 31？
+* [改進 vcam](https://hackmd.io/@sysprog/Sk3hOzw0Ze)：你在 `S_FMT` 中加入 `vb2_is_busy()`，避免 buffer 已配置後改變格式，這可以防止 `sizeimage` 與既有 buffer 長度不一致。想請問你是否有測試過 `STREAMOFF` 之後、但尚未用 `REQBUFS count=0` 釋放 buffer 時，再呼叫 `S_FMT` 的行為？這種情況下 driver 是仍然回傳 `EBUSY`，還是允許切換格式？
+* [縮減系統啟動時間和客製化](https://hackmd.io/@sysprog/ByXHinRAZe)：你最後移除了許多 init scripts，例如 dropbear、syslogd、klogd、crond 等，來縮短 AP 啟動時間。不過任務簡述中也提到系統需具備基本除錯與管理工具，例如 dropbear/ssh。想請問最後版本是否還保留足夠的遠端除錯能力？ boot-time 改善和可維護性之間的 trade-off 你會如何做評估和選擇？
+
+### 回應提問：
+7 月 8 日中午前已回覆全部 3 則提問 (公開於 HackMD 留言串)，包含`Bigtooth123`對使用硬體改良軟體補償的問題、`andy20040`對 Kahan 補償降低指令平行化的思考、`Krixi0828` 對 `period_contrib` 和 `last_update_time` 功能相似處理層級不同的疑慮。
+
+
+## 與授課教師的互動 
+7 分。
+
+* 4/21 [課堂討論](https://hackmd.io/gdgKXMGYRdaNUgsEBKaypg#%E5%95%8F%E7%AD%94)：像學長請教在碩士到實際工作前這個階段所應該投資的能力、目前 Linux 在內嵌 AI 模型方面的進佔與阻礙
+* 6/2 課後討論 : 討論專題，針對測驗的延伸問題，對照教材、規格書與原始碼，提出問題並進行推論分析與實驗。
+* 6/23 [模擬面試]( https://drive.google.com/file/d/1hElsEiBHD9nTSLGV_-WaCtIwIsfHxh9k/view?usp=drive_link):與助教討論 ，PELT 如何估算 CPU Utilization / Runnable Load / Load Average、Workqueue 的設計考量與排程器整合、False Sharing 的產生原因與問題，有部分答不出來，有在後續檢討以及追蹤(回信的方式)  
+
+## 所見所聞所感 
+9 分。
+
+* 關於〈因為自動飲料機而延畢的那一年〉
+
+    讀過學長的經歷與心路歷程後，最令我感到共鳴的是自動落杯器那段，明明設計看起來沒有很複雜，結果杯子就是掉不下去；原因不是程式邏輯錯，而是 3D 列印有公差，幾毫米的差距就足以讓整個機構失效。「細節不是裝飾」，自動飲料機的幾毫米公差會讓杯子掉不下去；PELT 的幾個低位時間碎片會讓 load tracking 長期偏差；timekeeping 的 sub-ns fraction 會影響長期時間精度；浮點數的 rounding 會讓結合律失效。這些「小誤差」若是沒有實際去算數學，很難讓人理解到高頻狀態下累積所能造成的錯誤。
+
+* 關於數學與謹慎用詞
+
+    在學期初老師於課堂進行問答時，總是要求我們給出精確的回答，例如：「複雜度多少？」、「Mergesort 實際 merge 幾次？」、「很大是多大？」等等，並時刻提醒我們必須具備理工人的思考方式，不應該使用缺乏量化的模糊形容詞。此外，透過教材[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)中諸多詞語的來源講解，以及課後與老師討論時被提點並修正的錯誤用語，加上[詞彙對照表](https://hackmd.io/@l10n-tw/glossaries)的輔助，讓我得以重新校正自己的專業詞彙，養成謹慎用詞的習慣。
+
+
+
+* 關於誠實面對自己
+    
+    這堂課讓我深刻體認到，身為理工學生，我仍有許多基本素養尚待加強。不論是流暢精簡卻有效的溝通能力、有條不紊的工作安排，亦或是舉一反三的靈活思維，我都還有很大的進步空間。老師曾提到，未來在職場上，相較於單純的寫程式能力，與同事之間的溝通交流才是團隊合作中最核心的部分。
+
+    另外，在數學推導與量化分析的能力上，例如學期初對不同 Sort 演算法的分析與浮點數的計算等，也讓我明白身為資訊人絕不能僅憑感覺行事，而是必須以理論基礎與數學證明來佐證。面對不清楚的功能設計，也必須養成從規格書或程式原始碼開始著手研讀的紮實態度。
+
+	
+* 關於自身投入的回顧
+
+    學期 18 週中，每週平均投入 10 小時。與授課教師一對一課後討論 1 次、課堂問答 2 次並完成後續議題追蹤、隨堂測驗 10 次，以及期末專題「分析定點數、低位碎片與誤差補償」。
+
+## 分數計算
+各項自評分數如下:
+1. 成果發表與貢獻: 8 分
+2. 作業與隨堂測驗: 7 分
+3. 期末專題: 7 分
+4. 與授課教師的互動: 7 分
+5. 所見所聞所感: 9 分
+
+幾何平均 (GEOMEAN) 計算
+$$GEOMEAN=(8×7×9×7×7)^{1/5}=(24696)^{1/5}=7.560061410$$
+
+方案選擇 - 方案 B: $1+floor(GEOMEAN)=1+7=8$
+
+自我評量總分: 8 / 10
