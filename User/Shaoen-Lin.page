@@ -5,7 +5,7 @@
 
 ## 成果發表與貢獻
 
-9 分
+8 分
 
 * 在進行期末專題 [vcam](https://github.com/sysprog21/vcam) 的過程中，我發現潛在原始碼存在一些問題後，會先設計可重現的實驗來確認問題所在，將修正整理為 PR，並依照 review 意見調整 commit message、coding style 和測試說明。(包含 4 件 PR 成功 merged，另有 1 件 PR 正在 pending review。)
 
@@ -23,7 +23,7 @@
 
 ## 作業與隨堂測驗
 
-7 分
+8 分
 
 * 作業：
     * [2026q1 Homework1 (warmup)](https://hackmd.io/@Shaoen/linux2026-warmup)
