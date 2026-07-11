@@ -1,23 +1,138 @@
+# 張芳語
 
-# 4. 與授課教師的互動
+## 簡介
 
-10分
+* 國立成功大學 資訊工程學系 碩士班
+* GitHub: https://github.com/Patriciaath999
 
-* **一對一討論次數**
+# 2026 年 Linux 核心設計課程自我評量
 
-  * 3次
-  * 日期：5/5 19:30~20:00 [https://hackmd.io/@sysprog/S1v3bpa6Wg?stext=2468%3A18%3A0%3A1783269731%3AwlRrD9] 裡的 perf state perf record,(4/22 16:30~17:00) [https://hackmd.io/@lp1vJCVPRgi2AW4c2c7QQw/0422_final_project_meeting_note/edit], 5/13 17:00~17:30[https://hackmd.io/@sysprog/S1v3bpa6Wg?stext=2468%3A18%3A0%3A1783269731%3AwlRrD9] 裡的記憶體研究文獻整理
+---
 
- 1.第一次開會確認資料集跟可行性，回去做了小型的 thp 實驗測試。
- 2.第二次開會說要建立可重現性的實驗，我申請了器材，會後回去找 minimap2 相關的記憶體研究文獻
- 3.第三次開會講實驗環境的測試與建置。
- 4. 5/25 下課找老師討論對 baseline 的 perf state, perf record 測試結果，回去新增腳本增加測量樣本：cycles, instructions. stall_backend, stall_frontend, dTLB-loads, dTLB-load-misses, context-switches, cpu-migrations, page-faults, minor-faults, major-faults
- 5. 6/9 下課去找老師，燒說要考慮從 I/O 層優化，順序存取，或使用 mmap ，會後回去研究，但 minimap2 原版沒有使用 mmap ，讀取方式不一樣我沒有採用 MADV_SEQUENTIAL 改用 posix_fadvise(POSIX_FADV_SEQUENTIAL)。
- 6. 6/23 下課找老師討論如何詳細測量 L2D refill 的變化，還有 要做 THP 實驗對照組，已都重新實驗測量，在期末專題更新完成。
+## 成果發表和貢獻
+
+_3_ 分。
+
+本項我給自己 _3_ 分。
+
+  * 2026/07/07：
+    * 頁面：[運用 Perf 分析程式效能並改善](https://hackmd.io/@sysprog/linux-perf?stext=10858%3A7%3A0%3A1783354258%3AxFiiv7)
+    * 修正：AArch64 的指令書連結好像給錯了，應該是：[Arm® Architecture Reference Manual for A-profile architecture](https://developer.arm.com/documentation/ddi0487/mb/-Part-A-Arm-Architecture-Introduction-and-Overview/-Chapter-A1-Introduction-to-the-Arm-Architecture/-A1-2-Architecture-profiles) 裡的 Chapter D13 The Performance Monitors Extension 。
+
+  * 2026/_07_/_07_：
+    * [補充： ARM Linux perf：PMU 事件、常用指令與量測環境速查](https://hackmd.io/@lp1vJCVPRgi2AW4c2c7QQw/H1je7XK7fx)
+    * 內容：我在做期末專題所使用的機器架構不同，所以我寫了方法讓大家可以跨平台查詢。
+
+  * 2026/_06_/_27_：
+    * [關於 I/O 方向的論述  posix_fadvise 而非 mmap + madvise ](https://hackmd.io/@sysprog/S1v3bpa6Wg?stext=36021%3A47%3A0%3A1783467397%3A_O6k6e)
+
+
+
+---
+
+## 作業 / 隨堂測驗
+
+_7_ 分。
+
+本項我給自己 _7_ 分。
+
+* 作業：
+    雖然沒有做完作業，但有寫的部分都有詳細書寫，並查詢資料附上連結。
+
+  [2026q1 Homework1 (warmup)](https://hackmd.io/@lp1vJCVPRgi2AW4c2c7QQw/linux2026-warmup)
+  [2026q1 Homework2 (stdc)](https://hackmd.io/@lp1vJCVPRgi2AW4c2c7QQw/2026q1_Homework2_stdc)
+  [2026q1 Homework2 (basics)](https://hackmd.io/@lp1vJCVPRgi2AW4c2c7QQw/linux2026-basics)
+  
+  
+* 隨堂測驗:
+    我在課堂上的小考都幾乎全對，也有學習到知識，例如： atimoc 操作。
+    
+---
+
+## 期末專題
+
+*10* 分。
+
+* 題目：
+
+  * [Linux Transparent Huge Pages 分析與 minimap2 記憶體階層最佳化](https://hackmd.io/s/undefined)
+  * GitHub: https://github.com/Patriciaath999/Memory-test
+
+
+本項我給自己 **10** 分。
+
+專題完整包含問題定位、baseline profiling、source-level 實作、perf counter 數據、ablation study、THP / HugeTLB pool 對照，以及 fadvise、prefetch、index pool 等負面結果。專題不只得到最終加速結果，也能說明每個改動對 cache-side、TLB-side 或 I/O-side 的實際影響。
+
+專題中建立一套從成熟且高效能的程式中定位 memory-bound bottleneck 的方法。流程包含建立穩定 baseline、使用 `perf` 找出 cache/TLB hotspot、根據資料結構 access pattern 設計對應優化，再透過 ablation study 與 full pipeline 測試驗證假說。
+
+最終結果顯示，minimap2 的效能問題不能只靠單一 THP 開關解決，而需要拆解 cache-side、TLB-side、I/O-side 與資料結構 locality 的不同來源，才能設計出有效且可解釋的系統最佳化。
+
+**交流提問**
+[Linux 核心設計專題: 以 Weak AVL Tree 取代 rbtree](
+https://hackmd.io/@sysprog/H14PtSe1Gl)
+[Linux 核心設計專題: XDP 為基礎的 TCP/IP 堆疊](https://hackmd.io/@sysprog/BJjs2rgkfg)
+[Linux 專題: 效能分析和改進案例探討](https://hackmd.io/@sysprog/S1SVY4nxzl)
+[核心搶佔模型與 PREEMPT_RT 對即時延遲的影響](https://hackmd.io/@sysprog/HkFFx5Nkzx)
+[Linux 核心設計專題: 改進 vcam](https://hackmd.io/@sysprog/Sk3hOzw0Ze)
+
+
+
+## 與授課教師的互動
+
+**10 分。**
+
+本項我給自己 **10 分**。原因是：本學期有 3 次一對一討論，並多次在課後針對期末專題請教老師。每次討論後，我都有回去補實驗、改腳本或更新報告內容。
+
+ **一對一討論**
+
+  * 3 次線上會議 + 3 次下課實體討論
+
+  * [5/5 19:30~20:00](https://hackmd.io/@sysprog/S1v3bpa6Wg?stext=2468%3A18%3A0%3A1783269731%3AwlRrD9) 專題裡的 perf state perf  record，會後我回去設計可重現性的實驗，我申請了器材，會後回去找 minimap2 相關的記憶體研究文獻。
+  * [4/22 16:30~17:00](https://hackmd.io/@lp1vJCVPRgi2AW4c2c7QQw/0422_final_project_meeting_note/edit) 我有寫會後筆記，並確認資料集跟可行性，回去做了小型的 thp 實驗測試。
+  * [5/13 17:00~17:30](https://hackmd.io/@sysprog/S1v3bpa6Wg?stext=2468%3A18%3A0%3A1783269731%3AwlRrD9) 專題報告裡的記憶體研究文獻整理，講實驗環境的測試與建置。
+  * 5/25 下課找老師討論對 baseline 的 perf state, perf record 測試結果，回去新增腳本增加測量樣本：cycles, instructions. stall_backend, stall_frontend, dTLB-loads, dTLB-load-misses, context-switches, cpu-migrations, page-faults, minor-faults, major-faults
+  * 6/9 下課去找老師，燒說要考慮從 I/O 層優化，順序存取，或使用 mmap ，會後回去研究，但 minimap2 原版沒有使用 mmap ，讀取方式不一樣我沒有採用 MADV_SEQUENTIAL 改用 posix_fadvise(POSIX_FADV_SEQUENTIAL)。
+  * 6/23 下課找老師討論如何詳細測量 L2D refill 的變化，還有 要做 THP 實驗對照組，已都重新實驗測量，在期末專題更新完成。
+
 
 
 * **課堂問答次數**
 
-  * 哪一週：第 3 周  [https://hackmd.io/@sysprog/H1_QqYmtbl] 跟第 18 周(模擬面試) 用寄信的。
+  * 第 3 周  [https://hackmd.io/@sysprog/H1_QqYmtbl] 
+  * 第 18 周(模擬面試) 用寄信的
+
+
+
+## 所見所聞所感
+
+_10_ 分。
+
+本項我給自己 _10_ 分。原因是：
+
+這是我第一次正式修習系統相關的課程。雖然過去在閱讀作業系統相關書籍時，就對這個領域產生濃厚興趣，但一直缺乏實際動手驗證與分析的機會。因此這門課讓我第一次真正接觸到系統研究與效能分析的方法。
+〈因為自動飲料機而延畢的那一年〉這篇文章引起我共鳴的地方是：原本以為只要確認研究主題後，接下來就是按照預期逐步完成設計，但實際上在深入研究後，往往會發現問題與最初想像的完全不同。真正重要的不是一開始的假設，而是當結果與預期不一致時，我們要如何透過實驗、數據與分析去驗證原因，進而提出合理的解釋與解決方案。這種從假設到驗證的過程，也讓我理解到工程工作並不是單純地撰寫程式，而是不斷地提出問題、驗證問題、修正假設，再重新驗證。
+
+另一方面，課程中的閱讀 [<解讀計算機編碼>](https://hackmd.io/@sysprog/binary-representation) 與 [<形式化驗證 (Formal Verification) > ](https://hackmd.io/@sysprog/formal-verification) 也帶給我很大的啟發。過去我一直認為程式設計主要依賴經驗與測試，但這門課讓我了解到，許多系統設計其實可以透過數學方法來描述與驗證。原本看似抽象的語言、狀態轉換與系統行為，都能夠轉換成數學模型進行推導與證明。這讓我開始理解，良好的系統設計不只是能夠運作而已，更重要的是能夠被驗證、被重現，並且具有穩健性。其中，如何設計一個簡潔而清楚的 State Machine，也讓我對系統架構的思考有了新的認識。
+
+此外，課程中的現場問答環節也讓我留下相當深刻的印象。每次上課時，老師都會即時提出問題並與同學互動，雖然這樣的方式帶來不小的壓力，但也迫使我在短時間內快速查詢相關資料、理解問題背後的原理，並試著跟上課堂討論的節奏。很多時候，一個原本完全不了解的主題，透過即時查詢與思考，很快就能建立基本認識。雖然過程緊張，但也讓我在短時間內接觸到大量知識，學習效率遠超過單純聽課。
+
+隨堂小考同樣是一個很有挑戰性的環節。許多題目需要在有限時間內閱讀陌生程式碼、理解設計邏輯，甚至進行 Code Review。對我而言，這其實是課程中最痛苦的部分之一，因為我必須在極短時間內分析自己不熟悉的程式，並找出其中的重要細節。然而回頭來看，也正是這種高強度的訓練讓我進步得非常快。我開始能夠更快掌握程式架構、理解設計意圖，也逐漸培養出閱讀大型程式碼的能力。
+
+另外，班上許多同學都擁有非常優秀的技術實力。無論是在底層系統優化、功能設計、效能分析，或是跨平台開發等方面，都讓我看見自己與優秀工程師之間還有不小的差距。比較可惜的是，這次專題題目沒能達成這個目標，下學期修課的時候我希望可以選到更底層實做的題目。
+
+此外，這門課也讓我接觸到 Linux 效能分析工具 perf。過去撰寫程式時，我大多只關心功能是否正確，很少思考程式在執行期間到底發生了什麼事情。透過 perf 的學習，我開始理解多執行緒程式的效能瓶頸、CPU 資源消耗、快取行為以及執行路徑分析。現在我知道在撰寫程式或腳本時，不只是追求功能完成，也要考量程式是否容易測量、是否容易觀察，以及是否能夠透過數據證明自己的設計是有效的。
+
+同時，我也意識到自己目前仍有許多不足之處。例如 C 語言中的 callback、function pointer 物件導向的寫法等觀念仍然不夠熟悉，而在課程中也看見許多以前從未接觸過的系統設計技巧與方法。這些知識讓我了解自己還有很大的學習空間，也激發我想要持續深入研究系統領域的動機。
+
+總結來說，這門課不僅教會我工具或技術本身，更重要的是讓我學會工程設計與驗證的思維方式。我開始理解系統研究不只是「讓程式跑起來」，而是透過觀察、測量、分析與驗證，建立對系統行為的理解。未來我希望能夠持續學習作業系統、效能分析以及正規化驗證等相關知識，培養用數學與工程方法理解系統的能力，並將這些觀念應用在實際的軟體開發與系統設計之中。
 
 ---
+
+## 自我評量 (1 ~ 10)：
+
+方案 B :
+
+$$
+1+GEOMEAN = 1+ (3 \times 7 \times 10 \times 10 \times 10)^{1/5} \approx 1+7.34 = 1+7 =8
+$$
+
