@@ -140,7 +140,17 @@ $\Delta t = \text{jiffies}-lrugen_{ts}[Gen_{min}]$
 
 - 2026/04/27：第一次一對一討論：詢問期末專題題目方向
 
-在本次一對一時被問到如何使用位元運算來實作浮點數除二，當時由於對 IEEE 754 格式的過度思考如何處理 Infinity 與 NaN 導致在實作與說明思路時無法準確說明，甚至把 exponent 的位數說成 10 位。
+在本次一對一討論結束後進行模擬面試，題目為如何使用位元運算來實作浮點數除二。當時由於對 IEEE 754 格式的過度思考如何處理 Infinity 與 NaN 導致在實作與說明思路時無法準確說明，甚至把 exponent 的位數說成 10 位。不過在模擬面試期間提出思路與授課教師討論時也逐漸確定實作方式與特殊狀況處理。最後使用 `memcpy` 複製成 `int32_t` 後拆分 mantissa、exponent 與 sign，使用 if 檢查 exponent 在減一後是否會出現 underflow 來決定是要回傳 0 給 caller 處理還是繼續進行除二並重新拼裝回 `float`。
+
+```c
+// exponent check 
+if (exponent == 0){ 
+// 0 - 1 = 11111111
+    return 0; // INFINITY or NAN
+} 
+// normal case
+i = ((exponent - 1) << 23) |( i >> 31)<<31 | (i&((1<<23)-1)); 
+```
 
 會後被要求將針對 Infinity/NaN 的 special case 檢查去除，與改用避免 UB/IB 的 union 實作來取代當下使用的 `memcpy` [(Follow up 紀錄)](https://hackmd.io/@c8763yee-/fdiv2-followup)。
 
