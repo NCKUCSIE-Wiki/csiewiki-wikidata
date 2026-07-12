@@ -12,6 +12,8 @@ categories: User
 # 2026 Linux 核心設計 春季班 自我評量
 
 ## 成果發表和貢獻
+8 分。
+
 * 課程教材
     * [Linux 核心設計: Scheduler(2): 概述 CFS Scheduler](https://hackmd.io/@sysprog/linux-scheduler/%2F%40sysprog%2Flinux-scheduler-2)：nice value 每增加 1，weight 就乘上 1.25 倍 -> nice value 每增加 1，weight 就變為原本的 1/1.25。
     * [你所不知道的 C 語言：linked list 和非連續記憶體](https://hackmd.io/@sysprog/c-linked-list#Modern-method)：typo（前題 -> 前提）
@@ -24,6 +26,8 @@ categories: User
     * COSCUP-帶您讀源碼：[分層剖析 Linux Kernel 如何觀測記憶體存取行為並推論 Working Set](https://pretalx.coscup.org/coscup-2026/talk/DRAXDG/)
 
 ## 作業/隨堂測驗
+7 分。
+
 回顧這三次的作業，我發現自己常常閱讀教材後就急著回答作業中的問題，沒有停下來反思並紀錄教材內容、實作考量、題目背後的問題。同時在面對數學推導相關題目時，我意識到自身數學能力之缺乏，而需要花費許多時間補足相關知識，最後發現仍準備不足而選擇完成其他題目。
 
 * [2026q1 Homework1 (warmup)](https://hackmd.io/@V_OEP3KMRkCh1JWY3s7yWA/linux2026-warmup)
@@ -31,11 +35,15 @@ categories: User
 * [2026q1 Homework3 (basics)](https://hackmd.io/@V_OEP3KMRkCh1JWY3s7yWA/linux2026-basics)
 
 ## 期末專題
+7 分。
+
 * [Linux 核心設計專題: SLUB_TINY 分析和改進](https://hackmd.io/@sysprog/BJoKriLR-x)
 
 在完成度上，有提出四個修改，並設計輕量級 instrumentation 和四種工作負載，藉此在 STM32F429 上進行可復現的實驗流程，資料分析與結果比較，但在這四個修改中，真正改動核心資料結構的只有「移除 pointer-based freelist，改用 bitmap 表示 slot 使用狀態」與「調整 SLUB_TINY 中 partial slab 的配置順序」，而且這兩項修改沒有帶來顯著之改善。相較之下，另外兩項修改則偏向組態調整與 Dead code elimination，雖然結果較穩定，但在演算法設計上的突破性仍然有限，因此以提出有效改進這個目標來看的話，我做得還不夠好。另外在這過程中讓我感到最困難的是如何降低 instrumentation 所帶來的量測成本以及設計正確且合適的工作負載來提升實驗正確性與可信度，這使我花大部分的時間都在修改 instrumentation 與工作負載的設計上。
 
 ## 與授課教師的互動
+5 分。
+
 * 課堂問答
     * [2026-03-31 問答簡記](https://hackmd.io/T9exGh0eRuuoVWkomO25wA#keep90ing)
     * [2026-05-12/14/21 問答簡記](https://hackmd.io/s7WxGv_KQ_G-Iw9H9SjJ_w#keep90ing)
@@ -45,6 +53,8 @@ categories: User
 在第二次的課堂問答中，老師問了我關於 CFS 與 PELT 等延伸問題，但在這之前我都沒有閱讀排程器相關的教材，導致我無法回答這些問題，故在後續議題追蹤時，便先閱讀〈[Linux 核心設計: 不只挑選任務的排程器](https://hackmd.io/@sysprog/linux-scheduler/%2F%40sysprog%2Flinux-scheduler-0)〉，〈[Linux 核心設計: Scheduler(2): 概述 CFS Scheduler](https://hackmd.io/@sysprog/linux-scheduler/%2F%40sysprog%2Flinux-scheduler-2)〉，〈[Linux 核心設計: Scheduler(4): PELT](https://hackmd.io/@sysprog/linux-scheduler/%2F%40sysprog%2Flinux-scheduler-4)〉與《Demystifying the Linux CPU Scheduler》中第 2.3.1 至 2.3.10 節，以及第 2.5.2 節，也因此發現了教材與書中的錯誤之處。
 
 ## 所見所聞所感
+9 分。
+
 在閱讀〈[因為自動飲料機而延畢的那一年](https://www.opasschang.com/docs/the-story-of-auto-beverage-machine-1)〉後，起初我也相信著開頭提及之等價交換的概念「人不付出犧牲，就得不到任何回報。如果要得到什麼，就必須付出同等的代價」，我把努力想得很單純，總以為只要投入夠多的時間與心力，最後就應該得到相對應的回報，但讀到作者被現實反覆毒打的過程，甚至最終機器仍稱不上完美，被拆進了倉庫，若以等價交換的邏輯來只看結果，努力未必與成果成正比。可是在文章的最後卻提到「但若把成功的一切歸咎於努力和犧牲的等價交換，未免過於膚淺及武斷」，讀到這句話我才回過頭思考，努力的價值或許不只存在於最後的成果，也包括一路上願意伸手相助的人、一道道曾經難以跨越的問題，以及自己在過程中產生的改變。
 
 其中最讓我印象深刻的其實是 Jserv 對作者說的那句話：「你該學習的不是看到事情要完蛋了就去避免失敗，而是應該學習如何處理與承受失敗，你才能變得比以前更強大。」這句話讓我重新思考看待失敗的方式，過去及現在的我總是害怕犯錯，也害怕投入之後得不到對等回報，因此我常常選擇打安全牌，不敢承擔可能失敗的風險，但回頭看這篇文章，我要思考的反而是在這過程中究竟變成了怎樣的人，並不要讓「害怕失敗」成為限制自己的心魔。
@@ -52,3 +62,6 @@ categories: User
 接著回顧自身在本課程的投入狀況，起初在閱讀教材與查找資料時，我常因為遇到較不感興趣或涉及複雜數學計算與實作的內容而草草帶過，總認為只要先掌握大方向，細節之後再補即可，但隨著課堂問答、後續議題追蹤和期末專題的進行，我逐漸發現，許多問題往往正是源自先前忽略的細節，像是在課堂問答中我無法正確說明 C99 標準對整數位移運算的規範，並且在期末專題設計 instrumentation 時，也為了確認計算過程是否可能發生整數 overflow，所以又回去重新閱讀《Computer Systems: A Programmer’s Perspective》第二章的相關內容，這些經驗使我意識到自己過去對細節的忽視，導致某些看似基礎的背景知識並未真正掌握，並在派上用場時形成阻礙，因此這也讓我體會到老師一再強調之細節的重要性。
 
 ## 自我評量 (1 ~ 10)
+$GEOMEAN = \sqrt[5]{8 \times 7 \times 7 \times 5 \times 9} \ = 7.06805167755$
+
+方案 B：$1+floor(GEOMEAN)=1+7=8$
