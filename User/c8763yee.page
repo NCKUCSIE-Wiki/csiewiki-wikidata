@@ -146,7 +146,6 @@ $\Delta t = \text{jiffies}-lrugen_{ts}[Gen_{min}]$
 
 - 2026/05/15：第二次一對一討論：回報期末專題相關研究發現
 
-
 ## 所見所聞所感
 
 > 9 分
@@ -154,27 +153,32 @@ $\Delta t = \text{jiffies}-lrugen_{ts}[Gen_{min}]$
 〈因為自動飲料機而延畢的那一年〉 心得：
 
 > 為什麼會出問題呢？因為這裡是他媽的真實世界啊。
-> 大多數人一直活在本來就應該這樣嗎的童話世界裡，電視打開就可以看，機車買來就可以騎，手機買來就可以用，一切都理所當然，本來就應該這樣。偶爾買到不好用的商品我們就抱怨幾句，丟掉換其他更好用的牌子，卻很少意識到那個本來就該這樣，背後需要經過多少人月的投入與研發。
+> 大多數人一直活在本來就應該這樣嗎的童話世界裡，電視打開就可以看，機車買來就可以騎，手機買來就可以用，一切都理所當然，本來就應該這樣。偶爾買到不好用的商品我們就抱怨幾句，丟掉換其他更好用的牌子，卻很少意識到那個「本來就該這樣」，背後需要經過多少人月的投入與研發。
 
+讀到這一段時讓我想到當初選擇針對 MGLRU refault feedback loop 進行期末專題時也是想得很簡單，當初認為只要將兩個 Generation 的統計數值取差值後應用進這個 PID Controller 作為 D 項就可以提昇 MGLRU 在記憶體壓力剛開始出現時的反應速度，然後在進行數學分析時才發現除了需要考慮兩個 Generation 統計差值要怎麼取之外，還需要考慮獲取到差值後要怎麼應用至 MGLRU 架構中。甚至到現在我還沒有想到這個具體適用的 Workload 以及對於其他 Workload 的影響。
 
 ### 關於數學與謹慎用詞
 
 一開始因為就學期間忽略數學的重要性，導致光是在進行作業一的「探討〈解讀計算機編碼〉」題組時在補充缺失的數論知識就花了 3 天，因此導致後面只能針對程式語言的題目進行作答，同時持續補充之前沒學好的數學知識。這樣的結果是在第三次作業時只能先紀錄閱讀教材時的發現與問題。
 
-不過也是在進行作業撰寫時開始注重詞彙的使用，帶來的影響是在撰寫文章時，針對文章中可能有岐義的漢語用詞主動查詢[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)與使用 [zhtw-mcp](https://github.com/sysprog21/zhtw-mcp) 檢查資訊科技詞彙翻譯中未提到的部份用語。因此意外發現不明使用者使用 AI 「抄襲」 zhtw-mcp GitHub repo 這件事並沒有那麼簡單，該使用者還在 repo 中放入病毒檔案並在 README.md 引導下載。
-([Hexastrike 對於類似案例中攻擊行為的分析](https://hexastrike.com/resources/blog/threat-intelligence/cloned-loaded-and-stolen-how-109-fake-github-repositories-delivered-smartloader-and-stealc/))。
+不過也是在進行作業撰寫時開始注重詞彙的使用，帶來的影響是在撰寫文章時，針對文章中可能有岐義的漢語用詞主動查詢[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)與使用 [zhtw-mcp](https://github.com/sysprog21/zhtw-mcp) 檢查資訊科技詞彙翻譯中未提到的部份用語。因此意外發現不明使用者使用 LLM 「抄襲」 zhtw-mcp GitHub repo 這件事並沒有那麼簡單，該使用者還在 repo 中放入病毒檔案並在 README.md 引導下載。
+([FYI：Hexastrike 對於類似案例中攻擊行為的分析](https://hexastrike.com/resources/blog/threat-intelligence/cloned-loaded-and-stolen-how-109-fake-github-repositories-delivered-smartloader-and-stealc/))。
 
 ### 關於與上游開發者互動
 
-第一次送出 LKML patch 時, Borislav Petkov 直接退回 Commit 並指出 Commit 訊息可以簡化。修正 Commit 訊息後發布 v2 patch。不過後續即杳無音訊。在第二周課後向授課教師詢問相關問題時得知 maintainer 對於這種 trivial patch 不會太重視，並告知我可以向邱冠維詢問相關的問題。
+第一次送出 LKML patch 時, Borislav Petkov (maintainer of `X86 ARCHITECTURE (32-BIT AND 64-BIT)`) 直接退回 Commit 並指出 Commit 訊息可以簡化。在修正 Commit 訊息後發布 v2 patch。不過後續即杳無音訊。在第二周課後向授課教師詢問相關問題時得知 maintainer 對於這種 trivial patch 「相對」不會太重視，並告知我可以向邱冠維 (maintainer of `MIN HEAP`) 詢問相關的問題。
 
 > > This just fixes the misleading comment. No functional changes.
 >
 > s/This just fixes/Fix/
 
+寄信邱冠維詢問後，剛好 Peter Zijlstra (maintainer of `PERFORMANCE EVENTS SUBSYSTEM`) 在回信前合併了這個 Patch。後續收到邱冠維的回信，並被告知下次 v2 patch 不要回覆在上一個版本。
+
 ### 關於自身投入的回顧
 
-即使只是修改 Typo 或是用語，但畢竟「勿以善小而不為」。
+課程初期在閱讀課程教材時間為每週 21 小時，後面由於進行期末專題與處理研究所事物，每週閱讀教材時間降至每週 10 小時。
+在閱讀課程教材時發現語法、連結失效等錯誤時想到作者自己可以修改錯誤但沒做，那為什麼不能我來改？於是著手進行教材修改。
+即使只能修改 Typo 或是用語錯誤，無法作到像是整理並補充[〈Linux 核心設計：記憶體管理〉](https://hackmd.io/@sysprog/linux-memory)的 rmap 部份，但畢竟「勿以善小而不為」。
 
 ## 分數計算
 
