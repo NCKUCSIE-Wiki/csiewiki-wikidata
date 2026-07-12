@@ -91,13 +91,28 @@ description: backup and draft of https://wiki.csie.ncku.edu.tw/User/c8763yee
 本題目對應 Yu Zhao 在 [[PATCH mm-unstable v15 06/14] mm: multi-gen LRU: minimal implementation](https://lore.kernel.org/lkml/20220918080010.2920238-7-yuzhao@google.com/) 中 refault feedback loop 部份程式提到的 Future optimizations[(vmscan.c:3144-3146)](https://github.com/torvalds/linux/blob/ac35a490/mm/vmscan.c#L3144-L3146)
 
 $$S_{new} = \frac{S_{old}}{\Delta t}+\frac{\Delta t-1}{\Delta t}x_t$$
-$\Delta t = jiffies-lrugen_{ts}[Gen_{min}]$
+$\Delta t = \text{jiffies}-lrugen_{ts}[Gen_{min}]$
 
 開發紀錄：[Github](https://github.com/c8763yee/linux-experiment/compare/vanilla...main)
 
-在進行期末專題時我發現我會時常把問題與架構想得太複雜，導致後續花費過多時間在處理 Userspace 模擬架構本身以及觀察 MGLRU 相較於 Active/Inactive list 的具體改善指標。
+在進行期末專題時我發現我會時常把問題與架構想得太複雜，導致後續花費過多時間在處理 Userspace 模擬 MGLRU 架構本身以及觀察 MGLRU 相較於 Active/Inactive list 的具體改善指標。
 
-尚未釐清的是：我無法區分 Yu zhao 當初設計 Refault feedback loop 時省略 D term 是否基於雜訊考量的刻意設計，且上述推測在 MGLRU 對應檔案的 commit message 與 LKML 討論中均無明文佐證。
+尚未釐清的是：我無法區分 Yu Zhao 當初設計 Refault feedback loop 時省略 D term 是否基於雜訊考量的刻意設計，且上述推測在 MGLRU 對應檔案的 commit message 與 LKML 討論中均無明文佐證。
+
+### 觀摩同儕專題並提問 (公開軌跡, 共 5 件 $\ge$ 課程要求 5 件)
+
+本年度同儕專題索引於 [linux2026-projects](https://hackmd.io/@sysprog/linux2026-projects), 留下提問軌跡如下:
+
+1. [keep90ing：〈Linux 核心設計專題: SLUB_TINY 分析和改進〉](https://hackmd.io/@sysprog/BJoKriLR-x#Reviewed-by-c8763yee)
+詢問其「混合尺寸配置工作負載」實驗中的工作負載大小與權重之選擇考量
+2. [ascodeasice：〈Linux 核心設計專題: RISC-V 平台驗證和改進〉](https://hackmd.io/@sysprog/Sy0a2TTpZg#Reviewed-by-c8763yee)
+詢問其具體關閉的 Kernel config 與關閉後具體減少 Kernel image 空間
+3. [PinkNekoFist：〈Linux 核心設計專題: DRM 研究〉](https://hackmd.io/j2rdwGd9T_Cwfzeg1lI_CA#Reviewed-by-c8763yee)
+詢問其 User space (Mesa) 與 Kernel space (DRM) 的溝通方式
+4. [patata0717：〈Linux 核心設計專題: MDP-based memory tiering〉](https://hackmd.io/g0LyfyrmSOKsdZgVD_WW6Q#Reviewed-by-c8763yee)
+詢問 phase_switch workload 在 mdp policy 上的 NUMA distance, CPU locality 與 remote page ratio 的數據問題
+5. [Arbin1020：〈Linux 核心設計專題: MGLRU 的數學分析和改進〉](https://hackmd.io/5IWkKB63TQ-vArQ8zXGPkQ#Reviewed-by-c8763yee)
+詢問 hash2 (splitmix64) 帶來的分類品質改善並沒有反應到 Throughput 的原因，並提醒實驗圖片連結失效
 
 ## 與授課教師的互動
 
