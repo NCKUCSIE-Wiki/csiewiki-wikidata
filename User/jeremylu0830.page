@@ -33,9 +33,9 @@ categories: User
 ## 作業/隨堂測驗
 7 分。
 
-[2026q1 Homework1 (warmup)](https://hackmd.io/-Kg_ukRkQmywtj5gve8S0g?view)
-[2026q1 Homework2 (stdc)](https://hackmd.io/G2aAIpZQSs-BiBCXrcXDbA)
-[2026q1 Homework3 (basics)](https://hackmd.io/dg0ItH2wQbGhynb3nxIZ3Q)
+* [2026q1 Homework1 (warmup)](https://hackmd.io/-Kg_ukRkQmywtj5gve8S0g?view)
+* [2026q1 Homework2 (stdc)](https://hackmd.io/G2aAIpZQSs-BiBCXrcXDbA)
+* [2026q1 Homework3 (basics)](https://hackmd.io/dg0ItH2wQbGhynb3nxIZ3Q)
 
 在寫作業的時候，學習了許多以往沒有注意到的細節，以及被草草帶過的觀念，這次的作業所需要培養的能力包含找資料、驗證資料、推導原理以及理解並付諸實現，這過程中也意識到數學在資訊產業的重要性。同時，作業促使我體會到閱讀第一手資料的重要性。與其盲目訴諸搜尋引擎，不如直接查閱 C99 規格書或 man page 等官方文件，從最根本的定義去理解問題。第三次作業由於自身規劃不佳，沒有能夠動筆。隨堂測驗的部分，總計只缺席了一次，這種即席的測驗很好的訓練我如何在有限的資源以及時間，盡可能地回答問題，遇到不會的題目也能夠推理出可能的答案，讓我能夠在後須專題閱讀規格書時快速找到重點。我給自己7分。
 
@@ -66,11 +66,11 @@ categories: User
 ## 與授課教師的互動
 8 分。
 
-4/14 [課堂討論](https://hackmd.io/u5zg5DS8RoaKI52ZxLgkQg)：探討 process vs thread 在 linux 的本質差異在哪。
-5/12 課後討論 : 討論異質多核專題，先去重現去年實驗，了解整體的架構，理解其中原理，不用到當學校老師，但至少要會統整當補習班老師的程度。
-5/26 [課堂討論](https://hackmd.io/CZEAQrigR0KL2MHBbK8qnw)：探討異質多核的重要性以及 RPMsg 和 VirtIO 相關問題，包含 頻率跟功耗的關係、為何異質多核需要通訊以及為何需要有異核的架構。
-6/23 課後討論：與老師分析我目前 benchmark 的不足，我假定大核往小核的通訊成本等於小核往大核，這是錯誤的想法，並與老師討論可能的原因，以及去測試不同payload 對通訊成本的負擔。
-6/2 [模擬面試](https://drive.google.com/file/d/1UeUM1CMDeZCOXisb-Xd-bG6d9bxKkJG0/view?usp=drive_link):與助教和老師討論 ，Process 與 Thread 的本質差異、Stack 與 Heap 的設計考量、使用 POSIX Thread 控制執行順序、Futex 的設計與排程器的互動，但都答不出來，有在後續檢討以及追蹤(回信的方式)
+* 4/14 [課堂討論](https://hackmd.io/u5zg5DS8RoaKI52ZxLgkQg)：探討 process vs thread 在 linux 的本質差異在哪。
+* 5/12 課後討論 : 討論異質多核專題，先去重現去年實驗，了解整體的架構，理解其中原理，不用到當學校老師，但至少要會統整當補習班老師的程度。
+* 5/26 [課堂討論](https://hackmd.io/CZEAQrigR0KL2MHBbK8qnw)：探討異質多核的重要性以及 RPMsg 和 VirtIO 相關問題，包含 頻率跟功耗的關係、為何異質多核需要通訊以及為何需要有異核的架構。
+* 6/23 課後討論：與老師分析我目前 benchmark 的不足，我假定大核往小核的通訊成本等於小核往大核，這是錯誤的想法，並與老師討論可能的原因，以及去測試不同payload 對通訊成本的負擔。
+* 6/2 [模擬面試](https://drive.google.com/file/d/1UeUM1CMDeZCOXisb-Xd-bG6d9bxKkJG0/view?usp=drive_link):與助教和老師討論 ，Process 與 Thread 的本質差異、Stack 與 Heap 的設計考量、使用 POSIX Thread 控制執行順序、Futex 的設計與排程器的互動，但都答不出來，有在後續檢討以及追蹤(回信的方式)
 
 ---
 
