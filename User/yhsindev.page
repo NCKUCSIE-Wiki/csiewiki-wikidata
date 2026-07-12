@@ -7,6 +7,7 @@ categories: User
 * 國立成功大學 電機所碩一
 
 * GitHub: [`yhsindev`](https://github.com/yhsindev)
+* HackMD: [`@tavy`](https://hackmd.io/@tavy)
 
 # 2026 Linux 核心設計/實作 自我評量
 ## 第一項、成果發表和貢獻
@@ -15,7 +16,8 @@ Linux 核心的 hash table 實作： key 值得範圍 -> key 值「的」範圍
 2. 7/5 刪除冗餘字 
 Linux 核心的 hash table 實作： hash value 的值 -> 雜湊值
 
-評分: 3 分，這些修改屬於小型文件維護，貢獻有限，因此只給低分。
+### 評分: 3 分
+這些修改屬於小型文件維護，貢獻有限，因此只給低分。
 
 
 ## 第二項、作業/隨堂測驗
@@ -25,7 +27,7 @@ Linux 核心的 hash table 實作： hash value 的值 -> 雜湊值
 * [2026q1 Homework3 (basics)](https://hackmd.io/@tavy/linux2026-basics)
 * [2026q1 Homework4 (introspect)](https://hackmd.io/@tavy/linux2026-introspect)
 
-**作業一** 探討了系統設計於 $\mathbb{Z}/2^{64}$ 上，若以奈秒為精度的系統極限為數百年，我也閱讀了 Y2K(千禧年)危機與 2038 年問題的資料，後續老師在 17 週教材也有提到，特別講舊的軟體對於 timer 的不可靠問題，這讓我覺得前後呼應，讀教材奠定基礎對於學習 kernel 真的很重要。
+**作業一** 探討了系統設計於 $\mathbb{Z}/2^{64}$ 上，若以奈秒為精度的系統極限為數百年，我也閱讀了 Y2K(千禧年)危機與 2038 年問題的資料，後續老師在 17 週教材也有特別提到舊的軟體在 timer 的不可靠問題，讓我前後呼應到我作業一的發現，因此讀教材奠定基礎對於學習 kernel 真的很重要。
 
 **作業二** 中 IEEE 754 表示 `0.1` 的精度限制十進位 `0.1 = 1/10` 在二進位中會展開為無限循環小數，因此浮點數格式只能保存經過截斷與捨入後的近似值，而非精確值。
 
@@ -41,7 +43,9 @@ Linux 核心的 hash table 實作： hash value 的值 -> 雜湊值
 
 其中印象較深的是 quiz 6 的 TurboQuant 題目。這題討論如何在不明顯犧牲模型準確度的情況下，降低大型語言模型 KV cache 的記憶體需求，剛好我這學期有修 AI Accelerator，授課教師也提到，單純從硬體層面改良並不容易，軟體與演算法層面的設計是新的賽道，讓我發覺 Linux 核心課程的測驗並不只是在考單一技術細節，也會連到現行業界在面對的問題，因此，修讀這兩門課讓我的學習前後呼應，並讓我更有方向強化 AI Accelerator 領域的學習。
 
-評分: 7 分
+### 評分: 7 分
+我完成四份作業與隨堂測驗，並從 IEEE 754、C 語言未定義行為、hash table 與 SipHash 等題目延伸到規格書、原始碼及期末專題，後期也建立了查閱 C99 規格書與 Linux man-pages 的習慣。未給更高分，是因為課程前期面對密集查證題目時，仍無法快速辨認核心概念，部分理解主要在測驗後才補齊。
+
 
 ## 第三項、期末專題
 Linux 核心設計專題: 雜湊函數之數學基礎與資訊安全議題 [HackMD](https://hackmd.io/rNkcgtZ1SEaHLYn2JpaDkg?view)/[GitHub](https://github.com/yhsindev/kernel-hash)
@@ -53,20 +57,49 @@ Linux 核心設計專題: 雜湊函數之數學基礎與資訊安全議題 [Hack
 4. [Linux 核心設計專題: 圖形函式庫的效能改進](https://hackmd.io/4_nS7VDFQ7GgM2vZ0QcAEw?view)
 5. [Linux 核心專題: qspinlock 量化分析](https://hackmd.io/FFQ59lxpRWaXIP0hYPrx5A?view)
 
-（待補上專題開發過程）
 
-評分: 8 分
+### 專題內容與開發過程
+
+我的期末專題從前幾次作業中的 hash table 與 SipHash 討論延伸，聚焦在 OVS flow_hash() 的雜湊函數替換，以及 jhash2、hsiphash、siphash 在效能與 HashDoS 風險上的差異。
+
+真正花費時間的部分，不是雜湊函數本身，而是了解 OVS datapath，以及設計能量到雜湊成本的 workload。專題初期，我一度懷疑選擇 OVS 作為 case study 是否合適。一般 workload 下，hash backend 的差異容易被其他 datapath 成本掩蓋，OpenFlow 規則與 flow lookup 行為也讓量測結果沒有預期中明顯。我因此卡在幾個問題上：**為了放大差異而設計壓力測試，是否過於「人為」？如果現實中很難觸發，這樣的分析是否仍有價值？量到 jhash2 較快，是否就能直接下結論認為它比較適合？**
+
+後來我沒有直接把這些疑問當成放棄題目的理由，而是將它們整理成可逐項驗證的問題。雖然是網路實驗室的，但我反思我網路基礎知識的欠缺，閱讀 Linux 網路相關書籍，補足 OVS、OpenFlow 與常用 Linux 網路指令的知識，也嘗試調整 OVS policy，並在 OVN、SmartNIC 等不同 testbed 上觀察行為。雖然仍有許多 workload 無法清楚呈現 hash 成本，但這些失敗結果也讓我確認，在一般 OVS datapath 中，雜湊函數未必是主要效能瓶頸，不能只因為想證明某個 hash 較好，就忽略整體系統中的實際占比。
+
+專題產出包含 HackMD 報告、GitHub 程式碼與實驗紀錄，涵蓋 hash function 切換、collision set 搜尋、kernel module 驗證、perf 量測流程與結果分析。量測結果顯示，siphash 的 per-hash 成本約為 jhash2 的 1.53 倍，讓安全性與效能之間的取捨可以用數據討論。
+
+### 尚未解決的問題
+
+這份專題在資訊安全部分仍有明確限制。我原本希望找到更具通用性的攻擊情境，甚至針對現有 kernel code 提出修改或 patch，但本學期沒有達成。以離線暴力搜尋完整 32-bit collision 作為攻擊模型，雖然能說明非 keyed hash 的可預測性，但我仍不確定它是否足以代表目前真實部署環境中的威脅。實際攻擊通常還涉及內網存取、權限、可控制欄位與觸發條件，因此不能只展示 collision set，就直接宣稱存在嚴重漏洞。
+
+後續若要補強這一部分，我需要更系統化地閱讀相關 git commit、LKML 討論與既有防護機制，明確整理 threat model、攻擊前提、觸發條件與影響範圍，也應比較 file system 或其他 kernel subsystem 中的 hash 使用方式，確認這項問題是否只存在於特定 OVS 情境，或具有更廣泛的意義。
+
+### 專題帶來的改變
+
+這次專題讓我學到三件事。
+
+第一，遇到問題時不能只依賴 AI 整理答案。資訊安全議題常涉及限制或缺乏可靠資料，LLM 拒答下我後來改以原始論文、規格書、kernel source、git log 作為主要依據，並記錄每項結論的來源。
+
+第二，技術細節與用語必須能被檢查。課堂問答與教師互動讓我注意到，32-bit hash、128-bit key、collision、cycle overhead 等概念不能混用或只做概略描述。當發現自己的說法或實驗假設有問題時，我開始習慣立刻修正，而不是繼續沿用原本的敘述。
+
+第三，Linux 核心的理解必須建立在實作與量測上。與其只說自己讀過教材，更有意義的是留下可執行的程式、失敗紀錄、量測條件與實驗結果。完成這個專題後，我在與他人討論時，能具體說明自己修改過什麼、哪些方法量不到結果、後來如何調整，以及目前的結論有哪些限制。
+### 回覆同學提問與修正
+
+專題完成後，我也回覆了 6 位同學的提問。這些問題有些直接指出我原本沒有想清楚的地方，例如 threat model、workload 的適用範圍，以及 IPC 的解讀是否過度延伸。回覆時，我必須重新查原始碼、git commit 與實驗數據，也有幾次需要承認現有證據不足，改寫或縮小原本的結論。這讓我發現，回覆 review 並不是替自己的結果辯護，而是另一種學習方式；別人的問題會逼我重新檢查假設，也讓我更能分辨哪些是實驗支持的結論，哪些仍只是推測。
+
+### 評分：9 分。
+這是五項中投入最多、公開軌跡也最完整的一項。除了程式碼、實驗日誌與量測結果，我也觀摩 5 位同學的專題並提問，並回覆 6 位同學對本專題提出的問題。回覆過程中，我補上 threat model、限縮 workload 結論，也修正 IPC 的過度解讀。未給滿分，是因為資訊安全面的攻擊模型仍不完整，也尚未提出可送出的 kernel patch。
 
 
 ## 第四項、與授課教師的互動
 一對一討論: [5/14: yhsindev](https://docs.google.com/document/d/1P7sse-kOMyaQuAJZzlqDXAX2Wu_zVG91MxyqK1yw4M4/edit?tab=t.0)
 課堂問答: [5/26 晚間課堂問答](https://hackmd.io/@sysprog/BJmF8oGgzg), [6/2 模擬面試](https://hackmd.io/@tavy/mock_interview)
 
-5/14 一對一討論中，探討了幾何平均數的程式碼撰寫與期末專題
+5/14 一對一討論中，探討了幾何平均數的程式碼與期末專題，收穫是能直接請教專題任務簡述中我疑惑的地方，老師也介紹他跟其他同學針對 file system 中雜湊函數的改進(https://github.com/sysprog21/simplefs/pull/79)，並告訴我以數學去進行碰撞分析是此專題的期許，雖然一對一討論表現我並不好，沒有回答出程式題、暴露了前幾週教材不熟練的缺點，但以此為分水嶺，我更加積極參與此課程，也很希望能在做專題時有所貢獻。
 
 在 5/26 晚間課堂問答中，我被問到 Linux 排程器從 O(1)、CFS 到 EEVDF 的演進，以及 lag、vruntime、virtual deadline、virtual eligible time、scheduler latency 等概念，當時我未能回答 EEVDF 中 lag、eligible task 與 virtual deadline 的關係。
 
-後續我閱讀教材第二章，並查閱 EEVDF 原始論文，了解到CFS 以 vruntime 描述任務已取得的加權 CPU 時間，目標是長期比例公平，EEVDF 則以 lag 判斷任務是否落後於公平份額，再於 eligible tasks 中選擇 virtual deadline 最早者執行。我也進一步釐清，EEVDF 的數學公平性是指 proportional-share allocation 下的 service lag 有界，而不是保證 worst-case execution time，後者屬於 real-time scheduling 的範疇。
+後續我閱讀教材第二章，並查閱 EEVDF 原始論文，了解到 CFS 以 vruntime 描述任務已取得的加權 CPU 時間，目標是長期比例公平，EEVDF 則以 lag 判斷任務是否落後於公平份額，再於 eligible tasks 中選擇 virtual deadline 最早者執行。我也進一步釐清，EEVDF 的數學公平性是指 proportional-share allocation 下的 service lag 有界，而不是保證 worst-case execution time，後者屬於 real-time scheduling 的範疇。
 
 在追查過程中，我針對教材中「EEVDF provides mathematically provable fairness」的表述提出修改建議，建議補充 one-quantum service-lag bound 的前提，以及原始論文中 steady system 與 maximum request size 對 bound 的影響。
 
@@ -76,7 +109,8 @@ Linux 核心設計專題: 雜湊函數之數學基礎與資訊安全議題 [Hack
 
 事後我逐題重整答案，補上 kernel stack 小尺寸與 kernel memory 消耗、連續頁面配置、碎片化風險的關係，也釐清 workqueue 是延後執行 work item 的 kernel 機制，最終由 worker thread 作為 task 接受 scheduler 排程。後續準備面試題時，我會將每個概念整理成「定義、用途、kernel 實作關聯、限制」四個層次，並練習用完整句子回答，減少停頓與語助詞造成的表達斷裂。
 
-評分: 6 分
+### 評分: 8 分
+我完成一次一對一討論及兩次課堂問答，並在問答後查閱教材、原始論文與核心實作，整理 EEVDF、kernel stack、workqueue 與執行緒同步等問題。我也針對教材中 EEVDF fairness 的敘述提出具體修改建議，並將模擬面試中未回答完整的問題逐項補正。未給更高分，是因為當場技術表達仍不穩定，無法在限定時間內建立完整且精確的回答。
 
 ## 第五項、 所見所聞所感
 
@@ -86,13 +120,14 @@ Linux 核心設計專題: 雜湊函數之數學基礎與資訊安全議題 [Hack
 
 專題也補回我前期沒打穩的地方。一開始我其實很抗拒讀 kernel 的 C style code，但實驗結果常不如預期，只能回頭查 C 語言規格、bitwise 操作、資料對齊、暫存器用法，還有 kernel module 的實作。C 語言未定義行為、雜湊函式、效能量測、kernel module 與 `perf`，這些原本散在教材各處的東西，是在專題裡被串起來之後，我才真正明白它們為什麼重要。
 
-六月面試科技公司時，Linux kernel 這份專題馬上派上用場。以前我大概只會說「我做過某某某專題」，這次能具體講出改了哪些程式、用量化的方式描述貢獻，為什麼 `siphash` 較安全但較貴，以及怎麼用 `perf` 分析 data，最後也拿到韌體暑期實習。另外，在面試中提問業界主管好奇的是問題的通用性、為什麼值得解決、能不能在別的情境重現，而不只是我改出了什麼。也因此，之後若要延伸雜湊相關的研究，就不該只停在 OVS，也該看看 file system 或其他 kernel path 的雜湊使用情境，去看效能與安全性的 trade-off 有沒有更廣的意義。
+六月面試科技公司時，Linux kernel 這份專題馬上派上用場。以前我大概只會說「我做過某某某專題」，這次能具體講出改了哪些程式、用量化的方式描述貢獻，為什麼 `siphash` 較安全但較貴，以及怎麼用 `perf` 分析 data，最後也拿到 IC 廠韌體暑期實習。另外，在面試中提問業界主管好奇的是問題的通用性、為什麼值得解決、能不能在別的情境重現，而不只是我改出了什麼。也因此，之後若要延伸雜湊相關的研究，就不該只停在 OVS，也該看看 file system 或其他 kernel path 的雜湊使用情境，去看效能與安全性的 trade-off 有沒有更廣的意義。
 
-評分: 8 分
-
+### 評分: 9 分
+回顧這學期，一開始期初考與測驗、作業的強度讓我覺得有可能跟不完這堂課，但老師再三強調「做大事 or nothing」，讓我想「好吧！既然要修課，必須要做出成績」。
+經過本學期，除了知識面的提升，也看到優秀的同儕在課堂問答時能就自己的專業領域或過往所學經驗，回答出超過題目表面的問題，聽到邱冠維學長作為 maintainer 及陳麒升同學跟老師去參加 Open Source Summit 的經驗分享，讓我看到強者怎麼學習、對於如何精進自身實力有更具體的方向，技術能力不只表現在考題是否答對，更包含能否長期閱讀原始碼、參與社群、回應他人的問題，並留下公開且可追蹤的成果。
 
 ## 自我總評量得分
 自我總評量得分為 **7** 分。
 
-* GEOMEAN : $\sqrt[5]{3 × 7 × 8 × 6 × 8} = 6.04$  
-* 方案 B：$1+\lfloor 6.04 \rfloor= 7$
+* GEOMEAN : $\sqrt[5]{3 × 7 × 9 × 8 × 9} = 6.71$  
+* 方案 B：$1+\lfloor 6.71 \rfloor= 7$
