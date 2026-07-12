@@ -66,6 +66,7 @@ description: backup and draft of https://wiki.csie.ncku.edu.tw/User/c8763yee
 * [Homework1 (warmup)](https://hackmd.io/@c8763yee-/linux2026-warmup)
 
 * [Homework2 (stdc)](https://hackmd.io/@c8763yee-/linux2026-stdc)
+
 在進行思索〈分析「快慢指標」〉題組時使用數學分析對鏈結串列分別使用 Merge sort 與 Fisher-Yates shuffle 進行隨機排序時的時間複雜度 Average/Worst case。
 
 * [Homework3 (basics)](https://hackmd.io/@c8763yee-/linux2026-basics)
