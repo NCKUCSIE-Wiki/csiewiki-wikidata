@@ -15,87 +15,83 @@ categories: User
     * garbade collector => garbage collector
     * virtme 配合 busybox 使用 （通過 rcS 在 Linunx 啟動時將放置核心的目錄掛載到 /lib/modules）=> Linux
     * 直關上的作法為使用 use std::ffi::CStr;，但是在核心模組開發中我們不能使用 std 相關函式庫 => 直觀上
-* 第 10 週教材 : [Linux 核心設計: 多核處理器和 spinlock](https://hackmd.io/qhuhCqvpSUeT2Pz0BtvPMA?both)
+* [第 10 週教材 : Linux 核心設計: 多核處理器和 spinlock](https://hackmd.io/qhuhCqvpSUeT2Pz0BtvPMA?both)
     * enabled interrupts (sti) => Enable interrupts (sti)
-* 第 14 週教材 : [Linux 核心 Copy On Write 實作機制](https://hackmd.io/@linD026/Linux-kernel-COW-content/https%3A%2F%2Fhackmd.io%2F%40linD026%2FLinux-kernel-COW-Copy-on-Write)
+* [第 14 週教材 : Linux 核心 Copy On Write 實作機制](https://hackmd.io/@linD026/Linux-kernel-COW-content/https%3A%2F%2Fhackmd.io%2F%40linD026%2FLinux-kernel-COW-Copy-on-Write)
     * 處裡 process 記憶體之間的干擾 => 處理
     * 讓就的資料有更好的 locality => 讓舊的資料
-    * 找不到想要的 page fault 就會出發 page fault exception => 觸發 page 
+    * 找不到想要的 page fault 就會出發 page fault exception => 觸發 page
     * 隨時開起 pfn_to_page 、page_to_pfn => 開啟 pfn_to_page
-* 第 14 週教材 : [KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm)
+* [第 14 週教材 : KVM: Linux 虛擬化基礎建設](https://hackmd.io/@sysprog/linux-kvm)
     * 裡面包含 Bus 初始化、 serial device 初始化、 PCI Bus 初始化，遇有對 GICv3 的初始化 => 還有對 GICv3
     * device_feature_select 用來選擇呈現的 Feature 是高 32 位還是低 32位 => 位 改成 精確的位元
-
+    
 以上貢獻都是跟 typo、英語文法以及相關用詞的修正，但老師說勿以善小而不為，但是尚未有程式碼邏輯和行為的改動去解決真實世界的問題，因此計算為 8 分。
+
+---
 
 ## 作業/隨堂測驗
 7 分。
 
-* [2026q1 Homework1 (warmup)](https://hackmd.io/-Kg_ukRkQmywtj5gve8S0g?view)
-* [2026q1 Homework2 (stdc)](https://hackmd.io/G2aAIpZQSs-BiBCXrcXDbA)
-* [2026q1 Homework3 (basics)](https://hackmd.io/dg0ItH2wQbGhynb3nxIZ3Q)
+[2026q1 Homework1 (warmup)](https://hackmd.io/-Kg_ukRkQmywtj5gve8S0g?view)
+[2026q1 Homework2 (stdc)](https://hackmd.io/G2aAIpZQSs-BiBCXrcXDbA)
+[2026q1 Homework3 (basics)](https://hackmd.io/dg0ItH2wQbGhynb3nxIZ3Q)
 
 在寫作業的時候，學習了許多以往沒有注意到的細節，以及被草草帶過的觀念，這次的作業所需要培養的能力包含找資料、驗證資料、推導原理以及理解並付諸實現，這過程中也意識到數學在資訊產業的重要性。同時，作業促使我體會到閱讀第一手資料的重要性。與其盲目訴諸搜尋引擎，不如直接查閱 C99 規格書或 man page 等官方文件，從最根本的定義去理解問題。第三次作業由於自身規劃不佳，沒有能夠動筆。隨堂測驗的部分，總計只缺席了一次，這種即席的測驗很好的訓練我如何在有限的資源以及時間，盡可能地回答問題，遇到不會的題目也能夠推理出可能的答案，讓我能夠在後須專題閱讀規格書時快速找到重點。我給自己7分。
 
+---
 
 ## 期末專題
 8 分。
 
-[Linux 核心專題: CPU 排程器之理論基礎](https://hackmd.io/@sysprog/HyFtDjMfxg)
+[Linux 核心設計專題: 異質多核通訊機制](https://hackmd.io/@sysprog/HkFikIgkzl)
 
-有參與[期末發表](https://hackmd.io/29wzjTXtSgyu4oCaBJOwiQ)。
+原以為異質多核的難處在於高階的架構設計，真正投入後才發現，關鍵往往藏在那些過去被忽略的底層細節裡。本次專題尚未做到改進效能，只有更新 MilkV sdk、建立一套基準 benchmark以及嘗試將 Linux 版本更新至 7.0。
 
-越深入了解 CPU 排程器會發現自己不懂的知識越多，要填補的坑越來越大。我現階段對於此領域整體的掌握還不足以給自己滿分，時間有限許多代辦事項也還未完成，像是修訂《Demystifying the Linux CPU Scheduler》第二章的 issue 還有理解 CPU BWC 等等。
+雖然沒有做到改進，但其中學習到的知識，包含燒錄 image、了解 USB bus，又或者是 RPMsg 與 VirtIO 的關係，最重要的還是意識到 benchmark 的重要性，都是過去以為理所當然、實際動手才發現處處是細節的部分。
 
-但我還是想肯定自己當初在閱讀《Demystifying the Linux CPU Scheduler》時沒有無腦快速地看過去，而是另外參考了核心的原始碼和其他文件一起學習，即使要多花許多時間釐清和紀錄問題，後來這份堅持也幫助我確立專題的方向。
+在建立 benchmark 的過程中，也體會到「量測本身會改變被量測對象」這件事。最初純粹的 RTT 量到約 75µs，但為了拆解延遲、在核心與韌體的路徑上插入時間探針後，同樣的往返卻變成約 105µs——多出的約 30µs 正是探針讀取時鐘、每趟讀取 procfs、小核額外記錄所引入的觀測開銷。這讓我理解到，要看見內部結構，就必須付出干擾系統的代價，而紀錄這個代價、區分系統最佳值與量測時的值，才是嚴謹的態度。更進一步，在嘗試直接量測跨核傳輸延遲時，也遇到了不同 clock domain 的問題：大核 Linux 用經過校正的 monotonic clock、小核 ThreadX 只能直接讀硬體的 raw mtime 計數器，兩者原點與單位皆不同，不能直接相減；唯有讓兩核都讀取同一顆共用的 CLINT mtime，才能真正跨核比較。這個看似單純的兩個時間相減，背後牽涉到的是整個計時子系統的設計哲學。
 
-在研讀 CPU 排程器的過程中也很幸運的可以觀摩其他兩組很厲害的學長，了解他們做實驗的方式、貢獻 `sched_ext` 開源專案還有對於他們各自對於排程器的理解。另外我也大量的參考老師撰寫的《Demystifying the Linux CPU Scheduler》還有 `Yiwei Lin` 學長整理的一系列 [CPU 排程器的筆記](https://hackmd.io/@sysprog/Hka7Kzeap/%2FHkyEtNkjA)，包含 EEVDF 的完整 patch series 分析等。若沒有這些前人和同儕的努力，我在投入這個新知識領域的初期會很迷惘。以上這些人不僅讓我學習到他們的學習方式，也促使我繼續學習，在整理筆記時也想著要讓以後的人看懂，因此尤其是 [EEVDF 論文筆記](https://hackmd.io/@salmonii/eevdf_paper)以及期末的專題簡報是經過了反覆的重構調整。
-
-研讀論文：
-
-* [《A Generalized Processor Sharing Approach to Flow Control in Integrated Services Networks: The Single-Node Case》](https://pbg.cs.illinois.edu/courses/cs598fa09/readings/pg93.pdf)
-* [《WF2Q : Worst-case Fair Weighted Fair Queueing》](https://www.cs.cmu.edu/~hzhang/papers/INFOCOM96.pdf)
-* [《Earliest eligible virtual deadline first: A flexible and accurate mechanism for proportional share resource allocation》](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=805acf7726282721504c8f00575d91ebfd750564)
-* [《CPU bandwidth control for CFS》](https://landley.net/kdocs/ols/2010/ols2010-pages-245-254.pdf)
-
-研讀論文對我的幫助除了學習他人的思考脈絡，我覺得最有挑戰的是理解內化而不是單純瀏覽，因為論文很多地方都不會寫的非常清楚，比如說像是公式的完整證明，他會省略掉中間很多步驟，另外在不同的論文之間，即便在討論同一件事情，使用的數學符號會大不相同，所以需要比對整理。也要去觀察數學理論在真實世界的實踐，因為理論如果沒有實作出來也沒什麼意義，實際應用也一定會有難處讓理論和實作無法完全對齊，如同現今的 EEVDF 核心實作，全局虛擬時間改為由任務的虛擬執行時間去反推等等。對我來說，研讀論文和其他第一手資料是讓我知道實作設計的動機跟基礎，如果跳過這一步直接去看實作程式碼，對其舉燭猜測會很不踏實。
 
 觀摩其他學員的期末專題：
 
-* [群組排程的考量因素和落實](https://hackmd.io/@sysprog/B14go-K-xx)
-* [探討 sched_ext 及機器學習](https://hackmd.io/@sysprog/BygEQ4dWxx)
-* [虛擬無線網路裝置驅動程式](https://hackmd.io/@sysprog/HyUvvBm-ll#Linux-核心專題-虛擬無線網路裝置驅動程式)
-* [作業系統的設計和開發](https://hackmd.io/@sysprog/HyIQvDYWll)
-* [Redis/Valkey + io_uring](https://hackmd.io/@sysprog/SyxZhzFZlg)
+[Linux 核心設計專題: Linux no-MMU 的客製化和改進](https://hackmd.io/@sysprog/SJ9_FmuAWl)
+[Linux 核心設計專題: 縮減系統啟動時間和客製化](https://hackmd.io/@sysprog/ByXHinRAZe)
+[Linux 核心設計專題: 改進 vcam](https://hackmd.io/@sysprog/Sk3hOzw0Ze)
+[Linux 專題: 效能分析和改進案例探討](https://hackmd.io/@sysprog/S1SVY4nxzl)
+[Linux 核心設計專題: 改進 vwifi](https://hackmd.io/@sysprog/Bk3TgGw0Zx)
+
+---
 
 ## 與授課教師的互動
-7 分。
+8 分。
 
-* 4/14 [課堂討論](https://hackmd.io/u5zg5DS8RoaKI52ZxLgkQg)：探討 process vs thread 在 linux 的本質差異在哪。
-* 5/12 課後討論 : 討論異質多核專題，先去重現去年實驗，了解整體的架構，理解其中原理，不用到當學校老師，但至少要會統整當補習班老師的程度。
-* 5/26 [課堂討論](https://hackmd.io/CZEAQrigR0KL2MHBbK8qnw)：探討異質多核的重要性以及 RPMsg 和 VirtIO 相關問題，包含 頻率跟功耗的關係、為何異質多核需要通訊以及為何需要有異核的架構。
-* 6/23 課後討論：與老師分析我目前 benchmark 的不足，我假定大核往小核的通訊成本等於小核往大核，這是錯誤的想法，並與老師討論可能的原因，以及去測試不同payload 對通訊成本的負擔。
-* 6/2 [模擬面試]( https://drive.google.com/file/d/1UeUM1CMDeZCOXisb-Xd-bG6d9bxKkJG0/view?usp=drive_link):與助教和老師討論 ，Process 與 Thread 的本質差異、Stack 與 Heap 的設計考量、使用 POSIX Thread 控制執行順序、Futex 的設計與排程器的互動，但都答不出來，有在後續檢討以及追蹤(回信的方式)  
+4/14 [課堂討論](https://hackmd.io/u5zg5DS8RoaKI52ZxLgkQg)：探討 process vs thread 在 linux 的本質差異在哪。
+5/12 課後討論 : 討論異質多核專題，先去重現去年實驗，了解整體的架構，理解其中原理，不用到當學校老師，但至少要會統整當補習班老師的程度。
+5/26 [課堂討論](https://hackmd.io/CZEAQrigR0KL2MHBbK8qnw)：探討異質多核的重要性以及 RPMsg 和 VirtIO 相關問題，包含 頻率跟功耗的關係、為何異質多核需要通訊以及為何需要有異核的架構。
+6/23 課後討論：與老師分析我目前 benchmark 的不足，我假定大核往小核的通訊成本等於小核往大核，這是錯誤的想法，並與老師討論可能的原因，以及去測試不同payload 對通訊成本的負擔。
+6/2 [模擬面試](https://drive.google.com/file/d/1UeUM1CMDeZCOXisb-Xd-bG6d9bxKkJG0/view?usp=drive_link):與助教和老師討論 ，Process 與 Thread 的本質差異、Stack 與 Heap 的設計考量、使用 POSIX Thread 控制執行順序、Futex 的設計與排程器的互動，但都答不出來，有在後續檢討以及追蹤(回信的方式)
+
+---
 
 ## 所見所聞所感
 10 分。
 
-* 眼見
+### 誠實面對自己
 
-    這堂課首先讓我意識到作為一個學生，我連許多基本的素養都不足，像是如何撰寫好的 git commit message、如何流暢清楚的用文字表達想法以及如何有效的溝通等等。這些是我以前常常會忽略的細節，看似普通但是非常重要。另外還有數學的素養，像是從作業一的 [list sort 演算法分析](https://hackmd.io/@devaraja/paper)跟統計全部都是基於數學，工程人員不能靠感覺要靠客觀事實，數學跟理論是不可輕忽的一塊。以前很無知的時候還會覺得對於人工智慧沒興趣的資工系學生念數學幹嘛呢，但是從這堂課開始老師便不斷地強調，還有親身去研讀論文過後，才真正明白數學是許多東西的起點這件事。
-    
-    我投入學習核心的 CPU 排程器已經快兩個月了，發現它比我預期的還要困難，到現在還是覺得自己並沒有真正融會貫通。理論上待完成的部分像是 GPS 的論文只研讀了前半段還有 EEVDF 和 WF2Q 的關聯，實作上像是整個排程程式的運作流程以及 cgroup 等等細節，還未研讀的東西還有太多太多，而這甚至只是整個龐大資訊領域裡面的小小一部分，但我深刻了解到當中的每個小齒輪都值得投注一輩子的時間去學習。老師常常說要誠實面對自己，我認為首先就是要先承認並且發現自己是無知的。跨出無知的舒適圈而見識到世界的廣大，是這門課帶給我最大的收穫。
-	
-* 不要急
+這堂課首先讓我意識到作為碩士生，我連許多基本的能力都不足，像是高中數學無法運用在現實生活、說自己懂C語言卻無法實作資料結構，甚至連 Quick sort 都無法做出全面分析，只會死背複雜度。起初覺得我只是不想努力，只要認真讀就會變成強者，但越是上課，越是難過，發現自己其實是井底之蛙。這會下意識地想讓人逃避，無法有實質改進，不如承認自己的不足，虛心求教，一點一滴地把教材看完，即使很慢。到後期也比較敢跟老師對話，相較於一開始傾向選擇看似安全或討好的說法，現在我更願意誠實面對自己。
 
-	這學期被老師提醒不要急三次了，包括像是之前詢問重點是什麼，結果被老師回了一句「沒有什麼重點，所有的東西都是重點」。急躁和總想著一蹴可幾一直是我的毛病之一，曾經也有因為專題大多停留在理論與考古階段而感到焦慮迷惘的時候，但是在定下心慢慢學習之後體會到了它對我的幫助還有老師指派這個題目給我的用意，像是補足許多缺失的作業系統基礎知識，在進入碩班前練習研讀論文並且內化成自己的理解呈現以及學習閱讀原始碼和開發者的討論等第一手資訊。對應到老師常說的：如果連基本的小事和細節都做不好，要怎麼去了解千萬行的 Linux 核心程式碼？
+### 對細節的重視
 
+許多人剛拿到專題的時候會急於改進，包括我，劈頭就是問說我能改甚麼，但專案都是由前人一點一滴去累積的，想要在很短的時間內理解就很難了，何況是做出改進，裡面的細節很多，這點我感同身受，在異質多核裡面，不論是 USB 、 RPMsg 又或是 VirtIO 都大有學問，如果不去鑽研這些學長實作的細節，會不知道哪裡是他嘗試過的方向。benchmark 的分析也是研究的重點，細節藏在魔鬼中，這是真的，在起初我以為 小核送往大核 以及 大核送往小核 的時間是一樣的，但經過岩井的 benchmark 查證，發現會有很大的差距，這也讓我理解到一個好的研究是必須靠嚴謹的分析，在有限的程式碼盡可能榨乾有用的資訊。這也在實習的過程幫助我，剛好我的 team 是做 performance 相關，不僅能看到一個產品對於 benchmark 有多注重，也能讓我更快跟上他們對於細節的思路，了解到產品不是平地起高樓，必須經過很多心思，以及對於細節的重視堆疊上去的。
 
-* 閱讀〈因為自動飲料機而延畢的那一年〉和這堂課的關聯性
+### 閱讀〈因為自動飲料機而延畢的那一年〉
 
-    我最有感覺的是真實世界的問題，像是關於 CPU bandwidth control 運用在多租戶的雲端資源分配系統，以及從閱讀開發者之間的討論，了解到 CPU 排程器的漫長的演進其實跟 latency 和 throughput 之間的取捨息息相關，不同公司和開發者所在乎的指標大大不同，而這也讓 CPU 排程器的發展變得更為困難，要經過多次的實驗跟效能分析才能完成一次迭代。
+我最有感覺的是我最有感覺的是「你不能現在就放棄，要是現在就放棄的話，你這輩子日後遇到這種等級的困難，就只會想逃避而已。」，恰恰也是我現在的處境，只會逃避寫程式，甚至欺騙自己其實很厲害，要先對自己誠實，即使差距很大，但也要一步一腳印慢慢朝著頂尖邁進，或許日後的困難會更大也說不定，但能夠養成好的心態以及方法，會是一輩子受用無窮的。
 
-## 自我評量 (1 ~ 10)：
-$GEOMEAN=(8×7×8×10×10)^{1/5}=8.516391205$
+---
 
-方案 B：$1+floor(GEOMEAN)=1+8=9$
+自我評量 (1 ~ 10)：
+$$GEOMEAN=(8×7×8×8×10)^{1/5}=8.14467201856$$
+
+方案 B：1+floor(GEOMEAN)=1+8=9
