@@ -9,14 +9,16 @@ categories: User
 * GitHub: [`yhsindev`](https://github.com/yhsindev)
 * HackMD: [`@tavy`](https://hackmd.io/@tavy)
 
-# 2026 Linux 核心設計/實作 自我評量
+# 2026 年 Linux 核心設計課程自我評量
 ## 第一項、成果發表和貢獻
 1. 7/5 修改錯字 
 Linux 核心的 hash table 實作： key 值得範圍 -> key 值「的」範圍
 2. 7/5 刪除冗餘字 
 Linux 核心的 hash table 實作： hash value 的值 -> 雜湊值
 
-**評分: 3 分**
+---
+> **評分: 3 分**
+
 這些修改屬於小型文件維護，貢獻有限，因此只給低分。
 
 
@@ -42,8 +44,9 @@ Linux 核心的 hash table 實作： hash value 的值 -> 雜湊值
 隨堂測驗需要在短時間內閱讀題幹、教材與延伸資料，找出關鍵資訊並作答。課程初期，我不熟悉這種密集查證的形式，常花太多時間在搜尋資料，卻無法快速判斷題目真正要問的概念。後來我將 C99 規格書存成 PDF，並養成查閱 Linux man-pages 的習慣，逐漸能把題目中的關鍵字連到規格、系統呼叫語意或 Linux 相關文件。
 
 其中印象較深的是 quiz 6 的 TurboQuant 題目。這題討論如何在不明顯犧牲模型準確度的情況下，降低大型語言模型 KV cache 的記憶體需求，剛好我這學期有修 AI Accelerator，授課教師也提到，單純從硬體層面改良並不容易，軟體與演算法層面的設計是新的賽道，讓我發覺 Linux 核心課程的測驗並不只是在考單一技術細節，也會連到現行業界在面對的問題，因此，修讀這兩門課讓我的學習前後呼應，並讓我更有方向強化 AI Accelerator 領域的學習。
+---
+> **評分: 7 分**
 
-**評分: 7 分**
 我完成四份作業與隨堂測驗，並從 IEEE 754、C 語言未定義行為、hash table 與 SipHash 等題目延伸到規格書、原始碼及期末專題，後期也建立了查閱 C99 規格書與 Linux man-pages 的習慣。未給更高分，是因為課程前期面對密集查證題目時，仍無法快速辨認核心概念，部分理解主要在測驗後才補齊。
 
 
@@ -51,10 +54,15 @@ Linux 核心的 hash table 實作： hash value 的值 -> 雜湊值
 Linux 核心設計專題: 雜湊函數之數學基礎與資訊安全議題 [HackMD](https://hackmd.io/rNkcgtZ1SEaHLYn2JpaDkg?view)/[GitHub](https://github.com/yhsindev/kernel-hash)
 
 觀摩同學的期末專題並提問：
+
 1. [Linux 核心專題: RCU](https://hackmd.io/ggVQ6mO1RBKaPp44IWtGrA?view)
+
 2. [Linux 核心專題: EWMA 分析和應用案例](https://hackmd.io/okzCxJv3RGmrmN3goWocjQ?view)
-3. [Linux 核心設計專題: MDP-based memory tiering](https://hackmd.io/@sysprog/SkrJ5TICbg)
+
+3. [Linux 核心設計專題: MDP-based memory tiering](https://hackmd.io/@sysprog/SkrJ5TICbg?view)
+
 4. [Linux 核心設計專題: 圖形函式庫的效能改進](https://hackmd.io/4_nS7VDFQ7GgM2vZ0QcAEw?view)
+
 5. [Linux 核心專題: qspinlock 量化分析](https://hackmd.io/FFQ59lxpRWaXIP0hYPrx5A?view)
 
 
@@ -83,11 +91,14 @@ Linux 核心設計專題: 雜湊函數之數學基礎與資訊安全議題 [Hack
 第二，技術細節與用語必須能被檢查。課堂問答與教師互動讓我注意到，32-bit hash、128-bit key、collision、cycle overhead 等概念不能混用或只做概略描述。當發現自己的說法或實驗假設有問題時，我開始習慣立刻修正，而不是繼續沿用原本的敘述。
 
 第三，Linux 核心的理解必須建立在實作與量測上。與其只說自己讀過教材，更有意義的是留下可執行的程式、失敗紀錄、量測條件與實驗結果。完成這個專題後，我在與他人討論時，能具體說明自己修改過什麼、哪些方法量不到結果、後來如何調整，以及目前的結論有哪些限制。
+
 ### 回覆同學提問與修正
 
 專題完成後，我也回覆了 6 位同學的提問。這些問題有些直接指出我原本沒有想清楚的地方，例如 threat model、workload 的適用範圍，以及 IPC 的解讀是否過度延伸。回覆時，我必須重新查原始碼、git commit 與實驗數據，也有幾次需要承認現有證據不足，改寫或縮小原本的結論。這讓我發現，回覆 review 並不是替自己的結果辯護，而是另一種學習方式；別人的問題會逼我重新檢查假設，也讓我更能分辨哪些是實驗支持的結論，哪些仍只是推測。
 
-**評分：9 分**
+---
+> **評分：9 分**
+
 這是五項中投入最多、公開軌跡也最完整的一項。除了程式碼、實驗日誌與量測結果，我也觀摩 5 位同學的專題並提問，並回覆 6 位同學對本專題提出的問題。回覆過程中，我補上 threat model、限縮 workload 結論，也修正 IPC 的過度解讀。未給滿分，是因為資訊安全面的攻擊模型仍不完整，也尚未提出可送出的 kernel patch。
 
 
@@ -107,9 +118,11 @@ Linux 核心設計專題: 雜湊函數之數學基礎與資訊安全議題 [Hack
 
 6/2 模擬面試同屬課堂問答，授課教師要求以公司面試標準應對。題目涵蓋 futex、kernel stack、workqueue、process/thread 在 scheduler 角度的差異，以及 POSIX thread 的 A→B→C 同步設計。當場回答時，我無法說明 futex、stack/heap 題目停留在資料結構層次，未切入 kernel memory、workqueue 與 scheduler runqueue 混淆、semaphore 題目也沒有先建立 A→B、B→C 兩段同步關係，因此無法提出可執行設計。
 
-事後我逐題重整答案，補上 kernel stack 小尺寸與 kernel memory 消耗、連續頁面配置、碎片化風險的關係，也釐清 workqueue 是延後執行 work item 的 kernel 機制，最終由 worker thread 作為 task 接受 scheduler 排程。後續準備面試題時，我會將每個概念整理成「定義、用途、kernel 實作關聯、限制」四個層次，並練習用完整句子回答，減少停頓與語助詞造成的表達斷裂。
+事後我逐題重整答案，補上 kernel stack 小尺寸與 kernel memory 消耗、連續頁面配置、碎片化風險的關係，也釐清 workqueue 是延後執行 work item 的 kernel 機制，最終由 worker thread 作為 task 接受 scheduler 排程。後續準備面試題時，我會將每個概念整理成「定義、用途、kernel 實作關聯、限制」四個層次，並練習用完整句子回答，減少停頓與語助詞造成的表達錯誤。
 
-**評分: 8 分**
+---
+> **評分: 8 分**
+
 我完成一次一對一討論及兩次課堂問答，並在問答後查閱教材、原始論文與核心實作，整理 EEVDF、kernel stack、workqueue 與執行緒同步等問題。我也針對教材中 EEVDF fairness 的敘述提出具體修改建議，並將模擬面試中未回答完整的問題逐項補正。未給更高分，是因為當場技術表達仍不穩定，無法在限定時間內建立完整且精確的回答。
 
 ## 第五項、 所見所聞所感
@@ -120,10 +133,12 @@ Linux 核心設計專題: 雜湊函數之數學基礎與資訊安全議題 [Hack
 
 專題也補回我前期沒打穩的地方。一開始我其實很抗拒讀 kernel 的 C style code，但實驗結果常不如預期，只能回頭查 C 語言規格、bitwise 操作、資料對齊、暫存器用法，還有 kernel module 的實作。C 語言未定義行為、雜湊函式、效能量測、kernel module 與 `perf`，這些原本散在教材各處的東西，是在專題裡被串起來之後，我才真正明白它們為什麼重要。
 
-六月面試科技公司時，Linux kernel 這份專題馬上派上用場。以前我大概只會說「我做過某某某專題」，這次能具體講出改了哪些程式、用量化的方式描述貢獻，為什麼 `siphash` 較安全但較貴，以及怎麼用 `perf` 分析 data，最後也拿到 IC 廠韌體暑期實習。另外，在面試中提問業界主管好奇的是問題的通用性、為什麼值得解決、能不能在別的情境重現，而不只是我改出了什麼。也因此，之後若要延伸雜湊相關的研究，就不該只停在 OVS，也該看看 file system 或其他 kernel path 的雜湊使用情境，去看效能與安全性的 trade-off 有沒有更廣的意義。
+六月面試科技公司時，Linux kernel 這份專題馬上派上用場。以前我大概只會說「我做過某某某專題」，這次能具體講出改了哪些程式、用量化的方式描述貢獻，為什麼 `siphash` 較安全但成本較高，以及怎麼用 `perf` 分析 data，最後也拿到 IC 廠韌體暑期實習。另外，在面試中業界主管提問的是問題的通用性、為什麼值得解決、能不能在別的情境重現，而不只是我改出了什麼。也因此，之後若要延伸雜湊相關的研究，就不該只停在 OVS，也該看看 file system 或其他 kernel path 的雜湊使用情境，去看效能與安全性的 trade-off 有沒有更廣的意義。
 
-**評分: 9 分**
-回顧這學期，一開始期初考與測驗、作業的強度讓我覺得有可能跟不完這堂課，但老師再三強調「做大事 or nothing」，讓我想「好吧！既然要修課，必須要做出成績」。
+---
+> **評分: 9 分**
+
+* 回顧這學期，一開始期初考與測驗、作業的強度讓我覺得有可能跟不完這堂課，但老師再三強調「做大事 or nothing」，讓我想「好吧！既然要修課，必須要做出成績」。
 經過本學期，除了知識面的提升，也看到優秀的同儕在課堂問答時能就自己的專業領域或過往所學經驗，回答出超過題目表面的問題，聽到邱冠維學長作為 maintainer 及陳麒升同學跟老師去參加 Open Source Summit 的經驗分享，讓我看到強者怎麼學習、對於如何精進自身實力有更具體的方向，技術能力不只表現在考題是否答對，更包含能否長期閱讀原始碼、參與社群、回應他人的問題，並留下公開且可追蹤的成果。
 
 ## 自我總評量得分
