@@ -1,7 +1,6 @@
 ---
 title: c8763yee (徐彥翔)
 categories: User
-description: backup and draft of https://wiki.csie.ncku.edu.tw/User/c8763yee
 ---
 
 # 簡介
@@ -72,7 +71,7 @@ description: backup and draft of https://wiki.csie.ncku.edu.tw/User/c8763yee
 * [Homework3 (basics)](https://hackmd.io/@c8763yee-/linux2026-basics)
 
 ### 隨堂測驗
-- 第 1 週：34 / 60
+- 第 1 週：34 / 100
 - 第 3 週：41 / 138
 - 第 4 週：49 / 133
 - 第 5 週：16 / 117
@@ -197,7 +196,6 @@ i = ((exponent - 1) << 23) |( i >> 31)<<31 | (i&((1<<23)-1));
 
 ## 分數計算
 
-
 | 項次 | 名稱             | 分數 |
 | ---- | ---------------- | ---- |
 | 1    | 成果發表與貢獻   | 9    |
@@ -206,14 +204,17 @@ i = ((exponent - 1) << 23) |( i >> 31)<<31 | (i&((1<<23)-1));
 | 4    | 與授課教師的互動 | 7    |
 | 5    | 所見所聞所感     | 9   |
 
-幾何平均 (GEOMEAN) 計算 
+- 幾何平均 (GEOMEAN) 計算 
+
 $$ GEOMEAN \ = \sqrt[5]{9 \times 7 \times 5 \times 7 \times 9} \ = 7.236527563504052
 $$
 
 驗算: $| 7.236527563504052^5-(9 \times 7 \times 5 \times 7 \times 9)| \ll 1$, 符合定義
 
 方案選擇:
+
 - 方案 B: 1 + floor(GEOMEAN)
+
 - 1 + floor(7.236527563504052) = 1 + 7 = 8
 
 自我評量總分: 8 / 10
