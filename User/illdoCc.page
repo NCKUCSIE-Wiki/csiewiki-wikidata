@@ -35,6 +35,7 @@ categories: User
 
 ## 作業/隨堂測驗
 7 分。
+
 - [2026q1 Homework1 (warmup)](https://hackmd.io/@JuJing/Bk1vp2Rd-g)
 - [2026q1 Homework2 (stdc)](https://hackmd.io/@JuJing/SyJ_SzWqWg)
 - [2026q1 Homework2 (basics)](https://hackmd.io/@JuJing/rkgRjhE6Wl)
@@ -42,6 +43,7 @@ categories: User
 這堂課最大的收穫就是讓我在查找一個問題的答案時，優先查找權威教材，而非盲目詢問 AI 或是上網搜尋一般的網路文章。授課教師指派的作業也讓我了解到細節的重要性，過往我總是會選擇性的忽略一些自認不重要的細節，但在寫作業的時候才意識到真實世界的問題往往是由千千萬萬個細節組成的。
 ## 期末專題
 8 分。
+
 - [Linux 核心專題: RCU](https://hackmd.io/ggVQ6mO1RBKaPp44IWtGrA)
 
 一開始看完授課教師寫的 [Linux 核心設計: RCU 同步機制](https://hackmd.io/@sysprog/linux-rcu)，以及 Linux kernel 的文件後，自認為已對 RCU 有初步理解。某堂下課時找授課教師討論，第一個問題就答不出來，至此我才了解到真實世界的議題需考慮的情況非常多，必須實際閱讀程式碼才有辦法完整了解。
@@ -56,6 +58,7 @@ categories: User
 
 ## 與授課教師的互動
 10 分。
+
 課堂問答：
 - [2026-03-10 課堂問答](https://hackmd.io/p87SQ6WpT-ehlVhXglXk9w#illdoCc
     - 探討 min 的 branch-less 實作，發現可以用 unsigned 規避掉 signed overflow 會有的 undefined behavior
@@ -77,6 +80,7 @@ categories: User
     
 ## 所見所聞所感
 10 分。
+
 看完《因為自動飲料機而延畢的那一年》帶給我的感觸和衝擊是很大的。在大學時期，我對於「不要重複造輪子」這句話深信不疑，認為重複造輪是一件很浪費時間並且也沒有意義的事情，畢竟如果真要自己寫一個像 sort() 這種基礎功能，我怎麼可能寫得贏 Python 內建的版本？那些都是最頂尖的開發者長期打磨過的。我總是拿這個例子來合理化自己不想深入學習細節的逃避心態。
 在這堂課的中期，我開始重新思考重複造輪的意義。接觸到真正的問題時，我過去所認為「有用」的理論，全都派不上用場。因為我根本沒有實際實作過，這些所謂的理論無法內化成我的知識。這時我才了解，重複造輪從來就不是為了寫出比現有版本更好的程式，而是為了讓自己更能夠理解這件事背後的設計、考量、瓶頸等議題。
 
