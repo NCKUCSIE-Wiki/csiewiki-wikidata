@@ -14,12 +14,11 @@ categories: User
 
 本份自我評量遵循 [課程自我評量指引](https://hackmd.io/@sysprog/linux2024-assessment) 的書寫規範，避免「期許自己」、「已盡最大努力」等空泛承諾，所有產出皆附對應的公開軌跡 (Linux 上游 patch、GitHub PR、HackMD 開發紀錄、會議錄影)。各項自評分數皆為 1 到 10 的整數，最末以幾何平均計算總分並適用方案 B。
 
-
 ## 成果發表與貢獻
 
 > 9 分
 
-以下貢獻採計區間為 2 月 23 日到 7 月 8 日。以相關貢獻被合併或通過當下時間為準。
+以下貢獻採計區間為 2 月 23 日到 7 月 8 日。以相關貢獻被合併或公開演講審稿通過的當下時間為準。
 
 ### Kernel patch (Trivial)
 
@@ -56,7 +55,7 @@ categories: User
 
 ### 公開演講
 
-* 2026/08/09 — COSCUP 2026 System Software 講題[「從個人電腦到資料中心：Linux 記憶體管理的演化」](https://pretalx.coscup.org/coscup-2026/talk/RES9MM/)
+* 2026/08/09 — COSCUP 2026 System Software 講題：[〈從個人電腦到資料中心：Linux 記憶體管理的演化〉](https://pretalx.coscup.org/coscup-2026/talk/RES9MM/)
 
 ## 作業與隨堂測驗
 
@@ -66,7 +65,7 @@ categories: User
 
 * [Homework2 (stdc)](https://hackmd.io/@c8763yee-/linux2026-stdc)
 
-在進行思索〈分析「快慢指標」〉題組時使用數學分析對鏈結串列分別使用 Merge sort 與 Fisher-Yates shuffle 進行隨機排序時的時間複雜度 Average/Worst case。
+在進行〈分析「快慢指標」〉題組時使用數學分析對鏈結串列分別使用 Merge sort 與 Fisher-Yates shuffle 進行隨機排序時的時間複雜度 Average/Worst case。
 
 * [Homework3 (basics)](https://hackmd.io/@c8763yee-/linux2026-basics)
 
@@ -82,13 +81,13 @@ categories: User
 - 第 13 週：84 / 105
 - 第 15 週：96 / 108
 
-課程初期由於可以上網查資料與本地撰寫執行程式，因此做題目時偏向直接從對應 Linux 核心程式碼與撰寫 Python 程式計算，導致的結果就是來不及做完全部題目。不過在課程期間由於對 C 語言規格的重視，在後續進行測試時遇到類似的題目也能直覺想到對應的知識點並進行作答，使得後續測驗成績逐漸提昇。在後續授課教師與其他學生的問答也開始往問題的本質思考。
+課程初期由於可以上網查資料與本地撰寫執行程式，因此做題目時偏向直接從對應 Linux 核心程式碼與撰寫 Python 程式計算，導致的結果就是來不及做完全部題目。不過在課程期間由於對 C 語言（主要是 C99 與 C11）規格的重視，在後續進行測試時遇到類似的題目也能直覺想到對應的知識點並進行作答，使得後續測驗成績逐漸提昇。在授課教師與其他學生的問答也開始往問題的本質與問題中提到的設計考量來思考。
 
 ## 期末專題
 
 > 5 分
 
-未完成期末專題，由於無法說明 MGLRU 本身對 Linux 核心於個人電腦的改善，因此未登記於[課程期末專題](https://hackmd.io/@sysprog/linux2026-projects)。
+未完成期末專題，並且由於無法說明 MGLRU 本身對 Linux 核心於個人電腦的改善，因此未登記於[課程期末專題](https://hackmd.io/@sysprog/linux2026-projects)。
 
 題目：針對 MGLRU 的 refault feedback loop 統計 (PID Controller) 根據 Generation 存活時間衰減歷史權重。
 
@@ -169,7 +168,7 @@ i = ((exponent - 1) << 23) |( i >> 31)<<31 | (i&((1<<23)-1));
 > 為什麼會出問題呢？因為這裡是他媽的真實世界啊。
 > 大多數人一直活在本來就應該這樣嗎的童話世界裡，電視打開就可以看，機車買來就可以騎，手機買來就可以用，一切都理所當然，本來就應該這樣。偶爾買到不好用的商品我們就抱怨幾句，丟掉換其他更好用的牌子，卻很少意識到那個「本來就該這樣」，背後需要經過多少人月的投入與研發。
 
-讀到這一段時讓我想到當初選擇針對 MGLRU refault feedback loop 進行期末專題時也是想得很簡單，當初認為只要將兩個 Generation 的統計數值取差值後應用進這個 PID Controller 作為 D 項就可以提昇 MGLRU 在記憶體壓力剛開始出現時的反應速度，然後在進行數學分析時才發現除了需要考慮兩個 Generation 統計差值要怎麼取之外，還需要考慮獲取到差值後要怎麼應用至 MGLRU 架構中。甚至到現在我還沒有想到這個具體適用的 Workload 以及對於其他 Workload 的影響。
+讀到這一段時讓我想到當初選擇針對 MGLRU refault feedback loop 進行期末專題時也是想得很簡單，當初認為只要將兩個 Generation 的統計數值取差值後應用進這個 PID Controller 作為 D 項就可以提昇 MGLRU 在記憶體壓力剛開始出現時的反應速度，然後在進行數學分析時才發現除了需要考慮兩個 Generation 統計差值要怎麼取之外，還需要考慮獲取到差值後要怎麼應用至 MGLRU 架構中。甚至到現在我還沒有想到這個修改具體適用的 Workload 以及對於其他 Workload 是否出現 Regression。
 
 ### 關於數學與謹慎用詞
 
@@ -180,19 +179,19 @@ i = ((exponent - 1) << 23) |( i >> 31)<<31 | (i&((1<<23)-1));
 
 ### 關於與上游開發者互動
 
-第一次送出 LKML patch 時, Borislav Petkov (maintainer of `X86 ARCHITECTURE (32-BIT AND 64-BIT)`) 直接退回 Commit 並指出 Commit 訊息可以簡化。在修正 Commit 訊息後發布 v2 patch。不過後續即杳無音訊。在第二周課後向授課教師詢問相關問題時得知 maintainer 對於這種 trivial patch 「相對」不會太重視，並告知我可以向邱冠維 (maintainer of `MIN HEAP`) 詢問相關的問題。
+第一次送出 LKML patch 時, Borislav Petkov (maintainer of `X86 ARCHITECTURE (32-BIT AND 64-BIT)`) 直接退回 Commit 並指出 Commit 訊息可以簡化。在修正 Commit 訊息後發布 v2 patch。不過後續即杳無音訊。在第二周課後向授課教師詢問相關問題時得知 maintainer 對於這種 trivial patch 「相對」不會太重視，並告知我可以向邱冠維 (maintainer of `MIN HEAP`) 寄信詢問相關的問題。
 
 > > This just fixes the misleading comment. No functional changes.
 >
 > s/This just fixes/Fix/
 
-寄信邱冠維詢問後，剛好 Peter Zijlstra (maintainer of `PERFORMANCE EVENTS SUBSYSTEM`) 在回信前合併了這個 Patch。後續收到邱冠維的回信，並被告知下次 v2 patch 不要回覆在上一個版本。
+寄信向邱冠維詢問後，剛好 Peter Zijlstra (maintainer of `PERFORMANCE EVENTS SUBSYSTEM`) 在回信前合併了這個 Patch。後續收到邱冠維的回信，並被告知下次 v2 patch 不要回覆在上一個版本。
 
 ### 關於自身投入的回顧
 
 課程初期在閱讀課程教材時間為每週 21 小時，後面由於進行期末專題與處理研究所事物，每週閱讀教材時間降至每週 10 小時。
 在閱讀課程教材時發現語法、連結失效等錯誤時想到作者自己可以修改錯誤但沒做，那為什麼不能我來改？於是著手進行教材修改。
-即使只能修改 Typo 或是用語錯誤，無法作到像是整理並補充[〈Linux 核心設計：記憶體管理〉](https://hackmd.io/@sysprog/linux-memory)的 rmap 部份，但畢竟「勿以善小而不為」。
+即使只能修改 Typo 或是用語錯誤，無法作到像是整理並補充[〈Linux 核心設計：記憶體管理〉](https://hackmd.io/@sysprog/linux-memory)的 Reverse mapping 部份的程度，但畢竟「勿以善小而不為」。
 
 ## 分數計算
 
