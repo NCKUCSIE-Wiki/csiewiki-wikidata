@@ -15,7 +15,7 @@ categories: User
 8 分。
 
 * 課程教材
-    * [Linux 核心設計: Scheduler(2): 概述 CFS Scheduler](https://hackmd.io/@sysprog/linux-scheduler/%2F%40sysprog%2Flinux-scheduler-2)：nice value 每增加 1，weight 就乘上 1.25 倍 -> nice value 每增加 1，weight 就變為原本的 1/1.25。
+    * [Linux 核心設計: Scheduler(2): 概述 CFS Scheduler](https://hackmd.io/@sysprog/linux-scheduler/%2F%40sysprog%2Flinux-scheduler-2)：nice value 每增加 1，weight 就乘上 1.25 倍 -> nice value 每增加 1，weight 就變為原本的 $1/1.25$。
     * [你所不知道的 C 語言：linked list 和非連續記憶體](https://hackmd.io/@sysprog/c-linked-list#Modern-method)：typo（前題 -> 前提）
     * [運用 Perf 分析程式效能並改善](https://hackmd.io/p6CKCtaZQBe3GJyiLEjbJg?view=#%E5%8F%96%E6%A8%A3%E6%B8%AC%E9%87%8F)：typo（取樣頻率頻率的高低 -> 取樣頻率的高低）
     * [你所不知道的 C 語言：數值系統](https://hackmd.io/@sysprog/c-numerics#%E7%9C%81%E5%8E%BB%E8%BF%B4%E5%9C%88)：文中程式的輸出會將位元反轉的結果去掉 32 bits 前置的 0，使輸出沒有對齊 32 bits ，這不但會影響閱讀，也無法完整表示二補數，bit reverse 與 signed/unsigned 的對應關係，故補上該段程式輸出的前置 0。
@@ -50,7 +50,7 @@ categories: User
 
 在第一次的課堂問答中，老師問了我關於有號整數右移之問題，這時我憑感覺回答，老師當場的指正也讓我知道理工人不能憑感覺回答，要有憑有據，同時這也讓我意識自己對 C99 標準掌握度之不足。
 
-在第二次的課堂問答中，老師問了我關於 CFS 與 PELT 等延伸問題，但在這之前我都沒有閱讀排程器相關的教材，導致我無法回答這些問題，故在後續議題追蹤時，便先閱讀〈[Linux 核心設計: 不只挑選任務的排程器](https://hackmd.io/@sysprog/linux-scheduler/%2F%40sysprog%2Flinux-scheduler-0)〉，〈[Linux 核心設計: Scheduler(2): 概述 CFS Scheduler](https://hackmd.io/@sysprog/linux-scheduler/%2F%40sysprog%2Flinux-scheduler-2)〉，〈[Linux 核心設計: Scheduler(4): PELT](https://hackmd.io/@sysprog/linux-scheduler/%2F%40sysprog%2Flinux-scheduler-4)〉與《Demystifying the Linux CPU Scheduler》中第 2.3.1 至 2.3.10 節，以及第 2.5.2 節，也因此發現了教材與書中的錯誤之處。
+在第二次的課堂問答中，老師問了我關於 CFS 與 PELT 等延伸問題，但在這之前我都沒有閱讀排程器相關的教材，導致我無法回答這些問題，故在後續議題追蹤時，便先閱讀〈[Linux 核心設計: 不只挑選任務的排程器](https://hackmd.io/@sysprog/linux-scheduler/%2F%40sysprog%2Flinux-scheduler-0)〉，〈[Linux 核心設計: Scheduler(2): 概述 CFS Scheduler](https://hackmd.io/@sysprog/linux-scheduler/%2F%40sysprog%2Flinux-scheduler-2)〉，〈[Linux 核心設計: Scheduler(4): PELT](https://hackmd.io/@sysprog/linux-scheduler/%2F%40sysprog%2Flinux-scheduler-4)〉與《Demystifying the Linux CPU Scheduler》中第 2.3.1 至 2.3.10 節，以及第 2.5.2 節，也因此發現了教材與書中的可修改之處。
 
 ## 所見所聞所感
 9 分。
