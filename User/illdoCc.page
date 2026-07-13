@@ -1,0 +1,88 @@
+---
+title: illdoCc (歐陽主敬)
+categories: User
+...
+
+# 簡介
+* 國立成功大學 資訊工程研究所 (2025 ~ 2027)
+* GitHub: [illdoCc](https://github.com/illdoCc)
+* Hackmd: [JuJing](https://hackmd.io/@JuJing)
+
+# 2026 Linux 核心設計 春季班 自我評量
+## 成果發表和貢獻
+5 分。
+
+- 課程教材的貢獻
+    - 3/13 在[討論區](https://www.facebook.com/share/p/1Hvk5QYatY/)詢問並紀錄關於[整數除法教材](https://hackmd.io/@sysprog/linux-intdiv#%E7%89%B9%E5%88%A5%E7%9A%84%E9%99%A4%E6%95%B8)的問題及疑惑之處
+    - [初步解讀浮點數](https://hackmd.io/Egp_fActTlCk11cfI8ORyg)
+        - 2026/03/05：加上易於理解二進制浮點數表示的[敘述](https://hackmd.io/Egp_fActTlCk11cfI8ORyg?both=&revisionAfter=1772697616993&diffWithCurrent=&revisionAuthorPath=JuJing#)
+    - [Linux 核心原始程式碼的整數除法](https://hackmd.io/z9tbSyjPT0OMIj_UKp3dkA)
+        - 2026/03/12：256 -> 128
+        - 2026/03/12：x -> $in$
+    - [Linux 核心的 hash table 實作](https://hackmd.io/rpIi8FeqQ9eBJ-UTFgb--A)
+        - 2026/03/18：加上易於理解 `GOLDEN_RATIO_32` macro 的敘述
+        - 2026/03/18：加上 linux kernel 中的一段註解以利於理解 golden ration 的選擇
+        - 2026/03/18：多加一句數值對應到數學式的解釋以利理解 `GOLDEN_RATIO_32` 相關的 bitwise 操作
+        - 2026/03/18：新增 latex 表示(p -> $p$)
+    - [有限體算術與 $2^k$ 索引：Linux 核心對數學封閉性與硬體成本的權衡](https://hackmd.io/x3M4H67-Q4aTz4sPgkxX-w)
+        - 2026/03/26：新增「依據貝祖定理」，以利於理解 Linux kernel 選擇乘法常數時刻意使用奇數的原因
+    - [UNIX 作業系統 fork/exec 系統呼叫的前世今生](https://hackmd.io/aFsJQgoWTfyEW3kglF55ZA)
+        - 2026/04/14：加上一小句解釋以利於理解如何利用 fork 找出 stack canary 位元組
+    - [RCU 同步機制](https://hackmd.io/2dsLRhWERDaHtFIlTmG2nQ)
+        - 2026/05/09：1 -> 0
+    - [從 √2 的存在談開平方根的快速運算](https://hackmd.io/HUzAPdVVSACpsnaj5Omvgw)
+        - 2026/07/11：新增數學式以便理解固定點證明
+
+## 作業/隨堂測驗
+7 分。
+- [2026q1 Homework1 (warmup)](https://hackmd.io/@JuJing/Bk1vp2Rd-g)
+- [2026q1 Homework2 (stdc)](https://hackmd.io/@JuJing/SyJ_SzWqWg)
+- [2026q1 Homework2 (basics)](https://hackmd.io/@JuJing/rkgRjhE6Wl)
+
+這堂課最大的收穫就是讓我在查找一個問題的答案時，優先查找權威教材，而非盲目詢問 AI 或是上網搜尋一般的網路文章。授課教師指派的作業也讓我了解到細節的重要性，過往我總是會選擇性的忽略一些自認不重要的細節，但在寫作業的時候才意識到真實世界的問題往往是由千千萬萬個細節組成的。
+## 期末專題
+8 分。
+- [Linux 核心專題: RCU](https://hackmd.io/ggVQ6mO1RBKaPp44IWtGrA)
+
+一開始看完授課教師寫的 [Linux 核心設計: RCU 同步機制](https://hackmd.io/@sysprog/linux-rcu)，以及 Linux kernel 的文件後，自認為已對 RCU 有初步理解。某堂下課時找授課教師討論，第一個問題就答不出來，至此我才了解到真實世界的議題需考慮的情況非常多，必須實際閱讀程式碼才有辦法完整了解。
+每次讀程式碼時都會有新的發現，其中最大的收穫的是讓我知道某個 tracepoint 對應到哪種 RCU 行為。如此在分析 RCU 不同 workload 底下的 latency 時就能以正確的 tracing 手段量測。
+
+下面是觀摩其他同學的專題：
+- [Linux 核心設計專題: 雜湊函數之數學基礎與資訊安全議題](https://hackmd.io/@sysprog/rkzc12bJGg)
+- [Linux 核心設計專題: rv32emu 的 Virtio 強化](https://hackmd.io/xBHchwANS7aE_RmXfT1vGg)
+- [Linux 核心專題: EWMA 分析和應用案例](https://hackmd.io/okzCxJv3RGmrmN3goWocjQ)
+- [Linux 核心專題: qspinlock 量化分析](https://hackmd.io/FFQ59lxpRWaXIP0hYPrx5A)
+- [Linux 核心設計專題: 改進 vcam](https://hackmd.io/iaC67uWDQKaZL5Jy1BBW4w)
+
+## 與授課教師的互動
+10 分。
+課堂問答：
+- [2026-03-10 課堂問答](https://hackmd.io/p87SQ6WpT-ehlVhXglXk9w#illdoCc
+    - 探討 min 的 branch-less 實作，發現可以用 unsigned 規避掉 signed overflow 會有的 undefined behavior
+    - 探討使用哪種統計方法可以統計出 context switch 的時間，並實際推導數學證實結果
+- [2026-06-11 課堂問答](https://hackmd.io/PhjkT6kgR8uTZnIc1-xGNw#illdoCc)
+    - 探討 SPSC 應用場景
+    - 探討 ABA 問題
+    - 探討冷次定律和聲音的關聯
+
+一對一討論：
+- 4/27
+    討論如何用 Linux kernel API 實作出 quicksort，並討論為何 list API 當中會有 RCU 的程式片段。使用 list API 實作出 quicksort 是一個全新的體驗，過去在寫 quicksort 時都是從零開始，自己刻出鏈結串列、自己寫出走訪邏輯，並認為自己已經懂 quicksort 的寫法。但實際用 list API 時才發現要考慮的地方很多，包括 Linux kernel 當中採用環狀鏈結串列、取出值時要使用 `container_of` 等。
+- 5/14
+    延續上次的討論，實作出 non-recursive, stack-less 的 quicksort、以及在不多使用額外迴圈的情況下實現 median of three。寫的時候發現可以利用快慢指標的概念，在走訪鏈結串列時順便取得中點。
+- 5/26
+    和老師闡明 RCU 實驗所遇到的 bpftrace 相關問題，老師指出可能是因為 bpftrace 本身有問題，可以修改網路上現有的 rcu 核心模組以正確觀察 RCU。同時可以藉由 bpftrace、ftrace 之類的工具以及對 RCU 的了解，創造出工作的負載，找出 RCU 在不同 workload 下的延遲程度。
+- 6/16
+    和老師討論 RCU 相關的問題，包括：「為何更新次數佔總存取的比例 $f \ll \frac{1}{n_{\text{CPU}}}$ 可使用 RCU？」、「為何 QSBR 演算法可以保證 reader 讀取時間不會無上限？」等問題。在和老師討論的過程配合上自己所閱讀的程式碼，理解了許多 RCU 的背景及脈絡。
+    
+## 所見所聞所感
+10 分。
+看完《因為自動飲料機而延畢的那一年》帶給我的感觸和衝擊是很大的。在大學時期，我對於「不要重複造輪子」這句話深信不疑，認為重複造輪是一件很浪費時間並且也沒有意義的事情，畢竟如果真要自己寫一個像 sort() 這種基礎功能，我怎麼可能寫得贏 Python 內建的版本？那些都是最頂尖的開發者長期打磨過的。我總是拿這個例子來合理化自己不想深入學習細節的逃避心態。
+在這堂課的中期，我開始重新思考重複造輪的意義。接觸到真正的問題時，我過去所認為「有用」的理論，全都派不上用場。因為我根本沒有實際實作過，這些所謂的理論無法內化成我的知識。這時我才了解，重複造輪從來就不是為了寫出比現有版本更好的程式，而是為了讓自己更能夠理解這件事背後的設計、考量、瓶頸等議題。
+
+這堂課的專題帶給我不少的想法，包括並行程式設計的考量、排程器的取捨等。RCU 是一個兼具理論與實作的系統，在閱讀 RCU 文件的時候常常發現以往不曾想過的面向，在真實世界面前也時常感到自己的渺小，但我很喜歡這個題目，也慶幸自己當初選擇修這堂課。它帶給我一張能夠深入理解 Linux kernel 的門票，也讓我能夠近距離觀摩頂尖並行程式開發者的思考脈絡。
+
+## 自我評量 (1 ~ 10)
+$GEOMEAN = ( 5 \times 7 \times 8 \times 10 \times 10 )^{1/5} = 7.75231848384$
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + 7 = 8$
