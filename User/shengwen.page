@@ -54,6 +54,7 @@ categories: User
 
 **Upstream:**
 
+- [Linux kernel](https://www.kernel.org/): 修正 Linux KVM RISC-V PMU（Performance Monitoring Unit）在 RV32 上因 counter mask scan range 過大導致的 out-of-bounds read 問題 [[Patch]](https://patchwork.ozlabs.org/project/kvm-riscv/patch/20260626054051.3360865-1-shengwen1997.tw@gmail.com/)
 - [glibc](https://sourceware.org/glibc/): 修正 RISC-V RV32 libthread_db 的 THREAD_SELF register layout，使 GDB 能正確解析 tp/x4 thread pointer 進行 pthread-aware debugging [[Patch]](https://inbox.sourceware.org/libc-alpha/20260623180252.2400811-1-shengwen1997.tw@gmail.com/T/#u)
 
 數值模擬專案
