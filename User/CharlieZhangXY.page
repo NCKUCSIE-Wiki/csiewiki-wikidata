@@ -63,7 +63,7 @@ categories: User
 ### 觀摩同儕專題並提問 (課程要求至少 5 項)：
 
 * [V4L2 Pipeline](https://hackmd.io/@sysprog/SkEydfekGx)：你用 `/dev/vpipe-meta` 記錄每一張 frame 的時間資訊，但它的 ring buffer 只有 256 筆。想請問如果測試時 frame 太多、reader 來不及讀，導致舊 metadata 被覆寫，這次 benchmark 會怎麼處理？會直接判定失敗，還是只在結果裡標記？(如果真的發生 `VPIPE_META_F_OVERRUN`，benchmark 要怎麼判定這次結果)
-* [qspinlock 量化分析](https://hackmd.io/@sysprog/SyC5lS3gMg)：你的 userspace benchmark 有統計整體吞吐量，但 ticket lock 和 MCS lock 都強調公平性。想請問你有沒有觀察每個 thread 各自完成的 `local_ops 數量？如果某些核心完成次數明顯比較多或比較少，可能會影響你對吞吐量結果的解讀。
+* [qspinlock 量化分析](https://hackmd.io/@sysprog/SyC5lS3gMg)：你的 userspace benchmark 有統計整體吞吐量，但 ticket lock 和 MCS lock 都強調公平性。想請問你有沒有觀察每個 thread 各自完成的 `local_ops` 數量？如果某些核心完成次數明顯比較多或比較少，可能會影響你對吞吐量結果的解讀。
 * [改進 vwifi](https://hackmd.io/@sysprog/Bk3TgGw0Zx)：你目前支援用 `iw dev <iface> set bitrates ht-mcs-2.4 ...` 設定 STA 的 MCS，並讓 station dump 顯示對應 bitrate。想請問這個設定在 STA disconnect 後重新 connect 時會保留，還是會回到預設的 MCS 31？
 * [改進 vcam](https://hackmd.io/@sysprog/Sk3hOzw0Ze)：你在 `S_FMT` 中加入 `vb2_is_busy()`，避免 buffer 已配置後改變格式，這可以防止 `sizeimage` 與既有 buffer 長度不一致。想請問你是否有測試過 `STREAMOFF` 之後、但尚未用 `REQBUFS count=0` 釋放 buffer 時，再呼叫 `S_FMT` 的行為？這種情況下 driver 是仍然回傳 `EBUSY`，還是允許切換格式？
 * [縮減系統啟動時間和客製化](https://hackmd.io/@sysprog/ByXHinRAZe)：你最後移除了許多 init scripts，例如 dropbear、syslogd、klogd、crond 等，來縮短 AP 啟動時間。不過任務簡述中也提到系統需具備基本除錯與管理工具，例如 Dropbear/SSH。想請問最後版本是否還保留足夠的遠端除錯能力？ boot-time 改善和可維護性之間的 trade-off 你會如何做評估和選擇？
@@ -75,7 +75,7 @@ categories: User
 ## 與授課教師的互動 
 7 分。
 
-* 4/21 [課堂討論](https://hackmd.io/gdgKXMGYRdaNUgsEBKaypg#%E5%95%8F%E7%AD%94)：向學長請教在碩士到實際工作前這個階段所應該投資的能力、目前 Linux 在內嵌 AI 模型方面的進佔與阻礙
+* 4/21 [課堂討論](https://hackmd.io/gdgKXMGYRdaNUgsEBKaypg#%E5%95%8F%E7%AD%94)：向學長請教在碩士到實際工作前這個階段所應該投資的能力、目前 Linux 在內嵌 AI 模型方面的進展與阻礙
 * 6/2 課後討論 : 討論專題，針對測驗的延伸問題，對照教材、規格書與原始碼，提出問題並進行推論分析與實驗。
 * 6/23 [模擬面試]( https://drive.google.com/file/d/1hElsEiBHD9nTSLGV_-WaCtIwIsfHxh9k/view?usp=drive_link):與助教討論 ，PELT 如何估算 CPU utilization / runnable load / load average、workqueue 的設計考量與排程器整合、false sharing 的產生原因與問題，有部分答不出來，有在後續檢討以及追蹤(回信的方式)  
 
