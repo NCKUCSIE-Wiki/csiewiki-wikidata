@@ -44,7 +44,7 @@ categories: User
 - 2026/07/09 —〈[並行程式設計: Atomics 操作](https://hackmd.io/@sysprog/concurrency-atomics)〉修改錯字
 原 `subsriber` 改 `subscriber` 。
 
-- - 2026/07/13 — [運用 Perf 分析程式效能並改善](https://hackmd.io/@sysprog/linux-perf)〉修改錯字
+- 2026/07/13 — [運用 Perf 分析程式效能並改善](https://hackmd.io/@sysprog/linux-perf)〉修改錯字
 原 `由於此實驗室在 Intel i7 (13 代) 處理器上進行` 改 `由於此實驗是在 Intel i7 (13 代) 處理器上進行`
 
 ## 作業與隨堂測驗
@@ -62,8 +62,8 @@ categories: User
 評分：7分
 
 ### 課堂問答
-- [2026/04/14](https://hackmd.io/u5zg5DS8RoaKI52ZxLgkQg) — 授課教師詢問 context switch, coroutine 相關問題 
-- [2026/06/23](https://hackmd.io/nDxo5HxWSbqqWrQ9FpJQMg) — 授課教師詢問 NaN, SIGFPE 相關問題
+- [2026/04/14](https://hackmd.io/u5zg5DS8RoaKI52ZxLgkQg?view#hubertwyc) — 授課教師詢問 context switch, coroutine 相關問題 
+- [2026/06/23](https://hackmd.io/nDxo5HxWSbqqWrQ9FpJQMg#hubertwyc) — 授課教師詢問 NaN, SIGFPE 相關問題
 
 ### 一對一討論
 - 2026/06/24 — 授課教師詢問 ECC, ld-linux.so 相關問題
