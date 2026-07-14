@@ -10,3 +10,97 @@ categories: User
 
 # 2026 Linux 核心設計/實作 春季班 自我評量
 ## 第一項、成果發表和貢獻
+
+## 成果發表和貢獻
+8 分。
+
+* 第 3週教材 ：[你所不知道的 C 語言：函式呼叫篇](https://hackmd.io/FXPLwKmxQdCuz0zC-XZXOQ?view)
+    *  以 -> 已
+
+* 第 3週教材 ：[你所不知道的 C 語言：前置處理器應用篇](https://hackmd.io/J1Y5L55KS_OVEOQciiu_eg?view)
+    * 執行擋 -> 執行檔
+
+* 第 6週教材 ：[你所不知道的 C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/dUD91WrNQgugW3pM9fqcDg?view)
+    * libraryt -> library 
+
+* 第 7週教材 ：[Linux v6.6+ 引入的 EEVDF 的理論基礎](https://hackmd.io/5dn61fp2Rua_sICa3J11yA?view)
+    * 上屆 -> 上界
+
+* 第 8週教材 ：[Linux 核心設計: 不只是執行單元的 process](https://hackmd.io/7F6fBU6tRzuWM6ZPyoq0xA?view)
+    * 高於親ㄉㄞ親代 namespace ->高於親代 namespace。
+
+* 第13週教材 ：[你所不知道的 C 語言：物件導向程式設計篇](https://hackmd.io/0FiEdsGERFKD-fPTrUK0HA?view=)
+    * 來切換不同的演算法演算法。」句末「演算法」重複了一次，刪去其中一個。
+
+* 第15週教材 ：[slab 記憶體配置器](https://hackmd.io/5Fn8N3HeRkGIO7cZu7chIw?view=)
+    * __per_cpu -> __percpu
+
+
+以上貢獻都是跟用詞用字的修正有關，雖然都不是大改進也沒有程式碼行之類的改進，沒有去解決真實世界的問題，但老師說勿以善小而不為，因此我給自己 8 分。
+
+
+## 作業/隨堂測驗
+7 分。
+
+* [2026q1 Homework1 (warmup)](https://hackmd.io/@YTing46/linux2026-warmup)
+* [2026q1 Homework2 (stdc)](https://hackmd.io/@YTing46/linux2026-stdc)
+* [2026q1 Homework3 (basics)](https://hackmd.io/@YTing46/linux2026-basics)
+
+# 期末專題
+8 分。
+
+[Linux 核心設計專題: 異質多核通訊機制](https://hackmd.io/@sysprog/HkFikIgkzl)
+
+這次專案是學長延續的專題，的核心為將 ThreadX 與 RPMsg 軟體堆疊由原本 vendor 的Linux 5.10 移植至 Linux 7，並針對通訊延遲進行傳輸時間分析語最佳化。移植過程中，主要將vendor 隱含於程式碼中的硬體相依性，重新轉譯為符合主線規範的裝置樹宣告，以維持系統穩定。
+
+
+觀摩其他學員的期末專題部份：
+
+* [效能分析和改進案例探討](https://hackmd.io/@sysprog/S1SVY4nxzl)
+* [Bloom Filter 分析](https://hackmd.io/@sysprog/rk28fdH-ze)
+* [qspinlock 量化分析](https://hackmd.io/@sysprog/SyC5lS3gMg)
+* [雜湊函數之數學基礎與資訊安全議題](https://hackmd.io/rNkcgtZ1SEaHLYn2JpaDkg?view)
+* [數值分析案例探討](https://hackmd.io/Wfe-cCwyTtu0K0g-4J2ymQ?view)
+
+綜合上述我給自己 8 分。
+
+## 與授課教師的互動
+8 分。
+
+* 2/24 [課堂討論](https://hackmd.io/u5zg5DS8RoaKI52ZxLgkQg)：探討現代處理器的除法運算成本
+
+* 6/2 [模擬面試]( https://drive.google.com/file/d/1wWG9L6MhS3feO1JW2cmUZbok9oWPR3as/view?usp=drive_link)：與助教和老師討論，PELT 的數學原理與應用、Futex 的設計與排程器的互動、 Process 與 Thread 的本質差異、Stack 與 Heap 的設計考量、使用 POSIX Thread 控制執行順序，模擬面事後以回信方式後續檢討以及追蹤。
+
+* 6/9 課後討論：探討異質多核的重要性以及 ADB 相關問題，包含 頻率跟功耗的關係、為何異質多核需要通訊以及為何需要有異核的架構。
+
+* 6/23 課後討論：與老師分析我們專題目前的不足，我們原本假定 大核往小核 與 小核往大核 的通訊成本相同，與老師討這後我們知道這是錯誤的想法，並與老師討論原因，以及去測試不同 payload 對通訊成本的負擔。
+
+相較於修課初期，我最大的改變是不再害怕面對老師，想到第一堂課就被老師點起來問問題，我瑟瑟發抖，但經過一學期的磨練，我在學期末已經可以下課主動去找老師討論專題問題了，我在這方面看到我很大的進步，因此我給自己 8 分。
+
+## 所見所聞所感
+10 分。
+
+閱讀〈因為自動飲料機而延畢的那一年〉：
+
+讀完這篇文章，最打動我的是作者面對挫折時那份「再試一次，也許就會成功」的信念，這種不斷修正方向、不輕易放棄的韌性，正是我所不足的。換作是我，我絕對沒有勇氣為了喜歡的事延畢，更何況是作者有很強的的時間規劃與執行力，這些都是我目前有所不及的。
+
+文章也讓我看見現實層面的殘酷。作者陷入「只能幫忙打雜、各種實驗接連失敗卻毫無進展」的無力狀態，這種什麼都不會卻想做出點什麼、有了方法卻處處碰壁的感受，是所有做研究的人都能體會的，在這種種的困難作者仍然能撐下去。而現實中也很少有像作者的夥伴，願意變出資金、確保團隊有足夠的現金流，這樣的貴人可遇不可求，他們能相遇本身就是一種幸運。
+
+回顧自身的投入狀況：
+這學期我投入了相當多時間在閱讀教材、閱讀 Linux Kernel 原始碼、整理筆記與撰寫作業。老師在課堂上特別強調不要假懂裝懂，因為那是最可怕的學習狀態，這正是我人生中最大的課題，在老師一再的叮嚀下，我時刻提醒自己不要停留在大概知道這種情況。
+
+誠實回顧自己，我清楚意識到自己的不足。雖然投入了大量時間，我仍然有許多內容仍吸收得不扎實、容易遺忘，學習效率也還有進步空間。最後仍有部分作業與專題未能完成，但我並沒有因此直接放棄，而是盡可能的分析自己卡住的原因去補救那方面的概念。這門課真正困難的地方不是實作能力，而是上萬行的原始碼中尋找我們、設計實驗、分析效能以及培養獨立思考的能力。承認自己的無知、跨出舒適圈，正是最重要也是我最需要的一步。
+
+
+在這部份我給自己 10 分。
+
+## 自我總評量得分
+自我總評量得分為 **8** 分。
+
+* GEOMEAN : $\sqrt[5]{8*7*8*8*10} = 8.1144672$  
+* 方案 B：$1 + \lfloor 8.1144672 \rfloor = 9$
+
+
+
+
+
