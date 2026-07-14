@@ -43,7 +43,7 @@ categories: User
 
 在寫作業時，我發現並重新學習到了以前沒有深入想過的知識和問題，有些以前 OS、資料結構和演算法的課程所提到的概念都又再次出現。並且不像以往只是草草帶過課本的觀念，作業中有許多案例可以進行說明並且以 Linux 原始碼作為佐證，讓我可以注意到過往未曾發現的細節和更深刻的認識到為什麼開發者要使用這種演算法。
 
-在做作業的過程中我需要從規格書、原始碼、官方文件等來源找資料，並且動手計算數學證明以推導背後的原理並找出應用場景以實現它。做作業也使我學習到資料來源的重要性，相較於網路上部落格或其他教學影片，直接從官方文件下手更能從根本原因去理解。
+在做作業的過程中我需要從規格書、原始碼、官方文件等來源找資料，並且動手計算數學證明以推導背後的原理並找出能應用它的場景再將其實作出來。做作業也使我學習到資料來源的重要性，相較於網路上部落格或其他教學影片，直接從官方文件下手更能從根本原因去理解。
 
 隨堂測驗有 2 次缺席，課堂上即時的考試能讓我感受面試時突然被要求要我現場讀文本並在有限時間內作回答，根據題目上下文與關鍵字能讓我盡可能的推理出答案。我在作業/隨堂測驗部分給自己 7 分。
 
@@ -62,11 +62,11 @@ categories: User
 
 ### 觀摩同儕專題並提問 (課程要求至少 5 項)：
 
-* [V4L2 Pipeline](https://hackmd.io/@sysprog/SkEydfekGx)：你用 `/dev/vpipe-meta` 記錄每一張 frame 的時間資訊，但它的 ring buffer 只有 256 筆。想請問如果測試時 frame 太多、reader 來不及讀，導致舊 metadata 被覆蓋，這次 benchmark 會怎麼處理？會直接判定失敗，還是只在結果裡標記？(如果真的發生 `VPIPE_META_F_OVERRUN`，benchmark 要怎麼判定這次結果)
+* [V4L2 Pipeline](https://hackmd.io/@sysprog/SkEydfekGx)：你用 `/dev/vpipe-meta` 記錄每一張 frame 的時間資訊，但它的 ring buffer 只有 256 筆。想請問如果測試時 frame 太多、reader 來不及讀，導致舊 metadata 被覆寫，這次 benchmark 會怎麼處理？會直接判定失敗，還是只在結果裡標記？(如果真的發生 `VPIPE_META_F_OVERRUN`，benchmark 要怎麼判定這次結果)
 * [qspinlock 量化分析](https://hackmd.io/@sysprog/SyC5lS3gMg)：你的 userspace benchmark 有統計整體吞吐量，但 ticket lock 和 MCS lock 都強調公平性。想請問你有沒有觀察每個 thread 各自完成的 `local_ops 數量？如果某些核心完成次數明顯比較多或比較少，可能會影響你對吞吐量結果的解讀。
 * [改進 vwifi](https://hackmd.io/@sysprog/Bk3TgGw0Zx)：你目前支援用 `iw dev <iface> set bitrates ht-mcs-2.4 ...` 設定 STA 的 MCS，並讓 station dump 顯示對應 bitrate。想請問這個設定在 STA disconnect 後重新 connect 時會保留，還是會回到預設的 MCS 31？
 * [改進 vcam](https://hackmd.io/@sysprog/Sk3hOzw0Ze)：你在 `S_FMT` 中加入 `vb2_is_busy()`，避免 buffer 已配置後改變格式，這可以防止 `sizeimage` 與既有 buffer 長度不一致。想請問你是否有測試過 `STREAMOFF` 之後、但尚未用 `REQBUFS count=0` 釋放 buffer 時，再呼叫 `S_FMT` 的行為？這種情況下 driver 是仍然回傳 `EBUSY`，還是允許切換格式？
-* [縮減系統啟動時間和客製化](https://hackmd.io/@sysprog/ByXHinRAZe)：你最後移除了許多 init scripts，例如 dropbear、syslogd、klogd、crond 等，來縮短 AP 啟動時間。不過任務簡述中也提到系統需具備基本除錯與管理工具，例如 dropbear/ssh。想請問最後版本是否還保留足夠的遠端除錯能力？ boot-time 改善和可維護性之間的 trade-off 你會如何做評估和選擇？
+* [縮減系統啟動時間和客製化](https://hackmd.io/@sysprog/ByXHinRAZe)：你最後移除了許多 init scripts，例如 dropbear、syslogd、klogd、crond 等，來縮短 AP 啟動時間。不過任務簡述中也提到系統需具備基本除錯與管理工具，例如 Dropbear/SSH。想請問最後版本是否還保留足夠的遠端除錯能力？ boot-time 改善和可維護性之間的 trade-off 你會如何做評估和選擇？
 
 ### 回應提問：
 7 月 8 日中午前已回覆全部 3 則提問 (公開於 HackMD 留言串)，包含`Bigtooth123`對使用硬體改良軟體補償的問題、`andy20040`對 Kahan 補償降低指令平行化的思考、`Krixi0828` 對 `period_contrib` 和 `last_update_time` 功能相似處理層級不同的疑慮。
@@ -77,7 +77,7 @@ categories: User
 
 * 4/21 [課堂討論](https://hackmd.io/gdgKXMGYRdaNUgsEBKaypg#%E5%95%8F%E7%AD%94)：向學長請教在碩士到實際工作前這個階段所應該投資的能力、目前 Linux 在內嵌 AI 模型方面的進佔與阻礙
 * 6/2 課後討論 : 討論專題，針對測驗的延伸問題，對照教材、規格書與原始碼，提出問題並進行推論分析與實驗。
-* 6/23 [模擬面試]( https://drive.google.com/file/d/1hElsEiBHD9nTSLGV_-WaCtIwIsfHxh9k/view?usp=drive_link):與助教討論 ，PELT 如何估算 CPU Utilization / Runnable Load / Load Average、Workqueue 的設計考量與排程器整合、False Sharing 的產生原因與問題，有部分答不出來，有在後續檢討以及追蹤(回信的方式)  
+* 6/23 [模擬面試]( https://drive.google.com/file/d/1hElsEiBHD9nTSLGV_-WaCtIwIsfHxh9k/view?usp=drive_link):與助教討論 ，PELT 如何估算 CPU utilization / runnable load / load average、workqueue 的設計考量與排程器整合、false sharing 的產生原因與問題，有部分答不出來，有在後續檢討以及追蹤(回信的方式)  
 
 ## 所見所聞所感 
 9 分。
@@ -88,7 +88,7 @@ categories: User
 
 * 關於數學與謹慎用詞
 
-    在學期初老師於課堂進行問答時，總是要求我們給出精確的回答，例如：「複雜度多少？」、「Mergesort 實際 merge 幾次？」、「很大是多大？」等等，並時刻提醒我們必須具備理工人的思考方式，不應該使用缺乏量化的模糊形容詞。此外，透過教材[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)中諸多詞語的來源講解，以及課後與老師討論時被提點並修正的錯誤用語，加上[詞彙對照表](https://hackmd.io/@l10n-tw/glossaries)的輔助，讓我得以重新校正自己的專業詞彙，養成謹慎用詞的習慣。
+    在學期初老師於課堂進行問答時，總是要求我們給出精確的回答，例如：「複雜度多少？」、「merge sort 實際 merge 幾次？」、「很大是多大？」等等，並時刻提醒我們必須具備理工人的思考方式，不應該使用缺乏量化的模糊形容詞。此外，透過教材[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)中諸多詞語的來源講解，以及課後與老師討論時被提點並修正的錯誤用語，加上[詞彙對照表](https://hackmd.io/@l10n-tw/glossaries)的輔助，讓我得以重新校正自己的專業詞彙，養成謹慎用詞的習慣。
 
 
 
@@ -96,7 +96,7 @@ categories: User
     
     這堂課讓我深刻體認到，身為理工學生，我仍有許多基本素養尚待加強。不論是流暢精簡卻有效的溝通能力、有條不紊的工作安排，亦或是舉一反三的靈活思維，我都還有很大的進步空間。老師曾提到，未來在職場上，相較於單純的寫程式能力，與同事之間的溝通交流才是團隊合作中最核心的部分。
 
-    另外，在數學推導與量化分析的能力上，例如學期初對不同 Sort 演算法的分析與浮點數的計算等，也讓我明白身為資訊人絕不能僅憑感覺行事，而是必須以理論基礎與數學證明來佐證。面對不清楚的功能設計，也必須養成從規格書或程式原始碼開始著手研讀的紮實態度。
+    另外，在數學推導與量化分析的能力上，例如學期初對不同排序演算法的分析與浮點數的計算等，也讓我明白身為資訊人絕不能僅憑感覺行事，而是必須以理論基礎與數學證明來佐證。面對不清楚的功能設計，也必須養成從規格書或程式原始碼開始著手研讀的紮實態度。
 
 	
 * 關於自身投入的回顧
