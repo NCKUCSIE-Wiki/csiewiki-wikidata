@@ -1,0 +1,116 @@
+# 2026 年 Linux 核心設計課程自我評量
+
+姓名: 張峻誠
+GitHub 帳號: frank0988
+
+本份自我評量遵循課程自我評量指引的書寫規範，避免「期許自己」、「已盡最大努力」等空泛承諾，所有產出皆附對應的公開軌跡 (Linux 上游 patch、GitHub PR、HackMD 開發紀錄、會議錄影)。各項自評分數皆為 1 到 10 的整數，最末以幾何平均計算總分並適用方案 B。
+## 成果發表和貢獻
+>4分
+
+在 Linux 無線網路驅動程式相關修改中，我送出 2 組 patch。第一組是 `drivers/net/wireless/ath/dfs_pri_detector.c`：在 `pseq_handler_create_sequences()` 中，`list_for_each_entry_continue` 形成的迴圈會多次呼叫 `pde_get_multiple()`，而同一條 PRI sequence 中 `pri` 固定，因此我嘗試以 reciprocal division 減少重複除法。v1 由 Jeff Johnson 於 2026-07-01 19:08 UTC 回覆，指出簽名身份不符合上游規範；我修正後於 2026-07-02 03:52 UTC 送出 v2。使用 `perf` 量測後，cycles 約下降 3.41%，instructions 約下降 0.83%，branches 約下降 4.18%。
+
+第二組是 `drivers/net/wireless/ath/dfs.c`：我發現在相近程式碼中，同義邏輯一處使用核心巨集，另一處則獨立寫出條件判斷，因此於 2026-07-02 13:23 UTC 送出 `[PATCH] wifi: ath9k: use max() for pulse duration selection`，嘗試讓 pulse duration selection 使用 `max()` 表達。這項修改目前尚未被維護者回覆，但它對應到我在課堂中學到的重點：核心程式碼不只要追求功能正確，也要注意既有巨集、型別語意和可讀性的一致。
+
+公開軌跡：
+- `[PATCH] wifi: ath9k: use max() for pulse duration selection`，Chun-Cheng Chang，2026-07-02 13:23 UTC
+- `[PATCH v2] wifi: ath: avoid repeated divisions in DFS PRI detector`，Chun-Cheng Chang，2026-07-02 03:52 UTC
+- `Re: [PATCH] wifi: ath: avoid repeated divisions in DFS PRI detector`，Jeff Johnson，2026-07-01 19:08 UTC
+- `[PATCH] wifi: ath: avoid repeated divisions in DFS PRI detector`，frank0988，2026-07-01 17:04 UTC
+
+此外，我在閱讀 LKMPG syscall 相關內容時，提出錯字修正和可讀性改善；在 kbox 則嘗試修改 `pidfd_getfd` 邏輯，以取代原先透過 `sendmsg(SCM_RIGHTS)` 傳遞 fd 的作法。這兩項目前尚未獲得回覆，因此我沒有將其列為已採納貢獻，但仍作為本課程期間公開參與相關專案的紀錄。
+
+## 作業與隨堂測驗
+>7分
+
+作業完成了 1 2 4 ，所有開發紀錄公開於 HackMD。前兩份作業分別整理於[作業 1 開發紀錄](https://hackmd.io/82otdLGqTgWAZbx5w5dhHA)和[作業 2 開發紀錄](https://hackmd.io/FOmZTPJGR42T5x2b3vplqQ)。。
+
+隨堂測驗沒有詳細數字統計但都有參加，印象中平均在 70 分左右。前半段在數值表示、排程等章節掌握度比較高，但到後段 memory order 開始明顯不理解，部分測驗掉到 40 分以下，反映出學期後段我對課堂投入時間的減少確實付出代價。這部分也讓我在期末專題中特別回到 EWMA、定點數、除法成本和 scheduler PELT 的原始碼，試著把測驗中零散的數學和核心路徑重新接起來。
+
+## 期末專題
+>8分
+
+題目：Linux 核心專題：EWMA 分析和應用案例
+
+期末專題從課程測驗中的 EWMA / RSSI 題目出發，重新推導
+$$s_t = (1 - \alpha)s_{t-1} + \alpha x_t$$
+在理想實數、定點數和 Linux 核心巨集 `DECLARE_EWMA()` 中的對應關係，並對照 `include/linux/average.h`、`ath9k`、`mac80211` 和 scheduler PELT 相關程式碼，整理同一個數學形式在不同子系統中的工程用途。
+
+在 RSSI 的情境中，EWMA 主要是在封包訊號強度劇烈跳動時提供穩定估計；`DECLARE_EWMA(rssi, 10, 8)` 將新樣本權重設為 $\alpha = 1/8$，搭配 `<< 10` 保存定點數精度。專題中推導 RSSI 從 60 降到 40 時，若 beacon interval 為 100 ms，讀值約需要 23 次更新，也就是約 2.3 秒才會跨過整數截斷後的門檻。這對應到 Wi-Fi roaming 判斷中「太敏感會抖動，太平滑會延遲」的取捨。
+
+專題也比較 driver 端 EWMA 和 scheduler PELT 的差異。RSSI 樣本可以被視為一次次獨立更新，因此不需要保存額外的時間餘數；但 PELT 面對的是不規則的排程時間片，`period_contrib` 若遺失，`cfs_rq` 和 `sched_entity` 的衰減視窗就會錯開，原本仰賴的線性加總性質也會被破壞。這個對照說明核心中的數學推導必須同時考慮非同步更新、整數截斷和資料結構聚合後是否仍保有可推理的行為。
+
+此外，我在閱讀 `ath9k` 時注意到早期 driver 並不一定使用通用的 `DECLARE_EWMA()`，例如 `ath_dynack_ewma()` 和 `ATH_RSSI_LPF()` 都是自行實作的 EWMA 變體。其中 `ATH_RSSI_LPF_LEN` 使用 10 而不是 2 的冪次，雖然對 CPU 不如 shift 友善，但在該路徑中呼叫頻率不高，實際成本未必主導設計。這也提醒我，不應該只看到除法就急著說它一定錯，而要先回到呼叫頻率、資料範圍、git log 和硬體行為去判斷。
+
+這個專題也延伸出我對上游程式碼的實際修改嘗試。在 `drivers/net/wireless/ath/dfs_pri_detector.c` 中，我發現 `pseq_handler_create_sequences()` 的迴圈會多次呼叫 `pde_get_multiple()`，而同一條 PRI sequence 中除數固定，因此嘗試用核心提供的 reciprocal division 思路減少重複除法。使用 `perf` 量測後，cycles 約下降 3.41%，instructions 約下降 0.83%，branches 約下降 4.18%。雖然該 patch 尚未被維護者回覆，但這次嘗試把課堂中的「除法成本」、「定點數」、「核心巨集」和實際 driver 路徑接起來。
+
+針對 yhsindev 對 `ath_dynack_ewma()`、`ATH_RSSI_LPF()` 和 `DECLARE_EWMA()` 差異的提問，我的回覆是：它們在數學上都可整理成 EWMA，但工程差異不只在參數。`DECLARE_EWMA()` 強制使用 2 的冪次倒數，讓更新可以用位移和整數運算完成，且介面統一；早期 `ath9k` 的寫法則保留 driver 自己的歷史脈絡，例如 `ATH_RSSI_LPF_LEN = 10` 對應 $\alpha = 1/10$，可讀性直觀，但無法單純化成右移。
+
+針對 illdoCc 詢問為何 `ATH_RSSI_LPF_LEN` 使用 10 而非 2，我目前沒有在 git log 找到直接說明，因此不把猜測寫成結論。我能確認的是，較大的 length 代表較小的 $\alpha$，會讓 RSSI 對突發雜訊較不敏感，但反應也較慢。若要驗證這件事，可以固定 beacon interval 和輸入序列，例如讓 RSSI 從 60 突降到 40，比較 `len = 2, 8, 10, 16` 到達 roaming threshold 所需的更新次數，並同時計算穩態雜訊下輸出變異數。這比單純說「10 比較平滑」更能對應到實驗設計。
+
+[期末專題 HackMD](https://hackmd.io/okzCxJv3RGmrmN3goWocjQ?both)
+
+##觀摩其他期末專題
+
+
+### 觀摩其他期末專題
+
+* [Linux 核心設計專題：改進 vcam](https://hackmd.io/_zdFuvtETAKq9l56aUcS8A)：詢問影像資料由使用者空間經核心緩衝區交給 V4L2 consumer 的過程中，實際會發生幾次資料複製。
+
+* [Linux 核心專題：RCU](https://hackmd.io/ggVQ6mO1RBKaPp44IWtGrA)：詢問文中所稱的 lock-free 屬於哪一層級的進展保證，以及如何處理 CAS 持續失敗、ABA、飢餓與記憶體回收問題。
+
+* [Linux 核心設計專題：圖形函式庫的效能改進](https://hackmd.io/4_nS7VDFQ7GgM2vZ0QcAEw)：指出實驗僅比較 4 面與 4000 面兩種幾何複雜度，詢問選擇這兩組數值的原因，並建議增加更多資料點，以觀察效能瓶頸的轉換位置。
+
+* [Linux 核心設計專題：群組排程研究和實務](https://hackmd.io/5yK6zDzhSwGYQd3G0d5j1w)：詢問實驗如何控制 CPU frequency、CPU affinity、NUMA、interrupt 與 cgroup 對排程結果的影響。
+
+
+weiso131 的 sched_ext 專題：與執行人討論 sched_ext 和 Android 既有 cgroup、cpuset 機制的差異，以及客製化排程策略實際改變哪一層排程決策。
+
+## 與授課教師的互動
+>8分
+
+一對一討論 1 次，課程問答 2 次，郵件和 GitHub 幾次。
+
+誠實面對自己，動手永遠比動口強，今天是來解決現實工程的問題
+這幾句話以最高的頻率出現在我跟授課教師的每一次對話郵件。
+而我確實收益於這幾句話
+
+- 5/13 一對一討論了關於專題方向，專題方向討論了 booting 跟 workqueue，，還有幾何平均，幾何平均我從一開始就繞歪了，嘗試去將一個大數開根號拆成多個小數開根號，雖然無法最後沒有推導出標準的使用 log 去處理，但利用$(1+x)^{\frac{1}{n}} \approx  1 + \frac{1}{n}x$還是可以大幅提升精度，剩餘就是叫我去閱讀 cpu book chapter 4 and 5。[一對一討論紀錄](https://hackmd.io/6GMmiD9OQQ68ssL-C1xB_A)
+
+- 04-14 課程問答討論為何 Linux 系統使用 task，而不是使用恐龍書裡面的 process / thread，並討論排程最小單位。我回答 time slice，授課教師指出標準答案是 `se`，time slice 是雞同鴨講，而且也不是最小單位。[04-14 問答紀錄](https://hackmd.io/u5zg5DS8RoaKI52ZxLgkQg)
+- 06-02 問答簡記討論「為何 kernel stack 是固定大小？」經過提問才發現我過去都在假裝自己懂碎片化，我連它是動詞還是形容詞都沒有 100% 把握。[06-02 問答紀錄](https://hackmd.io/CZEAQrigR0KL2MHBbK8qnw)
+- 至於 issue 上的討論，那時是我最沒有程式面對自己的一刻，因為答案就埋在一次次的課堂筆記中，只是我沒有去挖掘，後來真正學到後，才發現有些 issue 其實可能只要改個 1、200 行就可以解決。[討論紀錄](https://docs.google.com/document/d/1yOoKdBi4lzgIind9PdXZdxIkQu5LwlnVG7jhJIPwYVE/edit?tab=t.0)
+
+
+## 所見所聞所感
+>10分
+>
+### 關於課程同儕的觀察
+weiso131：
+第一次聽到關於 scx_sched  的演講時，我覺得這個議題很有深度跟課堂連接也深，但我沒聽出爲何這可以稱爲，"聖盃級"的題目，因爲就我所知 Android 系統，本身就能夠區分，foreground visible service background ，並且 pixel 手機會根據對應的等級去區分那些任務可以使用對應的 cpu ，所以我先入爲主的認爲既然 andorid 本身就能看出任務優先級，那這個任務透過統計去觀察出現在是在遊戲還是上網有什麼特別的，後來直接與講者討論，那時他對 cgroups 還沒研究，所以沒有繼續討論，但後續在與老師一對一討論中，並對比核心排程機制後，我才意識到自己的淺薄：cgroups 只是在既有的 CFS/EEVDF 框架下調整權重，它無法改變排程器「如何決定下一個任務」的核心邏輯。而這個研究實作動態的 完全客製化的排程策略。
+
+
+### 關於與上游開發者互動
+第一次送出 Kernel patch 時，ath9k 維護者 Jeff Johnson 在兩小時內就直接退回，指出我的簽名不符合規範，並說明 "You must sign off with a "known identity""。這讓我深刻體會到，Signed-off-by: 不只是個形式，而是代表開發者必須以「真實身份」對程式碼的著作權與法律責任負責（符合 Developer's Certificate of Origin 規範）。修正後在 v2 學到：上游維護者審查的第一關不是程式碼邏輯，而是開發者對社群規範與程式碼責任的尊重。後續送出的上游 patch 都依此規範：嚴格確保身份辨識度與 Commit log 的合規性。
+
+### 細節的把握
+在寫 verilog 的時候，經常聽到你要對你寫的硬體有把握，寫的當下你就應該想像的出他會被合成什麼東西，同樣的，在這門課也一直在帶我瞭解到，我的程式碼可能會被編譯成什麼樣子，我的每一個變數在那個範圍裏面是安全的，在修計算機組織的時候我從爲去看過 objdump ，而在這門課我才意識到，除10不會 div，哪怕只是一次的除10 ，max() 函數其實不會造成額外的分支，他會編譯為 cmov cmovns之類的指令
+
+### 關於〈因為自動飲料機而延畢的那一年〉
+讀過林子翔學長的延畢心路後，最深的共鳴是他對細節的把握，我這輩子都不會想到有人會去做冰塊用量與統計的分析，對照我自己大學時期的自走船專題，當時面對機構公差或感測器飄移（Sensor Drift），我最常掛在嘴邊的話是「我們又不是在造火箭，何必樣樣精通、斤斤計較？」然而，這門課與林子翔學長的經歷徹底顛覆了我的認知，更別說分析完冰塊用量，後續又開始分析加冰塊的統計重量，還重複「加冰塊、倒冰塊、測量訊號、紀錄」，做了超過480次，但這樣在每個環節確保正確，不就是捍衛有效位數，能在每個細節都做到99%,才能壓制後續非線性放大的誤差，就像課堂上反覆強調 IEEE 754 浮點數加法不具備結合律，1.+2.+...可能不等於50005000.，而如果我面對排程器問題一樣保持着，的「非造火箭」心態，我設計的系統將沒有任何安全性。
+
+
+## 分數計算
+
+| 項次 | 名稱 | 分數 |
+| :---: | :--- | :---: |
+| 1 | 成果發表與貢獻 | 4 |
+| 2 | 作業與隨堂測驗 | 7 |
+| 3 | 期末專題 | 8 |
+| 4 | 與授課教師的互動 | 8 |
+| 5 | 所見所聞所感 | 10 |
+
+
+幾何平均 (GEOMEAN) 計算
+
+$$GeoMean = \sqrt[5]{4 \times 7 \times 8 \times 8 \times 10} = \sqrt[5]{17920} \approx 7.1$$
+採方案 B:1 + floor (GEOMEAN)=8
