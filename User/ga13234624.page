@@ -46,8 +46,7 @@ categories: User
 評分: 9
 
 - 專題將 vwifi 擴充為能模擬真實無線環境的版本，讓原本零丟包的虛擬網路，能依照訊號強弱產生封包丟失、延遲。實作上採用雙模組架構，並在封包傳遞路徑上進行攔截，套用一套 RSSI 到丟包率、延遲時間計算的物理模型，同時支援原專案既有的單機與跨 VM 兩種情境，並透過 generic netlink 打造可動態調整物理環境表。
-- [開發紀錄](https://hackmd.io/@sysprog/Skgx7Kl0Wl) 及 [解說錄影](https://youtu.be/Sx1PLjljHzo)
-
+- [開發紀錄](https://hackmd.io/@sysprog/Skgx7Kl0Wl)
 ## 第四項、與授課教師的互動
 評分: 5
 
