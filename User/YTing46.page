@@ -30,7 +30,7 @@ categories: User
     * 高於親ㄉㄞ親代 namespace ->高於親代 namespace。
 
 * 第13週教材 ：[你所不知道的 C 語言：物件導向程式設計篇](https://hackmd.io/0FiEdsGERFKD-fPTrUK0HA?view=)
-    * 來切換不同的演算法演算法。」句末「演算法」重複了一次，刪去其中一個。
+    * 來切換不同的演算法演算法。句末「演算法」重複了一次，刪去其中一個。
 
 * 第15週教材 ：[slab 記憶體配置器](https://hackmd.io/5Fn8N3HeRkGIO7cZu7chIw?view=)
     * __per_cpu -> __percpu
