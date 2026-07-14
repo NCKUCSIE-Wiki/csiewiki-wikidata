@@ -5,6 +5,7 @@ GitHub 帳號: frank0988
 
 本份自我評量遵循課程自我評量指引的書寫規範，避免「期許自己」、「已盡最大努力」等空泛承諾，所有產出皆附對應的公開軌跡 (Linux 上游 patch、GitHub PR、HackMD 開發紀錄、會議錄影)。各項自評分數皆為 1 到 10 的整數，最末以幾何平均計算總分並適用方案 B。
 ## 成果發表和貢獻
+
 >4分
 
 在 Linux 無線網路驅動程式相關修改中，我送出 2 組 patch。第一組是 `drivers/net/wireless/ath/dfs_pri_detector.c`：在 `pseq_handler_create_sequences()` 中，`list_for_each_entry_continue` 形成的迴圈會多次呼叫 `pde_get_multiple()`，而同一條 PRI sequence 中 `pri` 固定，因此我嘗試以 reciprocal division 減少重複除法。v1 由 Jeff Johnson 於 2026-07-01 19:08 UTC 回覆，指出簽名身份不符合上游規範；我修正後於 2026-07-02 03:52 UTC 送出 v2。使用 `perf` 量測後，cycles 約下降 3.41%，instructions 約下降 0.83%，branches 約下降 4.18%。
@@ -48,8 +49,6 @@ $$s_t = (1 - \alpha)s_{t-1} + \alpha x_t$$
 針對 illdoCc 詢問為何 `ATH_RSSI_LPF_LEN` 使用 10 而非 2，我目前沒有在 git log 找到直接說明，因此不把猜測寫成結論。我能確認的是，較大的 length 代表較小的 $\alpha$，會讓 RSSI 對突發雜訊較不敏感，但反應也較慢。若要驗證這件事，可以固定 beacon interval 和輸入序列，例如讓 RSSI 從 60 突降到 40，比較 `len = 2, 8, 10, 16` 到達 roaming threshold 所需的更新次數，並同時計算穩態雜訊下輸出變異數。這比單純說「10 比較平滑」更能對應到實驗設計。
 
 [期末專題 HackMD](https://hackmd.io/okzCxJv3RGmrmN3goWocjQ?both)
-
-##觀摩其他期末專題
 
 
 ### 觀摩其他期末專題
