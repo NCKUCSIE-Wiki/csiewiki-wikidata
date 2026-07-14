@@ -1,0 +1,125 @@
+姓名：王柏凱
+GitHub 帳號：[ascodeasice](https://github.com/ascodeasice)
+
+## 成果發表與貢獻
+
+5 分，主要改進內容是教材〈從 √2 的存在談開平方根的快速運算〉的方程式，其餘大多是錯字與排版的修訂。
+
+我在進行作業二閱讀〈從 √2 的存在談開平方根的快速運算〉時，將教材中的每個數學式逐步推導並弄懂自己的提問，修正教材上 4 個有誤的數學式，並透過[證明牛頓法迭代的數列為非遞增](https://hackmd.io/XH50oF49Qa-EFEWD8Gjpjg)，簡化教材中用於示範的牛頓法開根號程式，因此我認為對 HackMD 教材有 non-trivial 的貢獻。
+
+透過嚴謹的數理推導去驗證並改進教材中的程式碼、證明某個條件不會發生，我認為有做到課程強調的「透過數學推理驗證自己認知」的精神。
+
+但是我並沒有貢獻 Linux 核心與本課程的相關專案，教材以外的貢獻不足，因此這個部分整體給 5 分。
+
+### 課程教材
+
+- 教材內容改進
+  - [〈從 √2 的存在談開平方根的快速運算〉](https://hackmd.io/HUzAPdVVSACpsnaj5Omvgw) 方程式、程式內容修正與改進：
+    - 2026/03/14 — 修正泰勒展開剩餘項 $\frac{h^2}{2}f''(\xi)$ 的來源：均值定理 -> 拉格朗日餘項公式
+    - 2026/03/14 — 修正「第 $k$ 次迭代後的誤差」 -> 「第 $k+1$ 次」
+    - 2026/03/14 — 修正初始誤差上界中的 $\lvert e_k \rvert$ -> $\lvert e_k \rvert ^2$
+    - 2026/03/15 — 推導並修正展開後的誤差上界分母 $2p_0(2p)^{2^{k-1}}$ -> $(2p_0)^{2^k}(2p)^{2^{k}-1}$
+    - 2026/03/15 — 應用牛頓法時補上代入公式的中間步驟 $b = a-\frac{f(a)}{f'(a)}$，方便理解
+    - 2026/03/16 — 修正牛頓法迭代式的正負號： - -> +
+    - 2026/03/16 — 透過[數學與程式證明](https://hackmd.io/XH50oF49Qa-EFEWD8Gjpjg)此條件不會發生，因此移除牛頓法開平方根函式 while 迴圈的 `|| (ans + 1) * (ans + 1) <= n`，並且加上說明「由於 `ans` 初始為 $\ge \lfloor \sqrt{n} \rfloor$ 的數，且在 while 迴圈會嚴格遞減至 $\lfloor \sqrt{n} \rfloor$，因此迴圈只需要檢查 `ans * ans > n`」
+  - 2026/03/26 — [〈你所不知道的 C 語言: linked list 和非連續記憶體〉](https://hackmd.io/@sysprog/c-linked-list) 從 node4 指向 node1 -> 從 node7 指向 node1
+- 教材格式修正
+  - 2026/03/12 — [〈從 √2 的存在談開平方根的快速運算〉](https://hackmd.io/HUzAPdVVSACpsnaj5Omvgw#?revisionAfter=1773125512483&diffWithCurrent) order of convegence -> order of convergence
+  - 2026/03/14 — [〈從 √2 的存在談開平方根的快速運算〉](https://hackmd.io/HUzAPdVVSACpsnaj5Omvgw#?revisionAfter=1773125512483&diffWithCurrent) 移除方程式中多出的 "."
+  - 2026/03/15 — [〈從 √2 的存在談開平方根的快速運算〉](https://hackmd.io/HUzAPdVVSACpsnaj5Omvgw#?revisionAfter=1773125512483&diffWithCurrent) 將 LaTeX 中的 >= 改為使用 \ge
+  - 2026/03/16 — [〈C 語言的 bit field〉](https://hackmd.io/MxZeJGYUR9-j67lx9N6qRg?view) 程式加上 `#include <stdio.h>`
+  - 2026/05/05 — [〈核心定點數機制與 EWMA〉](https://hackmd.io/nm-0IGV_SmS0EegpLy9G5g?view) 半形括號 -> 全形括號
+  - 2026/06/16 — [〈並行程式設計: 排程器〉](https://hackmd.io/U5iJvuwUSUSi1SUGaEi9-Q?view) 進程 -> 行程
+  - 2026/06/16 — [〈Concurrency Primer〉導讀](https://hackmd.io/sTO7HhyuR1-KKY6TJRA7Xw?view) 補上缺少的括號 (%rip -> (%rip)
+  - 2026/06/18 — [〈並行程式設計: 執行順序〉](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-ordering) 移除語義相近的重複段落
+  - 2026/06/21 — [〈並行程式設計: Atomics 操作〉](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-atomics) 半形 -> 全形冒號、新增全形半形間空格
+
+## 作業與隨堂測驗
+
+5 分
+
+- 作業一：[2026q1 Homework1 (warmup)](https://hackmd.io/yazVU3KhQGiFh0_vgEFcew)
+  - 針對〈資訊科技詞彙翻譯〉的 "render" 一詞，實際到成大圖書館查閱第一手 Oxford English Dictionary (第二版) 考據詞源，並檢視 Linux 核心 `fs/cachefiles/key.c` 中 render 的實際用法，論證「如實呈現」較「渲染」更貼近原意
+  - 閱讀 Git 官方文件並實際操作 git rebase，比對操作前後的 commit hash（`62aea9c` → `ddb6a4d`），驗證 rebase 是改寫歷史而非搬移既有 commit，修正自己原先的錯誤認知
+  - 以 $\mathbb{Z}/2^k\mathbb{Z}$ 的群結構證明 $k$ 位元加法在允許溢位的前提下保持封閉性
+- 作業二：[2026q1 Homework2 (stdc)](https://hackmd.io/0RKdWWrBTAa0ApW7HHOaDw)
+  - 逐步推導〈從 √2 的存在談開平方根的快速運算〉中牛頓法的誤差遞迴式，過程中發現並修正教材 4 處數學式（詳見「成果發表與貢獻」）
+  - 撰寫測試程式窮舉 $0 \le n \le 2^{31}-1$ 的所有輸入，驗證移除 while 迴圈的冗餘條件後結果不變（[gist](https://gist.github.com/ascodeasice/05c6ef9622b24cdb49197380bf1b8c94)），並輔以[數學證明](https://hackmd.io/XH50oF49Qa-EFEWD8Gjpjg)確認 `ans` 在迴圈中嚴格遞減至 $\lfloor \sqrt{n} \rfloor$
+- 作業三：[2026q1 Homework2 (basics)](https://hackmd.io/HWbvWGVETY-FzH5DUGzbYw)：由於將時間投入期末專題，因此未投入此作業
+- 作業四：及早投入期末專題的實作，先以寄信與下課討論的方式和授課教師確認主題，並於 2026/04/27 開始一對一討論（詳見「期末專題」與「與授課教師的互動」）
+- 作業五：[預期目標 + 定點數運算](https://hackmd.io/@sysprog/linux2026-kxo/%2F%40sysprog%2Flinux2026-kxo-a)：由於將時間投入期末專題，因此未投入此作業
+
+五項作業中，作業一與作業二有實際查閱第一手資料、檢驗自己的認知並逐步推導細節；作業四則及早確立期末專題方向並投入實作。作業三與作業五因投入期末專題而未完成，如實反映在分數上，綜合給 5 分。
+
+## 期末專題
+
+6 分，主題是 [Linux 核心設計專題: RISC-V 平台驗證和改進](https://hackmd.io/_WsFDR1QTGmC79huqfH6xA?view)，最小目標是讓最新版 Linux 能在 V821 開發板上開機。專題目前成功讓最新版的 Linux 進入 busybox 的 shell，但尚未完成能提交的 upstream patch 分析以及完整記錄，因此只完成部分專題目標，仍有很大的改進空間。
+
+過程中我分析 V821 相關周邊硬體，理解 device tree、kernel image、bootloader 與 RISC-V 架構的開機需求等開機所需知識，具體成果如下：
+
+- 分析出廠 device tree 並且修改 compatible 以建立最小開機 device tree：從 `/sys/firmware/devicetree/base/` 與 MTD boot 分區 dump 出 DTB，以 dtc 反編譯後，比對最新版 kernel 程式碼，並且依照其函式修改 device tree，例如將 cpu compatible 從 `rv32i2p0m2p0...` 改為 mainline 解析器接受的 `rv32imafdc`、UART compatible 改為 `snps,dw-apb-uart`
+- 縮減 kernel config：關閉 `VIRTUALIZATION`、`DEBUG_KERNEL`、`CGROUPS` 等 19 個 top-level 選項，raw Image 從 7,790,592 bytes 減至 6,133,248 bytes（約 -21%），uImage.gz 減少 969 KB；以 XMODEM（約 11.5 KB/s）傳輸估算，每次 XMODEM 燒錄節省約 85 秒
+- 透過開機 log 逐步定位問題：vendor 的 OpenSBI 造成開機約 60 秒後強制 reset，因此改以 FEL 模式載入自編譯 OpenSBI 繞過；參考 vendor BOOT0 原始碼撰寫 `felcpux.py` 完成 A27 CPU bring-up，並修正 PLL 設定使 CPU 頻率從 24 MHz 回到 960 MHz，開機時間從 200 秒以上恢復正常
+
+### 觀摩同儕專題並提問
+
+- [Linux 核心專題: RCU](https://hackmd.io/ggVQ6mO1RBKaPp44IWtGrA?view#Reviewed-by-ascodeasice)
+- [Linux 核心專題: qspinlock 量化分析](https://hackmd.io/FFQ59lxpRWaXIP0hYPrx5A?view#Reviewed-by-ascodeasice)
+- [Linux 核心設計專題: MGLRU 的數學分析和改進](https://hackmd.io/5IWkKB63TQ-vArQ8zXGPkQ?view#Reviewed-by-ascodeasice)
+- [Linux 專題: 效能分析和改進案例探討](https://hackmd.io/ImQSWVcIQt-ddjovJzftFw?view#Reviewed-by-ascodeasice)
+- [Linux 核心設計專題: 圖形函式庫的效能改進](https://hackmd.io/4_nS7VDFQ7GgM2vZ0QcAEw?view#Reviewed-by-ascodeasice)
+
+已回覆全部 2 則對我期末專題的提問（公開於 HackMD 留言串），包含 `kezhenx666` 對 device tree 分析方式細節的提問，以及 `c8763yee` 對於具體關閉了哪些 kernel config 與減少的 kernel image size 的疑問。
+
+## 與授課教師的互動
+
+7 分
+
+- [2026-03-03/10 問答簡記 - HackMD](https://hackmd.io/p87SQ6WpT-ehlVhXglXk9w#ascodeasice)
+  - 實作 linked list 的 merge sort，回答介面設計與 sort 參數的取捨、如何驗證正確性、時間複雜度與 stability，並在課後補充問答且寄信通知授課教師，完成後續 follow-up 問題，例如量化引入 comparator 參數的成本、查詢 Linux 核心中忽略排序穩定性而造成 bug 的案例
+- [2026-05-12/14/21 問答簡記 - HackMD](https://hackmd.io/s7WxGv_KQ_G-Iw9H9SjJ_w#ascodeasice)
+  - 回答當 $x$ 為單精度浮點數時，如何快速估算 $e^x$ 的最大值
+- 一對一討論：於 2026/04/27 與授課教師進行一對一討論，確認期末專題主題為 RISC-V 平台驗證和改進，並於後續補充討論中的模擬面試問題（[HackMD 筆記](https://hackmd.io/@ascodeasice/rJT-fk06Ze)）
+
+在與授課教師的互動中，對我啟發最大的是一對一討論，因為在過程中我看見自己在面試場合的弱點以及學習時的盲點。
+
+- 不要害怕錯誤，誠實記錄自己的想法和不懂的地方，缺什麼補什麼
+
+當我向授課教師請教先前面試被問的「為什麼 Linux 核心要使用鏈結串列儲存行程資訊」時，我說我查不到答案，老師點出這種問題不應該用查詢的，而是應該透過推理與實驗去獲得答案。這讓我發現自己過於依賴直接查到答案，害怕自行推理，因為擔心得到錯誤的答案。
+
+我也發現這和自己第一次問答花了很久才完成的原因相同：我過於想要查出正確且完整的答案，而不是先記錄自己的想法和疑問。老師在一對一討論的最後也提醒我，補充問題時不需要寫得很長，能回答到重點就好。因此後續我改為在一兩天內先回答問題的重點，而不是將每個細節都寫得完整，避免在補充問題上花費過多時間。
+
+- 寫的程式不夠多
+
+我另一個學習上的盲點是實際寫程式的經驗不足。在一對一討論的「使用 bitwise 運算將浮點數乘二」題目中，我能正確分析浮點數的格式與各種情境的處理方式，但實作時卻在「如何將浮點數的位元當作整數解讀」和 bit mask 的語法細節卡住，甚至程式無法編譯。老師點出我過於依賴 AI agent 寫程式，導致寫的程式不夠多，在面試場合很可惜。後續我在閱讀教材時，有機會就自行動手實作教材中的 C 語言程式碼，改善自己的不足。
+
+## 所見所聞所感
+
+8 分
+
+閱讀〈因為自動飲料機而延畢的那一年〉，其中這段話讓我印象深刻：
+
+> 大多數人一直活在本來就應該這樣的童話世界裡，電視打開就可以看，機車買來就可以騎，手機買來就可以用，一切都理所當然，本來就應該這樣。偶爾買到不好用的商品我們就抱怨幾句，丟掉換其他更好用的牌子，卻很少意識到那個本來就該這樣，背後需要經過多少人月的投入與研發。
+
+我想到老師在上課時經常提到，從使用者的角度看，手機能開機是一件理所當然的事情（因為我有付錢等等），但對系統軟體工程師而言，其實牽涉大量的細節。我在課堂中學到的 C 語言各種特性、Linux 子系統的實作等等，無不包含大量的細節與工程考量。而我在期末專題移植最新版 Linux 核心時，也發現讓一塊開發板正確開機，需要經過如此多的軟體元件、與硬體的緊密整合以及對細節的掌握才能成功。這讓我體會重視細節的重要，也期許自己成為能掌握軟體細節、面對更困難工程難題的優秀工程師。
+
+老師在課堂上的另一句話也讓我印象深刻：「也許你們在這堂課還不能成為優秀，但能讓你們看見自己和優秀的距離」。我前面給自己的分數顯示自己還有很大的進步空間，但我在這堂課也看到其他優秀的同學處理工程難題與真實世界問題的細節，讓我看見自己與優秀的距離，也讓我知道仍需紮實地學習與累積，才能朝優秀邁進。
+
+回顧我在課程中對「重視細節、數學、謹慎用詞、實驗設計」的投入，具體如下：
+
+- 重視細節：逐步推導教材〈從 √2 的存在談開平方根的快速運算〉的每一個數學式，因而發現並修正 4 處有誤的數學式（詳見「成果發表與貢獻」）；閱讀其他教材時也順手修正錯字、缺漏的括號與全形半形標點等排版細節
+- 數學：以拉格朗日餘項公式與誤差遞迴式的推導驗證牛頓法的二次收斂，並透過[數學證明](https://hackmd.io/XH50oF49Qa-EFEWD8Gjpjg)確認迭代數列非遞增，據此簡化教材的示範程式；在作業一以 $\mathbb{Z}/2^k\mathbb{Z}$ 的群結構理解 $k$ 位元加法的封閉性
+- 謹慎用詞：為考據 "render" 的譯法，實際到成大圖書館查閱第一手 Oxford English Dictionary；貢獻教材時將「進程」修正為「行程」，並統一標點的全形半形
+- 實驗設計：不只以數學證明 while 迴圈條件冗餘，也撰寫測試程式窮舉 $0 \le n \le 2^{31}-1$ 的所有輸入交叉驗證（[gist](https://gist.github.com/ascodeasice/05c6ef9622b24cdb49197380bf1b8c94)）；實際操作 git rebase 並比對前後 commit hash，驗證自己對 rebase 行為的認知
+
+## 總分計算
+
+適用方案 B（未對 Linux, glibc, gcc, llvm, lkmpg, rv32emu, kbox, elfuse 等專案做出超過 3 項 non-trivial 貢獻）。
+
+$$
+\text{GEOMEAN} = (5 \times 5 \times 6 \times 7 \times 8)^{1/5} = 8400^{1/5} \approx 6.09
+$$
+
+$$
+\text{總分} = 1 + \lfloor 6.09 \rfloor = 1 + 6 = 7
+$$
