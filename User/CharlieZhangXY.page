@@ -73,7 +73,7 @@ categories: User
 ## 與授課教師的互動 
 7 分。
 
-* 4/21 [課堂討論](https://hackmd.io/gdgKXMGYRdaNUgsEBKaypg#%E5%95%8F%E7%AD%94)：像學長請教在碩士到實際工作前這個階段所應該投資的能力、目前 Linux 在內嵌 AI 模型方面的進佔與阻礙
+* 4/21 [課堂討論](https://hackmd.io/gdgKXMGYRdaNUgsEBKaypg#%E5%95%8F%E7%AD%94)：向學長請教在碩士到實際工作前這個階段所應該投資的能力、目前 Linux 在內嵌 AI 模型方面的進佔與阻礙
 * 6/2 課後討論 : 討論專題，針對測驗的延伸問題，對照教材、規格書與原始碼，提出問題並進行推論分析與實驗。
 * 6/23 [模擬面試]( https://drive.google.com/file/d/1hElsEiBHD9nTSLGV_-WaCtIwIsfHxh9k/view?usp=drive_link):與助教討論 ，PELT 如何估算 CPU Utilization / Runnable Load / Load Average、Workqueue 的設計考量與排程器整合、False Sharing 的產生原因與問題，有部分答不出來，有在後續檢討以及追蹤(回信的方式)  
 
