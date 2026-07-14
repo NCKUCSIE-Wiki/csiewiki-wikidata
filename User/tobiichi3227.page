@@ -1,0 +1,35 @@
+# 2026 年 Linux 核心設計課程自我評量
+姓名：馬道中  
+Github 帳號：[tobiichi3227](https://github.com/tobiichi3227/)
+
+
+## 成果發表與貢獻
+> ? 分
+
+本學期內只有貢獻教材以及對教材相關的 Repo 發一個尚未合併的 PR 與給 Linux 發一個沒有被接受的 Patch，屬於方案 B。
+
+### Github PR
+- [Fix high CPU usage when game paused](https://github.com/sysprog21/kxo/pull/32) (尚未 merge)
+
+### Kernel Patch
+(未被接受)
+[[PATCH 0/1] ovpn: tcp - defer TX from softirq to workqueue](https://lore.kernel.org/lkml/20260501145425.757147-1-cz1346219@gmail.com/)
+[[PATCH 1/1] ovpn: tcp - defer TX from softirq to workqueue](https://lore.kernel.org/lkml/20260501145425.757147-2-cz1346219@gmail.com/)
+在使用 OpenVPN 時發現維持 VPN 連線狀態下讓筆電進入睡眠狀態會導致 Kernel Crash，為此非常困擾。
+
+### 修正教材
+- 2026/02/27: 修正〈[解讀計算機編碼](https://hackmd.io/vOjbtew3Tn2aA0uDrmUL4Q)〉中 GCC Absolute Value 連結錯誤
+- 2026/03/13: 修正〈[Linux 核心原始程式碼巨集: `max`, `min`](https://hackmd.io/x_L5DNdFSf-ykW6JIom1GA#)〉中 `__typecheck(x, y)` 巨集無法正確編譯
+- 2026/06/08: 修正〈[Linux 核心設計: 淺談同步機制](https://hackmd.io/0JIAU2l_QeO5FhxjD-V_ow#)〉中 `wfe` 指令連結失效，改成 Arm Developer 的連結
+- 2026/06/13: 修正〈[並行程式設計: Atomics 操作](https://hackmd.io/OVPTyhEPTwSHumO28EpJnQ)〉中 AMD 公司手冊連結失料
+- 2026/06/13: 修正〈[並行程式設計: Atomics 操作](https://hackmd.io/OVPTyhEPTwSHumO28EpJnQ)〉中 `Non-Temporal 的載入和儲存` 文章連結失效
+
+### 修錯字
+- 2026/06/05:〈[Concurrency Primer](https://github.com/sysprog21/concurrency-primer/)〉中的 `atomic_compare_exchange_strong()` 實作變數名稱與參數名稱不符，[PR](https://github.com/sysprog21/concurrency-primer/pull/21)
+
+將以下教材的 `優化` 改成 `最佳化`
+
+- [Linux 核心設計: 記憶體管理](https://hackmd.io/t_SzlKdqQKGk7VFYnZ2NKQ#)
+- [並行程式設計: Atomics 操作](https://hackmd.io/OVPTyhEPTwSHumO28EpJnQ#)
+- [並行程式設計: 概念](https://hackmd.io/_lnMkJLxTSWzU46IT8R7nw#)
+- [你所不知道的 C 語言：動態連結器篇](https://hackmd.io/VRByMw0iSmqbVve3CNd01g#)
