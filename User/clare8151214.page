@@ -4,8 +4,8 @@
 * GitHub 帳號：[clare8151214](https://github.com/clare8151214)
 * 自評頁面：`/User/clare8151214`
 * 期末專題頁面：https://hackmd.io/@sysprog/rJlTTze1fx
-* 評量方式：本頁依據課程自我評量要求，分別針對「成果發表和貢獻」、「作業 / 隨堂測驗」、「期末專題」、「與授課教師的互動」、「所見所聞所感」五項進行自評。各項分數皆為 1 到 10 的整數，並以公開筆記、程式碼、會議紀錄、課堂討論或專題頁面作為佐證。
-* 計分方案：我目前不主張使用方案 A，因為尚未確認自己有超過 3 項被 Linux、glibc、gcc、llvm、lkmpg、rv32emu、kbox、elfuse 等專案採納的 non-trivial 貢獻。因此本自評採方案 B。
+* 評量方式：本頁依據課程自我評量要求，分別針對成果發表和貢獻、作業 / 隨堂測驗、期末專題、與授課教師的互動、所見所聞所感五項進行自評，各項分數皆為 1 到 10 的整數，並以公開筆記、程式碼、會議紀錄、課堂討論或專題頁面作為佐證。
+* 計分方案：我目前不主張使用方案 A，因為尚未確認自己有超過 3 項被 Linux、glibc、gcc、llvm、lkmpg、rv32emu、kbox、elfuse 等專案採納的 non-trivial 貢獻，因此本自評採方案 B。
 
 ---
 
@@ -19,7 +19,7 @@
 | 與授課教師的互動 | 7 |
 | 所見所聞所感 | 8 |
 
-幾何平均數：
+幾何平均數，可用 `python3 -c "print((6*8*7*7*8)**0.2)"` 重現：
 
 ```text
 GEOMEAN = (6 * 8 * 7 * 7 * 8)^(1/5)
@@ -36,79 +36,75 @@ GEOMEAN = (6 * 8 * 7 * 7 * 8)^(1/5)
 
 ---
 
-## 1. 成果發表和貢獻
+## 成果發表和貢獻
 
 自評分數：**6**
 
-本項我採取保守自評。這段時間我尚未確認有 Linux kernel、glibc、gcc、llvm 等上游專案採納的 non-trivial patch，因此不把自己列入方案 A 條件。不過，我有持續將課程學習內容整理為公開可追蹤的技術筆記，主軸集中在 Linux CPU scheduler、C 語言數值邊界、核心整數演算法、system call 成本，以及期末專題的 CFS、EEVDF、sched_ext、PELT 與 group scheduling。這些內容雖然還不是上游貢獻，但已經形成可被檢查、可延伸、可作為期末專題基礎的公開軌跡。
+本項我採取保守自評，這段時間我尚未確認有 Linux kernel、glibc、gcc、llvm 等上游專案採納的 non-trivial patch，因此不把自己列入方案 A 條件，不過，我有持續將課程學習內容整理為公開可追蹤的技術筆記，主軸集中在 Linux CPU scheduler、C 語言數值邊界、核心整數演算法、system call 成本，以及期末專題的 CFS、EEVDF、sched_ext、PELT 與 group scheduling，這些內容雖然還不是上游貢獻，但已經形成可被檢查、可延伸、可作為期末專題基礎的公開軌跡。
 
 ### 具體成果
 
 1. Linux CPU scheduler 專題頁面
 
    * 連結：https://hackmd.io/@sysprog/rJlTTze1fx
-   * 我依照「Linux 核心設計專題：CPU 排程器研究」要求，建立以 Linux v6.6+ EEVDF 與 Linux v6.12+ sched_ext 為主軸的專題頁面。內容涵蓋 CFS 的 `vruntime`、red-black tree、weight/nice 機制，EEVDF 的 eligibility、virtual deadline 與 latency-aware scheduling，以及 sched_ext 的 BPF scheduler class、dispatch queue、CPU grouping 與 fallback 機制。
+   * 我依照課程指定專題 CPU 排程器研究的要求，建立以 Linux v6.6+ EEVDF 與 Linux v6.12+ sched_ext 為主軸的專題頁面，內容涵蓋 CFS 的 `vruntime`、red-black tree、weight/nice 機制，EEVDF 的 eligibility、virtual deadline 與 latency-aware scheduling，以及 sched_ext 的 BPF scheduler class、dispatch queue、CPU grouping 與 fallback 機制。
    * 這份專題頁也列出後續需要追蹤的核心檔案，例如 `kernel/sched/fair.c`、`kernel/sched/ext.c`、`kernel/sched/pelt.c`、`kernel/sched/core.c` 與 `include/linux/sched.h`，讓專題從概念整理進一步連到 Linux 核心原始碼。
 
 2. 《Demystifying the Linux CPU Scheduler》閱讀筆記
 
    * 連結：https://hackmd.io/@sysprog/rJlTTze1fx
-   * 我整理多個章節摘要、疑問與實作對照。例如 `1.2.4 The Hidden Cost of Protection` 中，我以 `strace -wc /usr/bin/echo hello` 觀察外部 `echo` 命令背後的 system call 成本，並比較 shell builtin 與外部程式的差異。這讓我理解一個看似簡單的命令，實際上會牽涉 `execve`、動態連結、`mmap`、`mprotect`、`openat`、`close` 與最後的 `write`。
-   * 在 `1.2.9 User and kernel stacks` 中，我整理 x86-64 kernel stack 通常為 16 KiB 的原因、`VMAP_STACK` 的作用，以及 `struct thread_info` 為何從 stack bottom 移入 `struct task_struct`。這些內容有助於理解 system call、context switch 與 scheduler 執行時所依賴的 task 狀態。
+   * 我整理多個章節摘要、疑問與實作對照，例如 `1.2.4 The Hidden Cost of Protection` 中，我以 `strace -wc /usr/bin/echo hello` 觀察外部 `echo` 命令背後的 system call 成本，並比較 shell builtin 與外部程式的差異，這讓我理解一個看似簡單的命令，實際上會牽涉 `execve`、動態連結、`mmap`、`mprotect`、`openat`、`close` 與最後的 `write`。
+   * 在 `1.2.9 User and kernel stacks` 中，我整理 x86-64 kernel stack 通常為 16 KiB 的原因、`VMAP_STACK` 的作用，以及 `struct thread_info` 為何從 stack bottom 移入 `struct task_struct`，這些內容有助於理解 system call、context switch 與 scheduler 執行時所依賴的 task 狀態。
 
 3. Early scheduler 與 O(n) scheduler 初步整理
 
    * 連結：https://hackmd.io/@sysprog/rJlTTze1fx
    * 我已整理 early Linux scheduler 的基本運作方式，包含 `jiffies`、`priority`、`counter`、`state` 等欄位，以及 scheduler 如何掃描 task array，選出 `TASK_RUNNING` 且 `counter` 最大的 task。
-   * 我特別追問 `counter = (counter >> 1) + priority` 是否會讓長期睡眠的 task 無限累積 counter。經過推導後，我理解右移衰減會限制舊 counter 的累積，使 I/O-bound 或 interactive task 醒來後能得到有限 bonus，但不會永久壟斷 CPU。
-   * 我也開始整理 O(n) scheduler 的設計轉變，包含從單純 counter selection 轉向 `goodness()` metric，以及 O(n) scheduler 開始考慮 processor affinity、cache affinity、single global runqueue 與 runqueue lock contention。這部分目前仍屬初步整理，後續還需要補上 `goodness()` 程式碼逐項拆解，以及 O(1) scheduler 的 active / expired array、per-CPU runqueue 與 bitmap 設計。
+   * 我特別追問 `counter = (counter >> 1) + priority` 是否會讓長期睡眠的 task 無限累積 counter，經過推導後，我理解右移衰減會限制舊 counter 的累積，使 I/O-bound 或 interactive task 醒來後能得到有限 bonus，但不會永久壟斷 CPU。
+   * 我也開始整理 O(n) scheduler 的設計轉變，包含從單純 counter selection 轉向 `goodness()` metric，以及 O(n) scheduler 開始考慮 processor affinity、cache affinity、single global runqueue 與 runqueue lock contention，這部分目前仍屬初步整理，後續還需要補上 `goodness()` 程式碼逐項拆解，以及 O(1) scheduler 的 active / expired array、per-CPU runqueue 與 bitmap 設計。
 
 4. C 語言與核心數值計算分析
 
    * 連結：https://hackmd.io/@clare8151214/Hy7Jh31MGe
-   * 我針對 `geomean()` 題目整理如何在不使用 `<math.h>` 的限制下，計算整數幾何平均並避免 overflow。由於直接計算所有輸入值乘積再開根號會很快超過 `__uint128_t` 範圍，因此我改用 binary search 搭配單調判定：判斷 `prod(inputs) >= m^num` 是否成立，再找出最大的可行整數 `m`。
+   * 我針對 `geomean()` 題目整理如何在不使用 `<math.h>` 的限制下，計算整數幾何平均並避免 overflow，由於直接計算所有輸入值乘積再開根號會很快超過 `__uint128_t` 範圍，因此我改用 binary search 搭配單調判定：判斷 `prod(inputs) >= m^num` 是否成立，再找出最大的可行整數 `m`。
    * 為了避免 predicate 因 overflow 誤判，我實作小型 `BigUInt`，用多個 32-bit limb 精確表示乘積與 `m^num`，並用 `verify()` 檢查結果是否滿足 `r^num <= prod(inputs) < (r+1)^num`。
-   * 這份筆記也整理了幾個實作陷阱，例如 `__uint128_t` 同時 overflow 時可能誤判、`verify()` 若沿用有 bug 的 predicate 會變成循環論證、`r == INT_MAX` 時直接計算 `r + 1` 會造成 signed overflow UB。這讓我理解核心環境下的數值計算必須明確處理資料型態、overflow、rounding、UB 與可驗證性。
-
-
+   * 這份筆記也整理了幾個實作陷阱，例如 `__uint128_t` 同時 overflow 時可能誤判、`verify()` 若沿用有 bug 的 predicate 會變成循環論證、`r == INT_MAX` 時直接計算 `r + 1` 會造成 signed overflow UB，這讓我理解核心環境下的數值計算必須明確處理資料型態、overflow、rounding、UB 與可驗證性。
 
 ### 自評理由
 
-本項給 6 分，是因為我有形成多份與 Linux 核心課程高度相關的公開筆記，並且把 CPU scheduler、system call、kernel stack、C 語言數值邊界與期末專題連結起來。不過，目前還沒有被上游採納的 non-trivial patch，也沒有正式對外技術演講或已合併文件貢獻，因此不應高估。本項的主要價值在於建立可檢查的學習軌跡，為後續程式碼追蹤、實驗設計與 sched_ext 原型實作打基礎。
+本項給 6 分，是因為我有形成多份與 Linux 核心課程高度相關的公開筆記，並且把 CPU scheduler、system call、kernel stack、C 語言數值邊界與期末專題連結起來，不過，目前還沒有被上游採納的 non-trivial patch，也沒有正式對外技術演講或已合併文件貢獻，因此不應高估，本項的主要價值在於建立可檢查的學習軌跡，為後續程式碼追蹤、實驗設計與 sched_ext 原型實作打基礎。
 
----
 
-## 2. 作業 / 隨堂測驗
+## 作業 / 隨堂測驗
 
 自評分數：**8**
 
-這段時間我投入最多的是作業、隨堂測驗延伸題與 Linux 核心相關題目的追蹤。我不是只完成題目答案，而是盡量把題目背後的 C 語言規則、核心環境限制、資料結構設計與實驗驗證方法寫清楚。對我而言，這部分最大的進步是從「知道答案」轉向「能說明為什麼這個答案在 Linux 核心或 C 語言模型下成立」。
+這段時間我投入最多的是作業、隨堂測驗延伸題與 Linux 核心相關題目的追蹤，我不是只完成題目答案，而是盡量把題目背後的 C 語言規則、核心環境限制、資料結構設計與實驗驗證方法寫清楚，對我而言，這部分最大的進步是從知道答案，轉向能說明為什麼答案在 Linux 核心或 C 語言模型下成立。
 
 ### 具體紀錄
-
 
 1. `geomean()` 與 full precision 整數幾何平均
 
    * 連結：https://hackmd.io/@clare8151214/Hy7Jh31MGe
    * 我針對 `int geomean(int *inputs, int num)` 題目整理如何在不使用 `<math.h>` 的情況下求整數幾何平均，並處理 `INT_MAX = 2^31 - 1` 下的溢位問題。
-   * 我將問題轉換為「如何比較乘積與候選值的 n 次方」，而不是直接計算所有乘積後再開根號。這讓我理解 Linux 核心中為什麼常見做法是避免浮點數、避免不可控誤差，改用整數比較、固定點數、位元操作或受控精度的輔助表示。
+   * 我將問題轉換為比較乘積與候選值的 n 次方，而不是直接計算所有乘積後再開根號，這讓我理解 Linux 核心中為什麼常見做法是避免浮點數、避免不可控誤差，改用整數比較、固定點數、位元操作或受控精度的輔助表示。
 
 2. Linux `int_sqrt()` 與核心整數演算法
 
    * 連結：https://hackmd.io/@clare8151214/HyL2veB0-x
-   * 我比較二分逼近法、牛頓法與 digit-by-digit 方法在 Linux 核心環境中的可行性。重點不是演算法課本上的漸進複雜度，而是核心中不能使用浮點數、整數除法成本較高、需要避免溢位、執行時間最好穩定，以及 corner case 必須容易驗證。
+   * 我比較二分逼近法、牛頓法與 digit-by-digit 方法在 Linux 核心環境中的可行性，重點不是演算法課本上的漸進複雜度，而是核心中不能使用浮點數、整數除法成本較高、需要避免溢位、執行時間最好穩定，以及 corner case 必須容易驗證。
    * 這讓我理解 `lib/math/int_sqrt.c` 這類實作的價值：它犧牲部分直觀性，但換來固定整數操作、可預期行為與較低的架構相依風險。
 
 3. Linux CPU scheduler 閱讀與章節摘要
 
    * 連結：https://hackmd.io/@sysprog/rJlTTze1fx
-   * 我閱讀並整理 `2.1.5 Handling workload diversity`、`2.2.2 Early Linux Scheduler`、`2.2.3 O(n) Scheduler` 等章節。整理內容包含 scheduling class / policy / implementation 的區別、SCHED_NORMAL / SCHED_FIFO / SCHED_RR / SCHED_DEADLINE 的差異、early scheduler 中 `counter` 與 `priority` 的意義，以及 O(n) scheduler 開始考慮 `goodness()`、processor affinity、cache affinity 與 runqueue lock contention。
-   * 我也把摘要轉成問題導向的筆記，例如「長期睡眠 task 是否會無限累積 counter」、「O(n) scheduler 為何要考慮 processor affinity」、「task migration 為何可能破壞 cache locality」。這些問題讓閱讀不只停留在翻譯，而是能對照 kernel 設計取捨。
+   * 我閱讀並整理 `2.1.5 Handling workload diversity`、`2.2.2 Early Linux Scheduler`、`2.2.3 O(n) Scheduler` 等章節，整理內容包含 scheduling class / policy / implementation 的區別、SCHED_NORMAL / SCHED_FIFO / SCHED_RR / SCHED_DEADLINE 的差異、early scheduler 中 `counter` 與 `priority` 的意義，以及 O(n) scheduler 開始考慮 `goodness()`、processor affinity、cache affinity 與 runqueue lock contention。
+   * 我也把摘要轉成問題導向的筆記，例如長期睡眠 task 是否會無限累積 counter、O(n) scheduler 為何要考慮 processor affinity、task migration 為何可能破壞 cache locality，這些問題讓閱讀不只停留在翻譯，而是能對照 kernel 設計取捨。
 
 4. cache locality 與 `perf` 實驗設計
 
    * 連結：https://hackmd.io/@clare8151214/linux2026-stdc
-   * 我針對 linked list 中點搜尋題目，設計 fast / slow pointer 與 two-pass 兩種演算法的 cache 行為比較。筆記中規劃以固定 cache line 大小的 node、一次性 pool 配置、Fisher-Yates shuffle 打亂節點順序，避免連續記憶體配置讓 prefetcher 掩蓋 pointer chasing 的 cache miss。
+   * 我針對 linked list 中點搜尋題目，設計 fast / slow pointer 與 two-pass 兩種演算法的 cache 行為比較，筆記中規劃以固定 cache line 大小的 node、一次性 pool 配置、Fisher-Yates shuffle 打亂節點順序，避免連續記憶體配置讓 prefetcher 掩蓋 pointer chasing 的 cache miss。
    * 我也整理如何用 `perf stat`、`perf record`、`perf report`、`perf annotate` 與 `perf mem` 觀察 cache miss、cycles、instructions 與 memory access pattern，並討論 `perf c2c` 為何較適合 shared cacheline contention，而不是單執行緒 linked list temporal locality 的主要量測工具。
 
 5. byte-level memory representation 與資料表示
@@ -120,18 +116,16 @@ GEOMEAN = (6 * 8 * 7 * 7 * 8)^(1/5)
 6. system call 與 `echo` / `strace` 觀察
 
    * 連結：https://hackmd.io/@sysprog/rJlTTze1fx
-   * 我整理 `echo` 執行時為何不只呼叫 `write()`，而是會先經過 `execve`、動態連結、`openat`、`pread64`、`mmap`、`mprotect`、`close` 等流程。這讓我把使用者程式、glibc wrapper、system call、kernel mode transition 與 VFS 的關係串起來。
+   * 我整理 `echo` 執行時為何不只呼叫 `write()`，而是會先經過 `execve`、動態連結、`openat`、`pread64`、`mmap`、`mprotect`、`close` 等流程，這讓我把使用者程式、glibc wrapper、system call、kernel mode transition 與 VFS 的關係串起來。
    * 這部分也讓我回頭理解 vDSO / vsyscall 的目的：不是所有系統服務都應該付出完整 system call mode switch 成本，頻繁查詢時間或 CPU ID 時，kernel 會透過映射共享頁面降低 overhead。
-
 
 ### 自評理由
 
-本項給 8 分，因為我有持續追蹤作業與測驗延伸題，並把多個題目放回 Linux 核心限制下重新理解。這些內容包含 C 語言整數語意、overflow avoidance、整數演算法、byte-level memory representation、cache locality、`perf` 量測思維、system call 成本、kernel stack 與 scheduler 設計。不足之處是部分內容仍停留在筆記與推導，公開程式碼、測試腳本與 commit 紀錄仍需要補齊。
+本項給 8 分，因為我有持續追蹤作業與測驗延伸題，並把多個題目放回 Linux 核心限制下重新理解，這些內容包含 C 語言整數語意、overflow avoidance、整數演算法、byte-level memory representation、cache locality、`perf` 量測思維、system call 成本、kernel stack 與 scheduler 設計，不足之處是部分內容仍停留在筆記與推導，公開程式碼、測試腳本與 commit 紀錄仍需要補齊。
 
 
----
 
-## 3. 期末專題
+## 期末專題
 
 自評分數：**7**
 
@@ -140,131 +134,114 @@ GEOMEAN = (6 * 8 * 7 * 7 * 8)^(1/5)
 * 專題頁面：https://hackmd.io/@sysprog/rJlTTze1fx
 * 執行人：`clare8151214`
 
-本專題以 Linux CPU scheduler 的演進為主軸，聚焦於 Linux v6.6+ 引入的 **EEVDF**、Linux v6.12+ 合併的 **sched_ext**，並對照傳統 **CFS** 的設計。專題目標是理解 Linux CPU scheduler 如何從「公平性模型」逐步走向「延遲感知」與「可程式化排程」：CFS 以 `vruntime`、weight/nice 與 red-black tree 建立比例公平模型；EEVDF 在公平性基礎上加入 eligibility、lag 與 virtual deadline，使排程決策更能描述 latency；sched_ext 則允許透過 BPF 實作可插拔 scheduler policy，讓排程策略實驗不必完全依賴修改核心本體。
+本專題以 Linux CPU scheduler 的演進為主軸，聚焦於 Linux v6.6+ 引入的 **EEVDF**、Linux v6.12+ 合併的 **sched_ext**，並對照傳統 **CFS** 的設計，專題目標是理解 Linux CPU scheduler 如何從公平性模型逐步走向延遲感知與可程式化排程：CFS 以 `vruntime`、weight/nice 與 red-black tree 建立比例公平模型；EEVDF 在公平性基礎上加入 eligibility、lag 與 virtual deadline，使排程決策更能描述 latency；sched_ext 則允許透過 BPF 實作可插拔 scheduler policy，讓排程策略實驗不必完全依賴修改核心本體。
 
-目前我完成度較高的是 **閱讀筆記、章節摘要、疑問整理與初步實作對照**。尚未完成的部分包含：Linux 6.6 / 6.12 / 最新穩定版的完整程式碼追蹤、CFS → EEVDF → sched_ext call path 對照圖、可重現 workload 實驗、PELT 數值精度分析，以及 sched_ext BPF scheduler 原型實作。因此本項不應寫成已完成實驗或 prototype，而應誠實標示目前仍停留在閱讀與規劃階段。
+目前我完成度較高的是 **閱讀筆記、章節摘要、疑問整理與初步實作對照**，各任務的實際狀態如下表，未完成項目如實標示，不以未來式承諾替代。
 
 ### 專題任務與目前狀態
 
 | 任務                                            | 目前狀態                                                                                                     | 證據                                    |
 | --------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| 詳閱《Demystifying the Linux CPU Scheduler》並整理筆記 | **部分完成**。已整理 Chapter 1 與 scheduler 相關章節摘要、疑問、實作對照與補充資料                                                   | https://hackmd.io/@sysprog/rJlTTze1fx |
-| 對照 CFS、EEVDF、sched_ext、PELT、group scheduling  | **部分完成**。已建立閱讀方向與問題意識，但尚未完成完整 documentation 對照                                                           | https://hackmd.io/@sysprog/rJlTTze1fx |
-| 程式碼追蹤                                         | **未完成**。尚未系統性追蹤 Linux kernel 6.6、6.12 與最新穩定版中的 `fair.c`、`ext.c`、`pelt.c`、`core.c`、`sched.h` 差異           | 待補                                    |
-| CFS → EEVDF → sched_ext call path 對照圖         | **未完成**。尚未建立 task enqueue、pick next task、wakeup preemption、runtime accounting 等流程圖                       | 待補                                    |
-| 實驗設計與可重現測試環境                                  | **未完成**。尚未建立 CPU-bound、I/O-bound、mixed workload、cgroup workload、多核心 / NUMA / SMT 的可重現測試環境                | 待補                                    |
-| tracing / profiling 資料收集                      | **未完成**。尚未用 `perf`、`ftrace`、`trace-cmd`、`bpftool`、`schedstat`、`/proc/sched_debug` 系統性收集資料                | 待補                                    |
-| PELT 數值精度分析                                   | **未完成**。尚未完成 fixed-point、decay、rounding、累積誤差、tick rate、CPU frequency、task migration、cgroup hierarchy 的分析 | 待補                                    |
-| sched_ext 原型實作                                | **未完成**。尚未完成 FIFO / round-robin baseline，也尚未完成 latency-aware policy                                      | 待補                                    |
-| 最終 patch、實驗數據、文件或教學範例                         | **未完成**。目前尚未形成可 review 的 patch 或實驗數據                                                                     | 待補                                    |
+| 詳閱《Demystifying the Linux CPU Scheduler》並整理筆記 | **部分完成**，已整理 Chapter 1 與 scheduler 相關章節摘要、疑問、實作對照與補充資料                                                   | https://hackmd.io/@sysprog/rJlTTze1fx |
+| 對照 CFS、EEVDF、sched_ext、PELT、group scheduling  | **部分完成**，已建立閱讀方向與問題意識，但尚未完成完整 documentation 對照                                                           | https://hackmd.io/@sysprog/rJlTTze1fx |
+| 程式碼追蹤                                         | **未完成**，尚未系統性追蹤 Linux kernel 6.6、6.12 與最新穩定版中的 `fair.c`、`ext.c`、`pelt.c`、`core.c`、`sched.h` 差異           | —                                    |
+| CFS → EEVDF → sched_ext call path 對照圖         | **未完成**，尚未建立 task enqueue、pick next task、wakeup preemption、runtime accounting 等流程圖                       | —                                    |
+| 實驗設計與可重現測試環境                                  | **未完成**，尚未建立 CPU-bound、I/O-bound、mixed workload、cgroup workload、多核心 / NUMA / SMT 的可重現測試環境                | —                                    |
+| tracing / profiling 資料收集                      | **未完成**，尚未用 `perf`、`ftrace`、`trace-cmd`、`bpftool`、`schedstat`、`/proc/sched_debug` 系統性收集資料                | —                                    |
+| PELT 數值精度分析                                   | **未完成**，已建立 fixed-point、decay rounding、累積誤差、cgroup hierarchy 等 7 項待答問題，尚無推導與實驗資料                         | —                                    |
+| sched_ext 原型實作                                | **未完成**，尚未完成 FIFO / round-robin baseline 與 latency-aware policy                                          | —                                    |
+| 最終 patch、實驗數據、文件或教學範例                         | **未完成**，目前尚未形成可 review 的 patch 或實驗數據                                                                     | —                                    |
 
 ### 已完成內容：閱讀筆記與問題整理
 
-目前專題頁中，我已經開始整理《Demystifying the Linux CPU Scheduler》的閱讀筆記，並將章節內容轉成摘要、疑問、回答與實作對照。例如在 `1.2.4 The Hidden Cost of Protection` 中，我使用 `strace -wc /usr/bin/echo hello` 觀察一個簡單 command 背後實際發生的 system calls，並比較 `/usr/bin/echo` 與 shell builtin `echo` 的差異。這讓我理解 `echo` 表面上只是輸出文字，但外部程式執行時仍會涉及 `execve`、動態連結、`mmap`、`mprotect`、`openat`、`close` 等成本。
+目前專題頁中，我已經開始整理《Demystifying the Linux CPU Scheduler》的閱讀筆記，並將章節內容轉成摘要、疑問、回答與實作對照，例如在 `1.2.4 The Hidden Cost of Protection` 中，我使用 `strace -wc /usr/bin/echo hello` 觀察一個簡單 command 背後實際發生的 system calls，並比較 `/usr/bin/echo` 與 shell builtin `echo` 的差異，這讓我理解 `echo` 表面上只是輸出文字，但外部程式執行時仍會涉及 `execve`、動態連結、`mmap`、`mprotect`、`openat`、`close` 等成本。
 
-在 `1.2.9 User and kernel stacks` 中，我整理 user stack 與 kernel stack 的分離、x86-64 kernel stack 通常為 16 KiB 的原因、`VMAP_STACK` 的作用，以及 `struct thread_info` 為何從 kernel stack bottom 移入 `struct task_struct`。這些內容雖然還不是 scheduler 本體，但它們和 system call、context switch、task state、kernel stack 使用方式有關，是理解 scheduler 執行環境的前置基礎。
+在 `1.2.9 User and kernel stacks` 中，我整理 user stack 與 kernel stack 的分離、x86-64 kernel stack 通常為 16 KiB 的原因、`VMAP_STACK` 的作用，以及 `struct thread_info` 為何從 kernel stack bottom 移入 `struct task_struct`，這些內容雖然還不是 scheduler 本體，但它們和 system call、context switch、task state、kernel stack 使用方式有關，是理解 scheduler 執行環境的前置基礎。
 
-在 scheduler 章節方面，我整理了 `2.1.5 Handling workload diversity`、`2.2.2 Early Linux Scheduler`、`2.2.3 O(n) Scheduler` 等內容。閱讀時，我特別把章節摘要轉成問題導向的筆記。例如我追問 early scheduler 中：
+在 scheduler 章節方面，我整理了 `2.1.5 Handling workload diversity`、`2.2.2 Early Linux Scheduler`、`2.2.3 O(n) Scheduler` 等內容，閱讀時，我特別把章節摘要轉成問題導向的筆記，例如我追問 early scheduler 中：
 
 ```c
 counter = (counter >> 1) + priority;
 ```
 
-是否會讓長期睡眠的 task 無限累積 counter。經過推導後，我理解右移衰減會限制舊 counter 的累積，使 I/O-bound 或 interactive task 醒來後能較快取得 CPU，但不會永久壟斷 CPU。這個問題讓我更清楚早期 Linux scheduler 如何用簡單公式處理 CPU-bound 與 I/O-bound task 的差異。
+是否會讓長期睡眠的 task 無限累積 counter，經過推導後，我理解右移衰減會限制舊 counter 的累積，使 I/O-bound 或 interactive task 醒來後能較快取得 CPU，但不會永久壟斷 CPU，這個問題讓我更清楚早期 Linux scheduler 如何用簡單公式處理 CPU-bound 與 I/O-bound task 的差異。
 
-在 `2.2.3 O(n) Scheduler` 中，我整理 `goodness()` 的角色，包含 remaining counter、nice priority、real-time priority、processor affinity、address space affinity 等因素。這讓我看到 Linux 從單核心走向 SMP 後，scheduler 不能只問「誰的 priority 高」，還必須考慮 cache locality、task 是否已經在某個 CPU 上、是否共享 `mm_struct`，以及 task migration 的成本。
-
-### 未完成內容一：程式碼追蹤
-
-目前我尚未完成 Linux kernel 6.6、6.12 與最新穩定版之間的 scheduler 程式碼差異追蹤。這部分原本應至少涵蓋：
-
-* `kernel/sched/fair.c`
-* `kernel/sched/ext.c`
-* `kernel/sched/pelt.c`
-* `kernel/sched/core.c`
-* `include/linux/sched.h`
-
-我目前只建立了需要追蹤的檔案清單與概念方向，還沒有系統性整理不同版本之間的函式差異、資料結構差異與 call path 差異。因此，CFS → EEVDF → sched_ext 的 call path 對照圖也尚未完成。後續如果要補強，應該至少追蹤 `enqueue_task_fair()`、`pick_next_task_fair()`、`update_curr()`、`place_entity()`、`entity_eligible()`、`update_load_avg()`、`__schedule()` 與 sched_ext 相關 dispatch path，並把 task enqueue、wakeup、runtime update、pick next task 的流程整理成圖。
-
-### 未完成內容二：實驗設計
-
-目前我尚未建立可重現測試環境，也尚未實際設計並執行 workload。原本預計要測試的 workload 包含：
-
-* CPU-bound tasks
-* I/O-bound / interactive tasks
-* mixed workload
-* cgroup group scheduling workload
-* 多核心與 NUMA / SMT 情境
-
-原本也預計使用以下工具收集資料：
-
-```bash
-perf sched record
-perf sched latency
-trace-cmd record -e sched:sched_switch -e sched:sched_wakeup
-cat /proc/sched_debug
-cat /proc/schedstat
-bpftool prog show
-```
-
-但目前這些仍停留在規劃階段，尚未形成可重現的指令、測試腳本、trace log 或分析結果。因此我不能宣稱已經比較 CFS、EEVDF 與 sched_ext 在不同 workload 下的行為。後續若要補強，應先建立最小測試，例如以 `stress-ng` 或自寫程式產生 CPU-bound / sleep-wakeup mixed workload，收集 `sched_switch`、`sched_wakeup` 與 `perf sched latency`，再逐步加入 cgroup 與多核心情境。
-
-### 未完成內容三：PELT 數值精度分析
-
-PELT 是本專題中最需要深入但目前尚未完成的部分。原本目標是分析 PELT 的 fixed-point 計算、decay 行為、rounding、累積誤差，以及不同 tick rate、CPU frequency、task migration、cgroup hierarchy 下 `util_avg` / `load_avg` 的變化。
-
-目前我只建立了問題意識，還沒有完成實際數值推導、程式碼追蹤或實驗資料。具體來說，以下問題仍待完成：
-
-1. PELT 的 fixed-point 計算如何避免使用浮點數？
-2. decay 過程中的 rounding 是否會累積誤差？
-3. 不同 tick rate、CPU frequency、task migration 是否會改變 `util_avg` / `load_avg` 的觀察結果？
-4. cgroup hierarchy 下 group entity 的負載如何被累積？
-5. sched_ext 中的 BPF scheduler 能否重建或近似 PELT 訊號？
-6. 現有 PELT 資訊暴露是否足以讓 sched_ext 做出合理排程決策？
-7. 是否需要額外 helper、tracepoint 或統計欄位改善可觀測性？
-
-這部分和我先前在 `DIV_ROUND_UP`、`geomean()`、`int_sqrt()` 題目中學到的經驗有關：Linux 核心中的數值問題不能只靠浮點直覺處理，而要明確考慮整數表示、固定點數、rounding、overflow、誤差界線與可重現測試。不過，目前我還沒有把這個想法落實成 PELT 的實驗或分析，因此只能列為待完成工作。
-
-### 未完成內容四：sched_ext 原型實作
-
-目前我尚未完成 sched_ext 原型實作。原本目標是以現有 sample scheduler 為基礎，實作最小可行 BPF scheduler，至少包含：
-
-* FIFO / round-robin baseline
-* latency-aware policy
-
-此外，原本也預計至少針對以下一項提出具體改進：
-
-* PELT 數值精度與可觀測性
-* sched_ext 對 PELT / group scheduling 的支援
-* scheduler tracing 與 debug tooling
-* 教材中 CFS → EEVDF → sched_ext 的說明補強
-
-但目前我還沒有完成可 review 的 patch、實驗數據、文件或教學範例。因此本專題目前不能宣稱已有 sched_ext 實作成果。後續若要補強，最低限度應先能編譯並執行現有 sample scheduler，理解其 enqueue、dispatch、select CPU 與 fallback 行為，再嘗試修改成 FIFO 或 round-robin baseline。
+在 `2.2.3 O(n) Scheduler` 中，我整理 `goodness()` 的角色，包含 remaining counter、nice priority、real-time priority、processor affinity、address space affinity 等因素，這讓我看到 Linux 從單核心走向 SMP 後，scheduler 不能只比較 priority 高低，還必須考慮 cache locality、task 是否已經在某個 CPU 上、是否共享 `mm_struct`，以及 task migration 的成本。
 
 ### 與課程主軸的關聯
 
-雖然目前專題尚未完成程式碼追蹤與實驗，但題目本身和 Linux 核心課程高度相關。CPU scheduler 是 Linux kernel 的核心子系統之一，涉及 task state、context switch、runqueue、SMP、NUMA、cgroup、PELT、fairness、latency 與 tracing。透過這個專題，我開始把課程中的多個主題串起來：system call 進入 kernel mode 後如何使用 kernel stack、task 如何被 scheduler 管理、早期 scheduler 如何用 `counter` 與 `goodness()` 選 task、CFS 如何用 `vruntime` 建立公平性、EEVDF 如何加入 virtual deadline，以及 sched_ext 如何把 scheduler policy 實驗移到 BPF 框架。
-
-目前我的主要成果是建立閱讀基礎與問題框架，尚未達到完整專題產出的標準。這也是我本項只給 7 分的原因。
+CPU scheduler 是 Linux kernel 的核心子系統之一，涉及 task state、context switch、runqueue、SMP、NUMA、cgroup、PELT、fairness、latency 與 tracing，透過這個專題，我開始把課程中的多個主題串起來：system call 進入 kernel mode 後如何使用 kernel stack、task 如何被 scheduler 管理、早期 scheduler 如何用 `counter` 與 `goodness()` 選 task、CFS 如何用 `vruntime` 建立公平性、EEVDF 如何加入 virtual deadline，以及 sched_ext 如何把 scheduler policy 實驗移到 BPF 框架。
 
 ### 同儕專題觀摩與提問
 
-> 以下送出前需補滿至少 5 件實際觀摩紀錄，並附上公開軌跡。不要編造；請填入課堂期末展示中你真的看過、留言或提問過的專題。
-
-| 編號 | 同儕專題      | 我提出的問題或觀察    | 連結     |
+| 編號 | 同儕專題 | 我提出的問題或觀察 | 連結 |
 | -: | --------- | ------------ | ------ |
-|  1 | [待補：專題名稱] | [待補：你的問題或觀察] | [待補連結] |
-|  2 | [待補：專題名稱] | [待補：你的問題或觀察] | [待補連結] |
-|  3 | [待補：專題名稱] | [待補：你的問題或觀察] | [待補連結] |
-|  4 | [待補：專題名稱] | [待補：你的問題或觀察] | [待補連結] |
-|  5 | [待補：專題名稱] | [待補：你的問題或觀察] | [待補連結] |
+|  1 | 測量系統資源開銷並改善，Linux on Cortex-M kernel size optimization，執行人 Stanley0915 | 肯定其量測資料完整，涵蓋 kernel image 大小、boot time、RAM 使用量與 FDPIC、pthread 測試結果；並提問後續是否會整理 config 取捨表，對照每個選項關閉後節省多少空間、犧牲哪些功能，以便看出 kernel size optimization 的成本與效益，執行人回覆將於最終階段彙整成本效益里程表格 | https://hackmd.io/@sysprog/B1ImJFdRbe |
+|  2 | pKVM，Android protected KVM 安全模型與 Stage-2 記憶體隔離，執行人 kezhenx666 | 指出 0609 問題中 MMU 段落的技術誤植，該段將 VT-d 描述為 CPU 端位址轉換機制：VT-d 為 Intel 的 IOMMU 技術，CPU 端兩階段位址轉換應為 VT-x 的 EPT 或 ARM 的 Stage-2 translation，建議修正，執行人已依建議修正 | https://hackmd.io/@sysprog/SyPTRwgyzl |
+|  3 | 改進 vwifi，cfg80211 虛擬無線網路裝置的速率模擬與 virtio transport 重構，執行人 seallllllllll | 提問：目前 `rx_queue` 採 FIFO 且 hrtimer 只依 queue head 的 `deliver_at` 設定喚醒，但多個 STA 以不同 MCS 同時向 AP 傳輸時 `deliver_at` 並非單調遞增，例如 MCS 0 的大延遲封包先入列而 MCS 31 的封包後入列，後者會被 head-of-line blocking 延後送達，這是刻意模擬共享媒介一次只能傳一個 frame 的序列化行為，還是應改用依 `deliver_at` 排序的佇列，例如 rbtree 或 sorted insert？執行人回覆：保持 FIFO 較能守住共享媒介一次只能傳一個 frame 的底線，若改用 `deliver_at` 排序則會破壞此物理限制、變成獨立的平行傳輸 | https://hackmd.io/@sysprog/Bk3TgGw0Zx |
+|  4 | 強化 kxo，kernel module 的 CPU 使用率量測、workqueue 效率與 MCTS 強化，執行人 codin-noob | 回答其筆記中對 `fixed_power_int()` 內 `result += 1UL << (frac_bits - 1); result >>= frac_bits` 的疑問：指出這是 round-half-up 而非無條件進位：右移 `frac_bits` 相當於除以縮放係數並向下取整，先加上 $2^{frac\_bits-1}$，即定點表示的 0.5，再右移等效於四捨五入到最近值；若只做截斷，每次乘法平均引入約 $-0.5$ ULP 偏差，在連續迭代乘法中單向累積，round-to-nearest 使誤差期望值趨近 0，與 PELT decay 計算避免累積誤差的考量相同 | https://hackmd.io/@sysprog/HJv7vqR0bg |
+|  5 | 群組排程研究和實務，CFS bandwidth control 與 EEVDF quota 互動，執行人 panzhipop | 針對其 cyclictest 實測數據的反直覺現象提問：無負載時 Min 為 63 µs，滿載後反而降到 13 µs，是否因無負載時 CPU 進入較深的 idle state，喚醒需付出 exit latency，滿載時 CPU 不進入 idle 反而省下這段成本？並建議透過 cpuidle 統計或設定 `/dev/cpu_dma_latency` 關閉深層 C-state 驗證 | https://hackmd.io/@sysprog/rJpp_7ekfx |
 
 ### 自評理由
 
-本項給 **7 分**。理由是我已經確認專題主軸，並開始整理《Demystifying the Linux CPU Scheduler》的閱讀筆記、章節摘要、疑問與部分實作對照。這些內容與 Linux CPU scheduler 主題直接相關，也能支撐後續 CFS、EEVDF、sched_ext、PELT 與 group scheduling 的研究。
+本項給 **7 分**，理由是我已經確認專題主軸，並開始整理《Demystifying the Linux CPU Scheduler》的閱讀筆記、章節摘要、疑問與部分實作對照，這些內容與 Linux CPU scheduler 主題直接相關，也能支撐後續 CFS、EEVDF、sched_ext、PELT 與 group scheduling 的研究。
 
-但本項不能給 8 分以上，因為專題頁列出的多個核心任務仍未完成：尚未完成 Linux 6.6 / 6.12 / 最新穩定版的程式碼追蹤，尚未建立 CFS → EEVDF → sched_ext call path 對照圖，尚未建立可重現實驗環境，尚未收集 `perf` / `ftrace` / `trace-cmd` / `schedstat` 資料，尚未完成 PELT 數值精度分析，也尚未完成 sched_ext BPF scheduler 原型。換言之，目前成果主要是閱讀與問題整理，還沒有形成完整實驗、patch 或 prototype。因此我以 7 分作為較符合現況的自評。
+但本項不能給 8 分以上，因為任務狀態表中多個核心任務仍未完成：程式碼追蹤、call path 對照圖、可重現實驗環境、tracing 資料收集、PELT 數值精度分析與 sched_ext 原型均尚未完成，換言之，目前成果主要是閱讀與問題整理，還沒有形成完整實驗、patch 或 prototype，因此我以 7 分作為較符合現況的自評。
 
 
----
+## 與授課教師的互動
 
+自評分數：**7**
+
+本學期與授課教師的互動以一對一討論為主，每次互動皆有明確的技術問題、教師回饋與可驗證的後續產出。
+
+### 互動紀錄
+
+#### 2026/05/29 一對一討論：`geomean()` 的 full precision 整數實作
+
+* **形式**：與 jserv 老師一對一會議
+* **討論問題**：
+
+  ```c
+  int geomean(int *inputs, int num) // Assume all inputs[] > 0.
+  ```
+
+  限制條件：不可使用 `<math.h>`、必須處理 integer overflow、full precision 不容許誤差、輸入上限 `INT_MAX` 為 $2^{31} - 1$
+
+* **會議中釐清的關鍵點**：
+  * 答案範圍界定：由 $min \leq geomean \leq max$ 與算幾不等式
+
+    $$\sqrt[n]{a_1 a_2 \cdots a_n} \leq \frac{a_1 + a_2 + \cdots + a_n}{n}$$
+
+    可縮小候選值搜尋範圍，算幾不等式主要用於界定答案上界
+  * n 次方根的計算方法：老師指引參考 [從 √2 的存在談開平方根的快速運算](https://hackmd.io/@sysprog/sqrt)，可使用二分逼近法或牛頓法
+  * 會議留下兩個待解問題：如何將方法轉換為程式碼、如何判定計算結果不存在誤差
+
+* **會議中教師的提醒**：誠實面對自己，不要把 AI 的產出當成自己會的東西
+
+* **後續修正與產出**：會後完成 [會議問題回答](https://hackmd.io/@clare8151214/Hy7Jh31MGe)，實作上選擇 binary search 而非牛頓法：牛頓法的迭代需要大數除法，實作成本高於大數乘法與比較，且無論何種方法最後都需要相同的精確驗證步驟，最終以 32-bit limb 的 `BigUInt` 精確表示乘積與 $m^{num}$，以單調 predicate 進行 binary search，並以獨立的 `verify()` 檢查 $r^{num} \leq \prod a_i < (r+1)^{num}$，避免 predicate 與驗證共用同一段有潛在 bug 的邏輯形成循環論證
+
+### 自評理由
+
+本項給 7 分，與教師的互動有問題、回饋、後續產出的完整鏈：會議中提出的兩個待解問題，即如何轉換為程式碼與如何驗證無誤差，皆在會後以公開筆記回答，且回答內容包含實作選擇的理由與驗證方法，而非只交出能動的程式碼，不足之處是目前留有完整紀錄的一對一討論次數有限，後續互動若有紀錄應一併補入。
+
+
+## 所見所聞所感
+
+自評分數：**8**
+
+### 關於因為自動飲料機而延畢的那一年
+
+[這篇文章](https://medium.com/@opass/%E5%9B%A0%E7%82%BA%E8%87%AA%E5%8B%95%E9%A3%B2%E6%96%99%E6%A9%9F%E8%80%8C%E5%BB%B6%E7%95%A2%E7%9A%84%E9%82%A3%E4%B8%80%E5%B9%B4-1-opasss-blog-e8e52d3cf2e7)前段寫到作者在多次創業失敗後決定改做更具體的問題，代價卻遠超想像，對照本學期的 `geomean()` 題目：若只是要算出幾何平均，浮點數開根號五分鐘就能交差，但 full precision 的要求迫使解法整個重來，`__uint128_t` 同時溢位的誤判、自製 `BigUInt`、r 為 `INT_MAX` 時 r 加 1 的 signed overflow，每個坑都是原本以為算得出來就好時看不見的，具體的問題會逼人誠實。
+
+### 關於驗證
+
+一對一會議留下的問題是如何判定結果沒有誤差，一開始想沿用 predicate 的邏輯做驗證，後來發現這是循環論證，最終 `verify()` 走獨立路徑檢查，`DIV_ROUND_UP` 題目也一樣，四種正負號組合直接暴力驗證而非靠直覺，推導與驗證走不同的路，答案才對得理直氣壯。
+
+### 關於同儕觀摩
+
+五份專題中收穫最大的是同一類問題在不同子系統的對照：vwifi 的 `rx_queue` 與 CFS 的紅黑樹面對同樣的取最小 key 需求，前者保留 FIFO 守住共享媒介的物理語意，後者用紅黑樹守住公平性語意，資料結構的選擇先是語意問題才是效率問題，kxo 的 `fixed_power_int()` 捨入疑問與 PELT decay 避免累積誤差是同一件事，panzhipop 的 cyclictest 滿載時最小延遲反而下降，提醒量測結果要先用量測環境解釋才輪得到排程器，kezhenx666 頁面 VT-d 與 VT-x 一字之差的誤植則提醒：用詞錯了，主張就錯了。
+
+### 自評理由
+
+本項給 8 分，上述內容皆有公開留言或筆記可查，不足之處是尚未系統性閱讀歷屆學長姐的自評與開發紀錄，觀摩範圍限於本學期同儕。
