@@ -55,7 +55,7 @@ categories: User
 
 ### 公開演講
 
-* 2026/08/09 — COSCUP 2026 System Software 講題：[〈從個人電腦到資料中心：Linux 記憶體管理的演化〉](https://pretalx.coscup.org/coscup-2026/talk/RES9MM/)
+* 2026/08/09 COSCUP 2026 System Software 講題：[〈從個人電腦到資料中心：Linux 記憶體管理的演化〉](https://pretalx.coscup.org/coscup-2026/talk/RES9MM/)
 
 ## 作業與隨堂測驗
 
@@ -81,7 +81,7 @@ categories: User
 - 第 13 週：84 / 105
 - 第 15 週：96 / 108
 
-課程初期由於可以上網查資料與本地撰寫執行程式，因此做題目時偏向直接從對應 Linux 核心程式碼與撰寫 Python 程式計算，導致的結果就是來不及做完全部題目。不過在課程期間由於對 C 語言（主要是 C99 與 C11）規格的重視，在後續進行測試時遇到類似的題目也能直覺想到對應的知識點並進行作答，使得後續測驗成績逐漸提昇。在授課教師與其他學生的問答也開始往問題的本質與問題中提到的設計考量來思考。
+課程初期由於可以上網查資料與本地撰寫執行程式，因此做題目時偏向直接從對應 Linux 核心程式碼與撰寫 Python 程式計算，導致的結果就是來不及做完全部題目。不過在課程期間由於對 C 語言（主要是 C99 與 C11）規格的重視，在後續進行測試時遇到類似的題目也能直覺想到對應的知識點並進行作答，使得後續測驗成績逐漸提昇。
 
 ## 期末專題
 
@@ -96,13 +96,13 @@ categories: User
 $$S_{new} = \frac{S_{old}}{\Delta t}+\frac{\Delta t-1}{\Delta t}x_t$$
 $\Delta t = \text{jiffies}-lrugen_{ts}[Gen_{min}]$
 
-開發紀錄：[Github](https://github.com/c8763yee/linux-experiment/compare/vanilla...main)
+開發紀錄：[GitHub](https://github.com/c8763yee/linux-experiment/compare/vanilla...main)
 
 在進行期末專題時我發現我會時常把問題與架構想得太複雜，導致後續花費過多時間在處理 Userspace 模擬 MGLRU 架構本身以及觀察 MGLRU 相較於 Active/Inactive list 的具體改善指標。
 
 尚未釐清的是：我無法區分 Yu Zhao 當初設計 Refault feedback loop 時省略 D term 是否基於雜訊考量的刻意設計，且上述推測在 MGLRU 對應檔案的 commit message 與 LKML 討論中均無明文佐證。
 
-### 觀摩同儕專題並提問 (公開軌跡, 共 5 件 $\ge$ 課程要求 5 件)
+### 觀摩同儕專題並提問 (公開軌跡，共 5 件 $\ge$ 課程要求 5 件)
 
 本年度同儕專題索引於 [linux2026-projects](https://hackmd.io/@sysprog/linux2026-projects), 留下提問軌跡如下:
 
@@ -126,7 +126,7 @@ $\Delta t = \text{jiffies}-lrugen_{ts}[Gen_{min}]$
 ### 課堂問答軌跡
 - 2026/03/31：課堂問答：ReLU bitwise 實作中 UB/IB 討論（Well defined / undefined behavior?）
     - [議題後續追蹤](https://hackmd.io/T9exGh0eRuuoVWkomO25wA?view#c8763yee)
-- 2026/04/21：[向講者邱冠維與授課教師詢問 Maintainer 長時間不活躍時的處理方式與 Google 內部對於 MGLRU 的後續方向](https://hackmd.io/gdgKXMGYRdaNUgsEBKaypg#%E5%95%8F%E7%AD%94)
+- 2026/04/21：[向講者邱冠維與授課教師詢問 Maintainer 長時間不活躍時的處理方式，與 Google 內部對於 MGLRU 的後續方向](https://hackmd.io/gdgKXMGYRdaNUgsEBKaypg#%E5%95%8F%E7%AD%94)
 - 2026/05/07：課堂問答[(議題後續追蹤)](https://hackmd.io/fkFn7pWwR0i3E4Eo2-epuw#c8763yee)
     1. 為什麼 `pthread_create` 建立執行緒時要有對應的 Stack？
     2. Kernel preemption 對於 Consumer Electronics 的重要性
@@ -168,18 +168,16 @@ i = ((exponent - 1) << 23) |( i >> 31)<<31 | (i&((1<<23)-1));
 > 為什麼會出問題呢？因為這裡是他媽的真實世界啊。
 > 大多數人一直活在本來就應該這樣嗎的童話世界裡，電視打開就可以看，機車買來就可以騎，手機買來就可以用，一切都理所當然，本來就應該這樣。偶爾買到不好用的商品我們就抱怨幾句，丟掉換其他更好用的牌子，卻很少意識到那個「本來就該這樣」，背後需要經過多少人月的投入與研發。
 
-讀到這一段時讓我想到當初選擇針對 MGLRU refault feedback loop 進行期末專題時也是想得很簡單，當初認為只要將兩個 Generation 的統計數值取差值後應用進這個 PID Controller 作為 D 項就可以提昇 MGLRU 在記憶體壓力剛開始出現時的反應速度，然後在進行數學分析時才發現除了需要考慮兩個 Generation 統計差值要怎麼取之外，還需要考慮獲取到差值後要怎麼應用至 MGLRU 架構中。甚至到現在我還沒有想到這個修改具體適用的 Workload 以及對於其他 Workload 是否出現 Regression。
+讀到這一段時讓我想到當初選擇針對 MGLRU refault feedback loop 進行期末專題時也是想得很簡單，當初認為只要將兩個 Generation 的統計數值取差值後應用進這個 PID Controller 作為 D 項就可以提昇 MGLRU 在記憶體壓力剛開始出現時的反應速度，然後在數學分析時才發現除了需要考慮兩個 Generation 統計差值要怎麼取之外，還需要考慮獲取到差值後要怎麼應用至 MGLRU 架構中。甚至到現在我還沒有想到這個修改具體適用的 Workload 以及對於其他 Workload 是否出現 Regression。
 
 ### 關於數學與謹慎用詞
 
-一開始因為就學期間忽略數學的重要性，導致光是在進行作業一的「探討〈解讀計算機編碼〉」題組時在補充缺失的數論知識就花了 3 天，因此導致後面只能針對程式語言的題目進行作答，同時持續補充之前沒學好的數學知識。這樣的結果是在第三次作業時只能先紀錄閱讀教材時的發現與問題。
-
-不過也是在進行作業撰寫時開始注重詞彙的使用，帶來的影響是在撰寫文章時，針對文章中可能有岐義的漢語用詞主動查詢[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)與使用 [zhtw-mcp](https://github.com/sysprog21/zhtw-mcp) 檢查資訊科技詞彙翻譯中未提到的部份用語。因此意外發現不明使用者使用 LLM 「抄襲」 zhtw-mcp GitHub repo 這件事並沒有那麼簡單，該使用者還在 repo 中放入病毒檔案並在 README.md 引導下載。
+一開始因為就學期間忽略數學皢[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)與使用 [zhtw-mcp](https://github.com/sysprog21/zhtw-mcp) 檢查資訊科技詞彙翻譯中未提到的部份用語。因此意外發現不明使用者使用 LLM「抄襲」zhtw-mcp GitHub repo 這件事並沒有那麼簡單，該使用者還在 repo 中放入病毒檔案並在 README.md 引導下載。
 ([FYI：Hexastrike 對於類似案例中攻擊行為的分析](https://hexastrike.com/resources/blog/threat-intelligence/cloned-loaded-and-stolen-how-109-fake-github-repositories-delivered-smartloader-and-stealc/))。
 
 ### 關於與上游開發者互動
 
-第一次送出 LKML patch 時, Borislav Petkov (maintainer of `X86 ARCHITECTURE (32-BIT AND 64-BIT)`) 直接退回 Commit 並指出 Commit 訊息可以簡化。在修正 Commit 訊息後發布 v2 patch。不過後續即杳無音訊。在第二周課後向授課教師詢問相關問題時得知 maintainer 對於這種 trivial patch 「相對」不會太重視，並告知我可以向邱冠維 (maintainer of `MIN HEAP`) 寄信詢問相關的問題。
+第一次送出 LKML patch 時，Borislav Petkov (maintainer of `X86 ARCHITECTURE (32-BIT AND 64-BIT)`) 直接退回 Commit 並指出 Commit 訊息可以簡化。在修正 Commit 訊息後發布 v2 patch。不過後續即杳無音訊。在第二周課後向授課教師詢問相關問題時得知 maintainer 對於這種 trivial patch「相對」不會太重視，並告知我可以向邱冠維 (maintainer of `MIN HEAP`) 寄信詢問相關的問題。
 
 > > This just fixes the misleading comment. No functional changes.
 >
@@ -190,7 +188,7 @@ i = ((exponent - 1) << 23) |( i >> 31)<<31 | (i&((1<<23)-1));
 ### 關於自身投入的回顧
 
 課程初期在閱讀課程教材時間為每週 21 小時，後面由於進行期末專題與處理研究所事物，每週閱讀教材時間降至每週 10 小時。
-在閱讀課程教材時發現語法、連結失效等錯誤時想到作者自己可以修改錯誤但沒做，那為什麼不能我來改？於是著手進行教材修改。
+在閱讀課程教材時發現語法、連結失效等錯誤時想到作者自己可以修改錯誤但沒做，那為什麼不能我來改？於是著手修改。
 即使只能修改 Typo 或是用語錯誤，無法作到像是整理並補充[〈Linux 核心設計：記憶體管理〉](https://hackmd.io/@sysprog/linux-memory)的 Reverse mapping 部份的程度，但畢竟「勿以善小而不為」。
 
 ## 分數計算
@@ -208,7 +206,7 @@ i = ((exponent - 1) << 23) |( i >> 31)<<31 | (i&((1<<23)-1));
 $$ GEOMEAN \ = \sqrt[5]{9 \times 7 \times 5 \times 7 \times 9} \ = 7.236527563504052
 $$
 
-驗算: $| 7.236527563504052^5-(9 \times 7 \times 5 \times 7 \times 9)| \ll 1$, 符合定義
+驗算: $| 7.236527563504052^5-(9 \times 7 \times 5 \times 7 \times 9)| \ll 1$，符合定義。
 
 方案選擇:
 
