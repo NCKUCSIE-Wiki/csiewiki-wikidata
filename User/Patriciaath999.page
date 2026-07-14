@@ -68,12 +68,12 @@ _7_ 分。
 最終結果顯示，minimap2 的效能問題不能只靠單一 THP 開關解決，而需要拆解 cache-side、TLB-side、I/O-side 與資料結構 locality 的不同來源，才能設計出有效且可解釋的系統最佳化。
 
 **交流提問**
-[Linux 核心設計專題: 以 Weak AVL Tree 取代 rbtree](
-https://hackmd.io/@sysprog/H14PtSe1Gl)
+[Linux 核心設計專題: DRM 研究](
+https://hackmd.io/j2rdwGd9T_Cwfzeg1lI_CA?both)
 [Linux 核心設計專題: XDP 為基礎的 TCP/IP 堆疊](https://hackmd.io/@sysprog/BJjs2rgkfg)
-[Linux 專題: 效能分析和改進案例探討](https://hackmd.io/@sysprog/S1SVY4nxzl)
-[核心搶佔模型與 PREEMPT_RT 對即時延遲的影響](https://hackmd.io/@sysprog/HkFFx5Nkzx)
-[Linux 核心設計專題: 改進 vcam](https://hackmd.io/@sysprog/Sk3hOzw0Ze)
+[Linux 核心專題: 擴展 kbox 的完整網路能力](https://hackmd.io/3a6SbtOcTcmMhgKrW-UAjg?both)
+[Linux 專題: 效能分析和改進案例探討](https://hackmd.io/ImQSWVcIQt-ddjovJzftFw?both)
+[Linux 核心設計物專題: kxo](https://hackmd.io/@sysprog/ry2yLyOfGg)
 
 
 
