@@ -1,0 +1,127 @@
+# 2026 年 Linux 核心設計課程自我評量
+
+## 簡介
+
+* 姓名：楊承叡
+* GitHub : [RayYang421](https://github.com/RayYang421/)
+* HackMD : [ray421](https://hackmd.io/@ray421)
+* 國立成功大學 機械工程學系 2021 － 2025
+* 國立成功大學 電腦與通信工程研究所 2025 － current
+
+## 成果發表與貢獻
+> 4 分
+
+2026 年 6 月 16 日，在課程教材〈Linux 核心設計：PREEMPT_RT 作為邁向硬即時作業系統的機制〉中，修正機械手臂章節裡 Normal、Sliding、Approach 三軸說明的排版問題，補上中文與英文之間的空格，讓文字比較容易閱讀。
+
+## 作業與隨堂測驗
+> 7 分
+
+**[2026q1 Homework1 (warmup)](https://hackmd.io/@ray421/linux2026-warmup)**
+
+* 推導固定 $k$ 位元加法的模運算結構，並證明 $(\mathbb{Z}/2^k\mathbb{Z}, +)$ 形成阿貝爾群。
+* 根據 C99 規格書推導 C 指標相關語意，包括 object lifetime、storage duration、indeterminate pointer value、array decay、sizeof 規則與 call-by-value，說明 return &x、lifetime 結束後 dereference、sizeof(a) / sizeof(p) 差異，以及 pointer-to-pointer 修改 caller 指標的原因。
+* 針對同學指出的問題，重新檢查並修正作業中的用語與技術敘述，包括將「優化」修正為「最佳化」，避免使用「造成資訊安全問題」等籠統說法，並補充 signed integer overflow 屬於 undefined behavior、可能使編譯器最佳化移除安全檢查的原因。此外，也修正 return &x 的說明，將「自動釋放」與「位址是空的」改為以 C99 的 object lifetime、storage duration 與 indeterminate pointer value 解釋，說明 lifetime 結束後 dereference 為 undefined behavior。
+
+**[2026q1 Homework1 (stdc)](https://hackmd.io/@ray421/linux2026-stdc)**
+
+
+* 設計 linked list 效能實驗，使用 perf stat 比較快慢指標與兩次走訪法在不同資料規模下的執行時間。
+* 分析 IEEE-754、integer overflow、signed / unsigned 行為與 C 語言 undefined behavior，並連結 Boeing 787 計數器 overflow 案例。
+* 結合 Linux 核心案例，分析 unsigned flags、rbtree pointer tagging、alignment、pointer size、branchless optimization 與可攜性問題。
+
+
+**[2026q1 Homework2 (basics)](https://hackmd.io/@ray421/linux2026-basics)**
+
+* 完成 setjmp/longjmp 實驗，比較 -O0 與 -O2 下區域變數 val 的差異，並引用 C99 規格書說明 automatic storage duration、volatile 與 indeterminate value 的關係。
+* 分析 ORC unwinder 的設計，說明其如何用編譯期產生的 .orc_unwind 資料與查表方式取代 frame pointer chain，並比較 ORC 與 DWARF unwinder 在複雜度與效能上的差異。
+* 完成 __stringify 雙層巨集展開實驗，驗證 STR_SINGLE(FOO) 會得到 "FOO"，而 __stringify(FOO) 會得到 "42"，並引用 C99 說明 # stringification 的行為。
+
+
+## 期末專題
+> 9 分
+
+[Linux 核心設計專題: V4L2 Pipeline](https://hackmd.io/@sysprog/SkEydfekGx)
+
+這次期末專題以 V4L2 Pipeline 為主題，完成 vpipe 模組設計、vcam 系統整合、效能分析與工程化測試，並整理完整的開發紀錄、解說影片及技術報告。
+
+專題主要貢獻在於建立一個可控制 source、可追蹤 per-frame latency 的 V4L2 實驗平台。
+
+系統設計上，分析既有 vcam driver，區分可抽取的 source-side 邏輯與不應移植的 device-model 元件，並保留 vpipe 作為 M2M 主體，將 vcam 的 camera-like source 行為重新設計成可插拔 backend，而不是直接合併兩套 driver。
+
+Kernel 實作上，建立 source abstraction layer，實作 FIXTURE、SYNTHETIC、VCAM_DERIVED 三種 backend，並加入 deterministic frame generation、fixed-FPS timestamp、dropped-frame simulation、DMA-BUF exporter 與 metadata sideband，用於 latency tracing 和 correctness validation。
+
+量測方面，設計 MMAP 與 DMA-BUF 的對照實驗，固定 source、format、algorithm 和 buffer count，只改 buffer handoff path。結果顯示，在 transport-bound 情境下，DMA-BUF 可使 median latency 降低 23%、cache misses 降低 66%，但效益會受到 workload 特性影響。
+
+最後，建立 benchmark framework、regression tests 與 CI / local integration test 流程，支援自動化資料收集、CRC 驗證與 kernel integration 測試，提升系統的可重現性與可靠性。
+
+
+**觀摩其他學員的期末專題並提問**
+
+* [Linux 核心設計專題: vwifi](https://hackmd.io/@sysprog/Skgx7Kl0Wl)
+* [Linux 核心設計專題: DRM 研究](https://hackmd.io/@sysprog/BkrDDMDA-x)
+* [Linux 核心設計專題: 改進 vcam](https://hackmd.io/@sysprog/Sk3hOzw0Ze)
+* [Linux 核心設計專題: 透過核心模組縮減電腦視覺處理延遲](https://hackmd.io/@sysprog/BJXCxhKC-l)
+* [Linux 核心設計專題: 改進 vcam](https://hackmd.io/@sysprog/SkpVnyQkze)
+
+
+## 與授課教師的互動
+> 7 分
+
+* 2026 年 4 月 21 日，在邱冠維學長分享 Linux 核心開發經驗中，在課堂簡記提問：如果提案與 Linux 核心維護人的見解不一致，但在已有數據支持論點的情況下，除了持續溝通，還有哪些有效管道或策略可以化解分歧，並在實體課程中舉手補充提問。
+* 2026 年 6 月 2 日，隨堂測驗後被老師提問 MMAP 與 ring buffer 之間的關係，當下對於細節不夠理解，因此沒有回答出來老師的問題，但後續有將問題紀錄，並更新在 week 15 的課堂簡記當中。
+* 2026 年 6 月 2 日，與老師模擬面試，當下被詢問了 process 與 thread 的差別、futex、Stack 與 Heap 的差別等問題，但在面試當下要即時、有條理地回答時，卻發現自己無法清楚說明它們的定義、差異與實際應用情境，這次經驗讓我意識到，面試並不只是考驗自己有沒有學過，更重要的是能不能把學過的知識整理成清楚的語言。回顧年初面試聯發科實習的經驗，我也發現自己雖然具備一些基礎知識與專案經驗，但在回答問題時仍容易停留在片段式的印象，缺少完整的架構與深入的理解。這次模擬面試提醒我，除了持續累積專業知識之外，也需要練習面試表達，事先整理回答架構，並練習用簡潔但完整的方式說明。
+
+
+## 所見所聞所感
+> 10 分
+
+### 關於〈因為自動飲料機而延畢的那一年〉
+
+看完〈因為自動飲料機而延畢的那一年〉後，其中許多內容都讓我很有共鳴。作者提到「資工系的學生不會寫程式，機械系的學生不會做機械，電工系的學生不會焊電路」，彷彿也看到了我自己。身為機械系畢業生，我卻分不清楚 enthalpy 和 entropy 的差別，也說不出 Mohr's circle 在工程上的具體用途，更不用說更複雜的引擎製作、機構設計等實務能力。正如老師所說，沒有足夠的實作強度，就很難真正稱得上本科。因此，我才想選修這門課，希望透過實際動手做，讓自己真正變強，而不只是停留在課本知識。
+
+至於 Linux 核心這門課，其實我去年大四時就修過一次。當我翻開去年的第一次作業時，才發現即使當時已經修完計算機組織、作業系統、資料結構和演算法等課程，真正面對實作時仍然感到十分迷惘。考試中的題目我能夠作答，也理解課本中的概念，但真正需要自己設計程式、閱讀程式碼並解決問題時，我卻不知道該如何開始。那一刻，我再次感受到文章中所描述的困境。或許，我缺少的並不是知識，而是把知識轉化為能力的過程；而這份落差，也正是真實世界與課堂學習之間最大的距離。
+
+
+### 回顧自身狀況
+
+上學期修完計算機結構課程後，做完 Accelerate TinyML Convolution 期末 project，發現自己缺少了 OS 相關的實作經驗，另一方面是想讓自己變強，因此在碩班的時候決定再挑戰一次。在學期初，面對到第一次作業，看到滿滿的題目，儘管投入 228 連假與平日的空閒時間，但仍然寫不完所有的作業，這也讓我意識到 Linux 不只是 OS 而是整個資訊發展的縮影，涵蓋了過去學習的所有科目。
+
+修完這門課後，我最大的收穫並不是完成了多少作業，而是建立了一種新的學習方式。正如老師所說：「缺什麼就補什麼，把不懂的問題記錄下來。」面對陌生的問題時，我不再只是等待老師提供答案，而是主動閱讀官方文件、查看原始碼、利用除錯工具分析問題，並透過一次次的實驗與驗證找出原因。我也開始改變過去憑直覺或「我覺得」的思考方式，學會利用工具、數據與實驗結果來分析問題，讓每一個結論都建立在可以驗證的證據之上。我認為，這不只是 Linux 核心這門課帶給我的收穫，更是一種工程師應該具備的思考方式。
+
+## 分數計算
+
+
+| 項次 | 評量項目             | 自評分數 |
+|:---:|----------------------|:-------:|
+| 1 | 成果發表與貢獻       | 4 |
+| 2 | 作業與隨堂測驗       | 7 |
+| 3 | 期末專題             | 9 |
+| 4 | 與授課教師的互動     | 7 |
+| 5 | 所見所聞所感         | 10 |
+
+
+幾何平均（GEOMEAN）計算：
+
+$$
+\text{GEOMEAN}
+= \sqrt[5]{4 \times 7 \times 9 \times 7 \times 10}
+= \sqrt[5]{17640}
+\approx 7.068
+$$
+
+驗算：
+
+$$
+4 \times 7 \times 9 \times 7 \times 10 = 17640
+$$
+
+符合幾何平均的定義。
+
+因此，方案 B 的計算為：
+
+$$
+1 + \lfloor \text{GEOMEAN} \rfloor
+= 1 + \lfloor 7.068 \rfloor
+= 1 + 7
+= 8
+$$
