@@ -141,8 +141,8 @@ $$\text{GEOMEAN} = \sqrt[5]{6 \times 8 \times 8 \times 5 \times 10} = \sqrt[5]{1
 方案選擇
 
 * 方案 A :  0 
-* 方案 B: 1 + floor(GEOMEAN)。
-* 採方案 B:
+* 方案 B : 1 + floor(GEOMEAN)。
+* 採方案 B :
 $1 + \lfloor(GEOMEAN)\rfloor$ = 1 + $\lfloor(7.19)\rfloor$ = $1 + 7$ = 8  
 
 
