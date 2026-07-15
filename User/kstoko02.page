@@ -74,6 +74,6 @@ categories: User
 
 方案 B :
 $$
-1+GEOMEAN = 1+ (2 \times 7 \times 9 \times 9 \times 10)^{1/5} \approx 1+6.47 = 1+6 =7
+1+floor(GEOMEAN) = 1+ (2 \times 7 \times 9 \times 9 \times 10)^{1/5} \approx 1+6.47 = 1+6 =7
 $$
 
