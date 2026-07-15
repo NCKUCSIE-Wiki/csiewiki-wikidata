@@ -8,6 +8,7 @@ Github: [Xalestar](https://github.com/Xalestar)
 5 分。
 
 修改教材語句、錯字：
+
 - [並行程式設計: 概念](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-concepts)
     - 修改語句，使其通順：
     `2. process 使用 semaphore 時，通常扮演單一角色固定扮演一種角色：總是發出信號 (signal)，或者總是接收信號 (wait) —— 。同一個 process 不會先後對同一個 semaphore 進行 signal 與 wait。換言之，process 要不擔任 producer，要不充當 consumer 的角色，不能同時兼任兩者兩者都是。semaphore 是為了保護 process 之間的執行同步正確。`
@@ -36,6 +37,7 @@ Github: [Xalestar](https://github.com/Xalestar)
         4. 當發送端接到 ARP Reply 訊框之後﹐也會更新自己的 ARP 表格，然後就可以用此紀錄進行傳送了；
         5. 如果發送端沒有得到 ARP Reply，則宣告查詢失敗。
         ```
+
 ## 作業與隨堂測驗
 6 分。
 
@@ -188,5 +190,6 @@ Github: [Xalestar](https://github.com/Xalestar)
 | 4    |   與授課教師的互動   |   9   |
 | 5    |   所見所聞所感   |   10   |
 
+---
 Plan B:
 $$ 1 + floor(GEOMEAN) = 1 + floor[(5 \times 6 \times 9 \times 9 \times 10)^{1/5}] = 1 + 7 = 8 $$
