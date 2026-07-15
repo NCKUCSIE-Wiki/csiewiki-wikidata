@@ -29,6 +29,14 @@ categories: User
 這學期完成的是診斷階段，暑假將針對這些問題進行實際優化並重新量測效能改善幅度。
 
 **交流提問**
-[Linux 核心專題: RCU](https://hackmd.io/@sysprog/H12QuDn6Zg)
-[Linux 核心設計專題: 強化 kxo](https://hackmd.io/@sysprog/HJv7vqR0bg)
-[Linux 核心專題: qspinlock 量化分析](https://hackmd.io/@sysprog/SyC5lS3gMg)
+* [Linux 核心專題: RCU](https://hackmd.io/@sysprog/H12QuDn6Zg)
+* [Linux 核心設計專題: 強化 kxo](https://hackmd.io/@sysprog/HJv7vqR0bg)
+* [Linux 核心專題: qspinlock 量化分析](https://hackmd.io/@sysprog/SyC5lS3gMg)
+
+## 與授課教師的互動
+
+**1 對 1 討論**
+
+* 2 次下課後實體討論
+    * 5/12 下課後
+    * 6/23 下課後
