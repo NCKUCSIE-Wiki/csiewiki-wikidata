@@ -1,0 +1,132 @@
+# 2026 年 Linux 核心設計課程自我評量
+
+姓名: 陳冠銘
+GitHub 帳號: JimmyCh1025
+
+## 成果發表與貢獻
+> 1 分
+
+學期內未對 Linux 上游或課程相關專案提交 patch/PR，也沒有參與 mailing list review，因此本項自評 1 分。
+
+## 作業與隨堂測驗
+> 7 
+
+- 作業
+    - [第一次作業](https://hackmd.io/@JimmyChen88/linux2026-warmup)
+    - [第二次作業](https://hackmd.io/@JimmyChen88/linux2026-stdc)
+    - [第三次作業](https://hackmd.io/@JimmyChen88/linux2026-basics)
+- 隨堂測驗
+    - 第一、二週最高 : 44分
+    - 第三週 : 22/138
+    - 第六週 : 91/102
+    - 第八週 : 10/29
+    - 第十週 : 27/35
+    - 第十三週 : 15/15
+    - 第十五週 : 16/18
+
+## 期末專題
+> 6 分
+
+題目:紀錄閱讀 Demystifying the Linux CPU Scheduler 的問題、錯誤
+筆記：[Linux 期末專案](連結)
+
+### 內容概述
+
+本專題以精讀《Demystifying the Linux CPU Scheduler》為主軸，涵蓋 Chapter 1
+（Linux kernel 基礎：system call、vDSO、procfs/sysfs、user/kernel stack、SMP、NUMA、CPU topology）到 Chapter 5（CFS 排程器的 tunable 參數與 scheduler features，如 GENTLE_FAIR_SLEEPERS、START_DEBIT、NEXT_BUDDY/ LAST_BUDDY 等），並在筆記中逐章記錄理解與後續驗證的重點。
+
+除了閱讀筆記外，本專題也在 BeagleBone Green（單核心 AM335x）實機上，
+針對 CFS 排程參數設計了三組實驗，驗證書中描述的行為是否真的反映在
+系統指標上：
+
+1. **`sched_min_granularity_ns` 對 context switch 的影響**
+   建立兩個持續佔用 CPU 的 `sha1sum /dev/zero` task，用 `vmstat 1`
+   觀察 context switch 次數（cs 欄位）。
+   - 預設值：cs 約 520~700 次/秒
+   - 調大到 100ms：cs 明顯下降到約 330~530 次/秒，因為每個 task
+     可連續執行的時間變長
+   - 調小到 0.2ms：cs 大幅上升，因為每個 task 能持有 CPU 的時間變短，
+     驗證了 granularity 與 context switch 頻率成反比的預期。
+
+2. **`sched_wakeup_granularity_ns` 對非自願 context switch 的影響**
+   建立一個常駐 CPU-bound task（`sha1sum /dev/zero`）與一個每 10ms
+   喚醒一次的干擾 task（Python 迴圈），透過
+   `/proc/$PID/status` 的 `nonvoluntary_ctxt_switches` 觀察搶佔頻率。
+   - 預設值：平均每秒增加約 108 次
+   - 調到 500ms：平均每秒增加約 109 次（幾乎沒有差異）
+   - 調到 0：平均每秒增加約 155 次，因為所有 task 都無條件取得搶佔權
+   這組實驗也讓我發現一個原本理解錯誤的地方：我原先以為調大
+   wakeup granularity 會明顯減少非自願 context switch，但實測後
+   差異並不顯著，只有調到 0（完全關閉此保護）才看得出差別，
+   之後回頭確認才理解這個參數影響的是「搶佔門檻」而非「搶佔頻率的
+   線性關係」。
+
+3. **CPU migration 相關參數的檢視**
+   檢視 `/sys/kernel/debug/sched/` 下的 `migration_cost_ns`、
+   `nr_migrate`、`base_slice_ns` 預設值，並用一個純運算迴圈的
+   C 程式（`cpu_test.c`）量測執行時間作為 baseline（約 11.96 秒），
+   作為後續調整 migration 相關參數的比較基準。
+
+此外，也使用 `perf bench sched messaging` 測試 hackbench 延遲，
+比較 pipe 與 socket、不同 thread group 數量下的總執行時間差異
+（例如 `-g 10` 約 0.789 秒 vs `-g 32` 約 3.186 秒），驗證通訊
+group 數量對排程延遲的影響。
+
+### 問題與錯誤紀錄
+
+在閱讀與實驗過程中，也整理了尚未完全釐清或觀察到的疑點，包含：
+- 書中第 256 頁描述的 CPU 使用率與自己在多核心環境下的實驗結果不同，
+  懷疑與 SMP 多核心平行執行有關，尚待進一步驗證。
+- trusted group 與 parallel/concurrency 之間的關聯性仍不確定，
+  之後會再確認 cgroup 與排程 class 的對應關係。
+
+### 反思
+
+這次專題偏向「閱讀理解 + 實機驗證」的形式，透過在真實硬體
+（而非模擬環境）上調整核心參數並觀察系統指標變化，讓我對 CFS
+的 tunable 參數不再只是紙上談兵。同時也在與老師討論時發現自己
+對 CPU topology 與 sched_entity 的關聯理解不足，之後回去補強這部分
+的觀念。如果時間更充裕，會想針對 CPU migration 的參數（如
+`migration_cost_ns`）也做類似的實機對照實驗，並嘗試用 `perf sched`
+或 `ftrace` 追蹤實際的 migration 事件，而不只是看整體執行時間。
+
+### 觀摩其他同學專題
+- [Linux 核心設計物專題: kxo](https://hackmd.io/FTxVm7wlTQmkPS9MsmxUJg?view)
+- [Linux 核心設計專題: 核心搶佔模型與 PREEMPT_RT 對即時延遲的影響](https://hackmd.io/E0pBdgJhTFeUOWOkabCC9A?view)
+- [Linux 核心設計專題: virtio-gpu 的設計和實作](https://hackmd.io/QN2dswdeQCao-I2aS6h6KA?view)
+- [Linux 核心設計專題: 測量系統資源開銷並改善](https://hackmd.io/fZcaa2QKS8irqBrZjtwxoA?view)
+- [Linux 核心設計專題: 改進 vcam](https://hackmd.io/iaC67uWDQKaZL5Jy1BBW4w?both)
+
+
+## 與授課教師的互動
+> 6 分
+
+- 一對一討論次數 2 次 
+    - 5/12 下課找老師討論期末專題，原先是想做 Linux Context Switch 成本分析以及如何降低成本。計劃是透過 lmbench lat_ctx，分析context switch 的latency ，接著比較process和thread的差別，調整working size(cache)或加入cpu affinity(hard affinity 指定cpu不要轉移到哪些processor)，後來說太簡單，所以問要不要做排程器。
+    - 6/23 下課找老師討論期末專題，原先把書看完，但老師問到說 CPU topology 跟 sched_entity 關聯答不出來，後來再找老師才回答出來，老師請我回去把課本上的實驗內容做一做。 
+- 課堂問答紀錄 
+    - 4/23 [課堂問答紀錄](https://hackmd.io/gdgKXMGYRdaNUgsEBKaypg)
+    - 6/9 [課堂問答記錄](https://hackmd.io/@JimmyChen88/BJcCmBCZMg)
+
+
+## 所見所聞所感
+> 8 分
+
+關於〈[軟體缺失導致的危害](https://hackmd.io/@sysprog/software-failure)〉
+在閱讀〈軟體缺失導致的危害〉一文後，波音 787 因 32 位元整數溢位導致系統自動關機，以及愛國者飛彈因 24 位元浮點數截斷誤差而釀成死傷的案例，讓我深感震撼。這讓我回想起期末專題中，我在 BeagleBone 實機上調整 kernel.sched_min_granularity_ns 參數的經驗。過去我總認為參數調整只是「數字大一點或小一點，系統跑得慢一點或快一點」的效能差異。但這些血淋淋的案例點醒了我：在系統最底層（如 Linux 核心排程器），一個微小的整數溢位或型別轉換錯誤（例如將 64-bit 浮點數硬塞進 16-bit 整數而導致 Ariane 5 火箭爆炸），不僅會造成 Kernel Panic，在航空或醫療領域更是致命的。這學期的訓練讓我徹底改變了心態：面對任何底層的變數宣告或參數傳遞，都不應抱持「反正編譯過就好」的僥倖，而必須具備對硬體邊界（如 32-bit vs 64-bit）與數學極限的絕對敬畏。
+
+## 分數計算
+
+各項自評分數如下:
+
+1. 成果發表與貢獻:1 分
+2. 作業與隨堂測驗:7 分
+3. 期末專題:6 分
+4. 與授課教師的互動:6 分
+5. 所見所聞所感:8 分
+
+幾何平均 (GEOMEAN) 計算
+
+$$
+\text{GEOMEAN} = \sqrt[5]{1 \times 7 \times 6 \times 6 \times 8} = \sqrt[5]{2016} \approx 4.5803
+$$
