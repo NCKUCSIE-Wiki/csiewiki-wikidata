@@ -11,8 +11,24 @@ categories: User
 # 2026 Linux 核心設計 春季班 自我評量
 
 ## 作業/隨堂測驗
+7分。
+
 * 作業：
     * [2026q1 Homework1 (warmup)](https://hackmd.io/@winterchen/linux2026-warmup)
     * [2026q1 Homework2 (stdc)](https://hackmd.io/@winterchen/linux2026-stdc)
     * [2026q1 Homework3 (basics)](https://hackmd.io/@winterchen/linux2026-basics)
     * [2026-06-23 模擬面試](https://hackmd.io/@winterchen/ryO8JSbQMl)
+
+## 期末專案
+9分。
+
+* [Linux 核心設計專題: 圖形函式庫的效能改進](https://hackmd.io/@sysprog/HJwI6OgkGe)
+
+使用 perf 對 TinyGL 進行效能分析，加入 -O3 -march=native 編譯優化後，透過 perf stat 與 perf annotate 找出六個主要效能熱點函式（glopVertex、光柵化函式、clampf、gl_shade_vertex、glopMaterial、glopCallList），並針對每個熱點做了組合語言層級的根因分析，歸納出三類問題：記憶體存取模式不佳（cache locality）、小函式呼叫開銷過高、以及未利用 SIMD 向量化。
+
+這學期完成的是診斷階段，暑假將針對這些問題進行實際優化並重新量測效能改善幅度。
+
+**交流提問**
+[Linux 核心專題: RCU](https://hackmd.io/@sysprog/H12QuDn6Zg)
+[Linux 核心設計專題: 強化 kxo](https://hackmd.io/@sysprog/HJv7vqR0bg)
+[Linux 核心專題: qspinlock 量化分析](https://hackmd.io/@sysprog/SyC5lS3gMg)
