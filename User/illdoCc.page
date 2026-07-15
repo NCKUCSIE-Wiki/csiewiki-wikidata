@@ -50,6 +50,7 @@ categories: User
 每次讀程式碼時都會有新的發現，其中最大的收穫的是讓我知道某個 tracepoint 對應到哪種 RCU 行為。如此在分析 RCU 不同 workload 底下的 latency 時就能以正確的 tracing 手段量測。
 
 下面是觀摩其他同學的專題：
+
 - [Linux 核心設計專題: 雜湊函數之數學基礎與資訊安全議題](https://hackmd.io/@sysprog/rkzc12bJGg)
 - [Linux 核心設計專題: rv32emu 的 Virtio 強化](https://hackmd.io/xBHchwANS7aE_RmXfT1vGg)
 - [Linux 核心專題: EWMA 分析和應用案例](https://hackmd.io/okzCxJv3RGmrmN3goWocjQ)
@@ -60,7 +61,8 @@ categories: User
 10 分。
 
 課堂問答：
-- [2026-03-10 課堂問答](https://hackmd.io/p87SQ6WpT-ehlVhXglXk9w#illdoCc
+
+- [2026-03-10 課堂問答](https://hackmd.io/p87SQ6WpT-ehlVhXglXk9w#illdoCc)
     - 探討 min 的 branch-less 實作，發現可以用 unsigned 規避掉 signed overflow 會有的 undefined behavior
     - 探討使用哪種統計方法可以統計出 context switch 的時間，並實際推導數學證實結果
 - [2026-06-11 課堂問答](https://hackmd.io/PhjkT6kgR8uTZnIc1-xGNw#illdoCc)
@@ -69,6 +71,7 @@ categories: User
     - 探討冷次定律和聲音的關聯
 
 一對一討論：
+
 - 4/27
     討論如何用 Linux kernel API 實作出 quicksort，並討論為何 list API 當中會有 RCU 的程式片段。使用 list API 實作出 quicksort 是一個全新的體驗，過去在寫 quicksort 時都是從零開始，自己刻出鏈結串列、自己寫出走訪邏輯，並認為自己已經懂 quicksort 的寫法。但實際用 list API 時才發現要考慮的地方很多，包括 Linux kernel 當中採用環狀鏈結串列、取出值時要使用 `container_of` 等。
 - 5/14
