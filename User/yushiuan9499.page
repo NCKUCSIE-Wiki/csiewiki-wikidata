@@ -46,9 +46,10 @@ Github 帳號：[yushiuan9499](https://github.com/yushiuan9499/)
 - 2026/03/10：詢問 Merge sort 為什麼比 Quick sort 還適合 linked list 以及為什麼 Quick sort 在陣列上能夠比較快。問答最後發現 Merge sort 的最差比較次數比 Quick sort 的最佳比較次數少，並且由授課老師提示到 Merge sort 存在 cache-aware 的版本。
 - 2026/04/23：詢問 fork 與 clone 的差異以及 clone 的各個 flags 的功能以及應用場景。
 - 2026/06/11：詢問 concurrency-primer.pdf 中 CAS 章節的程式碼細節，如為什麼 job 當中要使用 function pointer 、為什麼要提前初始化一批 worker。並在問答後閱讀〈[並行程式設計: Hazard pointer](https://hackmd.io/1qjBY-JZR8GHCjQADDJdcQ#)〉。
-## 所見所聞所感
-> ? 分
-### 關於 Merge Sort v.s. Quick Sort
+
+## 所見所聞所感  
+> ? 分  
+### 關於 Merge Sort v.s. Quick Sort  
 
 我在期初的隨堂問答中，被問到為何 Merge Sort 比 Quick Sort 適合 linked list 等問題時答不上來。我才發現過去會想要快入的寫完程式，所以幾乎不去在意常數，也從來沒有實際計算過，通常都是被卡常數後才會慢慢修（只是找可以壓的地方壓，不會實際算）。並且因為像 C++ 這類語言提供了 `sort()` 函式，因此我只有需要干涉 sort 的內部行為時，才會自己刻 Merge Sort ，這導致我很少去了解 sort 。
 
