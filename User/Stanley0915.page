@@ -1,61 +1,135 @@
-## 2026 年 Linux 核心設計課程自我評量
-姓名: 劉冠頡
-GitHub 帳號: Stanley0915
-
-本自我評量依據課程要求，分別整理成果發表與貢獻、作業與隨堂測驗、期末專題、與授課教師互動，以及本課程所見所聞所感。所有評分皆為 1 到 10 之間的整數，並以公開紀錄、commit log、pull request、討論串、issue、課程頁面或期末專題頁面作為佐證。
-
-
-
 ---
-### 成果發表與貢獻
-自評分數：10 / 10
 
-Linux 核心設計: 
-* Scheduler(4): PELT教材中:
-    *  解說**accumulate_sum**那段:用來計算計算 sched_entity 對 load 的貢獻，在進入程式碼前，讓我們先來看看註解提到的考量點。這一行多了一個計算，應該修改成PELT中:accumulate_sum 用來計算 sched_entity 對 load 的貢獻，在進入程式碼前，讓我們先來看看註解提到的考量點。
+title: "2026 年 Linux 核心設計課程自我評量"
+author: "劉冠頡"
+github: "Stanley0915"
+---------------------
 
-    * 在**PELT 的額外考量**那段:系統除了維護所有 runaable task 造成的 load(runnable load) 之外，runaable應該改為runnable
-    * **PELT 的額外考量**那段:其 load 會再轉轉移到 runnable。更細節的運算流程我們會在後續的程式碼中去探討。多了一個轉，語意不對。
-    * **PELT 的效益**:那一段:`load balacing`拼錯，應修正為`load balancing`
-    * __update_load_avg_cfs_rq:下方的程式碼部分`cfq_rq:` 應該改為`cfs_rq`
-    * ___update_load_sum:下方解釋的文字中: ___update_load_sum 會將 shced_avg 的 _sum 相關數據進行更新，`shced_avg`拼錯應改為`sched_avg`
+## 基本資料
 
-以上為對於老師教材做出的貢獻。
+* **姓名：** 劉冠頡
+* **GitHub 帳號：** `Stanley0915`
 
----
-### 作業 / 隨堂測驗
-自評分數：9 / 10
-課程作業每日規定自己投入3小時，一周七天總計是21小時。高於老師在自我評量範例中的20小時標準。
-* 閱讀你所不知道的C語言指標篇，並回答所有題目，為了熟練指標篇的知識，多去練習指標相關頭腦體操
-* 你所不知道的 C 語言：數值系統篇，關於`0.1 + 0.2 ≠ 0.3`的細節藉由教材得知其原因，是因為mantissa 在表示 0.1 時最後一位因為 Rounding變成了 1這份細小的誤差就會導致0.1+0.2不會等於0.3
-* 你所不知道的 C 語言: bitwise 操作，去了解如何推導 $abs(n) = ((n >> 31) ^ n) - (n >> 31)$ 能正確計算絕對值，並了解branchless寫法的優勢何在。
+本自我評量依據課程要求，分別整理「成果發表與貢獻」、「作業與隨堂測驗」、「期末專題」、「與授課教師的互動」，以及「本課程所見所聞所感」。
 
-在模擬驗是中:檢討當時無法答出的問題，包括:False Sharing、FPU State、SIMD State、哪些內容可能採用 Lazy Switch？PELT 如何估算。
+所有評分皆為 1 到 10 之間的整數，並以公開紀錄、commit log、pull request、討論串、issue、課程頁面或期末專題頁面作為佐證。
 
+## 一、成果發表與貢獻
 
----
-### 期末專題
-自評分數：8 / 10
-我的期末專題聚焦於 Linux 核心在 Cortex-M / NOMMU的環境下測量系統資源開銷並改善，需要保有必serial console 可登入與互動 shell、noMMU + FDPIC userspace、shared uClibc-ng 與動態連結、BusyBox 最小 shell / coreutils、NPTL 或 pthread 相關可行性驗證
-[Linux 核心設計專題: 測量系統資源開銷並改善](https://hackmd.io/@sysprog/B1ImJFdRbe) 專題筆記連結
-**baseline測量:**
-* 測量vmlinx的baseline
-    ```
-       text    data     bss     dec     hex filename
-     599088  402804   32128 1034020   fc724 vmlinux
-    ```
-* 在/proc/zoneinfo裡可以看到開機到 shell 後，kernel managed memory 中已使用約 1.29 MiB。
-* 驗證動態連結 (Shared uClibc-ng) 與 FDPIC` # cat /proc/1/maps`
-* 使用 validate-qemu.sh 搭配 metrics 輸出量測。本次結果為
-boot_marker_ms = 285 ms，shell_ready_ms = 298 ms。
+**自評分數：10 / 10**
 
-**關閉功能:**
+我針對〈Linux 核心設計：Scheduler（4）〉的 PELT 教材進行閱讀，並整理出下列文字、拼字與程式碼名稱問題：
 
-從rollup找可以減少的地方，在printk中分析剩下的功能
-rollup 顯示 nbcon.c 佔 3352 bytes，Makefile 顯示 CONFIG_PRINTK=y 就會編 nbcon.o
-在思考或許可以多新增一個config標籤在確保printk其他功能正常的情況下，關必nbcon的編譯
+1. 在 `accumulate_sum` 的解說段落中，原文為：
+
+   > 用來計算計算 sched_entity 對 load 的貢獻，在進入程式碼前，讓我們先來看看註解提到的考量點。
+
+   其中「計算」一詞重複，建議修改為：
+
+   > `accumulate_sum` 用來計算 `sched_entity` 對 load 的貢獻。在進入程式碼前，讓我們先來看看註解提到的考量點。
+
+2. 在「PELT 的額外考量」段落中，`runaable task` 拼寫錯誤，應修正為 `runnable task`。
+
+3. 在「PELT 的額外考量」段落中，原文為：
+
+   > 其 load 會再轉轉移到 runnable。
+
+   其中「轉」字重複，且語意不順，建議修改為：
+
+   > 其 load 會再轉移到 runnable。
+
+4. 在「PELT 的效益」段落中，`load balacing` 拼寫錯誤，應修正為 `load balancing`。
+
+5. 在 `__update_load_avg_cfs_rq` 下方的程式碼中，`cfq_rq` 應修正為 `cfs_rq`。
+
+6. 在 `___update_load_sum` 下方的解說文字中，原文將 `sched_avg` 誤寫為 `shced_avg`，應修正為 `sched_avg`。
+
+以上為我閱讀課程教材後所整理並提出的修正建議。透過逐段閱讀教材、比對 Linux 核心原始碼中的函式與資料結構名稱，我不僅協助改善教材品質，也重新確認自己對 PELT、`sched_entity`、`sched_avg` 與 CFS 執行佇列等概念的理解。
+
+## 二、作業與隨堂測驗
+
+**自評分數：9 / 10**
+
+我規定自己每天投入約 3 小時完成課程作業與相關閱讀，一週約投入 21 小時，高於自我評量範例中每週 20 小時的標準。
+
+本學期完成的學習內容包括：
+
+1. 閱讀《你所不知道的 C 語言：指標篇》，並完成教材中的題目。為了熟練指標相關知識，我另外練習指標運算與相關的程式設計題目，以加強自己對位址、記憶體配置與指標操作的理解。
+
+2. 閱讀《你所不知道的 C 語言：數值系統篇》，理解 `0.1 + 0.2 != 0.3` 的原因。由於 0.1 與 0.2 無法以有限長度的二進位小數精確表示，因此在 IEEE 754 浮點數格式中必須進行捨入。這些微小的表示誤差會在運算時累積，使計算結果無法與十進位的 0.3 完全相等。
+
+3. 閱讀《你所不知道的 C 語言：Bitwise 操作》，並推導下列 branchless 絕對值運算：
+
+   ```c
+   abs(n) = ((n >> 31) ^ n) - (n >> 31);
+   ```
+
+   我進一步理解此寫法如何利用算術右移取得符號遮罩，並透過 XOR 與減法完成正數及負數的統一處理。我也了解 branchless 寫法可降低條件分支造成的 branch misprediction，但實際效能仍須視處理器架構、編譯器最佳化與輸入資料分布而定。
+
+此外，我也重新檢討模擬面試中未能完整回答的問題，包括：
+
+* False Sharing
+* FPU State
+* SIMD State
+* 哪些處理器狀態可能採用 Lazy Switch
+* PELT 如何估算 CPU utilization、runnable load 與 load average
+
+透過重新閱讀教材、查閱 Linux 核心程式碼與整理筆記，我已補充這些題目的完整回答。
+
+## 三、期末專題
+
+**自評分數：8 / 10**
+
+我的期末專題聚焦於測量並改善 Linux 核心在 Cortex-M／NOMMU 環境下的系統資源開銷。
+
+專題要求在縮減系統規模的同時，仍保留下列必要功能：
+
+* Serial console 可正常登入及互動
+* NOMMU 與 FDPIC userspace
+* Shared uClibc-ng 與動態連結
+* BusyBox 最小化 shell 與 core utilities
+* NPTL 或 pthread 相關可行性驗證
+
+專題筆記：
+
+[Linux 核心設計專題：測量系統資源開銷並改善](https://hackmd.io/@sysprog/B1ImJFdRbe)
+
+### 3.1 Baseline 測量
+
+首先，我測量 `vmlinux` 的 baseline：
+
+```text
+   text    data     bss     dec     hex filename
+ 599088  402804   32128 1034020   fc724 vmlinux
 ```
- Before:
+
+此外，我也完成下列量測與驗證：
+
+* 透過 `/proc/zoneinfo` 觀察系統開機並進入 shell 後，kernel-managed memory 中已使用約 1.29 MiB。
+
+* 使用下列指令檢查 PID 1 的記憶體映射，以驗證 shared uClibc-ng、FDPIC 與動態連結：
+
+  ```sh
+  cat /proc/1/maps
+  ```
+
+* 使用 `validate-qemu.sh` 搭配 metrics 輸出進行開機時間量測，結果如下：
+
+  ```text
+  boot_marker_ms = 285 ms
+  shell_ready_ms = 298 ms
+  ```
+
+### 3.2 關閉不必要功能
+
+我從 size rollup 中尋找可縮減的功能，並在 `printk` 相關程式碼中進一步分析。
+
+Rollup 結果顯示，`nbcon.c` 約佔用 3352 bytes；從 Makefile 可發現，只要啟用 `CONFIG_PRINTK=y`，就會編譯 `nbcon.o`。因此，我評估是否能新增或使用獨立的 Kconfig 選項，在保留一般 `printk` 與 serial console 功能的情況下，關閉 MPS2 target 不需要的 nbcon infrastructure。
+
+測量結果如下：
+
+```text
+Before:
 text = 599,088
 data = 402,804
 bss  = 32,128
@@ -68,86 +142,131 @@ bss  = 29,024
 dec  = 1,024,296
 
 Saving:
-text -6,428 bytes
-data -192 bytes
-bss  -3,104 bytes
+text  -6,428 bytes
+data    -192 bytes
+bss   -3,104 bytes
 total -9,724 bytes
 ```
-CONFIG_PRINTK 保留，serial console 仍可用；
-CONFIG_PRINTK_NBCON 關閉，移除 MPS2 target 不需要的 nbcon infrastructure；
-實際 boot artifact linux.axf 減少 8 KiB。
 
-**後續作業:**
-預計到8/31以前都會持續更新此專題，上次和老師討論後發現自己有很多基本知識的不足，目前以補充記憶體管理與slab記憶體配置器方面的知識，位後續改進專題鋪路。
+實驗結果顯示：
 
-**關於實驗設計**
-Linux 核心相關實驗中擁有明確的baseline是實驗中最重要的一環，以此才可以分辨是否在系統優化的過程中，有達到正確的效果。在期末專題中，光是測量baseline就有很多資料，包跨開機的時間，runtime RAM，vmlinux 區段與開機記憶體對，照功能覆蓋率都需要測量，在改進整個系統後也要比較之間的差距，是瑣碎但重要的事。
+* 保留 `CONFIG_PRINTK` 後，serial console 仍可正常使用。
+* 關閉 `CONFIG_PRINTK_NBCON` 後，可以移除 MPS2 target 不需要的 nbcon infrastructure。
+* 實際 boot artifact `linux.axf` 的檔案大小減少約 8 KiB。
 
-**觀摩同儕專題並提問:**
-1. clare8151214-在文中1.3.10 The Multiprocessing Challenge部分，圖片無法顯示。
-2. seallllllllll-使用hrtime已達成更高精度。hrtimer的精度為為多少，是否可以涵蓋實驗所需的範圍。
-3. PinkNekoFist-題目說量化效能瓶頸並展現，想看到改善後的差異，或是baseline的數據。在筆記中不太知道哪些是baseline數據。
-4. rainbow0212-UEFI段落圖片顯示有問題。
-5. kstoko02-在測試二中為何選擇4 個三角錐 v.s. 4000 個三角錐進行測量呢，設定這樣的比例跟數字背後有什麼特殊的原因嗎。
+### 3.3 後續工作
 
----
-### 與授課教師的互動
+我預計持續更新此專題至 8 月 31 日。
 
-自評分數：9 / 10
+上次與老師討論後，我發現自己在 Linux 核心基礎知識方面仍有不足。目前正補充 Linux 記憶體管理、SLAB／SLUB 記憶體配置器，以及 NOMMU 環境下的記憶體配置機制，作為後續分析與改善專題的基礎。
 
-在6/23進行模擬面，問題為面試問題中第三題，第五題與第11題。
-關於False Sharing、FPU State、SIMD State、哪些內容可能採用 Lazy Switch？PELT 如何估算。這些題目當時沒有回答出來(參考當時的錄音內容。)
-更正的內容更新在模擬[面時回答](https://hackmd.io/@ZU1tZZz8RSWZjRM0B3zdHg/ByXJT3_QGe)的筆記裡。
+### 3.4 關於實驗設計
 
-跟老師的互動除此之外都是課後當面找他討論所以沒有日期與紀錄。
-但在討論時老師有分配給我問題，是關於在no FPU的系統中，如何計算expm1(X)函式，在一開始繳交筆記時被老師說沒以嚴謹的實驗跟程式碼證明，學習到對於回答問題的嚴謹態度。並根據老師[歐拉數 ：描述連續變化的基石](https://hackmd.io/@sysprog/euler-number)的筆記重新學習
+在 Linux 核心相關實驗中，建立明確且可重現的 baseline 是非常重要的一環。只有先確定修改前的狀態，才能判斷系統最佳化是否真正產生效果，以及功能是否因精簡而受到破壞。
 
+本期末專題的 baseline 包含：
 
+* 核心與映像檔大小
+* `vmlinux` 各 section 大小
+* 開機時間
+* Runtime RAM 使用量
+* Kernel-managed memory 使用量
+* 功能覆蓋率
+* Serial console 與 shell 可用性
+* 動態連結與 pthread 功能驗證
 
+在每次修改系統設定或核心程式碼後，都必須重新測量並與 baseline 比較。這些步驟雖然瑣碎，但對維持實驗的可信度、可重現性與功能正確性不可或缺。
 
----
-### 所見所聞所感
-自評分數：10 / 10
+### 3.5 觀摩同儕專題並提問
 
-閱讀〈因為自動飲料機而延畢的那一年〉後，我感受到他對於目標的覺悟跟在解決冰塊機時詢問老師後的答案，為了完成想要的專題甚至延畢半年，這讓我了解到了對於一件事如果沒有決心跟願意失去時間和失去歡樂的勇氣那也無法成就什麼事，就像老師常常在課堂上說的幹大事or nothing，既然都深為工程師了那就要有這樣的自覺，要想辦法翻身。
-而冰塊機解決方法對點醒我是老師說的，在漫長的歷史中，很多東西其實都已經有人解決了，讓我聯想到在跟老師討論期末專題時還有在跟老師討論一對一問答時，一開始都是自己埋頭苦幹想或是問AI，導致一直在原地打轉，但很多答案跟想法老師的教材中或是網路上的開放資源都其實有答案了，即使沒有答案也有相對應可參考的做法，應該要多攝取知識才可以解決問題。如期末專題中，要改善跑在stm32上nommu系架構的linux作業系統。勢必要先閱讀記憶體管理與slab的記憶體配置方式，才有想法來繼續改進。
+我也閱讀其他同學的期末專題並提出下列問題：
 
+1. **clare8151214：** 在第 1.3.10 節「The Multiprocessing Challenge」中，部分圖片無法正常顯示。
 
-**關於實驗設計**
-Linux 核心相關實驗中擁有明確的baseline是實驗中最重要的一環，以此才可以分辨是否在系統優化的過程中，有達到正確的效果。在期末專題中，光是測量baseline就有很多資料，包跨開機的時間，runtime RAM，vmlinux 區段與開機記憶體對，照功能覆蓋率都需要測量，在改進整個系統後也要比較之間的差距，是瑣碎但重要的事。
+2. **seallllllllll：** 專題使用 `hrtimer` 達成更高精度的計時。想進一步了解 `hrtimer` 在該實驗環境下的實際精度，以及是否足以涵蓋實驗所需的時間範圍。
 
-**觀摩同儕專題並提問:**
-1. clare8151214-在文中1.3.10 The Multiprocessing Challenge部分，圖片無法顯示。
-2. seallllllllll-使用hrtime已達成更高精度。hrtimer的精度為為多少，是否可以涵蓋實驗所需的範圍。
-3. PinkNekoFist-題目說量化效能瓶頸並展現，想看到改善後的差異，或是baseline的數據。在筆記中不太知道哪些是baseline數據。
-4. rainbow0212-UEFI段落圖片顯示有問題。
-5. kstoko02-在測試二中為何選擇4 個三角錐 v.s. 4000 個三角錐進行測量呢，設定這樣的比例跟數字背後有什麼特殊的原因嗎。
+3. **PinkNekoFist：** 題目提到需要量化效能瓶頸並展示改善結果，但我在筆記中無法明確辨識哪些資料屬於 baseline，以及改善前後的差異。
 
+4. **rainbow0212：** UEFI 段落中的部分圖片無法正常顯示。
 
+5. **kstoko02：** 在測試二中，為何選擇 4 個三角錐與 4000 個三角錐進行比較？這個數量與比例是否具有特定的實驗設計考量？
 
+## 四、與授課教師的互動
 
+**自評分數：9 / 10**
 
+我於 6 月 23 日參與模擬面試，回答面試問題中的第 3 題、第 5 題與第 11 題。
 
+當時未能完整回答的內容包括：
 
----
-### 分數計算
+* False Sharing
+* FPU State
+* SIMD State
+* 哪些內容可能採用 Lazy Switch
+* PELT 如何估算相關數值
 
+我已根據當時的錄音內容重新檢討，並將修正後的回答更新至下列筆記：
 
+[模擬面試回答與檢討](https://hackmd.io/@ZU1tZZz8RSWZjRM0B3zdHg/ByXJT3_QGe)
 
-| 項次 | 名稱 | 分數 |
-| -------- | -------- | -------- |
-| Text     | Text     | Text     |
-|1|成果發表與貢獻|10
-|2 |作業與隨堂測驗|9
-|3|期末專題|8
-|4|與授課教師的互動|9
-|5|所見所聞所感|10
+除了模擬面試外，我與老師的互動多為課後當面討論，因此沒有完整的線上日期與紀錄。
 
-幾何平均 (GEOMEAN) 計算:
+其中一次討論中，老師分配給我的問題是：在沒有 FPU 的系統中，如何計算 `expm1(x)` 函式。
 
-$\text{GEOMEAN} = \sqrt[5]{10 \times 9 \times 8 \times 9 \times 10} = \sqrt[5]{68400} = 9.168$
+我第一次繳交筆記時，老師指出內容缺乏嚴謹的實驗與程式碼驗證。這次經驗使我理解，回答技術問題不能只提出直覺或概念性的說法，而應透過數學推導、原始碼、測試程式、誤差分析與可重現的實驗結果提供證明。
 
-方案選擇
-選擇方案B
-1+9=10
-自我評量總分: 10 / 10
+之後，我也根據老師的教材重新學習相關內容：
+
+[歐拉數：描述連續變化的基石](https://hackmd.io/@sysprog/euler-number)
+
+## 五、所見所聞所感
+
+**自評分數：10 / 10**
+
+閱讀〈因為自動飲料機而延畢的那一年〉後，我感受到作者對於目標的決心。作者為了完成自己真正想做的專題，甚至願意延畢半年。這使我理解到，如果缺乏投入時間、承受挫折與放棄部分休閒的決心，就很難完成具有挑戰性的事情。
+
+這也讓我聯想到老師在課堂上經常提到的「幹大事 or nothing」。既然選擇成為工程師，就不能只停留在完成最低要求，而應培養解決困難問題、持續累積技術能力，以及對成果負責的自覺。
+
+文章中冰塊機問題的解決方式也對我有所啟發。老師提到，在漫長的技術發展歷史中，許多問題其實已經有人遇過並提出解法。因此，面對問題時，不應只靠自己埋頭嘗試，或直接依賴 AI 產生答案，而應先閱讀教材、官方文件、論文、郵件列表、核心原始碼與既有開放資源。
+
+回顧我與老師討論期末專題及一對一問答的過程，一開始我經常只依靠自己的想法反覆嘗試，導致在同一個問題上原地打轉。但許多重要概念其實已存在於老師的教材或網路上的公開資源中；即使沒有完全相同的答案，通常也能找到可參考的分析方式與實驗設計。
+
+例如，我的期末專題希望改善運行於 STM32／Cortex-M、NOMMU 架構上的 Linux 系統，就必須先理解 Linux 記憶體管理、SLAB／SLUB 配置器、NOMMU 的限制，以及核心各項功能的相依關係。只有具備足夠的基礎知識，才可能提出合理的改善方案，而不是盲目關閉設定選項。
+
+這門課使我認識到，工程能力不只是讓程式成功執行，也包括：
+
+* 找到可靠且可驗證的資料來源
+* 建立明確的 baseline
+* 設計可重現的實驗
+* 量化修改前後的差異
+* 確認功能沒有因最佳化而失效
+* 以程式碼與實驗結果支持自己的論述
+
+這些能力將會影響我後續進行研究、閱讀 Linux 核心程式碼，以及面對其他大型系統問題時的做法。
+
+## 六、分數計算
+
+| 項次 | 評量項目     | 自評分數 |
+| -: | -------- | ---: |
+|  1 | 成果發表與貢獻  |   10 |
+|  2 | 作業與隨堂測驗  |    9 |
+|  3 | 期末專題     |    8 |
+|  4 | 與授課教師的互動 |    9 |
+|  5 | 所見所聞所感   |   10 |
+
+幾何平均數計算如下：
+
+$$
+\begin{aligned}
+\text{GEOMEAN}
+&= \sqrt[5]{10 \times 9 \times 8 \times 9 \times 10} \
+&= \sqrt[5]{64800} \
+&\approx 9.169
+\end{aligned}
+$$
+
+## 七、方案選擇與自我評量總分
+
+* **選擇方案：** 方案 B
+* **計算方式：** (1 + 9 = 10)
+* **自我評量總分：** **10 / 10**
