@@ -1,0 +1,49 @@
+---
+title: ericlin1231
+categories: User
+...
+
+# 2026 年 Linux 核心設計課程自我評量
+
+- 姓名: 林子齊
+- 國立成功大學 資訊工程學系 116 級
+- GitHub: [ericlin1231](https://github.com/ericlin1231)
+
+## 成果發表與貢獻
+0 分
+
+## 作業/隨堂測驗
+1 分
+
+對於 C 語言規格有初步了解，並且理解部份系統程式中 C 語言 tricky 的地方，數學的部份還要加強，而且 hw3 只有寫一題，因此給自己 1 分。
+
+- [hw1: warmup](https://hackmd.io/@curiosity1231/linux2026-warmup)
+- [hw2: stdc](https://hackmd.io/@curiosity1231/linux2026-stdc)
+- [hw3: basics](https://hackmd.io/@curiosity1231/linux2026-basics)
+
+## 期末專題
+0 分
+
+原本規劃在開發板上開發 RISC-V 版本的 KVM-Host，只有把網路上的 KVM 教學在簡易的 Linux Kernel 搭配 QEMU 執行過，沒有完成專題。
+
+## 與授課教師的互動
+3 分
+
+在考試時看到 binary GCD 的實作覺得神奇，想起老師說過：「考試題目中會有貢獻 Linux 核心的機會」，因此我認真的進行分析，但之後看 Linux 核心程式碼發現已經被實作過了，因此沒機會貢獻，但推導和理解的過程有訓練到大腦。
+
+有一堂課邀請聯發科工程師演講，題目是我很有興趣的 SoC，我提出很多問題詢問，並且得到很棒的回覆，啟發我去研究現代高效能 CPU 的 Interconnect 架構還有記憶體模型，這個過程中學到很多多核 SoC 系統設計要考量的因素，受益良多。
+
+- [2026-03-31 問答簡記](https://hackmd.io/T9exGh0eRuuoVWkomO25wA#ericlin1231)
+- [2026-04-21/23 問答簡記](https://hackmd.io/gdgKXMGYRdaNUgsEBKaypg#ericlin1231)
+- [2026-05-12/14/21 問答簡記 - 1](https://hackmd.io/s7WxGv_KQ_G-Iw9H9SjJ_w#ericlin1231)
+- [2026-05-12/14/21 問答簡記 - 2](https://hackmd.io/s7WxGv_KQ_G-Iw9H9SjJ_w#ericlin123134)
+
+## 所見所聞所感
+3 分
+
+開發系統軟體要考慮非常多事情，從語言本身的特性，還有資料結構和演算法還有數學，還要很懂 Linux 核心，牽扯到效能議題時對處理器架構也要有基本理解，經過這個課我認為自己不適合擔任軟體工程師，但我對於硬體開發很有興趣，因此雖然我沒有把專題做完，但我把時間投入 CPU 架構還有記憶體模型的學習，讓我對現代 SoC 有相當程度的理解，因此我也在這個學期獲得 SiFive CPU 驗證的實習機會，我認為這是我除了系統軟體知識以外，在本學期最大的收穫。
+
+## 自我評量 (1 ~ 10)：
+$$
+1+ floor(geomean(0, 1, 0, 3, 3)) = 1
+$$
