@@ -1,0 +1,84 @@
+# 2026 年 Linux 核心設計課程自我評量
+
+姓名: 鄭祈恩
+GitHub 帳號: [deantee](https://github.com/deantee)
+
+## 成果發表和貢獻
+
+> 4 分
+
+我有兩個已合併的 GitHub PR：一項是行為修正，另一項是錯字與文法修正。
+
+- [sysprog21/libiui PR #27](https://github.com/sysprog21/libiui/pull/27)：標題為 `Keep switch hit rect inside its row`。修正相鄰 switch 的 expanded touch target 互相重疊造成的邊界誤判，讓每一列只處理自己的點擊範圍，避免點擊邊界時切換錯誤或重播動畫；同時更新邊界測試。
+- [sysprog21/lkmpg PR #379](https://github.com/sysprog21/lkmpg/pull/379)：標題為 `Fix grammar and typos`。整理 `README.md`、`lkmpg.tex`、範例程式與 CI/scripts 的英文，修正動詞、冠詞、介系詞、複數、拼字、代名詞和 `ioctl` 用語；不改變功能，build 與範例行為維持不變。
+
+## 作業與隨堂測驗
+
+> 5 分
+
+三個 HackMD 作業頁面都有我留下的作答或程式碼。
+
+- [warmup](https://hackmd.io/@deantee/linux2026-warmup)：我回答了模運算、有號與無號整數溢位、指標生命期、strict aliasing、`render`、`constant` 和 `immutable` 等題目；pointer arithmetic、call-by-value 和部分儲存與執行模型題目仍未勾選。
+- [stdc](https://hackmd.io/@deantee/linux2026-stdc)：我寫了可控制長度與排列的鏈結串列、浮點數位元表示、避免平均值溢位和位元技巧的程式碼或回答；`perf stat`、cache miss、temporal locality 和許多延伸題仍未完成或留有 TODO。
+- [basics](https://hackmd.io/@deantee/linux2026-basics)：我整理了 LKL、KVM、PELT/EWMA、紅黑樹、編譯器未定義行為等延伸問題，但主要題目仍未勾選，還沒有完成研究或實驗。
+
+## 期末專題
+
+> 2 分
+
+期末專題題目是[基於 kvm-host 的輕量化 Online Judge 隔離執行環境](https://hackmd.io/@sysprog/B11UPGO0be)，內容包括 host 端控制器、KVM guest、virtio block device、seccomp BPF、guest/host 兩層資源控管，以及由 judge runner 回傳 stdout、stderr、exit status、執行時間和記憶體用量並處理 special compare / output validator。
+
+我已成功運行 kbox，並按照老師的要求閱讀相關教材。
+
+## 課堂問答軌跡
+
+> 6 分
+
+我留下四個公開 HackMD 問答記錄。
+
+- [2026-03-03/10 問答簡記](https://hackmd.io/p87SQ6WpT-ehlVhXglXk9w)：討論 type punning、strict aliasing 和以 `memcpy` 安全存取物件表示。
+- [2026-03-17/24 問答簡記](https://hackmd.io/mGN8I_tJQcW3A92ZIbYbHw)：有 `float32_to_float16` 的位元運算程式碼與說明，段落仍保留 TODO。
+- [2026-03-31 問答簡記](https://hackmd.io/T9exGh0eRuuoVWkomO25wA)：留下 `round_up` 和 `round_half_up` 等位元運算巨集。
+- [2026-04-21/23 問答簡記](https://hackmd.io/gdgKXMGYRdaNUgsEBKaypg)：討論 Hash Tables、`hlist` 與 `list` 的取捨，以及網路相關問題。
+
+## 所見所聞所感
+
+> 6 分
+
+上學期「程式設計（一）」的內容相對基礎。我在旁聽 Linux 核心設計時被課程的深度吸引，後來選擇加選，教授也同意我加入這門課。學期初的課程讓我重新理解「寫程式」：我從來沒想過這門學問可以這麼深，尤其在核心開發中，改善效能或記憶體開銷本身就是重要的事情。
+
+我也認識到自己對 C 幾乎一無所知，並開始理解查閱規格書的重要性。過去兩個學期的程式設計課沒有提到規格書，當我在 Linux 核心設計課聽到老師要求閱讀規格書時，感到很驚訝。
+
+讀完〈[因為自動飲料機而延畢的那一年](https://web.archive.org/web/20250524150930/https://www.opasschang.com/docs/the-story-of-auto-beverage-machine-1)〉後，我想到自己 15 歲開始寫程式時，總覺得軟體開發幾乎沒有成本：有一台電腦和一雙手，就能把想法寫出來。讀完這個故事後，我才真正意識到，硬體開發還要面對尺寸、公差、材料、加工、成本和等待時間等一連串現實問題。
+
+但我也發現，不論是硬體還是軟體，解決問題的方式其實相通：失敗後先猜測原因，找出可能的解法，衡量各自的優缺點，做出取捨，再用實驗驗證並反覆修正。最讓我佩服的是，作者即使遇到種種難關，仍然選擇繼續投入這台飲料機的研發。
+
+反過來看自己的課程作業和課堂問答，我甚至想不起一個讓我留下深刻印象的技術問題。我大約在學期中開始失去對這門課的投入，也沒有把接觸過的內容真正沉澱下來。
+
+我想改掉面對困難時逃避的習慣。只要一個概念稍微研究後仍然搞不明白，我就容易先放下它，久而久之也讓我很遺憾地沒有學好這門課學期中後段和學期末的內容。
+
+## 自評分數
+
+| 項次 | 名稱             | 分數 |
+| ---- | ---------------- | ---- |
+| 1    | 成果發表與貢獻   | 4    |
+| 2    | 作業與隨堂測驗   | 5    |
+| 3    | 期末專題         | 2    |
+| 4    | 與授課教師的互動 | 6    |
+| 5    | 所見所聞所感     | 6    |
+
+幾何平均 (GEOMEAN) 計算
+
+$$
+\text{GEOMEAN} = \sqrt[5]{4 \times 5 \times 2 \times 6 \times 6} = \sqrt[5]{1440} =4.28
+$$
+
+驗算:
+
+$$
+4.28^5 = 1436.2129722368004
+$$
+
+方案選擇 B
+
+自我評量總分: 5 / 10
