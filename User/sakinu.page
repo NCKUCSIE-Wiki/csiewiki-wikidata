@@ -1,0 +1,64 @@
+---
+title: sakinu (高睿)
+categories: User
+...
+# 簡介
+* 國立成功大學 資訊工程學系 116 級
+* 競程選手
+* GitHub: [`sakinu`](https://github.com/sakinu)
+* Email: sakinu080712345@gmail.com
+
+# 2026 Linux 核心設計 春季班 自我評量
+## 成果發表與貢獻
+9 分。
+
+- 公開演講
+    - 2026/03/28 — 於 [SITCON](https://sitcon.org/2026/) 主講「從 0 手刻 CPU：浪漫的學習之旅」
+
+## 作業/隨堂測驗
+8 分。
+
+- [2026q1 Homework1 (warmup)](https://hackmd.io/@sakinu9487/linux2026-warmup)
+- [2026q1 Homework2 (stdc)](https://hackmd.io/@sakinu9487/linux2026-stdc)
+- [2026q1 Homework3 (basics)](https://hackmd.io/@sakinu9487/linux2026-basics)
+
+學習並意識到了查詢資料如規格書與 git log 的重要性，並培養寫程式做驗證與分析的能力。
+
+## 期末專題
+9 分。
+
+- [Linux 核心設計專題: Linux no-MMU 的客製化和改進](https://hackmd.io/@sysprog/SJ9_FmuAWl)
+
+在完整實作並理解原先專題所涉及的 buildroot、SD card、FDPIC、LCD、DMA2D、LVGL 等內容後，對 [cellphone-prototype](https://github.com/jserv/cellphone-prototype) 的相簿、首頁、解鎖畫面進行延遲分析與改進。例如擴大 DMA2D 的可使用場景、使用 buffer 來避免多次重複的 JPG 解碼、改進 <rota1001> 同學的 [DOOM](https://github.com/sakinu/doomgeneric) 的記憶體使用，作為新的 APP 成功加入並運行遊戲。
+
+下面是觀摩其他同學的專題：
+
+
+
+## 與授課教師的互動
+7 分。
+
+- [3/10 課堂問答](https://hackmd.io/p87SQ6WpT-ehlVhXglXk9w#sakinu)
+
+    探討了指標的指標以及什麼是 good taste，並試著改進一段程式，由於當下對指標的指標的使用概念不夠理解導致從錯誤的方向著手嘗試改進。
+
+- [6/23 課後問答]
+
+    討論了專題的方向、分析工具和手機字體、使用者的相關知識。
+
+## 所見所聞所感
+10 分。
+
+高中大學有接觸競賽程式並參加 ICPC，演算法與資料結構的基本功高於平均，但硬體方面大三前只有簡單碰過 Arduino、Webduino ，在上學期實際設計並用電路接出一顆 CPU ，也算是部分實踐「真正認真對待軟體的人，就應該自己做硬體」了。
+而在這門課上，我更深刻的體會到了理解硬體的重要性，唯有能用物理/元件的角度去理解，才能深刻體會為何 dram/sram 的成本與速度差異、多核處理器的難題、pipeline 的瓶頸等等，而且也只有在理解硬體的架構與功能的前提下，才有辦法寫出完全解放硬體能力的程式。
+
+原本覺得世上的大多東西能運作都是理所當然的，但是在進行期末專題的過程中才發現，光是讓日常使用的手機如何穩定運作就是一件充滿學問的事，更別說要怎麼改進效能了，也深刻體會「工程師就是要解決真實的問題」這句話，自己學的技能本該解決真實存在且有意義的問題，這個想法令人感到興奮，也期待未來能在火箭、立方衛星等等方向上做出貢獻。
+
+在修了這門課開拓了視野並深深體會到自己的不足後，我覺得最受用的是「缺什麼補什麼」和「誠實面對自己」，他們不只是兩句口號，也實際改變了我遇到困難與挫折時的態度。
+
+總而言之：今天不學 Linux，明天 Linux 會更難。這堂課真的很值得在大二甚至大一就來見見世面。
+
+## 自我評量 (1 ~ 10)：
+$GEOMEAN = ( 9 \times 8 \times 9 \times 7 \times 10 )^{1/5} = 8.5376$
+
+方案 B ：$1 + floor(GEOMEAN) = 1 + 8 = 9$
