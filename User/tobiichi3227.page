@@ -1,20 +1,21 @@
 # 2026 年 Linux 核心設計課程自我評量
-姓名：馬道中  
+姓名：馬道中
 Github 帳號：[tobiichi3227](https://github.com/tobiichi3227/)
 
 
 ## 成果發表與貢獻
 > ? 分
 
-本學期內只有貢獻教材以及對教材相關的 Repo 發一個尚未合併的 PR 與給 Linux 發一個沒有被接受的 Patch，屬於方案 B。
+本學期內只有貢獻教材以及對教材相關的 Repo 發一個尚未合併的 PR、給 Linux 發一個沒有被接受的 Patch、給 LLVM 發一個尚未合併的 PR，屬於方案 B。
 
 ### Github PR
-- [Fix high CPU usage when game paused](https://github.com/sysprog21/kxo/pull/32) (尚未 merge)
+- [Fix high CPU usage when game paused](https://github.com/sysprog21/kxo/pull/32)(尚未合併)
+- [[clang][Sema] Fix crash when checking scalar type with excess braces](https://github.com/llvm/llvm-project/pull/192471)(尚未合併)
 
 ### Kernel Patch
-(未被接受)
-[[PATCH 0/1] ovpn: tcp - defer TX from softirq to workqueue](https://lore.kernel.org/lkml/20260501145425.757147-1-cz1346219@gmail.com/)
-[[PATCH 1/1] ovpn: tcp - defer TX from softirq to workqueue](https://lore.kernel.org/lkml/20260501145425.757147-2-cz1346219@gmail.com/)
+未被接受
+[[PATCH 0/1] ovpn: tcp - defer TX from softirq to workqueue](https://lore.kernel.org/lkml/20260501145425.757147-1-cz1346219@gmail.com/)  
+[[PATCH 1/1] ovpn: tcp - defer TX from softirq to workqueue](https://lore.kernel.org/lkml/20260501145425.757147-2-cz1346219@gmail.com/)  
 在使用 OpenVPN 時發現維持 VPN 連線狀態下讓筆電進入睡眠狀態會導致 Kernel Crash，為此非常困擾。
 
 ### 修正教材
@@ -27,9 +28,94 @@ Github 帳號：[tobiichi3227](https://github.com/tobiichi3227/)
 ### 修錯字
 - 2026/06/05:〈[Concurrency Primer](https://github.com/sysprog21/concurrency-primer/)〉中的 `atomic_compare_exchange_strong()` 實作變數名稱與參數名稱不符，[PR](https://github.com/sysprog21/concurrency-primer/pull/21)
 
+### Trivial 的修錯字
+
 將以下教材的 `優化` 改成 `最佳化`
 
 - [Linux 核心設計: 記憶體管理](https://hackmd.io/t_SzlKdqQKGk7VFYnZ2NKQ#)
 - [並行程式設計: Atomics 操作](https://hackmd.io/OVPTyhEPTwSHumO28EpJnQ#)
 - [並行程式設計: 概念](https://hackmd.io/_lnMkJLxTSWzU46IT8R7nw#)
 - [你所不知道的 C 語言：動態連結器篇](https://hackmd.io/VRByMw0iSmqbVve3CNd01g#)
+
+## 作業與隨堂測驗
+
+> 5 分
+
+執行了三個作業。
+
+### 作業完成度
+- [作業一 warmup](https://hackmd.io/@tobiichi3227/linux2026-warmup)：
+    - 探討〈資訊科技詞彙翻譯〉：完成
+    - 探討〈解讀計算機編碼〉：只完成 `二補數的設計是否本質上是種 algebraic encoding？` 與 `為何 Linux 核心中 unsigned overflow 是 defined behavior，但 signed overflow 是 undefined behavior？`
+    - 探討〈你所不知道的C語言：指標篇〉：完成
+    - 探討〈linked list 和非連續記憶體〉：只完成 `教材中使用 struct ListNode **indir = &head;，描述以下:`
+    - 誠實面對期初考題：只完成第三題
+
+- [作業二 stdc](https://hackmd.io/@tobiichi3227/linux2026-stdc)：
+    - 細讀〈你所不知道的 C 語言：數值系統篇〉：
+    - 細讀〈C 語言的 bit field〉：只
+
+- [作業三 basics](https://hackmd.io/@tobiichi3227/linux2026-basics)：
+
+## 期末專題
+> 0 分
+
+沒東西
+
+## 與授課教師的互動
+> ? 分
+
+一對一討論共 0 次，課堂問答共 2 次。
+
+### 一對一討論
+沒有任何一對一討論
+
+### 課堂問答
+
+- 2026/06/11: 詢問為什麼 `spsc_fifo_write` 的 `read_count` 用 `acquire` 但 `spsc_fifo_read` 的 `read_count` 用 `relax`？
+- 2026/05/21: 詢問在 Linux 上 process 與 thread 有什麼差別，要怎麼知道一個已經執行的 task 是 process 還是 thread
+
+## 所見所聞所感
+> ? 分
+
+### 關於〈[因為自動飲料機而延畢的那一年](https://www.opasschang.com/docs/the-story-of-auto-beverage-machine-1)〉
+
+看完後我十分的敬佩作者，相比現實世界的中的工程，資訊世界的工程簡單許多了，在現實中你想要做一個物品來實驗測試，要經過各種流程還要等待，但在資訊世界中只需要打開手邊的設備就可以開始你的實驗了，如果想要看到工業等級的內容，我們只要打開 Linux Kernel 等優秀專案的程式碼，但在現實你可能要去各種地方問，甚至根本問不到。
+
+
+### 關於資訊科技詞彙翻譯
+在以前就聽聞老師對正確用詞很在意，上課後才知道老師是**非常在意**，上課不時會提到，在同學用錯詞彙時還會**適當**的提醒同學，讓我深知正確用詞的重要性。
+
+### 關於數學
+在 yushiuan9499 第一次課堂問答時（我坐在他旁邊），他被問到 Merge Sort 比 Quick Sort 適合 Linked List 等問題，我以為他可以輕鬆回答上來，尤其是數學分析的部份，沒想到他還是思考很久，這讓我非常震驚，沒想到像他數學能力這麼強(我認為的)的還是沒有順利答出，像我這種數學能力很差的就更要誠實面對自己的數學能力。
+
+### 關於 C 語言
+在以前有出過將 for 迴圈轉成 goto 的題目，當時有看過規格書中對語法的定義，在這堂課上才真正去讀語意的部份，讓我發現我對 C 語言的理解只是很片面的。
+為了去找到符合規格書的但跟目前大多設備不一樣的結果或是 Implemention Defined（比方說 `NULL` 並不是 $0$，`char` 不是 8-bit，對有號整數右移是邏輯右移等），我去尋找各種早期的系統與架構（如 Multics、Prime 50 等）嘗試找到對應的結果，這讓我知道 C99 為什麼會有這麼多不合常理的規定，不過讀規格書是真的很累，有些寫的非常不直觀，像是對於 strict aliasing 的定義。
+
+### 關於 Kernel Patch
+因為經常使用在外面經常使用 OpenVPN 連回家，又很常筆電闔上就走人了，所以發現當 OpenVPN 保持連線時睡眠有機會讓 Kernel Crash，非常燥
+後來透過 [Linux 核心設計: Kernel Debugging(1): Kdump
+](https://hackmd.io/@RinHizakura/HkHacces6) 與 [測試 Linux 核心的虛擬化環境](https://hackmd.io/@sysprog/linux-virtme) 提到的 kdump 與 crash 成功取得 crash log，所以就嘗試去修改 kernel ovpn module 
+我用 selftest 測試成功就發 patch 了，但 Maintainer 說這會[破壞 selftests](https://lore.kernel.org/lkml/20260501161226.0239262c@kernel.org/)，也提到這樣的作法對[性能很大的影響](https://lore.kernel.org/lkml/b359d13d-8414-4aeb-958c-496b4b898b93@openvpn.net/)
+我後續就沒有繼續發 patch 了
+
+## 分數計算
+| 項次 | 名稱 | 分數 |
+| :-: | :--: | :-: |
+| 1   | 成果發表與貢獻 | ? |
+| 2   | 作業與隨堂測驗 | 5 |
+| 3   | 期末專題 | 0 |
+| 4   | 與授課教師的互動 | ? |
+| 5   | 所見所聞所感 | ? |
+
+幾何平均 (GEOMEAN) 計算
+$\text{GEOMEAN} = ^5\sqrt{? \times 5 \times 0 \times ? \times ?} = ^5\sqrt{0} = 0$
+驗算 $0^5 = -$，符合定義。
+
+方案選擇：
+- 方案 A 適用條件：對 Linux, glibc, gcc, llvm, lkmpg, rv32emu, kbox, elfuse 等專案做出超過 3 項 non-trivial 貢獻並獲開發者採納。
+- 本人不滿足。
+- 採方案 B： $1 + \lfloor \text{GEOMEAN} \rfloor = 1 + 0 = 1$ 。
+
+自我評分總分： 1/10
