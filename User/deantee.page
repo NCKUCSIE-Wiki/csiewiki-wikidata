@@ -70,13 +70,13 @@ GitHub 帳號: [deantee](https://github.com/deantee)
 幾何平均 (GEOMEAN) 計算
 
 $$
-\text{GEOMEAN} = \sqrt[5]{4 \times 5 \times 2 \times 6 \times 6} = \sqrt[5]{1440} =4.28
+\text{GEOMEAN} = \sqrt[5]{4 \times 5 \times 2 \times 6 \times 6} = \sqrt[5]{1440} \approx 4.2822547366766477
 $$
 
 驗算:
 
 $$
-4.28^5 = 1436.2129722368004
+4.2822547366766477^5 \approx 1440
 $$
 
 方案選擇 B
