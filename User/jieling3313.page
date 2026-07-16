@@ -1,0 +1,62 @@
+---
+title: jieling3313(王崇恩)
+categories: User
+
+...
+* GitHub: [`jieling3313`](https://github.com/jieling3313)
+# 2026 Linux 核心設計/實作 自我評量
+* 姓名: 王崇恩
+## 1. 成果發表和貢獻:
+評分: 6
+
+貢獻本課程的教材修正
+* 在反覆閱讀課程教材時，於 2026年4月16日星期四 19:55 在 [Linux 核心設計: 不只是執行單元的 process](https://hackmd.io/@sysprog/linux-process) 修正格式。
+
+* 在閱讀期末專題相關文章時，於 2026年5月11日星期一 17:15 在 [Linux 核心設計: 中斷處理和現代架構考量](https://hackmd.io/@sysprog/linux-interrupt) 更新舊版本網址至最新支援網址。
+
+## 2. 作業/隨堂測驗:
+評分: 5
+
+* 作業1: [2026q1 Homework1 (warmup)](https://hackmd.io/@jieling3313/linux2026-warmup)
+從[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)出發，翻閱教育部辭典與劍橋詞典考據 render、constant 與 immutable、concurrent 與 parallel 等詞彙的詞源，並比對 render 在 Linux v6.19.3 原始程式碼中的三種語境：執行繪圖指令、僅負責運算的 render node，以及 asn1_compiler 中轉換生成程式碼的行為，體會到譯名必須回到原文語境與程式碼實際用法檢驗，而非沿用渲染這類喪失如實呈現意涵的慣譯。
+
+* 作業2: [2026q1 Homework2 (stdc)](https://hackmd.io/@jieling3313/linux2026-stdc)
+針對[分析「快慢指標」](https://hackmd.io/@sysprog/ry8NwAMvT) 設計可重現的 cache 行為實驗：以 malloc 搭配 Fisher-Yates shuffle 建立非連續配置的鏈結串列，與連續配置對照，在 $10^6$ 節點規模下以 perf stat、perf record、perf annotate 與 perf c2c 量測。實驗顯示非連續配置因 hardware prefetcher 失效，執行時間相差約 60 倍（2400 ms vs. 38 ms）；且在非連續配置下，快慢指標因時間局部性明顯優於單一指標的兩次走訪（2367 ms vs. 3440 ms），並從 perf annotate 的組合語言層級確認 ->next 指標追逐正是延遲來源。延伸追蹤 Linux 核心 commit 89951fc1f820，逐行閱讀 diff，理解 struct rq 如何依存取熱度重排欄位、讓 pick_next_task_fair() 常用欄位共用 cache line，使排程器週期數下降約 4.6%。
+
+* 作業3: [2026q1 Homework3 (basics)](https://hackmd.io/@jieling3313/linux2026-basics)
+
+* 作業4: 選擇第一種路線--即刻投入期末專題
+
+## 3. 期末專題:
+評分: 8
+
+* [期末專題開發紀錄](https://hackmd.io/@sysprog/rkPcocAAbg)
+
+成功將 EVL (Xenomai 4) 雙核心 RT 系統移植至 Raspberry Pi 5 平台。完成 EVL v6.12.78 patch 與 RPi 官方 kernel 整合。解決如 DMA、SPI、中斷控制器等相關驅動的 OOB 支援。體會到 RT 系統可預測性優於平均性能的設計。並透過逐行分析 patch 衝突，理解了 Dovetail 的 two-stage IRQ pipeline 與 OOB execution 機制如何在硬體實現微秒級操作。撰寫中學習到實驗的嚴謹性，網路上以及 AI 查詢內容都需來源佐證，Xenomai 網路上相關內容少且難辨真偽。如果不是從專案碼一步一步調查功用以及來源，難以保證每筆修改記錄的可重現性。在過程中深刻理解如何搞清楚程式碼深層原理以及背後的成因，才能精確完成與之相關開發及修改。
+
+## 4. 與授課教師的互動: 標注與授課教師「一對一討論」的時間，並列出你針對授課教師的問答、測驗和後續討論及啟發。課堂問答也可列入
+評分: 4
+
+[2026-04-21/23 問答簡記](https://hackmd.io/@sysprog/B1lroDE6be)
+
+在 04/21 於邱冠維學長分享時詢問未來求職目標。因為認為個人學歷上無法展現出優於常人的成績單，履歷目標針對於個人專案以及參與職缺相關的子系統貢獻。詢問自身作品目標要以解決特定領域的實務痛點出發，還是以專案的廣泛應用性為主比較有優勢，才容易讓主管看見並轉化為面試邀約。由於私底於 linkedin 也有詢問過學長關於韌體開發或系統軟體相關的職缺要求。
+
+邱冠維學長認為作品要能讓主管覺得你的確有解決問題的能力不是拿一個很水的東西來唬爛，越相關自然越有優勢，不限於瞄準特定架構或是廣泛應用。再者主管找人不易，不會預期新人甚麼技能都很 match。但針對於我目前執行過的專案會覺得為何較多為硬體設計而想寫軟體，希望能多著墨於軟體與硬體之間的 co-design 之類的東西。
+
+## 5. 所見所聞所感，務必提及閱讀〈因為自動飲料機而延畢的那一年〉和回顧自身在本課程的投入狀況，尤其是重視細節、數學、謹慎用詞、實驗設計等
+評分: 10
+
+再次閱讀〈因為自動飲料機而延畢的那一年〉，我不再只看見熱血與遺憾，而是看見時間與未知之間殘酷的等價交換。作者從落冰機構、糖漿管路到封膜，每解決一個問題，就會 fork 出更多意想不到的子行程，而一個人的一天永遠不夠用，延畢兩年則是背後的成本。在上學期第一次閱讀時，我把它對應到造潛艇燒毀十幾片 ESP8266 挫敗，體會理論與實作的鴻溝；這學期經過將 EVL 移植至 Raspberry Pi 5，面對 DMA、SPI 與中斷控制器的 patch 衝突，我才真正理解只有逐行考據來源、以量測取代臆測、留下被後人驗證的紀錄，才能在有限時間內收斂那些不斷蹦出的子行程。在文章中，作者用延畢換來對現實世界的認知。而我從課程中 YOU HAVE NOTHING 出發，學會工程的本質不是避免失敗，而是以嚴謹的態度實驗設計，讓每一次失敗都成為能再站起來、抵達任何地方的地面。
+
+品質是尊嚴和價值的起點；專業是精緻和卓越的保證。
+
+在上學期於 Computer Architecture 了解 CPU pipeline 以及 cache 相關知識。由於從未修過作業系統或演算法相關領域內課程，在 linux 核心設計課程中我才理解過去所學的 CPU，如同 [SPI](https://wiki.csie.ncku.edu.tw/embedded/SPI) 教材圖片所示，只是構成整個裝置的一小部分。而在此課程 jserv 則是希望我們能夠靠課程材料了解這張圖上其他部分，在這堂課中透過課程材料、影片了解如 process 並非只是執行單元，而是 task_struct 中記憶體、檔案與訊號等 resources 的集合。排程器也不只挑選任務，更要在多核與 cache 之間權衡公平與延遲。中斷處理以 top half 與 bottom half 分工，搭配 DMA 讓 CPU 得以即時回應 SPI 圖中眾多周邊裝置。spinlock 則重於多核競爭共享資源與 cache line 傳遞的代價。linked list 的非連續記憶體特性更呼應作業二的 cache 實驗。這些機制串起來我才明白，作業系統正是協調 CPU, Bus, DMA 之間的黏著劑，也是邱冠維學長提醒我著墨軟硬體 co-design 的起點。
+
+真心覺得 jserv 上課幽默，每次笑話真的都能打中我的笑點。
+
+
+## 自我總評量得分
+自我總評量得分為 **6** 分。
+
+* GEOMEAN : $\sqrt[5]{6*5*8*4*10} = 6.25$  
+* 方案 B：$1+\lfloor 6.25 \rfloor=7$
