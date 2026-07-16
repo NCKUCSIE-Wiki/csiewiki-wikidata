@@ -1,0 +1,170 @@
+# 2026 年 Linux 核心設計課程自我評量
+
+姓名: 邱昱晴
+GitHub 帳號: [seallllllllll](https://github.com/seallllllllll)
+
+本份自我評量遵循[課程自我評量指引](https://hackmd.io/@sysprog/linux2024-assessment)的書寫規範，避免「期許自己」、「已盡最大努力」等空泛承諾，所有產出皆附對應的公開軌跡（GitHub PR、HackMD 開發紀錄、Google Doc 紀錄）。各項自評分數皆為 1 到 10 的整數。
+
+## 成果發表與貢獻
+
+> 自評分數：9/10
+
+
+
+### [〈Concurrency Primer〉導讀](https://hackmd.io/@sysprog/concurrency-primer)
+
+* 修正專有名詞的嚴謹度
+    1. 將 cpu、Arm 改為大寫 CPU、ARM，專有名詞全大寫
+    2. `load modfiy store` 修改為 `load-modify-store`
+    3. lock free 改成 lock-free
+
+### [從熱力學第二定律到系統軟體：機率、資訊熵與現代作業系統的大融通](https://hackmd.io/6qa8UgUeSy22p_tTY0d5-Q?view)
+
+* 空格排版問題：
+    1. jitter (抖動)嚴格限定 改為 jitter (抖動) 嚴格限定
+    2. 獲得 CPU(反映 CPU 排程器...	改為 獲得 CPU (反映 CPU 排程器...
+    3. THP(transparent huge pages) 改為 THP (transparent huge pages)
+
+* 術語不一致（漏字）：
+
+    1. 因而工程上更常看 lag 的 drift 與高分位界... 改為 高分位數（或高分位數界限）。
+    前文與統計學慣用詞都是用「分位數」(Quantile) 或是「信賴區間」，突然出現「分位界」不易閱讀容易混淆。
+    
+*  False sharing 的量測鏈與可否證性段落，語意不嚴謹：
+    False sharing 的觸發條件不是變數本身未對齊（Unaligned）。變數本身有可能對齊了它的資料型態（例如一個 4-byte 的整數對齊在 4 的 kernel 邊界），但只要兩個獨立的變數落在同一個 64-Byte 的快取行（Cache Line）內，就會引發 False sharing。所以改成「多執行緒頻繁寫入位於同一個快取行（Cache Line）但**邏輯上獨立**的變數」。
+    
+    
+### [Linux 核心的 hash table 實作](https://hackmd.io/@sysprog/linux-hashtable)
+
+* 文章寫到：至於 A 為什麼使用 golden ratio，也就是 A = $(\sqrt{5}-1)/2 \approx 0.6180339887...$ 呢？
+[黃金比例](https://en.wikipedia.org/wiki/Golden_ratio)的值是 $(\sqrt{5}+1)/2 \approx 1.618$。文章中使用的 $(\sqrt{5}-1)/2 \approx 0.618$ 是黃金比例的倒數（$\phi^{-1}$），也被稱為共軛黃金比例（Golden Ratio Conjugate），應該是筆誤，以此更正為 golden ratio **的倒數**。
+
+
+## 作業與隨堂測驗
+
+> 自評分數：9/10
+
+HW1 全部完成，HW2 進度約一半，其他兩份作業未完成。14 次隨堂測驗皆有參與及和同學討論，也有筆記記錄檢討。所有開發紀錄公開於 HackMD，並通過[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)用語檢核。學期初規定自己每天應投入四小時，假日休息，週投入時數平均 20 小時。
+
+隨堂測驗隨老師課堂一起檢討，另外也有完成部分延伸問題的回答：
+
+* 將 Linux 核心的 `___update_load_sum` 邏輯移植至 userspace，模擬 naive 與 PELT-like 兩種手法：
+證實了不保留碎片會導致顯著的負偏誤（systematic underestimation），並量化了誤差程度，深入解析了 Linux 開發者在效能與精確度之間的工程取捨。
+
+* 在 binary64 環境下構造 $a, b, c$ 證明浮點數不滿足結合律，並分析 rounding 對應的 `G/R/S` 位元狀態：
+完整推導 naive 與 Kahan 的誤差界（$O(n\epsilon)$ vs $O(\epsilon)$），並分析編譯器最佳化選項（如 `-ffast-math` 與 `-fassociative-math`）如何導致 Kahan 補償機制失效。
+
+* `abs(INT_MIN)` 在二補數系統中為未定義行為（Undefined Behavior）：
+硬體運算（`~x + 1`）的溢位特性，以及 C 語言為了極致效能而採取的措施。
+
+* 推導了 $avg = avg - (avg \gg w) + (val \ll f)$ 與 EWMA 公式 $s_t = (1-\alpha)s_{t-1} + \alpha x_t$ 的等價關係。
+
+詳細可以到作業紀錄查看。
+
+
+    
+
+
+## 期末專題
+
+> 自評分數：10/10
+
+專題名稱：[改進 vwifi](https://hackmd.io/@sysprog/Bk3TgGw0Zx)
+執行人：[seallllllllll](https://github.com/seallllllllll)
+
+`vwifi` 是一個基於 Linux `cfg80211` 子系統開發的虛擬無線網路驅動，旨在透過 Linux Network Namespace 隔離技術，模擬 Station (STA) 與 Access Point (AP) 的無線傳輸環境。主要的功能擴充與改進包括：
+
+* **動態速率適應**：導入 `cfg80211_bitrate_mask`，實現基於 MCS、GI 與頻寬的傳輸速率模擬。
+* **物理層真實性**：基於 Airtime 原理實作封包序列化延遲 (Serialization Delay)，更精準模擬 Wi-Fi 傳輸損耗。
+* **可重現測試框架**：建立自動化測試腳本，如丟包模擬與速率驗證。
+
+### 專案內容
+
+
+#### Rate Control 與 Bitrate Mask
+
+將原本硬編碼 (Hardcoded) 的 MCS 31/20MHz 資訊移除，改為透過網卡 `rate_state` 動態讀取。
+
+* **技術實作**：建立 HT20 MCS 速率查詢表 (Lookup Table)，支援 Long/Short GI 切換。
+* **使用者介面**：透過 `iw dev <iface> set bitrates ht-mcs-2.4 <index>` 指令，即可即時調整虛擬網卡的實體傳輸速率，並同步反映於 `station dump` 資訊中。
+
+#### TX/RX 延遲模擬
+
+* **公式推導**：$T_{\mu s} = \lceil \frac{L \times 8 \times 1000}{R} \rceil$，其中 $L$ 為封包長度 (Bytes)，$R$ 為速率 (kbps)。
+* 使用 `hrtimer` (High-Resolution Timer) 取代傳統 `timer_list`，滿足微秒級的延遲精確度。
+* 封包排入 RX Queue 後，會被標記 `deliver_at` 時間戳，由 Timer 觸發 Workqueue 進行後續處理。
+* **除錯工具**：新增 `tx_delay_scale` 模組參數，可放大延遲倍率，利於在 `ping` 測試中觀察不同 MCS 下的 RTT 變化。
+
+
+#### Kernel Panic 除錯
+
+* **Use-After-Free 預防**：重構 `vwifi_free` 與 `vwifi_delete_interface` 的解除安裝路徑，確保先斷開鏈結再釋放資源。
+* **死鎖 (Deadlock) 解除**：修復 `cancel_work_sync` 在持有 Mutex 時呼叫引發的問題，確保模組卸載路徑安全。
+* **Race Condition 防護**：針對 `vwifi_disconnect_routine` 使用 `READ_ONCE` 與嚴格的鎖機制，防止在 Driver 狀態關閉時產生懸空指標。
+
+
+### 測試與驗證
+
+* 驗證 `iw` 指令設定是否跟 hash table 一致。證實在相同 MCS 下，Short GI 的 Bitrate 顯著高於 Long GI，且 `station dump` 資訊與預期完全一致。
+* 透過 module parameter 動態設定丟包率，模擬惡劣的無線環境。測試發現 `Destination Host Unreachable` 為常見現象，所以改成先建立 Neighbor Cache 再進行測試，提高測試的穩定性。
+* 透過調整 `tx_delay_scale`，成功在 `ping` 測試中觀察到 MCS 0、MCS 7 與 MCS 31 帶來的明顯 RTT 差異。
+
+
+### 觀摩同儕專題並提問
+
+本年度同儕專題索引於 [linux2026-projects](https://hackmd.io/@sysprog/linux2026-projects)，留下提問軌跡如下：
+
+1. Stanley0915 — 雖然關閉 `CONFIG_PRINTK_NBCON` 成功省下了約 9.7 KB 的空間，但這會失去哪些潛在的保障？特別是在單核心 noMMU 環境下，退回依賴全域鎖的舊機制。
+2. ga13234624 — 我在 vwifi 實作時有遇到 `vwifi_disconnect_routine` 寫法問題，會引發 use-after-free、race condition 等問題，導致 rmmod 時的 kernel panic。但在專案修復這邊沒有看到，想知道 rmmod 時有沒有遇到類似的事？如果有是如何解決的？
+3. kezhenx666 — Firefox 會因為 WebRTC 傳送空的 ICE Candidate `("")` 導致連線解析失敗，這是已知限制嗎？可以到 Android Open Source Project 的 Issue Tracker 搜尋或回報這個發現
+4. Patriciaath999 — 你提到 Bonobo 的 `v12_never`（有 pool、無 THP）對 TLB 有微幅貢獻，而果蠅（dm6）與人類（human）則無，是因為跨物種 anchor 分佈差異。為什麼跨物種的 sequence alignment 會導致 anchor 密度或分佈不同？
+5. ArBin1020 — 可以推測為什麼理論上的 FPR 改善，沒有轉換成實際的系統收益嗎？可能效能瓶頸在於其他地方，而不是在 Bloom filter 的 false positive？
+
+### 同儕提問回覆
+
+7 月 8 日中午前已回覆全部提問 (公開於 HackMD 留言串)，詳請可見[改進 vwifi](https://hackmd.io/@sysprog/Bk3TgGw0Zx)。
+
+
+## 與授課教師的互動
+
+> 自評分數：8/10
+
+1. 與老師信件往來討論期末專案，並更正自己面對期末專案的態度。
+2. 線上一對一面談（2026/05/25）中，老師要求在不使用標準數學函式庫（`<math.h>`）且必須避免整數乘法溢位的前提下，實作一個計算整數陣列「幾何平均數（Geometric Mean）」的函式。面談完後有深度思考過，思路以及想出來的策略已經記錄於 [google doc](https://docs.google.com/document/d/1_sgFHJjR-6Ow0yETqR73PijkNHUTtDQxCnEAyeCQlqQ/edit?usp=sharing) 中。
+4. 討論期末專案的內容，學習遇到 kernel panic 該如何解決。專案本身的問題出在 rmmod 身上，那要如何 trace code 來找到問題點？應當先了解移除模組的整個運作流程，方能往上追溯。追溯也有技巧，透過切換不吧同的 github commit 比較好找問題點（看 code 何時出現錯誤）。這些都是平常自己做學不到的寶貴經驗，也因為老師的指點我才能順利解決 kernel panic。
+5. 在課堂問答中參與模擬面試（2026/06/02），回去過後回放錄音並閱讀相關的文章以及自己過去寫的筆記，來思考回答的正確性與邏輯順序，另外也發現自己也有講話太慢（思考太久）的問題。
+
+
+## 所見所聞所感
+
+> 自評分數：10/10
+
+
+看完〈因為自動飲料機而延畢的那一年〉，其實第一個想法是覺得這位前輩很有勇氣。延畢在大家的眼裡是多嚴重、可能一輩子沒辦法洗白的事，但其實重點是你是「為了什麼」而延畢。人生沒什麼正確答案，但大家都依照著社會期待在走。面對一件「沒有標準答案」的事，要怎麼去完成它？
+
+文章開頭的等價交換原則我很喜歡，也是我在修老師上學期的計算機結構一直提醒自己的事，你想要得到什麼你就應該付出多少，沒有付出何來的成果？沒有付出怎麼會覺得自己可以勝任一切？作者付出了金錢、時間、延畢這件事，並埋首苦幹，不停的 try and error 來做出他的自動飲料機。現在的我付出了什麼？
+
+在作者的 try and error 之中我想到了每個作業、專案老師要求的細節、從推導的數學、口頭表達中的用詞，甚至是態度。在改掉之前的習慣，開始重視上述看似不那麼重要、不那麼「技術性」的事後，我覺得整個效率更高更好、方向更明確。俗話說魔鬼藏在細節裡，去重視細節，就好比蓋房子用好的材料，即使蓋到 101 層依舊穩固，不重視細節，蓋出來的也只是海砂屋罷了。
+
+
+
+## 分數計算
+
+
+
+| 項次 | 名稱 | 分數 |
+|:---:|:---|:---:|
+| 1 | 成果發表與貢獻 | 9 |
+| 2 | 作業與隨堂測驗 | 9 |
+| 3 | 期末專題 | 10 |
+| 4 | 與授課教師的互動 | 8 |
+| 5 | 所見所聞所感 | 10 |
+
+
+幾何平均 (GEOMEAN) 計算：
+
+
+$\text{GEOMEAN} = \sqrt[5]{9 \times 9 \times 10 \times 8 \times 10} = \sqrt[5]{68400} = 9.168$
+
+方案 B：$1+9=10$
+自我評量總分：10 / 10
