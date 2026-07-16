@@ -1,49 +1,173 @@
 # 2026 年 Linux 核心設計課程自我評量
-姓名：宋昱宣  
+姓名：宋昱宣
 Github 帳號：[yushiuan9499](https://github.com/yushiuan9499/)
 
 ## 成果發表與貢獻
-> ? 分
+> 8 分
 
 本學期內只有貢獻教材以及對教材相關的 Repo 發兩個尚未合併的 PR ，屬於方案 B。  
-### Github PR
-- [Switch to log2 with table lookup and interpolation](https://github.com/sysprog21/kxo/pull/31)，尚未 merge  
-    [相關筆記](https://hackmd.io/pIQ09u_pQU-LoyvJGHBrqg)  
-    2026/05/05 在閱讀 kxo 教材時，看到 `fixed_log()` 在輸入遠離 1 時會有較大的誤差。我使用公式 $\log_2(M*2^N) = N + \log_2(M)$ 與差值法將誤差控制在至多 $2^{-19}$ 之內（考量到 rounding 誤差則是 $2^{-17}$ ），並讓執行速度提昇 20 倍。於 5/11 發 PR 至上游。  
+
+### Github PR  
+- [Switch to log2 with table lookup and interpolation](https://github.com/sysprog21/kxo/pull/31)，尚未 merge
+    [相關筆記](https://hackmd.io/pIQ09u_pQU-LoyvJGHBrqg)
+    2026/05/05 在閱讀 kxo 教材時，看到 `fixed_log()` 在輸入遠離 1 時會有較大的誤差。我使用公式 $\log_2(M*2^N) = N + \log_2(M)$ 與差值法將誤差控制在至多 $2^{-19}$ 之內（考量到 rounding 誤差則是 $2^{-17}$ ），並讓執行速度提昇 20 倍。於 5/11 發 PR 至上游。
     
 - [Fix sibling selection logic](https://github.com/CMemeletzoglou/False_Sharing/pull/1)，尚未 merge
-    在實驗〈[並行程式設計: Atomics 操作](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-atomics#cache-coherence-%E5%B0%8D%E7%A8%8B%E5%BC%8F%E6%95%88%E8%83%BD%E7%9A%84%E8%A1%9D%E6%93%8A)〉的 false_sharing.c 時頻繁遇到 Segment fault ，發現是我的筆電 CPU 並非每個核都有 SMT ，使解析 CPU topology 時異常。於 06/02 發 PR 至上游  
+    在實驗〈[並行程式設計: Atomics 操作](https://hackmd.io/@sysprog/concurrency/%2F%40sysprog%2Fconcurrency-atomics#cache-coherence-%E5%B0%8D%E7%A8%8B%E5%BC%8F%E6%95%88%E8%83%BD%E7%9A%84%E8%A1%9D%E6%93%8A)〉的 false_sharing.c 時頻繁遇到 Segment fault ，發現是我的筆電 CPU 並非每個核都有 SMT ，使解析 CPU topology 時異常。於 06/02 發 PR 至上游
 
 
 ### 改進教材內容
-- 2026/03/14：將〈[從 √2 的存在談開平方根的快速運算-固定點定理](https://hackmd.io/HUzAPdVVSACpsnaj5Omvgw#%E5%9B%BA%E5%AE%9A%E9%BB%9E%E5%AE%9A%E7%90%86)〉中的證明改成直接以微分定義出發，並使前提的要求更少。  
+- 2026/03/14：將〈[從 √2 的存在談開平方根的快速運算-固定點定理](https://hackmd.io/HUzAPdVVSACpsnaj5Omvgw#%E5%9B%BA%E5%AE%9A%E9%BB%9E%E5%AE%9A%E7%90%86)〉中的證明改成直接以微分定義出發，並使前提的要求更少。
 
 ### 修正教材
-- 2026/04/14：〈[歐拉數 e: 描述連續變化的基石-泊松分佈](https://hackmd.io/Klv5TiUUSHKnCCMeVcnIIw#%E6%B3%8A%E6%9D%BE%E5%88%86%E4%BD%88)〉中有一段證明的文字描述少了「減去 $P(t)$」的步驟，將其補上  
-- 2026/05/15：〈[你所不知道的 C 語言: 浮點數運算](https://hackmd.io/tbHqxe19SdafIq0XdBnJzQ#)〉提到  
+- 2026/04/14：〈[歐拉數 e: 描述連續變化的基石-泊松分佈](https://hackmd.io/Klv5TiUUSHKnCCMeVcnIIw#%E6%B3%8A%E6%9D%BE%E5%88%86%E4%BD%88)〉中有一段證明的文字描述少了「減去 $P(t)$」的步驟，將其補上
+- 2026/05/15：〈[你所不知道的 C 語言: 浮點數運算](https://hackmd.io/tbHqxe19SdafIq0XdBnJzQ#)〉提到 
      > 因為分數的數量是不可數的
  
-     然而分數，也就是有理數，是可數的（利用互質形式的 $p/q$ 映射到 $(\text{p-th prime})^q$ 這個概念可證明有理數不比整數多）。文中想要表示的概念應為任意有限精度的浮點數，其 ULP 之間一定存在一個有理數無法被表示，此為數學的稠密性。  
-- 2026/06/04：發現 〈[kxo-定點數平方根](https://hackmd.io/vauBAFkSToyAr9MbJicgyg#)〉中的實作已經提前回傳輸入是 0 的狀況，因此不必額外執行 `x | 1` 的運算，並修改教材。  
+     然而分數，也就是有理數，是可數的（利用互質形式的 $p/q$ 映射到 $(\text{p-th prime})^q$ 這個概念可證明有理數不比整數多）。文中想要表示的概念應為任意有限精度的浮點數，其 ULP 之間一定存在一個有理數無法被表示，此為數學的稠密性。
+- 2026/06/04：發現 〈[kxo-定點數平方根](https://hackmd.io/vauBAFkSToyAr9MbJicgyg#)〉中的實作已經提前回傳輸入是 0 的狀況，因此不必額外執行 `x | 1` 的運算，並修改教材。
 
 ### 修錯字
-- 2026/03/08：〈[你所不知道的 C 語言：數值系統](https://hackmd.io/eSVH5k6SQ7OrzZ5cT-uiKg)〉中的算式 $\frac{b\ln(e)}{e\ln(b)}=\frac{b}{\ln(b)}$ ，右式缺了分母的 $e$ 。  
-- 2026/05/15：〈[你所不知道的 C 語言: 浮點數運算 - BFloat16](https://hackmd.io/tbHqxe19SdafIq0XdBnJzQ#BFloat16)〉部份 FP16 被誤植為 BP16 。  
-- 2026/06/03：編譯〈[並行程式設計: Atomics 操作](https://hackmd.io/OVPTyhEPTwSHumO28EpJnQ#%E8%99%95%E7%90%86%E5%99%A8%E6%9E%B6%E6%A7%8B%E5%92%8C%E5%85%B6-Memory-Order)〉中的 `reorder.c` 時遇到編譯器警告 `printf()` 的參數 (`int64_t`) 與 `%d` 不相符，將其修改為 `%ld` 。  
+- 2026/03/08：〈[你所不知道的 C 語言：數值系統](https://hackmd.io/eSVH5k6SQ7OrzZ5cT-uiKg)〉中的算式 $\frac{b\ln(e)}{e\ln(b)}=\frac{b}{\ln(b)}$ ，右式缺了分母的 $e$ 。
+- 2026/05/15：〈[你所不知道的 C 語言: 浮點數運算 - BFloat16](https://hackmd.io/tbHqxe19SdafIq0XdBnJzQ#BFloat16)〉部份 FP16 被誤植為 BP16 。
+- 2026/06/03：編譯〈[並行程式設計: Atomics 操作](https://hackmd.io/OVPTyhEPTwSHumO28EpJnQ#%E8%99%95%E7%90%86%E5%99%A8%E6%9E%B6%E6%A7%8B%E5%92%8C%E5%85%B6-Memory-Order)〉中的 `reorder.c` 時遇到編譯器警告 `printf()` 的參數 (`int64_t`) 與 `%d` 不相符，將其修改為 `%ld` 。
 
-<!-- TODO: 非常 Trivial 的修錯字需要放嗎？目前決定不放 -->
+### Trivial 的修錯字
+- 2026/02/26：刪除〈[從熱力學第二定律到系統軟體：機率、資訊熵與現代作業系統的大融通](https://hackmd.io/6qa8UgUeSy22p_tTY0d5-Q)〉中的贅字「亦即『即』統計力學中的」
+- 2026/03/13：刪除〈[你所不知道的 C 語言：前置處理器應用篇](https://hackmd.io/J1Y5L55KS_OVEOQciiu_eg#)〉中多餘的「—」
+- 2026/03/24：〈[你所不知道的 C 語言：編譯器和最佳化原理篇](https://hackmd.io/VerfJi2ZSIO0RbgeL2ppGQ#)〉，"target tripe" -> "target triple"
+- 2026/03/31：修正〈[錯誤更正碼介紹和實作考量](https://hackmd.io/2xkLnKGIRt-bZokpCyAgTw#)〉中的 Latex 排版，原版的公式會連在一起導致不好閱讀
+- 2026/04/06：刪除〈[你所不知道的 C 語言: 執行階段程式庫 (CRT)](https://hackmd.io/dUD91WrNQgugW3pM9fqcDg#)〉中的贅字「我們就需要理解『就』 C Run-Time Library 」
+- 2026/04/22：〈[Linux 核心設計: Scheduler(2): 概述 CFS Scheduler](https://hackmd.io/9ktsi7dQR823VChlW1SyEw#)〉， "weigth" -> "weight"
+- 2026/05/26：〈[〈Concurrency Primer〉導讀](https://hackmd.io/sTO7HhyuR1-KKY6TJRA7Xw#)〉補上「『有』時候不用」
+- 2026/06/12：〈[並行程式設計: Lock-Free Programming](https://hackmd.io/-YnlOxYUQxOHI-CJptK7BQ)〉 C 語言的 `thread—->out` -> `thread->out`。
+- 2026/06/15：〈[並行程式設計: Hazard pointer](https://hackmd.io/1qjBY-JZR8GHCjQADDJdcQ#)〉，「時後」 ->「時候」
 
+## 作業與隨堂測驗
+> 8 分
+
+執行了 4 項作業。
+
+### 作業完成度
+- [作業一 warmup](https://hackmd.io/@yushiuan9499/linux2026-warmup)：
+    - 探討〈資訊科技詞彙翻譯〉：完成
+    - 探討〈解讀計算機編碼〉：數學計算的部份都有完成，但是有三個搜索 Linux 程式碼和 CVE/CWE 沒有找到，以及後來想到的問題也還沒完成。
+    - 探討〈你所不知道的C語言：指標篇〉：完成
+    - 探討〈linked list 和非連續記憶體〉：僅有 indrect pointer 、AddressSanitizer 原理、 Linux 的 merge sort 是 stable 的證明、量化鍊結串列與陣列的數學模型有完全完成。延遲合併能降低比較次數僅提出發生場景，無法證明。
+    - 細讀〈Linux: 作業系統術語及概念〉：僅最後兩題的「$f : (P, t) \rightarrow C$ 是否應視為時間函數」和「分析 Linux 為何能持續演化」沒有完成。
+    - 探討〈從熱力學第二定律到系統軟體：機率、資訊熵與現代作業系統的大融通〉：僅回答較簡單的題目，如給定命題後提出虛無假說與對立假說、推導 M/G/1 的 P-K 公式的性質、參考論文後推導 EEVDF 的誤差上限
+    - 誠實面對期初考題：寫到測驗四的延伸問題
+- [作業二 stdc](https://hackmd.io/@yushiuan9499/linux2026-stdc)：
+    - 思索〈分析「快慢指標」〉：有以 perf 實驗兩種 middle_node() 演算法並觀察現象，但是無法完整的解釋差異的原因。
+    - 細讀〈你所不知道的 C 語言：數值系統篇〉：分析 0.1 無法以二進位表示的原因、分析平衡三進位的優勢並與二補數比較、分析 1-bit LLM 的優勢、比較 `(x+y)/2` 和 $(x \& y) + ((x \oplus y) >> 1)$ 、分析 Linux 中的 `is_power_of_2()` 、分析以 `((X) - 0x01010101) & ~(X) & 0x80808080` 偵測 NULL 的方法。
+    - 細讀〈你所不知道的 C 語言: bitwise 操作〉：探討 Linux 不以有號數作為 flag 的原因、分析 Linux 在紅黑樹使用指標最低位元存放節點顏色的技巧及可能的可攜性問題、分析有號數與無號數（ sizeof 的結果）混用的風險、推導 $abs(n) = ((n >> 31) \oplus n) - (n >> 31)$ 的正確性
+    - 分析〈類神經網路的 ReLU 及其常數時間實作〉：分析算術右移複製 sign bit 為何通常可行以及其風險、分析 Linux 如何避免位元語意的 implementation-defined 的問題、實驗不同方法計算 ReLU 的成本
+    - 分析〈從 √2 的存在談開平方根的快速運算〉：分析以二分搜和 digit-by-digit 的方法計算 `isqrt()` 的成本、比較線性收斂和二次收斂的時間成本
+    - 探討〈Linux 核心原始程式碼的整數除法〉：證明 `#define DIV_ROUND_UP(n, d) (((n) + (d) - 1) / (d))` 的正確性並擴展成負數的版本
+- [作業三 basics](https://hackmd.io/PAIE3sE9Qg-LgAgImCHiIg)：
+    - 細讀〈有限體算術與索引：Linux 核心對數學封閉性與硬體成本的權衡〉：分析 Linux hash 的數學性質、在參考論文後證明 three-gap theorem
+    - 細讀〈最大公因數特性和實作考量〉：分析 binary GCD 的正確性及最壞執行次數、在參考論文後推導 `vli_mod_inv()` 的正確性
+    - 細讀〈浮點數運算〉：分析浮點數減法的誤差、證明 `__div64_32()` 的正確性、推導 $x_{n+1} = x_n (2 - D \cdot x_n)$ 會收斂至 $1/D$ 並分析其可行性。
+- [作業四 introspect](https://hackmd.io/Td1zoMDsQzuHF4onq1JNQg)：
+    選擇的主題是 Linux 中雜湊函數，主要是延伸作業三中的 three-gap theorem 和教材中描述到使用 $\phi$ 能夠讓雜湊結果更均勻。
+    其實教材中有一張證明的照片，但是對我而言太過跳躍、看不懂，所以在作業四中是以我自己會的方法重新證明該定理。
+    最後把證明結果對應到實驗結果中。
+
+## 期末專題
+> 4 分
+
+題目： kxo，延伸 kxo 核心模組，整合 workqueue (per-cpu workload)，精準控制 CPU load (budget/migrate)
+原始碼：公開於 [yushiuan9499 的 github](https://github.com/yushiuan9499/kxo/tree/balance-load)
+[開發紀錄](https://hackmd.io/@sysprog/ry2yLyOfGg)
+
+### 內容
+- 以 EWMA 紀錄每個 ai 所需的執行時間，用來提示排程器同一 CPU 上可以放多少 work 。
+- 以每次分配 work 時給予 CPU budget 的方式紀錄
+- 一個用來 load-balance 並判斷是否需要 migrate 的演算法，並以 per-CPU workqueue 和 `queue_work_on()` 來控制 work 要在哪個 CPU 上執行
+- 在 MCTS 內部新增 hash table ，讓 MCTS 可以提前 return ，使分配 work 的顆粒度提高。
+**以下與 load-balance 無直接相關**
+- 移除 mcts 的 mutex lock ，將 mcts 的 throughput 提高 3 倍。
+
+### 貢獻
+專題前後是有讓 kxo 變快，但是所有的效能改進偏偏都與原本題目要求的 load-balance 無關。
+雖然有辦法控制 CPU 要跑在哪一個 CPU 上，但就是一直找不到方向使效能比原本的 unbound-workqueue + `queue_work()` 還要好。
+也就是說，有貢獻，但不及格。
+
+<!-- TODO: 這裡還有一大堆東西要補，但我要先完成專題 -->
 
 ## 與授課教師的互動
-> ? 分
+> 8 分
 
 一對一討論共 1 次，課堂問答共 3 次。
 
 ### 一對一討論
-- 2026/05/30：討論 false_sharing.c 的目的、內容，並且在討論結束後要找出 false_sharing.c segment fault 的原因。在最後決定了期末專題的方向為 kxo 。
+- 2026/05/30：討論 false_sharing.c 的目的、內容，並且在討論結束後要找出 false_sharing.c segment fault 的原因。在最後決定了期末專題的方向為 kxo 。  
+  關於 false_sharing.c 的 segment_fault ，因為當時已經透過 dmesg 和 objdump 得知 rip 的位置，但是因為是處於迴圈中，而且不是每次都會觸發，所以用 gdb 很難找到原因，後來是把函式的每個區塊的輸入輸出都分割出來各自執行才發現是源自於程式假設每個 CPU 的 SMT 都是相同的，而我的 CPU 是 Meteor Lake ，僅有 P core 有 Hyper-Threading ，導致程式預期讀到的 SMT pair 數不同，最終越界存取。
 
 ### 課堂問答
-- 2026/03/10：詢問 Merge sort 為什麼比 Quick sort 還適合 linked list 以及為什麼 Quick sort 在陣列上能夠比較快。問答最後發現 Merge sort 的最差比較次數比 Quick sort 的最佳比較次數少，並且由授課老師提示到 Merge sort 存在 cache-aware 的版本。
-- 2026/04/23：詢問 fork 與 clone 的差異以及 clone 的各個 flags 的功能以及應用場景。
-- 2026/06/11：詢問 concurrency-primer.pdf 中 CAS 章節的程式碼細節，如為什麼 job 當中要使用 function pointer 、為什麼要提前初始化一批 worker。並在問答後閱讀〈[並行程式設計: Hazard pointer](https://hackmd.io/1qjBY-JZR8GHCjQADDJdcQ#)〉。
+- 2026/03/10：詢問 Merge sort 為什麼比 Quick sort 還適合 linked list 以及為什麼 Quick sort 在陣列上能夠比較快。問答最後發現 Merge sort 的最差比較次數比 Quick sort 的最佳比較次數少，並且由授課老師提示到 Merge sort 存在 cache-aware 的版本。  
+- 2026/04/23：詢問 fork 與 clone 的差異以及 clone 的各個 flags 的功能以及應用場景。  
+- 2026/06/11：詢問 concurrency-primer.pdf 中 CAS 章節的程式碼細節，如為什麼 job 當中要使用 function pointer 、為什麼要提前初始化一批 worker。並在問答後閱讀〈[並行程式設計: Hazard pointer](https://hackmd.io/1qjBY-JZR8GHCjQADDJdcQ#)〉。  
 
+## 所見所聞所感
+> 9 分
+
+### 關於〈[因為自動飲料機而延畢的那一年](https://www.opasschang.com/docs/the-story-of-auto-beverage-machine-1)〉
+文中有最讓我有感觸的是，讀機械不會做機械、讀電工不會焊接。我是電機系的，雖然文中的焊接技巧我都知道，但上大學至今只有焊接過兩次，所以我的表現應該會跟文中的電工系同學差不多。再更仔細觀察後，確實如同文中所述，我修了些課，但只會理論不會應用。以這堂課為例，我雖然修過離散數學，但看到作業三的所要求的 three-gap theorem 證明，我當下認為自己的知識是不足以證明的，後來是因為對這個問題感興趣，所以花了幾天去找別人的證明並一字一句的讀懂它的想法才證出來，這才發現證明幾乎是建立在國中就會的比大小上，唯一的高中知識是無理數的正整數倍是無理數，大學的完全沒有，完全就是懂理論但不會用的寫照。這也是我作業四繼續證明 $\phi$ 在 three-gap theorem 中的性質的原因之一，因為我推測這也是我的知識能夠做到的事，我想要確保自己會用。  
+
+### 關於 render
+作業一中讓我發現兩件事，
+第一， render 有很多意思。一開始我只知道電腦算繪和繪圖呈現這兩個意思，但當我看了 Linux 當中那 3000 多次使用 render （沒全看完，巨集、變數名因為會出現好幾次，所以只挑第一次出現看），才發現意思非常多。首先不只是輸出圖片， render 還能是輸出聲音、文字還有不同的資料結構，接著是「使 ... 變得 ... 」的用法，這就與算繪沒多大的關聯了，最後還有產生的意思。  
+第二， render 不適合翻成「渲染」。教材中有提到 render 的意思是「如實」地「展現」，然而渲染卻會誇大、突出，明顯不合，因此我就改變過去習慣，改成使用算繪。另外，我覺得比起 render ，也許渲染更適合 highlight ，因為 highlight 是真的要突顯出關鍵字等重要資訊。  
+
+### 關於數學
+這堂課學到最多的就是數學了，也是所有課中學到最多新的數學知識。
+
+從最開始的期初的隨堂測驗被問到為何 Merge Sort 比 Quick Sort 適合 linked list 等問題時卻答不上來，回去後去解遞迴關係式、閱讀論文，從過去只會算時間複雜度變成能夠算出這兩個演算法的準確比較和交換次數。
+
+作業中的學會了如何去證明各種數學定理，從位元運算的正確性證明到浮點數的誤差分析，再到最後從頭以自己的方法證明 $\phi$ 的 three-gap theorem 的性質。
+
+還有在讀 kxo 教材時發現可以使用對數可以把乘法轉成加法的特性提昇計算準度以及後來用泰勒展開式嚴謹的估算插值法的誤差上界。
+
+
+### 關於 Linked list 的細節
+在讀過〈[你所不知道的 C 語言: linked list 和非連續記憶體](https://hackmd.io/@sysprog/c-linked-list#%E5%BE%9E-Linux-%E6%A0%B8%E5%BF%83%E7%9A%84%E8%97%9D%E8%A1%93%E8%AB%87%E8%B5%B7)〉後才知道可以使用指標的指標寫出更簡潔的程式碼，後續也有實際使用該技巧。以及利用 `struct list_head` 嵌入結構體與 `container_of` 的技巧，使得操作 linked list 的 API 只要針對 `struct list_head` 一種型別即可。這讓我發現即便是如 linked list 之類的基本功，也有許多值得深入學習的細節。  
+
+### 關於 C 語言
+這門課是我第一次把 C 語言標準拿來詳細的讀，讓我發覺我對 C 語言的認知僅限於 gcc 的 C 語言的一部分，諸如有號數可以用二補數以外的數字表示、undefined behaviour 與最佳化的關係都是上過這堂課才知道的。從這個過程中，我發現如果想要寫出可移植的程式碼，測試是不夠的，必須要直接讀語言的標準才行。
+
+讀標準雖然很費精神（有些內容寫得真的很繞），但我覺得挺有趣的，因為可以學到不少一般程式課程不會學到的東西，像是無號數的 "overflow" 行為是被保證為 wrap-around 、下面的函式可以回傳 `NULL` 。  
+```c
+int *f()
+{
+    int x = 0;
+    return &x;
+}
+```
+
+因為以上原因，我開始會在學語言時讀標準，例如這學期因為電機系的課程需要寫 verilog ，我就直接下載一份 verilog 2005 標準，用來對照自己寫的語法在標準中是如何規定。
+
+
+### 關於自身投入的回顧
+學期 20 週，平均每週投入 16 小時。主要是投入在閱讀、觀看課程教材與作業當中，前者的間接證據是我修正了 16 篇教材（含 trivial 錯字），再來是完成課堂問答的後續深入，最後就是準備開頭提到的那兩個尚未 merge 的 PR，這包含最初的發現並解決問題、後續的實驗與驗證。最後是有延伸課程內容進行實驗、數學推導與研究 C 語言規格書，但這部份沒有公開的證據。
+
+## 分數計算
+| 項次 | 名稱 | 分數 |
+| :-: | :--: | :-: |
+| 1   | 成果發表與貢獻 | 8 |
+| 2   | 作業與隨堂測驗 | 8 |
+| 3   | 期末專題 | 4 |
+| 4   | 與授課教師的互動 | 8 |
+| 5   | 所見所聞所感 | 9 |
+
+幾何平均 (GEOMEAN) 計算
+$\text{GEOMEAN} = ^5\sqrt{8 \times 8 \times 4 \times 8 \times 8 \times 9} = ^5\sqrt{18432} = 7.13$
+驗算 $7.13^5 = 18426.70$, $7.14^5 = 18556.29$ ，符合定義
+
+方案選擇：  
+
+- 方案 A 適用條件：對 Linux, glibc, gcc, llvm, lkmpg, rv32emu, kbox, elfuse 等專案做出超過 3 項 non-trivial 貢獻並獲開發者採納。  
+- 本人不滿足。  
+- 採方案 B： $1 + \lfloor \text{GEOMEAN} \rfloor = 1 + 7 = 8$ 。  
+
+自我評分總分： 8/10
