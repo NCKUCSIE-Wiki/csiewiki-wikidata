@@ -1,6 +1,6 @@
 # 2026 年 Linux 核心設計課程自我評量
 
-姓名:張力升　GitHub:JOJOTOOL (https://github.com/JOJOTOOL)
+姓名:張力升　GitHub:[JOJOTOOL](https://github.com/JOJOTOOL)
 
 本自我評量遵循本課程評量準則:以客觀事實為主,強調過去與現在、不寫「期許自己」這類對未來的空泛承諾;所有產出均附公開紀錄(commit、PR、HackMD、pcap 佐證),可逐項查證。
 
@@ -99,6 +99,7 @@ kbox 最初的網路以 SLIRP 實作,只支援 outbound TCP/UDP(commit [`ba08934
 ### 課堂問答軌跡
 
 2026/3/17 
+2026/6/9
 
 ---
 
