@@ -12,7 +12,7 @@ Github 帳號：[tobiichi3227](https://github.com/tobiichi3227/)
 - [Fix high CPU usage when game paused](https://github.com/sysprog21/kxo/pull/32)
 2026/06/02 在執行 kxo 發現當暫停畫面更新時，CPU 使用率會增加。
 透過 perf 工具發現在暫停時 `__x64_sys_write()` 與 `__se_sys_pselect6()` 等函式佔 CPU sample 比例到達 60%。
-經過研究發現是因為 `select()` 會直接返回，但 `else if (read_attr && FD_ISSET(device_fd, &readset))` 條件不會成立，會繼續更新 TUI 然後再回到 main loop 繼續呼叫 `select()`，所以在畫面暫停時不該繼續監聽 `/dev/kxo`。
+經過研究發現是因為在畫面暫停下 `select()` 會直接返回，但 `else if (read_attr && FD_ISSET(device_fd, &readset))` 條件不會成立，會繼續更新 TUI 然後再回到 main loop 繼續呼叫 `select()`，所以在畫面暫停時不該繼續監聽 `/dev/kxo`，只需監聽 STDIN 即可。
 
 ### LLVM PR
 - [[clang][Sema] Fix crash when checking scalar type with excess braces](https://github.com/llvm/llvm-project/pull/192471)(尚未合併)
@@ -45,7 +45,7 @@ Github 帳號：[tobiichi3227](https://github.com/tobiichi3227/)
 
 ## 作業與隨堂測驗
 
-> 5 分
+> 4 分
 
 執行了三個作業。
 
@@ -121,13 +121,13 @@ Github 帳號：[tobiichi3227](https://github.com/tobiichi3227/)
 | 項次 | 名稱 | 分數 |
 | :-: | :--: | :-: |
 | 1   | 成果發表與貢獻 | 6 |
-| 2   | 作業與隨堂測驗 | 5 |
+| 2   | 作業與隨堂測驗 | 4 |
 | 3   | 期末專題 | 0 |
 | 4   | 與授課教師的互動 | 4 |
 | 5   | 所見所聞所感 | 8 |
 
 幾何平均 (GEOMEAN) 計算
-$\text{GEOMEAN} = ^5\sqrt{6 \times 5 \times 0 \times 4 \times 8} = ^5\sqrt{0} = 0$
+$\text{GEOMEAN} = ^5\sqrt{6 \times 4 \times 0 \times 4 \times 8} = ^5\sqrt{0} = 0$
 驗算 $0^5 = 0$，符合定義。
 
 方案選擇：
