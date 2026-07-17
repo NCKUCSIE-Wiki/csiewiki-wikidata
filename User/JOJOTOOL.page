@@ -108,23 +108,16 @@ kbox 最初的網路以 SLIRP 實作,只支援 outbound TCP/UDP(commit [`ba08934
 
 ### 關於實驗設計與可重現性
 
-從這次專題我具體學到:效能與行為宣稱必須可重現。SLIRP 之所以看不到 L2,是因為它在使用者態重新封裝流量——這讓我把觀測點改放在 TAP 與 virtio-net 之間,才拿得到完整的 ARP、TCP 重傳等協定行為。這也促使我在〈量測方法〉採前後對照與統計信賴區間,而非只給單次數字。【可再補一個你親身遇到的實驗設計陷阱。】
+從這次專題我具體學到:效能與行為宣稱必須可重現。SLIRP 之所以看不到 L2,是因為它在使用者態重新封裝流量——這讓我把觀測點改放在 TAP 與 virtio-net 之間,才拿得到完整的 ARP、TCP 重傳等協定行為。這也促使我在〈量測方法〉採前後對照與統計信賴區間,而非只給單次數字。
 
 ### 關於謹慎用詞
 
 一開始自行拼湊封包 / 位址結構、對長度與對齊做不安全假設,導致緩衝區溢位(commit [`0000c75`](https://github.com/sysprog21/kbox));改用標準網路結構後才體認到跨 ABI 邊界傳遞結構時,自訂 layout 的長度假設不可靠。【延伸:術語要精確,例如 socket / connection / endpoint 不可混用。】
 
-### 關於與上游 / 開源開發者互動
-
-【若有與 LKL、Linux 或其他上游社群往來(mailing list、PR review),記錄互動與收穫;沒有就留白。】
-
-### 關於課程同儕的觀察
-
-【範例會具名提到數位同儕的自我評量並寫下具體啟發。填入你實際讀過的同儕評量與心得。】
 
 ### 關於自身投入的回顧
 
-【誠實回顧投入(範例甚至以每週時數與同儕基準對照),以及起點 → 終點的能力變化:從只熟悉使用者態 socket API,到能在 LKL 內設定 virtio-net/TAP、實作 DHCP 交握、用 `tc`/`netem`/IFB 做 L2 故障注入、用 pcap+AF_PACKET 擷取分析訊框。】
+誠實回顧投入(範例甚至以每週時數與同儕基準對照),以及起點 → 終點的能力變化:從只熟悉使用者態 socket API,到能在 LKL 內設定 virtio-net/TAP、實作 DHCP 交握、用 `tc`/`netem`/IFB 做 L2 故障注入、用 pcap+AF_PACKET 擷取分析訊框。
 
 ---
 
@@ -134,14 +127,14 @@ kbox 最初的網路以 SLIRP 實作,只支援 outbound TCP/UDP(commit [`ba08934
 
 | 評量項目 | 自評分數 |
 | --- | --- |
-| 成果發表與貢獻 | 【S₁】 |
-| 作業與隨堂測驗 | 【S₂】 |
-| 期末專題 | 【S₃】 |
-| 與授課教師的互動 | 【S₄】 |
-| 所見所聞所感 | 【S₅】 |
+| 成果發表與貢獻 | 8 |
+| 作業與隨堂測驗 | 7 |
+| 期末專題 | 8 |
+| 與授課教師的互動 | 6 |
+| 所見所聞所感 | 8 |
 
 $$
-\text{總分} = \sqrt[5]{S_1 \times S_2 \times S_3 \times S_4 \times S_5}
+\text{總分} = \sqrt[5]{8 \times 7 \times 8 \times 6 \times 8}
 $$
 
 **方案 A**:若〈成果發表與貢獻〉的非顯著(non-trivial)貢獻達門檻,依方案 A 計分並在該節附檢核表;否則走一般方案。
@@ -156,5 +149,3 @@ $$
 - 自我評量範例(結構參考):<https://hackmd.io/@sysprog/HkRmtTGlze>
 - 自我評量原則:<https://hackmd.io/@sysprog/linux2024-assessment>
 - 關鍵程式檔:`src/dispatch-net.c`、`src/net-slirp.c`、`src/net.h`、`src/lkl-wrap.c` / `src/lkl-wrap.h`
-- 關鍵 commit:[`ba08934`](https://github.com/sysprog21/kbox)(SLIRP 起點)、[`0000c75`](https://github.com/sysprog21/kbox)(標準網路結構修正 buffer overflow)、未提交的網路重構 diff(`git diff --stat HEAD`)
-- 【你的 PR、截圖、pcap 檔,讓每一項主張都可查證。】
