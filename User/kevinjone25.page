@@ -1,0 +1,107 @@
+姓名: 鄭智元 GitHub 帳號: [kevinjone25](https://github.com/kevinjone25)
+
+本份自我評量遵循[課程自我評量指引](https://wiki.csie.ncku.edu.tw/)的書寫規範,避免「期許自己」、「已盡最大努力」等空泛承諾,所有產出皆附上對應的公開軌跡,包含 GitHub commit、PR 與 HackMD 開發紀錄。各項自評分數皆為 1 到 10 的整數,最末以幾何平均計算總分並適用方案 B。
+
+## 作業與隨堂測驗
+
+完成 1 份主作業與 9 次測驗,其中 2 次為期初測驗;主作業僅及 Homework1 且未臻完整,詳見下方說明。開發紀錄公開於 HackMD,每週平均投入約 15 小時。
+
+### 主作業時間軸
+
+- 2026/04/14 — `2026q1 Homework1` warmup 作業 — [開發紀錄](https://hackmd.io/I8qo7EntRJCKNpLO-JJhDQ):辨析 render、constant 與 immutable、concurrent 與 parallel,以及 job、process、thread、task 各自對應的核心實作層次;並延伸〈從熱力學第二定律到系統軟體〉,把尾部可重現、吞吐分段平穩、排程誤差無長期漂移三項穩定條件改寫為可檢定的統計假說,分別對應 Kolmogorov-Smirnov 與 KPSS 檢定。
+作業面如實記錄兩處缺口:Homework1 未臻完整,熱力學延伸章節僅完成統計假說的改寫,M/G/1 的 P-K 公式推導、EEVDF lag 有界性證明與 entropy rate 計算均未展開,期初考題的延伸問題亦未進行;Homework2,3 未能進行, 不符合作業才是本體的標準。
+
+### 隨堂測驗軌跡
+
+第 1 週與第 3 週為期初測驗,一併列於此,其餘 7 次為隨堂測驗:
+
+- 第 1 週 — 期初測驗:
+- 第 3 週 — 期初測驗:<!-- -->
+- 第 5 週 — 位元操作與數值系統:<!-- -->
+- 第 6 週 — TurboQuant 向量量化:<!-- -->
+- 第 7 週 — 排程器,在家測驗:<!-- -->
+- 第 10 週 — 並行程式設計:<!-- -->
+- 第 13 週 — 《Demystifying the Linux CPU Scheduler》第 1 章與第 2 章:<!-- 一句話講該次的解題關鍵 -->
+- 第 15 週 — C11 記憶體模型:<!-- -->
+- 第 16 週 — C11 Atomics 與 lock-free SPSC:<!-- -->
+
+> 4 分
+
+## 期末專題
+
+題目: kbox 的 BPF 可觀測性 —— 在以 LKL 為核心的 kbox 中打通 bpf 系統呼叫路徑,並對核心內的 BPF verifier 建立逐指令的觀測與量測管線,將載入時的驗證過程輸出為 Perfetto 可視化的時間軸。
+開發紀錄: 公開於 [HackMD](https://hackmd.io/@sysprog/SkEImzwC-g),GitHub: [kevinjone25/kbox](https://github.com/kevinjone25/kbox)
+
+### 設計與實作
+
+
+- syscall 打通路徑:host 與 LKL 的 syscall 編號表加入 `bpf`,新增 `--enable-bpf` opt-in 旗標與 supervisor 端 plumbing,LKL kernel build 開啟 BPF syscall 與 BTF,對應 commit `0000918`、`0000268` 與 `0000aaf`
+- dispatcher 轉發:`BPF_MAP_CREATE`、`BPF_OBJ_GET_INFO_BY_FD`、`BPF_PROG_LOAD` 三個命令依序經 dispatcher 轉發進 LKL,並以 guest 端測試驗證整條 pipeline,對應 commit `0000d35`、`0000c38`、`0000a75` 與 `0000303`
+- 觀測輸出:新增 `src/bpf-trace.c` 模組輸出 Chrome Trace JSON,`--bpf-trace` CLI 旗標貫穿 supervisor context,並於 `BPF_PROG_LOAD` 時記錄 verifier 事件,對應 commit `00004db`、`000028c` 與 `0000c39`
+- verifier 深度觀測:BPF helper allowlist 與 verifier metrics、逐指令 verifier trace events、靜態 CFG edges、per-prog tracks 與 state counters,以及循 Path B 路線對 LKL verifier state exploration 進行儀器化與狀態探索分析,對應 commit `0000a3a`、`0000beb`、`0000ec3`、`00007b7`、`00006a6` 與 `000048d`
+
+### 關鍵推導與除錯發現
+
+- 原以為 bpf 的 syscall 編號跨架構一致,對照核心的 syscall 表才發現 x86_64 是 321,aarch64、riscv64 與 loongarch 則是 280;因此在 `src/syscall-nr.h` 與 `src/syscall-nr.c` 為各架構分別維護編號,並將 bpf 自 `src/seccomp-bpf.c` 的 deny list 移除,而非硬編碼單一數值。
+- 在寫的時候想說 supervisor 拿到 guest 傳來的指標可以直接取值,實際上 guest process 的虛擬位址在 supervisor context 直接 dereference 會使程式崩潰;因此所有 `bpf_attr` 一律經 `guest_mem_read` 複製進 supervisor 本地緩衝,並在 attr_size 超過 `union bpf_attr` 大小時直接回報錯誤,防止被竄改的長度欄位越界。
+- LKL 回傳的檔案描述子可以直接交還 guest,追蹤後確認 guest process 與 LKL 內部是兩套互不相通的 fd 空間,必須經 fd_table 建立映射;首次量測中 prog_vfd 出現 32769 這樣的值,正是這層映射存在的直接證據。
+- BPF_PROG_LOAD 的指令緩衝有一條隱形的複製鏈:`attr->insns` 進到 LKL 時已是 supervisor 位址而非 guest 位址,而 LKL 的 `copy_from_bpfptr` 依 `uattr.is_kernel` 決定走 `copy_from_user` 或 `memcpy`;必須先把 guest 的指令複製進 supervisor 緩衝,再以 `make_bpfptr` 標記為 kernel space。license 字串同理,以 128 位元組的 stack buffer 承接,長度保留結尾位元組以防溢位。
+- 原本將 tail call 納入 helper 白名單,想分析它特殊的跳轉行為;實作後發現它依賴 `BPF_PSEUDO_MAP_FD` 的 fd 值判斷,而當時 vfd 與 LKL fd 的 mapping 尚未完成,verifier 會拿到錯誤的 fd,於是改以不需權限檢查的時間類 helper 進行測試,tail call 留待 mapping 完成後再處理。
+- Chrome trace 格式的時間戳單位是微秒而非奈秒,`kbox_timer_ns` 的讀值須除以 1000 才能正確落在 Perfetto 時間軸上;另依專題提出的 - dispatch 緩衝皆為靜態、不做 heap allocation,verifier 日誌不另行配置,共用 128 KB 靜態緩衝並以 64 KB 為上限。
+
+### 量測方法與結果
+
+- 量測方式:於 guest 內執行自建的 bpf-test,以 `./kbox -S alpine.ext4 --enable-bpf --bpf-trace=/tmp/v.json` 啟動,verifier 事件經 `--bpf-trace` 輸出為 Chrome Trace JSON;離線可直接以 Chrome tracing 開啟,有網路時上傳 Perfetto UI 檢視。
+- 首筆 BPF_PROG_LOAD 量測:載入僅含 r0 = 0 與 exit 兩道指令的 SOCKET_FILTER 程式,載入含驗證共耗時 48 微秒,verifier 回傳 0,guest 取得的虛擬 fd 為 32769,證實 syscall 轉發、驗證與 fd 映射整條路徑已打通。
+- 環境設定:LKL 開啟 BTF、關閉 JIT,使分析停留在 verifier 與直譯層,避免原生碼干擾;BPF 命令面僅開放 MAP_CREATE、PROG_LOAD 與 OBJ_GET_INFO_BY_FD,attach 類操作一律拒絕,以縮小攻擊面。
+
+
+### 觀摩同儕專題並提問
+
+無
+
+### 回應提問
+
+
+
+> 7 分
+
+## 與授課教師的互動
+
+課堂問答 1 次、模擬面試 1 次。
+
+- 2026/05/21 — 課堂問答:授課教師人在美國,以線上方式提問,內容涵蓋三個主題。
+  其一問 `sched_prio_to_weight` 為何恰有 40 個單元:我的回答是 nice 值的範圍為 -20 到 +19,共 40 個整數,權重表為每個 nice 值各留一個單元;依 nice 手冊頁與 sched 手冊頁,現代 Linux 系統採用 -20 到 +19 的範圍,而 2.0 以前的早期核心為負無窮到 +15,其依據為 POSIX.1-2008 所訂定的 NZERO。
+  其二問 CFS 的 fairness 如何達成:我的回答是 CFS 以 vruntime 衡量一個 task 對 CPU 的需要程度,vruntime 越小代表對 CPU 的需要越高;實際配時則以 nice 值查 `prio_to_weight` 權重表,按權重比例分配 CPU 時間。
+  其三圍繞 Linux 核心的 linked list:要求以核心的 list API 在不排序的前提下,於線性時間內找出第 k 大的節點,並延伸追問 `list_sort` 的空間複雜度,過程中引用了[核心 API 文件](https://www.kernel.org/doc/html/v4.14/core-api/kernel-api.html)與[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)。<!-- 補:第三題你當場答到什麼程度,以及三題之後的補強行動。 -->
+- 2026 年 6 月 — 模擬面試:確切日期未另行記下,助教有紀錄。過程中我對 futex 與執行緒相關主題的掌握不足,在此之前我對 futex 只停留在知道名詞;後面我重新研讀[〈並行程式設計:執行緒的建立和管理〉](https://hackmd.io/@sysprog/concurrency-thread-package),補齊 futex 的理解。
+
+> 6 分
+
+## 所見所聞所感
+
+### 關於〈因為自動飲料機而延畢的那一年〉
+
+這篇文章我兩年前就讀過。當時把它當成一個創業故事:有人為了做一台飲料機延畢一年,讀完的感想停在勇氣可嘉,注意力放在他很感去做嘗試上。這學期做完 kbox 的 BPF 專題後重讀,看到的東西不一樣了。在 kbox 裡把 BPF 打通這件事聽起來是一句話的事,但實際上在弄得時候花費一堆時間在串接host 還有 kbox 環境間的觀念， syscall 編號表、supervisor 旗標、dispatcher 逐命令轉發,各有各的細節,每一層都要自己驗證,沒有一步能簡單帶過，基本上都要一直重物思考，有時候還有回頭再想一遍剛剛明明想清楚的問題。再回頭說飲料機,不把它讀成創業故事,而是工程的原形:想法與能動的東西之間,沒人會替你寫文件的細節，兩年前我讀到大概是是熱血,這次讀到的是背後到底有多大的代價，而且我開始認得出那個代價。
+
+> 4 分
+
+## 分數計算
+
+各項自評分數如下:
+
+1. 作業與隨堂測驗:4 分
+2. 期末專題:7 分
+3. 與授課教師的互動:6 分
+4. 所見所聞所感:4 分
+
+
+幾何平均 GEOMEAN 計算
+
+GEOMEAN = ⁴√(4 × 7 × 6 × 4) = ⁴√672 ≈ 5.0915
+
+驗算: 5.0915⁴ ≈ 672,且 5⁴ = 625 < 672 < 6⁴ = 1296,故 ⌊GEOMEAN⌋ = 5,符合定義。
+
+方案選擇 - 方案 B: 1 + ⌊GEOMEAN⌋ = 1 + ⌊5.0915⌋ = 1 + 5 = 6
+
+自我評量總分: 6 / 10
