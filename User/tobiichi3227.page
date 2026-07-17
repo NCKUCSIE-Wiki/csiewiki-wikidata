@@ -6,10 +6,10 @@ Github 帳號：[tobiichi3227](https://github.com/tobiichi3227/)
 ## 成果發表與貢獻
 > 6 分
 
-本學期內只有貢獻教材以及對教材相關的 Repo 發一個尚未合併的 PR、給 Linux 發一個沒有被接受的 Patch、給 LLVM 發一個尚未合併的 PR，屬於方案 B。
+本學期內只有貢獻教材以及對教材相關的 Repo 發一個 PR、給 Linux 發一個沒有被接受的 Patch、給 LLVM 發一個尚未合併的 PR，屬於方案 B。
 
 ### 課程教材 PR
-- [Fix high CPU usage when game paused](https://github.com/sysprog21/kxo/pull/32)(尚未合併)
+- [Fix high CPU usage when game paused](https://github.com/sysprog21/kxo/pull/32)
 2026/06/02 在執行 kxo 發現當暫停畫面更新時，CPU 使用率會增加。
 透過 perf 工具發現在暫停時 `__x64_sys_write()` 與 `__se_sys_pselect6()` 等函式佔 CPU sample 比例到達 60%。
 經過研究發現是因為 `select()` 會直接返回，但 `else if (read_attr && FD_ISSET(device_fd, &readset))` 條件不會成立，會繼續更新 TUI 然後再回到 main loop 繼續呼叫 `select()`，所以在畫面暫停時不該繼續監聽 `/dev/kxo`。
@@ -90,7 +90,7 @@ Github 帳號：[tobiichi3227](https://github.com/tobiichi3227/)
 
 - 2026/06/11: 詢問為什麼 `spsc_fifo_write` 的 `read_count` 用 `acquire` 但 `spsc_fifo_read` 的 `read_count` 用 `relax`？
 
-後續實驗發現在 x86_64 與 Arm 平台即使將全部限制改成 `relax` 一樣不會重排，透過 `pthread_setaffinity_np()` 將 Producer 與 Consumer 執行緒指定到不同 CPU 也沒有發生重排，有可能是因為我使用的 Arm 平台 CPU Core 數量太少導致的。
+後續實驗發現在 x86_64 與 Arm 平台即使將全部限制改成 `relax` 一樣不會重排，透過 `pthread_setaffinity_np()` 將 Producer 與 Consumer 執行緒指定到不同 CPU 也沒有發生重排，有可能是因為測試用的 Arm 平台 CPU Core 數量太少導致的。
 
 ## 所見所聞所感
 > 8 分
