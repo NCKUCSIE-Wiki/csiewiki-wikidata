@@ -161,7 +161,7 @@ int *f()
 | 5   | 所見所聞所感 | 9 |
 
 幾何平均 (GEOMEAN) 計算
-$\text{GEOMEAN} = ^5\sqrt{8 \times 8 \times 4 \times 8 \times 8 \times 9} = ^5\sqrt{18432} = 7.13$
+$\text{GEOMEAN} = ^5\sqrt{8 \times 8 \times 4 \times 8 \times 9} = ^5\sqrt{18432} = 7.13$
 驗算 $7.13^5 = 18426.70$, $7.14^5 = 18556.29$ ，符合定義
 
 方案選擇：  
