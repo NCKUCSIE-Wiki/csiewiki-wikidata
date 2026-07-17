@@ -4,7 +4,7 @@ Github 帳號：[tobiichi3227](https://github.com/tobiichi3227/)
 
 
 ## 成果發表與貢獻
-> ? 分
+> 6 分
 
 本學期內只有貢獻教材以及對教材相關的 Repo 發一個尚未合併的 PR、給 Linux 發一個沒有被接受的 Patch、給 LLVM 發一個尚未合併的 PR，屬於方案 B。
 
@@ -52,10 +52,16 @@ Github 帳號：[tobiichi3227](https://github.com/tobiichi3227/)
     - 誠實面對期初考題：只完成第三題
 
 - [作業二 stdc](https://hackmd.io/@tobiichi3227/linux2026-stdc)：
-    - 細讀〈你所不知道的 C 語言：數值系統篇〉：
-    - 細讀〈C 語言的 bit field〉：只
+    - 細讀〈你所不知道的 C 語言：數值系統篇〉：只部份完成 `教材以 0.1 + 0.2 ≠ 0.3 作為引言，說明電腦的數值表示問題，援引 IEEE 754 規格和你在電腦上的實驗，充分回答以下:`、算術運算可完全以數位邏輯實作，分析 $x + y = (x \oplus y) + ((x \& y) << 1)$ 並回答：
+    - 細讀〈你所不知道的 C 語言: bitwise 操作〉：只部份完成 `為何 Linux 核心程式碼通常會將用以描述硬體狀態 (例如 x86 的 CR 系列暫存器) 的旗標 (flag) 型態定義為 unsigned 整數，而非 signed 整數？從 padding bits、trap representation 與 C 語言標準行為說明原因`、`若錯誤地使用 signed int 來儲存旗標並進行位移運算，可能出現哪些實作相依（implementation-defined）或未定義（undefined）行為？結合右移與負數的例子說明，搭配 C 語言規格書描述`、`當 signed 與 unsigned 整數混合運算時，signed 數值會轉換為 unsigned，導致意外結果，例如比較運算結果顛倒。分析以下程式片段可能導致無窮迴圈:`
+    - 細讀〈C 語言的 bit field〉：只部份完成 struct signed bit、`教材提到 zero-width bit-field: int : 0;，其作用是強制下個 bit-field 對齊到新的 storage unit，分析以下:`、`教材提及 Linux 核心的技巧 #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:(-!!(e)); }))，從 C 語言規格的角度回答以下:`
+    - 探討〈你所不知道的 C 語言：記憶體管理、對齊及硬體特性〉：只部份完成 void 指標
 
 - [作業三 basics](https://hackmd.io/@tobiichi3227/linux2026-basics)：
+    - 細讀〈從 Revolution OS 看作業系統生態系統變化〉：只完成 Hyper-V 之旅
+    - 細讀〈C 語言: 前置處理器應用〉：只完成 C 前置處理器的 stringification...
+    - 細讀〈C 編譯器原理和案例分析〉：只部份完成 `AMaCC...`
+    - 細讀〈C 語言: 未定義行為〉：只部份完成 `現代編譯器利用 UB 進行激進最佳化`、`SSA 形式在常數傳播與死碼消除中扮演關鍵角色。`
 
 ## 期末專題
 > 0 分
@@ -103,7 +109,7 @@ Github 帳號：[tobiichi3227](https://github.com/tobiichi3227/)
 ## 分數計算
 | 項次 | 名稱 | 分數 |
 | :-: | :--: | :-: |
-| 1   | 成果發表與貢獻 | ? |
+| 1   | 成果發表與貢獻 | 6 |
 | 2   | 作業與隨堂測驗 | 5 |
 | 3   | 期末專題 | 0 |
 | 4   | 與授課教師的互動 | ? |
@@ -111,7 +117,7 @@ Github 帳號：[tobiichi3227](https://github.com/tobiichi3227/)
 
 幾何平均 (GEOMEAN) 計算
 $\text{GEOMEAN} = ^5\sqrt{? \times 5 \times 0 \times ? \times ?} = ^5\sqrt{0} = 0$
-驗算 $0^5 = -$，符合定義。
+驗算 $0^5 = 0$，符合定義。
 
 方案選擇：
 - 方案 A 適用條件：對 Linux, glibc, gcc, llvm, lkmpg, rv32emu, kbox, elfuse 等專案做出超過 3 項 non-trivial 貢獻並獲開發者採納。
