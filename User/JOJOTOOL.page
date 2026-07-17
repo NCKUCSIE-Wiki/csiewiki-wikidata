@@ -1,0 +1,209 @@
+# 2026 年 Linux 核心設計課程自我評量
+
+姓名:張力升　GitHub:JOJOTOOL (https://github.com/JOJOTOOL)
+
+本自我評量遵循本課程評量準則:以客觀事實為主,強調過去與現在、不寫「期許自己」這類對未來的空泛承諾;所有產出均附公開紀錄(commit、PR、HackMD、pcap 佐證),可逐項查證。
+
+[TOC]
+
+---
+
+## 成果發表與貢獻
+
+> 自評:8分
+
+### 課程教材與 sysprog21 專案
+
+本學期對 sysprog21 的 [kbox](https://github.com/sysprog21/kbox)(把真實 Linux 核心以 [LKL](https://github.com/lkl/linux) 形式連進行程、就地攔截 syscall 的 rootless 執行環境)貢獻了一套**具第二層(L2)隔離的網路子系統**,取代原本只能 outbound 的 SLIRP 使用者態網路。技術細節見下方〈期末專題〉,規模與佐證:
+
+- 變更規模(`git diff --stat HEAD` 可重現):**34 個檔案、+2155 / −1112 行**,主體為 `src/net-slirp.c`、`src/dispatch-net.c`。
+- 對應 PR / commit:【填入你的 PR 連結】;基準點 commit [`ba08934`](https://github.com/sysprog21/kbox)(SLIRP 起點)、[`0000c75`](https://github.com/sysprog21/kbox)(buffer overflow 修正)。
+
+### 上游 Linux 核心
+
+【若本學期有送出 upstream patch,依範例格式逐件列出:`(YYYY/MM/DD)` + patch 標題 + 連結 + 目前狀態(mainline / -next / 審查中)。沒有就誠實留白,不要灌水。】
+
+### 其他開源專案(glibc / lkmpg / …)
+
+【列出對 glibc、教材、其他 sysprog21 專案的 non-trivial 貢獻,附連結。】
+
+### 公開演講 / 技術分享
+
+【若有,填入場合、日期、投影片或錄影連結。】
+
+### 方案 A 適用性檢核
+
+> 範例中「方案 A」需對 Linux、glibc 等專案做出**超過 3 項 non-trivial 貢獻**方可適用。請據實檢核:
+
+| # | 專案 | 貢獻描述 | 連結 | non-trivial? |
+| --- | --- | --- | --- | --- |
+| 1 | sysprog21/kbox | kbox 網路子系統(L2 隔離 + LKL/TAP) | 【PR】 | 是 |
+| 2 | 【專案】 | 【描述】 | 【連結】 | 【是/否】 |
+| 3 | … | … | … | … |
+
+【若累計未達門檻,改走一般計分方案,並在此說明。】
+
+---
+
+## 作業與隨堂測驗
+
+> 自評:7分
+
+### 主作業時間軸
+
+【依範例格式,列出各次作業(例如 fibdrv、sysprog 作業、quiz 延伸題)的完成情況與連結。建議每列:`(YYYY/MM/DD)` + 作業名 + 你做了什麼(具體技術點)+ commit/PR。】
+
+- (【日期】)【作業名】:【具體做法與成果】,連結【】
+- …
+
+### 隨堂測驗軌跡
+
+【範例以表格呈現每次測驗的分數與訂正歷程。若你曾答錯後補證明取得滿分,正是「起點 → 終點」的好證據,務必寫出訂正內容。】
+
+| 測驗 | 主題 | 結果 | 訂正 / 補充證明 |
+| --- | --- | --- | --- |
+| quiz1 | 【主題】 | 【分數】 | 【連結 / 說明】 |
+| quiz2 | … | … | … |
+
+---
+
+## 期末專題:擴展 kbox 的完整網路能力
+
+> 自評:8分
+
+> 專題文件:<https://hackmd.io/@sysprog/HkncHMvAbe>　關鍵程式:`src/dispatch-net.c`、`src/net-slirp.c`、`src/net.h`
+
+### 專題背景與問題定義(起點)
+
+kbox 最初的網路以 SLIRP 實作,只支援 outbound TCP/UDP(commit [`ba08934`](https://github.com/sysprog21/kbox) `Add SLIRP user-mode networking`)。其客觀限制(可從當時行為驗證):
+
+1. **沒有隔離**:guest 的 socket 呼叫經位址轉譯後,實際使用 host 的網路堆疊。
+2. **L2 不可見**:流量在 SLIRP 層被重新封裝,乙太網路訊框(Ethernet frame)這一層看不到,無法用 `tcpdump` 觀察或在訊框邊界分析。
+3. **設定寫死**:IP 位址靜態硬編碼,沒有動態協定行為。
+4. **無法注入故障**:不能模擬封包遺失、延遲或網路異常。
+
+我個人的起點:【據實填寫改造前對 virtio-net / TAP / LKL 網路裝置層 / DHCP / `tc` 的掌握程度——這是後面成長對照的基準。】
+
+### 系統設計
+
+以三層架構把網路堆疊搬進 LKL,並在 host 端串接外部網路。
+
+**第一層 — syscall 層隔離(`src/dispatch-net.c`)**:把 guest 的網路 syscall 從「落到 host」改為「轉送進 LKL」。實作的轉送函式皆呼叫對應 `kbox_lkl_*` 包裝,最終進入 `lkl_syscall()`:`forward_socket`、`forward_bind`、`forward_connect`、`forward_listen`、`forward_accept4`、`forward_sendto`、`forward_recvfrom`、`forward_sendmsg`、`forward_recvmsg`、`forward_getsockopt`、`forward_setsockopt`、`forward_getsockname`、`forward_getpeername`、`forward_shutdown`、`forward_poll`(涵蓋 `poll()` / `ppoll()`)。
+
+**第二層 — LKL 網路裝置(`src/net-slirp.c`)**:以 `lkl_netdev_tap_create()` 建立 TAP 介面 `kbox0`,再用 `lkl_netdev_add()` 掛進 LKL 的 virtio-net 後端;guest 端設定靜態 `10.0.2.15/24` 或 DHCP,預設閘道 `10.0.2.2` 並設定 DNS。對應 `kbox_net_add_device()`、`kbox_net_configure()`,並保留 LKL/網路關閉時的 stub 實作以維持建置不失敗。
+
+**第三層 — host 端串接**:對 TAP 指派 `10.0.2.2/24`、開啟 IP forwarding、加上 MASQUERADE NAT、放行 FORWARD 鏈,作為 LKL 隔離堆疊與外部網路之間的橋。
+
+**DHCP 狀態機(RFC 2131)**:client 端 `dhcp_build_discover()` / `dhcp_build_request()` / `dhcp_opt_find()`,server 端 `dhcp_server_start()` / `dhcp_server_build_reply()`(監聽 port 67),完成 DISCOVER → OFFER → REQUEST → ACK 四步交握。
+
+**可觀測性與故障注入**:`pcap_open()` / `pcap_write_packet()` / `pcap_close()` 把 L2 訊框連同時戳寫成 pcap;另有獨立 AF_PACKET 監看執行緒。故障注入以 `tc flower` DROP(IPv6、mDNS)、`tc netem` 經 IFB 裝置注入延遲、`kbox_net_inject_frame()` 直接在 L2 注入自訂訊框。對外介面見 `src/net.h`(新增 `kbox_net_set_pcap` / `set_dhcp` / `set_inject_frame` 等)。
+
+### 量測方法
+
+> 範例特別強調「謹慎用詞」與統計嚴謹:效能宣稱要有**前後對照 + 信賴區間 + 檢定**,不寫「快很多」。請以此標準補上實測資料。
+
+- **延遲注入驗證**:設定 `tc netem` 500 ms 延遲,量測 ICMP RTT 由 【base RTT】 增為 【延遲後 RTT】(建議 N ≥ 30 次、附 95% 信賴區間)。
+- **過濾規則驗證**:以 `tc` DROP 規則的計數器遞增,佐證 IPv6 / mDNS 被擋(附計數器前後值)。
+- **協定正確性**:以 pcap 追蹤確認 ARP who-has、DHCP 四步交握的封包序列(附 `tcpdump` 判讀)。
+- 【若有吞吐量 / 建立連線延遲的前後對照(SLIRP vs LKL+TAP),以表格呈現並註明量測環境。】
+
+### 期末展示
+
+可重現的驗證結果(建議附你自己的截圖 / pcap 檔):
+
+| 驗證項目 | 觀察到的客觀結果 |
+| --- | --- |
+| 網路介面建立 | `kbox0` 出現在 host 網路堆疊 |
+| DNS 解析 | 沙箱內 `nslookup google.com` 成功 |
+| 對外連線 | `ping 8.8.8.8`、`wget http://example.com` 可通 |
+| ARP 協定 | pcap 中擷取到 ARP who-has 封包 |
+| 封包過濾 | `tc` DROP 計數器遞增(IPv6、mDNS 被擋) |
+| 延遲注入 | ICMP 被 `tc netem` 延遲 500 ms |
+| DHCP 交握 | 完整四步交換,經 `tcpdump` 確認 |
+
+**目前尚未完成 / 待收斂**(誠實列出,不找藉口):
+
+1. inbound server socket 路徑(`forward_listen` / `forward_accept4`)已實作,但仍保留 `fprintf(stderr, ">>> ...")` 除錯輸出待清除。
+2. per-socket 的 pcap 註冊尚未接上:`kbox_net_register_socket()` 在 `forward_socket()` 中仍為註解狀態。
+3. 【其他你已知但尚未完成 / 驗證的項目,例如 IPv6 outbound、release build 實測。】
+
+### 觀摩同儕專題並提問
+
+【範例會記錄你觀摩了誰的專題、提出什麼問題。據實填寫:同儕姓名 / 專題連結 + 你提的問題 + 討論結果。】
+
+### 回應提問
+
+【期末展示時老師或同學問了什麼、你如何回應。真實記錄,含你當下答不出、事後補查的部分——這類誠實最有價值。】
+
+---
+
+## 與授課教師的互動
+
+> 自評:1分
+
+### 一對一討論
+
+【據實記錄:日期時間(範例精確到 `週三 14:00–14:40`)、討論主題、教師點出的問題、你的後續行動。例如:教師指出手刻網路結構的長度假設不安全 → 我改用標準 `struct sockaddr` 修正(commit [`0000c75`](https://github.com/sysprog21/kbox))。若此事屬實可保留,否則刪除。】
+
+### 課堂問答軌跡
+
+【列出你在課堂上發問 / 被點名回答的紀錄,附主題與日期。】
+
+---
+
+## 所見所聞所感
+
+> 自評:8分
+
+### 關於實驗設計與可重現性
+
+從這次專題我具體學到:效能與行為宣稱必須可重現。SLIRP 之所以看不到 L2,是因為它在使用者態重新封裝流量——這讓我把觀測點改放在 TAP 與 virtio-net 之間,才拿得到完整的 ARP、TCP 重傳等協定行為。這也促使我在〈量測方法〉採前後對照與統計信賴區間,而非只給單次數字。【可再補一個你親身遇到的實驗設計陷阱。】
+
+### 關於謹慎用詞
+
+一開始自行拼湊封包 / 位址結構、對長度與對齊做不安全假設,導致緩衝區溢位(commit [`0000c75`](https://github.com/sysprog21/kbox));改用標準網路結構後才體認到跨 ABI 邊界傳遞結構時,自訂 layout 的長度假設不可靠。【延伸:術語要精確,例如 socket / connection / endpoint 不可混用。】
+
+### 關於與上游 / 開源開發者互動
+
+【若有與 LKL、Linux 或其他上游社群往來(mailing list、PR review),記錄互動與收穫;沒有就留白。】
+
+### 關於課程同儕的觀察
+
+【範例會具名提到數位同儕的自我評量並寫下具體啟發。填入你實際讀過的同儕評量與心得。】
+
+### 關於自身投入的回顧
+
+【誠實回顧投入(範例甚至以每週時數與同儕基準對照),以及起點 → 終點的能力變化:從只熟悉使用者態 socket API,到能在 LKL 內設定 virtio-net/TAP、實作 DHCP 交握、用 `tc`/`netem`/IFB 做 L2 故障注入、用 pcap+AF_PACKET 擷取分析訊框。】
+
+---
+
+## 分數計算
+
+各項自評如下,總分採**幾何平均**(任一項偏低都會顯著拉低總分):
+
+| 評量項目 | 自評分數 |
+| --- | --- |
+| 成果發表與貢獻 | 【S₁】 |
+| 作業與隨堂測驗 | 【S₂】 |
+| 期末專題 | 【S₃】 |
+| 與授課教師的互動 | 【S₄】 |
+| 所見所聞所感 | 【S₅】 |
+
+$$
+\text{總分} = \sqrt[5]{S_1 \times S_2 \times S_3 \times S_4 \times S_5}
+$$
+
+**方案 A**:若〈成果發表與貢獻〉的非顯著(non-trivial)貢獻達門檻,依方案 A 計分並在該節附檢核表;否則走一般方案。
+
+自我評量總分:**5 / 10**
+
+---
+
+## 附錄:佐證連結與證據
+
+- 期末專題技術文件:<https://hackmd.io/@sysprog/HkncHMvAbe>
+- 自我評量範例(結構參考):<https://hackmd.io/@sysprog/HkRmtTGlze>
+- 自我評量原則:<https://hackmd.io/@sysprog/linux2024-assessment>
+- 關鍵程式檔:`src/dispatch-net.c`、`src/net-slirp.c`、`src/net.h`、`src/lkl-wrap.c` / `src/lkl-wrap.h`
+- 關鍵 commit:[`ba08934`](https://github.com/sysprog21/kbox)(SLIRP 起點)、[`0000c75`](https://github.com/sysprog21/kbox)(標準網路結構修正 buffer overflow)、未提交的網路重構 diff(`git diff --stat HEAD`)
+- 【你的 PR、截圖、pcap 檔,讓每一項主張都可查證。】
