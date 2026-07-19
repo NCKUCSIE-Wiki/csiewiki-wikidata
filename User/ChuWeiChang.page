@@ -1,0 +1,103 @@
+# 2026 年 Linux 核心設計課程自我評量 - ChuWeiChang
+
+> 參與專案：[sysprog21/kbox](https://github.com/sysprog21/kbox)
+> GitHub 帳號：[ChuWeiChang](https://github.com/ChuWeiChang)
+> 有效採計區間：2 月 23 日 – 7 月 8 日
+
+---
+
+## (1) 成果發表和貢獻
+
+**評分：`3/10`**
+
+本期在 kbox 專案累積一項已合併 (merged) 貢獻與多項審查中的 pull request，皆屬改變程式行為的實質修改，非僅修正錯字。
+
+- **[PR #34 — Resolve buffer overflow](https://github.com/sysprog21/kbox/pull/34)**（已於 2026-04-01 合併，commit [`0000c75`](https://github.com/sysprog21/kbox/commit/0000c75)）：修正 SLIRP 網路設定路徑上的 stack-buffer-overflow。將自訂的 `ifr`、`rt` 結構替換為標準 `struct ifreq`（`<net/if.h>`）與 `struct rtentry`（`<net/route.h>`），並改用 IPv4 `sockaddr_in` 進行位址 ioctl，使記憶體佈局對齊 64 位元 LKL ABI。此問題由我先行以 AddressSanitizer 定位並回報於 [issue #33](https://github.com/sysprog21/kbox/issues/33)。淨變更 +13 / −38，屬先發現、後修復的完整閉環。
+
+- **[PR #65 — Resolve writable shadow_fd destination in sendfile](https://github.com/sysprog21/kbox/pull/65)**（審查中）：修正 `seccomp_dispatch.c` 中 `forward_sendfile` 的繞送缺陷 —— 目的端 shadow FD 會略過虛擬核心 (shadow_sp) 而直接寫入底層 host_fd。做法是在模擬迴圈前補上目的端 `out_fd` 的 `fd_table_entry` 查表，並於 `test/guest/sendfile-test.c` 新增整合測試。對應我回報的 [issue #64](https://github.com/sysprog21/kbox/issues/64)，並補上 [issue #38](https://github.com/sysprog21/kbox/issues/38) 的測試缺口 5。
+
+- **[PR #68 — Downgrade MULTI sentinel in rev_host_clear](https://github.com/sysprog21/kbox/pull/68)**（審查中）：修正 `host_to_vfd[]` 中 MULTI sentinel 一旦設定就無法回復為單一 vfd 的問題。引入每個 host FD 的參考計數 `host_fd_refs[]`，於 `rev_host_set` 遞增、`rev_host_clear` 遞減；計數降至 1 時搜尋倖存的 vfd 並直接寫回，將 MULTI 降級為明確對應。
+
+- **[PR #70 — Add make perf and fd table constant lookup test](https://github.com/sysprog21/kbox/pull/70)**（審查中，建立於 #68 之上）：新增 `check-perf` 建置目標，以 `-O2 -DKBOX_PERF_ONLY` 於獨立二進位檔編譯單元測試，並自 `PERF_TEST_CFLAGS` 移除 sanitizer 與除錯旗標，使計時反映最佳化後的實際效能。對應 [issue #38](https://github.com/sysprog21/kbox/issues/38) 的測試缺口 3。
+
+
+---
+
+## (2) 作業／隨堂測驗
+
+**評分：`5/10`**
+
+
+本期完成兩份公開作業筆記，皆以 C99 規格條文逐條佐證、對照 Linux 核心原始碼與 git log，並輔以自撰實驗量化驗證
+
+**[作業一 (warmup)](https://hackmd.io/RJssG64sQKmFYFmBS0ipHQ)** — 涵蓋〈解讀計算機編碼〉、〈指標篇〉、〈linked list 和非連續記憶體〉與〈Linux 作業系統術語及概念〉。
+
+
+**[作業二 (stdc)](https://hackmd.io/9myaiJJ5SOeiKESKUJ6RoQ)** — 涵蓋〈快慢指標〉、〈數值系統篇〉、〈bitwise 操作〉、〈常數時間 ReLU〉與〈開平方根快速運算〉。
+於 [performance-analyzer](https://github.com/ChuWeiChang/performance-analyzer) 建立可控長度的洗牌鏈結串列，以 `perf stat` 觀察 cache miss rate 隨串列長度上升後觸頂的現象；另以 [branch_vs_branchless.c](https://github.com/ChuWeiChang/performance-analyzer/blob/main/branch_vs_branchless.c) 實測 branchless 相對於分支寫法的效能差距（cycles 由約 153 億降至約 36 億）。
+此份筆記亦包含一段與 `yushiuan9499` 的公開往返討論，說明我查證所用的方法與交叉驗證流程。
+
+
+---
+
+## (3) 期末專題
+
+**評分：`5/10`**
+
+期末專題延續 kbox 的系統呼叫繞送正確性與效能主題，開發紀錄、產出與觀摩紀錄如下。
+
+**我的產出（公開軌跡）**
+- 已合併：[PR #34](https://github.com/sysprog21/kbox/pull/34)
+- 審查中：[PR #65](https://github.com/sysprog21/kbox/pull/65)、[PR #68](https://github.com/sysprog21/kbox/pull/68)、[PR #70](https://github.com/sysprog21/kbox/pull/70)
+- 回報並追蹤：[issue #33](https://github.com/sysprog21/kbox/issues/33)、[issue #64](https://github.com/sysprog21/kbox/issues/64)
+
+**觀摩其他學員的期末專題並提問（至少 5 項，須有公開軌跡）**
+請填入你在他人專題頁面/PR/issue 留下的提問連結：
+
+**回覆他人對我專題的提問**
+請列出在 7 月 8 日中午前於期末專題頁面回覆授課教師與其他學員提問的紀錄連結，並註明回應與更新內容：
+
+
+---
+
+## (4) 與授課教師的互動
+
+**評分：`5/10`**
+https://hackmd.io/48NGUvidRby9Vc1o2wXXDQ
+請標註與授課教師「一對一討論」的時間，並列出問答、測驗與後續啟發。
+
+- 一對一討論：`（日期、時間、主題）`
+- 問答與後續：例如針對 [issue #38](https://github.com/sysprog21/kbox/issues/38) 測試缺口的討論脈絡，如何促成 [PR #65](https://github.com/sysprog21/kbox/pull/65)、[PR #70](https://github.com/sysprog21/kbox/pull/70) 的設計方向 `（補上對應留言連結）`
+- 課堂問答：`（日期、問題、教師回覆與啟發）`
+
+---
+
+## (5) 所見所聞所感
+
+**評分：`6/10`**
+
+
+
+回顧自身投入，我在 kbox 上最能對照這點的，是 [issue #33](https://github.com/sysprog21/kbox/issues/33) 的處理過程：問題並非靠猜測，而是以 AddressSanitizer 穩定重現 stack-buffer-overflow，再逐一比對自訂結構與標準 `struct ifreq`、`struct rtentry` 的記憶體佈局差異，確認根因是與 64 位元 LKL ABI 不一致，最後才提交 [PR #34](https://github.com/sysprog21/kbox/pull/34)。這段經歷讓我重新檢視自己**謹慎用詞**（在 PR 與 issue 描述中只陳述可驗證的行為，如「繞過 shadow_sp 直接寫入 host_fd」而非模糊表述）、與**細節**（refcount 邊界條件、計數降至 1 的回復路徑）上的不足。
+
+仍需加強之處：merged 數量偏少（目前僅 1 項），多數 PR 仍在審查中
+
+---
+
+## 計分
+
+各項評分（1–10 整數）：
+
+| 項目 | 分數 |
+| --- | --- |
+| (1) 成果發表和貢獻 | `3` |
+| (2) 作業／隨堂測驗 | `5` |
+| (3) 期末專題 | `5` |
+| (4) 與授課教師的互動 | `5` |
+| (5) 所見所聞所感 | `6` |
+
+GEOMEAN = (S1 × S2 × S3 × S4 × S5) ^ (1/5) ~= ` 4.682`
+
+**採計方案：方案 B**（依公開證據，目前僅 [PR #34](https://github.com/sysprog21/kbox/pull/34) 一項 non-trivial 貢獻獲採納，未達方案 A 要求的「超過 3 項」）
+
+最終分數 = 1 + floor(GEOMEAN) = `6`（若超過 10 則取 10）
