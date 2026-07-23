@@ -174,7 +174,10 @@ i = ((exponent - 1) << 23) |( i >> 31)<<31 | (i&((1<<23)-1));
 
 ### 關於數學與謹慎用詞
 
-一開始因為就學期間忽略數學皢[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)與使用 [zhtw-mcp](https://github.com/sysprog21/zhtw-mcp) 檢查資訊科技詞彙翻譯中未提到的部份用語。因此意外發現不明使用者使用 LLM「抄襲」zhtw-mcp GitHub repo 這件事並沒有那麼簡單，該使用者還在 repo 中放入病毒檔案並在 README.md 引導下載。
+
+一開始因為就學期間忽略數學的重要性，導致光是在進行作業一的「探討〈解讀計算機編碼〉」題組時在補充缺失的數論知識就花了 3 天，因此導致後面只能針對程式語言的題目進行作答，同時持續補充之前沒學好的數學知識。這樣的結果是在第三次作業時只能先紀錄閱讀教材時的發現與問題。
+
+不過也是在進行作業撰寫時開始注重詞彙的使用，帶來的影響是在撰寫文章時，針對文章中可能有岐義的漢語用詞主動查詢[資訊科技詞彙翻譯](https://hackmd.io/@sysprog/it-vocabulary)與使用 [zhtw-mcp](https://github.com/sysprog21/zhtw-mcp) 檢查資訊科技詞彙翻譯中未提到的部份用語。因此意外發現不明使用者使用 AI 「抄襲」 zhtw-mcp GitHub repo 這件事並沒有那麼簡單，該使用者還在 repo 中放入病毒檔案並在 README.md 引導下載。
 ([FYI：Hexastrike 對於類似案例中攻擊行為的分析](https://hexastrike.com/resources/blog/threat-intelligence/cloned-loaded-and-stolen-how-109-fake-github-repositories-delivered-smartloader-and-stealc/))。
 
 ### 關於與上游開發者互動
