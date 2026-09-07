@@ -4,18 +4,18 @@ toc: no
 ...
 
 - Instructor: [Jim Huang](/User/jserv) (黃敬群) `<jserv.tw@gmail.com>`
-- Facebook Group: [https://www.facebook.com/groups/system.software2025/](https://www.facebook.com/groups/system.software2025)
+- Facebook Group: [https://www.facebook.com/groups/system.software2026/](https://www.facebook.com/groups/system.software2026)
 - Policy
     * Follow the classes: [CS 61C at UC Berkeley](https://cs61c.org/), [CMU 18-447: Introduction to Computer Architecture](https://users.ece.cmu.edu/~jhoe/doku/doku.php?id=18-447_course_schedule_spring_2024)
 - Course grading
     * Quiz (30%), Homework (30%), Final/Term Project (40%)
-    * NOTICE: You must participate in at least one post-quiz or homework oral discussion in person before December 30, 2025; otherwise, no credit will be awarded for quizzes.
+    * NOTICE: You must participate in at least one post-quiz or homework oral discussion in person before December 29, 2026; otherwise, no credit will be awarded for quizzes.
 - [Guidelines for Student Use of AI Tools](https://hackmd.io/@sysprog/arch2025-ai-guidelines)
 - **Schedule is tentative and subject to change!**
 
-Computer Architecture (Fall 2025)
+Computer Architecture (Fall 2026)
 ------------------------------------------------------
-* Week 1 (Sep 9): Introduction
+* Week 1 (Sep 8): Introduction
     - Announcement
         * There will be a quiz next week. After the quiz, we will begin oral discussions, and you are expected to attend them in person.
     - **[Course Introduction](https://docs.google.com/presentation/d/15UftnjHE0OJqmmiW4YR2eBZ7VqpF3c4iImqA7csi26s/edit?usp=sharing)**
@@ -26,7 +26,7 @@ Computer Architecture (Fall 2025)
     - [Understanding Floating Point Struggles](https://youtu.be/8RvnnUuoHTA) / [Floating Point](https://docs.google.com/presentation/d/1aGP15qHuOsLi_K4xiWhTZD36-D_eECox2LWxbP3Rvgk/edit?usp=sharing) ([video](https://youtu.be/RWj8ZmzeHNw))
     - [C Memory Management](https://docs.google.com/presentation/d/1WLn7-SNW7QtSMQO_Zz4K1M4e1oChb0jiy8OVDcqap5k/edit?usp=sharing) / [video](https://youtu.be/njNpPYlRXuM)
 
-* Week 2 (Sep 16): Quiz
+* Week 2 (Sep 15): Quiz
     - [Quiz1](https://hackmd.io/@sysprog/arch2025-quiz1): C programming, bit-wise operations, number representation, floating-point / [Solutions](https://hackmd.io/@sysprog/arch2025-quiz1-sol)
     - Follow-ups: [Approximating sine function](https://hackmd.io/@Max042004/bf16_sin), [Square Root](https://hackmd.io/tzLRtKLUT5GfSQTf94Aecg), [callback function](https://hackmd.io/@wilicw/arch2025-quiz1-A), [bfloat16](https://hackmd.io/iFvwiPX8Rxqn0QYoSeByrg)
     - [Principles of this course](https://docs.google.com/presentation/d/1V_X3jKMotcwaiNIXhUbS7t2gWb0s7okWhYXbZeDc3jM/edit?usp=sharing)
@@ -35,7 +35,7 @@ Computer Architecture (Fall 2025)
         * [The RISC-V Instruction Set Manual: Volume I: Unprivileged ISA](https://content.riscv.org/wp-content/uploads/2019/06/riscv-spec.pdf)
     - [RISC-V Instructions](https://docs.google.com/presentation/d/1qNVK8ULddo6luq0Rrjj_bmOShhcx9hlESN36AK91n6I/edit?usp=sharing)
 
-* Week 3 (Sep 23): RISC-V
+* Week 3 (Sep 22): RISC-V
     - Announcement:
         + [Guidelines for Student Use of AI Tools](https://hackmd.io/@sysprog/arch2025-ai-guidelines)
         + Quiz2 is scheduled on Sep 30.
@@ -51,9 +51,9 @@ Computer Architecture (Fall 2025)
     - [RISC-V Procedures](https://docs.google.com/presentation/d/18F1vHY5Mv5E6WU6BvktXzkVbZrTZ3jQUbkWOjEPGE4I/edit?usp=sharing) / [video](https://youtu.be/slyeHO64sWg)
     - [Lab0: Web-based Emulators](https://hackmd.io/@sysprog/SJ7ht_MuS)
     - [Lab1: RV32I Assembly](https://hackmd.io/@sysprog/H1TpVYMdB)
-    - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2025-arch-homework1) (Due: Oct 13, 2025)
+    - Assignment: [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2025-arch-homework1) (Due: Oct 13, 2026)
 
-* Week 4 (Sep 30): Quiz + RISC-V
+* Week 4 (Sep 29): Quiz + RISC-V
     - Announcement
         + Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2025-arch-homework1) next week
     - [Quiz2](https://hackmd.io/@sysprog/arch2025-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2025-quiz2-sol)
@@ -63,7 +63,7 @@ Computer Architecture (Fall 2025)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1pXcXcBjmUCXFJNFi4DpFLtpyDKsol5SaKfVce1hKdXE/edit?usp=sharing) / [video](https://youtu.be/VqzPnKPjcj8)
     - RISC-V Instruction Formats [Part II](https://docs.google.com/presentation/d/1rYJeuDUPezDdk01M8ib3XTo15IGLdsMJclzD4Vv9XGQ/edit?usp=sharing) / [video](https://youtu.be/6L5EeJl7T9w)
 
-* Week 5 (Oct 7): RV32I + Code Review
+* Week 5 (Oct 6): RV32I + Code Review
     - Announcement
         * In today’s class, we will discuss the progress of [Homework 1](https://hackmd.io/@sysprog/2025-arch-homework1) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should paste the link to your HackMD notes for [Homework 1](https://hackmd.io/@sysprog/2025-arch-homework1) here. $\to$ [2025-10-07](https://hackmd.io/AG3wlG02QuKPnjj5Y6p1Iw)
         * Quiz 3 is scheduled for Oct 21. Be sure to carefully review past quizzes, understand their level of difficulty, and practice thoroughly.
@@ -73,7 +73,7 @@ Computer Architecture (Fall 2025)
         * [online tool for RISC-V Instruction Encoder/Decoder](https://luplab.gitlab.io/rvcodecjs/) / [source code](https://gitlab.com/luplab/rvcodecjs)
     - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2025-arch-homework1)
 
-* Week 6 (Oct 14): Toolchain + Digital Systems
+* Week 6 (Oct 13): Toolchain + Digital Systems
     - Announcement
         - Quiz 3 is scheduled for Oct 21 and will cover RISC-V assembly programming, software optimizations, instruction encoding, sequential logic, and combinational logic.
             - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3) / [solution](https://hackmd.io/@sysprog/arch2020-quiz3-sol)
@@ -99,12 +99,12 @@ Computer Architecture (Fall 2025)
     - [SDS State](https://docs.google.com/presentation/d/1qXyH6xN_1QxII2YjoyuF5DUIst-A7pB1JG1PKdwKkgE/edit?usp=sharing) / [video](https://youtu.be/wOohQuD9wAg)
     - [Combinational Logic Blocks](https://docs.google.com/presentation/d/1JahtX4WzKs2JGx_qYfjkdJE5pQwBfXBX46w4NnQOV_E/edit?usp=sharing) / [video](https://youtu.be/S6TNo2jSu9A)
 
-* Week 7 (Oct 21): Quiz
+* Week 7 (Oct 20): Quiz
     - Announcement:
-       - [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) is out. Deadline: Nov 12, 2025
+       - [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) is out. Deadline: Nov 12, 2026
     - [Quiz3](https://hackmd.io/@sysprog/arch2025-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2025-quiz3-sol)
 
-* Week 8 (Oct 28): Review + Datapath and Control
+* Week 8 (Oct 27): Review + Datapath and Control
     - Announcement:
         * The textual description of Problem D in [Quiz3](https://hackmd.io/@sysprog/arch2025-quiz3) is correct, but the accompanying image is incorrect. As compensation, all participants of Quiz 3 will receive a 15-point increase.
         * If you voluntarily participate in the class discussions for [Quiz3](https://hackmd.io/@sysprog/arch2025-quiz3), please email the instructor afterward, including your responses to the instructor's questions and any follow-up contributions. You will receive an additional 10 points for Quiz 3.
@@ -113,7 +113,7 @@ Computer Architecture (Fall 2025)
     - [RISC-V Datapath I](https://docs.google.com/presentation/d/1kYFjJROF0OVFPPXCrPXBnlY7d9lP2rwcLxNJvI6DuAE/edit?usp=sharing) / [video](https://youtu.be/hPJXX91kurw)
     - [RISC-V Datapath II](https://docs.google.com/presentation/d/1nJknDrB402GuriZuqeYOVpoJv9bvYoZeFRSPKzqjdqw/edit?usp=sharing) / [video](https://youtu.be/wQC7mjjfJDw)
 
-* Week 9 (Nov 4): Datapath and Control + Pipeline
+* Week 9 (Nov 3): Datapath and Control + Pipeline
     - Announcement:
         + Submit [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) through Google Form.
         + Homework 3 will be finalized on Nov 6
@@ -137,22 +137,22 @@ Computer Architecture (Fall 2025)
         * [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [Lab3: Construct a single-cycle CPU with Chisel](https://hackmd.io/@sysprog/B1Qxu2UkZx)
 
-* Week 10 (Nov 11): Pipelined Processors
+* Week 10 (Nov 10): Pipelined Processors
     - Announcement:
         + Moved to self-study, no in-class session today!
         + Next week, we will review all the assignments.
-        + [Homework 3](https://hackmd.io/@sysprog/2025-arch-homework3) is out. Deadline: Dec 10, 2025
+        + [Homework 3](https://hackmd.io/@sysprog/2025-arch-homework3) is out. Deadline: Dec 10, 2026
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p) / [video](https://youtu.be/ILZ6fDHZ_eo)
     - [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [RISC-V 5-Stage Pipeline](https://docs.google.com/presentation/d/1v-Squx8lK-oOrflFOwBZh-ue94seVHZudqDOgJmFf5Q/edit?usp=sharing) / [video-1](https://youtu.be/LJt737KqWzI), [video-2](https://youtu.be/UxMLmMdFzTI), [video-3](https://youtu.be/oPmRV9MzuIU)
 
-* Week 11 (Nov 18): Quiz + Homework Review
+* Week 11 (Nov 17): Quiz + Homework Review
     - Announcement
         * In today’s class, we will discuss the progress of [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) and [Homework 3](https://hackmd.io/@sysprog/2025-arch-homework3) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should paste the link to your HackMD notes for [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) here. $\to$ [2025-11-18](https://hackmd.io/QERe1qMbSra0UqdfEPUhMw)
     - [Quiz4](https://hackmd.io/@sysprog/arch2025-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2025-quiz4-sol)
     - [Homework1](https://hackmd.io/@sysprog/2025-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2025-arch-homework2)
 
-* Week 12 (Nov 25): Cache
+* Week 12 (Nov 24): Cache
     - Announcement
         * In today’s class, we will discuss the progress of [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) and [Homework 3](https://hackmd.io/@sysprog/2025-arch-homework3) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should paste the link to your HackMD notes for [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) here. $\to$ [2025-11-18](https://hackmd.io/QERe1qMbSra0UqdfEPUhMw)
         * This semester, we will conduct 7 quizzes. Out of these, the best 4 will be selected for grading purposes.
@@ -175,7 +175,7 @@ Computer Architecture (Fall 2025)
         * [The next big tech war front: RISC-V](https://asiatimes.com/2023/11/the-next-big-tech-war-front-risc-v/)
         * [Designing in 2023: 10 Problems to Solve](https://youtu.be/o70yKYWgtVI) - Jim Keller, [Tenstorrent](https://tenstorrent.com/)
             - [Oral History of Jim Keller](https://youtu.be/Xh8nhK7WS80)
-* Week13 (Dec 2): Virtual Memory + Operating System + Vector Extension
+* Week13 (Dec 1): Virtual Memory + Operating System + Vector Extension
     - Announcement
         * In today’s class, we will discuss the progress of [Homework 3](https://hackmd.io/@sysprog/2025-arch-homework3) and [Term project](https://hackmd.io/@sysprog/arch2025-projects) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should update HackMD note here. $\to$ [2025-12-02](https://hackmd.io/@sysprog/SJsiu3ib-l)
         * Quiz 5 next week
@@ -192,12 +192,12 @@ Computer Architecture (Fall 2025)
         * [The RISC-V Vector ISA Tutorial](https://riscv.org/wp-content/uploads/2018/05/15.20-15.55-18.05.06.VEXT-bcn-v1.pdf)
         * [RISC-V "V" Vector Extension](https://github.com/riscvarchive/riscv-v-spec/blob/master/v-spec.adoc)
 
-* Week14 (Dec 9): Quiz
+* Week14 (Dec 8): Quiz
     - Announcement
         * In today’s class, we will discuss the progress of [Term project](https://hackmd.io/@sysprog/arch2025-projects) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should update HackMD note here. $\to$ [2025-12-02](https://hackmd.io/@sysprog/SJsiu3ib-l)
     - [Quiz5](https://hackmd.io/@sysprog/arch2025-quiz5): pipelined processor + cache + virtual memory / [solution](https://hackmd.io/@sysprog/arch2025-quiz5-sol)
 
-* Week15 (Dec 16): Operating System, Multithreading
+* Week15 (Dec 15): Operating System, Multithreading
     - Announcement:
         * Quiz6 is scheduled for Dec 23
             - [2024-Quiz6](https://hackmd.io/@sysprog/arch2024-quiz6) / [solution](https://hackmd.io/@sysprog/arch2024-quiz6-sol)
@@ -206,7 +206,7 @@ Computer Architecture (Fall 2025)
             - [2021-Quiz7](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz7-sol)
             - [2021-Quiz6](https://hackmd.io/@sysprog/arch2021-quiz6) / [solution](https://hackmd.io/@sysprog/arch2021-quiz6-sol)
             - [2020-Quiz6](https://hackmd.io/@sysprog/arch2020-quiz6) / [solution](https://hackmd.io/@sysprog/arch2020-quiz6-sol)
-        * [Term Projects](https://hackmd.io/@sysprog/arch2025-projects): You must provide the materials and demonstrate to the lecturer before **Jan 20, 2025**
+        * [Term Projects](https://hackmd.io/@sysprog/arch2025-projects): You must provide the materials and demonstrate to the lecturer before **Jan 19, 2027**
         * The instructor sent an email on December 15 with the subject line "Re: CompArch: Term Project Assigned — Read Carefully and Start Logging Early", outlining important guidelines and requirements for the term project. Students are required to read the email carefully and respond thoughtfully in accordance with the instructions provided.
     - [RISC-V Oral History Panel](https://youtu.be/lbMIuX28d18)
         +  Ecosystem: Software is King
@@ -223,7 +223,7 @@ Computer Architecture (Fall 2025)
         + RISC-V AMOSWAP instruction
         + [RISC-V spec references the word 'hart' - what does 'hart' mean?](https://stackoverflow.com/questions/42676827/risc-v-spec-references-the-word-hart-what-does-hart-mean)
  
-* Week16 (Dec 23): Quiz + Memory Model, I/O
+* Week16 (Dec 22): Quiz + Memory Model, I/O
     - Announcement:
         * Quiz7 is scheduled for Jan 6, 2026.
             - [2024-Quiz7](https://hackmd.io/@sysprog/arch2024-quiz7) / [solution](https://hackmd.io/@sysprog/arch2024-quiz7-sol)
@@ -236,7 +236,7 @@ Computer Architecture (Fall 2025)
         * Traps/Interrupts/Exceptions
         * Trap Handling in 5-Stage Pipeline
 
-* Week17 (Dec 30): Modern Processors
+* Week17 (Dec 29): Modern Processors
     - Announcements
         * Quiz7 is scheduled on Jan 6, 2026
         * Update [term projects](https://hackmd.io/@sysprog/arch2025-projects)
@@ -251,6 +251,6 @@ Computer Architecture (Fall 2025)
     - [RISC vs. CISC](https://yarchive.net/comp/risc_definition.html) by [John Mashey](https://en.wikipedia.org/wiki/John_Mashey), one of the founders of the Standard Performance Evaluation Corporation (SPEC) benchmarking group.
         * [HackerNews](https://news.ycombinator.com/item?id=34196370)
 
-* Week 18 (Jan 6): Review
+* Week 18 (Jan 5): Review
     - [Quiz7](https://hackmd.io/@sysprog/arch2025-quiz7) / [solution](https://hackmd.io/@sysprog/arch2025-quiz7-sol)
     - Review [term projects](https://hackmd.io/@sysprog/arch2025-projects)
