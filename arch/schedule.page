@@ -9,7 +9,7 @@ toc: no
     * Follow the classes: [CS 61C at UC Berkeley](https://cs61c.org/), [CMU 18-447: Introduction to Computer Architecture](https://users.ece.cmu.edu/~jhoe/doku/doku.php?id=18-447_course_schedule_spring_2024)
 - Course grading
     * Quiz (30%), Homework (30%), Final/Term Project (40%)
-    * NOTICE: You must participate in at least one post-quiz or homework oral discussion in person before December 29, 2026; otherwise, no credit will be awarded for quizzes.
+    * NOTICE: You MUST participate in at least one in-person oral discussion about quizzes or homework by December 29, 2026. After each discussion, you must follow up by email and obtain the instructor’s acknowledgment. Otherwise, you will receive no credit for any quizzes.
 - [Guidelines for Student Use of AI Tools](https://hackmd.io/@sysprog/arch2026-ai-guidelines)
 - **Schedule is tentative and subject to change!**
 
@@ -38,15 +38,17 @@ Computer Architecture (Fall 2026)
 
 * Week 3 (Sep 22): RISC-V
     - Announcement:
-        + [Guidelines for Student Use of AI Tools](https://hackmd.io/@sysprog/arch2025-ai-guidelines)
-        + Quiz2 is scheduled on Sep 30.
+        + You MUST participate in at least one in-person oral discussion about quizzes or homework by December 29, 2026. After each discussion, you must follow up by email and obtain the instructor’s acknowledgment. Otherwise, you will receive no credit for any quizzes. The email must be written in American English and sent to both the instructor and the course teaching assistants. The instructor may ask you to improve your understanding or work on specific topics, and you must follow those instructions.
+        + [Guidelines for Student Use of AI Tools](https://hackmd.io/@sysprog/arch2026-ai-guidelines)
+        + Quiz 2 is scheduled for Sep 30.
+            * [2025 Quiz2](https://hackmd.io/@sysprog/arch2025-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2025-quiz2-sol)
             * [2024 Quiz2](https://hackmd.io/@sysprog/arch2024-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2024-quiz2-sol)
             * [2023 Quiz2](https://hackmd.io/@sysprog/arch2023-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2023-quiz2-sol)
             * [2022 Quiz2](https://hackmd.io/@sysprog/arch2022-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2022-quiz2-sol)
             * [2021 Quiz2](https://hackmd.io/@sysprog/arch2021-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2021-quiz2-sol)
         + [Homework 1](https://hackmd.io/@sysprog/2025-arch-homework1) is out.
         + Code Review for [Homework 1](https://hackmd.io/@sysprog/2025-arch-homework1) on Oct 7
-        + If you voluntarily participate in the class discussions for [Quiz1](https://hackmd.io/@sysprog/arch2025-quiz1), please email the instructor afterward, including your responses to the instructor's questions and any follow-up contributions. You will receive an additional 10 points for Quiz 1.
+        + If you voluntarily participate in the class discussions for [Quiz1](https://hackmd.io/@sysprog/arch2026-quiz1), please email the instructor afterward, including your responses to the instructor's questions and any follow-up contributions. You will receive an additional 10 points for Quiz 1.
     - [RISC-V Data Transfer](https://docs.google.com/presentation/d/1N1ZyPLwJDN2hEqKT59nDunYWbXnVZsVDq5rg32Vckv8/edit?usp=sharing) / [video](https://youtu.be/-i6BmbdyftI)
     - [RISC-V Decision Making and Logical Operations](https://docs.google.com/presentation/d/1-vTyUiY8LeQZ1yD2x1EVsu85iXfJ0iSYiyWvLQ9QzLI/edit?usp=sharing) / [video](https://youtu.be/_qIYRafGUUs)
     - [RISC-V Procedures](https://docs.google.com/presentation/d/18F1vHY5Mv5E6WU6BvktXzkVbZrTZ3jQUbkWOjEPGE4I/edit?usp=sharing) / [video](https://youtu.be/slyeHO64sWg)
