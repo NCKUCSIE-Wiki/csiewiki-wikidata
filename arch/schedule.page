@@ -47,8 +47,9 @@ Computer Architecture (Fall 2026)
             * [2022 Quiz2](https://hackmd.io/@sysprog/arch2022-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2022-quiz2-sol)
             * [2021 Quiz2](https://hackmd.io/@sysprog/arch2021-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2021-quiz2-sol)
         + [Homework 1](https://hackmd.io/@sysprog/2026-arch-homework1) is out. Turn minirubik into hand-written RV32I with a working LED Matrix visualization by Oct 8, then talk an AI agent through it in a recorded LiveTrial session by Oct 18; skip either and the assignment does not count.
-        + Code Review for [Homework 1](https://hackmd.io/@sysprog/2025-arch-homework1) on Oct 7
+        + Code Review for [Homework 1](https://hackmd.io/@sysprog/2026-arch-homework1) on Oct 6
         + If you voluntarily participate in the class discussions for [Quiz1](https://hackmd.io/@sysprog/arch2026-quiz1), please email the instructor afterward, including your responses to the instructor's questions and any follow-up contributions. You will receive an additional 10 points for Quiz 1.
+    - [Mini-Rubik and Its Solver](https://github.com/sysprog21/minirubik/blob/main/report.md)
     - [RISC-V Data Transfer](https://docs.google.com/presentation/d/1N1ZyPLwJDN2hEqKT59nDunYWbXnVZsVDq5rg32Vckv8/edit?usp=sharing) / [video](https://youtu.be/-i6BmbdyftI)
     - [RISC-V Decision Making and Logical Operations](https://docs.google.com/presentation/d/1-vTyUiY8LeQZ1yD2x1EVsu85iXfJ0iSYiyWvLQ9QzLI/edit?usp=sharing) / [video](https://youtu.be/_qIYRafGUUs)
     - [RISC-V Procedures](https://docs.google.com/presentation/d/18F1vHY5Mv5E6WU6BvktXzkVbZrTZ3jQUbkWOjEPGE4I/edit?usp=sharing) / [video](https://youtu.be/slyeHO64sWg)
