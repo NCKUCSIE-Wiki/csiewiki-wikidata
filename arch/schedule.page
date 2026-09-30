@@ -59,9 +59,9 @@ Computer Architecture (Fall 2026)
 
 * Week 4 (Sep 29): Quiz + RISC-V
     - Announcement
-        + Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2025-arch-homework1) next week
+        + Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2026-arch-homework1) next week
     - [Quiz2](https://hackmd.io/@sysprog/arch2026-quiz2): RISC-V assembly and C programming / [solution](https://hackmd.io/@sysprog/arch2026-quiz2-sol)
-       * Follow-ups: [LED matrix](https://hackmd.io/@zYoyoYv7SiG-PRNw39_9xQ/BytwOti3gl), [Tower of Hanoi](https://hackmd.io/@vicLin/Hy3CeSzagg)
+       * Follow-ups: [LED matrix](https://hackmd.io/@zYoyoYv7SiG-PRNw39_9xQ/BytwOti3gl)
     - [Recursion as a Problem-Solving Technique](https://hackmd.io/@sysprog/SyTFEhxyJe)
     - [Fixed-point Arithmetic](https://hackmd.io/@maromaSamsa/HkjefPbFs)
     - RISC-V Instruction Formats [Part I](https://docs.google.com/presentation/d/1pXcXcBjmUCXFJNFi4DpFLtpyDKsol5SaKfVce1hKdXE/edit?usp=sharing) / [video](https://youtu.be/VqzPnKPjcj8)
@@ -69,7 +69,7 @@ Computer Architecture (Fall 2026)
 
 * Week 5 (Oct 6): RV32I + Code Review
     - Announcement
-        * In today’s class, we will discuss the progress of [Homework 1](https://hackmd.io/@sysprog/2025-arch-homework1) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should paste the link to your HackMD notes for [Homework 1](https://hackmd.io/@sysprog/2025-arch-homework1) here. $\to$ [2025-10-07](https://hackmd.io/AG3wlG02QuKPnjj5Y6p1Iw)
+        * In today’s class, we will discuss the progress of [Homework 1](https://hackmd.io/@sysprog/2026-arch-homework1) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should paste the link to your HackMD notes for [Homework 1](https://hackmd.io/@sysprog/2025-arch-homework1) here. $\to$ [2025-10-07](https://hackmd.io/AG3wlG02QuKPnjj5Y6p1Iw)
         * Quiz 3 is scheduled for Oct 21. Be sure to carefully review past quizzes, understand their level of difficulty, and practice thoroughly.
     - Review: [RISC-V Architecture Instruction Encoding](https://youtu.be/NmxhoMCeH8I)
         * Revisit the RV32I specification and instruction encoding, as they serve as the foundation for implementing RISC-V processor cores in HDL.
