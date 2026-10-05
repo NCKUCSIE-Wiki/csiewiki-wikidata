@@ -69,13 +69,13 @@ Computer Architecture (Fall 2026)
 
 * Week 5 (Oct 6): RV32I + Code Review
     - Announcement
-        * In today’s class, we will discuss the progress of [Homework 1](https://hackmd.io/@sysprog/2026-arch-homework1) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should paste the link to your HackMD notes for [Homework 1](https://hackmd.io/@sysprog/2025-arch-homework1) here. $\to$ [2025-10-07](https://hackmd.io/AG3wlG02QuKPnjj5Y6p1Iw)
+        * In today’s class, we will discuss the progress of [Homework 1](https://hackmd.io/@sysprog/2026-arch-homework1) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should paste the link to your HackMD notes for [Homework 1](https://hackmd.io/@sysprog/2026-arch-homework1) here. $\to$ [2026-10-06](https://hackmd.io/1h3HCyXLT2KlG5mZbv1C1w)
         * Quiz 3 is scheduled for Oct 21. Be sure to carefully review past quizzes, understand their level of difficulty, and practice thoroughly.
     - Review: [RISC-V Architecture Instruction Encoding](https://youtu.be/NmxhoMCeH8I)
         * Revisit the RV32I specification and instruction encoding, as they serve as the foundation for implementing RISC-V processor cores in HDL.
         * The system instructions: `ecall`, `ebreak`, and `csr*`.
         * [online tool for RISC-V Instruction Encoder/Decoder](https://luplab.gitlab.io/rvcodecjs/) / [source code](https://gitlab.com/luplab/rvcodecjs)
-    - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2026-arch-homework1)
+    - Code Review on [Homework1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2026-arch-homework1) | [browser](https://sysprog21.github.io/arch/homework1.html)
 
 * Week 6 (Oct 13): Toolchain + Digital Systems
     - Announcement
