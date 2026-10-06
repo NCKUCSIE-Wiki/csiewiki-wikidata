@@ -69,7 +69,7 @@ Computer Architecture (Fall 2026)
 
 * Week 5 (Oct 6): RV32I + Code Review
     - Announcement
-        * In today’s class, we will discuss the progress of [Homework 1](https://hackmd.io/@sysprog/2026-arch-homework1) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should paste the link to your HackMD notes for [Homework 1](https://hackmd.io/@sysprog/2026-arch-homework1) here. $\to$ [2026-10-06](https://hackmd.io/1h3HCyXLT2KlG5mZbv1C1w)
+        * In today’s class, we will discuss the progress of [Homework 1](https://hackmd.io/@sysprog/2026-arch-homework1) with the students. Ensure your code meets the requirements, is updated in the designated forked GitHub repository, and has been successfully pushed. When the instructor talks with you, you should paste the hyperlink to your forked GitHub repository for [Homework 1](https://hackmd.io/@sysprog/2026-arch-homework1) here. $\to$ [2026-10-06](https://hackmd.io/1h3HCyXLT2KlG5mZbv1C1w)
         * Quiz 3 is scheduled for Oct 21. Be sure to carefully review past quizzes, understand their level of difficulty, and practice thoroughly.
     - Review: [RISC-V Architecture Instruction Encoding](https://youtu.be/NmxhoMCeH8I)
         * Revisit the RV32I specification and instruction encoding, as they serve as the foundation for implementing RISC-V processor cores in HDL.
