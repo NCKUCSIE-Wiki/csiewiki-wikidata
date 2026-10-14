@@ -80,7 +80,7 @@ Computer Architecture (Fall 2026)
 * Week 6 (Oct 13): Toolchain + Digital Systems
     - Announcement
         - [Homework1](https://hackmd.io/@sysprog/2026-arch-homework1): Because development of the CodeTrial project originally intended for this assignment has not progressed as expected, the CodeTrial/LiveTrial interactive component of this assignment has been canceled. Instead, students must submit an explanatory video of at least 15 minutes. The earlier two-phase schedule is also canceled: everything, including the video, is due Oct 18, 2026, 23:59 (GMT+8).
-        - Quiz 3 is scheduled for October 21 and will cover RISC-V assembly programming, software optimization, instruction encoding, sequential and combinational logic, and a review of Homework 1.
+        - Quiz 3 is scheduled for October 20 and will cover RISC-V assembly programming, software optimization, instruction encoding, sequential and combinational logic, and a review of Homework 1.
             - [2020-Quiz3](https://hackmd.io/@sysprog/arch2020-quiz3) / [solution](https://hackmd.io/@sysprog/arch2020-quiz3-sol)
             - [2021-Quiz3](https://hackmd.io/@sysprog/arch2021-quiz3) / [solution](https://hackmd.io/@sysprog/arch2021-quiz3-sol)
             - [2021-Quiz4](https://hackmd.io/@sysprog/arch2021-quiz4) / [solution](https://hackmd.io/@sysprog/arch2021-quiz4-sol)
