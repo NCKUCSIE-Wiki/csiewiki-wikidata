@@ -8,24 +8,18 @@ categories: User
 <img src="https://shengwen-tw.github.io/profile.png"
      style="float:right; width:15%;">
 
-- 2025-Now 德州大學奧斯汀分校 電腦科學碩士
+- 2025-2027 德州大學奧斯汀分校 電腦科學碩士
 - 2022-2024 國立臺灣大學 電機所博士生 (肄)
 - 2019-2021 國立陽明交通大學 機器人碩士
 - 2015-2019 靜宜大學 資訊工程學系
-- 2013-2018 參與成大航太系、資工系與工科系之課程、專題與論文研究
+- 2013-2018 非在校生身分參與成大航太、資工及工科系之專題與論文研究
 - 個人網頁: [shengwen-tw.github.io](https://shengwen-tw.github.io/)
-
-近期研究
-=======
-
-- 四旋翼飛行器之非線性控制、最佳控制（LQR、NMPC）、強健控制（H∞ control）與強化學習（RL）的系統性分析
-- RISC-V 32-bit 系統模擬器上的 GPU 虛擬化（VirtIO）
 
 專長
 ====
 
-- 機器人系統、無人飛行載具、無人地面載具
-- 動態系統與控制、最佳化理論、數值計算
+- 機器人系統、無人飛行器、無人地面載具
+- 動態系統與控制、數值最佳化、科學計算
 - 嵌入式系統、即時作業系統、I/O 虛擬化
 
 工作經驗
@@ -43,8 +37,8 @@ categories: User
 - [Puyuma](https://github.com/Puyuma/puyuma-core): 基於 Linux 與電腦視覺、透過 Xenomai 達成即時性的微型自駕車實驗系統  [[技術報告]](https://drive.google.com/file/d/1rKgdAhpr7M2tiiu-zpXKDYbxuNX_QqWz/view?usp=share_link) [[簡報]](https://drive.google.com/file/d/1D9Cp7_kDHw4EDSdKVgKMuRb3Ri0mA4bN/view?usp=sharing)
 - [PU-01](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 雙尾桿後推式定翼機設計 [[簡報]](https://drive.google.com/file/d/1hEJ8q8cbePwxY358UeMr3Z0nmIqtdnKo/view)
 
-開放原始碼參與
-=============
+開放原始碼
+=========
 
 - [semu](https://github.com/sysprog21/semu): RV32IMA 系統模擬器，實作 VirtIO 虛擬化（GPU、Keyboard、Mouse、RNG、Block device）
 - [DirectFB2](https://github.com/directfb2/DirectFB2): 修正 RV32 與 DRM 相關問題
@@ -76,8 +70,8 @@ categories: User
 - [Minimum-snap trajectory generation](https://github.com/shengwen-tw/minimum-snap-traj-matlab): 透過最小化位置四階導數（snap）產生平滑軌跡
 - [Rapidly-Exploring Random Tree (RRT)](https://github.com/shengwen-tw/rrt-matlab): 基於隨機樹搜尋的路徑規劃演算法，用於避開環境中的障礙物
 
-論文發表
-=======
+論文
+====
 
 - 2026 - [Data-Driven Estimation of Quadrotor Motor Efficiency via Residual Minimization](https://arxiv.org/abs/2510.11388)
 - 2023 - [A Computationally Efficient GNSS/INS Design of Multirotor based on Error-state Kalman Filter](https://ieeexplore.ieee.org/abstract/document/10354209)
@@ -85,22 +79,24 @@ categories: User
 - 2018 - [Puyuma: Linux-based RTOS Experimental Platform for Constructing Self-Driving Miniature
 Vehicles](https://link.springer.com/chapter/10.1007/978-3-030-01174-1_75)
 
-會議演講
-=======
+演講
+====
 
 國際會議:
 
-- Open Source Summit North America 2026: [Demystifying VirtIO-GPU: Building a Graphics Virtualization Bridge from Scratch](https://osselcna2026.sched.com/event/2JQrw?fbclid=IwY2xjawQwdRlleHRuA2FlbQIxMABicmlkETFmMUhlSUdFWHJMMkc1TmdPc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHoUlvXLBtUd4yALsr0xK-GXrMdikjN4z-xYAb6aOeQ4xLDfChkMGAWPbsUsT_aem_D5jjzd_PcbErdv7cCjhBXw)
-- Embedded Open Source Summit 2024: [Crafting a Vision-Aided Software Stack for UAV](https://eoss24.sched.com/event/1aBF7)
+- [Demystifying VirtIO-GPU: Building a Graphics Virtualization Bridge from Scratch](https://osselcna2026.sched.com/event/2JQrw?fbclid=IwY2xjawQwdRlleHRuA2FlbQIxMABicmlkETFmMUhlSUdFWHJMMkc1TmdPc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHoUlvXLBtUd4yALsr0xK-GXrMdikjN4z-xYAb6aOeQ4xLDfChkMGAWPbsUsT_aem_D5jjzd_PcbErdv7cCjhBXw) (OSSNA 2026)
+- [Crafting a Vision-Aided Software Stack for UAV](https://eoss24.sched.com/event/1aBF7) (EOSS 2024)
 
 社群會議:
 
-- COSCUP 2026: [The Illusion of Hardware - How Modern Virtual Machines Work](https://drive.google.com/file/d/1OwC0eo8sWeRmDrPONtk9EZb1jCm9hCAa/view?usp=sharing)
-- Sciwork Seminar 2026: From Optimal Control to Reinforcement Learning for Quadrotor Drones
-- OpenTechConf 2025: [Building a Quadrotor Simulator with Python - Modeling, Simulation, and Control](https://drive.google.com/file/d/1Oc-OfTaBOS4-Ut4LMXkFd4vc9sJBr5s8/view?fbclid=IwY2xjawM0sS9leHRuA2FlbQIxMABicmlkETFQS240alZ0d0pCS0hXRXN3AR4c9Y9pQykGagwCiAT0a84OlyRuoPozOFF2ng8ZyYwwvKGd4m7W91oPA3xw9A_aem_5FYP7iKGktVP1OJBBpa-mA)
-- MOPCON 2024 Keynote: [Trends in Machine Learning for Unmanned Aerial Vehicle Applications](https://drive.google.com/file/d/1UmSeU8Y63s4cASBFNWM_zi5ll2J9EIJx/view?fbclid=IwY2xjawGLSe9leHRuA2FlbQIxMAABHX9AjWq_vX6WXNQYPfsQp-BUFIM44uh6MBCdLFP4OAEdUsAF8zQptxDcdQ_aem_uvY1jloybOcTQEWV687_BA)
-- COSCUP 2024: [Creating a Linux-like real-time operating system for quadrotor drones](https://drive.google.com/file/d/16S8ZRC-lhT15CXwWIy-RIIWXl5Ertqo5/view)
-- COSCUP 2023: [Tenok: Build a real-time operating system for Robotics](https://drive.google.com/file/d/1p8YJVPVwFAEknMXPbXzjj0y0p5qcqT2T/view)
+- On the Tenth Anniversary of AlphaGo - An Introduction to Reinforcement Learning and Planning (Sciwork Conference 2026)
+- Learning to Fly in Simulation: Quadrotor Reinforcement Learning from First Principles (MOPCON 2026)
+- [The Illusion of Hardware - How Modern Virtual Machines Work](https://drive.google.com/file/d/1OwC0eo8sWeRmDrPONtk9EZb1jCm9hCAa/view?usp=sharing) (COSCUP 2026)
+- [From Optimal Control to Reinforcement Learning for Quadrotor Drones](https://drive.google.com/file/d/1Y3XgF9OthbjNDhyO93OfG7P_fOf9K6aa/view) (Sciwork Seminar 2026)
+- [Building a Quadrotor Simulator with Python - Modeling, Simulation, and Control](https://drive.google.com/file/d/1Oc-OfTaBOS4-Ut4LMXkFd4vc9sJBr5s8/view?fbclid=IwY2xjawM0sS9leHRuA2FlbQIxMABicmlkETFQS240alZ0d0pCS0hXRXN3AR4c9Y9pQykGagwCiAT0a84OlyRuoPozOFF2ng8ZyYwwvKGd4m7W91oPA3xw9A_aem_5FYP7iKGktVP1OJBBpa-mA) (OpenTechConf 2025)
+- [Trends in Machine Learning for Unmanned Aerial Vehicle Applications](https://drive.google.com/file/d/1UmSeU8Y63s4cASBFNWM_zi5ll2J9EIJx/view?fbclid=IwY2xjawGLSe9leHRuA2FlbQIxMAABHX9AjWq_vX6WXNQYPfsQp-BUFIM44uh6MBCdLFP4OAEdUsAF8zQptxDcdQ_aem_uvY1jloybOcTQEWV687_BA) (MOPCON 2024 Keynote)
+- [Creating a Linux-like real-time operating system for quadrotor drones](https://drive.google.com/file/d/16S8ZRC-lhT15CXwWIy-RIIWXl5Ertqo5/view) (COSCUP 2024)
+- [Tenok: Build a real-time operating system for Robotics](https://drive.google.com/file/d/1p8YJVPVwFAEknMXPbXzjj0y0p5qcqT2T/view) (COSCUP 2023)
 
 
 競賽經歷
