@@ -105,30 +105,25 @@ Computer Architecture (Fall 2026)
     - [SDS State](https://docs.google.com/presentation/d/1qXyH6xN_1QxII2YjoyuF5DUIst-A7pB1JG1PKdwKkgE/edit?usp=sharing) / [video](https://youtu.be/wOohQuD9wAg)
     - [Combinational Logic Blocks](https://docs.google.com/presentation/d/1JahtX4WzKs2JGx_qYfjkdJE5pQwBfXBX46w4NnQOV_E/edit?usp=sharing) / [video](https://youtu.be/S6TNo2jSu9A)
 
-* Week 7 (Oct 20): Quiz
+* Week 7 (Oct 20): Quiz + Datapath and Control
     - Announcement:
-       - [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) is out. Deadline: Nov 12, 2026
-    - [Quiz3](https://hackmd.io/@sysprog/arch2025-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2025-quiz3-sol)
-
-* Week 8 (Oct 27): Review + Datapath and Control
-    - Announcement:
-        * The textual description of Problem D in [Quiz3](https://hackmd.io/@sysprog/arch2025-quiz3) is correct, but the accompanying image is incorrect. As compensation, all participants of Quiz 3 will receive a 15-point increase.
-        * If you voluntarily participate in the class discussions for [Quiz3](https://hackmd.io/@sysprog/arch2025-quiz3), please email the instructor afterward, including your responses to the instructor's questions and any follow-up contributions. You will receive an additional 10 points for Quiz 3.
-    - "What I cannot create, I do not understand." - On Richard Feynman's blackboard at the time of his death in 1988 / [Build Your Own X](https://build-your-own-x.vercel.app/)
-    - video: [Circuits recap](https://youtu.be/N36wWh0DriA)
-    - [RISC-V Datapath I](https://docs.google.com/presentation/d/1kYFjJROF0OVFPPXCrPXBnlY7d9lP2rwcLxNJvI6DuAE/edit?usp=sharing) / [video](https://youtu.be/hPJXX91kurw)
-    - [RISC-V Datapath II](https://docs.google.com/presentation/d/1nJknDrB402GuriZuqeYOVpoJv9bvYoZeFRSPKzqjdqw/edit?usp=sharing) / [video](https://youtu.be/wQC7mjjfJDw)
-
-* Week 9 (Nov 3): Datapath and Control + Pipeline
-    - Announcement:
-        + Submit [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) through Google Form.
-        + Homework 3 will be finalized on Nov 6
-        + Quiz 4 is scheduled for Nov 18
+       - Homework 2 will be finalized at Oct 23.
+        + Quiz 4 is scheduled for Nov 3
             - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4) / [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
             - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5) / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol) / [annotated with Ripes](https://hackmd.io/@wIVnCcUaTouAktrkMVLEMA/rkm8OkOjF)
             - [2022 Quiz4](https://hackmd.io/@sysprog/arch2022-quiz4) / [solution](https://hackmd.io/@sysprog/arch2022-quiz4-sol) / [annotated](https://hackmd.io/@0SHE18LgRsqRjsgqxIFjVA/SJxvlqOds)
             - [2023 Quiz4](https://hackmd.io/@sysprog/arch2023-quiz4) / [solution](https://hackmd.io/@sysprog/arch2023-quiz4-sol) / [annotated](https://hackmd.io/@c3WNnG7RRK2J17ifSiezZA/Bk1mQfKuT)
             - [2024 Quiz4](https://hackmd.io/@sysprog/arch2024-quiz4) / [solution](https://hackmd.io/@sysprog/arch2024-quiz4-sol)
+            - [2025 Quiz4](https://hackmd.io/@sysprog/arch2024-quiz4) / [solution](https://hackmd.io/@sysprog/arch2025-quiz4-sol)
+    - [Quiz3](https://hackmd.io/@sysprog/arch2026-quiz3): RISC-V programming and instruction encoding + Digital systems / [solution](https://hackmd.io/@sysprog/arch2026-quiz3-sol)
+    - "What I cannot create, I do not understand." - On Richard Feynman's blackboard at the time of his death in 1988 / [Build Your Own X](https://build-your-own-x.vercel.app/)
+    - video: [Circuits recap](https://youtu.be/N36wWh0DriA)
+    - [RISC-V Datapath I](https://docs.google.com/presentation/d/1kYFjJROF0OVFPPXCrPXBnlY7d9lP2rwcLxNJvI6DuAE/edit?usp=sharing) / [video](https://youtu.be/hPJXX91kurw)
+    - [RISC-V Datapath II](https://docs.google.com/presentation/d/1nJknDrB402GuriZuqeYOVpoJv9bvYoZeFRSPKzqjdqw/edit?usp=sharing) / [video](https://youtu.be/wQC7mjjfJDw)
+
+* Week 8 (Oct 27): Review + Datapath and Control
+    - Announcement:
+        * If you voluntarily participate in the class discussions for [Quiz3](https://hackmd.io/@sysprog/arch2026-quiz3), please email the instructor afterward, including your responses to the instructor's questions and any follow-up contributions. You will receive an additional 10 points for Quiz 3.
     - [Easy RISC-V](https://dramforever.github.io/easyriscv/)
         * an interactive tutorial created by dramforever that introduces the fundamentals of RISC-V assembly programming through hands-on experimentation. Inspired by Easy 6502, it uses a browser-based simulator to let learners observe every step of program execution — from instruction decoding to register and memory state changes — without requiring any software installation or toolchain setup.
         * The tutorial focuses on the minimalist yet complete RV32I + Zicsr instruction set, guiding readers from their first simple instruction sequence (addi, ebreak) to more complex topics such as arithmetic and logic operations, branches, jumps, memory access, stack management, function calls, control and status registers (CSRs), privilege levels, exceptions, and even the construction of a bare-bones operating system.
@@ -142,6 +137,9 @@ Computer Architecture (Fall 2026)
     - MIT 6.191 [L15: Introduction to Pipelining](https://youtu.be/5NQkhqZe8_8), [L16: Processor Pipelining](https://youtu.be/TMpjvAvQCWA)
         * [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [Lab3: Construct a single-cycle CPU with Chisel](https://hackmd.io/@sysprog/B1Qxu2UkZx)
+
+* Week 9 (Nov 3): Datapath and Control + Pipeline
+    - [Quiz4](https://hackmd.io/@sysprog/arch2026-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2026-quiz4-sol)
 
 * Week 10 (Nov 10): Pipelined Processors
     - Announcement:
