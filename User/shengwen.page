@@ -12,7 +12,7 @@ categories: User
 - 2022-2024 國立臺灣大學 電機所博士生 (肄)
 - 2019-2021 國立陽明交通大學 機器人碩士
 - 2015-2019 靜宜大學 資訊工程學系
-- 2013-2018 非在校生身分參與成大航太、資工及工科系之專題與論文研究
+- 2013-2018 非在校生參與成大航太、資工及工科系之研究活動
 - 個人網頁: [shengwen-tw.github.io](https://shengwen-tw.github.io/)
 
 專長
@@ -28,14 +28,20 @@ categories: User
 - 2024-Now  [NVIDIA](https://www.nvidia.com/zh-tw/)
 - 2018-2021 [奧榮科技](https://www.avilon.co/?lang=zh)
 
+文章
+====
+
+- [California Trip, 2026](https://shengwen-tw.github.io/posts/cal2026/)
+- [Open Source Summit North America 2026](https://shengwen-tw.github.io/posts/ossna2026/)
+- [Embedded Open Source Summit 2024](https://shengwen-tw.github.io/posts/20240416_eoss/)
+
 主要作品
 =======
 
-- [多旋翼飛控全系統設計](https://www.youtube.com/watch?v=hBBe1Kj82B4): 交大期間成果，包含非線性控制、多感測器慣性導航、即時定位與地圖建構（SLAM）及最佳軌跡規劃。曾於學術合作計畫中授權予[國家太空中心 (TASA)](https://www.tasa.org.tw/)
-- [UrsusPilot](https://www.youtube.com/watch?v=_DsNQWP7UXo): 2013–2015 年期間參與之四軸飛行器專案（由成大航太林清一教授研究生主導）。原為開放原始碼專案，目前已轉為非公開
-- [Tenok](https://github.com/tenok-rtos/tenok): Linux 風格的即時作業系統，適用於機器人與物聯網應用 [[共筆]](https://hackmd.io/@shengwen/tenok) [[影片]](https://www.youtube.com/watch?v=byWihWcMP00)
-- [Puyuma](https://github.com/Puyuma/puyuma-core): 基於 Linux 與電腦視覺、透過 Xenomai 達成即時性的微型自駕車實驗系統  [[技術報告]](https://drive.google.com/file/d/1rKgdAhpr7M2tiiu-zpXKDYbxuNX_QqWz/view?usp=share_link) [[簡報]](https://drive.google.com/file/d/1D9Cp7_kDHw4EDSdKVgKMuRb3Ri0mA4bN/view?usp=sharing)
+- [NCRL-Flight-Control](https://www.youtube.com/watch?v=hBBe1Kj82B4): 多軸飛行器飛控，技術包含非線性控制、慣性導航、SLAM 及軌跡規劃。經產學合作授予[國家太空中心 (TASA)](https://www.tasa.org.tw/)
+- [UrsusPilot](https://www.youtube.com/watch?v=_DsNQWP7UXo): 2013–2015 年期間參與之四軸飛行器專案。原核心成員後續創辦奧榮科技
 - [PU-01](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 雙尾桿後推式定翼機設計 [[簡報]](https://drive.google.com/file/d/1hEJ8q8cbePwxY358UeMr3Z0nmIqtdnKo/view)
+- [Tenok](https://github.com/tenok-rtos/tenok): Linux-style 的即時作業系統，適用於機器人與物聯網應用 [[共筆]](https://hackmd.io/@shengwen/tenok) [[影片]](https://www.youtube.com/watch?v=byWihWcMP00)
 
 開放原始碼
 =========
@@ -43,23 +49,21 @@ categories: User
 - [semu](https://github.com/sysprog21/semu): RV32IMA 系統模擬器，實作 VirtIO 虛擬化（GPU、Keyboard、Mouse、RNG、Block device）
 - [DirectFB2](https://github.com/directfb2/DirectFB2): 修正 RV32 與 DRM 相關問題
 - [Mado](https://github.com/sysprog21/mado): 加入 Linux framebuffer device 的支援
-- [linenoise](https://github.com/antirez/linenoise): 改進鍵盤輸入處理架構
-- [Rust 程式語言電子書](https://rust-lang.tw/book-tw/): 內容校對修正
 
 **Upstream:**
 
 - [Linux kernel](https://www.kernel.org/): 修正 Linux KVM RISC-V PMU（Performance Monitoring Unit）在 RV32 上因 counter mask scan range 過大導致的 out-of-bounds read 問題 [[Patch]](https://patchwork.ozlabs.org/project/kvm-riscv/patch/20260626054051.3360865-1-shengwen1997.tw@gmail.com/)
 - [glibc](https://sourceware.org/glibc/): 修正 RISC-V RV32 libthread_db 的 THREAD_SELF register layout，使 GDB 能正確解析 tp/x4 thread pointer 進行 pthread-aware debugging [[Patch]](https://inbox.sourceware.org/libc-alpha/20260623180252.2400811-1-shengwen1997.tw@gmail.com/T/#u)
 
-數值模擬專案
-===========
+數值模擬
+=======
 
 四軸飛行器:
 
-- [rotor-bench](https://github.com/shengwen-tw/rotor-bench): 基於 Python 開發、可利用 GPU 平行化加速的多旋翼無人機模擬器，用於系統性驗證先進控制演算法，如幾何控制、最佳控制、強健控制及強化學習
-- [四軸飛行器幾何控制](https://github.com/shengwen-tw/qaudrotor_geometry_ctrl_simulator): 基於非線性動力學模型的控制器模擬，可實現敏捷飛行 [[簡報]](https://drive.google.com/file/d/1ZyqSpjSTDKI8-ypz8bvnjUU6N7ipMHDt/view?usp=sharing)
-- [四軸飛行器 LQR 控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): 經典最佳控制設計，使用[保結構加倍收斂法](https://shengwen-tw.github.io/posts/sda/)求解 Riccati 方程，相較 MATLAB 工具包具有平方收斂速度 [[技術報告]](https://drive.google.com/file/d/1u0T5Wb_mH0NUBVetOBdvIHdeCOP8Wde6/view?usp=sharing)
-- [四軸飛行器 H∞ 強健控制](https://github.com/shengwen-tw/quadrotor-h-infty-ctrl-simulator): 強健最佳控制，透過最小化擾動輸入至輸出增益，並以二分法結合保結構加倍收斂法求解 [[簡報]](https://drive.google.com/file/d/1573Td07_vohtVan2gHrCwDmQyY9ihr_w/view?usp=drivesdk)
+- [rotor-bench](https://github.com/shengwen-tw/rotor-bench): SE(3) 公平基準下的四軸飛行器控制器 Benchmark, (幾何控制、最佳控制、強健控制、強化學習)
+- [四軸飛行器幾何控制](https://github.com/shengwen-tw/qaudrotor_geometry_ctrl_simulator): 穩定性經 Lyapunov theory 證明的 SE(3) 的非線性控制方法 [[簡報]](https://drive.google.com/file/d/1ZyqSpjSTDKI8-ypz8bvnjUU6N7ipMHDt/view?usp=sharing)
+- [四軸飛行器 LQR 控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): SDA [(保結構加倍收斂法)](https://shengwen-tw.github.io/posts/sda/) 求解 LQR / Riccati 控制問題. 演算法具有平方收斂速度 [[技術報告]](https://drive.google.com/file/d/1u0T5Wb_mH0NUBVetOBdvIHdeCOP8Wde6/view?usp=sharing)
+- [四軸飛行器 H∞ 強健控制](https://github.com/shengwen-tw/quadrotor-h-infty-ctrl-simulator): 強健最佳控制，最小化擾動輸入至輸出增益 [[簡報]](https://drive.google.com/file/d/1573Td07_vohtVan2gHrCwDmQyY9ihr_w/view?usp=drivesdk)
 
 馬達控制:
 
@@ -97,10 +101,3 @@ Vehicles](https://link.springer.com/chapter/10.1007/978-3-030-01174-1_75)
 - [Trends in Machine Learning for Unmanned Aerial Vehicle Applications](https://drive.google.com/file/d/1UmSeU8Y63s4cASBFNWM_zi5ll2J9EIJx/view?fbclid=IwY2xjawGLSe9leHRuA2FlbQIxMAABHX9AjWq_vX6WXNQYPfsQp-BUFIM44uh6MBCdLFP4OAEdUsAF8zQptxDcdQ_aem_uvY1jloybOcTQEWV687_BA) (MOPCON 2024 Keynote)
 - [Creating a Linux-like real-time operating system for quadrotor drones](https://drive.google.com/file/d/16S8ZRC-lhT15CXwWIy-RIIWXl5Ertqo5/view) (COSCUP 2024)
 - [Tenok: Build a real-time operating system for Robotics](https://drive.google.com/file/d/1p8YJVPVwFAEknMXPbXzjj0y0p5qcqT2T/view) (COSCUP 2023)
-
-
-競賽經歷
-=======
-
-- 2018 放視大賞 銀獎
-- 2014 軟體創作達人暑期成長營 特優
