@@ -38,22 +38,22 @@ categories: User
 主要作品
 =======
 
-- [NCRL-Flight-Control](https://www.youtube.com/watch?v=hBBe1Kj82B4): 多軸飛行器飛控，技術包含非線性控制、慣性導航、SLAM 及軌跡規劃。經產學合作授予[國家太空中心 (TASA)](https://www.tasa.org.tw/)
-- [UrsusPilot](https://www.youtube.com/watch?v=_DsNQWP7UXo): 2013–2015 年期間參與之四軸飛行器專案。原核心成員後續創辦奧榮科技
-- [PU-01](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 雙尾桿後推式定翼機設計 [[簡報]](https://drive.google.com/file/d/1hEJ8q8cbePwxY358UeMr3Z0nmIqtdnKo/view)
+- [NCRL-Flight-Control](https://www.youtube.com/watch?v=hBBe1Kj82B4): 多軸飛行器飛控，技術包含非線性控制、慣性導航、SLAM 及軌跡規劃。產學合作授予[國家太空中心 (TASA)](https://www.tasa.org.tw/)
+- [UrsusPilot](https://www.youtube.com/watch?v=_DsNQWP7UXo): 2013–2015 年期間參與之四軸飛行器專案。原核心成員來自成大航太林清一實驗室、後續創辦奧榮科技
+- [PU-01](https://www.youtube.com/watch?v=vZy3Hgsk0nU): 雙尾桿後推式定翼機設計。成大航太林清一實驗室指導下完成 [[簡報]](https://drive.google.com/file/d/1hEJ8q8cbePwxY358UeMr3Z0nmIqtdnKo/view)
 - [Tenok](https://github.com/tenok-rtos/tenok): Linux-style 的即時作業系統，適用於機器人與物聯網應用 [[共筆]](https://hackmd.io/@shengwen/tenok) [[影片]](https://www.youtube.com/watch?v=byWihWcMP00)
 
 開放原始碼
 =========
 
-- [semu](https://github.com/sysprog21/semu): RV32IMA 系統模擬器，實作 VirtIO 虛擬化（GPU、Keyboard、Mouse、RNG、Block device）
-- [DirectFB2](https://github.com/directfb2/DirectFB2): 修正 RV32 與 DRM 相關問題
-- [Mado](https://github.com/sysprog21/mado): 加入 Linux framebuffer device 的支援
+- [semu](https://github.com/sysprog21/semu): 增加 GPU、Keyboard、Mouse、RNG、Block device 的 VirtIO 虛擬化
+- [DirectFB2](https://github.com/directfb2/DirectFB2): 修正 RV32 相容性問題及 DRM 圖層渲染問題
+- [Mado](https://github.com/sysprog21/mado): 增加 Linux framebuffer device 的支援
 
 **Upstream:**
 
-- [Linux kernel](https://www.kernel.org/): 修正 Linux KVM RISC-V PMU（Performance Monitoring Unit）在 RV32 上因 counter mask scan range 過大導致的 out-of-bounds read 問題 [[Patch]](https://patchwork.ozlabs.org/project/kvm-riscv/patch/20260626054051.3360865-1-shengwen1997.tw@gmail.com/)
-- [glibc](https://sourceware.org/glibc/): 修正 RISC-V RV32 libthread_db 的 THREAD_SELF register layout，使 GDB 能正確解析 tp/x4 thread pointer 進行 pthread-aware debugging [[Patch]](https://inbox.sourceware.org/libc-alpha/20260623180252.2400811-1-shengwen1997.tw@gmail.com/T/#u)
+- [Linux kernel](https://www.kernel.org/): 修正 Linux RV32 KVM PMU（Performance Monitoring Unit）的 out-of-bounds read 問題 [[Patch]](https://patchwork.ozlabs.org/project/kvm-riscv/patch/20260626054051.3360865-1-shengwen1997.tw@gmail.com/)
+- [glibc](https://sourceware.org/glibc/): 修正 RV32 libthread_db 上使 GDB 不正確解析 thread pointer 的問題 [[Patch]](https://inbox.sourceware.org/libc-alpha/20260623180252.2400811-1-shengwen1997.tw@gmail.com/T/#u)
 
 數值模擬
 =======
@@ -77,6 +77,7 @@ categories: User
 論文
 ====
 
+- 2027 - RotorBench: A Unified SE(3) Benchmark for Quadrotor Controllers under Disturbance and Model Uncertainty
 - 2026 - [Data-Driven Estimation of Quadrotor Motor Efficiency via Residual Minimization](https://arxiv.org/abs/2510.11388)
 - 2023 - [A Computationally Efficient GNSS/INS Design of Multirotor based on Error-state Kalman Filter](https://ieeexplore.ieee.org/abstract/document/10354209)
 - 2022 - [Robust State-Feedback H∞ Control of Quadrotor](https://ieeexplore.ieee.org/document/9969787)
