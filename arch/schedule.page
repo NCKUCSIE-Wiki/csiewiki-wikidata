@@ -138,7 +138,7 @@ Computer Architecture (Fall 2026)
         * [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [Lab3: Construct a single-cycle CPU with Chisel](https://hackmd.io/@sysprog/B1Qxu2UkZx)
 
-* Week 9 (Nov 3): Datapath and Control + Pipeline
+* Week 9 (Nov 3): Quiz
     - [Quiz4](https://hackmd.io/@sysprog/arch2026-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2026-quiz4-sol)
 
 * Week 10 (Nov 10): Pipelined Processors
