@@ -60,7 +60,7 @@ categories: User
 
 四軸飛行器:
 
-- [rotor-bench](https://github.com/shengwen-tw/rotor-bench): SE(3) 公平基準下的四軸飛行器控制器 Benchmark, (幾何控制、最佳控制、強健控制、強化學習)
+- [rotor-bench](https://github.com/shengwen-tw/rotor-bench): SE(3) 公平基準下的四軸飛行器控制器 Benchmark (幾何控制、最佳控制、強健控制、模型預測控制、強化學習)
 - [四軸飛行器幾何控制](https://github.com/shengwen-tw/qaudrotor_geometry_ctrl_simulator): 穩定性經 Lyapunov theory 證明的 SE(3) 的非線性控制方法 [[簡報]](https://drive.google.com/file/d/1ZyqSpjSTDKI8-ypz8bvnjUU6N7ipMHDt/view?usp=sharing)
 - [四軸飛行器 LQR 控制](https://github.com/shengwen-tw/quadrotor_lqr_simulator): SDA [(保結構加倍收斂法)](https://shengwen-tw.github.io/posts/sda/) 求解 LQR / Riccati 控制問題. 演算法具有平方收斂速度 [[技術報告]](https://drive.google.com/file/d/1u0T5Wb_mH0NUBVetOBdvIHdeCOP8Wde6/view?usp=sharing)
 - [四軸飛行器 H∞ 強健控制](https://github.com/shengwen-tw/quadrotor-h-infty-ctrl-simulator): 強健最佳控制，最小化擾動輸入至輸出增益 [[簡報]](https://drive.google.com/file/d/1573Td07_vohtVan2gHrCwDmQyY9ihr_w/view?usp=drivesdk)
