@@ -107,7 +107,6 @@ Computer Architecture (Fall 2026)
 
 * Week 7 (Oct 20): Quiz + Datapath and Control
     - Announcement:
-       - Homework 2 will be finalized at Oct 27 09:00.
         + Quiz 4 is scheduled for Nov 3
             - [2020 Quiz4](https://hackmd.io/@sysprog/arch2020-quiz4) / [solution](https://hackmd.io/@sysprog/arch2020-quiz4-sol)
             - [2021 Quiz5](https://hackmd.io/@sysprog/arch2021-quiz5) / [solution](https://hackmd.io/@sysprog/arch2021-quiz5-sol) / [annotated with Ripes](https://hackmd.io/@wIVnCcUaTouAktrkMVLEMA/rkm8OkOjF)
@@ -121,9 +120,11 @@ Computer Architecture (Fall 2026)
     - [RISC-V Datapath I](https://docs.google.com/presentation/d/1kYFjJROF0OVFPPXCrPXBnlY7d9lP2rwcLxNJvI6DuAE/edit?usp=sharing) / [video](https://youtu.be/hPJXX91kurw)
     - [RISC-V Datapath II](https://docs.google.com/presentation/d/1nJknDrB402GuriZuqeYOVpoJv9bvYoZeFRSPKzqjdqw/edit?usp=sharing) / [video](https://youtu.be/wQC7mjjfJDw)
 
-* Week 8 (Oct 27): Review + Datapath and Control
+* Week 8 (Oct 27): Software Optimization + Datapath and Control
     - Announcement:
+        * [Homework 2](https://hackmd.io/@sysprog/2026-arch-homework2) is out. Due: Nov 15, 2026
         * If you voluntarily participate in the class discussions for [Quiz3](https://hackmd.io/@sysprog/arch2026-quiz3), please email the instructor afterward, including your responses to the instructor's questions and any follow-up contributions. You will receive an additional 10 points for Quiz 3.
+    - [Approximating the Sine Function in BFloat16](https://hackmd.io/@sysprog/bf16-sine)
     - [Easy RISC-V](https://dramforever.github.io/easyriscv/)
         * an interactive tutorial created by dramforever that introduces the fundamentals of RISC-V assembly programming through hands-on experimentation. Inspired by Easy 6502, it uses a browser-based simulator to let learners observe every step of program execution — from instruction decoding to register and memory state changes — without requiring any software installation or toolchain setup.
         * The tutorial focuses on the minimalist yet complete RV32I + Zicsr instruction set, guiding readers from their first simple instruction sequence (addi, ebreak) to more complex topics such as arithmetic and logic operations, branches, jumps, memory access, stack management, function calls, control and status registers (CSRs), privilege levels, exceptions, and even the construction of a bare-bones operating system.
