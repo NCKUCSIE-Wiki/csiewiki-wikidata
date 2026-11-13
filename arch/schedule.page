@@ -146,7 +146,7 @@ Computer Architecture (Fall 2026)
     - Announcement:
         *  if you voluntarily participate in the class discussions, please email the instructor afterward, including your responses to the instructor's questions and any follow-up contributions. You will receive an additional 20 points for Quiz 4.
         * Adjustments to [Homework 2](https://hackmd.io/@sysprog/2026-arch-homework2)
-        * Homework 3 will be out on Nov 13
+        * Homework 3 will be out on Nov 14
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p) / [video](https://youtu.be/ILZ6fDHZ_eo)
     - [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [RISC-V 5-Stage Pipeline](https://docs.google.com/presentation/d/1v-Squx8lK-oOrflFOwBZh-ue94seVHZudqDOgJmFf5Q/edit?usp=sharing) / [video-1](https://youtu.be/LJt737KqWzI), [video-2](https://youtu.be/UxMLmMdFzTI), [video-3](https://youtu.be/oPmRV9MzuIU)
@@ -154,12 +154,10 @@ Computer Architecture (Fall 2026)
 * Week 11 (Nov 17): Quiz + Homework Review
     - Announcement
         * In today’s class, we will discuss the progress of [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) and [Homework 3](https://hackmd.io/@sysprog/2025-arch-homework3) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should paste the link to your HackMD notes for [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) here. $\to$ [2025-11-18](https://hackmd.io/QERe1qMbSra0UqdfEPUhMw)
-    - [Quiz4](https://hackmd.io/@sysprog/arch2025-quiz4): RISC-V programming + datapath + control + pipelined processor / [solution](https://hackmd.io/@sysprog/arch2025-quiz4-sol)
     - [Homework1](https://hackmd.io/@sysprog/2025-arch-homework1), [Homework2](https://hackmd.io/@sysprog/2025-arch-homework2)
 
 * Week 12 (Nov 24): Cache
     - Announcement
-        * In today’s class, we will discuss the progress of [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) and [Homework 3](https://hackmd.io/@sysprog/2025-arch-homework3) with the students. Whether you are voluntarily or non-voluntarily participating in the Q&A, you should follow the assignment guidelines, prepare your HackMD notes, and set them to *public*. When the instructor talks with you, you should paste the link to your HackMD notes for [Homework 2](https://hackmd.io/@sysprog/2025-arch-homework2) here. $\to$ [2025-11-18](https://hackmd.io/QERe1qMbSra0UqdfEPUhMw)
         * This semester, we will conduct 7 quizzes. Out of these, the best 4 will be selected for grading purposes.
         * The instructor will submit the grades on the school’s [designated deadline](https://web.ncku.edu.tw/p/412-1000-6149.php?Lang=zh-tw) (Jan 23, 2026) for grade registration. This means that students will have ample time to dedicate to the final project assigned in this course.
         * [Term projects](https://hackmd.io/@sysprog/arch2025-projects): Contact the instructor as early as possible. You must provide the materials and demonstrate to the instructor before Jan 20, 2026. Deliverables
