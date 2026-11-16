@@ -146,7 +146,6 @@ Computer Architecture (Fall 2026)
     - Announcement:
         *  if you voluntarily participate in the class discussions, please email the instructor afterward, including your responses to the instructor's questions and any follow-up contributions. You will receive an additional 20 points for Quiz 4.
         * Adjustments to [Homework 2](https://hackmd.io/@sysprog/2026-arch-homework2)
-        * Homework 3 will be out on Nov 17
     - [0 to ASIC](https://docs.google.com/presentation/d/14npvuiGxsS3C-yo2vOsbZpNKGehwTtIYRFN6k3ZVR4M/edit#slide=id.p) / [video](https://youtu.be/ILZ6fDHZ_eo)
     - [L17: Implementing Pipelining](https://youtu.be/Pr3-iFE-nCQ), [L18: Implementing Pipelined Processors](https://youtu.be/WdbCaCoOgVY) / [note](https://computationstructures.org/lectures/pbeta/pbeta.html)
     - [RISC-V 5-Stage Pipeline](https://docs.google.com/presentation/d/1v-Squx8lK-oOrflFOwBZh-ue94seVHZudqDOgJmFf5Q/edit?usp=sharing) / [video-1](https://youtu.be/LJt737KqWzI), [video-2](https://youtu.be/UxMLmMdFzTI), [video-3](https://youtu.be/oPmRV9MzuIU)
@@ -154,6 +153,7 @@ Computer Architecture (Fall 2026)
 * Week 11 (Nov 17): Review + Cache
     - Announcement
         * In today’s class, we will discuss the progress of [Homework 2](https://hackmd.io/@sysprog/2026-arch-homework2) with the students.
+        * Homework 3 will be out on Nov 18, derived from [Lab3: Construct RISC-V CPU with Chisel](https://hackmd.io/@sysprog/B1Qxu2UkZx)
         * Quiz 5 is scheduled for Dec 1 : Remember to bring headphones and a tablet or laptop. The quiz will include an English dictation exercise.
             - [2025-Quiz5](https://hackmd.io/@sysprog/arch2025-quiz5) / [solution](https://hackmd.io/@sysprog/arch2025-quiz5-sol)
             - [2024-Quiz5](https://hackmd.io/@sysprog/arch2024-quiz5) / [solution](https://hackmd.io/@sysprog/arch2024-quiz5-sol)
