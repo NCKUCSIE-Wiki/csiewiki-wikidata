@@ -153,7 +153,7 @@ Computer Architecture (Fall 2026)
 * Week 11 (Nov 17): Review + Cache
     - Announcement
         * In today’s class, we will discuss the progress of [Homework 2](https://hackmd.io/@sysprog/2026-arch-homework2) with the students.
-        * Homework 3 will be out on Nov 18, derived from [Lab3: Construct RISC-V CPU with Chisel](https://hackmd.io/@sysprog/B1Qxu2UkZx)
+        * Homework 3 will be out on Nov 19, derived from revised [Lab3: Construct RISC-V CPU with Chisel](https://hackmd.io/@sysprog/B1Qxu2UkZx)
         * Quiz 5 is scheduled for Dec 1 : Remember to bring headphones and a tablet or laptop. The quiz will include an English dictation exercise.
             - [2025-Quiz5](https://hackmd.io/@sysprog/arch2025-quiz5) / [solution](https://hackmd.io/@sysprog/arch2025-quiz5-sol)
             - [2024-Quiz5](https://hackmd.io/@sysprog/arch2024-quiz5) / [solution](https://hackmd.io/@sysprog/arch2024-quiz5-sol)
