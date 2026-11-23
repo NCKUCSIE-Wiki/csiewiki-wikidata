@@ -174,11 +174,11 @@ Computer Architecture (Fall 2026)
 * Week 12 (Nov 24): Virtual Memory
     - Announcement
         * This semester, we will conduct 7 quizzes. Out of these, the best 4 will be selected for grading purposes.
-        * The instructor will submit the grades on the school’s [designated deadline](https://web.ncku.edu.tw/p/412-1000-6149.php?Lang=zh-tw) (Jan 23, 2026) for grade registration. This means that students will have ample time to dedicate to the final project assigned in this course.
-        * [Term projects](https://hackmd.io/@sysprog/arch2025-projects): Contact the instructor as early as possible. You must provide the materials and demonstrate to the instructor before Jan 20, 2026. Deliverables
+        * The instructor will submit the grades on the school’s [designated deadline](https://web.ncku.edu.tw/p/412-1000-6149.php?Lang=zh-tw) (Jan 22, 2027) for grade registration. This means that students will have ample time to dedicate to the final project assigned in this course.
+        * [Term projects (2025)](https://hackmd.io/@sysprog/arch2025-projects): Contact the instructor as early as possible. You must provide the materials and demonstrate to the instructor before Jan 19, 2027. Deliverables
             - A development log and accompanying report
             - Complete source code sufficient for full reproduction
-            - An illustrated video of at least 15 minutes.
+            - An illustrated video of at least 25 minutes.
     * [Virtual Memory](https://youtu.be/TsxZlXOrt8U)
         - UCB: [Virtual Memory I](https://docs.google.com/presentation/d/1_KtUjyxALrATgiT9JsiK8GKQXNw5M0BAllsdz78Lm74/edit?usp=sharing) / [video](https://youtu.be/lU0MDQHmGxA)
         - UCB: [Virtual Memory II](https://docs.google.com/presentation/d/1KB2HKnvqsKq65udERzMw9imTMtV8KREMWmKc7w8XOfk/edit?usp=sharing) / [video](https://youtu.be/YtBlu56U3Lw)
