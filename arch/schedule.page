@@ -182,6 +182,7 @@ Computer Architecture (Fall 2026)
     * [Virtual Memory](https://youtu.be/TsxZlXOrt8U)
         - UCB: [Virtual Memory I](https://docs.google.com/presentation/d/1_KtUjyxALrATgiT9JsiK8GKQXNw5M0BAllsdz78Lm74/edit?usp=sharing) / [video](https://youtu.be/lU0MDQHmGxA)
         - UCB: [Virtual Memory II](https://docs.google.com/presentation/d/1KB2HKnvqsKq65udERzMw9imTMtV8KREMWmKc7w8XOfk/edit?usp=sharing) / [video](https://youtu.be/YtBlu56U3Lw)
+    * [Term project: Linux for WebAssembly](https://hackmd.io/@MoonJam/linux-wasm-intro)
 
 * Week13 (Dec 1): Virtual Memory + Operating System + Vector Extension
     - Announcement
