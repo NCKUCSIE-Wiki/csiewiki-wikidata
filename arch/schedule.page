@@ -187,6 +187,8 @@ Computer Architecture (Fall 2026)
         - UCB: [Virtual Memory I](https://docs.google.com/presentation/d/1_KtUjyxALrATgiT9JsiK8GKQXNw5M0BAllsdz78Lm74/edit?usp=sharing) / [video](https://youtu.be/lU0MDQHmGxA)
         - UCB: [Virtual Memory II](https://docs.google.com/presentation/d/1KB2HKnvqsKq65udERzMw9imTMtV8KREMWmKc7w8XOfk/edit?usp=sharing) / [video](https://youtu.be/YtBlu56U3Lw)
     * [Term project: Linux for WebAssembly](https://hackmd.io/@MoonJam/linux-wasm-intro)
+    * [RTMux: A Mixed-Criticality RISC-V Real-Time Microkernel with Linux Services for Space Avionics]
+
 
 * Week13 (Dec 1): Virtual Memory + Operating System + Vector Extension
     - Announcement
