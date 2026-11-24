@@ -153,7 +153,6 @@ Computer Architecture (Fall 2026)
 * Week 11 (Nov 17): Review + Cache
     - Announcement
         * In today’s class, we will discuss the progress of [Homework 2](https://hackmd.io/@sysprog/2026-arch-homework2) with the students.
-        * Homework 3 will be out on Nov 19, derived from revised [Lab3: Construct RISC-V CPU with Chisel](https://hackmd.io/@sysprog/arch2026-lab3)
         * Quiz 5 is scheduled for Dec 1 : Remember to bring headphones and a tablet or laptop. The quiz will include an English dictation exercise.
             - [2025-Quiz5](https://hackmd.io/@sysprog/arch2025-quiz5) / [solution](https://hackmd.io/@sysprog/arch2025-quiz5-sol)
             - [2024-Quiz5](https://hackmd.io/@sysprog/arch2024-quiz5) / [solution](https://hackmd.io/@sysprog/arch2024-quiz5-sol)
@@ -173,8 +172,11 @@ Computer Architecture (Fall 2026)
 
 * Week 12 (Nov 24): Virtual Memory
     - Announcement
+        * [Homework 3](https://hackmd.io/@sysprog/2026-arch-homework3) is finalized. Due: Dec 13, 2026
+        * Quiz 5 is scheduled for Dec 1 : Remember to bring headphones and a tablet or laptop. The quiz will include an English dictation exercise.
         * This semester, we will conduct 7 quizzes. Out of these, the best 4 will be selected for grading purposes.
         * The instructor will submit the grades on the school’s [designated deadline](https://web.ncku.edu.tw/p/412-1000-6149.php?Lang=zh-tw) (Jan 22, 2027) for grade registration. This means that students will have ample time to dedicate to the final project assigned in this course.
+        * From now through November 30, please discuss your term project proposal with the instructor. Explain what you hope to achieve and how you plan to get there. Possible projects include designing an out-of-order superscalar RISC-V processor capable of running Linux, building an RVA23 simulator that substantially outperforms QEMU, or developing a real-time operating system (RTOS) that substantially outperforms Linux on specific performance metrics. If you do not discuss a proposal with the instructor by November 30, the instructor will assign you a term project topic based on the effort you demonstrated in Homework 3 and earlier assignments.
         * [Term projects (2025)](https://hackmd.io/@sysprog/arch2025-projects): Contact the instructor as early as possible. You must provide the materials and demonstrate to the instructor before Jan 19, 2027. Deliverables
             - A development log and accompanying report
             - Complete source code sufficient for full reproduction
